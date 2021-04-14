@@ -48,11 +48,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_comrade_d"
-		texturefile = "gfx/interface/ideas/idea_minister_d.dds"
-	}
-
-	spriteType = {
 		name = "GFX_idea_cracky"
 		texturefile = "gfx/interface/ideas/idea_cracky.dds"
 	}
@@ -133,12 +128,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_FRA_former_colonial_government"
-		textureFile = "gfx/interface/ideas/FRA_former_colonial.dds"
-	}
-
-
-	spriteType = {
 		name = "GFX_idea_un_member"
 		textureFile = "gfx/interface/ideas/un_member.dds"
 	}
@@ -146,11 +135,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_SAY_divided"
 		textureFile = "gfx/interface/ideas/SAY_divided.dds"
-	}
-
-	spriteType = {
-		name = "GFX_idea_BNK_dedicated_workers"
-		textureFile = "gfx/interface/ideas/BNK_dedicated_workers.dds"
 	}
 
 	spriteType = {
@@ -193,21 +177,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_news_event_trollge2"
 		textureFile = "gfx/event_pictures/news_event_trollge2.dds"
-	}
-
-	spriteType = {
-		name = "GFX_decision_cat_generic_formsex"
-		textureFile = "gfx/interface/decisions/form_greater_sex.dds"
-	}
-
-	spriteType = {
-		name = "GFX_decision_cat_jewish_icon"
-		textureFile = "gfx/interface/decisions/jewish_jihad_icon.dds"
-	}
-
-	spriteType = {
-		name = "GFX_decision_cat_jewish_image"
-		textureFile = "gfx/interface/decisions/jewish_jihad_image.dds"
 	}
 
 }

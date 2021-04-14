@@ -61,7 +61,7 @@ add_state_core= 195
 		completion_reward = {
 			create_wargoal= { 
 type = annex_everything 
-target = OMA
+target = IRQ
 }
 		}
 	}
@@ -824,9 +824,9 @@ target = PER
 		}
 	}
 
-	#Focus for End the Kingdom of Heaven
+	#Focus for Demand Israel
 	focus = {
-		id = ISR_end_the_kingdom_of_heaven
+		id = ISR_demand_israel
 		icon = GFX_focus_chi_british_cooperation
 		x = 19
 		y = 17
@@ -845,9 +845,9 @@ target = PER
 			factor = 1
 		}
 		completion_reward = {
-			create_wargoal= { 
-type = annex_everything 
-target = EGY
+			country_event= {
+days = 1 
+id = israelevents.16
 }
 
 add_state_core= 455
@@ -864,7 +864,7 @@ add_state_core= 454
 		y = 18
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ISR_end_the_kingdom_of_heaven }
+		prerequisite = { focus = ISR_demand_israel }
 		mutually_exclusive = { focus = ISR_move_the_capital_to_jerusalem }
 		ai_will_do = {
 			factor = 1
@@ -892,7 +892,7 @@ add_state_core= 243
 		y = 18
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ISR_end_the_kingdom_of_heaven }
+		prerequisite = { focus = ISR_demand_israel }
 		mutually_exclusive = { focus = ISR_keep_the_capital_in_davidgrad }
 		ai_will_do = {
 			factor = 1

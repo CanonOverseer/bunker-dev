@@ -36,7 +36,6 @@ ideas = {
 				stability_factor = 0.05
 			}
 		}
-		
 		PSA_preparing_for_war = {
 
 			allowed = {
@@ -297,29 +296,6 @@ ideas = {
 				decryption_factor = 0.2
 				trade_opinion_factor = 0.25
 				license_purchase_cost = -0.5
-			}
-		}
-
-		FRA_former_colonial_government = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			picture = FRA_former_colonial_government
-
-			modifier = {			
-				conscription_factor = 0.2
-				occupation_cost = -0.25
-				resistance_target_on_our_occupied_states = -0.1
-				political_power_factor = -0.3
-				surrender_limit = 0.75
 			}
 		}
 
@@ -635,26 +611,6 @@ ideas = {
 			}
 		}
 
-		BNK_dedicated_workers = {
-
-			allowed = {
-				has_government = communism
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			removal_cost = -1
-
-			picture = BNK_dedicated_workers
-
-			modifier = {
-				production_factory_max_efficiency_factor = 0.1 
-				production_factory_start_efficiency_factor = 0.2
-				political_power_gain = -0.15
-			}
-		}
 
 		SAY_divided_nation = {
 			allowed = {
@@ -1049,24 +1005,8 @@ ideas = {
 			}
 		}
 
-		BNK_good_d_minister = {
 
-			picture = comrade_d
 
-			allowed = {
-			   original_tag = BNK
-			}
-			
-			available = { 
-				original_tag = BNK
-			}
-			
-			traits = { communist_revolutionary armaments_organizer }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
 
 		BNK_echo = {
 
@@ -1086,7 +1026,7 @@ ideas = {
 				}
 			}
 			
-			traits = { democratic_reformer silent_workhorse }
+			traits = { democratic_reformer }
 
 			ai_will_do = {
 				factor = 1
@@ -1108,11 +1048,11 @@ ideas = {
 			    OR = {
 					has_government = democratic
 					has_government = fascism
-					has_government = neutrality
+					has_government = communism
 				}
 			}
 			
-			traits = { armaments_organizer }
+			traits = { staunch_monarchist armaments_organizer }
 		}
 
 		BNK_lion = {
@@ -1134,7 +1074,7 @@ ideas = {
 				}
 			}
 			
-			traits = { popular_figurehead captain_of_industry }
+			traits = { popular_figurehead }
 		}
 		
 		BNK_kermit = {

@@ -179,21 +179,15 @@
  BNK_imperial_senate_supportive_desc:0 "the Imperial Senate is the Upper House of the Republic and soon, the Empire and was formed by Canon as a replacement to the National Council\n The Imperial Senate is Currently: §GSupportive§! of the Emperor"
  BNK_imperial_senate_tooltip:0 "The Imperial Senate grants you a set of bonuses which will get stronger then they are §GSupportive§! and reverse when they are §ROpposed§!."
 
- BNK_like:0 "Likes Government"
  BNK_new_calendar:0 "New Calendar"
  BNK_new_calendar_desc:0 "the New Bunker Calendar is confusing our soldiers"
  BNK_off_with_their_heads:0 "Off with their Heads!"
- BNK_stalinist_d:0 "Supreme Leader"
- BNK_vanguardist_party:0 "Bunker Vanguardist Party"
- BNK_vanguardist_party_long:0 "the Bunker Vanguardist Party"
  RED_supportdemocracy:0 "Support Democracy"
  RED_monarchistconstitution:0 "A New Constitution"
  BNK_chancellor_top:0 "Top"
  RED_fortmania:0 "Fortress Mania"
  RED_kermit2:0 "Kermit the Gang Leader"
  RED_pootisheavy:0 "Heavy Weapons Guy"
- BNK_good_d_minister:0 "Comrade D"
- BNK_good_d_minister_desc:0 "TBD"
  RED_kermit:0 "Kermit the Gang Leader"
  RED_lion:0 "Lionfire"
  RED_canon:0 "Canon"
@@ -356,8 +350,6 @@
  warplan_unlocked_tt:0 "This will Unlock the War Focus Tree"
  warplan_unlocked_neutrality_tt:0 "This will Unlock the Imperial War Plans"
  warplan_unlocked_communism_tt:0 "This will Unlock the People's War Plans"
- BNK_dedicated_workers:0 "Workers Democracy Ideals"
- BNK_dedicated_workers_desc:0 "We have instituted a system of workers democracy in the bunker, improving productivity."
  BNK_political_instability:0 "Political Instability"
  BNK_pm_cracky:0 "Cracky"
  BNK_pm_top:0 "Top"
@@ -387,18 +379,6 @@
  BNK_jewish2:0 "The Holy Bunker"
  BNK_jewish2_DEF:0 "The Holy Bunker Empire"
  BNK_jewish2_ADJ:0 "Holy Bunker"
- FRA_former_colonial_government:0 "French Government in Exile"
- FRA_former_colonial_government_desc:0 "After the UN's bunker experiment, the nation of France was exiled to Africa with many of its citizens."
-
- GEO_transcaucasia:0 "Transcaucasia"
- GEO_transcaucasia_def:0 "the Transcaucasian Union"
- GEO_transcaucasia_adj:0 "Transcaucasian"
- GEO_transcaucasia_fascism:0 "Transcaucasian State"
- GEO_transcaucasia_fascism_def:0 "the Transcaucasian State"
- GEO_transcaucasia_fascism_adj:0 "Transcaucasian"
- GEO_transcaucasia_communism:0 "Transcaucasian SSR"
- GEO_transcaucasia_communism_def:0 "the Transcaucasian Soviet Socialist Republic"
- GEO_transcaucasia_communism_adj:0 "Soviet Transcaucasian"
 
  emu_war:0 "the Second Emu War has begun."
  eventsmod.0.t:0 "Operation Unity"
@@ -646,10 +626,8 @@
  
  
  
- jewish_jihad_category:0 "the Commandment War"
- jewish_jihad_category_desc:0 "the Commandment War or the Milkhemet Mitzvah refers to the ongoing holy war to take land for the jewish people to further their goal of eventually reclaiming the holy land, YHWH Wills it!"
- ISR_mosesgrad:0 "Rename Stalingrad"
- ISR_davidgrad:0 "Rename Leningrad"
+ 
+ 
  
  no:0 "TBD"
  TBD:0 "TBD"

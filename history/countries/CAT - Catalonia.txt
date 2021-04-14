@@ -65,6 +65,10 @@ set_popularities = {
 	communism = 47
 }
 
+add_ideas = {
+CAT_nazi_staff
+}
+
 create_country_leader = {
 	name = "Hermann 'Fatass' Goring"
 	picture = "gfx/leaders/RED/Portrait_Germany_Hermann_Goring.dds"
@@ -108,6 +112,29 @@ create_corps_commander = {
 	name = "The Enjoyer"
 	portrait_path = "gfx/leaders/CAT/enjoyer.dds"
 	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+
+create_corps_commander = {
+	name = "Billy Pham"
+	portrait_path = "gfx/leaders/CAT/bolly.dds"
+	traits = { guerilla_fighter }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "The Mad Titan"
+	portrait_path = "gfx/leaders/CAT/sexos.dds"
+	traits = { fortress_buster }
+	skill = 2
 	attack_skill = 3
 	defense_skill = 3
 	planning_skill = 3

@@ -177,24 +177,7 @@ news_event = { # freds coup
 	}
 }
 
-news_event = { # greater sex formed
-	id = sex.8888
-	title = sex.8888.t
-	desc = sex.8888.d
-	picture = GFX_news_event_anarchy
-	is_triggered_only = yes
-	major = yes
 
-	immediate = {
-	hidden_effect = {
-
-	}
-	}
-
-	option = { #
-	name = sex.8888.a
-	}
-}
 
 
 

@@ -83,3 +83,14 @@ create_country_leader = {
 	}
 	ideology = nazism
 }
+
+create_field_marshal = {
+	name = "Comrade Un Sexy"
+	portrait_path = "gfx/leaders/NAV/unsexy.dds"
+	traits = { defensive_doctrine }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 4
+}

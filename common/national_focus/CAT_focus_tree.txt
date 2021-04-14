@@ -130,23 +130,6 @@ add_stability= 0.05
 		}
 	}
 
-	#Focus for The State of Chest
-	focus = {
-		id = CAT_the_state_of_chest
-		icon = GFX_CAT_the_state_of_chest-94119
-		x = 31
-		y = 8
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = CAT_augustus_chest_hairos }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_ideas= CAT_chest_pride
-		}
-	}
-
 	#Focus for Sexy Industry Effort II
 	focus = {
 		id = CAT_sexy_industry_effort_ii
@@ -989,7 +972,7 @@ popularity = 0.1
 		icon = GFX_CAT_the_problems_we_carry-58986
 		x = 27
 		y = 7
-		cost = 3
+		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = CAT_work_maximization }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
@@ -1469,7 +1452,7 @@ id = sex.1
 		icon = GFX_goal_generic_wolf_pack
 		x = 32
 		y = 3
-		cost = 4
+		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = CAT_the_adoption_of_fatass_goring_vii 
@@ -1858,7 +1841,7 @@ id = belevent.5
 	#Focus for The End of No Sex
 	focus = {
 		id = CAT_the_end_of_no_sex
-		icon = GFX_CAT_the_end_of_no_sex-94118
+		icon = GFX_goal_unknown
 		x = 38
 		y = 9
 		cost = 10
@@ -1891,215 +1874,6 @@ target = NAV
 			add_stability= 0.1  
 
 add_political_power= 150
-		}
-	}
-
-	#Focus for Victory over the Troll
-	focus = {
-		id = CAT_victory_over_the_troll
-		icon = GFX_CAT_victory_over_the_troll-94291
-		x = 39
-		y = 10
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = CAT_conscript_all }
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			TRG = { exists = no }
-		}
-	}
-
-	#Focus for Ending the No Sex Threat
-	focus = {
-		id = CAT_ending_the_no_sex_threat
-		icon = GFX_CAT_ending_the_no_sex_threat-94289
-		x = 33
-		y = 8
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = CAT_augustus_chest_hairos }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			create_wargoal= { 
-type = annex_everything 
-target = NAV
-}
-		}
-	}
-
-	#Focus for No More Bunker!
-	focus = {
-		id = CAT_no_more_bunker
-		icon = GFX_CAT_no_more_bunker-94274
-		x = 32
-		y = 9
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = CAT_the_state_of_chest 
-		}
-		prerequisite = { 
-			focus = CAT_ending_the_no_sex_threat 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			create_wargoal= { 
-type = annex_everything 
-target = BNK
-}
-		}
-	}
-
-	#Focus for Expanding to the North
-	focus = {
-		id = CAT_expanding_to_the_north
-		icon = GFX_CAT_expanding_to_the_north-94294
-		x = 30
-		y = 10
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = CAT_no_more_bunker }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_state_core= 31  
-
-add_state_core= 806
-
-add_state_core= 19
-
-add_state_core= 22
-		}
-	}
-
-	#Focus for The Chest Hair Pact
-	focus = {
-		id = CAT_the_chest_hair_pact
-		icon = GFX_CAT_the_chest_hair_pact-94293
-		x = 32
-		y = 10
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = CAT_no_more_bunker }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			create_faction= "Chest Hair Concordat"
-		}
-	}
-
-	#Focus for Hair to the Spain
-	focus = {
-		id = CAT_hair_to_the_spain
-		icon = GFX_focus_generic_attack_republican_spain_focus
-		x = 34
-		y = 10
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = CAT_no_more_bunker }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			create_wargoal= { 
-type = annex_everything 
-target = SPR
-}
-		}
-	}
-
-	#Focus for Pax Chest Hairia
-	focus = {
-		id = CAT_pax_chest_hairia
-		icon = GFX_CAT_pax_chest_hairia-94295
-		x = 32
-		y = 11
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = CAT_expanding_to_the_north 
-		}
-		prerequisite = { 
-			focus = CAT_the_chest_hair_pact 
-		}
-		prerequisite = { 
-			focus = CAT_hair_to_the_spain 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Spanish Reckoning
-	focus = {
-		id = CAT_spanish_reckoning
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
-		x = 38
-		y = 11
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = CAT_victory_over_the_troll }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			create_wargoal= { 
-type = annex_everything 
-target = SPR
-}
-		}
-	}
-
-	#Focus for Anti Troll the Bunker
-	focus = {
-		id = CAT_anti_troll_the_bunker
-		icon = GFX_CAT_anti_troll_the_bunker-94290
-		x = 40
-		y = 11
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = CAT_victory_over_the_troll }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			create_wargoal= { 
-type = annex_everything 
-target = BNK
-}
-		}
-	}
-
-	#Focus for The Final Step
-	focus = {
-		id = CAT_the_final_step
-		icon = GFX_CAT_the_final_step-94292
-		x = 39
-		y = 12
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = CAT_spanish_reckoning 
-		}
-		prerequisite = { 
-			focus = CAT_anti_troll_the_bunker 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			create_wargoal= { 
-type = annex_everything 
-target = WLS
-}
 		}
 	}
 

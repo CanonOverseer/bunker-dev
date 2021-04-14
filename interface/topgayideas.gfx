@@ -1,0 +1,34 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_women_soldier"
+		texturefile = "gfx/interface/ideas/SEX/women.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_guns_guns"
+		texturefile = "gfx/interface/ideas/SEX/guns.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_chest_pride"
+		texturefile = "gfx/interface/ideas/SEX/chestpride.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_staff_staff"
+		texturefile = "gfx/interface/ideas/SEX/staff.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_muslim_majority"
+		texturefile = "gfx/interface/ideas/OMA_muslim.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_diary_diary"
+		texturefile = "gfx/interface/ideas/SEX/diary.dds"
+	}	
+	
+	
+}

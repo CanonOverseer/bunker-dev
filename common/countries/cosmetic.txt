@@ -724,8 +724,3 @@ EGY_pepe = {
 	color = rgb { 222 215 195 }
 	color_ui = rgb { 222 215 195 }
 }
-
-NAV_fascism = {
-	color = rgb { 100  95  162 }
-	color_ui = rgb { 100  95  162 }
-}
