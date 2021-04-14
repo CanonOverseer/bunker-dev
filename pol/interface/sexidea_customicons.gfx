@@ -1,9 +1,0 @@
-spriteTypes = { 
-	##Icon For: Troll Prevented
-	SpriteType = { 
-		name = "CAT_troll_prevented-93993"
-		texturefile = "gfx/interface/ideas/CAT_troll_prevented-93993.dds"
-	}
-
- 
- }

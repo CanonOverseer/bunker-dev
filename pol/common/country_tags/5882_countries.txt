@@ -1,2 +1,0 @@
-PSA = "countries/Midwest.txt"
-MDW = "countries/Midwest.txt"
