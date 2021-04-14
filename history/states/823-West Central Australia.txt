@@ -1,12 +1,13 @@
-
 state={
-	id=522
-	name="STATE_522"
-
+	id=823
+	name="STATE_823"
+	provinces={
+		8134 8155 8237 11013 
+	}
 	history={
 		owner = AST
 		buildings = {
-			infrastructure = 5
+			infrastructure = 2
 			industrial_complex = 1
 			air_base = 1
 			1652 = {
@@ -16,17 +17,10 @@ state={
 			}
 
 		}
-		victory_points = {
-			1652 3 
-		}
 		add_core_of = AST
 
 	}
-
-	provinces={
-		1540 1652 2157 4630 5175 7453 8130 8228 8243 10983 11011 
-	}
-	manpower=367200
+	manpower=0
 	buildings_max_level_factor=1.000
 	state_category=rural
 }
