@@ -6,3 +6,5 @@ Todo List:
  = Make more UN members     
  = UN Focus     
  = Bunker Diplomacy Focus     
+ = Cracky Bunker Fix
+ 
