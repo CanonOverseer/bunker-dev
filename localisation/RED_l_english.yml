@@ -387,6 +387,8 @@
  BNK_jewish2:0 "The Holy Bunker"
  BNK_jewish2_DEF:0 "The Holy Bunker Empire"
  BNK_jewish2_ADJ:0 "Holy Bunker"
+ FRA_former_colonial_government:0 "French Government in Exile"
+ FRA_former_colonial_government_desc:0 "After the UN's bunker experiment, the nation of France was exiled to Africa with many of its citizens."
 
  GEO_transcaucasia:0 "Transcaucasia"
  GEO_transcaucasia_def:0 "the Transcaucasian Union"
