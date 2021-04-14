@@ -300,6 +300,29 @@ ideas = {
 			}
 		}
 
+		FRA_former_colonial_government = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FRA_former_colonial_government
+
+			modifier = {			
+				conscription_factor = 0.2
+				occupation_cost = -0.25
+				resistance_target_on_our_occupied_states = -0.1
+				political_power_factor = -0.3
+				surrender_limit = 0.75
+			}
+		}
+
 		BNK_imperial_research = {
 
 			allowed = {

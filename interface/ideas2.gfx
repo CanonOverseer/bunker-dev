@@ -133,6 +133,12 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_FRA_former_colonial_government"
+		textureFile = "gfx/interface/ideas/FRA_former_colonial.dds"
+	}
+
+
+	spriteType = {
 		name = "GFX_idea_un_member"
 		textureFile = "gfx/interface/ideas/un_member.dds"
 	}
