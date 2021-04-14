@@ -1,0 +1,34 @@
+add_namespace = canonishot
+
+##Event: The Louisiana War
+news_event = {
+	id = canonishot.1
+	title = canonishot.1.title
+	desc = canonishot.1.desc
+	picture = GFX_report_event_001
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = canonishot.1.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: The Alabaman Election
+country_event = {
+	id = canonishot.2
+	title = canonishot.2.title
+	desc = canonishot.2.desc
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = canonishot.2.a
+		ai_chance = { factor = 1}
+		set_global_flag = Minutemen_win
+	}
+	option = {
+		name = canonishot.2.b
+		ai_chance = { factor = 1}
+		set_global_flag = tea_party_wins
+	}
+}

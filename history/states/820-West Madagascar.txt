@@ -1,0 +1,20 @@
+state={
+	id=820
+	name="STATE_820"
+	history={
+		add_core_of = MAD
+		owner = MAD
+		buildings = {
+			infrastructure = 4
+			air_base = 3
+			industrial_complex = 3
+		}
+
+	}
+	provinces={
+		5185 8180 11015 
+	}
+	manpower=3694611
+	buildings_max_level_factor=1.000
+	state_category=city
+}

@@ -1,0 +1,459 @@
+spriteTypes = { 
+	##Icon For: Appoint the Autarks
+	SpriteType = { 
+		name = "GFX_SOV_appoint_the_autarks-72829"
+		texturefile = "gfx/interface/goals/GFX_SOV_appoint_the_autarks-72829.dds"
+	}
+
+	##Icon Shine For: Appoint the Autarks
+	SpriteType = { 
+		name = "GFX_SOV_appoint_the_autarks-72829_shine"
+		texturefile = "gfx/interface/goals/GFX_SOV_appoint_the_autarks-72829.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SOV_appoint_the_autarks-72829.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SOV_appoint_the_autarks-72829.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Infrastructural Expansion
+	SpriteType = { 
+		name = "GFX_SOV_infrastructural_expansion-72842"
+		texturefile = "gfx/interface/goals/GFX_SOV_infrastructural_expansion-72842.dds"
+	}
+
+	##Icon Shine For: Infrastructural Expansion
+	SpriteType = { 
+		name = "GFX_SOV_infrastructural_expansion-72842_shine"
+		texturefile = "gfx/interface/goals/GFX_SOV_infrastructural_expansion-72842.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SOV_infrastructural_expansion-72842.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SOV_infrastructural_expansion-72842.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Russian Industrial Expansion
+	SpriteType = { 
+		name = "GFX_SOV_russian_industrial_expansion-72840"
+		texturefile = "gfx/interface/goals/GFX_SOV_russian_industrial_expansion-72840.dds"
+	}
+
+	##Icon Shine For: Russian Industrial Expansion
+	SpriteType = { 
+		name = "GFX_SOV_russian_industrial_expansion-72840_shine"
+		texturefile = "gfx/interface/goals/GFX_SOV_russian_industrial_expansion-72840.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SOV_russian_industrial_expansion-72840.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SOV_russian_industrial_expansion-72840.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: End Army Corruption
+	SpriteType = { 
+		name = "GFX_SOV_end_army_corruption-72838"
+		texturefile = "gfx/interface/goals/GFX_SOV_end_army_corruption-72838.dds"
+	}
+
+	##Icon Shine For: End Army Corruption
+	SpriteType = { 
+		name = "GFX_SOV_end_army_corruption-72838_shine"
+		texturefile = "gfx/interface/goals/GFX_SOV_end_army_corruption-72838.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SOV_end_army_corruption-72838.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SOV_end_army_corruption-72838.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Pay off the Army
+	SpriteType = { 
+		name = "GFX_SOV_pay_off_the_army-72828"
+		texturefile = "gfx/interface/goals/GFX_SOV_pay_off_the_army-72828.dds"
+	}
+
+	##Icon Shine For: Pay off the Army
+	SpriteType = { 
+		name = "GFX_SOV_pay_off_the_army-72828_shine"
+		texturefile = "gfx/interface/goals/GFX_SOV_pay_off_the_army-72828.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SOV_pay_off_the_army-72828.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SOV_pay_off_the_army-72828.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: True Democracy
+	SpriteType = { 
+		name = "GFX_SOV_true_democracy-72822"
+		texturefile = "gfx/interface/goals/GFX_SOV_true_democracy-72822.dds"
+	}
+
+	##Icon Shine For: True Democracy
+	SpriteType = { 
+		name = "GFX_SOV_true_democracy-72822_shine"
+		texturefile = "gfx/interface/goals/GFX_SOV_true_democracy-72822.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SOV_true_democracy-72822.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SOV_true_democracy-72822.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Democratic-Authoritarian Ideals
+	SpriteType = { 
+		name = "GFX_SOV_democraticauthoritarian_ideals-72813"
+		texturefile = "gfx/interface/goals/GFX_SOV_democraticauthoritarian_ideals-72813.dds"
+	}
+
+	##Icon Shine For: Democratic-Authoritarian Ideals
+	SpriteType = { 
+		name = "GFX_SOV_democraticauthoritarian_ideals-72813_shine"
+		texturefile = "gfx/interface/goals/GFX_SOV_democraticauthoritarian_ideals-72813.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SOV_democraticauthoritarian_ideals-72813.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SOV_democraticauthoritarian_ideals-72813.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Stability in Question
+	SpriteType = { 
+		name = "GFX_SOV_stability_in_question-72806"
+		texturefile = "gfx/interface/goals/GFX_SOV_stability_in_question-72806.dds"
+	}
+
+	##Icon Shine For: Stability in Question
+	SpriteType = { 
+		name = "GFX_SOV_stability_in_question-72806_shine"
+		texturefile = "gfx/interface/goals/GFX_SOV_stability_in_question-72806.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SOV_stability_in_question-72806.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SOV_stability_in_question-72806.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Invite Oil Tycooners
+	SpriteType = { 
+		name = "GFX_SOV_invite_oil_tycooners-72837"
+		texturefile = "gfx/interface/goals/GFX_SOV_invite_oil_tycooners-72837.dds"
+	}
+
+	##Icon Shine For: Invite Oil Tycooners
+	SpriteType = { 
+		name = "GFX_SOV_invite_oil_tycooners-72837_shine"
+		texturefile = "gfx/interface/goals/GFX_SOV_invite_oil_tycooners-72837.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SOV_invite_oil_tycooners-72837.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SOV_invite_oil_tycooners-72837.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Restore the Forgotten
+	SpriteType = { 
+		name = "GFX_SOV_restore_the_forgotten-72809"
+		texturefile = "gfx/interface/goals/GFX_SOV_restore_the_forgotten-72809.dds"
+	}
+
+	##Icon Shine For: Restore the Forgotten
+	SpriteType = { 
+		name = "GFX_SOV_restore_the_forgotten-72809_shine"
+		texturefile = "gfx/interface/goals/GFX_SOV_restore_the_forgotten-72809.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SOV_restore_the_forgotten-72809.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SOV_restore_the_forgotten-72809.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: A New System
+	SpriteType = { 
+		name = "GFX_SOV_a_new_system-72810"
+		texturefile = "gfx/interface/goals/GFX_SOV_a_new_system-72810.dds"
+	}
+
+	##Icon Shine For: A New System
+	SpriteType = { 
+		name = "GFX_SOV_a_new_system-72810_shine"
+		texturefile = "gfx/interface/goals/GFX_SOV_a_new_system-72810.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SOV_a_new_system-72810.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SOV_a_new_system-72810.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Continue the Worker's Path
+	SpriteType = { 
+		name = "GFX_SOV_continue_the_workers_path-72826"
+		texturefile = "gfx/interface/goals/GFX_SOV_continue_the_workers_path-72826.dds"
+	}
+
+	##Icon Shine For: Continue the Worker's Path
+	SpriteType = { 
+		name = "GFX_SOV_continue_the_workers_path-72826_shine"
+		texturefile = "gfx/interface/goals/GFX_SOV_continue_the_workers_path-72826.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SOV_continue_the_workers_path-72826.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SOV_continue_the_workers_path-72826.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+ 
+ }

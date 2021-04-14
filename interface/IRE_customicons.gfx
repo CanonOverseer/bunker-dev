@@ -1,0 +1,117 @@
+spriteTypes = { 
+	##Icon For: With the Bunker!
+	SpriteType = { 
+		name = "GFX_IRE_with_the_bunker-44476"
+		texturefile = "gfx/interface/goals/GFX_IRE_with_the_bunker-44476.dds"
+	}
+
+	##Icon Shine For: With the Bunker!
+	SpriteType = { 
+		name = "GFX_IRE_with_the_bunker-44476_shine"
+		texturefile = "gfx/interface/goals/GFX_IRE_with_the_bunker-44476.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_IRE_with_the_bunker-44476.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_IRE_with_the_bunker-44476.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Under Sir Fahrrad!
+	SpriteType = { 
+		name = "GFX_IRE_under_sir_fahrrad-44472"
+		texturefile = "gfx/interface/goals/GFX_IRE_under_sir_fahrrad-44472.dds"
+	}
+
+	##Icon Shine For: Under Sir Fahrrad!
+	SpriteType = { 
+		name = "GFX_IRE_under_sir_fahrrad-44472_shine"
+		texturefile = "gfx/interface/goals/GFX_IRE_under_sir_fahrrad-44472.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_IRE_under_sir_fahrrad-44472.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_IRE_under_sir_fahrrad-44472.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Greater Ireland
+	SpriteType = { 
+		name = "GFX_IRE_greater_ireland-44478"
+		texturefile = "gfx/interface/goals/GFX_IRE_greater_ireland-44478.dds"
+	}
+
+	##Icon Shine For: Greater Ireland
+	SpriteType = { 
+		name = "GFX_IRE_greater_ireland-44478_shine"
+		texturefile = "gfx/interface/goals/GFX_IRE_greater_ireland-44478.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_IRE_greater_ireland-44478.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_IRE_greater_ireland-44478.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+ 
+ }

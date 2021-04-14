@@ -1,0 +1,193 @@
+spriteTypes = { 
+	##Icon For: The Siberian Elections
+	SpriteType = { 
+		name = "GFX_SBR_the_siberian_elections-67660"
+		texturefile = "gfx/interface/goals/GFX_SBR_the_siberian_elections-67660.dds"
+	}
+
+	##Icon Shine For: The Siberian Elections
+	SpriteType = { 
+		name = "GFX_SBR_the_siberian_elections-67660_shine"
+		texturefile = "gfx/interface/goals/GFX_SBR_the_siberian_elections-67660.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SBR_the_siberian_elections-67660.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SBR_the_siberian_elections-67660.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: To Defend Siberia!
+	SpriteType = { 
+		name = "GFX_SBR_to_defend_siberia-66681"
+		texturefile = "gfx/interface/goals/GFX_SBR_to_defend_siberia-66681.dds"
+	}
+
+	##Icon Shine For: To Defend Siberia!
+	SpriteType = { 
+		name = "GFX_SBR_to_defend_siberia-66681_shine"
+		texturefile = "gfx/interface/goals/GFX_SBR_to_defend_siberia-66681.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SBR_to_defend_siberia-66681.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SBR_to_defend_siberia-66681.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Kerensky's Coalition
+	SpriteType = { 
+		name = "GFX_SBR_kerenskys_coalition-67687"
+		texturefile = "gfx/interface/goals/GFX_SBR_kerenskys_coalition-67687.dds"
+	}
+
+	##Icon Shine For: Kerensky's Coalition
+	SpriteType = { 
+		name = "GFX_SBR_kerenskys_coalition-67687_shine"
+		texturefile = "gfx/interface/goals/GFX_SBR_kerenskys_coalition-67687.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SBR_kerenskys_coalition-67687.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SBR_kerenskys_coalition-67687.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The Officers Coup
+	SpriteType = { 
+		name = "GFX_SBR_the_officers_coup-67696"
+		texturefile = "gfx/interface/goals/GFX_SBR_the_officers_coup-67696.dds"
+	}
+
+	##Icon Shine For: The Officers Coup
+	SpriteType = { 
+		name = "GFX_SBR_the_officers_coup-67696_shine"
+		texturefile = "gfx/interface/goals/GFX_SBR_the_officers_coup-67696.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SBR_the_officers_coup-67696.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SBR_the_officers_coup-67696.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Rodzaevsky's RFP
+	SpriteType = { 
+		name = "GFX_SBR_rodzaevskys_rfp-67693"
+		texturefile = "gfx/interface/goals/GFX_SBR_rodzaevskys_rfp-67693.dds"
+	}
+
+	##Icon Shine For: Rodzaevsky's RFP
+	SpriteType = { 
+		name = "GFX_SBR_rodzaevskys_rfp-67693_shine"
+		texturefile = "gfx/interface/goals/GFX_SBR_rodzaevskys_rfp-67693.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SBR_rodzaevskys_rfp-67693.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SBR_rodzaevskys_rfp-67693.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+ 
+ }

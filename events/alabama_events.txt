@@ -1,0 +1,402 @@
+add_namespace = alabama
+
+##Event: We will ask Florida to join us.
+country_event = {
+	id = alabama.1
+	title = alabama.1.title
+	desc = alabama.1.desc
+	picture = GFX_report_event_pierre_laval
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alabama.1.a
+		ai_chance = { factor = 1}
+		FLR = { country_event = { id = alabama.2} }
+	}
+}
+##Event: Alabama asks us to join them
+country_event = {
+	id = alabama.2
+	title = alabama.2.title
+	desc = alabama.2.desc
+	picture = GFX_news_event_por_salazar_franco
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alabama.2.a
+		ai_chance = { factor = 2}
+		ABM = { country_event = { id = alabama.3} }
+	}
+	option = {
+		name = alabama.2.b
+		ai_chance = { factor = 1}
+		ABM = { country_event = { id = alabama.4} }
+	}
+}
+##Event: Florida Joins Us!
+country_event = {
+	id = alabama.3
+	title = alabama.3.title
+	desc = alabama.3.desc
+	picture = GFX_news_event_polish_resistance_warsaw
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alabama.3.a
+		ai_chance = { factor = 1}
+		annex_country= {
+ target = FLR 
+}
+	}
+}
+##Event: Florida Says No!
+country_event = {
+	id = alabama.4
+	title = alabama.4.title
+	desc = alabama.4.desc
+	picture = GFX_news_event_election_vote
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alabama.4.a
+		ai_chance = { factor = 1}
+	}
+	option = {
+		name = alabama.4.b
+		ai_chance = { factor = 1}
+		declare_war_on= { 
+target = FLR
+type = annex_everything 
+}
+	}
+}
+##Event: Rapprochement with our American Brothers
+country_event = {
+	id = alabama.5
+	title = alabama.5.title
+	desc = alabama.5.desc
+	picture = GFX_report_event_stalin_02
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alabama.5.a
+		ai_chance = { factor = 1}
+		USA = { country_event = { id = alabama.6 } }
+	}
+}
+##Event: Alabama asks for a Non-Aggression Pact
+country_event = {
+	id = alabama.6
+	title = alabama.6.title
+	desc = alabama.6.desc
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alabama.6.a
+		ai_chance = { factor = 1}
+		diplomatic_relation= { 
+country = ABM
+relation = non_aggression_pact 
+}
+
+ABM = { country_event = { id = alabama.7 } }
+	}
+	option = {
+		name = alabama.6.b
+		ai_chance = { factor = 1}
+		ABM = { country_event = { id = alabama.8 } }
+	}
+}
+##Event: America Accepts!
+country_event = {
+	id = alabama.7
+	title = alabama.7.title
+	desc = alabama.7.desc
+	picture = GFX_report_event_king_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alabama.7.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: America Says No
+country_event = {
+	id = alabama.8
+	title = alabama.8.title
+	desc = alabama.8.desc
+	picture = GFX_report_event_spr_poum_militia
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alabama.8.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Pax Americana
+country_event = {
+	id = alabama.9
+	title = alabama.9.title
+	desc = alabama.9.desc
+	picture = GFX_news_event_generic_usa_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alabama.9.a
+		ai_chance = { factor = 1}
+		USA = { country_event = { id = alabama.10 } }
+	}
+}
+##Event: Alabama invites us to Pax Americana
+country_event = {
+	id = alabama.10
+	title = alabama.10.title
+	desc = alabama.10.desc
+	picture = GFX_report_event_riot_police_poland
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alabama.10.a
+		ai_chance = { factor = 1}
+		ABM = {add_to_faction = USA}
+
+
+ABM = { country_event = { id = alabama.11 } }
+	}
+	option = {
+		name = alabama.10.b
+		ai_chance = { factor = 1}
+		ABM = { country_event = { id = alabama.12 } }
+	}
+}
+##Event: America joins Pax Americana
+country_event = {
+	id = alabama.11
+	title = alabama.11.title
+	desc = alabama.11.desc
+	picture = GFX_report_event_worried_french
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alabama.11.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: America says No
+country_event = {
+	id = alabama.12
+	title = alabama.12.title
+	desc = alabama.12.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alabama.12.a
+		ai_chance = { factor = 1}
+	}
+	option = {
+		name = alabama.12.b
+		ai_chance = { factor = 1}
+		declare_war_on= { 
+target = USA
+type = annex_everything 
+}
+	}
+}
+##Event: We have invited Texas and Louisiana to Pax Americana!
+country_event = {
+	id = alabama.13
+	title = alabama.13.title
+	desc = alabama.13.desc
+	picture = GFX_report_event_por_president_military_inspection
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alabama.13.a
+		ai_chance = { factor = 1}
+		TEX = { country_event = { id = alabama.14 } }
+
+LOU = { country_event = { id = alabama.16 } }
+	}
+}
+##Event: We've been invited to Pax Americana
+country_event = {
+	id = alabama.14
+	title = alabama.14.title
+	desc = alabama.14.desc
+	picture = GFX_report_event_partition_of_india
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alabama.14.a
+		ai_chance = { factor = 2}
+		ABM = {add_to_faction = TEX}
+
+
+ABM = { country_event = { id = alabama.18 } }
+	}
+	option = {
+		name = alabama.14.b
+		ai_chance = { factor = 1}
+		ABM = { country_event = { id = alabama.15 } }
+	}
+}
+##Event: Texas Refuses!
+country_event = {
+	id = alabama.15
+	title = alabama.15.title
+	desc = alabama.15.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alabama.15.a
+		ai_chance = { factor = 1}
+	}
+	option = {
+		name = alabama.15.b
+		ai_chance = { factor = 1}
+		declare_war_on= { 
+target = TEX
+type = annex_everything 
+}
+	}
+}
+##Event: Alabama invites us to Pax Americana
+country_event = {
+	id = alabama.16
+	title = alabama.16.title
+	desc = alabama.16.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alabama.16.a
+		ai_chance = { factor = 2}
+		ABM = {add_to_faction = LOU}
+
+ABM = { country_event = { id = alabama.19 } }
+	}
+	option = {
+		name = alabama.16.b
+		ai_chance = { factor = 1}
+		ABM = { country_event = { id = alabama.17 } }
+	}
+}
+##Event: Louisiana Refuses!
+country_event = {
+	id = alabama.17
+	title = alabama.17.title
+	desc = alabama.17.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alabama.17.a
+		ai_chance = { factor = 1}
+	}
+	option = {
+		name = alabama.17.b
+		ai_chance = { factor = 1}
+		declare_war_on= { 
+target = LOU
+type = annex_everything 
+}
+	}
+}
+##Event: Texas Accepts!
+country_event = {
+	id = alabama.18
+	title = alabama.18.title
+	desc = alabama.18.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alabama.18.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Lousuinia Accepts!
+country_event = {
+	id = alabama.19
+	title = alabama.19.title
+	desc = alabama.19.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alabama.19.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: The Holy Alliance
+country_event = {
+	id = alabama.20
+	title = alabama.20.title
+	desc = alabama.20.desc
+	picture = GFX_report_event_soviet_purge_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alabama.20.a
+		ai_chance = { factor = 1}
+		SAY = { country_event = { id = alabama.21 } }
+	}
+}
+##Event: Alabama has invited us to The American Imperium
+country_event = {
+	id = alabama.21
+	title = alabama.21.title
+	desc = alabama.21.desc
+	picture = GFX_report_event_spr_anarchist_uprising
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alabama.21.a
+		ai_chance = { factor = 1}
+		ABM = {add_to_faction = SAY}
+
+ABM = { country_event = { id = alabama.22 } }
+	}
+	option = {
+		name = alabama.21.b
+		ai_chance = { factor = 1}
+		ABM = { country_event = { id = alabama.23 } }
+	}
+}
+##Event: Sayland Joins the American Imperium!
+country_event = {
+	id = alabama.22
+	title = alabama.22.title
+	desc = alabama.22.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alabama.22.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Sayland Refuses to join!
+country_event = {
+	id = alabama.23
+	title = alabama.23.title
+	desc = alabama.23.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = alabama.23.a
+		ai_chance = { factor = 1}
+	}
+	option = {
+		name = alabama.23.b
+		ai_chance = { factor = 1}
+		create_wargoal= { 
+type = annex_everything 
+target = SAY
+}
+	}
+}

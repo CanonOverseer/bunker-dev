@@ -1,0 +1,197 @@
+﻿capital = 801
+
+# RED
+
+oob = "BNK_1936"
+
+set_research_slots = 3
+set_stability = 0.2
+set_war_support = 0.9
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	improved_light_tank = 1
+	early_fighter = 1
+	naval_bomber1 = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	CAS1 = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	basic_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	basic_battlecruiser = 1
+	early_carrier = 1
+	transport = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+}
+set_variable = { var = senators_support value = 22 }
+set_variable = { var = senators_total value = 64 }
+set_variable = { var = representatives_support value = 62 }
+set_variable = { var = representatives_total value = 183 }
+set_variable = { var = quorum_low value = 23 }
+set_variable = { var = quorum_medium value = 33 }
+set_variable = { var = quorum_high value = 43 }
+AUS_recalc_congress_icon_frames = yes
+BNK = {
+	country_event = { id = aus_congress.14 days = 2 }
+	country_event = { id = aus_congress.15 days = 2 }
+}
+
+set_convoys = 30
+
+
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1932.5.1"
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 41
+	neutrality = 43
+	fascism = 10
+	communism = 6
+}
+
+add_ideas = {
+	civilian_economy
+	volunteer_only
+}
+
+add_opinion_modifier = {
+    target = BEL
+    modifier = BNK_hate
+}
+
+
+#give_guarantee = CZE
+
+#Order matters here Daladier will start as leaders because added last
+
+create_country_leader = {
+	name = "The National Council"
+	desc = "no"
+	picture = "gfx/leaders/BNK/nationalcouncil.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+}
+
+create_country_leader = {
+	name = "The Revolutionary D"
+	desc = "no"
+	picture = "gfx/leaders/BNK/d.dds"
+	expire = "1965.1.1"
+	ideology = anti_revisionism
+}
+
+create_corps_commander = {
+	name = "ZZTopman555"
+	portrait_path = "gfx/leaders/SAY/ZZTopman.dds"
+	skill = 3
+	traits = { skilled_staffer }
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Cracky"
+	portrait_path = "gfx/leaders/BNK/cracky.dds" 
+	skill = 3
+	traits = { panzer_leader fortress_buster }
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+
+	name = "The Good D"
+	portrait_path = "gfx/leaders/BNK/d.dds"
+	skill = 4
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Kermit the Gang Leader"
+	portrait_path = "gfx/leaders/BMR/kermit.dds"
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Vladimir Putin"
+	portrait_path = "gfx/leaders/RED/Putin.dds"
+	traits = { offensive_doctrine old_guard }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_field_marshal = {
+	name = "Echoedlightning"
+	portrait_path = "gfx/leaders/RED/APYR.dds"
+	traits = { trickster inspirational_leader organizer }
+	skill = 6
+	attack_skill = 2
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_field_marshal = {
+	name = "Mysticturtler"
+	portrait_path = "gfx/leaders/CEY/mystic.dds"
+	traits = { defensive_doctrine }
+	skill = 5
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_navy_leader = {
+	name = "Admiral Cory"
+	portrait_path = "gfx/leaders/RED/cory.dds"
+	traits = { superior_tactician }
+	skill = 4
+}
+
+
+create_navy_leader = {
+	name = "Admiral Mann"
+	portrait_path = "gfx/leaders/RED/mann.dds"
+	traits = { spotter }
+	skill = 5
+}

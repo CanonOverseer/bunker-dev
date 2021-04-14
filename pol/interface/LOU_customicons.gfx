@@ -1,0 +1,307 @@
+spriteTypes = { 
+	##Icon For: For You Sweet America
+	SpriteType = { 
+		name = "GFX_LOU_for_you_sweet_america-46060"
+		texturefile = "gfx/interface/goals/GFX_LOU_for_you_sweet_america-46060.dds"
+	}
+
+	##Icon Shine For: For You Sweet America
+	SpriteType = { 
+		name = "GFX_LOU_for_you_sweet_america-46060_shine"
+		texturefile = "gfx/interface/goals/GFX_LOU_for_you_sweet_america-46060.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_LOU_for_you_sweet_america-46060.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_LOU_for_you_sweet_america-46060.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Huey Long Secures the State!
+	SpriteType = { 
+		name = "GFX_LOU_huey_long_secures_the_state-53331"
+		texturefile = "gfx/interface/goals/GFX_LOU_huey_long_secures_the_state-53331.dds"
+	}
+
+	##Icon Shine For: Huey Long Secures the State!
+	SpriteType = { 
+		name = "GFX_LOU_huey_long_secures_the_state-53331_shine"
+		texturefile = "gfx/interface/goals/GFX_LOU_huey_long_secures_the_state-53331.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_LOU_huey_long_secures_the_state-53331.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_LOU_huey_long_secures_the_state-53331.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The Great Decision
+	SpriteType = { 
+		name = "GFX_LOU_the_great_decision-53332"
+		texturefile = "gfx/interface/goals/GFX_LOU_the_great_decision-53332.dds"
+	}
+
+	##Icon Shine For: The Great Decision
+	SpriteType = { 
+		name = "GFX_LOU_the_great_decision-53332_shine"
+		texturefile = "gfx/interface/goals/GFX_LOU_the_great_decision-53332.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_LOU_the_great_decision-53332.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_LOU_the_great_decision-53332.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The Communist Victory
+	SpriteType = { 
+		name = "GFX_LOU_the_communist_victory-53335"
+		texturefile = "gfx/interface/goals/GFX_LOU_the_communist_victory-53335.dds"
+	}
+
+	##Icon Shine For: The Communist Victory
+	SpriteType = { 
+		name = "GFX_LOU_the_communist_victory-53335_shine"
+		texturefile = "gfx/interface/goals/GFX_LOU_the_communist_victory-53335.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_LOU_the_communist_victory-53335.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_LOU_the_communist_victory-53335.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Every Man A King!
+	SpriteType = { 
+		name = "GFX_LOU_every_man_a_king-54021"
+		texturefile = "gfx/interface/goals/GFX_LOU_every_man_a_king-54021.dds"
+	}
+
+	##Icon Shine For: Every Man A King!
+	SpriteType = { 
+		name = "GFX_LOU_every_man_a_king-54021_shine"
+		texturefile = "gfx/interface/goals/GFX_LOU_every_man_a_king-54021.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_LOU_every_man_a_king-54021.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_LOU_every_man_a_king-54021.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Between Two Powers
+	SpriteType = { 
+		name = "GFX_LOU_between_two_powers-54023"
+		texturefile = "gfx/interface/goals/GFX_LOU_between_two_powers-54023.dds"
+	}
+
+	##Icon Shine For: Between Two Powers
+	SpriteType = { 
+		name = "GFX_LOU_between_two_powers-54023_shine"
+		texturefile = "gfx/interface/goals/GFX_LOU_between_two_powers-54023.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_LOU_between_two_powers-54023.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_LOU_between_two_powers-54023.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The Reconstruction of the Union
+	SpriteType = { 
+		name = "GFX_LOU_the_reconstruction_of_the_union-44519"
+		texturefile = "gfx/interface/goals/GFX_LOU_the_reconstruction_of_the_union-44519.dds"
+	}
+
+	##Icon Shine For: The Reconstruction of the Union
+	SpriteType = { 
+		name = "GFX_LOU_the_reconstruction_of_the_union-44519_shine"
+		texturefile = "gfx/interface/goals/GFX_LOU_the_reconstruction_of_the_union-44519.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_LOU_the_reconstruction_of_the_union-44519.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_LOU_the_reconstruction_of_the_union-44519.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The Texan Reconquest
+	SpriteType = { 
+		name = "GFX_LOU_the_texan_reconquest-44520"
+		texturefile = "gfx/interface/goals/GFX_LOU_the_texan_reconquest-44520.dds"
+	}
+
+	##Icon Shine For: The Texan Reconquest
+	SpriteType = { 
+		name = "GFX_LOU_the_texan_reconquest-44520_shine"
+		texturefile = "gfx/interface/goals/GFX_LOU_the_texan_reconquest-44520.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_LOU_the_texan_reconquest-44520.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_LOU_the_texan_reconquest-44520.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+ 
+ }

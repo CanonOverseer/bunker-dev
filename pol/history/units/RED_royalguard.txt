@@ -1,0 +1,57 @@
+﻿division_template = {
+	name = "Royal Guard Division"		
+	# Represents: Infantry Division (Series A and B), Div. d'Inf. de Forteresse
+	# Difference is their equipment
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 } 	# Heavy Arty Regiment had 2x 155mm battalions
+	}
+}
+units = {
+
+	division = {
+		name = "Royal Guard Regiment"
+		location = 485
+		division_template = "Royal Guard Division"
+		start_experience_factor = 1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Royal Guard Regiment"
+		location = 485
+		division_template = "Royal Guard Division"
+		start_experience_factor = 1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Royal Guard Regiment"
+		location = 485
+		division_template = "Royal Guard Division"
+		start_experience_factor = 1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Royal Guard Regiment"
+		location = 485
+		division_template = "Royal Guard Division"
+		start_experience_factor = 1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Royal Guard Regiment"
+		location = 485
+		division_template = "Royal Guard Division"
+		start_experience_factor = 1
+		start_equipment_factor = 0.8
+	}
+}

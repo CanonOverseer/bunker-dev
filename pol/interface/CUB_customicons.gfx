@@ -1,0 +1,155 @@
+spriteTypes = { 
+	##Icon For: Fascist King Eesti
+	SpriteType = { 
+		name = "GFX_CUB_fascist_king_eesti-44464"
+		texturefile = "gfx/interface/goals/GFX_CUB_fascist_king_eesti-44464.dds"
+	}
+
+	##Icon Shine For: Fascist King Eesti
+	SpriteType = { 
+		name = "GFX_CUB_fascist_king_eesti-44464_shine"
+		texturefile = "gfx/interface/goals/GFX_CUB_fascist_king_eesti-44464.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CUB_fascist_king_eesti-44464.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CUB_fascist_king_eesti-44464.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: King Slurp
+	SpriteType = { 
+		name = "GFX_CUB_king_slurp-44463"
+		texturefile = "gfx/interface/goals/GFX_CUB_king_slurp-44463.dds"
+	}
+
+	##Icon Shine For: King Slurp
+	SpriteType = { 
+		name = "GFX_CUB_king_slurp-44463_shine"
+		texturefile = "gfx/interface/goals/GFX_CUB_king_slurp-44463.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CUB_king_slurp-44463.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CUB_king_slurp-44463.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Make Haiti and the Dominican Republic Cuban
+	SpriteType = { 
+		name = "GFX_CUB_make_haiti_and_the_dominican_republic_cuban-44462"
+		texturefile = "gfx/interface/goals/GFX_CUB_make_haiti_and_the_dominican_republic_cuban-44462.dds"
+	}
+
+	##Icon Shine For: Make Haiti and the Dominican Republic Cuban
+	SpriteType = { 
+		name = "GFX_CUB_make_haiti_and_the_dominican_republic_cuban-44462_shine"
+		texturefile = "gfx/interface/goals/GFX_CUB_make_haiti_and_the_dominican_republic_cuban-44462.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CUB_make_haiti_and_the_dominican_republic_cuban-44462.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CUB_make_haiti_and_the_dominican_republic_cuban-44462.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Puppet Jamaica and the Bahamas
+	SpriteType = { 
+		name = "GFX_CUB_puppet_jamaica_and_the_bahamas-44461"
+		texturefile = "gfx/interface/goals/GFX_CUB_puppet_jamaica_and_the_bahamas-44461.dds"
+	}
+
+	##Icon Shine For: Puppet Jamaica and the Bahamas
+	SpriteType = { 
+		name = "GFX_CUB_puppet_jamaica_and_the_bahamas-44461_shine"
+		texturefile = "gfx/interface/goals/GFX_CUB_puppet_jamaica_and_the_bahamas-44461.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CUB_puppet_jamaica_and_the_bahamas-44461.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CUB_puppet_jamaica_and_the_bahamas-44461.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+ 
+ }

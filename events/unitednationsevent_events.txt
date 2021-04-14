@@ -1,0 +1,72 @@
+add_namespace = unitednationsevent
+
+##Event: We Demand the Netherlands Kneel!
+country_event = {
+	id = unitednationsevent.1
+	title = unitednationsevent.1.title
+	desc = unitednationsevent.1.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = unitednationsevent.1.a
+		ai_chance = { factor = 1}
+		HOL = { country_event = { id = unitednationsevent.2} }
+	}
+}
+##Event: The United Nations Demands We Submit to Them
+country_event = {
+	id = unitednationsevent.2
+	title = unitednationsevent.2.title
+	desc = unitednationsevent.2.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = unitednationsevent.2.a
+		ai_chance = { factor = 1}
+		BEL = { country_event = { id = unitednationsevent.3} }
+
+BEL = {
+annex_country = { target = HOL transfer_troops = yes }
+	}
+	option = {
+		name = unitednationsevent.2.b
+		ai_chance = { factor = 1}
+		HOL = { country_event = { id = unitednationsevent.4} }
+	}
+}
+##Event: They Have Accepted!
+country_event = {
+	id = unitednationsevent.3
+	title = unitednationsevent.3.title
+	desc = unitednationsevent.3.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = unitednationsevent.3.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: They Refuse
+country_event = {
+	id = unitednationsevent.4
+	title = unitednationsevent.4.title
+	desc = unitednationsevent.4.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = unitednationsevent.4.a
+		ai_chance = { factor = 1}
+		create_wargoal= { 
+type = annex_everything 
+target = HOL
+}
+	}
+	option = {
+		name = unitednationsevent.4.b
+		ai_chance = { factor = 1}
+	}
+}

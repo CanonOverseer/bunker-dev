@@ -1,0 +1,84 @@
+add_namespace = kevevents
+
+##Event: Demand Iraq
+country_event = {
+	id = kevevents.1
+	title = kevevents.1.title
+	desc = kevevents.1.desc
+	picture = GFX_report_event_spr_republican_old_volunteers
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = kevevents.1.a
+		ai_chance = { factor = 1}
+		IRQ = { country_event = { id = kevevents.2} }
+	}
+}
+##Event: Kevistan Demands Annexation!
+country_event = {
+	id = kevevents.2
+	title = kevevents.2.title
+	desc = kevevents.2.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = kevevents.2.a
+		ai_chance = { factor = 1}
+		OMA = { country_event = { id = kevevents.3} }
+	}
+	option = {
+		name = kevevents.2.b
+		ai_chance = { factor = 1}
+		OMA = { country_event = { id = kevevents.5} }
+	}
+}
+##Event: Iraq Accepts
+country_event = {
+	id = kevevents.3
+	title = kevevents.3.title
+	desc = kevevents.3.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = kevevents.3.a
+		ai_chance = { factor = 1}
+		annex_country = { target = IRQ transfer_troops = yes }
+
+news_event= {
+days = 1 
+id = kevevents.4
+}
+	}
+}
+##Event: Anschluss of Iraq
+news_event = {
+	id = kevevents.4
+	title = kevevents.4.title
+	desc = kevevents.4.desc
+	picture = GFX_news_event_soviet_tanks
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = kevevents.4.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Iraq Denies
+country_event = {
+	id = kevevents.5
+	title = kevevents.5.title
+	desc = kevevents.5.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = kevevents.5.a
+		ai_chance = { factor = 1}
+		create_wargoal= { 
+type = annex_everything 
+target = IRQ
+}
+	}
+}

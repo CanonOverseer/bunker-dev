@@ -1,0 +1,1226 @@
+focus_tree = {
+	id = focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TEX
+		}
+	}
+	#Focus for Fighter Effort
+	focus = {
+		id = TEX_fighter_effort
+		icon = GFX_goal_generic_air_fighter2
+		x = 32
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_texan_air_war_plans_division }
+		mutually_exclusive = { focus = TEX_bomber_effort }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience= 10
+
+add_tech_bonus = {
+name = fighter_bonus
+bonus = 1.0
+uses = 2
+technology = early_fighter
+technology = fighter1
+technology = fighter2
+technology = fighter3
+technology = heavy_fighter1
+technology = heavy_fighter2
+technology = heavy_fighter3
+	}
+		}
+	}
+
+	#Focus for Texan Air War Plans Division
+	focus = {
+		id = TEX_texan_air_war_plans_division
+		icon = GFX_goal_generic_build_airforce
+		x = 29
+		y = 1
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_establish_the_texan_department_of_war }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = air_war_plans_division_focus
+		}
+	}
+
+	#Focus for Texan Tanks!
+	focus = {
+		id = TEX_texan_tanks
+		icon = GFX_focus_generic_army_tanks2
+		x = 26
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_establish_the_texan_department_of_war }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = USA_tank_experiments
+uses = 1
+bonus = 1.0
+category = armor
+}
+		}
+	}
+
+	#Focus for Texan Paratroopers
+	focus = {
+		id = TEX_texan_paratroopers
+		icon = GFX_focus_generic_paratrooper
+		x = 20
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_texas_desert_maneuvers }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = USA_airborne_divisions
+		}
+	}
+
+	#Focus for Texas Desert Maneuvers
+	focus = {
+		id = TEX_texas_desert_maneuvers
+		icon = GFX_focus_prc_infiltration
+		x = 23
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_cowboy_mercenaries }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = USA_louisiana_maneuvers
+bonus = 1.0
+uses = 1
+category = land_doctrine
+}
+		}
+	}
+
+	#Focus for State Trained Militias
+	focus = {
+		id = TEX_state_trained_militias
+		icon = GFX_focus_eng_special_air_service
+		x = 20
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_cowboy_mercenaries }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = special_bonus
+bonus = 1.0
+uses = 1
+technology = paratroopers
+technology = paratroopers2
+technology = tech_mountaineers
+technology = tech_mountaineers2
+technology = tech_engineers
+technology = tech_engineers2
+technology = tech_engineers3
+technology = tech_recon
+technology = tech_recon2
+technology = tech_recon3
+}
+		}
+	}
+
+	#Focus for Cowboy Mercenaries
+	focus = {
+		id = TEX_cowboy_mercenaries
+		icon = GFX_goal_generic_cavalry
+		x = 23
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_establish_the_texan_department_of_war }
+		search_filters = { FOCUS_FILTER_MANPOWER } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower= 8000
+
+add_war_support = 0.10
+		}
+	}
+
+	#Focus for Establish The Texan Department of War
+	focus = {
+		id = TEX_establish_the_texan_department_of_war
+		icon = GFX_TEX_establish_the_texan_department_of_war-45627
+		x = 26
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			add_ideas = USA_war_department
+
+army_experience = 100
+		}
+	}
+
+	#Focus for Heavy Aerial Research Department
+	focus = {
+		id = TEX_heavy_aerial_research_department
+		icon = GFX_goal_continuous_air_production
+		x = 29
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TEX_fighter_effort 
+			focus = TEX_bomber_effort 
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = USA_combined_bomber_offensive
+bonus = 1.0
+uses = 1
+category = heavy_air
+	}
+
+add_ideas = combined_bomber_offensive
+		}
+	}
+
+	#Focus for Civilian Factory Expansion II
+	focus = {
+		id = TEX_civilian_factory_expansion_ii
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 40
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_civilian_factory_expansion }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_offsite_building= { type = industrial_complex level = 2 }
+		}
+	}
+
+	#Focus for Military Factory Expansion III
+	focus = {
+		id = TEX_military_factory_expansion_iii
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 36
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_military_factory_expansion_ii }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_offsite_building= { type = arms_factory level = 2 }
+		}
+	}
+
+	#Focus for Military Desegregation
+	focus = {
+		id = TEX_military_desegregation
+		icon = GFX_goal_generic_territory_or_war
+		x = 9
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_democratic_victory }
+		search_filters = { FOCUS_FILTER_MANPOWER } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.25
+
+add_ideas = USA_armed_forces_desegregation
+		}
+	}
+
+	#Focus for Texas Alone
+	focus = {
+		id = TEX_texas_alone
+		icon = GFX_goal_demand_sudetenland
+		x = 21
+		y = 8
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_playing_our_hand }
+		mutually_exclusive = { focus = TEX_our_american_brothers }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for Playing our Hand
+	focus = {
+		id = TEX_playing_our_hand
+		icon = GFX_TEX_playing_our_hand-45578
+		x = 20
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TEX_propaganda 
+			focus = TEX_expanding_the_capital 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for A Shining Example of Success
+	focus = {
+		id = TEX_a_shining_example_of_success
+		icon = GFX_TEX_a_shining_example_of_success-45517
+		x = 17
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_lone_star_victory }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.2
+
+add_political_power= 150
+
+add_ideas = militarism_focus
+		}
+	}
+
+	#Focus for Red Star Victory
+	focus = {
+		id = TEX_red_star_victory
+		icon = GFX_TEX_red_star_victory-45510
+		x = 13
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_the_elections }
+		mutually_exclusive = { 
+			focus = TEX_lone_star_victory 
+			focus = TEX_democratic_victory 
+			focus = TEX_ 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_flag = communist_texas
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = communism
+popularity = 0.4
+}
+ 
+set_politics= {
+ ruling_party = communism 
+elections_allowed = no 
+}
+
+create_country_leader = {
+	name = "James Harvey Davis"
+	desc = "TBD"
+	picture = "gfx/leaders/TEX/james.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		triumphant_revolutionary
+                devoted_trotskyist
+	}
+}
+		}
+	}
+
+	#Focus for The Elections
+	focus = {
+		id = TEX_the_elections
+		icon = GFX_TEX_the_elections-45500
+		x = 13
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_state_of_the_union }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = texasevent.1
+}
+		}
+	}
+
+	#Focus for State of the "Union"
+	focus = {
+		id = TEX_state_of_the_union
+		icon = GFX_TEX_state_of_the_union-45493
+		x = 13
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_party_name= { 
+ideology = fascism 
+long_name = "Lone Star Party" 
+name = "Lone Star Party"
+}
+		}
+	}
+
+	#Focus for The Border Crisis!
+	focus = {
+		id = TEX_the_border_crisis
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = 26
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TEX_expanding_the_capital 
+			focus = TEX_propaganda 
+			focus = TEX_make_the_promise 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Expand the Oil Fields
+	focus = {
+		id = TEX_expand_the_oil_fields
+		icon = GFX_goal_generic_oil_refinery
+		x = 16
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_texaco_oil }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_offsite_building= { type = fuel_silo level = 1 }
+
+add_offsite_building= { type = fuel_silo level = 1 }
+		}
+	}
+
+	#Focus for Expanding the Capital
+	focus = {
+		id = TEX_expanding_the_capital
+		icon = GFX_focus_generic_industry_3
+		x = 19
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_texan_military_exercises }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_offsite_building= { type = arms_factory level = 2 }
+		}
+	}
+
+	#Focus for Texaco Oil
+	focus = {
+		id = TEX_texaco_oil
+		icon = GFX_TEX_texaco_oil-45559
+		x = 16
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_a_shining_example_of_success }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_offsite_building= { type = synthetic_refinery level = 3 }
+		}
+	}
+
+	#Focus for Propaganda
+	focus = {
+		id = TEX_propaganda
+		icon = GFX_goal_support_communism
+		x = 13
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_collaboration_with_the_soviets }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = political_commissars_focus
+
+add_political_power = 100
+		}
+	}
+
+	#Focus for Texan Military Exercises
+	focus = {
+		id = TEX_texan_military_exercises
+		icon = GFX_focus_generic_manpower
+		x = 19
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_a_shining_example_of_success }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = paramilitarism_focus
+		}
+	}
+
+	#Focus for Protect Democracy at all Costs
+	focus = {
+		id = TEX_protect_democracy_at_all_costs
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		x = 9
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_military_desegregation }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_political_party= { 
+ideology = fascism 
+popularity = -20 
+}
+
+set_political_party= { 
+ideology = communism 
+popularity = -20 
+}
+		}
+	}
+
+	#Focus for Democratic Victory
+	focus = {
+		id = TEX_democratic_victory
+		icon = GFX_goal_support_democracy
+		x = 9
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_the_elections }
+		mutually_exclusive = { 
+			focus = TEX_red_star_victory 
+			focus = TEX_lone_star_victory 
+			focus = TEX_ 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_flag = democratic_texas
+		}
+		completion_reward = {
+			set_politics= {
+ ruling_party = democratic 
+elections_allowed = yes 
+}
+
+add_popularity= { 
+ideology = democratic 
+popularity = 0.4
+}
+
+create_country_leader = {
+	name = "John Nance Garner"
+	desc = "TBD"
+	picture = "gfx/leaders/BNK/johna.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		popular_figurehead	
+	}
+}
+		}
+	}
+
+	#Focus for Lone Star Victory
+	focus = {
+		id = TEX_lone_star_victory
+		icon = GFX_TEX_lone_star_victory-45505
+		x = 17
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_the_elections }
+		mutually_exclusive = { 
+			focus = TEX_red_star_victory 
+			focus = TEX_democratic_victory 
+			focus = TEX_ 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_flag = fascist_texas
+		}
+		completion_reward = {
+			set_politics= {
+ ruling_party = fascism 
+elections_allowed = no 
+}
+
+add_popularity= { 
+ideology = fascism 
+popularity = 0.4
+}
+
+create_country_leader = {
+	name = "Andrew Jackson Houston"
+	desc = "TBD"
+	picture = "gfx/leaders/TEX/andrew.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		dictator
+                empire_builder	
+	}
+}
+		}
+	}
+
+	#Focus for Collaboration with the Soviets
+	focus = {
+		id = TEX_collaboration_with_the_soviets
+		icon = GFX_focus_generic_socialist_science
+		x = 13
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_communism_at_its_finest }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot= 1
+		}
+	}
+
+	#Focus for Our American Brothers
+	focus = {
+		id = TEX_our_american_brothers
+		icon = GFX_focus_chi_mission_to_the_us
+		x = 18
+		y = 8
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TEX_playing_our_hand 
+			focus = TEX_make_the_promise 
+		}
+		mutually_exclusive = { focus = TEX_texas_alone }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower= 50000
+		}
+	}
+
+	#Focus for Desegregate the Military
+	focus = {
+		id = TEX_desegregate_the_military
+		icon = GFX_goal_generic_military_sphere
+		x = 9
+		y = 5
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_protect_democracy_at_all_costs }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = USA_armed_forces_desegregation
+		}
+	}
+
+	#Focus for Make the Promise
+	focus = {
+		id = TEX_make_the_promise
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		x = 9
+		y = 6
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_desegregate_the_military }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support= 0.5
+
+add_stability = 0.15
+		}
+	}
+
+	#Focus for For the Alamo!
+	focus = {
+		id = TEX_for_the_alamo
+		icon = GFX_TEX_for_the_alamo-45603
+		x = 28
+		y = 8
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_the_border_crisis }
+		mutually_exclusive = { focus = TEX_bow_to_mexico }
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = MEX
+}
+		}
+	}
+
+	#Focus for Bow to Mexico
+	focus = {
+		id = TEX_bow_to_mexico
+		icon = GFX_focus_CZE_german_puppet
+		x = 24
+		y = 8
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_the_border_crisis }
+		mutually_exclusive = { focus = TEX_for_the_alamo }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = texasevent.2
+}
+		}
+	}
+
+	#Focus for The Louisiana Question
+	focus = {
+		id = TEX_the_louisiana_question
+		icon = GFX_TEX_the_louisiana_question-45607
+		x = 23
+		y = 9
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TEX_our_american_brothers 
+			focus = TEX_texas_alone 
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = LOU
+}
+		}
+	}
+
+	#Focus for The Midwest is another Traitor!
+	focus = {
+		id = TEX_the_midwest_is_another_traitor
+		icon = GFX_TEX_the_midwest_is_another_traitor-45609
+		x = 20
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TEX_texas_alone 
+			focus = TEX_our_american_brothers 
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = MDW
+}
+		}
+	}
+
+	#Focus for End of the PSA
+	focus = {
+		id = TEX_end_of_the_psa
+		icon = GFX_TEX_end_of_the_psa-53919
+		x = 18
+		y = 9
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TEX_texas_alone 
+			focus = TEX_our_american_brothers 
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = PSA
+}
+		}
+	}
+
+	#Focus for The Alabama Threat
+	focus = {
+		id = TEX_the_alabama_threat
+		icon = GFX_TEX_the_alabama_threat-45611
+		x = 22
+		y = 10
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_the_midwest_is_another_traitor }
+		mutually_exclusive = { focus = TEX_relations_with_alabama }
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			num_divisions> 24
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = ALB
+}
+		}
+	}
+
+	#Focus for Relations with Alabama
+	focus = {
+		id = TEX_relations_with_alabama
+		icon = GFX_TEX_relations_with_alabama-45617
+		x = 18
+		y = 10
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_the_midwest_is_another_traitor }
+		mutually_exclusive = { focus = TEX_the_alabama_threat }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = texasevent.5
+}
+		}
+	}
+
+	#Focus for A Shining Future
+	focus = {
+		id = TEX_a_shining_future
+		icon = GFX_TEX_a_shining_future-45618
+		x = 20
+		y = 12
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TEX_the_alabama_threat 
+			focus = TEX_relations_with_alabama 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war= no
+		}
+		completion_reward = {
+			add_stability= 0.35
+		}
+	}
+
+	#Focus for Communism at its Finest
+	focus = {
+		id = TEX_communism_at_its_finest
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 13
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_red_star_victory }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+
+add_stability = 0.15
+
+add_war_support = 0.20
+		}
+	}
+
+	#Focus for Texan Women's Armed Integration Act
+	focus = {
+		id = TEX_texan_womens_armed_integration_act
+		icon = GFX_focus_mex_soldaderas
+		x = 23
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_texas_desert_maneuvers }
+		search_filters = { FOCUS_FILTER_MANPOWER } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = USA_womens_armed_service_integration_act
+		}
+	}
+
+	#Focus for Cool Ass TANKS!
+	focus = {
+		id = TEX_cool_ass_tanks
+		icon = GFX_focus_generic_combined_arms
+		x = 26
+		y = 2
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_texan_tanks }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+		complete_tooltip = {
+			custom_effect_tooltip = available_designer
+
+show_ideas_tooltip = detroit_arsenal
+		}
+	}
+
+	#Focus for Bomber Effort
+	focus = {
+		id = TEX_bomber_effort
+		icon = GFX_goal_generic_air_bomber
+		x = 29
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_texan_air_war_plans_division }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = bomber_bonus
+bonus = 1.0
+uses = 2
+technology = strategic_bomber1
+technology = strategic_bomber2
+technology = strategic_bomber3
+category = tactical_bomber
+	}
+		}
+	}
+
+	#Focus for CAS Effort
+	focus = {
+		id = TEX_cas_effort
+		icon = GFX_goal_generic_air_naval_bomber
+		x = 32
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_fighter_effort }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = CAS_bonus
+bonus = 1.0
+ahead_reduction = 2
+uses = 1
+category = cas_bomber
+	}
+		}
+	}
+
+	#Focus for Military Factory Expansion II
+	focus = {
+		id = TEX_military_factory_expansion_ii
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 36
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_military_factory_expansion }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_offsite_building= { type = arms_factory level = 2 }
+		}
+	}
+
+	#Focus for Epic Armored Infantry
+	focus = {
+		id = TEX_epic_armored_infantry
+		icon = GFX_goal_generic_build_tank
+		x = 26
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_cool_ass_tanks }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = USA_armored_infantry
+uses = 2
+bonus = 1.0
+category = motorized_equipment
+	}
+		}
+	}
+
+	#Focus for Military Factory Expansion
+	focus = {
+		id = TEX_military_factory_expansion
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 39
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_offsite_building= { type = arms_factory level = 1 }
+		}
+	}
+
+	#Focus for Civilian Factory Expansion
+	focus = {
+		id = TEX_civilian_factory_expansion
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 41
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_offsite_building= { type = industrial_complex level = 1 }
+		}
+	}
+
+	#Focus for Infrastructural Effort
+	focus = {
+		id = TEX_infrastructural_effort
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 38
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TEX_military_factory_expansion 
+			focus = TEX_civilian_factory_expansion 
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			375 = {
+set_building_level = {
+    type = infrastructure
+    level = 5
+    instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Infrastructural Effort II
+	focus = {
+		id = TEX_infrastructural_effort_ii
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 38
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_infrastructural_effort }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			376 = {
+set_building_level = {
+    type = infrastructure
+    level = 5
+    instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Civilian Expansion III
+	focus = {
+		id = TEX_civilian_expansion_iii
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 40
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_civilian_factory_expansion }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_offsite_building= { type = industrial_complex level = 1 }
+		}
+	}
+
+	#Focus for R&D Expansion
+	focus = {
+		id = TEX_rd_expansion
+		icon = GFX_goal_continuous_research
+		x = 38
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TEX_military_factory_expansion_iii 
+		}
+		prerequisite = { 
+			focus = TEX_civilian_expansion_iii 
+		}
+		prerequisite = { 
+			focus = TEX_infrastructural_effort_ii 
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot= 1
+		}
+	}
+
+	#Focus for Kabooom!
+	focus = {
+		id = TEX_kabooom
+		icon = GFX_focus_wonderweapons
+		x = 38
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEX_rd_expansion }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = secret_bonus
+bonus = 1.0
+uses = 4
+category = electronics
+category = nuclear
+category = rocketry
+	}
+		}
+	}
+
+#End of focuses 
+ }

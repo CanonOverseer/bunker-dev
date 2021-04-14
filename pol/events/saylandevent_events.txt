@@ -1,0 +1,747 @@
+add_namespace = saylandevent
+
+##Event: Pacify Belarus
+country_event = {
+	id = saylandevent.1
+	title = saylandevent.1.title
+	desc = saylandevent.1.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.1.a
+		ai_chance = { factor = 1}
+		BLR = { country_event = { id = saylandevent.2 } }
+	}
+}
+##Event: Sayland Demands we sign a Non-Aggression
+country_event = {
+	id = saylandevent.2
+	title = saylandevent.2.title
+	desc = saylandevent.2.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.2.a
+		ai_chance = { factor = 1}
+		diplomatic_relation= { 
+country = SAY
+relation = non_aggression_pact 
+}
+
+SAY = { country_event = { id = saylandevent.3 } }
+	}
+	option = {
+		name = saylandevent.2.b
+		ai_chance = { factor = 1}
+		SAY = { country_event = { id = saylandevent.4 } }
+	}
+}
+##Event: Belarus Accepts!
+country_event = {
+	id = saylandevent.3
+	title = saylandevent.3.title
+	desc = saylandevent.3.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.3.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Belarus Says No
+country_event = {
+	id = saylandevent.4
+	title = saylandevent.4.title
+	desc = saylandevent.4.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.4.a
+		ai_chance = { factor = 1}
+	}
+	option = {
+		name = saylandevent.4.b
+		ai_chance = { factor = 1}
+		create_wargoal= { 
+type = annex_everything 
+target = BLR
+}
+	}
+}
+##Event: We will ask Belarus to be our puppet
+country_event = {
+	id = saylandevent.5
+	title = saylandevent.5.title
+	desc = saylandevent.5.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.5.a
+		ai_chance = { factor = 1}
+		BLR = { country_event = { id = saylandevent.6 } }
+	}
+}
+##Event: Sayland Asks us to be their puppet
+country_event = {
+	id = saylandevent.6
+	title = saylandevent.6.title
+	desc = saylandevent.6.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.6.a
+		ai_chance = { factor = 1}
+		SAY = {
+puppet= BLR
+}
+
+SAY = { country_event = { id = saylandevent.7 } }
+	}
+	option = {
+		name = saylandevent.6.b
+		ai_chance = { factor = 1}
+		SAY = { country_event = { id = saylandevent.8 } }
+	}
+}
+##Event: Belarus Says Yes!
+country_event = {
+	id = saylandevent.7
+	title = saylandevent.7.title
+	desc = saylandevent.7.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.7.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Belarus Says No!
+country_event = {
+	id = saylandevent.8
+	title = saylandevent.8.title
+	desc = saylandevent.8.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.8.a
+		ai_chance = { factor = 1}
+	}
+	option = {
+		name = saylandevent.8.b
+		ai_chance = { factor = 1}
+		declare_war_on= { 
+target = BLR
+type = annex_everything 
+}
+	}
+}
+##Event: Demand Western Ukraine
+country_event = {
+	id = saylandevent.9
+	title = saylandevent.9.title
+	desc = saylandevent.9.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.9.a
+		ai_chance = { factor = 1}
+		UKR = { country_event = { id = saylandevent.10 } }
+	}
+}
+##Event: Sayland demands our rightful land!
+country_event = {
+	id = saylandevent.10
+	title = saylandevent.10.title
+	desc = saylandevent.10.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.10.a
+		ai_chance = { factor = 1}
+		SAY = {
+set_state_owner= 199
+}
+
+SAY = {
+set_state_owner= 201
+}
+
+SAY = {
+set_state_owner= 198
+}
+
+SAY = {
+set_state_controller= 199
+}
+
+SAY = {
+set_state_controller= 201 
+}
+
+SAY = {
+set_state_controller= 198
+}
+
+
+SAY = { country_event = { id = saylandevent.11 } }
+	}
+	option = {
+		name = saylandevent.10.b
+		ai_chance = { factor = 1}
+		SAY = { country_event = { id = saylandevent.12 } }
+	}
+}
+##Event: Ukraine Accepts!
+country_event = {
+	id = saylandevent.11
+	title = saylandevent.11.title
+	desc = saylandevent.11.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.11.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Ukraine Denies
+country_event = {
+	id = saylandevent.12
+	title = saylandevent.12.title
+	desc = saylandevent.12.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.12.a
+		ai_chance = { factor = 1}
+	}
+	option = {
+		name = saylandevent.12.b
+		ai_chance = { factor = 1}
+		create_wargoal= { 
+type = annex_everything 
+target = UKR
+}
+	}
+}
+##Event: An Agreement with Ukraine
+country_event = {
+	id = saylandevent.13
+	title = saylandevent.13.title
+	desc = saylandevent.13.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.13.a
+		ai_chance = { factor = 1}
+		UKR = { country_event = { id = saylandevent.14 } }
+	}
+}
+##Event: Sayland Asks us to sign a Non-Aggression Pact
+country_event = {
+	id = saylandevent.14
+	title = saylandevent.14.title
+	desc = saylandevent.14.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.14.a
+		ai_chance = { factor = 1}
+		diplomatic_relation= { 
+country = SAY
+relation = non_aggression_pact 
+}
+
+SAY = { country_event = { id = saylandevent.15 } }
+	}
+	option = {
+		name = saylandevent.14.b
+		ai_chance = { factor = 1}
+		SAY = { country_event = { id = saylandevent.16 } }
+	}
+}
+##Event: Ukraine Says Yes!
+country_event = {
+	id = saylandevent.15
+	title = saylandevent.15.title
+	desc = saylandevent.15.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.15.a
+		ai_chance = { factor = 1}
+	}
+	option = {
+		name = saylandevent.15.b
+		ai_chance = { factor = 1}
+		create_wargoal= { 
+type = annex_everything 
+target = ENG
+}
+	}
+}
+##Event: Ukraine Denies
+country_event = {
+	id = saylandevent.16
+	title = saylandevent.16.title
+	desc = saylandevent.16.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.16.a
+		ai_chance = { factor = 1}
+	}
+	option = {
+		name = saylandevent.16.b
+		ai_chance = { factor = 1}
+		create_wargoal= { 
+type = annex_everything 
+target = UKR
+}
+	}
+}
+##Event: The Greenland Question
+country_event = {
+	id = saylandevent.17
+	title = saylandevent.17.title
+	desc = saylandevent.17.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.17.a
+		ai_chance = { factor = 1}
+		DEN = { country_event = { id = saylandevent.18 } }
+	}
+}
+##Event: Sayland Demands Greenland
+country_event = {
+	id = saylandevent.18
+	title = saylandevent.18.title
+	desc = saylandevent.18.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.18.a
+		ai_chance = { factor = 2}
+		SAY = { country_event = { id = saylandevent.19 } }
+
+SAY = {
+set_state_controller= 101 
+}
+
+SAY = {
+set_state_owner= 101
+}
+	}
+	option = {
+		name = saylandevent.18.b
+		ai_chance = { factor = 1}
+		SAY = { country_event = { id = saylandevent.20 } }
+	}
+}
+##Event: Denmark Folds
+country_event = {
+	id = saylandevent.19
+	title = saylandevent.19.title
+	desc = saylandevent.19.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.19.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Denmark Refuses
+country_event = {
+	id = saylandevent.20
+	title = saylandevent.20.title
+	desc = saylandevent.20.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.20.a
+		ai_chance = { factor = 1}
+	}
+	option = {
+		name = saylandevent.20.b
+		ai_chance = { factor = 1}
+		create_wargoal= { 
+type = annex_everything 
+target = DEN
+}
+	}
+}
+##Event: Demand Newfoundland
+country_event = {
+	id = saylandevent.21
+	title = saylandevent.21.title
+	desc = saylandevent.21.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.21.a
+		ai_chance = { factor = 1}
+		ENG = { country_event = { id = saylandevent.22 } }
+	}
+}
+##Event: Sayland Demands Newfoundland!
+country_event = {
+	id = saylandevent.22
+	title = saylandevent.22.title
+	desc = saylandevent.22.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.22.a
+		ai_chance = { factor = 1}
+		SAY = { country_event = { id = saylandevent.23 } }
+
+SAY = {
+set_state_controller= 331
+}
+
+SAY = {
+set_state_owner= 331
+}
+	}
+	option = {
+		name = saylandevent.22.b
+		ai_chance = { factor = 1}
+		SAY = { country_event = { id = saylandevent.24 } }
+	}
+}
+##Event: Britain Gives us Newfoundland!
+country_event = {
+	id = saylandevent.23
+	title = saylandevent.23.title
+	desc = saylandevent.23.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.23.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Britain Says No!
+country_event = {
+	id = saylandevent.24
+	title = saylandevent.24.title
+	desc = saylandevent.24.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.24.a
+		ai_chance = { factor = 1}
+	}
+	option = {
+		name = saylandevent.24.b
+		ai_chance = { factor = 1}
+		create_wargoal= { 
+type = annex_everything 
+target = ENG
+}
+	}
+}
+##Event: We Offer non-aggression to Florida
+country_event = {
+	id = saylandevent.25
+	title = saylandevent.25.title
+	desc = saylandevent.25.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.25.a
+		ai_chance = { factor = 1}
+		FLR = { country_event = { id = saylandevent.26 } }
+	}
+}
+##Event: Sayland offers us Non-Aggression Pact
+country_event = {
+	id = saylandevent.26
+	title = saylandevent.26.title
+	desc = saylandevent.26.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.26.a
+		ai_chance = { factor = 2}
+		diplomatic_relation= { 
+country = SAY
+relation = non_aggression_pact 
+}
+
+SAY = { country_event = { id = saylandevent.27 } }
+	}
+	option = {
+		name = saylandevent.26.b
+		ai_chance = { factor = 1}
+		SAY = { country_event = { id = saylandevent.28 } }
+	}
+}
+##Event: Florida Accepts!
+country_event = {
+	id = saylandevent.27
+	title = saylandevent.27.title
+	desc = saylandevent.27.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.27.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Florida Denies!
+country_event = {
+	id = saylandevent.28
+	title = saylandevent.28.title
+	desc = saylandevent.28.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.28.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: The West Florida Crisis
+country_event = {
+	id = saylandevent.29
+	title = saylandevent.29.title
+	desc = saylandevent.29.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.29.a
+		ai_chance = { factor = 1}
+		ABM = { country_event = { id = saylandevent.30 } }
+	}
+}
+##Event: The West Florida Crisis!
+country_event = {
+	id = saylandevent.30
+	title = saylandevent.30.title
+	desc = saylandevent.30.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.30.a
+		ai_chance = { factor = 1}
+		SAY = { country_event = { id = saylandevent.31 } }
+
+FLR = {
+set_state_controller= 799
+}
+
+FLR = {
+set_state_owner= 799
+}
+	}
+	option = {
+		name = saylandevent.30.b
+		ai_chance = { factor = 1}
+		SAY = { country_event = { id = saylandevent.32 } }
+	}
+}
+##Event: Crisis Averted! Alabama returns West Florida!
+country_event = {
+	id = saylandevent.31
+	title = saylandevent.31.title
+	desc = saylandevent.31.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.31.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Alabama Refuses!
+country_event = {
+	id = saylandevent.32
+	title = saylandevent.32.title
+	desc = saylandevent.32.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.32.a
+		ai_chance = { factor = 1}
+	}
+	option = {
+		name = saylandevent.32.b
+		ai_chance = { factor = 1}
+		create_wargoal= { 
+type = annex_everything 
+target = ABM
+}
+	}
+}
+##Event: An Offer of Union
+country_event = {
+	id = saylandevent.33
+	title = saylandevent.33.title
+	desc = saylandevent.33.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.33.a
+		ai_chance = { factor = 1}
+		FLR = { country_event = { id = saylandevent.34 } }
+	}
+}
+##Event: Sayland offers an Alliance!
+country_event = {
+	id = saylandevent.34
+	title = saylandevent.34.title
+	desc = saylandevent.34.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.34.a
+		ai_chance = { factor = 2}
+		SAY = { country_event = { id = saylandevent.35 } }
+
+SAY = {add_to_faction = FLR}
+	}
+	option = {
+		name = saylandevent.34.b
+		ai_chance = { factor = 1}
+		SAY = { country_event = { id = saylandevent.36 } }
+	}
+}
+##Event: Florida Accepts our Alliance!
+country_event = {
+	id = saylandevent.35
+	title = saylandevent.35.title
+	desc = saylandevent.35.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.35.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Florida Denies Alliance!
+country_event = {
+	id = saylandevent.36
+	title = saylandevent.36.title
+	desc = saylandevent.36.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.36.a
+		ai_chance = { factor = 1}
+	}
+	option = {
+		name = saylandevent.36.b
+		ai_chance = { factor = 1}
+		create_wargoal= { 
+type = annex_everything 
+target = FLR
+}
+	}
+}
+##Event: A Settlement.
+country_event = {
+	id = saylandevent.37
+	title = saylandevent.37.title
+	desc = saylandevent.37.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.37.a
+		ai_chance = { factor = 1}
+		ABM = { country_event = { id = saylandevent.38 } }
+	}
+}
+##Event: Sayland Offers non-aggression
+country_event = {
+	id = saylandevent.38
+	title = saylandevent.38.title
+	desc = saylandevent.38.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.38.a
+		ai_chance = { factor = 1}
+		diplomatic_relation= { 
+country = SAY
+relation = non_aggression_pact 
+}
+
+SAY = { country_event = { id = saylandevent.39 } }
+	}
+	option = {
+		name = saylandevent.38.b
+		ai_chance = { factor = 1}
+		SAY = { country_event = { id = saylandevent.40 } }
+	}
+}
+##Event: Alabama accepts our non-aggression pact!
+country_event = {
+	id = saylandevent.39
+	title = saylandevent.39.title
+	desc = saylandevent.39.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.39.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Alabama Rejects
+country_event = {
+	id = saylandevent.40
+	title = saylandevent.40.title
+	desc = saylandevent.40.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.40.a
+		ai_chance = { factor = 1}
+	}
+	option = {
+		name = saylandevent.40.b
+		ai_chance = { factor = 1}
+		create_wargoal= { 
+type = annex_everything 
+target = ABM
+}
+	}
+}

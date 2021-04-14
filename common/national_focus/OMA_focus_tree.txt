@@ -1,0 +1,849 @@
+focus_tree = {
+	id = focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = OMA
+		}
+	}
+	#Focus for Anschluss of Iraq
+	focus = {
+		id = OMA_anschluss_of_iraq
+		icon = GFX_OMA_anschluss_of_iraq-73483
+		x = 18
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = OMA_the_glorious_king 
+		}
+		prerequisite = { 
+			focus = OMA_kevistan_moral 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_army_manpower = {
+    size > 150000
+}
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = kevevents.1
+}
+		}
+	}
+
+	#Focus for The Glorious King
+	focus = {
+		id = OMA_the_glorious_king
+		icon = GFX_focus_hun_elect_a_king
+		x = 17
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_the_monarchy_of_kevistan }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= OMA_sexy_king
+		}
+	}
+
+	#Focus for The Monarchy of Kevistan
+	focus = {
+		id = OMA_the_monarchy_of_kevistan
+		icon = GFX_OMA_the_monarchy_of_kevistan-73471
+		x = 18
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_the_fate_of_kevistan }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_party_name= { 
+ideology = neutrality
+long_name = "MGK"
+name = "MGK"
+}
+
+add_popularity= { 
+ideology = neutrality 
+popularity = 0.4
+}
+		}
+	}
+
+	#Focus for The Fate of Kevistan
+	focus = {
+		id = OMA_the_fate_of_kevistan
+		icon = GFX_OMA_the_fate_of_kevistan-73481
+		x = 18
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for Eat Pork
+	focus = {
+		id = OMA_eat_pork
+		icon = GFX_OMA_eat_pork-75694
+		x = 21
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_burn_the_quran }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= -0.1
+		}
+	}
+
+	#Focus for Big Guns to Kill!
+	focus = {
+		id = OMA_big_guns_to_kill
+		icon = GFX_goal_generic_army_artillery2
+		x = 12
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_the_military_wing }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = infantry_artillery_bonus
+bonus = 1.0
+uses = 1
+category = infantry_weapons
+category = artillery
+	}
+		}
+	}
+
+	#Focus for The Kevistani Tanks
+	focus = {
+		id = OMA_the_kevistani_tanks
+		icon = GFX_goal_generic_army_tanks
+		x = 14
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_the_military_wing }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = armor_bonus
+bonus = 1.0
+uses = 2
+category = armor
+	}
+		}
+	}
+
+	#Focus for Tires in the Sand
+	focus = {
+		id = OMA_tires_in_the_sand
+		icon = GFX_goal_generic_army_motorized
+		x = 13
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = OMA_big_guns_to_kill 
+		}
+		prerequisite = { 
+			focus = OMA_the_kevistani_tanks 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = motorized_bonus
+bonus = 3.0
+technology = motorised_infantry
+	}
+		}
+	}
+
+	#Focus for Naval and Air
+	focus = {
+		id = OMA_naval_and_air
+		icon = GFX_goal_generic_navy_carrier
+		x = 1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_expanding_the_industry }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience= 10 
+
+navy_experience= 10
+		}
+	}
+
+	#Focus for Air Fighters
+	focus = {
+		id = OMA_air_fighters
+		icon = GFX_goal_generic_air_fighter2
+		x = 0
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_naval_and_air }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = fighter_bonus
+bonus = 1.0
+uses = 2
+technology = early_fighter
+technology = fighter1
+technology = fighter2
+technology = fighter3
+technology = heavy_fighter1
+technology = heavy_fighter2
+technology = heavy_fighter3
+	}
+		}
+	}
+
+	#Focus for Fleet in Being
+	focus = {
+		id = OMA_fleet_in_being
+		icon = GFX_goal_generic_navy_battleship
+		x = 2
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_naval_and_air }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = fleet_in_being_bonus
+bonus = 1.0
+uses = 2
+category = fleet_in_being_tree
+	}
+		}
+	}
+
+	#Focus for Submarine Technology
+	focus = {
+		id = OMA_submarine_technology
+		icon = GFX_goal_generic_navy_submarine
+		x = 1
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = OMA_air_fighters 
+		}
+		prerequisite = { 
+			focus = OMA_fleet_in_being 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = ss_bonus
+bonus = 1.0
+ahead_reduction = 2
+uses = 1
+category = ss_tech
+	}
+		}
+	}
+
+	#Focus for Close Air Support Technology
+	focus = {
+		id = OMA_close_air_support_technology
+		icon = GFX_goal_generic_CAS
+		x = 1
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_submarine_technology }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = CAS_bonus
+bonus = 1.0
+ahead_reduction = 2
+uses = 1
+category = cas_bomber
+	}
+		}
+	}
+
+	#Focus for Expanding the Industry
+	focus = {
+		id = OMA_expanding_the_industry
+		icon = GFX_goal_generic_production2
+		x = 7
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = GER_four_year_plan
+bonus = 1.0
+uses = 2
+category = industry
+	}
+		}
+	}
+
+	#Focus for Kevistan Moral
+	focus = {
+		id = OMA_kevistan_moral
+		icon = GFX_goal_generic_defence
+		x = 19
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_the_monarchy_of_kevistan }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.2
+		}
+	}
+
+	#Focus for The Military Wing
+	focus = {
+		id = OMA_the_military_wing
+		icon = GFX_OMA_the_military_wing-73526
+		x = 13
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_expanding_the_industry }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 5
+
+add_tech_bonus = {
+name = land_doc_bonus
+bonus = 1.0
+uses = 1
+category = land_doctrine
+	}
+		}
+	}
+
+	#Focus for The Research Research
+	focus = {
+		id = OMA_the_research_research
+		icon = GFX_focus_research2
+		x = 7
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = OMA_expanding_our_war_productions 
+		}
+		prerequisite = { 
+			focus = OMA_expanding_the_civilian_districts 
+		}
+		prerequisite = { 
+			focus = OMA_expanding_the_infrastructure 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot= 1
+		}
+	}
+
+	#Focus for Expanding the Civilian Districts
+	focus = {
+		id = OMA_expanding_the_civilian_districts
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 10
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_building_the_industry }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			292 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+        type = industrial_complex
+        level = 2
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Expanding the Infrastructure
+	focus = {
+		id = OMA_expanding_the_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 7
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = OMA_building_the_war_economy 
+		}
+		prerequisite = { 
+			focus = OMA_building_the_industry 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			678 = {
+add_building_construction = {
+            type = infrastructure
+            level = 5
+            instant_build = yes
+        }
+        }
+		}
+	}
+
+	#Focus for Expanding Our War Productions
+	focus = {
+		id = OMA_expanding_our_war_productions
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 4
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_building_the_war_economy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			294 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+        type = arms_factory
+        level = 2
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Building the War Economy
+	focus = {
+		id = OMA_building_the_war_economy
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 6
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_expanding_the_industry }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			293 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+        type = arms_factory
+        level = 2
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Building the Industry
+	focus = {
+		id = OMA_building_the_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 8
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_expanding_the_industry }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			678 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+        type = industrial_complex
+        level = 2
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for The Military Equipment
+	focus = {
+		id = OMA_the_military_equipment
+		icon = GFX_goal_generic_small_arms
+		x = 13
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_tires_in_the_sand }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = infantry_artillery_bonus
+bonus = 1.0
+uses = 1
+category = infantry_weapons
+category = artillery
+	}
+		}
+	}
+
+	#Focus for Babylonian Discoveries
+	focus = {
+		id = OMA_babylonian_discoveries
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 18
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_anschluss_of_iraq }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core= 675
+
+add_state_core= 291
+
+add_state_core= 676
+		}
+	}
+
+	#Focus for Caliph Kev
+	focus = {
+		id = OMA_caliph_kev
+		icon = GFX_OMA_caliph_kev-73652
+		x = 17
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_babylonian_discoveries }
+		mutually_exclusive = { focus = OMA_burn_the_quran }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas= OMA_angry_muslim
+
+add_ideas= OMA_happy_muslim
+		}
+	}
+
+	#Focus for Civilian Governance
+	focus = {
+		id = OMA_civilian_governance
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 16
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_strike_the_turks }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core= 680 
+
+add_state_core= 554
+
+add_state_core= 677
+
+add_state_core= 799
+
+add_stability= 0.3
+		}
+	}
+
+	#Focus for Strike the Turks
+	focus = {
+		id = OMA_strike_the_turks
+		icon = GFX_focus_generic_attack_turkey
+		x = 18
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_battle_to_the_mediterranean }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = TUR
+}
+
+add_tech_bonus = {
+name = infantry_artillery_bonus
+bonus = 1.0
+uses = 1
+category = infantry_weapons
+category = artillery
+	}
+		}
+	}
+
+	#Focus for Battle to the Mediterranean
+	focus = {
+		id = OMA_battle_to_the_mediterranean
+		icon = GFX_OMA_battle_to_the_mediterranean-73658
+		x = 18
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = OMA_caliph_kev 
+			focus = OMA_burn_the_quran 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = SYR
+}
+		}
+	}
+
+	#Focus for Burn the Quran
+	focus = {
+		id = OMA_burn_the_quran
+		icon = GFX_OMA_burn_the_quran-73656
+		x = 19
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_babylonian_discoveries }
+		mutually_exclusive = { focus = OMA_caliph_kev }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_timed_idea= { 
+idea = OMA_angrier_muslims
+days = 100 
+}
+
+remove_ideas= OMA_angry_muslim
+		}
+	}
+
+	#Focus for Gettin' Schooled
+	focus = {
+		id = OMA_gettin_schooled
+		icon = GFX_goal_generic_axis_build_infantry
+		x = 20
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_strike_the_turks }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = armor_bonus
+bonus = 1.0
+uses = 2
+category = armor
+	}
+
+add_tech_bonus = {
+name = infantry_artillery_bonus
+bonus = 1.0
+uses = 1
+category = infantry_weapons
+category = artillery
+	}
+		}
+	}
+
+	#Focus for Ottoman Catacombs
+	focus = {
+		id = OMA_ottoman_catacombs
+		icon = GFX_OMA_ottoman_catacombs-73660
+		x = 18
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_strike_the_turks }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core= 797 
+
+add_state_core= 341
+		}
+	}
+
+	#Focus for Schoolin' Others
+	focus = {
+		id = OMA_schoolin_others
+		icon = GFX_goal_generic_cavalry
+		x = 21
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_gettin_schooled }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_rule= { 
+can_send_volunteers = yes 
+}
+		}
+	}
+
+	#Focus for A Manifesto
+	focus = {
+		id = OMA_a_manifesto
+		icon = GFX_goal_generic_propaganda
+		x = 15
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_civilian_governance }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= OMA_diary
+		}
+	}
+
+	#Focus for Kevistani Empire
+	focus = {
+		id = OMA_kevistani_empire
+		icon = GFX_goal_generic_forceful_treaty
+		x = 18
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = OMA_ottoman_catacombs 
+		}
+		prerequisite = { 
+			focus = OMA_schoolin_others 
+		}
+		prerequisite = { 
+			focus = OMA_a_manifesto 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_faction= "Kevistan Empire"
+		}
+	}
+
+	#Focus for Tickle the Persian Bear
+	focus = {
+		id = OMA_tickle_the_persian_bear
+		icon = GFX_focus_smiling_buddha
+		x = 18
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_kevistani_empire }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = PER
+}
+		}
+	}
+
+	#Focus for A War for Heaven
+	focus = {
+		id = OMA_a_war_for_heaven
+		icon = GFX_goal_unknown
+		x = 18
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_tickle_the_persian_bear }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = EGY
+}
+		}
+	}
+
+	#Focus for Enlisting the Muslims
+	focus = {
+		id = OMA_enlisting_the_muslims
+		icon = GFX_OMA_enlisting_the_muslims-75692
+		x = 15
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OMA_caliph_kev }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= OMA_enlisted_muslims
+		}
+	}
+
+#End of focuses 
+ }

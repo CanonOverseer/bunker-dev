@@ -1,0 +1,841 @@
+focus_tree = {
+	id = focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = IRE
+		}
+	}
+	#Focus for Strengthen the Irish State
+	focus = {
+		id = IRE_strengthen_the_irish_state
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 17
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = IRE_our_first_destroyers 
+		}
+		prerequisite = { 
+			focus = IRE_irish_research_efforts 
+		}
+		prerequisite = { 
+			focus = IRE_connaught_build_up 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.1
+		}
+	}
+
+	#Focus for Military Expansion
+	focus = {
+		id = IRE_military_expansion
+		icon = GFX_goal_generic_small_arms
+		x = 11
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IRE_irish_training }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 20
+add_tech_bonus = {
+name = land_doc_bonus
+bonus = 1.0
+uses = 1
+category = land_doctrine
+	}
+		}
+	}
+
+	#Focus for Bombing England!
+	focus = {
+		id = IRE_bombing_england
+		icon = GFX_goal_generic_air_fighter2
+		x = 23
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IRE_prepare_to_invade_the_united_kingdom }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = bomber_bonus
+bonus = 1.0uses = 2
+technology = strategic_bomber1
+technology = strategic_bomber2
+technology = strategic_bomber3
+category = tactical_bomber
+	}
+		}
+	}
+
+	#Focus for War with Britain
+	focus = {
+		id = IRE_war_with_britain
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 21
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = IRE_irish_tanks 
+		}
+		prerequisite = { 
+			focus = IRE_increased_research_funding 
+		}
+		prerequisite = { 
+			focus = IRE_bombing_england 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = ENG
+}
+		}
+	}
+
+	#Focus for The Potato Famine and the Great Depression
+	focus = {
+		id = IRE_the_potato_famine_and_the_great_depression
+		icon = GFX_goal_generic_secret_weapon
+		x = 15
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= AST_great_depression_1
+		}
+	}
+
+	#Focus for Dublin Build Up
+	focus = {
+		id = IRE_dublin_build_up
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 15
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IRE_under_sir_fahrrad }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			113 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+        type = industrial_complex
+        level = 1
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for The Irish Army
+	focus = {
+		id = IRE_the_irish_army
+		icon = GFX_focus_generic_manpower
+		x = 13
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IRE_under_sir_fahrrad }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower= 180000
+		}
+	}
+
+	#Focus for Proclaim Neutrality
+	focus = {
+		id = IRE_proclaim_neutrality
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 17
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IRE_under_sir_fahrrad }
+		mutually_exclusive = { focus = IRE_irish_power }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= neutrality_idea
+		}
+	}
+
+	#Focus for Ireland Expansion
+	focus = {
+		id = IRE_ireland_expansion
+		icon = GFX_goal_generic_production
+		x = 15
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IRE_dublin_build_up }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			113 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+        type = industrial_complex
+        level = 1
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Irish Military Build Up
+	focus = {
+		id = IRE_irish_military_build_up
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 17
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IRE_dublin_build_up }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			135 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+        type = arms_factory
+        level = 1
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Irish Training
+	focus = {
+		id = IRE_irish_training
+		icon = GFX_goal_rhineland
+		x = 13
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = IRE_the_irish_army 
+		}
+		prerequisite = { 
+			focus = IRE_dublin_build_up 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience= 10
+
+add_tech_bonus= {
+ bonus = 0.5 
+uses = 2 
+category = infantry_weapons
+}
+		}
+	}
+
+	#Focus for Partial Recovery from the Great Depression
+	focus = {
+		id = IRE_partial_recovery_from_the_great_depression
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 15
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = IRE_ireland_expansion 
+		}
+		prerequisite = { 
+			focus = IRE_irish_military_build_up 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_stability > 0.5
+		}
+		completion_reward = {
+			add_ideas= AST_great_depression_2
+
+remove_ideas= AST_great_depression_1
+		}
+	}
+
+	#Focus for Important Allies
+	focus = {
+		id = IRE_important_allies
+		icon = GFX_focus_hol_the_fourth_ally
+		x = 11
+		y = 3
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = IRE_under_sir_fahrrad }
+		mutually_exclusive = { focus = IRE_ireland_alone }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Larger Navy
+	focus = {
+		id = IRE_a_larger_navy
+		icon = GFX_goal_generic_navy_carrier
+		x = 9
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IRE_our_first_destroyers }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = fleet_in_being_bonus
+bonus = 1.0
+uses = 2
+category = fleet_in_being_tree
+	}
+		}
+	}
+
+	#Focus for Prepare to Invade the United Kingdom
+	focus = {
+		id = IRE_prepare_to_invade_the_united_kingdom
+		icon = GFX_goal_generic_major_war
+		x = 21
+		y = 5
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = IRE_everyone_serves 
+		}
+		prerequisite = { 
+			focus = IRE_irish_volunteers 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower= 8000
+		}
+	}
+
+	#Focus for Full Recovery from the Great Depression
+	focus = {
+		id = IRE_full_recovery_from_the_great_depression
+		icon = GFX_goal_generic_demand_territory
+		x = 15
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = IRE_our_first_destroyers 
+		}
+		prerequisite = { 
+			focus = IRE_irish_research_efforts 
+		}
+		prerequisite = { 
+			focus = IRE_connaught_build_up 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas= AST_great_depression_2
+		}
+	}
+
+	#Focus for Building More Destroyers
+	focus = {
+		id = IRE_building_more_destroyers
+		icon = GFX_focus_generic_navy_battleship2
+		x = 13
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IRE_our_first_destroyers }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 0.5 
+uses = 2 
+category = dd_tech
+}
+		}
+	}
+
+	#Focus for Irish Tanks
+	focus = {
+		id = IRE_irish_tanks
+		icon = GFX_goal_generic_army_tanks
+		x = 19
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IRE_prepare_to_invade_the_united_kingdom }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = armor_bonus
+bonus = 1.0
+uses = 2
+category = armor
+	}
+		}
+	}
+
+	#Focus for Irish Research Efforts
+	focus = {
+		id = IRE_irish_research_efforts
+		icon = GFX_focus_research2
+		x = 15
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IRE_partial_recovery_from_the_great_depression }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot= 1
+		}
+	}
+
+	#Focus for Ireland Alone
+	focus = {
+		id = IRE_ireland_alone
+		icon = GFX_goal_tripartite_pact
+		x = 9
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IRE_under_sir_fahrrad }
+		mutually_exclusive = { focus = IRE_important_allies }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_faction= "Irish Potato Union"
+		}
+	}
+
+	#Focus for Our First Destroyers
+	focus = {
+		id = IRE_our_first_destroyers
+		icon = GFX_goal_generic_navy_battleship
+		x = 13
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IRE_construction_of_naval_dockyards }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			113 = {
+    add_extra_state_shared_building_slots = 3
+    add_building_construction = {
+        type = dockyard
+        level = 3
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Increased Research Funding
+	focus = {
+		id = IRE_increased_research_funding
+		icon = GFX_focus_research2
+		x = 21
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IRE_prepare_to_invade_the_united_kingdom }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot= 1
+		}
+	}
+
+	#Focus for With Russia!
+	focus = {
+		id = IRE_with_russia
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		x = 9
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IRE_important_allies }
+		mutually_exclusive = { 
+			focus = IRE_with_germany 
+		}
+		mutually_exclusive = { 
+			focus = IRE_with_the_bunker 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			if = {
+    has_political_power > 100
+    has_war_support > 0.5
+}
+		}
+		completion_reward = {
+			SOV = { add_to_faction = IRE }
+		}
+	}
+
+	#Focus for With the Bunker!
+	focus = {
+		id = IRE_with_the_bunker
+		icon = GFX_IRE_with_the_bunker-44476
+		x = 7
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IRE_important_allies }
+		mutually_exclusive = { 
+			focus = IRE_with_russia 
+		}
+		mutually_exclusive = { 
+			focus = IRE_with_germany 
+		}
+		mutually_exclusive = { 
+			focus = IRE_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			if = {
+    has_political_power > 100
+    has_war_support > 0.5
+}
+		}
+		completion_reward = {
+			BNK = { add_to_faction = IRE }
+		}
+	}
+
+	#Focus for Construction of Naval Dockyards
+	focus = {
+		id = IRE_construction_of_naval_dockyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 13
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = IRE_irish_training 
+		}
+		prerequisite = { 
+			focus = IRE_ireland_expansion 
+		}
+		prerequisite = { 
+			focus = IRE_irish_military_build_up 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			135 = {
+    add_extra_state_shared_building_slots = 3
+    add_building_construction = {
+        type = dockyard
+        level = 3
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for A Strong Government
+	focus = {
+		id = IRE_a_strong_government
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 15
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IRE_the_potato_famine_and_the_great_depression }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for Under Sir Fahrrad!
+	focus = {
+		id = IRE_under_sir_fahrrad
+		icon = GFX_IRE_under_sir_fahrrad-44472
+		x = 15
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IRE_a_strong_government }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_party_name= { 
+ideology = neutrality
+long_name = "Fahrrad Party"
+name = "Fahrrad Party"
+}
+add_popularity= { 
+ideology = neutrality
+popularity = 0.4
+}
+set_politics= {
+ ruling_party = neutrality
+elections_allowed = no 
+}
+		}
+	}
+
+	#Focus for Irish Power
+	focus = {
+		id = IRE_irish_power
+		icon = GFX_goal_generic_demand_territory
+		x = 19
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IRE_under_sir_fahrrad }
+		mutually_exclusive = { focus = IRE_proclaim_neutrality }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= militarism_focus
+		}
+	}
+
+	#Focus for With Germany!
+	focus = {
+		id = IRE_with_germany
+		icon = GFX_focus_chi_mission_to_germany
+		x = 11
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IRE_important_allies }
+		mutually_exclusive = { 
+			focus = IRE_with_russia 
+		}
+		mutually_exclusive = { 
+			focus = IRE_with_the_bunker 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			if = {
+    has_political_power > 100
+    has_war_support > 0.5
+}
+		}
+		completion_reward = {
+			GER = { add_to_faction = IRE }
+		}
+	}
+
+	#Focus for Everyone Serves
+	focus = {
+		id = IRE_everyone_serves
+		icon = GFX_focus_secret_rearmament
+		x = 19
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IRE_irish_power }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= military_youth_focus
+		}
+	}
+
+	#Focus for Infrastructure Build Up
+	focus = {
+		id = IRE_infrastructure_build_up
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 17
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = IRE_ireland_expansion 
+		}
+		prerequisite = { 
+			focus = IRE_irish_military_build_up 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			113 = {
+set_building_level = {
+    type = infrastructure
+    level = 8
+    instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Irish Volunteers
+	focus = {
+		id = IRE_irish_volunteers
+		icon = GFX_focus_prc_infiltration
+		x = 21
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IRE_irish_power }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_rule= { 
+can_send_volunteers = yes
+}
+		}
+	}
+
+	#Focus for Connaught Build Up
+	focus = {
+		id = IRE_connaught_build_up
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 17
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IRE_infrastructure_build_up }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			134 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+        type = industrial_complex
+        level = 2
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Deadly Submarines
+	focus = {
+		id = IRE_deadly_submarines
+		icon = GFX_goal_generic_navy_anti_submarine
+		x = 11
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IRE_our_first_destroyers }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = ss_bonus
+bonus = 1.0
+ahead_reduction = 2
+uses = 1
+category = ss_tech
+	}
+		}
+	}
+
+	#Focus for Purchase Nigeria from the British
+	focus = {
+		id = IRE_purchase_nigeria_from_the_british
+		icon = GFX_focus_chi_british_cooperation
+		x = 15
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = IRE_full_recovery_from_the_great_depression 
+		}
+		prerequisite = { 
+			focus = IRE_strengthen_the_irish_state 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = irishevent.1
+}
+		}
+	}
+
+	#Focus for Greater Ireland
+	focus = {
+		id = IRE_greater_ireland
+		icon = GFX_IRE_greater_ireland-44478
+		x = 21
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IRE_war_with_britain }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core= 119
+
+add_state_core= 120
+
+add_state_core= 136
+
+add_state_core= 133
+
+add_state_core= 121
+
+add_state_core= 131
+		}
+	}
+
+#End of focuses 
+ }

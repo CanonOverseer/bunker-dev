@@ -1,0 +1,30 @@
+
+state={
+	id=657
+	name="STATE_657" # Birobidzhan
+	manpower = 6000000
+	resources={
+		steel=18 # was: 24
+	}
+
+
+	state_category = metropolis
+
+	history={
+		owner = ISR
+		add_core_of = ISR
+		victory_points = {
+			4246 15
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 3
+			industrial_complex = 7
+			air_base = 2
+		}
+	}
+
+	provinces={
+		675 1802 4246 4701 4725 4779 4805 4829 7616 7672 7763 7801 10655 10722 12192 12261 12263 12654 12678 
+	}
+}

@@ -1,0 +1,747 @@
+focus_tree = {
+	id = focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FLR
+		}
+	}
+	#Focus for Artillery Production Epic
+	focus = {
+		id = FLR_artillery_production_epic
+		icon = GFX_goal_generic_army_artillery2
+		x = 16
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLR_army_effort_epic }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = infantry_artillery_bonus
+bonus = 1.0
+uses = 1
+category = infantry_weapons
+category = artillery
+	}
+		}
+	}
+
+	#Focus for Keep the Status Quo
+	focus = {
+		id = FLR_keep_the_status_quo
+		icon = GFX_goal_support_democracy
+		x = 4
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLR_we_as_a_nation }
+		mutually_exclusive = { focus = FLR_change_in_course }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_timed_idea = { idea = ENG_steady_as_she_goes_idea days = 365 }
+		}
+	}
+
+	#Focus for Change in Course
+	focus = {
+		id = FLR_change_in_course
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 10
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLR_we_as_a_nation }
+		mutually_exclusive = { focus = FLR_keep_the_status_quo }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_timed_idea = { idea = ENG_a_change_in_course_idea days = 365 }
+		}
+	}
+
+	#Focus for Legitimate Monarchy
+	focus = {
+		id = FLR_legitimate_monarchy
+		icon = GFX_focus_generic_monarchy_2
+		x = 8
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLR_change_in_course }
+		mutually_exclusive = { focus = FLR_nationalist_takeover }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_politics= {
+ruling_party = neutrality
+elections_allowed = no 
+}
+
+add_ideas = ENG_the_kings_party_idea
+
+add_political_power = 200
+		}
+	}
+
+	#Focus for Nationalist Takeover
+	focus = {
+		id = FLR_nationalist_takeover
+		icon = GFX_goal_support_fascism
+		x = 12
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLR_change_in_course }
+		mutually_exclusive = { focus = FLR_legitimate_monarchy }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_politics= {
+ ruling_party = fascism 
+elections_allowed = no 
+}
+
+add_political_power = 200
+		}
+	}
+
+	#Focus for Military Factory Expansion III
+	focus = {
+		id = FLR_military_factory_expansion_iii
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 28
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLR_military_factory_expansion_ii_in_florida }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_offsite_building= { type = arms_factory level = 3 }
+		}
+	}
+
+	#Focus for Infrastructural Effort in Florida
+	focus = {
+		id = FLR_infrastructural_effort_in_florida
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 31
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = FLR_civilian_factory_expansion_in_florida 
+			focus = FLR_military_factory_expansion_in_florida 
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			366 = {
+set_building_level = {
+type = infrastructure
+level = 5
+instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Civilian Factory Expansion in Florida
+	focus = {
+		id = FLR_civilian_factory_expansion_in_florida
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 32
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_offsite_building= { type = industrial_complex level = 1 }
+		}
+	}
+
+	#Focus for Civilian Factory Expansion III
+	focus = {
+		id = FLR_civilian_factory_expansion_iii
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 34
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLR_civilian_factory_expansion_ii_in_florida }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_offsite_building= { type = industrial_complex level = 3 }
+		}
+	}
+
+	#Focus for Military Factory Expansion in Florida
+	focus = {
+		id = FLR_military_factory_expansion_in_florida
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 30
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_offsite_building= { type = arms_factory level = 1 }
+		}
+	}
+
+	#Focus for Military Factory Expansion II in Florida
+	focus = {
+		id = FLR_military_factory_expansion_ii_in_florida
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 28
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLR_military_factory_expansion_in_florida }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_offsite_building= { type = arms_factory level = 2 }
+		}
+	}
+
+	#Focus for Close Air Support Planes
+	focus = {
+		id = FLR_close_air_support_planes
+		icon = GFX_goal_generic_CAS
+		x = 22
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = FLR_fighter_advancements_epic 
+			focus = FLR_bomber_advancement_epic 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = CAS_bonus
+bonus = 1.0
+ahead_reduction = 2
+uses = 1
+category = cas_bomber
+	}
+		}
+	}
+
+	#Focus for Fighter Advancements Epic
+	focus = {
+		id = FLR_fighter_advancements_epic
+		icon = GFX_goal_generic_air_fighter2
+		x = 24
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLR_aerial_effort }
+		mutually_exclusive = { focus = FLR_bomber_advancement_epic }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = fighter_bonus
+bonus = 1.0
+uses = 2
+technology = early_fighter
+technology = fighter1
+technology = fighter2
+technology = fighter3
+technology = heavy_fighter1
+technology = heavy_fighter2
+technology = heavy_fighter3
+	}
+		}
+	}
+
+	#Focus for Motorized Effort is Epic
+	focus = {
+		id = FLR_motorized_effort_is_epic
+		icon = GFX_goal_generic_army_motorized
+		x = 18
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = FLR_infantry_effort_epic 
+		}
+		prerequisite = { 
+			focus = FLR_tank_advancements_epic 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = motorized_bonus
+bonus = 3.0
+technology = motorised_infantry
+	}
+		}
+	}
+
+	#Focus for Bomber Advancement Epic
+	focus = {
+		id = FLR_bomber_advancement_epic
+		icon = GFX_goal_generic_air_bomber
+		x = 22
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLR_aerial_effort }
+		mutually_exclusive = { focus = FLR_fighter_advancements_epic }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = bomber_bonus
+bonus = 1.0
+uses = 2
+technology = strategic_bomber1
+technology = strategic_bomber2
+technology = strategic_bomber3
+category = tactical_bomber
+	}
+		}
+	}
+
+	#Focus for Tank Advancements Epic
+	focus = {
+		id = FLR_tank_advancements_epic
+		icon = GFX_goal_generic_army_tanks
+		x = 20
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLR_army_effort_epic }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = armor_bonus
+bonus = 1.0
+uses = 2
+category = armor
+	}
+		}
+	}
+
+	#Focus for Aerial Effort
+	focus = {
+		id = FLR_aerial_effort
+		icon = GFX_goal_generic_build_airforce
+		x = 23
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLR_army_effort_epic }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience= 20
+		}
+	}
+
+	#Focus for Army Effort Epic
+	focus = {
+		id = FLR_army_effort_epic
+		icon = GFX_focus_chi_army_reform
+		x = 20
+		y = 0
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience= 60
+		}
+	}
+
+	#Focus for Infantry Effort Epic
+	focus = {
+		id = FLR_infantry_effort_epic
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 18
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLR_army_effort_epic }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 5
+
+add_tech_bonus = {
+name = land_doc_bonus
+bonus = 1.0
+uses = 1
+category = land_doctrine
+	}
+		}
+	}
+
+	#Focus for Reinstate Slavery
+	focus = {
+		id = FLR_reinstate_slavery
+		icon = GFX_focus_CZE_german_puppet
+		x = 10
+		y = 7
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = FLR_the_cuban_pest }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower= 10000
+
+add_stability = -0.18
+		}
+	}
+
+	#Focus for For King and Country!
+	focus = {
+		id = FLR_for_king_and_country
+		icon = GFX_focus_spr_maintain_the_republic
+		x = 8
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLR_legitimate_monarchy }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.05
+
+add_war_support = 0.10
+		}
+	}
+
+	#Focus for Miami Forward Operating Base
+	focus = {
+		id = FLR_miami_forward_operating_base
+		icon = GFX_goal_generic_position_armies
+		x = 8
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLR_for_king_and_country }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			366 = {
+add_building_construction = {						type = infrastructure						level = 3
+instant_build = yes					}
+}
+
+366 = {
+add_building_construction = {
+type = air_base
+level = 5
+instant_build = yes
+}
+}
+		}
+	}
+
+	#Focus for False Promise of Prosperity
+	focus = {
+		id = FLR_false_promise_of_prosperity
+		icon = GFX_goal_generic_propaganda
+		x = 12
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLR_nationalist_takeover }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.05
+
+add_war_support = 0.1
+		}
+	}
+
+	#Focus for Introduce Conscription
+	focus = {
+		id = FLR_introduce_conscription
+		icon = GFX_focus_generic_military_mission
+		x = 12
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLR_false_promise_of_prosperity }
+		search_filters = { FOCUS_FILTER_MANPOWER } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = militarism_focus
+
+army_experience = 20
+
+set_rule = { can_send_volunteers = yes }
+		}
+	}
+
+	#Focus for Democratic Technological Sharing
+	focus = {
+		id = FLR_democratic_technological_sharing
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = 4
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLR_god_bless_florida }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = electronics_bonus
+bonus = 1.0
+uses = 1
+category = electronics
+	}
+				add_tech_bonus = {
+name = industrial_bonus
+bonus = 1.0
+uses = 1
+category = industry
+	}
+	
+add_tech_bonus = {
+name = infantry_artillery_bonus
+bonus = 1.0
+uses = 1
+category = infantry_weapons
+category = artillery
+	}
+		}
+	}
+
+	#Focus for God Bless Florida
+	focus = {
+		id = FLR_god_bless_florida
+		icon = GFX_goal_continuous_def_against_influence
+		x = 4
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLR_shining_bright }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		complete_tooltip = {
+			custom_effect_tooltip = why_we_fight_effect
+		}
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+
+add_ideas = why_we_fight_focus
+
+add_stability = 15
+		}
+	}
+
+	#Focus for We as a Nation
+	focus = {
+		id = FLR_we_as_a_nation
+		icon = GFX_FLR_we_as_a_nation-45809
+		x = 7
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 100
+		}
+	}
+
+	#Focus for Shining Bright
+	focus = {
+		id = FLR_shining_bright
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		x = 4
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLR_keep_the_status_quo }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_political_party= { 
+ideology = democratic 
+popularity = 10 
+}
+
+add_stability = 0.15
+		}
+	}
+
+	#Focus for Us, and Them
+	focus = {
+		id = FLR_us_and_them
+		icon = GFX_FLR_us_and_them-45828
+		x = 10
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = FLR_introduce_conscription 
+			focus = FLR_miami_forward_operating_base 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for The Cuban Pest
+	focus = {
+		id = FLR_the_cuban_pest
+		icon = GFX_FLR_the_cuban_pest-45830
+		x = 10
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLR_us_and_them }
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = CUB
+}
+		}
+	}
+
+	#Focus for Small Country, Big Boom
+	focus = {
+		id = FLR_small_country_big_boom
+		icon = GFX_focus_wonderweapons
+		x = 20
+		y = 4
+		cost = 12
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = FLR_close_air_support_planes 
+		}
+		prerequisite = { 
+			focus = FLR_motorized_effort_is_epic 
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = nuclear_bonus
+ahead_reduction = 2
+category = nuclear
+	}
+		}
+	}
+
+	#Focus for Civilian Factory Expansion II in Florida
+	focus = {
+		id = FLR_civilian_factory_expansion_ii_in_florida
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 34
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLR_civilian_factory_expansion_in_florida }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_offsite_building= { type = industrial_complex level = 2 }
+		}
+	}
+
+	#Focus for R&D Department
+	focus = {
+		id = FLR_rd_department
+		icon = GFX_focus_research2
+		x = 31
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = FLR_military_factory_expansion_iii 
+		}
+		prerequisite = { 
+			focus = FLR_civilian_factory_expansion_iii 
+		}
+		prerequisite = { 
+			focus = FLR_infrastructural_effort_in_florida 
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot= 1
+		}
+	}
+
+#End of focuses 
+ }

@@ -1,0 +1,63 @@
+ideas = {
+	country = {
+
+		BEL_radical_approach = {
+			picture = generic_war_preparation
+			modifier = {
+				stability_factor = 0.10	
+
+war_support_factor = 0.10
+			}
+		}
+
+		BEL_armed_force_expansion = {
+			picture = mex_politicised_army_2
+			modifier = {
+				conscription_factor = 0.1
+army_core_attack_factor = 0.1
+			}
+		}
+
+		BEL_coastal_protection = {
+			picture = generic_sea_focused_navy
+			modifier = {
+				production_speed_coastal_bunker_factor = 0.3
+			}
+		}
+
+		BEL_economic_expansion = {
+			picture = man_five_year_plan_industry
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+
+		BEL_effective_military = {
+			picture = mex_politicised_army
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		BEL_infrastructure_expansion = {
+			picture = generic_build_infrastructure
+			modifier = {
+				production_speed_infrastructure_factor = 0.2
+			}
+		}
+
+		BEL_army_defense_plan = {
+			picture = generic_infantry_equipment_manufacturer_2
+			modifier = {
+				army_core_defence_factor = 0.1
+			}
+		}
+
+		BEL_rule_with_an_iron_fist = {
+			picture = chi_army_corruption3
+			modifier = {
+				compliance_gain = 0.3
+			}
+		}
+	}
+}

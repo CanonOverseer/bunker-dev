@@ -1,0 +1,11 @@
+focus_tree = {
+	id = focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+#End of focuses 
+ }

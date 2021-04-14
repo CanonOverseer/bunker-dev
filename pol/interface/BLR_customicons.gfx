@@ -1,0 +1,155 @@
+spriteTypes = { 
+	##Icon For: Nuclear Effort
+	SpriteType = { 
+		name = "GFX_BLR_nuclear_effort-45259"
+		texturefile = "gfx/interface/goals/GFX_BLR_nuclear_effort-45259.dds"
+	}
+
+	##Icon Shine For: Nuclear Effort
+	SpriteType = { 
+		name = "GFX_BLR_nuclear_effort-45259_shine"
+		texturefile = "gfx/interface/goals/GFX_BLR_nuclear_effort-45259.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BLR_nuclear_effort-45259.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BLR_nuclear_effort-45259.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Destroy Ukraine
+	SpriteType = { 
+		name = "GFX_BLR_destroy_ukraine-44854"
+		texturefile = "gfx/interface/goals/GFX_BLR_destroy_ukraine-44854.dds"
+	}
+
+	##Icon Shine For: Destroy Ukraine
+	SpriteType = { 
+		name = "GFX_BLR_destroy_ukraine-44854_shine"
+		texturefile = "gfx/interface/goals/GFX_BLR_destroy_ukraine-44854.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BLR_destroy_ukraine-44854.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BLR_destroy_ukraine-44854.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Regional Interests
+	SpriteType = { 
+		name = "GFX_BLR_regional_interests-44851"
+		texturefile = "gfx/interface/goals/GFX_BLR_regional_interests-44851.dds"
+	}
+
+	##Icon Shine For: Regional Interests
+	SpriteType = { 
+		name = "GFX_BLR_regional_interests-44851_shine"
+		texturefile = "gfx/interface/goals/GFX_BLR_regional_interests-44851.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BLR_regional_interests-44851.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BLR_regional_interests-44851.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Reclaim Eastern Territories
+	SpriteType = { 
+		name = "GFX_BLR_reclaim_eastern_territories-44853"
+		texturefile = "gfx/interface/goals/GFX_BLR_reclaim_eastern_territories-44853.dds"
+	}
+
+	##Icon Shine For: Reclaim Eastern Territories
+	SpriteType = { 
+		name = "GFX_BLR_reclaim_eastern_territories-44853_shine"
+		texturefile = "gfx/interface/goals/GFX_BLR_reclaim_eastern_territories-44853.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BLR_reclaim_eastern_territories-44853.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BLR_reclaim_eastern_territories-44853.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+ 
+ }

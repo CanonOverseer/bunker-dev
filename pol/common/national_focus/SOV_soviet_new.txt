@@ -1,0 +1,322 @@
+focus_tree = {
+	id = soviet_new
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+	#Focus for Appoint the Autarks
+	focus = {
+		id = SOV_appoint_the_autarks
+		icon = GFX_SOV_appoint_the_autarks-72829
+		x = 18
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_democraticauthoritarian_ideals }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = GER_autarky
+bonus = 1.0
+uses = 2
+technology = excavation1
+technology = excavation2
+technology = excavation3
+technology = excavation4
+technology = excavation5
+}
+
+add_ideas = GER_autarky_idea
+		}
+	}
+
+	#Focus for Infrastructural Expansion
+	focus = {
+		id = SOV_infrastructural_expansion
+		icon = GFX_SOV_infrastructural_expansion-72842
+		x = 27
+		y = 3
+		cost = 12
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_true_democracy }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			three_random_infrastructure = yes
+		}
+	}
+
+	#Focus for Russian Industrial Expansion
+	focus = {
+		id = SOV_russian_industrial_expansion
+		icon = GFX_SOV_russian_industrial_expansion-72840
+		x = 17
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_invite_oil_tycooners }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			two_random_arms_factory = yes
+
+two_random_industrial_complex = yes
+		}
+	}
+
+	#Focus for End Army Corruption
+	focus = {
+		id = SOV_end_army_corruption
+		icon = GFX_SOV_end_army_corruption-72838
+		x = 24
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_true_democracy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 5
+
+add_tech_bonus = {
+name = land_doc_bonus
+bonus = 1.0
+uses = 2
+category = land_doctrine
+}
+		}
+	}
+
+	#Focus for Pay off the Army
+	focus = {
+		id = SOV_pay_off_the_army
+		icon = GFX_SOV_pay_off_the_army-72828
+		x = 15
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_democraticauthoritarian_ideals }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience= 20
+
+add_ideas = militarism_focus
+		}
+	}
+
+	#Focus for True Democracy
+	focus = {
+		id = SOV_true_democracy
+		icon = GFX_SOV_true_democracy-72822
+		x = 25
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_a_new_system }
+		mutually_exclusive = { focus = SOV_democraticauthoritarian_ideals }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_politics= {
+ruling_party = democratic
+elections_allowed = no 
+}
+		}
+	}
+
+	#Focus for Democratic-Authoritarian Ideals
+	focus = {
+		id = SOV_democraticauthoritarian_ideals
+		icon = GFX_SOV_democraticauthoritarian_ideals-72813
+		x = 17
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_a_new_system }
+		mutually_exclusive = { focus = SOV_true_democracy }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_politics= {
+ruling_party = neutrality 
+elections_allowed = yes 
+}
+		}
+	}
+
+	#Focus for Stability in Question
+	focus = {
+		id = SOV_stability_in_question
+		icon = GFX_SOV_stability_in_question-72806
+		x = 21
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_STABILITY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.05
+
+add_political_power= 65
+		}
+	}
+
+	#Focus for Invite Oil Tycooners
+	focus = {
+		id = SOV_invite_oil_tycooners
+		icon = GFX_SOV_invite_oil_tycooners-72837
+		x = 17
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_pay_off_the_army 
+		}
+		prerequisite = { 
+			focus = SOV_appoint_the_autarks 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_resource= { 
+type = oil 
+amount = 8 
+state = 233 
+}
+
+add_resource= { 
+type = oil 
+amount = 8 
+state = 234
+}
+		}
+	}
+
+	#Focus for Restore the Forgotten
+	focus = {
+		id = SOV_restore_the_forgotten
+		icon = GFX_SOV_restore_the_forgotten-72809
+		x = 11
+		y = 1
+		cost = 12
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_stability_in_question }
+		mutually_exclusive = { focus = SOV_a_new_system }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A New System
+	focus = {
+		id = SOV_a_new_system
+		icon = GFX_SOV_a_new_system-72810
+		x = 21
+		y = 1
+		cost = 12
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_stability_in_question }
+		mutually_exclusive = { 
+			focus = SOV_restore_the_forgotten 
+		}
+		mutually_exclusive = { 
+			focus = SOV_continue_the_workers_path 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = democratic
+popularity = 0.2
+}
+
+add_political_power= 80
+		}
+	}
+
+	#Focus for Continue the Worker's Path
+	focus = {
+		id = SOV_continue_the_workers_path
+		icon = GFX_SOV_continue_the_workers_path-72826
+		x = 30
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_stability_in_question }
+		mutually_exclusive = { focus = SOV_a_new_system }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_politics= {
+ruling_party = communism
+elections_allowed = no 
+}
+		}
+	}
+
+	#Focus for Building Up the Western Urals
+	focus = {
+		id = SOV_building_up_the_western_urals
+		icon = GFX_focus_generic_industry_3
+		x = 21
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_appoint_the_autarks }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			one_random_industrial_complex = yes
+
+one_random_arms_factory = yes
+		}
+	}
+
+	#Focus for Denounce Communism
+	focus = {
+		id = SOV_denounce_communism
+		icon = GFX_goal_anti_comintern_pact
+		x = 21
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_a_new_system }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_political_party= { 
+ideology = communist 
+popularity = -0.8 
+}
+
+add_stability = 0.1
+		}
+	}
+
+#End of focuses 
+ }

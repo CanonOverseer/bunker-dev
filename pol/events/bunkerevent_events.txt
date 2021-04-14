@@ -1,0 +1,290 @@
+add_namespace = bunkerevent
+
+##Event: The State of The Republic
+country_event = {
+	id = bunkerevent.1
+	title = bunkerevent.1.title
+	desc = bunkerevent.1.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = bunkerevent.1.a
+		ai_chance = { factor = 1}
+		set_country_flag = fascism_bunker
+	}
+	option = {
+		name = bunkerevent.1.b
+		ai_chance = { factor = 1}
+		set_country_flag = democratic_bunker
+	}
+	option = {
+		name = bunkerevent.1.c
+		ai_chance = { factor = 1}
+		set_country_flag = communism_bunker
+	}
+}
+##Event: Cracky Marches on the Bunker
+news_event = {
+	id = bunkerevent.2
+	title = bunkerevent.2.title
+	desc = bunkerevent.2.desc
+	picture = GFX_news_event_por_return_of_monarchy
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+		BNK = { has completed_focus = BNK_the_iron_dictator }
+	}
+	option = {
+		name = bunkerevent.2.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Top's Coup
+country_event = {
+	id = bunkerevent.3
+	title = bunkerevent.3.title
+	desc = bunkerevent.3.desc
+	picture = GFX_report_event_spr_anarchists2
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = bunkerevent.3.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Top was a Spy!
+country_event = {
+	id = bunkerevent.4
+	title = bunkerevent.4.title
+	desc = bunkerevent.4.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = bunkerevent.4.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: The Bunker Commonwealth
+country_event = {
+	id = bunkerevent.5
+	title = bunkerevent.5.title
+	desc = bunkerevent.5.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = bunkerevent.5.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Top Requests Annexation
+country_event = {
+	id = bunkerevent.6
+	title = bunkerevent.6.title
+	desc = bunkerevent.6.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = bunkerevent.6.a
+		ai_chance = { factor = 1}
+		BEL = { country_event = { id = bunkerevent.7 } }
+	}
+}
+##Event: The Bunker Requests Annexation
+country_event = {
+	id = bunkerevent.7
+	title = bunkerevent.7.title
+	desc = bunkerevent.7.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = bunkerevent.7.a
+		ai_chance = { factor = 2}
+		annex_country= {
+ target = BNK
+}
+	}
+	option = {
+		name = bunkerevent.7.b
+		ai_chance = { factor = 1}
+		BNK = { country_event = { id = bunkerevent.8 } }
+	}
+}
+##Event: They refused to annex us.
+country_event = {
+	id = bunkerevent.8
+	title = bunkerevent.8.title
+	desc = bunkerevent.8.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = bunkerevent.8.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: The Children are too Weak
+country_event = {
+	id = bunkerevent.9
+	title = bunkerevent.9.title
+	desc = bunkerevent.9.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = bunkerevent.9.a
+		ai_chance = { factor = 1}
+		add_manpower= -8000
+	}
+}
+##Event: Church and State
+country_event = {
+	id = bunkerevent.10
+	title = bunkerevent.10.title
+	desc = bunkerevent.10.desc
+	picture = GFX_report_event_king_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = bunkerevent.10.a
+		ai_chance = { factor = 1}
+		add_offsite_building= { type = arms_factory level = 3 }
+	}
+	option = {
+		name = bunkerevent.10.b
+		ai_chance = { factor = 1}
+		add_stability= 0.1 
+add_war_support= 0.1
+	}
+}
+##Event: OMG! CANON IS FAT CONFIRMED ON GOD.
+news_event = {
+	id = bunkerevent.11
+	title = bunkerevent.11.title
+	desc = bunkerevent.11.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+}
+##Event: Top Becomes Leader of the Bunker
+news_event = {
+	id = bunkerevent.12
+	title = bunkerevent.12.title
+	desc = bunkerevent.12.desc
+	picture = GFX_news_event_german_officers
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+		BNK = { has completed_focus = BNK_top }
+	}
+	option = {
+		name = bunkerevent.12.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Steel Eagle Victory
+news_event = {
+	id = bunkerevent.13
+	title = bunkerevent.13.title
+	desc = bunkerevent.13.desc
+	picture = GFX_news_event_eng_blackshirts
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+		BNK = { has completed_focus = BNK_steel_eagle_victory }
+	}
+	option = {
+		name = bunkerevent.13.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Echo Wins in the Bunker
+news_event = {
+	id = bunkerevent.14
+	title = bunkerevent.14.title
+	desc = bunkerevent.14.desc
+	picture = GFX_news_event_battle_for_the_bosporus
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+		BNK = { has completed_focus = BNK_echo }
+	}
+	option = {
+		name = bunkerevent.14.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Canon Wins the Election
+news_event = {
+	id = bunkerevent.15
+	title = bunkerevent.15.title
+	desc = bunkerevent.15.desc
+	picture = GFX_news_event_bose
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+		BNK = { has completed_focus = BNK_canon }
+	}
+	option = {
+		name = bunkerevent.15.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: D Wins the Elections
+news_event = {
+	id = bunkerevent.16
+	title = bunkerevent.16.title
+	desc = bunkerevent.16.desc
+	picture = GFX_news_event_king_speech
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+		BNK = { has completed_focus = BNK_d }
+	}
+	option = {
+		name = bunkerevent.16.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Lion Wins the Bunker!
+news_event = {
+	id = bunkerevent.17
+	title = bunkerevent.17.title
+	desc = bunkerevent.17.desc
+	picture = GFX_news_event_generic_rally_3
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+		BNK = { has completed_focus = BNK_lion }
+	}
+	option = {
+		name = bunkerevent.17.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Karl Donitz Assumes Leadership of the Bunker
+news_event = {
+	id = bunkerevent.18
+	title = bunkerevent.18.title
+	desc = bunkerevent.18.desc
+	picture = GFX_news_event_ast_navy
+	is_triggered_only = yes
+	major = yes
+}
+##Event: Lion the Prophet
+news_event = {
+	id = bunkerevent.19
+	title = bunkerevent.19.title
+	desc = bunkerevent.19.desc
+	picture = GFX_news_event_german_speech
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = bunkerevent.19.a
+		ai_chance = { factor = 1}
+	}
+}

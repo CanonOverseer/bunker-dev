@@ -1,0 +1,141 @@
+ideas = {
+	country = {
+
+		BNK_unconquerable_will = {
+			picture = man_five_year_plan_tank
+			modifier = {
+				conscription_factor = 0.1
+army_core_attack_factor = 0.1
+			}
+		}
+
+		BNK_legislative_council = {
+			picture = hun_treaty_of_trianon
+			modifier = {
+				stability_factor = 0.10
+			}
+		}
+
+		BNK_lion_news = {
+			ledger = army
+			picture = hun_hungarian_monarchy
+			modifier = {
+				stability_factor = 0.10
+
+war_support_factor = 0.10
+			}
+		}
+
+		BNK_purged_steel_eagles = {
+			ledger = army
+			picture = prc_low_popular_support
+			modifier = {
+				political_power_gain = -0.05
+			}
+		}
+
+		BNK_golden_agency = {
+			ledger = army
+			picture = send_attache
+			modifier = {
+				stability_factor = 0.10
+			}
+		}
+
+		BNK_cracky_labor_army = {
+			ledger = army
+			picture = BNK_cracky_labor_army-53012
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+
+		BNK_the_ssa = {
+			ledger = army
+			picture = schneider
+			modifier = {
+				stability_factor = 0.10
+			}
+		}
+
+		BNK_kings_men = {
+			ledger = army
+			picture = prc_low_popular_support3
+			modifier = {
+				army_core_attack_factor = 0.1
+army_core_defence_factor = 0.1
+			}
+		}
+
+		BNK_the_eagle_constitution = {
+			picture = hun_treaty_of_trianon
+			modifier = {
+				war_support_factor = 0.10
+
+stability_factor = 0.10
+			}
+		}
+
+		BNK_the_bunker_commonwealth = {
+			ledger = army
+			picture = BNK_the_bunker_commonwealth-53102
+			modifier = {
+				war_support_factor = 0.10
+
+stability_factor = 0.10
+			}
+		}
+
+		BNK_second_man_desired = {
+			ledger = army
+			picture = BNK_second_man_desired-53116
+			modifier = {
+				army_core_attack_factor = 0.1
+army_core_defence_factor = 0.1
+			}
+		}
+
+		BNK_all_power_to_workers = {
+			picture = BNK_all_power_to_workers-53112
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+
+		BNK_nkvd = {
+			picture = por_iberian_workers_united
+			modifier = {
+				compliance_gain = 0.3
+			}
+		}
+
+		BNK_wiggly_civilian_plan = {
+			picture = generic_goods_red_bonus
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+
+		BNK_cory_military_plan = {
+			picture = generic_local_self_management
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+
+		BNK_fort_plan = {
+			picture = ger_bulwark_against_bolshevism
+			modifier = {
+				production_speed_bunker_factor = 0.3
+			}
+		}
+
+		BNK_infrastructure_plan = {
+			ledger = army
+			picture = generic_artillery_manufacturer_2
+			modifier = {
+				production_speed_infrastructure_factor = 0.3
+			}
+		}
+	}
+}

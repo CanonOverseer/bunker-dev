@@ -1,0 +1,1029 @@
+spriteTypes = { 
+	##Icon For: The Holy Alliance
+	SpriteType = { 
+		name = "GFX_ABM_the_holy_alliance-44535"
+		texturefile = "gfx/interface/goals/GFX_ABM_the_holy_alliance-44535.dds"
+	}
+
+	##Icon Shine For: The Holy Alliance
+	SpriteType = { 
+		name = "GFX_ABM_the_holy_alliance-44535_shine"
+		texturefile = "gfx/interface/goals/GFX_ABM_the_holy_alliance-44535.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_the_holy_alliance-44535.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_the_holy_alliance-44535.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Destruction of the Saylish Threat
+	SpriteType = { 
+		name = "GFX_ABM_destruction_of_the_saylish_threat-44524"
+		texturefile = "gfx/interface/goals/GFX_ABM_destruction_of_the_saylish_threat-44524.dds"
+	}
+
+	##Icon Shine For: Destruction of the Saylish Threat
+	SpriteType = { 
+		name = "GFX_ABM_destruction_of_the_saylish_threat-44524_shine"
+		texturefile = "gfx/interface/goals/GFX_ABM_destruction_of_the_saylish_threat-44524.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_destruction_of_the_saylish_threat-44524.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_destruction_of_the_saylish_threat-44524.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The Texas Gambit
+	SpriteType = { 
+		name = "GFX_ABM_the_texas_gambit-44520"
+		texturefile = "gfx/interface/goals/GFX_ABM_the_texas_gambit-44520.dds"
+	}
+
+	##Icon Shine For: The Texas Gambit
+	SpriteType = { 
+		name = "GFX_ABM_the_texas_gambit-44520_shine"
+		texturefile = "gfx/interface/goals/GFX_ABM_the_texas_gambit-44520.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_the_texas_gambit-44520.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_the_texas_gambit-44520.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Under King Lion
+	SpriteType = { 
+		name = "GFX_ABM_under_king_lion-45188"
+		texturefile = "gfx/interface/goals/GFX_ABM_under_king_lion-45188.dds"
+	}
+
+	##Icon Shine For: Under King Lion
+	SpriteType = { 
+		name = "GFX_ABM_under_king_lion-45188_shine"
+		texturefile = "gfx/interface/goals/GFX_ABM_under_king_lion-45188.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_under_king_lion-45188.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_under_king_lion-45188.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Bourbon Claims
+	SpriteType = { 
+		name = "GFX_ABM_bourbon_claims-44517"
+		texturefile = "gfx/interface/goals/GFX_ABM_bourbon_claims-44517.dds"
+	}
+
+	##Icon Shine For: Bourbon Claims
+	SpriteType = { 
+		name = "GFX_ABM_bourbon_claims-44517_shine"
+		texturefile = "gfx/interface/goals/GFX_ABM_bourbon_claims-44517.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_bourbon_claims-44517.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_bourbon_claims-44517.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Battle for America's Soul
+	SpriteType = { 
+		name = "GFX_ABM_battle_for_americas_soul-44521"
+		texturefile = "gfx/interface/goals/GFX_ABM_battle_for_americas_soul-44521.dds"
+	}
+
+	##Icon Shine For: Battle for America's Soul
+	SpriteType = { 
+		name = "GFX_ABM_battle_for_americas_soul-44521_shine"
+		texturefile = "gfx/interface/goals/GFX_ABM_battle_for_americas_soul-44521.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_battle_for_americas_soul-44521.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_battle_for_americas_soul-44521.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Minutemen Victory!
+	SpriteType = { 
+		name = "GFX_ABM_minutemen_victory-44537"
+		texturefile = "gfx/interface/goals/GFX_ABM_minutemen_victory-44537.dds"
+	}
+
+	##Icon Shine For: Minutemen Victory!
+	SpriteType = { 
+		name = "GFX_ABM_minutemen_victory-44537_shine"
+		texturefile = "gfx/interface/goals/GFX_ABM_minutemen_victory-44537.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_minutemen_victory-44537.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_minutemen_victory-44537.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: War for the Midwest
+	SpriteType = { 
+		name = "GFX_ABM_war_for_the_midwest-45167"
+		texturefile = "gfx/interface/goals/GFX_ABM_war_for_the_midwest-45167.dds"
+	}
+
+	##Icon Shine For: War for the Midwest
+	SpriteType = { 
+		name = "GFX_ABM_war_for_the_midwest-45167_shine"
+		texturefile = "gfx/interface/goals/GFX_ABM_war_for_the_midwest-45167.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_war_for_the_midwest-45167.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_war_for_the_midwest-45167.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The End of the Midwest
+	SpriteType = { 
+		name = "GFX_ABM_the_end_of_the_midwest-45171"
+		texturefile = "gfx/interface/goals/GFX_ABM_the_end_of_the_midwest-45171.dds"
+	}
+
+	##Icon Shine For: The End of the Midwest
+	SpriteType = { 
+		name = "GFX_ABM_the_end_of_the_midwest-45171_shine"
+		texturefile = "gfx/interface/goals/GFX_ABM_the_end_of_the_midwest-45171.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_the_end_of_the_midwest-45171.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_the_end_of_the_midwest-45171.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Prepare to Control the South
+	SpriteType = { 
+		name = "GFX_ABM_prepare_to_control_the_south-45163"
+		texturefile = "gfx/interface/goals/GFX_ABM_prepare_to_control_the_south-45163.dds"
+	}
+
+	##Icon Shine For: Prepare to Control the South
+	SpriteType = { 
+		name = "GFX_ABM_prepare_to_control_the_south-45163_shine"
+		texturefile = "gfx/interface/goals/GFX_ABM_prepare_to_control_the_south-45163.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_prepare_to_control_the_south-45163.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_prepare_to_control_the_south-45163.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The End of PSA
+	SpriteType = { 
+		name = "GFX_ABM_the_end_of_psa-45170"
+		texturefile = "gfx/interface/goals/GFX_ABM_the_end_of_psa-45170.dds"
+	}
+
+	##Icon Shine For: The End of PSA
+	SpriteType = { 
+		name = "GFX_ABM_the_end_of_psa-45170_shine"
+		texturefile = "gfx/interface/goals/GFX_ABM_the_end_of_psa-45170.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_the_end_of_psa-45170.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_the_end_of_psa-45170.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Tea Party Victory!
+	SpriteType = { 
+		name = "GFX_ABM_tea_party_victory-44539"
+		texturefile = "gfx/interface/goals/GFX_ABM_tea_party_victory-44539.dds"
+	}
+
+	##Icon Shine For: Tea Party Victory!
+	SpriteType = { 
+		name = "GFX_ABM_tea_party_victory-44539_shine"
+		texturefile = "gfx/interface/goals/GFX_ABM_tea_party_victory-44539.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_tea_party_victory-44539.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_tea_party_victory-44539.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The Death of Long
+	SpriteType = { 
+		name = "GFX_ABM_the_death_of_long-44514"
+		texturefile = "gfx/interface/goals/GFX_ABM_the_death_of_long-44514.dds"
+	}
+
+	##Icon Shine For: The Death of Long
+	SpriteType = { 
+		name = "GFX_ABM_the_death_of_long-44514_shine"
+		texturefile = "gfx/interface/goals/GFX_ABM_the_death_of_long-44514.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_the_death_of_long-44514.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_the_death_of_long-44514.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Pax Americana
+	SpriteType = { 
+		name = "GFX_ABM_pax_americana-44440"
+		texturefile = "gfx/interface/goals/GFX_ABM_pax_americana-44440.dds"
+	}
+
+	##Icon Shine For: Pax Americana
+	SpriteType = { 
+		name = "GFX_ABM_pax_americana-44440_shine"
+		texturefile = "gfx/interface/goals/GFX_ABM_pax_americana-44440.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_pax_americana-44440.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_pax_americana-44440.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Offer Union to the South
+	SpriteType = { 
+		name = "GFX_ABM_offer_union_to_the_south-44518"
+		texturefile = "gfx/interface/goals/GFX_ABM_offer_union_to_the_south-44518.dds"
+	}
+
+	##Icon Shine For: Offer Union to the South
+	SpriteType = { 
+		name = "GFX_ABM_offer_union_to_the_south-44518_shine"
+		texturefile = "gfx/interface/goals/GFX_ABM_offer_union_to_the_south-44518.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_offer_union_to_the_south-44518.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_offer_union_to_the_south-44518.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: In Honor of Amadeus
+	SpriteType = { 
+		name = "GFX_ABM_in_honor_of_amadeus-44519"
+		texturefile = "gfx/interface/goals/GFX_ABM_in_honor_of_amadeus-44519.dds"
+	}
+
+	##Icon Shine For: In Honor of Amadeus
+	SpriteType = { 
+		name = "GFX_ABM_in_honor_of_amadeus-44519_shine"
+		texturefile = "gfx/interface/goals/GFX_ABM_in_honor_of_amadeus-44519.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_in_honor_of_amadeus-44519.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_in_honor_of_amadeus-44519.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Raising the Royal Guard
+	SpriteType = { 
+		name = "GFX_ABM_raising_the_royal_guard-44437"
+		texturefile = "gfx/interface/goals/GFX_ABM_raising_the_royal_guard-44437.dds"
+	}
+
+	##Icon Shine For: Raising the Royal Guard
+	SpriteType = { 
+		name = "GFX_ABM_raising_the_royal_guard-44437_shine"
+		texturefile = "gfx/interface/goals/GFX_ABM_raising_the_royal_guard-44437.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_raising_the_royal_guard-44437.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_raising_the_royal_guard-44437.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Royal Polygamy
+	SpriteType = { 
+		name = "GFX_ABM_royal_polygamy-44523"
+		texturefile = "gfx/interface/goals/GFX_ABM_royal_polygamy-44523.dds"
+	}
+
+	##Icon Shine For: Royal Polygamy
+	SpriteType = { 
+		name = "GFX_ABM_royal_polygamy-44523_shine"
+		texturefile = "gfx/interface/goals/GFX_ABM_royal_polygamy-44523.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_royal_polygamy-44523.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_royal_polygamy-44523.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Proclaim the American Imperium
+	SpriteType = { 
+		name = "GFX_ABM_proclaim_the_american_imperium-44526"
+		texturefile = "gfx/interface/goals/GFX_ABM_proclaim_the_american_imperium-44526.dds"
+	}
+
+	##Icon Shine For: Proclaim the American Imperium
+	SpriteType = { 
+		name = "GFX_ABM_proclaim_the_american_imperium-44526_shine"
+		texturefile = "gfx/interface/goals/GFX_ABM_proclaim_the_american_imperium-44526.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_proclaim_the_american_imperium-44526.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_proclaim_the_american_imperium-44526.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: A Claim to the South
+	SpriteType = { 
+		name = "GFX_ABM_a_claim_to_the_south-44759"
+		texturefile = "gfx/interface/goals/GFX_ABM_a_claim_to_the_south-44759.dds"
+	}
+
+	##Icon Shine For: A Claim to the South
+	SpriteType = { 
+		name = "GFX_ABM_a_claim_to_the_south-44759_shine"
+		texturefile = "gfx/interface/goals/GFX_ABM_a_claim_to_the_south-44759.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_a_claim_to_the_south-44759.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_a_claim_to_the_south-44759.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The End of the Pacific States
+	SpriteType = { 
+		name = "GFX_ABM_the_end_of_the_pacific_states-45169"
+		texturefile = "gfx/interface/goals/GFX_ABM_the_end_of_the_pacific_states-45169.dds"
+	}
+
+	##Icon Shine For: The End of the Pacific States
+	SpriteType = { 
+		name = "GFX_ABM_the_end_of_the_pacific_states-45169_shine"
+		texturefile = "gfx/interface/goals/GFX_ABM_the_end_of_the_pacific_states-45169.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_the_end_of_the_pacific_states-45169.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_the_end_of_the_pacific_states-45169.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: A Midwestern Problem
+	SpriteType = { 
+		name = "GFX_ABM_a_midwestern_problem-45167"
+		texturefile = "gfx/interface/goals/GFX_ABM_a_midwestern_problem-45167.dds"
+	}
+
+	##Icon Shine For: A Midwestern Problem
+	SpriteType = { 
+		name = "GFX_ABM_a_midwestern_problem-45167_shine"
+		texturefile = "gfx/interface/goals/GFX_ABM_a_midwestern_problem-45167.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_a_midwestern_problem-45167.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_a_midwestern_problem-45167.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: You Can't Reason with a Beast
+	SpriteType = { 
+		name = "GFX_ABM_you_cant_reason_with_a_beast-53711"
+		texturefile = "gfx/interface/goals/GFX_ABM_you_cant_reason_with_a_beast-53711.dds"
+	}
+
+	##Icon Shine For: You Can't Reason with a Beast
+	SpriteType = { 
+		name = "GFX_ABM_you_cant_reason_with_a_beast-53711_shine"
+		texturefile = "gfx/interface/goals/GFX_ABM_you_cant_reason_with_a_beast-53711.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_you_cant_reason_with_a_beast-53711.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_you_cant_reason_with_a_beast-53711.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Offer of Annexation
+	SpriteType = { 
+		name = "GFX_ABM_offer_of_annexation-45163"
+		texturefile = "gfx/interface/goals/GFX_ABM_offer_of_annexation-45163.dds"
+	}
+
+	##Icon Shine For: Offer of Annexation
+	SpriteType = { 
+		name = "GFX_ABM_offer_of_annexation-45163_shine"
+		texturefile = "gfx/interface/goals/GFX_ABM_offer_of_annexation-45163.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_offer_of_annexation-45163.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_offer_of_annexation-45163.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Core the Floridan Lands
+	SpriteType = { 
+		name = "GFX_ABM_core_the_floridan_lands-53709"
+		texturefile = "gfx/interface/goals/GFX_ABM_core_the_floridan_lands-53709.dds"
+	}
+
+	##Icon Shine For: Core the Floridan Lands
+	SpriteType = { 
+		name = "GFX_ABM_core_the_floridan_lands-53709_shine"
+		texturefile = "gfx/interface/goals/GFX_ABM_core_the_floridan_lands-53709.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_core_the_floridan_lands-53709.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_core_the_floridan_lands-53709.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Liberate Those Under the "American Caesar"
+	SpriteType = { 
+		name = "GFX_ABM_liberate_those_under_the_american_caesar-53714"
+		texturefile = "gfx/interface/goals/GFX_ABM_liberate_those_under_the_american_caesar-53714.dds"
+	}
+
+	##Icon Shine For: Liberate Those Under the "American Caesar"
+	SpriteType = { 
+		name = "GFX_ABM_liberate_those_under_the_american_caesar-53714_shine"
+		texturefile = "gfx/interface/goals/GFX_ABM_liberate_those_under_the_american_caesar-53714.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_liberate_those_under_the_american_caesar-53714.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_liberate_those_under_the_american_caesar-53714.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: A Pacific Lie
+	SpriteType = { 
+		name = "GFX_ABM_a_pacific_lie-45170"
+		texturefile = "gfx/interface/goals/GFX_ABM_a_pacific_lie-45170.dds"
+	}
+
+	##Icon Shine For: A Pacific Lie
+	SpriteType = { 
+		name = "GFX_ABM_a_pacific_lie-45170_shine"
+		texturefile = "gfx/interface/goals/GFX_ABM_a_pacific_lie-45170.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_a_pacific_lie-45170.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ABM_a_pacific_lie-45170.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+ 
+ }

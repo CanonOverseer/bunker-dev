@@ -1,0 +1,287 @@
+economic_gain = {
+	if = {
+		limit = {  has_idea = economy_1 }
+		swap_ideas = {
+			remove_idea = economy_1
+			add_idea = economy_2
+		}
+	}
+
+	if = {
+		limit = { has_idea = economy_2 }
+		swap_ideas = {
+			remove_idea = economy_2
+			add_idea = economy_3
+		}
+	}
+
+	if = {
+		limit = { has_idea = economy_3 }
+		swap_ideas = {
+			remove_idea = economy_3
+			add_idea = economy_4
+		}
+	}
+
+	if = {
+		limit = { has_idea = economy_4 }
+		swap_ideas = {
+			remove_idea = economy_4
+			add_idea = economy_5
+		}
+	}
+	
+	if = {
+		limit = { has_idea = economy_5 }
+		swap_ideas = {
+			remove_idea = economy_5
+			add_idea = economy_6
+		}
+	}
+	
+	if = {
+		limit = { has_idea = economy_6 }
+		swap_ideas = {
+			remove_idea = economy_6
+			add_idea = economy_7
+		}
+	}
+
+}
+
+economic_loss = {
+	if = {
+		limit = {  has_idea = economy_7 }
+		swap_ideas = {
+			remove_idea = economy_7
+			add_idea = economy_6
+		}
+	}
+
+	if = {
+		limit = { has_idea = economy_6 }
+		swap_ideas = {
+			remove_idea = economy_6
+			add_idea = economy_5
+		}
+	}
+
+	if = {
+		limit = { has_idea = economy_5 }
+		swap_ideas = {
+			remove_idea = economy_5
+			add_idea = economy_4
+		}
+	}
+
+	if = {
+		limit = { has_idea = economy_4 }
+		swap_ideas = {
+			remove_idea = economy_4
+			add_idea = economy_3
+		}
+	}
+	
+	if = {
+		limit = { has_idea = economy_3 }
+		swap_ideas = {
+			remove_idea = economy_3
+			add_idea = economy_2
+		}
+	}
+	
+	if = {
+		limit = { has_idea = economy_2 }
+		swap_ideas = {
+			remove_idea = economy_2
+			add_idea = economy_1
+		}
+	}
+
+}
+
+BNK_imperial_senate_gain = {
+	if = {
+		limit = {  has_idea = BNK_imperial_senate_opposed }
+		swap_ideas = {
+			remove_idea = BNK_imperial_senate_opposed
+			add_idea = BNK_imperial_senate
+		}
+	}
+
+	if = {
+		limit = { has_idea = BNK_imperial_senate }
+		swap_ideas = {
+			remove_idea = BNK_imperial_senate
+			add_idea = BNK_imperial_senate_supportive
+		}
+	}
+
+}
+
+BNK_imperial_senate_loss = {
+	if = {
+		limit = {  has_idea = BNK_imperial_senate }
+		swap_ideas = {
+			remove_idea = BNK_imperial_senate
+			add_idea = BNK_imperial_senate_opposed
+		}
+	}
+
+	if = {
+		limit = { has_idea = BNK_imperial_senate_supportive }
+		swap_ideas = {
+			remove_idea = BNK_imperial_senate_supportive
+			add_idea = BNK_imperial_senate
+		}
+	}
+
+}
+
+america_is_lost = {
+	if = {
+		limit = {
+			owns_state = 261
+		}
+		any_neighbor_country = {
+			limit = {
+				OR = { 
+					TAG = PSA
+					TAG = ABM
+					TAG = MDW
+					TAG = USA
+				}
+				has_war_with = SAY
+				has_country_flag = sayland_winner
+			}
+			transfer_state = 261
+		}
+	}
+	if = {
+		limit = {
+			owns_state = 811
+		}
+		any_neighbor_country = {
+			limit = {
+				OR = { 
+					TAG = PSA
+					TAG = ABM
+					TAG = MDW
+					TAG = USA
+				}
+				has_war_with = SAY
+				has_country_flag = sayland_winner
+			}
+			transfer_state = 811
+		}
+	}
+	if = {
+		limit = {
+			owns_state = 360
+		}
+		any_neighbor_country = {
+			limit = {
+				OR = { 
+					TAG = PSA
+					TAG = ABM
+					TAG = MDW
+					TAG = USA
+				}
+				has_war_with = SAY
+				has_country_flag = sayland_winner
+			}
+			transfer_state = 360
+		}
+	}
+	if = {
+		limit = {
+			owns_state = 361
+		}
+		any_neighbor_country = {
+			limit = {
+				OR = { 
+					TAG = PSA
+					TAG = ABM
+					TAG = MDW
+					TAG = USA
+				}
+				has_war_with = SAY
+				has_country_flag = sayland_winner
+			}
+			transfer_state = 361
+		}
+	}
+	if = {
+		limit = {
+			owns_state = 359
+		}
+		any_neighbor_country = {
+			limit = {
+				OR = { 
+					TAG = PSA
+					TAG = ABM
+					TAG = MDW
+					TAG = USA
+				}
+				has_war_with = SAY
+				has_country_flag = sayland_winner
+			}
+			transfer_state = 359
+		}
+	}
+	if = {
+		limit = {
+			owns_state = 358
+		}
+		any_neighbor_country = {
+			limit = {
+				OR = { 
+					TAG = PSA
+					TAG = ABM
+					TAG = MDW
+					TAG = USA
+				}
+				has_war_with = SAY
+				has_country_flag = sayland_winner
+			}
+			transfer_state = 358
+		}
+	}
+	if = {
+		limit = {
+			owns_state = 812
+		}
+		any_neighbor_country = {
+			limit = {
+				OR = { 
+					TAG = PSA
+					TAG = ABM
+					TAG = MDW
+					TAG = USA
+				}
+				has_war_with = SAY
+				has_country_flag = sayland_winner
+			}
+			transfer_state = 812
+		}
+	}
+	if = {
+		limit = {
+			owns_state = 357
+		}
+		any_neighbor_country = {
+			limit = {
+				OR = { 
+					TAG = PSA
+					TAG = ABM
+					TAG = MDW
+					TAG = USA
+				}
+				has_war_with = SAY
+				has_country_flag = sayland_winner
+			}
+			transfer_state = 357
+		}
+	}
+}
+

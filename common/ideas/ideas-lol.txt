@@ -1,0 +1,72 @@
+ideas = {
+	country = {
+
+		RED_the_bourbon_monarchy = {
+			ledger = army
+			picture = RED_the_bourbon_monarchy-45183
+			modifier = {
+				drift_defence_factor = -0.1
+stability_factor = -0.1
+justify_war_goal_time = 0.1
+			}
+		}
+
+		RED_the_bourbon_monarchy_2 = {
+			picture = RED_the_bourbon_monarchy_2-45184
+			modifier = {
+				drift_defence_factor = 0.1
+stability_factor = 0.15
+justify_war_goal_time = -0.30
+			}
+		}
+
+		RED_heir_to_america = {
+			ledger = army
+			picture = generic_victors_of_ww1
+			modifier = {
+				surrender_limit = 0.1
+drift_defence_factor = 0.25
+political_power_gain = 0.1
+			}
+		}
+
+		RED_the_white_house = {
+			ledger = army
+			picture = RED_the_white_house-45194
+			modifier = {
+				political_power_gain = 0.2
+war_support_factor = 0.10
+resistance_target = -0.05
+			}
+		}
+
+		RED_pleasure_king = {
+			picture = spa_carlism
+			modifier = {
+				MONTHLY_POPULATION = 0.5
+			}
+		}
+
+	}
+	political_advisor = {
+
+		RED_canon = {
+			traits = {
+				nuclear_scientist war_profiteer
+			}
+			cost = 150
+			removal_cost = 50
+			picture = RED_canon-45181
+			allowed = {
+				tag = BNK
+tag = ABM
+tag = AST
+			}
+			visible = {
+				tag = BNK
+tag = ABM
+tag = AST
+			}
+		}
+	}
+}

@@ -1,0 +1,84 @@
+ideas = {
+	country = {
+
+		MDW_when_the_world_stop_turning = {
+			picture = spr_disbanded_army
+			modifier = {
+				planning_speed = 0.10
+
+army_core_attack_factor = 0.1
+
+army_core_defence_factor = 0.1
+			}
+		}
+
+		MDW_arm_the_population = {
+			picture = volunteer_only
+			modifier = {
+				conscription_factor = 0.1
+			}
+		}
+
+		MDW_economic_plan = {
+			picture = generic_local_self_management
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+
+production_speed_industrial_complex_factor = 0.1
+			}
+		}
+
+		MDW_defensive_strategy = {
+			ledger = army
+			picture = spa_la_division_azul
+			modifier = {
+				army_core_defence_factor = 0.2
+			}
+		}
+
+		MDW_factory_bonus = {
+			picture = man_five_year_plan_industry
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+
+		MDW_impenetrable_wall = {
+			picture = generic_fortify_the_borders
+			modifier = {
+				production_speed_bunker_factor = 0.3
+			}
+		}
+
+		MDW_great_economy = {
+			picture = civilian_economy
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+
+		MDW_begin_conscription = {
+			picture = generic_army_war_college
+			modifier = {
+				conscription_factor = 0.1
+			}
+		}
+
+		MDW_repair_effort = {
+			ledger = army
+			picture = generic_central_management
+			modifier = {
+				industry_repair_factor = 0.5
+			}
+		}
+
+		MDW_our_country_tis_of_thee = {
+			picture = mex_politicised_army_2
+			modifier = {
+				political_power_gain = 0.5	
+
+drift_defence_factor = 0.25
+			}
+		}
+	}
+}

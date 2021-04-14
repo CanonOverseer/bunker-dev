@@ -1,0 +1,440 @@
+add_namespace = israelevents
+
+##Event: Non Aggression with Japan
+country_event = {
+	id = israelevents.1
+	title = israelevents.1.title
+	desc = israelevents.1.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = israelevents.1.a
+		ai_chance = { factor = 1}
+		JAP = { country_event = { id = israelevents.2 } }
+	}
+}
+##Event: The Republic of Israel Requests Non Aggression
+country_event = {
+	id = israelevents.2
+	title = israelevents.2.title
+	desc = israelevents.2.desc
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = israelevents.2.a
+		ai_chance = { factor = 1}
+		ISR = { country_event = { id = israelevents.3 } }
+
+diplomatic_relation= { 
+country = ISR
+relation = non_aggression_pact 
+}
+	}
+	option = {
+		name = israelevents.2.b
+		ai_chance = { factor = 1}
+		ISR = { country_event = { id = israelevents.4 } }
+	}
+}
+##Event: Japan Accepts
+country_event = {
+	id = israelevents.3
+	title = israelevents.3.title
+	desc = israelevents.3.desc
+	picture = GFX_report_event_gre_allied_diplomacy_military
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = israelevents.3.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Japan Refuses
+country_event = {
+	id = israelevents.4
+	title = israelevents.4.title
+	desc = israelevents.4.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = israelevents.4.a
+		ai_chance = { factor = 1}
+		create_wargoal= { 
+type = annex_everything 
+target = JAP
+}
+	}
+	option = {
+		name = israelevents.4.b
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Turkish Demands
+country_event = {
+	id = israelevents.5
+	title = israelevents.5.title
+	desc = israelevents.5.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = israelevents.5.a
+		ai_chance = { factor = 1}
+		TUR = { country_event = { id = israelevents.6 } }
+	}
+}
+##Event: Israel Demands We Cede our Eastern Lands
+country_event = {
+	id = israelevents.6
+	title = israelevents.6.title
+	desc = israelevents.6.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = israelevents.6.a
+		ai_chance = { factor = 1}
+		ISR = { country_event = { id = israelevents.7 } }
+
+ISR = {
+set_state_owner= 354
+}
+
+ISR = {
+set_state_controller= 354
+}
+
+ISR = {
+set_state_owner= 353
+}
+
+ISR = {
+set_state_controller= 353
+}
+
+ISR = {
+set_state_controller= 800
+}
+
+ISR = {
+set_state_owner= 800
+}
+
+ISR = {
+set_state_controller= 352
+}
+
+ISR = {
+set_state_owner= 352
+}
+
+ISR = {
+set_state_owner= 354
+}
+
+ISR = {
+set_state_controller= 350
+}
+
+ISR = {
+set_state_owner= 350
+}
+	}
+	option = {
+		name = israelevents.6.b
+		ai_chance = { factor = 1}
+		ISR = { country_event = { id = israelevents.8 } }
+	}
+}
+##Event: Turkey Folds
+country_event = {
+	id = israelevents.7
+	title = israelevents.7.title
+	desc = israelevents.7.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = israelevents.7.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Turkey Refuses
+country_event = {
+	id = israelevents.8
+	title = israelevents.8.title
+	desc = israelevents.8.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = israelevents.8.a
+		ai_chance = { factor = 1}
+		create_wargoal= { 
+type = annex_everything 
+target = TUR
+}
+	}
+	option = {
+		name = israelevents.8.b
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Demand Georgian Annexation
+country_event = {
+	id = israelevents.9
+	title = israelevents.9.title
+	desc = israelevents.9.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = israelevents.9.a
+		ai_chance = { factor = 1}
+		GEO = { country_event = { id = israelevents.20 } }
+	}
+}
+##Event: Georgia Folds
+country_event = {
+	id = israelevents.10
+	title = israelevents.10.title
+	desc = israelevents.10.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = israelevents.10.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Georgia Refuses
+country_event = {
+	id = israelevents.11
+	title = israelevents.11.title
+	desc = israelevents.11.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = israelevents.11.a
+		ai_chance = { factor = 1}
+		create_wargoal= { 
+type = annex_everything 
+target = GEO
+}
+	}
+	option = {
+		name = israelevents.11.b
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Demand Syria
+country_event = {
+	id = israelevents.12
+	title = israelevents.12.title
+	desc = israelevents.12.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = israelevents.12.a
+		ai_chance = { factor = 1}
+		FRA = { country_event = { id = israelevents.13 } }
+	}
+}
+##Event: Israel Demands Syria
+country_event = {
+	id = israelevents.13
+	title = israelevents.13.title
+	desc = israelevents.13.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = israelevents.13.a
+		ai_chance = { factor = 1}
+		ISR = { country_event = { id = israelevents.14 } }
+
+ISR = {
+set_state_owner= 680
+}
+
+ISR = {
+set_state_controller= 680
+}
+
+ISR = {
+set_state_owner= 677
+}
+
+ISR = {
+set_state_controller= 677
+}
+
+ISR = {
+set_state_owner= 554
+}
+
+ISR = {
+set_state_controller= 554
+}
+
+ISR = {
+set_state_owner= 553
+}
+
+ISR = {
+set_state_controller= 553
+}
+	}
+	option = {
+		name = israelevents.13.b
+		ai_chance = { factor = 1}
+		ISR = { country_event = { id = israelevents.15 } }
+	}
+}
+##Event: France Surrenders Syria
+country_event = {
+	id = israelevents.14
+	title = israelevents.14.title
+	desc = israelevents.14.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = israelevents.14.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: France Refuses Our Ultimatum!
+country_event = {
+	id = israelevents.15
+	title = israelevents.15.title
+	desc = israelevents.15.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = israelevents.15.a
+		ai_chance = { factor = 1}
+		create_wargoal= { 
+type = annex_everything 
+target = FRA
+}
+	}
+	option = {
+		name = israelevents.15.b
+		ai_chance = { factor = 1}
+	}
+}
+##Event: We Ask for Israel
+country_event = {
+	id = israelevents.16
+	title = israelevents.16.title
+	desc = israelevents.16.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = israelevents.16.a
+		ai_chance = { factor = 1}
+		ENG = { country_event = { id = israelevents.17 } }
+	}
+}
+##Event: Republic of New Israel Asks for Israel
+country_event = {
+	id = israelevents.17
+	title = israelevents.17.title
+	desc = israelevents.17.desc
+	picture = GFX_report_event_tur_ataturk_determined
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = israelevents.17.a
+		ai_chance = { factor = 1}
+		ISR = { country_event = { id = israelevents.18 } }
+
+ISR = {
+set_state_owner= 455
+}
+
+ISR = {
+set_state_controller= 455
+}
+
+ISR = {
+set_state_owner= 454
+}
+
+ISR = {
+set_state_controller= 454
+}
+	}
+	option = {
+		name = israelevents.17.b
+		ai_chance = { factor = 1}
+		ISR = { country_event = { id = israelevents.19 } }
+	}
+}
+##Event: Britain Gives Us Israel
+country_event = {
+	id = israelevents.18
+	title = israelevents.18.title
+	desc = israelevents.18.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = israelevents.18.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Britain Denies Our Request
+country_event = {
+	id = israelevents.19
+	title = israelevents.19.title
+	desc = israelevents.19.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = israelevents.19.a
+		ai_chance = { factor = 1}
+		create_wargoal= { 
+type = annex_everything 
+target = ENG
+}
+	}
+	option = {
+		name = israelevents.19.b
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Israel Demands Annexation
+country_event = {
+	id = israelevents.20
+	title = israelevents.20.title
+	desc = israelevents.20.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = israelevents.20.a
+		ai_chance = { factor = 1}
+		ISR = { country_event = { id = israelevents.10 } }
+
+ISR = {
+annex_country= {
+ target = GEO
+}
+}
+	}
+	option = {
+		name = israelevents.20.b
+		ai_chance = { factor = 1}
+		ISR = { country_event = { id = israelevents.11 } }
+	}
+}

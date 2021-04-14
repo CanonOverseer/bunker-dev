@@ -1,0 +1,80 @@
+focus_tree = {
+	id = siberia
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SBR
+		}
+	}
+	#Focus for The Siberian Elections
+	focus = {
+		id = SBR_the_siberian_elections
+		icon = GFX_SBR_the_siberian_elections-67660
+		x = 17
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SBR_to_defend_siberia }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for To Defend Siberia!
+	focus = {
+		id = SBR_to_defend_siberia
+		icon = GFX_SBR_to_defend_siberia-66681
+		x = 17
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Kerensky's Coalition
+	focus = {
+		id = SBR_kerenskys_coalition
+		icon = GFX_SBR_kerenskys_coalition-67687
+		x = 13
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SBR_the_siberian_elections }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Officers Coup
+	focus = {
+		id = SBR_the_officers_coup
+		icon = GFX_SBR_the_officers_coup-67696
+		x = 26
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SBR_the_siberian_elections }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Rodzaevsky's RFP
+	focus = {
+		id = SBR_rodzaevskys_rfp
+		icon = GFX_SBR_rodzaevskys_rfp-67693
+		x = 21
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SBR_the_siberian_elections }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }

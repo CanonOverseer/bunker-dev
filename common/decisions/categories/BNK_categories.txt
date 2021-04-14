@@ -1,0 +1,23 @@
+form_sex_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_formsex
+
+	allowed = {
+		
+	}
+}
+
+jewish_jihad_category = {
+
+	icon = GFX_decision_cat_jewish_icon
+
+	picture = GFX_decision_cat_jewish_image
+
+	visible_when_empty = yes
+
+	allowed = {
+		tag = ISR
+	}
+}

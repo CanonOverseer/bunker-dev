@@ -1,0 +1,1997 @@
+focus_tree = {
+	id = focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ABM
+		}
+	}
+	#Focus for The Holy Alliance
+	focus = {
+		id = ABM_the_holy_alliance
+		icon = GFX_ABM_the_holy_alliance-44535
+		x = 30
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_battle_for_americas_soul }
+		mutually_exclusive = { focus = ABM_destruction_of_the_saylish_threat }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = alabamaevent.20
+}
+
+create_faction= "American Imperium"
+		}
+	}
+
+	#Focus for Destruction of the Saylish Threat
+	focus = {
+		id = ABM_destruction_of_the_saylish_threat
+		icon = GFX_ABM_destruction_of_the_saylish_threat-44524
+		x = 34
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_battle_for_americas_soul }
+		mutually_exclusive = { focus = ABM_the_holy_alliance }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = SAY
+}
+		}
+	}
+
+	#Focus for The Texas Gambit
+	focus = {
+		id = ABM_the_texas_gambit
+		icon = GFX_ABM_the_texas_gambit-44520
+		x = 29
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ABM_bourbon_claims 
+		}
+		prerequisite = { 
+			focus = ABM_in_honor_of_amadeus 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = TEX
+}
+		}
+	}
+
+	#Focus for False Texas
+	focus = {
+		id = ABM_false_texas
+		icon = GFX_goal_generic_forceful_treaty
+		x = 22
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_the_death_of_long }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = TEX
+}
+		}
+	}
+
+	#Focus for Under King Lion
+	focus = {
+		id = ABM_under_king_lion
+		icon = GFX_ABM_under_king_lion-45188
+		x = 27
+		y = 2
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_royal_legitimacy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+remove_idea = RED_the_bourbon_monarchy
+add_idea = RED_the_bourbon_monarchy_2
+}
+add_popularity = {
+    ideology = neutrality
+    popularity = 0.4
+}
+set_party_name= { 
+ideology = neutrality
+long_name = "Royal Party of Alabama" 
+name = "Royal Party"   
+}
+		}
+	}
+
+	#Focus for Bourbon Claims
+	focus = {
+		id = ABM_bourbon_claims
+		icon = GFX_ABM_bourbon_claims-44517
+		x = 27
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_prepare_to_control_the_south }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = LOU
+}
+		}
+	}
+
+	#Focus for Repairing Louisiana
+	focus = {
+		id = ABM_repairing_louisiana
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 7
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_south_carolinian_industry }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			controls_state= 371
+		}
+		completion_reward = {
+			371 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+        type = industrial_complex
+        level = 2
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Our Amazing Military
+	focus = {
+		id = ABM_our_amazing_military
+		icon = GFX_goal_rhineland
+		x = 19
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ABM_rapprochement_with_our_american_brothers 
+			focus = ABM_the_death_of_long 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = militarism_focus
+		}
+	}
+
+	#Focus for Deal with the true threat.
+	focus = {
+		id = ABM_deal_with_the_true_threat
+		icon = GFX_focus_eng_chiefs_of_staff_committee
+		x = 22
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_texas_is_alabaman }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = USA
+}
+  create_wargoal= { 
+type = annex_everything 
+target = SAY
+}
+		}
+	}
+
+	#Focus for Battle for America's Soul
+	focus = {
+		id = ABM_battle_for_americas_soul
+		icon = GFX_ABM_battle_for_americas_soul-44521
+		x = 32
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_android_rights }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = USA
+}
+  add_manpower= 165000
+		}
+	}
+
+	#Focus for Android Rights
+	focus = {
+		id = ABM_android_rights
+		icon = GFX_goal_generic_secret_weapon
+		x = 32
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_the_texas_gambit }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = militarism_focus
+		}
+	}
+
+	#Focus for Minutemen Victory!
+	focus = {
+		id = ABM_minutemen_victory
+		icon = GFX_ABM_minutemen_victory-44537
+		x = 20
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_the_first_election }
+		mutually_exclusive = { focus = ABM_tea_party_victory }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_global_flag = Minutemen_win
+		}
+		completion_reward = {
+			set_party_name= { 
+ideology = fascism
+long_name = "Minutemen"
+name = "Minutemen"
+}
+add_popularity= { 
+ideology = fascism
+popularity = 0.4
+}
+set_politics= {
+ ruling_party = fascism
+elections_allowed = no 
+}
+
+create_country_leader = {
+	name = "Cory"
+	desc = "TBD"
+	picture = "gfx/leaders/ABM/cory.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		cornered_fox
+	}
+}
+		}
+	}
+
+	#Focus for War for the Midwest
+	focus = {
+		id = ABM_war_for_the_midwest
+		icon = GFX_ABM_war_for_the_midwest-45167
+		x = 34
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_android_rights }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = MDW
+}
+		}
+	}
+
+	#Focus for Civilian Effort in Tennessee
+	focus = {
+		id = ABM_civilian_effort_in_tennessee
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 3
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ABM_kentucky_militarization_plan 
+		}
+		prerequisite = { 
+			focus = ABM_infrastructure_in_oklahoma 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			368 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+        type = industrial_complex
+        level = 2
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Tank Advancement
+	focus = {
+		id = ABM_tank_advancement
+		icon = GFX_goal_generic_army_tanks
+		x = 36
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_infantry_advancements }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = armor_bonus
+bonus = 1.0
+uses = 2
+category = armor
+	}
+		}
+	}
+
+	#Focus for The End of the Midwest
+	focus = {
+		id = ABM_the_end_of_the_midwest
+		icon = GFX_ABM_the_end_of_the_midwest-45171
+		x = 18
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_deal_with_the_true_threat }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = MDW
+}
+		}
+	}
+
+	#Focus for Nuclear Advancement
+	focus = {
+		id = ABM_nuclear_advancement
+		icon = GFX_focus_wonderweapons
+		x = 34
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_infantry_advancement_2 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = nuclear_bonus
+ahead_reduction = 2
+category = nuclear
+	}
+		}
+	}
+
+	#Focus for Airbase Advancement
+	focus = {
+		id = ABM_airbase_advancement
+		icon = GFX_focus_usa_escort_fighters
+		x = 38
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_infantry_advancements }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			367 = {
+add_building_construction =  {
+type = air_base
+level = 2
+instant_build = yes }
+    }
+		}
+	}
+
+	#Focus for Infantry Advancement 2
+	focus = {
+		id = ABM_infantry_advancement_2
+		icon = GFX_goal_generic_small_arms
+		x = 36
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ABM_motorized_advancements 
+		}
+		prerequisite = { 
+			focus = ABM_close_air_support_advancement 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = infantry_artillery_bonus
+bonus = 1.0
+uses = 1
+category = infantry_weapons
+category = artillery
+	}
+		}
+	}
+
+	#Focus for Prepare to Control the South
+	focus = {
+		id = ABM_prepare_to_control_the_south
+		icon = GFX_ABM_prepare_to_control_the_south-45163
+		x = 27
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ABM_raising_the_royal_guard 
+		}
+		prerequisite = { 
+			focus = ABM_listen_to_the_news_man 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 5
+		}
+	}
+
+	#Focus for Motorized Advancements
+	focus = {
+		id = ABM_motorized_advancements
+		icon = GFX_goal_generic_army_motorized
+		x = 34
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ABM_artillery_advancement 
+		}
+		prerequisite = { 
+			focus = ABM_tank_advancement 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = motorized_bonus
+bonus = 3.0
+technology = motorised_infantry
+	}
+		}
+	}
+
+	#Focus for Close Air Support Advancement
+	focus = {
+		id = ABM_close_air_support_advancement
+		icon = GFX_goal_generic_navy_carrier
+		x = 38
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ABM_bomber_advancement 
+			focus = ABM_fighter_advancement 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = CAS_bonus
+bonus = 1.0
+ahead_reduction = 2
+uses = 1
+category = cas_bomber
+	}
+		}
+	}
+
+	#Focus for Artillery Advancement
+	focus = {
+		id = ABM_artillery_advancement
+		icon = GFX_goal_generic_army_artillery2
+		x = 34
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_infantry_advancements }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = infantry_artillery_bonus
+bonus = 1.0
+uses = 1
+category = infantry_weapons
+category = artillery
+	}
+		}
+	}
+
+	#Focus for Research Has Happened
+	focus = {
+		id = ABM_research_has_happened
+		icon = GFX_focus_research2
+		x = 8
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ABM_militarize_north_carolina 
+			focus = ABM_civilian_effort_in_tennessee 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot= 1
+		}
+	}
+
+	#Focus for Core the Texan States
+	focus = {
+		id = ABM_core_the_texan_states
+		icon = GFX_goal_tripartite_pact
+		x = 34
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_the_texas_gambit }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core= 375  
+
+add_state_core= 376
+		}
+	}
+
+	#Focus for Militarize North Carolina
+	focus = {
+		id = ABM_militarize_north_carolina
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 13
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ABM_more_civilian_factories_in_mississippi 
+			focus = ABM_military_build_up_in_mississippi 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			368 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+        type = arms_factory
+        level = 2
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Fighter Advancement
+	focus = {
+		id = ABM_fighter_advancement
+		icon = GFX_goal_generic_air_fighter2
+		x = 40
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_airbase_advancement }
+		mutually_exclusive = { focus = ABM_bomber_advancement }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience= 10
+
+add_tech_bonus = {
+name = fighter_bonus
+bonus = 1.0
+uses = 2
+technology = early_fighter
+technology = fighter1
+technology = fighter2
+technology = fighter3
+technology = heavy_fighter1
+technology = heavy_fighter2
+technology = heavy_fighter3
+	}
+		}
+	}
+
+	#Focus for Core Florida
+	focus = {
+		id = ABM_core_florida
+		icon = GFX_goal_tripartite_pact
+		x = 36
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_the_texas_gambit }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core= 366
+		}
+	}
+
+	#Focus for The End of PSA
+	focus = {
+		id = ABM_the_end_of_psa
+		icon = GFX_ABM_the_end_of_psa-45170
+		x = 21
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_deal_with_the_true_threat }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = PSA
+}
+		}
+	}
+
+	#Focus for Bomber Advancement
+	focus = {
+		id = ABM_bomber_advancement
+		icon = GFX_goal_generic_air_bomber
+		x = 38
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_airbase_advancement }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = bomber_bonus
+bonus = 1.0
+uses = 2
+technology = strategic_bomber1
+technology = strategic_bomber2
+technology = strategic_bomber3
+category = tactical_bomber
+	}
+		}
+	}
+
+	#Focus for Florida Repair Act
+	focus = {
+		id = ABM_florida_repair_act
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 9
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_south_carolinian_industry }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			controls_state= 366
+		}
+		completion_reward = {
+			366 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+        type = industrial_complex
+        level = 2
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Rebuild
+	focus = {
+		id = ABM_rebuild
+		icon = GFX_goal_generic_construction2
+		x = 8
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war= no
+		}
+		completion_reward = {
+			367 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+        type = industrial_complex
+        level = 1
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Build Up the Civilian Factories in Mississippi
+	focus = {
+		id = ABM_build_up_the_civilian_factories_in_mississippi
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 13
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_rebuild }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			370 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+        type = industrial_complex
+        level = 2
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Militarize Georgia
+	focus = {
+		id = ABM_militarize_georgia
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 3
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_rebuild }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			365 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+        type = arms_factory
+        level = 2
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Kentucky Militarization Plan
+	focus = {
+		id = ABM_kentucky_militarization_plan
+		icon = GFX_goal_generic_fortify_city
+		x = 2
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_militarize_georgia }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			369 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+        type = arms_factory
+        level = 2
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for More Civilian Factories in Mississippi
+	focus = {
+		id = ABM_more_civilian_factories_in_mississippi
+		icon = GFX_goal_generic_production2
+		x = 12
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_build_up_the_civilian_factories_in_mississippi }
+		mutually_exclusive = { focus = ABM_military_build_up_in_mississippi }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			370 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+        type = industrial_complex
+        level = 2
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Military Build Up in Mississippi
+	focus = {
+		id = ABM_military_build_up_in_mississippi
+		icon = GFX_goal_generic_production2
+		x = 14
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_build_up_the_civilian_factories_in_mississippi }
+		mutually_exclusive = { focus = ABM_more_civilian_factories_in_mississippi }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			370 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+        type = arms_factory
+        level = 2
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for The Florida Question
+	focus = {
+		id = ABM_the_florida_question
+		icon = GFX_goal_demand_sudetenland
+		x = 22
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_minutemen_victory }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = FLR
+}
+		}
+	}
+
+	#Focus for Rapprochement with our American Brothers
+	focus = {
+		id = ABM_rapprochement_with_our_american_brothers
+		icon = GFX_focus_chi_mission_to_the_us
+		x = 16
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ABM_a_united_alabama 
+		}
+		prerequisite = { 
+			focus = ABM_a_strong_industry 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = alabamaevent.5
+}
+		}
+	}
+
+	#Focus for Uniting the Country
+	focus = {
+		id = ABM_uniting_the_country
+		icon = GFX_focus_spa_supremacy_of_the_communion
+		x = 23
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for Royal Legitimacy
+	focus = {
+		id = ABM_royal_legitimacy
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 27
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_uniting_the_country }
+		mutually_exclusive = { focus = ABM_call_for_the_parliament }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_political_party= { 
+ideology = neutrality
+popularity = 0.4
+}
+		}
+	}
+
+	#Focus for Call for the Parliament!
+	focus = {
+		id = ABM_call_for_the_parliament
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 19
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_uniting_the_country }
+		mutually_exclusive = { focus = ABM_royal_legitimacy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = democratic
+popularity = 0.4
+}
+		}
+	}
+
+	#Focus for The First Election!
+	focus = {
+		id = ABM_the_first_election
+		icon = GFX_goal_generic_forceful_treaty
+		x = 19
+		y = 2
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_call_for_the_parliament }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = {
+    id = canonishot.2
+    days = 1
+}
+remove_ideas = RED_the_bourbon_monarchy
+		}
+	}
+
+	#Focus for Tea Party Victory!
+	focus = {
+		id = ABM_tea_party_victory
+		icon = GFX_ABM_tea_party_victory-44539
+		x = 18
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_the_first_election }
+		mutually_exclusive = { focus = ABM_minutemen_victory }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_global_flag = tea_party_wins
+		}
+		completion_reward = {
+			set_party_name= { 
+ideology = democratic
+long_name = "Tea Party"
+name = "Tea Party"
+}
+add_popularity= { 
+ideology = democratic
+popularity = 0.4
+}
+set_politics= {
+ ruling_party = democratic
+elections_allowed = no 
+}
+
+create_country_leader = {
+	name = "Ryan"
+	desc = "TBD"
+	picture = "gfx/leaders/ABM/ryan.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+                national_integralist	
+	}
+}
+		}
+	}
+
+	#Focus for Support the Free Market
+	focus = {
+		id = ABM_support_the_free_market
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 19
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ABM_tea_party_victory 
+			focus = ABM_minutemen_victory 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = CZE_industrial_legacy_idea
+		}
+	}
+
+	#Focus for The Florida Compromise
+	focus = {
+		id = ABM_the_florida_compromise
+		icon = GFX_goal_tripartite_pact
+		x = 16
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_tea_party_victory }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = alabamaevent.1
+}
+		}
+	}
+
+	#Focus for The Death of Long
+	focus = {
+		id = ABM_the_death_of_long
+		icon = GFX_ABM_the_death_of_long-44514
+		x = 22
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ABM_an_iron_fist_over_alabama 
+		}
+		prerequisite = { 
+			focus = ABM_the_military_approach 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = LOU
+}
+		}
+	}
+
+	#Focus for Pax Americana
+	focus = {
+		id = ABM_pax_americana
+		icon = GFX_ABM_pax_americana-44440
+		x = 17
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_rapprochement_with_our_american_brothers }
+		mutually_exclusive = { focus = ABM_liberate_those_under_the_american_caesar }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = alabamaevent.9 
+}
+  
+create_faction= "Pax Americana"
+		}
+	}
+
+	#Focus for Offer Union to the South
+	focus = {
+		id = ABM_offer_union_to_the_south
+		icon = GFX_ABM_offer_union_to_the_south-44518
+		x = 16
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ABM_liberate_those_under_the_american_caesar 
+			focus = ABM_pax_americana 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = alabamaevent.13
+}
+		}
+	}
+
+	#Focus for Central America will be no more
+	focus = {
+		id = ABM_central_america_will_be_no_more
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 25
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ABM_fortify_our_cuban_lands 
+		}
+		prerequisite = { 
+			focus = ABM_haiti_and_the_dominican_republic_are_ours 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = GUA
+}
+
+create_wargoal= { 
+type = annex_everything 
+target = ELS
+}
+
+create_wargoal= { 
+type = annex_everything 
+target = HON
+}
+
+create_wargoal= { 
+type = annex_everything 
+target = NIC
+}
+
+create_wargoal= { 
+type = annex_everything 
+target = COS
+}
+
+create_wargoal= { 
+type = annex_everything 
+target = PAN
+}
+		}
+	}
+
+	#Focus for In Honor of Amadeus
+	focus = {
+		id = ABM_in_honor_of_amadeus
+		icon = GFX_ABM_in_honor_of_amadeus-44519
+		x = 31
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_prepare_to_control_the_south }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = FLR
+}
+		}
+	}
+
+	#Focus for Texas Military Build Up
+	focus = {
+		id = ABM_texas_military_build_up
+		icon = GFX_goal_generic_construction2
+		x = 8
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ABM_repairing_louisiana 
+		}
+		prerequisite = { 
+			focus = ABM_florida_repair_act 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			controls_state= 375
+		}
+		completion_reward = {
+			375 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+        type = arms_factory
+        level = 2
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Mexico shall be ours!
+	focus = {
+		id = ABM_mexico_shall_be_ours
+		icon = GFX_focus_mex_jefe_maximo
+		x = 22
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_central_america_will_be_no_more }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = MEX
+}
+		}
+	}
+
+	#Focus for Raising the Royal Guard
+	focus = {
+		id = ABM_raising_the_royal_guard
+		icon = GFX_ABM_raising_the_royal_guard-44437
+		x = 25
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_under_king_lion }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			load_oob = "ABM_reinforce"
+		}
+	}
+
+	#Focus for South Carolinian Industry
+	focus = {
+		id = ABM_south_carolinian_industry
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 8
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_rebuild }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			364 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+        type = industrial_complex
+        level = 1
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Listen to the News Man
+	focus = {
+		id = ABM_listen_to_the_news_man
+		icon = GFX_focus_generic_military_academy
+		x = 29
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_under_king_lion }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support= 0.5
+
+add_stability= 0.3
+		}
+	}
+
+	#Focus for Royal Polygamy
+	focus = {
+		id = ABM_royal_polygamy
+		icon = GFX_ABM_royal_polygamy-44523
+		x = 30
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_android_rights }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.15
+		}
+	}
+
+	#Focus for Proclaim the American Imperium
+	focus = {
+		id = ABM_proclaim_the_american_imperium
+		icon = GFX_ABM_proclaim_the_american_imperium-44526
+		x = 32
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ABM_the_holy_alliance 
+			focus = ABM_destruction_of_the_saylish_threat 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core= 373 
+
+add_state_core= 395 
+
+add_state_core= 261  
+add_state_core= 384  
+
+add_state_core= 392  
+
+add_state_core= 378  
+
+add_state_core= 379  
+
+add_state_core= 380  
+
+add_state_core= 385  
+
+add_state_core= 386  
+
+add_state_core= 377  
+
+add_state_core= 380  
+
+add_state_core= 387  
+
+add_state_core= 388
+
+set_cosmetic_tag = ABM
+
+set_global_flag = america_unified_ABM
+		}
+	}
+
+	#Focus for Fortify our Cuban Lands
+	focus = {
+		id = ABM_fortify_our_cuban_lands
+		icon = GFX_goal_generic_defence
+		x = 24
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_a_claim_to_the_south }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			country_exists= CUB
+		}
+		completion_reward = {
+			add_state_core= 315 
+
+add_state_core= 797
+		}
+	}
+
+	#Focus for Imperial Ambitions
+	focus = {
+		id = ABM_imperial_ambitions
+		icon = GFX_focus_hol_the_fourth_ally
+		x = 25
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ABM_mexico_shall_be_ours 
+		}
+		prerequisite = { 
+			focus = ABM_gran_columbia_shall_be_no_more 
+		}
+		prerequisite = { 
+			focus = ABM_goodbye_brazil 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = ENG
+}
+  create_wargoal= { 
+type = annex_everything 
+target = FRA
+}
+create_wargoal= { 
+type = annex_everything 
+target = HOL
+}
+		}
+	}
+
+	#Focus for A Claim to the South
+	focus = {
+		id = ABM_a_claim_to_the_south
+		icon = GFX_ABM_a_claim_to_the_south-44759
+		x = 25
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ABM_android_rights 
+			focus = ABM_deal_with_the_true_threat 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = CUB
+}
+		}
+	}
+
+	#Focus for Haiti and the Dominican Republic are ours.
+	focus = {
+		id = ABM_haiti_and_the_dominican_republic_are_ours
+		icon = GFX_focus_mex_caudillo_private_armies
+		x = 26
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_a_claim_to_the_south }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = HAI
+}
+  
+create_wargoal= { 
+type = annex_everything 
+target = DOM
+}
+		}
+	}
+
+	#Focus for Gran Columbia Shall Be No More!
+	focus = {
+		id = ABM_gran_columbia_shall_be_no_more
+		icon = GFX_focus_por_recover_brazil
+		x = 25
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_central_america_will_be_no_more }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = COL
+}
+create_wargoal= { 
+type = annex_everything 
+target = VEN
+}
+create_wargoal= { 
+type = annex_everything 
+target = ECU
+}
+		}
+	}
+
+	#Focus for Goodbye Brazil
+	focus = {
+		id = ABM_goodbye_brazil
+		icon = GFX_focus_por_recover_latin_america
+		x = 28
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_central_america_will_be_no_more }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = BRA
+}
+		}
+	}
+
+	#Focus for Infrastructure in Oklahoma
+	focus = {
+		id = ABM_infrastructure_in_oklahoma
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 4
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_militarize_georgia }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			374 = {
+set_building_level = {
+    type = infrastructure
+    level = 6
+    instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Core Louisianian
+	focus = {
+		id = ABM_core_louisianian
+		icon = GFX_goal_tripartite_pact
+		x = 38
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_the_texas_gambit }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core= 371
+		}
+	}
+
+	#Focus for Infantry Advancements
+	focus = {
+		id = ABM_infantry_advancements
+		icon = GFX_goal_rhineland
+		x = 36
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 5
+
+add_tech_bonus = {
+name = land_doc_bonus
+bonus = 1.0
+uses = 1
+category = land_doctrine
+	}
+		}
+	}
+
+	#Focus for Research Advancement
+	focus = {
+		id = ABM_research_advancement
+		icon = GFX_focus_research2
+		x = 38
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_infantry_advancement_2 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot= 1
+		}
+	}
+
+	#Focus for The Midwestern Lands Are Ours
+	focus = {
+		id = ABM_the_midwestern_lands_are_ours
+		icon = GFX_goal_generic_position_armies
+		x = 34
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_war_for_the_midwest }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			owns_state= 373  
+
+owns_state= 392  
+
+owns_state= 391  
+
+owns_state= 394  
+
+owns_state= 395  
+
+owns_state= 396  
+
+owns_state= 393
+		}
+		completion_reward = {
+			add_state_core= 393  
+
+add_state_core= 394  
+
+add_state_core= 395  
+
+add_state_core= 396  
+
+add_state_core= 373  
+
+add_state_core= 392  
+
+add_state_core= 391
+		}
+	}
+
+	#Focus for The End of the Pacific States
+	focus = {
+		id = ABM_the_end_of_the_pacific_states
+		icon = GFX_ABM_the_end_of_the_pacific_states-45169
+		x = 30
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_royal_polygamy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = PSA
+}
+		}
+	}
+
+	#Focus for A Midwestern Problem
+	focus = {
+		id = ABM_a_midwestern_problem
+		icon = GFX_ABM_a_midwestern_problem-45167
+		x = 10
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_you_cant_reason_with_a_beast }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = MDW
+}
+		}
+	}
+
+	#Focus for Midwestern People
+	focus = {
+		id = ABM_midwestern_people
+		icon = GFX_goal_generic_dangerous_deal
+		x = 8
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_you_cant_reason_with_a_beast }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core= 373  
+
+add_state_core= 395
+
+add_state_core= 396
+		}
+	}
+
+	#Focus for Texas is Alabaman
+	focus = {
+		id = ABM_texas_is_alabaman
+		icon = GFX_focus_generic_support_the_left_right
+		x = 22
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_false_texas }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core= 375
+		}
+	}
+
+	#Focus for You Can't Reason with a Beast
+	focus = {
+		id = ABM_you_cant_reason_with_a_beast
+		icon = GFX_ABM_you_cant_reason_with_a_beast-53711
+		x = 10
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_rapprochement_with_our_american_brothers }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = SAY
+}
+		}
+	}
+
+	#Focus for Offer of Annexation
+	focus = {
+		id = ABM_offer_of_annexation
+		icon = GFX_ABM_offer_of_annexation-45163
+		x = 16
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_offer_union_to_the_south }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = alabamaevent.24
+}
+		}
+	}
+
+	#Focus for The Saylish, Are Our People Too
+	focus = {
+		id = ABM_the_saylish_are_our_people_too
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 12
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_you_cant_reason_with_a_beast }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core= 361 
+
+add_state_core= 261
+		}
+	}
+
+	#Focus for Core the Floridan Lands
+	focus = {
+		id = ABM_core_the_floridan_lands
+		icon = GFX_ABM_core_the_floridan_lands-53709
+		x = 19
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_support_the_free_market }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			owns_state= 366
+		}
+		completion_reward = {
+			add_state_core= 366
+		}
+	}
+
+	#Focus for A United Alabama
+	focus = {
+		id = ABM_a_united_alabama
+		icon = GFX_focus_spa_supremacy_of_the_communion
+		x = 15
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_the_florida_compromise }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.2  
+
+add_war_support= 0.3
+		}
+	}
+
+	#Focus for A Strong Industry
+	focus = {
+		id = ABM_a_strong_industry
+		icon = GFX_goal_generic_production
+		x = 17
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_the_florida_compromise }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = ABM_a_strong_industry
+		}
+	}
+
+	#Focus for An Iron Fist Over Alabama
+	focus = {
+		id = ABM_an_iron_fist_over_alabama
+		icon = GFX_goal_generic_attack_allies
+		x = 21
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_the_florida_question }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_timed_idea= { 
+idea = BNK_political_instability
+days = 50
+}
+
+add_stability= 0.2  
+
+add_war_support= 0.3
+		}
+	}
+
+	#Focus for The Military Approach
+	focus = {
+		id = ABM_the_military_approach
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 23
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_the_florida_question }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = ABM_the_military_approach
+		}
+	}
+
+	#Focus for Liberate Those Under the "American Caesar"
+	focus = {
+		id = ABM_liberate_those_under_the_american_caesar
+		icon = GFX_ABM_liberate_those_under_the_american_caesar-53714
+		x = 15
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_rapprochement_with_our_american_brothers }
+		mutually_exclusive = { focus = ABM_pax_americana }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = USA
+}
+
+create_faction= "Pax Americana"
+		}
+	}
+
+	#Focus for American Brotherhood
+	focus = {
+		id = ABM_american_brotherhood
+		icon = GFX_focus_usa_recruit_the_free_corps
+		x = 13
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ABM_a_pacific_lie 
+			focus = ABM_offer_of_annexation 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = ABM_american_brotherhood
+		}
+	}
+
+	#Focus for A Pacific Lie
+	focus = {
+		id = ABM_a_pacific_lie
+		icon = GFX_ABM_a_pacific_lie-45170
+		x = 10
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ABM_a_midwestern_problem }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = PSA
+}
+		}
+	}
+
+#End of focuses 
+ }

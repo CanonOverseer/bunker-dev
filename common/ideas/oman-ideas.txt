@@ -1,0 +1,20 @@
+ideas = {
+	country = {
+
+		OMA_glorious_king = {
+			picture = tur_arctic_wolves
+			modifier = {
+				stability_factor = 0.1
+
+war_stability_factor = 0.1
+			}
+		}
+
+		OMA_enlisted_muslims = {
+			picture = tur_kemalist_army_officers_powerful_neutral
+			modifier = {
+				conscription_factor = 0.3
+			}
+		}
+	}
+}

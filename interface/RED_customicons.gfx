@@ -1,0 +1,383 @@
+spriteTypes = { 
+	##Icon For: Take Brittany!
+	SpriteType = { 
+		name = "GFX_RED_take_brittany-53657"
+		texturefile = "gfx/interface/goals/GFX_RED_take_brittany-53657.dds"
+	}
+
+	##Icon Shine For: Take Brittany!
+	SpriteType = { 
+		name = "GFX_RED_take_brittany-53657_shine"
+		texturefile = "gfx/interface/goals/GFX_RED_take_brittany-53657.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RED_take_brittany-53657.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RED_take_brittany-53657.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The Red Reich
+	SpriteType = { 
+		name = "GFX_RED_the_red_reich-53654"
+		texturefile = "gfx/interface/goals/GFX_RED_the_red_reich-53654.dds"
+	}
+
+	##Icon Shine For: The Red Reich
+	SpriteType = { 
+		name = "GFX_RED_the_red_reich-53654_shine"
+		texturefile = "gfx/interface/goals/GFX_RED_the_red_reich-53654.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RED_the_red_reich-53654.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RED_the_red_reich-53654.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Now's the time!
+	SpriteType = { 
+		name = "GFX_RED_nows_the_time-53649"
+		texturefile = "gfx/interface/goals/GFX_RED_nows_the_time-53649.dds"
+	}
+
+	##Icon Shine For: Now's the time!
+	SpriteType = { 
+		name = "GFX_RED_nows_the_time-53649_shine"
+		texturefile = "gfx/interface/goals/GFX_RED_nows_the_time-53649.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RED_nows_the_time-53649.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RED_nows_the_time-53649.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Burgundy First!
+	SpriteType = { 
+		name = "GFX_RED_burgundy_first-53636"
+		texturefile = "gfx/interface/goals/GFX_RED_burgundy_first-53636.dds"
+	}
+
+	##Icon Shine For: Burgundy First!
+	SpriteType = { 
+		name = "GFX_RED_burgundy_first-53636_shine"
+		texturefile = "gfx/interface/goals/GFX_RED_burgundy_first-53636.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RED_burgundy_first-53636.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RED_burgundy_first-53636.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Bunker Harmony
+	SpriteType = { 
+		name = "GFX_RED_bunker_harmony-53622"
+		texturefile = "gfx/interface/goals/GFX_RED_bunker_harmony-53622.dds"
+	}
+
+	##Icon Shine For: Bunker Harmony
+	SpriteType = { 
+		name = "GFX_RED_bunker_harmony-53622_shine"
+		texturefile = "gfx/interface/goals/GFX_RED_bunker_harmony-53622.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RED_bunker_harmony-53622.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RED_bunker_harmony-53622.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Destroy the U.N.
+	SpriteType = { 
+		name = "GFX_RED_destroy_the_un-53650"
+		texturefile = "gfx/interface/goals/GFX_RED_destroy_the_un-53650.dds"
+	}
+
+	##Icon Shine For: Destroy the U.N.
+	SpriteType = { 
+		name = "GFX_RED_destroy_the_un-53650_shine"
+		texturefile = "gfx/interface/goals/GFX_RED_destroy_the_un-53650.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RED_destroy_the_un-53650.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RED_destroy_the_un-53650.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Enslave the Blues!
+	SpriteType = { 
+		name = "GFX_RED_enslave_the_blues-53613"
+		texturefile = "gfx/interface/goals/GFX_RED_enslave_the_blues-53613.dds"
+	}
+
+	##Icon Shine For: Enslave the Blues!
+	SpriteType = { 
+		name = "GFX_RED_enslave_the_blues-53613_shine"
+		texturefile = "gfx/interface/goals/GFX_RED_enslave_the_blues-53613.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RED_enslave_the_blues-53613.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RED_enslave_the_blues-53613.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Exterminate the Blues!
+	SpriteType = { 
+		name = "GFX_RED_exterminate_the_blues-53611"
+		texturefile = "gfx/interface/goals/GFX_RED_exterminate_the_blues-53611.dds"
+	}
+
+	##Icon Shine For: Exterminate the Blues!
+	SpriteType = { 
+		name = "GFX_RED_exterminate_the_blues-53611_shine"
+		texturefile = "gfx/interface/goals/GFX_RED_exterminate_the_blues-53611.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RED_exterminate_the_blues-53611.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RED_exterminate_the_blues-53611.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Built By the Strong
+	SpriteType = { 
+		name = "GFX_RED_built_by_the_strong-53564"
+		texturefile = "gfx/interface/goals/GFX_RED_built_by_the_strong-53564.dds"
+	}
+
+	##Icon Shine For: Built By the Strong
+	SpriteType = { 
+		name = "GFX_RED_built_by_the_strong-53564_shine"
+		texturefile = "gfx/interface/goals/GFX_RED_built_by_the_strong-53564.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RED_built_by_the_strong-53564.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RED_built_by_the_strong-53564.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Fuck Those U.N. Guys
+	SpriteType = { 
+		name = "GFX_RED_fuck_those_un_guys-63798"
+		texturefile = "gfx/interface/goals/GFX_RED_fuck_those_un_guys-63798.dds"
+	}
+
+	##Icon Shine For: Fuck Those U.N. Guys
+	SpriteType = { 
+		name = "GFX_RED_fuck_those_un_guys-63798_shine"
+		texturefile = "gfx/interface/goals/GFX_RED_fuck_those_un_guys-63798.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RED_fuck_those_un_guys-63798.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RED_fuck_those_un_guys-63798.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+ 
+ }

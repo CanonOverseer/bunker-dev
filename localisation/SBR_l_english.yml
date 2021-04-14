@@ -1,0 +1,13 @@
+﻿l_english:
+SBR:0 "Siberian Republic"
+SBR_DEF:0 "Siberian Republic"
+SBR_ADJ:0 "Citizen of Siberian Republic"
+SBR_neutrality:0 "Siberian Republic"
+SBR_neutrality_DEF:0 "Siberian Republic"
+SBR_neutrality_ADJ:0 "Citizen of Siberian Republic"
+SBR_democratic:0 "Siberian Republic"
+SBR_democratic_DEF:0 "Siberian Republic"
+SBR_democratic_ADJ:0 "Citizen of Siberian Republic"
+SBR_fascism:0 "Russian State"
+SBR_fascism_DEF:0 "Russian State"
+SBR_fascism_ADJ:0 "Citizen of Russian State"

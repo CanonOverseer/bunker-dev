@@ -1,0 +1,49 @@
+﻿division_template = {
+	name = "Infantry Volunteers"			# Binary Infantry Volunteer Corps
+
+	regiments = {
+		Infantry = { x = 0 y = 0 }
+		Infantry = { x = 0 y = 1 }
+		Infantry = { x = 1 y = 0 }
+		Infantry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+
+	division = {
+		name = "1 Infantry Volunteer"
+		location = 9764
+		division_template = "Infantry Volunteers"
+	}
+	division = {
+		name = "2 Infantry Volunteer"
+		location = 9764
+		division_template = "Infantry Volunteers"
+	}
+	division = {
+		name = "3 Infantry Volunteer"
+		location = 9764
+		division_template = "Infantry Volunteers"
+	}
+	division = {
+		name = "4 Infantry Volunteer"
+		location = 9764
+		division_template = "Infantry Volunteers"
+	}
+	division = {
+		name = "5 Infantry Volunteer"
+		location = 9764
+		division_template = "Infantry Volunteers"
+	}
+	division = {
+		name = "6 Infantry Volunteer"
+		location = 9764
+		division_template = "Infantry Volunteers"
+	}
+	division = {
+		name = "7 Infantry Volunteer"
+		location = 9764
+		division_template = "Infantry Volunteers"
+	}
+}

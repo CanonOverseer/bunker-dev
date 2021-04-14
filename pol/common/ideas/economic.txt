@@ -1,0 +1,195 @@
+ideas = {
+	country = {
+		economy_1 = { #Terrible Economy
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_industrial_complex_factor = -0.5
+				production_speed_arms_factory_factor = -0.5
+				production_speed_infrastructure_factor = -0.5
+				stability_factor = -0.20
+				war_support_factor -0.25
+				research_speed_factor = -0.25
+				land_reinforce_rate = -0.25
+				army_org = -0.1
+				communism_drift = 0.1
+				fascism_drift = 0.1
+				political_advisor_cost_factor = 0.2
+				mobilization_laws_cost_factor = 0.2
+				high_command_cost_factor = 0.2
+				army_chief_cost_factor = 0.2
+			}
+		}
+		economy_2 = { #Bad Economy
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_industrial_complex_factor = -0.3
+				production_speed_arms_factory_factor = -0.5
+				production_speed_infrastructure_factor = -0.3
+				stability_factor = -0.10
+				war_support_factor -0.20
+				research_speed_factor = -0.20
+				land_reinforce_rate = -0.20
+				army_org = -0.1
+				drift_defence_factor = -0.15
+				political_advisor_cost_factor = 0.1
+				mobilization_laws_cost_factor = 0.1
+				high_command_cost_factor = 0.1
+				army_chief_cost_factor = 0.1
+			}
+		}
+		economy_3 = { # Recovering Economy
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				consumer_goods_factor = 0.10
+				production_speed_industrial_complex_factor = -0.2
+				production_speed_arms_factory_factor = -0.3
+				production_speed_infrastructure_factor = -0.2
+				stability_factor = -0.10
+				war_support_factor -0.20
+				research_speed_factor = -0.1
+				land_reinforce_rate = -0.1
+				army_org = -0.05
+				drift_defence_factor = -0.1
+			}
+		}
+		economy_4 = { # Stabilized Economy
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_arms_factory_factor = -0.2
+				production_speed_infrastructure_factor = -0.1
+				stability_factor = -0.05
+				war_support_factor -0.10
+				land_reinforce_rate = -0.05
+				drift_defence_factor = -0.05
+			}
+		}
+		economy_5 = { #Normal Economy
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		economy_6 = { #Good Economy
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_infrastructure_factor = 0.1
+				stability_factor = 0.10
+				war_support_factor 0.05
+				research_speed_factor = 0.05
+				drift_defence_factor = 0.1
+				political_advisor_cost_factor = -0.1
+				mobilization_laws_cost_factor = -0.1
+				high_command_cost_factor = -0.1
+				army_chief_cost_factor = -0.1
+			}
+		}
+		economy_7 = { #Booming Economy
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				consumer_goods_factor = -0.10
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.05
+				production_speed_infrastructure_factor = 0.2
+				stability_factor = 0.15
+				war_support_factor 0.10
+				research_speed_factor = 0.1
+				drift_defence_factor = 0.2
+				political_advisor_cost_factor = -0.2
+				mobilization_laws_cost_factor = -0.2
+				high_command_cost_factor = -0.2
+				army_chief_cost_factor = -0.2
+			}
+		}
+	}
+}

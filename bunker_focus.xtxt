@@ -1,0 +1,1542 @@
+focus_tree = {
+	id = bunker_unify
+	country = {
+		factor = 1
+	}
+	default = yes
+	focus = {
+		id = RED_unified
+		icon = GFX_red_unification2
+		cost = 1.00
+		x = 30
+		y = 0
+
+	}
+	focus = {
+		id = RED_renewedcolonialism
+		icon = GFX_red_crown
+		cost = 10.00
+		x = 65
+		y = 0
+
+	}
+	focus = {
+		id = RED_kingtop
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 10.00
+		mutually_exclusive = {
+			focus = RED_imperatorcanon
+		}
+		x = 35
+		y = 1
+
+	}
+	focus = {
+		id = RED_thefirstelections
+		icon = GFX_goal_support_democracy
+		cost = 1.00
+		prerequisite = {
+			focus = RED_unified
+		}
+		mutually_exclusive = {
+			focus = RED_imperatorcanon
+		}
+		completion_reward = {
+		    custom_effect_tooltip = elect1
+		    hidden_effect = {
+				country_event = { id = eventsmod.2 }
+				set_country_flag = leader_chosen
+			}
+		}
+		
+		x = 23
+		y = 1
+
+	}
+	focus = {
+		id = RED_lion
+		icon = GFX_focus_generic_strike_at_democracy3
+		cost = 10.00
+		prerequisite = {
+			focus = RED_thefirstelections
+		}
+		available = {
+		    always = no
+		}
+		bypass = { 
+		    has_country_leader = { name = "Honor Guard Lion" ruling_only = yes }
+		}
+		completion_reward = {
+		    custom_effect_tooltip = eventfocus
+		}
+		x = 17
+		y = 2
+
+	}
+	focus = {
+		id = RED_listentonewman
+		icon = GFX_focus_generic_military_academy
+		cost = 10.00
+		prerequisite = {
+			focus = RED_lion
+		}
+		completion_reward = {
+		    add_stability = 0.3
+			add_war_support = 0.3
+		}
+		x = 16
+		y = 3
+
+	}
+	focus = {
+		id = RED_freenews
+		icon = GFX_focus_renounce_the_treaty_of_triannon
+		cost = 10.00
+		prerequisite = {
+			focus = RED_listentonewman
+		}
+		completion_reward = {
+		    add_political_power  = 250
+			add_stability = 0.1
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = RED_citizenindustr
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = RED_lion
+		}
+		completion_reward = {
+		    14 = {
+			    add_building_construction = {
+				    type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+		    16 = {
+			    add_extra_state_shared_building_slots = 3
+			    add_building_construction = {
+				    type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		x = 18
+		y = 3
+
+	}
+	focus = {
+		id = RED_moreweapons
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = RED_citizenindustr
+		}
+		completion_reward = {
+		    add_equipment_to_stockpile = {
+    		    type = infantry_equipment
+    		    amount = 4500
+    		    producer = RED
+		    }
+		    16 = {
+			    add_extra_state_shared_building_slots = 3
+			    add_building_construction = {
+				    type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		x = 18
+		y = 4
+
+	}
+	focus = {
+		id = RED_allyalabama
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = RED_freenews
+		}
+		prerequisite = {
+			focus = RED_moreweapons
+		}
+		available = {
+		    is_in_faction = no
+		}
+		completion_reward = {
+		    create_faction = bunkerdixie
+		}
+		x = 17
+		y = 5
+
+	}
+	focus = {
+		id = RED_sirforehead
+		icon = GFX_focus_generic_strike_at_democracy3
+		cost = 10.00
+		prerequisite = {
+			focus = RED_thefirstelections
+		}
+		bypass = { 
+		    has_country_leader = { name = "SirFahrrad" ruling_only = yes }
+		}
+		available = {
+		    always = no
+		}
+		x = 21
+		y = 2
+
+	}
+	focus = {
+		id = RED_fahrcult
+		icon = GFX_goal_generic_build_tank
+		cost = 10.00
+		prerequisite = {
+			focus = RED_sirforehead
+		}
+		completion_reward = {
+		    set_war_support = 1.0
+			set_rule = {
+			    can_use_kamikaze_pilots = yes
+			}
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = RED_allyireland
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = RED_fahrcult
+		}
+		available = {
+		    is_in_faction = no
+		}
+		bypass = {
+		    IRE = { is_in_faction = yes }
+		}
+		completion_reward = {
+		    create_faction = FAHRFACTION
+			add_to_faction = IRE
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = RED_articles
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = RED_sirforehead
+		}
+		completion_reward = {
+		    add_stability = 0.1
+		}
+		x = 22
+		y = 3
+
+	}
+	focus = {
+		id = RED_foreignvolunteers
+		icon = GFX_focus_generic_military_mission
+		cost = 10.00
+		prerequisite = {
+			focus = RED_articles
+		}
+		completion_reward = {
+		    add_manpower = 100000
+		    set_rule = {
+			    can_send_volunteers = yes
+			}
+		}
+		x = 22
+		y = 4
+
+	}
+	focus = {
+		id = RED_carbombs
+		icon = GFX_focus_ger_strike_at_the_source
+		cost = 10.00
+		prerequisite = {
+			focus = RED_allyireland
+		}
+		prerequisite = {
+			focus = RED_foreignvolunteers
+		}
+		completion_reward = {
+			set_autonomy = {
+			    target = IRE
+				autonomy_state = autonomy_union
+			}
+		}
+		x = 21
+		y = 5
+
+	}
+	focus = {
+		id = RED_echo
+		icon = GFX_focus_generic_strike_at_democracy3
+		cost = 10.00
+		prerequisite = {
+			focus = RED_thefirstelections
+		}
+		bypass = { 
+		    has_country_leader = { name = "Revolutionary Echo" ruling_only = yes }
+		}
+        available = {
+		    always = no
+		}
+		x = 25
+		y = 2
+
+	}
+	focus = {
+		id = RED_revolutionfervor
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 6.00
+		prerequisite = {
+			focus = RED_echo
+		}
+		completion_reward = {
+		    add_stability = 0.3
+		}
+		x = 24
+		y = 3
+
+	}
+	focus = {
+		id = RED_invitechurch
+		icon = GFX_focus_generic_self_management
+		cost = 7.00
+		prerequisite = {
+			focus = RED_echo
+		}
+		x = 26
+		y = 3
+
+	}
+	focus = {
+		id = RED_defensivepactbritain
+		icon = GFX_focus_chi_british_cooperation
+		cost = 10.00
+		prerequisite = {
+			focus = RED_revolutionfervor
+		}
+		prerequisite = {
+			focus = RED_invitechurch
+		}
+		x = 24
+		y = 4
+
+	}
+	focus = {
+		id = RED_buildnewdistricts
+		icon = GFX_focus_generic_industry_2
+		cost = 10.00
+		prerequisite = {
+			focus = RED_echo
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+						}
+					}
+				}
+			random_owned_controlled_state = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+						}
+					}
+				}
+			random_owned_controlled_state = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+
+					add_building_construction = {
+						type = synthetic_refinery 
+						level = 1
+						instant_build = yes
+						}
+					}
+				}
+			random_owned_controlled_state = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+
+					add_building_construction = {
+						type = synthetic_refinery 
+						level = 1
+						instant_build = yes
+						}
+					}
+				}
+		}
+		x = 26
+		y = 4
+
+	}
+	focus = {
+		id = RED_revolutionarypact
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = RED_defensivepactbritain
+		}
+		prerequisite = {
+			focus = RED_buildnewdistricts
+		}
+		available = {
+		    is_in_faction = no
+		}
+		completion_reward = {
+		    create_faction = REVOLUTIONPACT
+			ENG = { dismantle_faction = yes }
+			add_to_faction = ENG
+		}
+		x = 25
+		y = 5
+
+	}
+	focus = {
+		id = RED_remilitarization
+		icon = GFX_focus_generic_little_entente
+		cost = 10.00
+		prerequisite = {
+			focus = RED_carbombs
+			focus = RED_revolutionarypact
+			focus = RED_allyalabama
+		}
+		x = 21
+		y = 6
+
+	}
+	focus = {
+		id = RED_liberateitaly
+		icon = GFX_focus_spr_crush_the_revolution
+		cost = 10.00
+		prerequisite = {
+			focus = RED_remilitarization
+		}
+		x = 25
+		y = 7
+
+	}
+	focus = {
+		id = RED_imperatorcanon
+		icon = GFX_red_crown
+		cost = 1.00
+		prerequisite = {
+			focus = RED_unified
+		}
+		mutually_exclusive = {
+			focus = RED_thefirstelections
+		}
+		completion_reward = {
+		    country_event = { id = eventsmod.3 }
+			set_country_flag = leader_chosen
+		}
+		x = 30
+		y = 1
+
+	}
+	focus = {
+		id = RED_canoncourt
+		icon = GFX_goal_generic_demand_territory
+		cost = 5.00
+		prerequisite = {
+			focus = RED_imperatorcanon
+		}
+		available = {
+		    country_exists = BNA
+			OR = { 
+			    BNA = { is_puppet_of = RED }
+			    BNA = { is_puppet_of = BLU }
+			}
+		}
+		bypass = {
+		    NOR = {
+			    BNA = { is_puppet_of = RED }
+			    BNA = { is_puppet_of = BLU }
+			}
+		}
+		completion_reward = {
+        	BNA = {
+			    create_country_leader = { name = "Governor Rego" desc = "NA" picture = "gfx/leaders/RED/rego.dds" expire = "1965.1.1" ideology = despotism traits = { colonialviceroy } }
+			}
+		}
+		x = 27
+		y = 2
+
+	}
+	focus = {
+		id = RED_romanobunker
+		icon = GFX_focus_rom_preserve_romania
+		cost = 10.00
+		prerequisite = {
+			focus = RED_canoncourt
+		}
+		x = 28
+		y = 3
+
+	}
+	focus = {
+		id = RED_canonecon
+		icon = GFX_focus_generic_license_production
+		cost = 10.00
+		prerequisite = {
+			focus = RED_imperatorcanon
+		}
+		x = 29
+		y = 2
+
+	}
+	focus = {
+		id = RED_reviseconstitution
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 5.00
+		prerequisite = {
+			focus = RED_imperatorcanon
+		}
+		mutually_exclusive = {
+			focus = RED_canon
+		}
+		completion_reward = {
+		    add_ideas = { RED_monarchistconstitution }
+			add_stability = 0.2
+		}
+		x = 31
+		y = 2
+
+	}
+	focus = {
+		id = RED_royalguard
+		icon = GFX_goal_generic_CAS
+		cost = 5.00
+		prerequisite = {
+			focus = RED_canonecon
+		}
+		prerequisite = {
+			focus = RED_reviseconstitution
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = {
+		id = RED_the_readied_shield
+		icon = GFX_goal_generic_defence
+		cost = 10.00
+		prerequisite = {
+			focus = RED_royalguard
+		}
+		x = 29
+		y = 4
+
+	}
+	focus = {
+		id = RED_commonwealth
+		icon = GFX_focus_generic_monarchy_1
+		cost = 10.00
+		prerequisite = {
+			focus = RED_kingtop
+		}
+		x = 35
+		y = 2
+
+	}
+	focus = {
+		id = RED_militarization
+		icon = GFX_goal_generic_production
+		cost = 5.00
+		prerequisite = {
+			focus = RED_reviseconstitution
+			focus = RED_commonwealth
+		}
+		x = 32
+		y = 3
+
+	}
+	focus = {
+		id = RED_warmachine
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = RED_militarization
+		}
+		prerequisite = {
+			focus = RED_royalguard
+		}
+		mutually_exclusive = {
+			focus = RED_industrial_giant
+		}
+		completion_reward = {
+		    random_owned_controlled_state = {
+			    add_extra_state_shared_building_slots = 2
+			    add_building_construction = {
+				    type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		    random_owned_controlled_state = {
+			    add_extra_state_shared_building_slots = 2
+			    add_building_construction = {
+				    type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		x = 31
+		y = 4
+
+	}
+	focus = {
+		id = RED_nobility
+		icon = GFX_focus_generic_treaty
+		cost = 5.00
+		prerequisite = {
+			focus = RED_kingtop
+		}
+		x = 33
+		y = 2
+
+	}
+	focus = {
+		id = RED_industrial_giant
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = RED_militarization
+		}
+		mutually_exclusive = {
+			focus = RED_warmachine
+		}
+		completion_reward = {
+		    random_owned_controlled_state = {
+			    add_extra_state_shared_building_slots = 2
+			    add_building_construction = {
+				    type = 
+					level = 2
+					instant_build = yes
+				}
+			}
+		    random_owned_controlled_state = {
+			    add_extra_state_shared_building_slots = 2
+			    add_building_construction = {
+				    type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		x = 33
+		y = 4
+
+	}
+	focus = {
+		id = RED_isolationism
+		icon = GFX_goal_generic_construction
+		cost = 10.00
+		prerequisite = {
+			focus = RED_industrial_giant
+			focus = RED_warmachine
+		}
+		mutually_exclusive = {
+			focus = RED_freetrade
+		}
+		x = 33
+		y = 5
+
+	}
+	focus = {
+		id = RED_enforce_catholicism
+		icon = GFX_focus_focus_fra_national_resistance_council
+		cost = 10.00
+		prerequisite = {
+			focus = RED_commonwealth
+		}
+		x = 35
+		y = 3
+
+	}
+	focus = {
+		id = RED_polishtrade
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		cost = 5.00
+		prerequisite = {
+			focus = RED_commonwealth
+		}
+		x = 37
+		y = 3
+
+	}
+	focus = {
+		id = RED_polish_alliance
+		icon = GFX_focus_generic_polish_deal
+		cost = 5.00
+		prerequisite = {
+			focus = RED_polishtrade
+		}
+		x = 37
+		y = 4
+
+	}
+	focus = {
+		id = RED_com_alliance
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = RED_polish_alliance
+		}
+		prerequisite = {
+			focus = RED_enforce_catholicism
+		}
+		x = 35
+		y = 5
+
+	}
+	focus = {
+		id = RED_every_man_a_soldier
+		icon = GFX_focus_generic_little_entente
+		cost = 10.00
+		prerequisite = {
+			focus = RED_commonwealth
+		}
+		x = 39
+		y = 3
+
+	}
+	focus = {
+		id = RED_winged_hussars
+		icon = GFX_goal_generic_CAS
+		cost = 10.00
+		prerequisite = {
+			focus = RED_every_man_a_soldier
+		}
+		x = 39
+		y = 4
+
+	}
+	focus = {
+		id = RED_exercises
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 5.00
+		prerequisite = {
+			focus = RED_winged_hussars
+		}
+		prerequisite = {
+			focus = RED_polish_alliance
+		}
+		x = 38
+		y = 5
+
+	}
+	focus = {
+		id = RED_fascism
+		icon = GFX_goal_support_fascism
+		cost = 1.00
+		prerequisite = {
+			focus = RED_unified
+		}
+		x = 43
+		y = 1
+
+	}
+	focus = {
+		id = RED_deadset
+		icon = GFX_focus_SAF_support_ossewabrandwag
+		cost = 5.00
+		prerequisite = {
+			focus = RED_fascism
+		}
+		x = 43
+		y = 2
+
+	}
+	focus = {
+		id = RED_unfadespeech
+		icon = GFX_focus_generic_military_mission
+		cost = 4.00
+		prerequisite = {
+			focus = RED_deadset
+		}
+		x = 41
+		y = 3
+
+	}
+	focus = {
+		id = RED_ustaseideals
+		icon = GFX_goal_generic_secret_weapon
+		cost = 10.00
+		prerequisite = {
+			focus = RED_deadset
+		}
+		x = 43
+		y = 3
+
+	}
+	focus = {
+		id = RED_peoplesman
+		icon = GFX_focus_generic_military_academy
+		cost = 10.00
+		prerequisite = {
+			focus = RED_deadset
+		}
+		x = 45
+		y = 3
+
+	}
+	focus = {
+		id = RED_nightofsteel
+		icon = GFX_goal_generic_political_pressure
+		cost = 10.00
+		prerequisite = {
+			focus = RED_ustaseideals
+		}
+		prerequisite = {
+			focus = RED_peoplesman
+		}
+		prerequisite = {
+			focus = RED_unfadespeech
+		}
+		x = 43
+		y = 4
+
+	}
+	focus = {
+		id = RED_demolishopposition
+		icon = GFX_goal_continuous_suppression
+		cost = 10.00
+		prerequisite = {
+			focus = RED_nightofsteel
+		}
+		x = 42
+		y = 5
+
+	}
+	focus = {
+		id = RED_marchingarmy
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10.00
+		prerequisite = {
+			focus = RED_nightofsteel
+		}
+		x = 44
+		y = 5
+
+	}
+	focus = {
+		id = RED_gloryfatherland
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10.00
+		prerequisite = {
+			focus = RED_unfadespeech
+		}
+		x = 41
+		y = 6
+
+	}
+	focus = {
+		id = RED_downwithE
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10.00
+		prerequisite = {
+			focus = RED_peoplesman
+		}
+		x = 45
+		y = 6
+
+	}
+	focus = {
+		id = RED_nationalhero
+		icon = GFX_focus_rom_coup
+		cost = 10.00
+		prerequisite = {
+			focus = RED_gloryfatherland
+		}
+		prerequisite = {
+			focus = RED_downwithE
+		}
+		x = 44
+		y = 7
+
+	}
+	focus = {
+		id = RED_communism
+		icon = GFX_goal_support_communism
+		cost = 1.00
+		prerequisite = {
+			focus = RED_unified
+		}
+		x = 55
+		y = 1
+
+	}
+	focus = {
+		id = RED_sovietadgen
+		icon = GFX_focus_generic_soviet_politics
+		cost = 5.00
+		prerequisite = {
+			focus = RED_communism
+		}
+		x = 55
+		y = 2
+
+	}
+	focus = {
+		id = RED_preparedforrevolution
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10.00
+		prerequisite = {
+			focus = RED_sovietadgen
+		}
+		x = 53
+		y = 3
+
+	}
+	focus = {
+		id = RED_communistpropaganda
+		icon = GFX_goal_support_communism
+		cost = 10.00
+		prerequisite = {
+			focus = RED_sovietadgen
+		}
+		x = 55
+		y = 3
+
+	}
+	focus = {
+		id = RED_commiecon
+		icon = GFX_focus_chi_cooperation_with_the_communists
+		cost = 5.00
+		prerequisite = {
+			focus = RED_preparedforrevolution
+		}
+		prerequisite = {
+			focus = RED_communistpropaganda
+		}
+		mutually_exclusive = {
+			focus = RED_jointhecomintern
+		}
+		x = 51
+		y = 4
+
+	}
+	focus = {
+		id = RED_britishcoup
+		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
+		cost = 9.00
+		prerequisite = {
+			focus = RED_commiecon
+		}
+		x = 50
+		y = 5
+
+	}
+	focus = {
+		id = RED_suspenddemocracy
+		icon = GFX_focus_ger_great_red_menace
+		cost = 10.00
+		prerequisite = {
+			focus = RED_sovietadgen
+		}
+		x = 57
+		y = 3
+
+	}
+	focus = {
+		id = RED_swissSSR
+		icon = GFX_focus_attack_switzerland
+		cost = 10.00
+		prerequisite = {
+			focus = RED_communistpropaganda
+		}
+		prerequisite = {
+			focus = RED_suspenddemocracy
+		}
+		prerequisite = {
+			focus = RED_preparedforrevolution
+		}
+		x = 55
+		y = 4
+
+	}
+	focus = {
+		id = RED_spanishSSR
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 10.00
+		prerequisite = {
+			focus = RED_swissSSR
+		}
+		x = 54
+		y = 5
+
+	}
+	focus = {
+		id = RED_claimrhineland
+		icon = GFX_focus_generic_tank_production
+		cost = 10.00
+		prerequisite = {
+			focus = RED_swissSSR
+		}
+		x = 56
+		y = 5
+
+	}
+	focus = {
+		id = RED_peopleseconomy
+		icon = GFX_focus_prc_agrarian_socialism
+		cost = 10.00
+		prerequisite = {
+			focus = RED_suspenddemocracy
+		}
+		x = 58
+		y = 4
+
+	}
+	focus = {
+		id = RED_everymanrevolution
+		icon = GFX_focus_yug_pan_slavic_congress
+		cost = 10.00
+		prerequisite = {
+			focus = RED_peopleseconomy
+		}
+		x = 58
+		y = 5
+
+	}
+	focus = {
+		id = RED_prepareforwar
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = RED_everymanrevolution
+		}
+		x = 58
+		y = 7
+
+	}
+	focus = {
+		id = RED_cross_the_sea
+		icon = GFX_focus_attack_france
+		cost = 10.00
+		prerequisite = {
+			focus = RED_renewedcolonialism
+		}
+		x = 62
+		y = 1
+
+	}
+	focus = {
+		id = RED_establishgovernment
+		icon = GFX_red_africagov
+		cost = 5.00
+		prerequisite = {
+			focus = RED_cross_the_sea
+		}
+		x = 62
+		y = 2
+
+	}
+	focus = {
+		id = RED_annexliberia
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10.00
+		prerequisite = {
+			focus = RED_establishgovernment
+		}
+		x = 61
+		y = 3
+
+	}
+	focus = {
+		id = RED_claimcongo
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = RED_establishgovernment
+		}
+		x = 63
+		y = 3
+
+	}
+	focus = {
+		id = RED_soft
+		icon = GFX_red_westafricabunkerrela
+		cost = 10.00
+		prerequisite = {
+			focus = RED_establishgovernment
+		}
+		mutually_exclusive = {
+			focus = RED_harsh
+		}
+		x = 63
+		y = 4
+
+	}
+	focus = {
+		id = RED_demandqingdao
+		icon = GFX_focus_jap_cast_the_die
+		cost = 5.00
+		prerequisite = {
+			focus = RED_renewedcolonialism
+		}
+		x = 65
+		y = 1
+
+	}
+	focus = {
+		id = RED_guangxi
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		prerequisite = {
+			focus = RED_demandqingdao
+		}
+		x = 65
+		y = 2
+
+	}
+	focus = {
+		id = RED_chinesecolony
+		icon = GFX_red_chinesepuppet
+		cost = 10.00
+		prerequisite = {
+			focus = RED_guangxi
+		}
+		x = 65
+		y = 3
+
+	}
+	focus = {
+		id = RED_dominionofoceania
+		icon = GFX_red_oceania
+		cost = 10.00
+		prerequisite = {
+			focus = RED_renewedcolonialism
+		}
+		x = 67
+		y = 1
+
+	}
+	focus = {
+		id = RED_oceaniaglory
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 10.00
+		prerequisite = {
+			focus = RED_dominionofoceania
+		}
+		x = 67
+		y = 2
+
+	}
+	focus = {
+		id = RED_indochina
+		icon = GFX_red_indochina
+		cost = 10.00
+		prerequisite = {
+			focus = RED_renewedcolonialism
+		}
+		x = 69
+		y = 1
+
+	}
+	focus = {
+		id = RED_fortifychinaborder
+		icon = GFX_goal_generic_fortify_city
+		cost = 10.00
+		prerequisite = {
+			focus = RED_indochina
+		}
+		x = 69
+		y = 2
+
+	}
+	focus = {
+		id = RED_westward
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		prerequisite = {
+			focus = RED_fortifychinaborder
+		}
+		x = 68
+		y = 3
+
+	}
+	focus = {
+		id = RED_puppetswitzerland
+		icon = GFX_focus_attack_switzerland
+		cost = 10.00
+		prerequisite = {
+			focus = RED_italianconquest
+		}
+		x = 32
+		y = 8
+
+	}
+	focus = {
+		id = RED_globalleader
+		icon = GFX_bunkerpres
+		cost = 10.00
+		prerequisite = {
+			focus = RED_gloryfatherland
+		}
+		prerequisite = {
+			focus = RED_downwithE
+		}
+		x = 42
+		y = 7
+
+	}
+	focus = {
+		id = RED_abetterfuture
+		icon = GFX_red_unification
+		cost = 10.00
+		prerequisite = {
+			focus = RED_globalleader
+		}
+		prerequisite = {
+			focus = RED_nationalhero
+		}
+		x = 43
+		y = 8
+
+	}
+	focus = {
+		id = RED_cocaineaddiction
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		prerequisite = {
+			focus = RED_renewedcolonialism
+		}
+		x = 71
+		y = 1
+
+	}
+	focus = {
+		id = RED_jointhecomintern
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		cost = 9.00
+		prerequisite = {
+			focus = RED_preparedforrevolution
+		}
+		prerequisite = {
+			focus = RED_communistpropaganda
+		}
+		mutually_exclusive = {
+			focus = RED_commiecon
+		}
+		x = 53
+		y = 4
+
+	}
+	focus = {
+		id = RED_sovietresearchtreaty
+		icon = GFX_focus_generic_socialist_science
+		cost = 5.00
+		prerequisite = {
+			focus = RED_jointhecomintern
+		}
+		x = 52
+		y = 5
+
+	}
+	focus = {
+		id = RED_trotskyistmexico
+		icon = GFX_goal_support_fourth_int
+		cost = 10.00
+		prerequisite = {
+			focus = RED_britishcoup
+		}
+		x = 50
+		y = 6
+
+	}
+	focus = {
+		id = RED_commiesupremacy
+		icon = GFX_focus_generic_join_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = RED_trotskyistmexico
+			focus = RED_sovietresearchtreaty
+		}
+		x = 52
+		y = 7
+
+	}
+	focus = {
+		id = RED_destroytheUN
+		icon = GFX_destroy_belgium
+		cost = 10.00
+		prerequisite = {
+			focus = RED_prepareforwar
+		}
+		prerequisite = {
+			focus = RED_commiesupremacy
+		}
+		prerequisite = {
+			focus = RED_spanishSSR
+		}
+		prerequisite = {
+			focus = RED_claimrhineland
+		}
+		x = 55
+		y = 8
+
+	}
+	focus = {
+		id = RED_harsh
+		icon = GFX_red_tightengrip
+		cost = 10.00
+		prerequisite = {
+			focus = RED_establishgovernment
+		}
+		mutually_exclusive = {
+			focus = RED_soft
+		}
+		x = 61
+		y = 4
+
+	}
+	focus = {
+		id = RED_extendvenezuela
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		prerequisite = {
+			focus = RED_cocaineaddiction
+		}
+		x = 71
+		y = 2
+
+	}
+	focus = {
+		id = RED_grancrackumbia
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10.00
+		prerequisite = {
+			focus = RED_extendvenezuela
+		}
+		x = 70
+		y = 3
+
+	}
+	focus = {
+		id = RED_freetrade
+		icon = GFX_focus_generic_rubber
+		cost = 10.00
+		prerequisite = {
+			focus = RED_warmachine
+			focus = RED_industrial_giant
+		}
+		mutually_exclusive = {
+			focus = RED_isolationism
+		}
+		x = 31
+		y = 5
+
+	}
+	focus = {
+		id = RED_colonialism
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 1.00
+		prerequisite = {
+			focus = RED_imperial_expansion
+			focus = RED_remilitarization
+		}
+		x = 28
+		y = 7
+
+	}
+	focus = {
+		id = RED_imperial_expansion
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = RED_freetrade
+			focus = RED_isolationism
+		}
+		x = 32
+		y = 6
+
+	}
+	focus = {
+		id = RED_italianconquest
+		icon = GFX_focus_usa_attack_italy
+		cost = 10.00
+		prerequisite = {
+			focus = RED_imperial_expansion
+		}
+		x = 32
+		y = 7
+
+	}
+	focus = {
+		id = RED_italianpuppet
+		icon = GFX_focus_befriend_italy
+		cost = 1.00
+		prerequisite = {
+			focus = RED_liberateitaly
+			focus = RED_italianconquest
+		}
+		x = 28
+		y = 8
+
+	}
+	focus = {
+		id = RED_spanishpreparations
+		icon = GFX_focus_prc_infiltration
+		cost = 5.00
+		prerequisite = {
+			focus = RED_imperial_expansion
+		}
+		mutually_exclusive = {
+			focus = RED_allycarlist
+		}
+		x = 35
+		y = 7
+
+	}
+	focus = {
+		id = RED_allycarlist
+		icon = GFX_focus_spa_supremacy_of_the_communion
+		cost = 5.00
+		prerequisite = {
+			focus = RED_imperial_expansion
+		}
+		mutually_exclusive = {
+			focus = RED_spanishpreparations
+		}
+		x = 37
+		y = 7
+
+	}
+	focus = {
+		id = RED_invadespain
+		icon = GFX_focus_focus_fra_intervention_spain
+		cost = 10.00
+		prerequisite = {
+			focus = RED_spanishpreparations
+		}
+		x = 35
+		y = 8
+
+	}
+	focus = {
+		id = RED_the_spanish_republic
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = RED_remilitarization
+		}
+		x = 21
+		y = 7
+
+	}
+	focus = {
+		id = RED_army_doctrine
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 1.00
+		prerequisite = {
+			focus = RED_remilitarization
+		}
+		x = 17
+		y = 7
+
+	}
+	focus = {
+		id = RED_mass_assault
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10.00
+		prerequisite = {
+			focus = RED_army_doctrine
+		}
+		mutually_exclusive = {
+			focus = RED_blitzkrieg
+			focus = RED_firepower
+		}
+		x = 19
+		y = 8
+
+	}
+	focus = {
+		id = RED_firepower
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10.00
+		prerequisite = {
+			focus = RED_army_doctrine
+		}
+		mutually_exclusive = {
+			focus = RED_blitzkrieg
+			focus = RED_mass_assault
+		}
+		x = 17
+		y = 8
+
+	}
+	focus = {
+		id = RED_blitzkrieg
+		icon = GFX_goal_generic_army_tanks
+		cost = 10.00
+		prerequisite = {
+			focus = RED_army_doctrine
+		}
+		mutually_exclusive = {
+			focus = RED_mass_assault
+			focus = RED_firepower
+		}
+		x = 15
+		y = 8
+
+	}
+	focus = {
+		id = RED_little_entente
+		icon = GFX_focus_invite_yugoslavia
+		cost = 5.00
+		prerequisite = {
+			focus = RED_liberateitaly
+			focus = RED_the_spanish_republic
+		}
+		prerequisite = {
+			focus = RED_remilitarization
+		}
+		x = 23
+		y = 8
+
+	}
+	focus = {
+		id = RED_againsttheun
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = RED_little_entente
+			focus = RED_mass_assault
+			focus = RED_firepower
+			focus = RED_blitzkrieg
+		}
+		x = 21
+		y = 9
+
+	}
+}

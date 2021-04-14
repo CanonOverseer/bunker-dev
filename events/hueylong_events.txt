@@ -1,0 +1,157 @@
+add_namespace = hueylong
+
+##Event: The Elections of Louisiana
+country_event = {
+	id = hueylong.1
+	title = hueylong.1.title
+	desc = hueylong.1.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = hueylong.1.a
+		ai_chance = { factor = 1}
+		set_country_flag = huey
+	}
+	option = {
+		name = hueylong.1.b
+		ai_chance = { factor = 1}
+		set_country_flag = nothuey
+	}
+}
+##Event: John Reed Takes Power in Louisiana
+news_event = {
+	id = hueylong.2
+	title = hueylong.2.title
+	desc = hueylong.2.desc
+	picture = GFX_news_event_india_protests2
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = hueylong.2.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Sexy Elections
+country_event = {
+	id = hueylong.3
+	title = hueylong.3.title
+	desc = hueylong.3.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = hueylong.3.a
+		ai_chance = { factor = 1}
+		set_country_flag = desiredwin
+	}
+	option = {
+		name = hueylong.3.b
+		ai_chance = { factor = 1}
+		set_country_flag = slurpwin
+	}
+}
+##Event: Detroit Uprising
+country_event = {
+	id = hueylong.4
+	title = hueylong.4.title
+	desc = hueylong.4.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = hueylong.4.a
+		ai_chance = { factor = 1}
+		PSA = { 
+start_civil_war = {
+ideology = fascism
+size = 0				only_own_territory = no
+capital = 393
+states = { 
+	393
+	}
+	}
+	}
+random_other_country = {
+limit = {					original_tag = PSA				has_government = fascism
+	}
+load_oob = "MDW_civil"				set_cosmetic_tag = MDW_logan
+add_ideas = unrecognized_rebels
+	}
+	}
+	}
+}
+##Event: Pacific States demand we get annexed
+country_event = {
+	id = hueylong.5
+	title = hueylong.5.title
+	desc = hueylong.5.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = hueylong.5.a
+		ai_chance = { factor = 1}
+		PSA = { country_event = { id = hueylong.6 } }
+	}
+	option = {
+		name = hueylong.5.b
+		ai_chance = { factor = 1}
+		PSA = { country_event = { id = hueylong.7 } }
+	}
+}
+##Event: Louisiana Has Accepted Annexation!
+country_event = {
+	id = hueylong.6
+	title = hueylong.6.title
+	desc = hueylong.6.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = hueylong.6.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Louisiana Refuses Annexation!
+country_event = {
+	id = hueylong.7
+	title = hueylong.7.title
+	desc = hueylong.7.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = hueylong.7.a
+		ai_chance = { factor = 1}
+		create_wargoal= { 
+type = annex_everything 
+target = LOU
+}
+	}
+}
+##Event: PSA Demands Annexation
+country_event = {
+	id = hueylong.8
+	title = hueylong.8.title
+	desc = hueylong.8.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = hueylong.8.a
+		ai_chance = { factor = 1}
+		PSA = { country_event = { id = hueylong.6 } }
+
+PSA = {
+annex_country= {
+ target = LOU
+}
+}
+	}
+	option = {
+		name = hueylong.8.b
+		ai_chance = { factor = 1}
+		PSA = { country_event = { id = hueylong.7 } }
+	}
+}

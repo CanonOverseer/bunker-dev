@@ -1,0 +1,9 @@
+spriteTypes = { 
+	##Icon For: American Legitimacy
+	SpriteType = { 
+		name = "USA_american_legitimacy-73466"
+		texturefile = "gfx/interface/ideas/USA_american_legitimacy-73466.dds"
+	}
+
+ 
+ }

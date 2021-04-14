@@ -1,0 +1,94 @@
+ideas = {
+	country = {
+
+		ISR_manifest_jew_destiny = {
+			picture = hun_secret_rearmament
+			modifier = {
+				army_core_attack_factor = 0.1
+			}
+		}
+
+		ISR_jewish_camps = {
+			picture = tur_etatism
+			modifier = {
+				compliance_gain = 0.3
+			}
+		}
+
+		ISR_unpaid_labor = {
+			picture = man_five_year_plan_industry
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+
+production_speed_industrial_complex_factor = 0.1
+			}
+		}
+
+		ISR_child_soldiers = {
+			picture = ng_imperial_conscription
+			modifier = {
+				conscription_factor = 0.1
+			}
+		}
+
+		ISR_no_resistance = {
+			ledger = army
+			picture = yug_federal_defense_council
+			modifier = {
+				compliance_gain = 0.3
+			}
+		}
+
+		ISR_purged_maki = {
+			picture = usa_great_depression_3
+			modifier = {
+				stability_factor = -0.1
+
+war_support_factor = -0.1
+
+political_power_gain = -0.03
+			}
+		}
+
+		ISR_jewish_spirit = {
+			picture = chi_army_corruption3
+			modifier = {
+				stability_factor = 0.10	
+
+war_support_factor = 0.10
+			}
+		}
+
+		ISR_cooperation_with_the_maki = {
+			ledger = army
+			picture = generic_deal_with_the_devil
+			modifier = {
+				communism_drift = 0.02
+
+stability_factor = 0.10	
+
+production_factory_max_efficiency_factor = 0.1
+			}
+		}
+
+		ISR_democrats_purged = {
+			picture = saf_soviet_advisers
+			modifier = {
+				democratic_drift = -0.05
+
+stability_factor = -0.05
+			}
+		}
+
+		ISR_torah_law = {
+			picture = tur_disorganised_armed_forces
+			modifier = {
+				stability_factor = 0.10	
+
+war_support_factor = 0.10	
+
+conscription_factor = 0.1
+			}
+		}
+	}
+}

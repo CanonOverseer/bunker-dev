@@ -1,0 +1,1094 @@
+focus_tree = {
+	id = focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = UKR
+		}
+	}
+	#Focus for Increased Research Effort
+	focus = {
+		id = UKR_increased_research_effort
+		icon = GFX_focus_research2
+		x = 24
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = UKR_naval_bomber_expansion 
+		}
+		prerequisite = { 
+			focus = UKR_continue_our_infantry_expansion 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot= 1
+		}
+	}
+
+	#Focus for Motorized Expansion
+	focus = {
+		id = UKR_motorized_expansion
+		icon = GFX_goal_generic_army_motorized
+		x = 22
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_armor_expansion }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = motorized_bonus
+bonus = 3.0
+technology = motorised_infantry
+	}
+		}
+	}
+
+	#Focus for Bomber Expansion
+	focus = {
+		id = UKR_bomber_expansion
+		icon = GFX_goal_generic_air_bomber
+		x = 28
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_airbase_expansion }
+		mutually_exclusive = { focus = UKR_fighter_expansion }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = bomber_bonus
+bonus = 1.0
+uses = 2
+technology = strategic_bomber1
+technology = strategic_bomber2
+technology = strategic_bomber3
+category = tactical_bomber
+	}
+		}
+	}
+
+	#Focus for Airbase Expansion
+	focus = {
+		id = UKR_airbase_expansion
+		icon = GFX_goal_continuous_repairments
+		x = 26
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_expand_the_ukrainian_army_and_airforce }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			202 = {
+add_building_construction =  {
+type = air_base
+level = 2
+instant_build = yes }
+    }
+		}
+	}
+
+	#Focus for Ukrainian Division Expansion
+	focus = {
+		id = UKR_ukrainian_division_expansion
+		icon = GFX_focus_generic_little_entente
+		x = 24
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_expand_the_ukrainian_army_and_airforce }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			load_oob = "UKR_reinforce"
+		}
+	}
+
+	#Focus for Destroyers
+	focus = {
+		id = UKR_destroyers
+		icon = GFX_goal_generic_navy_battleship
+		x = 20
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = UKR_larger_navy 
+		}
+		prerequisite = { 
+			focus = UKR_submarine_construction 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 0.5 
+uses = 2 
+category = dd_tech
+}
+		}
+	}
+
+	#Focus for Integrate Bessarabia
+	focus = {
+		id = UKR_integrate_bessarabia
+		icon = GFX_goal_generic_construction2
+		x = 8
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_romanian_claims }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			controls_state= 78
+		}
+		completion_reward = {
+			add_state_core= 78
+		}
+	}
+
+	#Focus for Under Cheese Rat Succ
+	focus = {
+		id = UKR_under_cheese_rat_succ
+		icon = GFX_UKR_under_cheese_rat_succ-44549
+		x = 10
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_reform_the_government }
+		mutually_exclusive = { focus = UKR_a_communist_ukraine }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = neutrality
+popularity = 0.5
+}
+
+set_politics= {
+ ruling_party = neutrality
+elections_allowed = no 
+}
+
+set_party_name= { 
+ideology = neutrality
+long_name = "Cheese Party" 
+name = "Cheese Party"
+}
+
+set_cosmetic_tag = UKR_succ
+
+create_country_leader = {
+	name = "Cheese Rat Succ"
+	desc = "TBD"
+	picture = "gfx/leaders/RED/SUCC.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		
+	}
+}
+		}
+	}
+
+	#Focus for Military Effort 3
+	focus = {
+		id = UKR_military_effort_3
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 16
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_military_effort_2 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			200 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+        type = arms_factory
+        level = 2
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Civilian Effort 2
+	focus = {
+		id = UKR_civilian_effort_2
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 18
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_civilian_effort }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			197 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+        type = industrial_complex
+        level = 1
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Civilian Effort 3
+	focus = {
+		id = UKR_civilian_effort_3
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 18
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_civilian_effort_2 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			203 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+        type = industrial_complex
+        level = 2
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Military Effort
+	focus = {
+		id = UKR_military_effort
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 16
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_industry_efforts }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			193 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+        type = arms_factory
+        level = 1
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Make Our New Soviet Land Ukrainian
+	focus = {
+		id = UKR_make_our_new_soviet_land_ukrainian
+		icon = GFX_goal_generic_forceful_treaty
+		x = 10
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_revenge_for_1932 }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			controls_state= 220
+
+controls_state= 240
+
+controls_state= 260
+
+controls_state= 265
+
+controls_state= 245
+
+controls_state= 218
+
+controls_state= 137
+		}
+		completion_reward = {
+			add_state_core= 137
+
+add_state_core= 220
+
+add_state_core= 240
+
+add_state_core= 260
+
+add_state_core= 218
+
+add_state_core= 245
+
+add_state_core= 265
+		}
+	}
+
+	#Focus for Industry Efforts
+	focus = {
+		id = UKR_industry_efforts
+		icon = GFX_goal_generic_construction2
+		x = 17
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			198 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+        type = industrial_complex
+        level = 1
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Civilian Effort
+	focus = {
+		id = UKR_civilian_effort
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 18
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_industry_efforts }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			201 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+        type = industrial_complex
+        level = 1
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Nuclear Weapons
+	focus = {
+		id = UKR_nuclear_weapons
+		icon = GFX_focus_wonderweapons
+		x = 17
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_research_effort }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = nuclear_bonus
+ahead_reduction = 2
+category = nuclear
+	}
+		}
+	}
+
+	#Focus for Research Effort
+	focus = {
+		id = UKR_research_effort
+		icon = GFX_focus_research2
+		x = 17
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = UKR_civilian_effort_3 
+		}
+		prerequisite = { 
+			focus = UKR_military_effort_3 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot= 1
+		}
+	}
+
+	#Focus for A Communist Ukraine
+	focus = {
+		id = UKR_a_communist_ukraine
+		icon = GFX_goal_generic_war_with_comintern
+		x = 4
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_reform_the_government }
+		mutually_exclusive = { focus = UKR_under_cheese_rat_succ }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = communism
+popularity = 0.3
+}
+
+set_politics= {
+ ruling_party = communism
+elections_allowed = no 
+}
+		}
+	}
+
+	#Focus for Join our Soviet Brothers
+	focus = {
+		id = UKR_join_our_soviet_brothers
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		x = 4
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_a_communist_ukraine }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			SOV = { add_to_faction = UKR }
+		}
+	}
+
+	#Focus for Puppet for Crimea
+	focus = {
+		id = UKR_puppet_for_crimea
+		icon = GFX_focus_generic_soviet_politics
+		x = 4
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_join_our_soviet_brothers }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			SOV = {
+        puppet= UKR
+}
+
+add_state_core = 137
+
+set_state_controller = 137
+
+set_state_owner = 137
+		}
+	}
+
+	#Focus for Soviet Research Cooperation
+	focus = {
+		id = UKR_soviet_research_cooperation
+		icon = GFX_focus_generic_socialist_science
+		x = 2
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_join_our_soviet_brothers }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot= 1
+		}
+	}
+
+	#Focus for Enlist for Ukraine
+	focus = {
+		id = UKR_enlist_for_ukraine
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 6
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_join_our_soviet_brothers }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower= 80000
+		}
+	}
+
+	#Focus for Soviet Assisted Build Up of Kiev
+	focus = {
+		id = UKR_soviet_assisted_build_up_of_kiev
+		icon = GFX_goal_generic_construction2
+		x = 4
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = UKR_enlist_for_ukraine 
+		}
+		prerequisite = { 
+			focus = UKR_soviet_research_cooperation 
+		}
+		prerequisite = { 
+			focus = UKR_puppet_for_crimea 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			202 = {
+set_building_level = {
+    type = infrastructure
+    level = 9
+    instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Soviet Civilian Cooperation
+	focus = {
+		id = UKR_soviet_civilian_cooperation
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 2
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = UKR_soviet_research_cooperation 
+		}
+		prerequisite = { 
+			focus = UKR_enlist_for_ukraine 
+		}
+		prerequisite = { 
+			focus = UKR_puppet_for_crimea 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			226 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+        type = industrial_complex
+        level = 2
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Soviet Military Cooperation
+	focus = {
+		id = UKR_soviet_military_cooperation
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 6
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = UKR_enlist_for_ukraine 
+		}
+		prerequisite = { 
+			focus = UKR_soviet_research_cooperation 
+		}
+		prerequisite = { 
+			focus = UKR_puppet_for_crimea 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			227 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+        type = arms_factory
+        level = 2
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Take Belarus by Force
+	focus = {
+		id = UKR_take_belarus_by_force
+		icon = GFX_UKR_take_belarus_by_force-44551
+		x = 10
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_the_creation_of_pubg }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = BLR
+}
+		}
+	}
+
+	#Focus for The Creation of PUBG
+	focus = {
+		id = UKR_the_creation_of_pubg
+		icon = GFX_UKR_the_creation_of_pubg-44550
+		x = 10
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_our_new_king }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core= 194
+
+add_state_core= 241
+
+add_state_core= 204
+
+add_state_core= 206
+
+add_state_core= 207
+
+add_state_core= 94
+
+add_state_core= 95
+
+add_state_core= 96
+
+add_state_core= 784
+		}
+	}
+
+	#Focus for Romanian Claims
+	focus = {
+		id = UKR_romanian_claims
+		icon = GFX_goal_generic_major_war
+		x = 8
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_the_creation_of_pubg }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = ROM
+}
+		}
+	}
+
+	#Focus for Reform the Government
+	focus = {
+		id = UKR_reform_the_government
+		icon = GFX_goal_generic_demand_territory
+		x = 10
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for Our Own Navy
+	focus = {
+		id = UKR_our_own_navy
+		icon = GFX_goal_generic_build_navy
+		x = 20
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			192 = {
+    add_extra_state_shared_building_slots = 3
+    add_building_construction = {
+        type = dockyard
+        level = 3
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Larger Navy
+	focus = {
+		id = UKR_larger_navy
+		icon = GFX_goal_generic_air_doctrine
+		x = 22
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_our_own_navy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = fleet_in_being_bonus
+bonus = 1.0
+uses = 2
+category = fleet_in_being_tree
+	}
+		}
+	}
+
+	#Focus for Submarine Construction
+	focus = {
+		id = UKR_submarine_construction
+		icon = GFX_goal_generic_navy_submarine
+		x = 18
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_our_own_navy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = ss_bonus
+bonus = 1.0
+ahead_reduction = 2
+uses = 1
+category = ss_tech
+	}
+		}
+	}
+
+	#Focus for Our New King!
+	focus = {
+		id = UKR_our_new_king
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 10
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_under_cheese_rat_succ }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.1
+		}
+	}
+
+	#Focus for Building Up the Cheese Industry in Kiev
+	focus = {
+		id = UKR_building_up_the_cheese_industry_in_kiev
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 8
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_under_cheese_rat_succ }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			202 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+        type = industrial_complex
+        level = 1
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Military Factory Construction
+	focus = {
+		id = UKR_military_factory_construction
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 12
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_under_cheese_rat_succ }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			201 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+        type = arms_factory
+        level = 1
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Take Back Our Polish Lands
+	focus = {
+		id = UKR_take_back_our_polish_lands
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 12
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_the_creation_of_pubg }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = POL
+}
+		}
+	}
+
+	#Focus for Revenge for 1932
+	focus = {
+		id = UKR_revenge_for_1932
+		icon = GFX_focus_attack_soviet
+		x = 10
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_take_belarus_by_force }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = SOV
+}
+		}
+	}
+
+	#Focus for Military Effort 2
+	focus = {
+		id = UKR_military_effort_2
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 16
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_military_effort }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			226 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+        type = arms_factory
+        level = 1
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Expand the Ukrainian Army and Airforce
+	focus = {
+		id = UKR_expand_the_ukrainian_army_and_airforce
+		icon = GFX_goal_generic_axis_build_infantry
+		x = 24
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 5
+
+add_tech_bonus = {
+name = land_doc_bonus
+bonus = 1.0
+uses = 1
+category = land_doctrine
+	}
+		}
+	}
+
+	#Focus for Infantry Effort
+	focus = {
+		id = UKR_infantry_effort
+		icon = GFX_goal_generic_small_arms
+		x = 22
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_expand_the_ukrainian_army_and_airforce }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = infantry_artillery_bonus
+bonus = 1.0
+uses = 1
+category = infantry_weapons
+category = artillery
+	}
+		}
+	}
+
+	#Focus for Fighter Expansion
+	focus = {
+		id = UKR_fighter_expansion
+		icon = GFX_goal_generic_air_fighter2
+		x = 26
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_airbase_expansion }
+		mutually_exclusive = { focus = UKR_bomber_expansion }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience= 10
+
+add_tech_bonus = {
+name = fighter_bonus
+bonus = 1.0
+uses = 2
+technology = early_fighter
+technology = fighter1
+technology = fighter2
+technology = fighter3
+technology = heavy_fighter1
+technology = heavy_fighter2
+technology = heavy_fighter3
+	}
+		}
+	}
+
+	#Focus for Armor Expansion
+	focus = {
+		id = UKR_armor_expansion
+		icon = GFX_goal_generic_army_tanks
+		x = 22
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_infantry_effort }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = armor_bonus
+bonus = 1.0
+uses = 2
+category = armor
+	}
+		}
+	}
+
+	#Focus for Continue our Infantry Expansion
+	focus = {
+		id = UKR_continue_our_infantry_expansion
+		icon = GFX_focus_prc_infiltration
+		x = 22
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_motorized_expansion }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = infantry_artillery_bonus
+bonus = 1.0
+uses = 1
+category = infantry_weapons
+category = artillery
+	}
+		}
+	}
+
+	#Focus for Close Air Support Expansion
+	focus = {
+		id = UKR_close_air_support_expansion
+		icon = GFX_goal_generic_CAS
+		x = 26
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = UKR_fighter_expansion 
+			focus = UKR_bomber_expansion 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = CAS_bonus
+bonus = 1.0
+ahead_reduction = 2
+uses = 1
+category = cas_bomber
+	}
+		}
+	}
+
+	#Focus for Naval Bomber Expansion
+	focus = {
+		id = UKR_naval_bomber_expansion
+		icon = GFX_goal_generic_navy_carrier
+		x = 26
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UKR_close_air_support_expansion }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = nav_bomber_bonus
+bonus = 1.0
+ahead_reduction = 2
+uses = 1
+category = naval_bomber
+	}
+		}
+	}
+
+#End of focuses 
+ }

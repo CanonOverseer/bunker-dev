@@ -1,0 +1,1624 @@
+﻿add_namespace = eventsmod
+
+
+news_event = { # operationunity
+	id = eventsmod.0 
+        title = eventsmod.0.t 
+        desc = eventsmod.0.d
+	    picture = GFX_news_event_ast_parliament_house
+
+	is_triggered_only = yes 
+	
+    major = yes 
+	
+	hidden = no 
+
+	fire_only_once = yes
+
+	
+	option = {
+		name = eventsmod.0.a 
+		trigger = {
+		    OR = {
+			    tag = BLU
+				tag = RED
+			}
+		}
+	    RED = { add_popularity = { ideology = democratic popularity = 0.2 } }
+	    BLU = {	add_popularity = { ideology = democratic popularity = 0.2 } }
+	}
+	option = {
+		name = eventsmod.0.b
+		trigger = {
+		    tag = BEL
+		}
+	}
+	option = {
+		name = eventsmod.0.c
+		trigger = {
+		    NOT = {
+			    tag = BLU
+				tag = RED 
+				tag = BEL
+			}
+		}
+	}
+}
+
+news_event = { # silentprot
+	id = eventsmod.1
+        title = eventsmod.1.t 
+        desc = eventsmod.1.d
+	    picture = GFX_news_event_ast_parliament_house 
+
+	is_triggered_only = yes 
+	
+    major = yes 
+	
+	hidden = no 
+
+	fire_only_once = yes
+
+	
+	option = {
+		name = eventsmod.1.a 
+		trigger = {
+		    OR = {
+			    tag = BLU
+				tag = RED
+			}
+		}
+	    RED = { add_popularity = { ideology = democratic popularity = 0.1 } }
+	    BLU = {	add_popularity = { ideology = democratic popularity = 0.1 } }
+	}
+	option = {
+		name = eventsmod.1.b
+		trigger = {
+		    tag = BEL
+		}
+	}
+	option = {
+		name = eventsmod.1.c
+		trigger = {
+		    NOT = {
+			    tag = BLU
+				tag = RED 
+				tag = BEL
+			}
+		}
+	}
+}
+
+
+country_event = { # First Elections
+	id = eventsmod.2
+        title = eventsmod.2.t 
+        desc = eventsmod.2.d
+
+	is_triggered_only = yes 
+	
+	hidden = no 
+
+	fire_only_once = yes
+
+	
+	option = { # Lion
+		name = eventsmod.2.a 
+		hidden_effect = { 
+		    complete_national_focus = RED_lion
+			create_country_leader = {
+				name = "Honor Guard Lion"
+				desc = "NA"
+				picture = "gfx/leaders/RED/lion.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+				}
+			}
+		}
+		
+	}
+	option = { # Echo
+		name = eventsmod.2.b
+		complete_national_focus = RED_echo
+		create_country_leader = {
+			name = "Revolutionary Echo"
+			desc = "NA"
+			picture = "gfx/leaders/RED/APYR.dds"
+			expire = "1965.1.1"
+			ideology = liberalism
+			traits = {
+				triumphant_revolutionary
+			}
+		}
+	}
+	option = { # Forehead
+		name = eventsmod.2.c
+		complete_national_focus = RED_sirforehead
+		create_country_leader = {
+			name = "SirFahrrad"
+			desc = "NA"
+			picture = "gfx/leaders/IRE/sirfar.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				popular_figurehead2
+			}
+		}
+	}
+	option = { # canon
+		name = eventsmod.2.e
+		complete_national_focus = RED_canon
+		create_country_leader = {
+			name = "CanonOverseer"
+			desc = "NA"
+			picture = "gfx/leaders/RED/canon.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				fascist_sympathies
+			}
+		}
+	}
+}
+
+country_event = { # Imperator Canon
+	id = eventsmod.3
+        title = eventsmod.3.t 
+        desc = eventsmod.3.d
+		picture = GFX_report_event_albanian_king_zog
+
+	is_triggered_only = yes 
+	
+	hidden = no 
+
+	fire_only_once = yes
+
+	
+	option = { # Shit
+		name = eventsmod.3.a 
+		set_politics = {
+		    ruling_party = neutrality
+		}
+		set_party_name = {
+		    ideology = neutrality
+			long_name = neutrality_canon_long
+			name = neutrality_canon
+		}
+		create_country_leader = {
+			name = "Canon I"
+			desc = "NA"
+			picture = "gfx/leaders/BNK/Canon_FRA.dds"
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				australian_imperialist
+				great_war_hero
+			}
+		}
+	}
+}
+
+news_event = {
+	id = eventsmod.39
+	
+    title = eventsmod.39.t 
+    desc = eventsmod.39.d
+	picture = GFX_report_event_didgericoup # Image displayed alongside the text.
+
+	major = yes # Optional : if set to "yes" every country in the world will see this event
+
+	is_triggered_only = yes # Optional : if set to "yes" the event will only occur by command
+
+	hidden = no # Optional : if set to "yes" no one will see the event
+
+	fire_only_once = yes # Optional : if set to "yes" the event will never occur more than once
+
+	immediate = { # Optional : all the following will occur once the event occurs
+	
+	}
+	
+	option = { # This is an example of an option that has no function
+		name = eventsmod.39.a # The localisable text that appears on the button.
+	}
+}
+news_event = {
+	id = eventsmod.40
+	
+    title = eventsmod.40.t 
+    desc = eventsmod.40.d
+	picture = GFX_report_event_lionwedding # Image displayed alongside the text.
+
+	major = yes # Optional : if set to "yes" every country in the world will see this event
+
+	is_triggered_only = yes # Optional : if set to "yes" the event will only occur by command
+
+	hidden = no # Optional : if set to "yes" no one will see the event
+
+	fire_only_once = yes # Optional : if set to "yes" the event will never occur more than once
+
+	immediate = { # Optional : all the following will occur once the event occurs
+	
+	}
+	
+	option = { # This is an example of an option that has no function
+		name = eventsmod.40.a # The localisable text that appears on the button.
+	}
+}
+
+news_event = { # Atlantic News
+	id = eventsmod.5
+        title = eventsmod.5.t 
+        desc = eventsmod.5.d
+		picture = GFX_news_event_saf_coup
+
+	is_triggered_only = yes 
+	
+	hidden = no
+    major = yes	
+
+	fire_only_once = yes
+
+	
+	option = {
+		name = eventsmod.5.a 
+		trigger = {
+		    OR = {
+			    tag = BLU
+				tag = RED
+			}
+		}
+	}
+	option = {
+		name = eventsmod.5.b
+		trigger = {
+		    tag = BEL
+		}
+	}
+	option = {
+		name = eventsmod.5.c
+		trigger = {
+		    NOT = {
+			    tag = BLU
+				tag = RED 
+				tag = BEL
+			}
+		}
+	}
+}
+
+news_event = { # Bunker unification
+	id = eventsmod.6
+        title = eventsmod.6.t 
+        desc = eventsmod.6.d
+		picture = GFX_news_event_german_speech
+
+	is_triggered_only = yes 
+	
+	hidden = no
+    major = yes	
+
+	fire_only_once = yes
+	
+	option = {
+		name = eventsmod.6.a 
+		trigger = {
+		    OR = {
+			    tag = BLU
+				tag = RED
+			}
+		}
+	}
+	option = {
+		name = eventsmod.6.b
+		trigger = {
+		    tag = BEL
+		}
+	}
+	option = {
+		name = eventsmod.6.c
+		trigger = {
+		    NOT = {
+			    tag = BLU
+				tag = RED 
+				tag = BEL
+			}
+		}
+	}
+}
+
+country_event = { # Bunker unification internal (RED)
+	id = eventsmod.8
+        title = eventsmod.8.t 
+        desc = eventsmod.8.d
+		picture = GFX_news_event_saf_coup
+
+	is_triggered_only = yes 
+	
+	immediate = {
+	    RED = {
+		    annex_country = { target = BLU transfer_troops = yes }
+			news_event = { id = eventsmod.6 days = 1 }
+		}
+	}
+	
+	hidden = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = eventsmod.8.a 
+	}
+}
+
+country_event = { # Bunker unification internal (BLU)
+	id = eventsmod.9
+        title = eventsmod.9.t 
+        desc = eventsmod.9.d
+		picture = GFX_news_event_saf_coup
+
+	is_triggered_only = yes 
+	
+	immediate = {
+	    BLU = {
+		    annex_country = { target = RED transfer_troops = yes }
+			news_event = { id = eventsmod.7 days = 1 }
+		}
+	}
+	
+	hidden = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = eventsmod.9.a 
+	}
+}
+
+country_event = { # Canon Offers Romania a Alliance (ROM)
+	id = eventsmod.11
+        title = eventsmod.11.t 
+        desc = eventsmod.11.d
+		picture = GFX_report_event_worried_french
+
+	is_triggered_only = yes 
+	
+	
+	hidden = no
+
+	fire_only_once = no
+	
+	option = { # Accept
+		name = eventsmod.11.a
+		ai_chance = {
+			base = 90
+		}
+		if = {
+		    limit = {
+			    country_exists = RED
+			}
+			RED = { country_event = { hours = 2 id = eventsmod.12 } }
+			RED = { add_to_faction = ROM }
+		}
+		if = {
+		   limit = {
+			    country_exists = BLU
+			}
+			BLU = { country_event = { hours = 2 id = eventsmod.12 } }
+			BLU = { add_to_faction = ROM }
+		}
+	}
+	option = { # Refuse
+		name = eventsmod.11.b
+		ai_chance = {
+			base = 10
+		}
+		if = {
+		    limit = {
+			    country_exists = RED
+			}
+			RED = { country_event = { hours = 2 id = eventsmod.13 } }
+		}
+		if = {
+		   limit = {
+			    country_exists = BLU
+			}
+			BLU = { country_event = { hours = 2 id = eventsmod.13 } }
+		}
+	}
+}
+
+country_event = { # Alliance Accepted ROM
+	id = eventsmod.12
+        title = eventsmod.12.t 
+        desc = eventsmod.12.d
+		picture = GFX_report_event_aid_pact
+
+	is_triggered_only = yes 
+	
+	hidden = no
+
+	fire_only_once = no
+	
+	option = {
+		name = eventsmod.12.a 
+	}
+}
+
+country_event = { # Alliance Denied ROM
+	id = eventsmod.13
+        title = eventsmod.13.t 
+        desc = eventsmod.13.d
+		picture = GFX_report_event_aid_pact
+
+	is_triggered_only = yes 
+	
+	hidden = no
+
+	fire_only_once = no
+	
+	option = {
+		name = eventsmod.13.a 
+	}
+}
+
+news_event = { # Trabeth Coup
+	id = eventsmod.14
+        title = eventsmod.14.t 
+        desc = eventsmod.14.d
+		picture = GFX_news_event_ast_troops_landing
+
+	is_triggered_only = yes 
+	
+	hidden = no
+	
+	immediate = {
+	    
+	}
+
+	fire_only_once = no
+	
+	option = {
+		name = eventsmod.14.a 
+	}
+}
+
+country_event = { # dev
+	id = eventsmod.420
+        title = eventsmod.9.t 
+        desc = eventsmod.9.d
+		picture = GFX_news_event_saf_coup
+
+	is_triggered_only = yes 
+	
+	immediate = {
+	}
+	
+	hidden = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = eventsmod.9.a 
+        create_country_leader = {
+			name = "Fritz Julius Kuhn"
+			picture = "gfx/leaders/PSA/Fritz_Julius_Kuhn.dds"
+			expire = "1965.1.1"
+			ideology = nazism
+			traits = { fuhrer_america fascist_militia_leader }
+		}
+		set_party_name = { 
+			ideology = fascism 
+			long_name = PSA_fascism_party_alt_long
+			name = PSA_fascism_party_alt 
+		}
+		set_cosmetic_tag = PSA_reich
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# PSA
+
+
+country_event = { # Pres Debates
+	id = eventsmod.80
+        title = eventsmod.80.t 
+        desc = eventsmod.80.d
+		picture = GFX_report_event_king_speech
+
+	is_triggered_only = yes 
+	
+	hidden = no 
+
+	fire_only_once = yes
+
+	
+	option = { # FDR
+		name = eventsmod.80.a 
+	}
+	option = { # Trump
+		name = eventsmod.80.b 
+	}
+}
+
+
+country_event = { # Pres Elections
+	id = eventsmod.81
+        title = eventsmod.81.t 
+        desc = eventsmod.81.d
+		picture = GFX_report_event_german_reichstag_gathering
+
+	is_triggered_only = yes 
+	
+	hidden = no 
+
+	fire_only_once = yes
+
+	
+	option = { # FDR
+		name = eventsmod.81.a 
+		set_country_flag = FDR_win
+		set_party_name = { 
+			ideology = democratic 
+			long_name = PSA_republican_party_long 
+			name = PSA_republican_party 
+		}
+	}
+	option = { # Trump
+		name = eventsmod.81.b
+		set_country_flag = TRUMP_win
+		set_party_name = { 
+			ideology = democratic 
+			long_name = PSA_progress_party_long 
+			name = PSA_progress_party 
+		}
+		
+	}
+}
+
+news_event = { # Roosevelt Wins
+	id = eventsmod.82
+	
+    title = eventsmod.82.t 
+    desc = eventsmod.82.d
+	picture = GFX_news_event_generic_usa_treaty # Image displayed alongside the text.
+
+	major = yes # Optional : if set to "yes" every country in the world will see this event
+
+	is_triggered_only = no # Optional : if set to "yes" the event will only occur by command
+	
+	trigger = {
+		PSA = { has_country_flag = FDR_win }
+	}
+
+	hidden = no # Optional : if set to "yes" no one will see the event
+
+	fire_only_once = yes # Optional : if set to "yes" the event will never occur more than once
+
+	immediate = { # Optional : all the following will occur once the event occurs
+	
+	}
+	
+	option = { # This is an example of an option that has no function
+		name = eventsmod.82.a # The localisable text that appears on the button.
+	}
+}
+
+news_event = { # Trump Wins
+	id = eventsmod.83
+	
+    title = eventsmod.83.t 
+    desc = eventsmod.83.d
+	picture = GFX_news_event_german_speech # Image displayed alongside the text.
+
+	major = yes # Optional : if set to "yes" every country in the world will see this event
+
+	is_triggered_only = no # Optional : if set to "yes" the event will only occur by command
+	
+	trigger = {
+		PSA = { has_country_flag = TRUMP_win }
+	}
+
+	hidden = no # Optional : if set to "yes" no one will see the event
+
+	fire_only_once = yes # Optional : if set to "yes" the event will never occur more than once
+
+	immediate = { # Optional : all the following will occur once the event occurs
+	
+	}
+	
+	option = { # This is an example of an option that has no function
+		name = eventsmod.83.a # The localisable text that appears on the button.
+	}
+}
+
+country_event = { # The Primaries
+	id = eventsmod.84
+        title = eventsmod.84.t 
+        desc = eventsmod.84.d
+		picture = GFX_report_event_king_speech
+
+	is_triggered_only = yes 
+	
+	hidden = no 
+
+	fire_only_once = yes
+
+	
+	option = { # FDR
+		name = eventsmod.84.a 
+		
+	}
+}
+
+country_event = { # Hawaii Rejoin America
+	id = eventsmod.85
+        title = eventsmod.85.t 
+        desc = eventsmod.85.d
+		picture = GFX_report_event_king_speech
+
+	is_triggered_only = yes 
+	
+	hidden = no 
+
+	fire_only_once = yes
+
+	
+	option = { # Accept
+		name = eventsmod.85.a 
+		PSA = {
+			country_event = {
+				id = eventsmod.86
+				days = 5
+			}
+		}
+	}
+}
+
+country_event = { # Hawaii Accepts
+	id = eventsmod.86
+        title = eventsmod.86.t 
+        desc = eventsmod.86.d
+		picture = GFX_report_event_king_speech
+
+	is_triggered_only = yes 
+	
+	hidden = no 
+
+	fire_only_once = yes
+
+	
+	option = { # Good
+		name = eventsmod.86.a 
+		PSA = {
+			annex_country = {
+				target = HAW
+				transfer_troops = yes
+			}
+		}
+		629 = {
+			add_core_of = PSA
+		}
+	}
+}
+
+country_event = { # Hawaii Refuses (Disabled)
+	id = eventsmod.87
+        title = eventsmod.84.t 
+        desc = eventsmod.84.d
+		picture = GFX_report_event_king_speech
+
+	is_triggered_only = yes 
+	
+	hidden = no 
+
+	fire_only_once = yes
+
+	
+	option = {
+		name = eventsmod.84.a 
+		
+	}
+}
+
+country_event = { # an Offer to Join the Union (Texas)
+	id = eventsmod.88
+        title = eventsmod.88.t 
+        desc = eventsmod.88.d
+		picture = GFX_report_event_king_speech
+
+	is_triggered_only = yes 
+	
+	hidden = no 
+
+	fire_only_once = yes
+
+	
+	option = { # yes but only if we get greater texas
+		name = eventsmod.88.a 
+		ai_chance = {
+			base = 0.8
+		}
+		PSA = {
+			country_event = {
+				id = eventsmod.89
+			}
+		}
+	}
+	
+	option = { # no fuck off
+		name = eventsmod.88.b
+		ai_chance = {
+			base = 0.2
+		}
+		PSA = {
+			country_event = {
+				id = eventsmod.90
+			}
+		}
+	}
+}
+
+country_event = { # Texas Accepts
+	id = eventsmod.89
+        title = eventsmod.89.t 
+        desc = eventsmod.89.d
+		picture = GFX_report_event_king_speech
+
+	is_triggered_only = yes 
+	
+	hidden = no 
+
+	fire_only_once = yes
+
+	
+	option = { # Welcome Back
+		name = eventsmod.89.a 
+		puppet = TEX
+		TEX = { set_cosmetic_tag = TEX_PSA }
+	}
+}
+
+country_event = { # Texas Refuses
+	id = eventsmod.90
+        title = eventsmod.90.t 
+        desc = eventsmod.90.d
+		picture = GFX_report_event_king_speech
+
+	is_triggered_only = yes 
+	
+	hidden = no 
+
+	fire_only_once = yes
+
+	
+	option = { # How dare they!
+		name = eventsmod.90.a 
+		create_wargoal = {
+			type = annex_everything
+			target = TEX
+		}
+		
+	}
+}
+
+country_event = { # America asks from help from germany
+	id = eventsmod.91
+        title = eventsmod.91.t 
+        desc = eventsmod.91.d
+		picture = GFX_report_event_king_speech
+
+	is_triggered_only = yes 
+	
+	hidden = no 
+
+	fire_only_once = yes
+
+	
+	option = { #Accept
+		name = eventsmod.91.a 
+		PSA = {
+		country_event = {
+			id = eventsmod.92
+			days = 5
+		}
+		}
+	}
+	option = { #Deny
+		name = eventsmod.91.b 
+		PSA = {
+		country_event = {
+			id = eventsmod.93
+			days = 5
+		}
+		}
+	}
+}
+
+country_event = { # Germany Accepts!
+	id = eventsmod.92
+        title = eventsmod.92.t 
+        desc = eventsmod.92.d
+		picture = GFX_report_event_king_speech
+
+	is_triggered_only = yes 
+	
+	hidden = no 
+
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			add_to_variable = {
+				var = PSA_left_outrage
+				value = 1
+			}
+			add_opinion_modifier = {
+				target = GER
+				modifier = PSA_trust
+			}
+			GER = {
+			add_opinion_modifier = {
+				target = PSA
+				modifier = GER_trust
+			}
+			}
+		}
+	}
+	
+	option = {
+		name = eventsmod.92.a 
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.07
+		}
+		GER = {
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 5000
+				target = PSA
+			}
+			add_manpower = -10000
+		}
+		diplomatic_relation = {
+			country = GER
+			relation = non_aggression_pact
+			active = yes
+		}
+		add_resource = {
+			type = steel
+			amount = 10
+			state = 378
+		}
+		
+		add_manpower = 10000
+	}
+}
+
+country_event = { # Germany Refuses!
+	id = eventsmod.93
+        title = eventsmod.93.t 
+        desc = eventsmod.93.d
+		picture = GFX_report_event_king_speech
+
+	is_triggered_only = yes 
+	
+	hidden = no 
+
+	fire_only_once = yes
+	
+
+	
+	option = {
+		name = eventsmod.93.a 
+		add_opinion_modifier = {
+			modifier = red_distrust
+			target = GER
+		}
+		ENG = {
+			add_opinion_modifier = {
+				modifier = red_distrust
+				target = PSA
+			}
+		}
+		unlock_national_focus = PSA_the_rising_power
+		unlock_national_focus = PSA_support_from_the_wehrmacht
+	}
+}
+
+news_event = { # Alabama Civil War
+	id = eventsmod.94
+        title = eventsmod.94.t 
+        desc = eventsmod.94.d
+		picture = GFX_news_event_german_speech
+
+	is_triggered_only = yes 
+	
+	major = yes
+	
+	immediate = {
+		hidden_effect = {
+		ABM = { 
+		start_civil_war = {
+			ideology = democratic
+			size = 0.35
+			capital = 282
+			states = { 
+				364 368 363 369 362
+			}
+			}
+		}
+		random_other_country = {
+			limit = {
+				original_tag = ABM
+				has_government = democratic
+			}
+			set_stability = 0.9
+			set_war_support = 0.8
+			set_cosmetic_tag = ABM_republic
+		}
+		}
+	}
+	
+	
+	hidden = no 
+
+	fire_only_once = yes
+	
+
+	
+	option = {
+		name = eventsmod.94.a 
+	}
+}
+
+country_event = {
+	id = eventsmod.95
+	title = eventsmod.95.t
+	desc = eventsmod.95.d
+	picture = GFX_report_event_usa_macarthur_speech
+	is_triggered_only = yes
+	major = yes
+	fire_only_once = yes
+
+	option = {
+		name = eventsmod.95.a 
+		trigger = {
+			TAG  = PSA
+		}
+	}
+	option = {
+		name = eventsmod.95.b
+		trigger = {
+			NOT = {
+				TAG = USA
+				TAG = PSA
+			}
+		}
+	}
+	option = {
+		name = eventsmod.95.c 
+		trigger = {
+			TAG = USA
+		}
+	}
+}
+
+country_event = { #Captured MacArthur (PSA)
+	id = eventsmod.96
+	title = eventsmod.96.t
+	desc = eventsmod.96.d
+	picture = GFX_report_event_usa_macarthur_speech
+	is_triggered_only = no
+	major = no
+	fire_only_once = yes
+
+	trigger = {
+		tag = PSA
+		PSA = { controls_state = 282 }
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = eventsmod.96.a 
+		add_war_support = 0.05
+		USA = { country_event = { id = eventsmod.97 days = 1} }
+		USA = { add_country_leader_trait = is_captured }
+	}
+}
+
+country_event = { #Captured MacArthur (PSA)
+	id = eventsmod.97
+	title = eventsmod.97.t
+	desc = eventsmod.97.d
+	picture = GFX_report_event_usa_macarthur_speech
+	is_triggered_only = yes
+	major = no
+	fire_only_once = yes
+	immediate = {
+	}
+
+	option = {
+		name = eventsmod.97.a 
+		add_war_support = -0.05
+	}
+}
+
+country_event = { # brits get event
+	id = eventsmod.98
+	title = eventsmod.98.t
+	desc = eventsmod.98.d
+	picture = GFX_report_event_usa_macarthur_speech
+	is_triggered_only = yes
+	major = no
+	fire_only_once = yes
+	immediate = {
+	}
+
+	option = { # yes
+		name = eventsmod.98.a 
+
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 5000
+			target = PSA
+		}
+		add_manpower = -10000
+
+		GER = { 
+		add_opinion_modifier = {
+			modifier = red_distrust
+			target = PSA
+		}
+		}
+		PSA = { 
+		add_opinion_modifier = {
+			modifier = red_distrust
+			target = GER
+		} 
+		}
+		}
+
+	option = { # no im gay
+		name = eventsmod.98.b
+	}
+}
+
+country_event = { # brits accept
+	id = eventsmod.99
+	title = eventsmod.99.t
+	desc = eventsmod.99.d
+	picture = GFX_report_event_usa_macarthur_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+				
+		}	
+	}
+
+	trigger = {}
+
+	option = { # brits accept
+		name = eventsmod.99.a 
+		diplomatic_relation = {
+			country = PSA
+			relation = non_aggression_pact
+			active = yes
+		}
+		add_resource = {
+			type = steel
+			amount = 10
+			state = 378
+		}
+		
+		add_manpower = 10000
+	}
+}
+
+country_event = { # sayland gets peace offer
+	id = eventsmod.107
+	title = eventsmod.107.t
+	desc = eventsmod.107.d
+	picture = GFX_report_event_usa_macarthur_speech
+	is_triggered_only = yes
+	major = no
+	fire_only_once = yes
+
+	option = { # yes
+		name = eventsmod.107.a 
+		ai_chance = {
+			base = 100
+		}
+		SAY = { 
+			white_peace = PSA
+			white_peace = ABM
+			white_peace = USA
+			white_peace = MDW
+		}
+
+	}
+	option = { # no
+		name = eventsmod.107.b 
+		ai_chance = {
+			base = 0
+		}
+
+	}
+}
+
+country_event = { # sayland peaces out
+	id = eventsmod.108
+	title = eventsmod.108.t
+	desc = eventsmod.108.d
+	picture = GFX_report_event_usa_macarthur_speech
+	is_triggered_only = yes
+	major = no
+	fire_only_once = yes
+	immediate = {
+		SAY = { 
+			america_is_lost = yes
+			set_cosmetic_tag = POL
+		}
+	}
+
+	option = {
+		name = eventsmod.108.a 
+		set_province_name = {
+			id = 3878
+			name = "New York"
+		}
+		358 = { set_state_name = "New York City" }
+		SAY = {
+			if = {
+				limit = {
+					owns_state = 261
+				}
+				every_country = {
+					limit = {
+						
+						has_country_flag = sayland_winner
+					}
+					transfer_state = 261
+				}
+			}
+			if = {
+				limit = {
+					owns_state = 811
+				}
+				every_country = {
+					limit = {
+						
+						has_country_flag = sayland_winner
+					}
+					transfer_state = 811
+				}
+			}
+			if = {
+				limit = {
+					owns_state = 360
+				}
+				every_country = {
+					limit = {
+						
+						has_country_flag = sayland_winner
+					}
+					transfer_state = 360
+				}
+			}
+			if = {
+				limit = {
+					owns_state = 361
+				}
+				every_country = {
+					limit = {
+						
+						has_country_flag = sayland_winner
+					}
+					transfer_state = 361
+				}
+			}
+			if = {
+				limit = {
+					owns_state = 359
+				}
+				every_country = {
+					limit = {
+						
+						has_country_flag = sayland_winner
+					}
+					transfer_state = 359
+				}
+			}
+			if = {
+				limit = {
+					owns_state = 358
+				}
+				every_country = {
+					limit = {
+						
+						has_country_flag = sayland_winner
+					}
+					transfer_state = 358
+				}
+			}
+			if = {
+				limit = {
+					owns_state = 812
+				}
+				every_country = {
+					limit = {
+						
+						has_country_flag = sayland_winner
+					}
+					transfer_state = 812
+				}
+			}
+			if = {
+				limit = {
+					owns_state = 357
+				}
+				every_country = {
+					limit = {
+						
+						has_country_flag = sayland_winner
+					}
+					transfer_state = 357
+				}
+			}
+		}
+	}
+}
+
+news_event = { # PSA Reunification (Trump)
+	id = eventsmod.109
+	title = eventsmod.109.t
+	desc = eventsmod.109.d
+	picture = GFX_news_event_american_unification_trump
+	is_triggered_only = yes
+	major = yes
+	fire_only_once = yes
+
+	option = { # no
+		name = eventsmod.109.a
+		trigger = { tag = PSA }
+		add_country_leader_trait = legendary_president_trump
+
+	}
+
+	option = { # no
+		name = eventsmod.109.b 
+		trigger = {
+			NOT = { tag = SAY }
+			NOT = { tag = PSA }
+		}
+	}
+
+	option = { # no
+		name = eventsmod.109.c
+		trigger = { 
+			tag = SAY
+		}
+	}
+}
+
+news_event = { # PSA Reunification (FDR)
+	id = eventsmod.110
+	title = eventsmod.110.t
+	desc = eventsmod.110.d
+	picture = GFX_news_event_american_unification_fdr
+	is_triggered_only = yes
+	major = yes
+	fire_only_once = yes
+
+	option = { # no
+		name = eventsmod.110.a
+		trigger = { tag = PSA }
+		add_country_leader_trait = legendary_president_fdr
+		swap_ruler_traits = { remove = unpopular_with_right add = tolerated_by_right }
+	}
+
+	option = { # no
+		name = eventsmod.109.b 
+		trigger = {
+			NOT = { tag = SAY }
+			NOT = { tag = PSA }
+		}
+	}
+
+	option = { # no
+		name = eventsmod.109.c
+		trigger = { 
+			tag = SAY
+		}
+	}
+}
+
+country_event = { # Choose Prime-Minister
+	id = eventsmod.111
+	title = eventsmod.111.t
+	desc = eventsmod.111.d
+	picture = GFX_report_event_pm
+	is_triggered_only = yes
+	major = yes
+	fire_only_once = yes
+
+	option = { # cracky
+		name = eventsmod.111.a
+		hidden_effect = {
+			remove_ideas = { BNK_pm_top BNK_pm_lion BNK_pm_echo }
+			clr_country_flag = pm_top
+			clr_country_flag = pm_lion
+			clr_country_flag = pm_echo
+			country_event = {
+			id = eventsmod.111 days = 730
+			}
+		}
+		custom_effect_tooltip = pm_event_2years
+		set_country_flag = pm_cracky
+		add_ideas = BNK_pm_cracky
+	}
+
+	option = { # lion
+		name = eventsmod.111.b 
+		hidden_effect = {
+			remove_ideas = { BNK_pm_cracky BNK_pm_top BNK_pm_echo }
+			clr_country_flag = pm_cracky
+			clr_country_flag = pm_top
+			clr_country_flag = pm_echo
+			country_event = {
+			id = eventsmod.111 days = 730
+			}
+		}
+		custom_effect_tooltip = pm_event_2years
+		set_country_flag = pm_lion
+		add_ideas = BNK_pm_lion
+		imperialist_gain_test = yes
+	}
+
+	option = { # top
+		name = eventsmod.111.c
+		hidden_effect = {
+			remove_ideas = { BNK_pm_cracky BNK_pm_lion BNK_pm_echo }
+			clr_country_flag = pm_cracky
+			clr_country_flag = pm_lion
+			clr_country_flag = pm_echo
+			country_event = {
+			id = eventsmod.111 days = 730
+			}
+		}
+		set_country_flag = pm_top
+		custom_effect_tooltip = pm_event_2years
+		add_ideas = BNK_pm_top
+	}
+
+	option = { # echo
+		name = eventsmod.111.e
+		hidden_effect = {
+			remove_ideas = { BNK_pm_cracky BNK_pm_lion BNK_pm_top }
+			clr_country_flag = pm_cracky
+			clr_country_flag = pm_lion
+			clr_country_flag = pm_top
+			country_event = {
+			id = eventsmod.111 days = 730
+			}
+		}
+		custom_effect_tooltip = pm_event_2years
+		set_country_flag = pm_echo
+		add_ideas = BNK_pm_echo
+	}
+}
+
+news_event = {
+	id = eventsmod.6666
+	title = eventsmod.6666.t
+	desc = eventsmod.6666.d
+	picture = GFX_news_event_anarchy
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			BNK = {
+				set_cosmetic_tag = BNK_anarchy
+				add_popularity = {
+					ideology = neutrality
+					popularity = 100
+				}
+				set_politics = {
+					ruling_party = neutrality
+				}
+				set_party_name = { 
+					ideology = neutrality 
+					name = BNK_anarchy_party
+				}
+				create_country_leader = {
+					name = "No Authority"
+					desc = "no_authority_desc"
+					picture = "gfx/leaders/BNK/none.dds"
+					expire = "1965.1.1"
+					ideology = anarchism
+					traits = {
+						
+					}
+				}
+				dismantle_faction = yes
+				country_lock_all_division_template = yes
+				clr_country_flag = canon_win
+				all_owned_state = {
+					set_demilitarized_zone = yes
+				}
+				add_ideas = BNK_silent_state
+				remove_ideas = BNK_imperial_senate_opposed
+				remove_ideas = BNK_imperial_senate
+				remove_ideas = BNK_imperial_senate_supportive
+				remove_ideas = BNK_political_instability
+				set_capital = 25
+			}
+			807 = {
+				add_manpower = -6000000
+			}	
+			24 = {
+				add_manpower = -1500000
+			}
+			23 = {
+				add_manpower = -1600000
+			}
+			19 = {
+				add_manpower = -1000000
+			}
+			set_victory_points = {
+				province = 651
+				value = 0    
+			}
+			set_victory_points = {
+				province = 620
+				value = 0    
+			}
+			set_victory_points = {
+				province = 3594
+				value = 0    
+			}
+			set_victory_points = {
+				province = 6613
+				value = 0    
+			}
+			set_victory_points = {
+				province = 11834
+				value = 0    
+			}
+			set_victory_points = {
+				province = 911
+				value = 0    
+			}
+			set_victory_points = {
+				province = 9898
+				value = 0    
+			}
+			set_victory_points = {
+				province = 6766
+				value = 0    
+			}
+			set_victory_points = {
+				province = 3768
+				value = 0    
+			}
+			set_victory_points = {
+				province = 3771
+				value = 20    
+			}
+			launch_nuke = {
+				province = 11611
+				state = 807
+				controller = BNK
+				use_nuke = yes
+			}
+		}
+	}
+
+	option = { # echo
+	name = eventsmod.6666.a
+	set_province_name = {
+		id = 11611
+		name = "Bunker Ruins"
+	}
+	}
+
+}
+
+news_event = {
+	id = eventsmod.6667
+	title = eventsmod.6667.t
+	desc = eventsmod.6667.d
+	picture = GFX_news_event_anarchy
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			launch_nuke = {
+				province = 11506
+				state = 16
+				controller = BNK
+				use_nuke = yes
+			}
+		}
+	}
+
+	option = { # echo
+	name = eventsmod.6667.a
+	}
+
+}
+
+country_event = { # trigger eth
+	id = eventsmod.1936
+	title = eventsmod.1937.t
+	desc = eventsmod.1937.d
+	picture = GFX_news_event_anarchy
+	hidden = yes
+	
+	fire_only_once = yes
+
+	trigger = {
+		date > 1936.1.1
+	}
+
+	immediate = {
+	hidden_effect = {
+		ITA = { news_event = { id = eventsmod.1937 } }
+	}
+	}
+
+	option = { #
+	name = eventsmod.1937.a
+	}
+}
+
+news_event = { # ethiopia peace
+	id = eventsmod.1937
+	title = eventsmod.1937.t
+	desc = eventsmod.1937.d
+	picture = GFX_news_event_ethwar
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+	hidden_effect = {
+	}
+	}
+
+	option = { #
+	name = eventsmod.1937.a
+	}
+}
+
+
+
+
+

@@ -1,0 +1,8 @@
+RED	= "countries/red.txt"
+LOU = "countries/louisiana.txt"
+BLU = "countries/blue.txt"
+ABM = "countries/alabama.txt"
+TEX = "countries/Texas.txt"
+FLR = "countries/florida.txt"
+SAY =  "countries/saylandNA.txt"
+BNK = "countries/Bunker.txt"

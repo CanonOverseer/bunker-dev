@@ -1,0 +1,412 @@
+add_namespace = eventforbun
+
+##Event: We shall puppet Haiti
+country_event = {
+	id = eventforbun.1
+	title = eventforbun.1.title
+	desc = eventforbun.1.desc
+	picture = GFX_news_event_chinese_soldiers_march
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = eventforbun.1.a
+		ai_chance = { factor = 1}
+		HAI = { country_event = { id = eventforbun.2 } }
+	}
+}
+##Event: Should we join Cuba?
+country_event = {
+	id = eventforbun.2
+	title = eventforbun.2.title
+	desc = eventforbun.2.desc
+	picture = GFX_report_event_pierre_laval
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = eventforbun.2.a
+		ai_chance = { factor = 1}
+		CUB = {
+puppet= HAI 
+}
+
+CUB = { country_event = { id = eventforbun.4 } }
+	}
+	option = {
+		name = eventforbun.2.b
+		ai_chance = { factor = 1}
+		CUB = { country_event = { id = eventforbun.3 } }
+	}
+}
+##Event: Haiti says no!
+country_event = {
+	id = eventforbun.3
+	title = eventforbun.3.title
+	desc = eventforbun.3.desc
+	picture = GFX_news_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = eventforbun.3.a
+		ai_chance = { factor = 1}
+		create_wargoal= { 
+type = annex_everything 
+target = HAI
+}
+	}
+	option = {
+		name = eventforbun.3.b
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Haiti joins Cuba!
+country_event = {
+	id = eventforbun.4
+	title = eventforbun.4.title
+	desc = eventforbun.4.desc
+	picture = GFX_news_event_hitler_handshake
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	option = {
+		name = eventforbun.4.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Cuba petitions us to release Jamaica
+country_event = {
+	id = eventforbun.5
+	title = eventforbun.5.title
+	desc = eventforbun.5.desc
+	picture = GFX_news_event_bose_meeting
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = eventforbun.5.a
+		ai_chance = { factor = 1}
+		ENG = {
+        release = JAM
+}
+
+CUB = { country_event = { id = eventforbun.6 } }
+	}
+	option = {
+		name = eventforbun.5.b
+		ai_chance = { factor = 1}
+		CUB = { country_event = { id = eventforbun.7 } }
+	}
+}
+##Event: The United Kingdom releases Jamaica.
+country_event = {
+	id = eventforbun.6
+	title = eventforbun.6.title
+	desc = eventforbun.6.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = eventforbun.6.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Britain says no
+country_event = {
+	id = eventforbun.7
+	title = eventforbun.7.title
+	desc = eventforbun.7.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = eventforbun.7.a
+		ai_chance = { factor = 1}
+		create_wargoal= { 
+type = annex_everything 
+target = ENG
+}
+	}
+	option = {
+		name = eventforbun.7.b
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Cuba petitions us to release the Bahamas
+country_event = {
+	id = eventforbun.8
+	title = eventforbun.8.title
+	desc = eventforbun.8.desc
+	picture = GFX_news_event_partition_of_india
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = eventforbun.8.a
+		ai_chance = { factor = 1}
+		CUB = { country_event = { id = eventforbun.9 } }
+	}
+	option = {
+		name = eventforbun.8.b
+		ai_chance = { factor = 1}
+		CUB = { country_event = { id = eventforbun.10 } }
+	}
+}
+##Event: The United Kingdom releases the Bahamas.
+country_event = {
+	id = eventforbun.9
+	title = eventforbun.9.title
+	desc = eventforbun.9.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = eventforbun.9.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: The United Kingdom says no
+country_event = {
+	id = eventforbun.10
+	title = eventforbun.10.title
+	desc = eventforbun.10.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = eventforbun.10.a
+		ai_chance = { factor = 1}
+		create_wargoal= { 
+type = annex_everything 
+target = ENG
+}
+	}
+	option = {
+		name = eventforbun.10.b
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Should we Join Cuba
+country_event = {
+	id = eventforbun.11
+	title = eventforbun.11.title
+	desc = eventforbun.11.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = eventforbun.11.a
+		ai_chance = { factor = 1}
+		CUB = {
+puppet= JAM
+}
+
+CUB = { country_event = { id = eventforbun.12 } }
+	}
+	option = {
+		name = eventforbun.11.b
+		ai_chance = { factor = 1}
+		CUB = { country_event = { id = eventforbun.13 } }
+	}
+}
+##Event: Jamaica says Yes!
+country_event = {
+	id = eventforbun.12
+	title = eventforbun.12.title
+	desc = eventforbun.12.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = eventforbun.12.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Jamaica says No!
+country_event = {
+	id = eventforbun.13
+	title = eventforbun.13.title
+	desc = eventforbun.13.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = eventforbun.13.a
+		ai_chance = { factor = 1}
+		create_wargoal= { 
+type = annex_everything 
+target = JAM
+}
+	}
+	option = {
+		name = eventforbun.13.b
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Should we Join Cuba
+country_event = {
+	id = eventforbun.14
+	title = eventforbun.14.title
+	desc = eventforbun.14.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = eventforbun.14.a
+		ai_chance = { factor = 1}
+		CUB = {
+puppet= BAH
+}
+
+CUB = { country_event = { id = eventforbun.15 } }
+	}
+	option = {
+		name = eventforbun.14.b
+		ai_chance = { factor = 1}
+		CUB = { country_event = { id = eventforbun.16 } }
+	}
+}
+##Event: The Bahamas say Yes
+country_event = {
+	id = eventforbun.15
+	title = eventforbun.15.title
+	desc = eventforbun.15.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = eventforbun.15.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: The Bahamas say no
+country_event = {
+	id = eventforbun.16
+	title = eventforbun.16.title
+	desc = eventforbun.16.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = eventforbun.16.a
+		ai_chance = { factor = 1}
+		create_wargoal= { 
+type = annex_everything 
+target = BAH
+}
+	}
+	option = {
+		name = eventforbun.16.b
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Cuba demands Yucatan
+country_event = {
+	id = eventforbun.17
+	title = eventforbun.17.title
+	desc = eventforbun.17.desc
+	picture = GFX_news_event_saf_civil_war
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = eventforbun.17.a
+		ai_chance = { factor = 1}
+		CUB = { set_state_owner= 474 } 
+
+CUB = { set_state_controller= 474 }
+
+CUB = { country_event = { id = eventforbun.18 } }
+	}
+	option = {
+		name = eventforbun.17.b
+		ai_chance = { factor = 1}
+		CUB = { country_event = { id = eventforbun.19 } }
+	}
+}
+##Event: Mexico Folds
+country_event = {
+	id = eventforbun.18
+	title = eventforbun.18.title
+	desc = eventforbun.18.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = eventforbun.18.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Mexico refuses our demands
+country_event = {
+	id = eventforbun.19
+	title = eventforbun.19.title
+	desc = eventforbun.19.desc
+	picture = GFX_news_event_generic_army
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = eventforbun.19.a
+		ai_chance = { factor = 1}
+		declare_war_on= { 
+target = MEX
+type = annex_everything 
+}
+	}
+	option = {
+		name = eventforbun.19.b
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Cuba asks for Chiapas
+country_event = {
+	id = eventforbun.20
+	title = eventforbun.20.title
+	desc = eventforbun.20.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = eventforbun.20.a
+		ai_chance = { factor = 1}
+		CUB = { set_state_owner= 475 } 
+
+CUB = { set_state_controller= 475 }
+
+CUB = { country_event = { id = eventforbun.21 } }
+	}
+	option = {
+		name = eventforbun.20.b
+		ai_chance = { factor = 1}
+		CUB = { country_event = { id = eventforbun.22 } }
+	}
+}
+##Event: Mexico has accepted our demands!
+country_event = {
+	id = eventforbun.21
+	title = eventforbun.21.title
+	desc = eventforbun.21.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = eventforbun.21.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Mexico denies our demands
+country_event = {
+	id = eventforbun.22
+	title = eventforbun.22.title
+	desc = eventforbun.22.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = eventforbun.22.a
+		ai_chance = { factor = 1}
+		declare_war_on= { 
+target = MEX
+type = annex_everything 
+}
+	}
+	option = {
+		name = eventforbun.22.b
+		ai_chance = { factor = 1}
+	}
+}

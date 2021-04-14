@@ -1,0 +1,11 @@
+ideas = {
+	country = {
+
+		SAY_corridor_plan = {
+			picture = man_five_year_plan_tank
+			modifier = {
+				production_speed_bunker_factor = 0.3
+			}
+		}
+	}
+}

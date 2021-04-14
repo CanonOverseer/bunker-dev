@@ -1,0 +1,143 @@
+add_namespace = texasevent
+
+##Event: Elections in Texas
+country_event = {
+	id = texasevent.1
+	title = texasevent.1.title
+	desc = texasevent.1.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = texasevent.1.a
+		ai_chance = { factor = 1}
+		set_country_flag = democratic_texas
+	}
+	option = {
+		name = texasevent.1.b
+		ai_chance = { factor = 1}
+		set_country_flag = fascist_texas
+	}
+	option = {
+		name = texasevent.1.c
+		ai_chance = { factor = 1}
+		set_country_flag = communist_texas
+	}
+}
+##Event: Bow to Mexico
+country_event = {
+	id = texasevent.2
+	title = texasevent.2.title
+	desc = texasevent.2.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = texasevent.2.a
+		ai_chance = { factor = 1}
+		MEX = { country_event = { id = texasevent.3 } }
+	}
+}
+##Event: Texas Asks to be our puppet
+country_event = {
+	id = texasevent.3
+	title = texasevent.3.title
+	desc = texasevent.3.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = texasevent.3.a
+		ai_chance = { factor = 1}
+		MEX = {
+puppet= TEX
+}
+
+TEX = { country_event = { id = texasevent.4 } }
+	}
+}
+##Event: We are now, Bitches
+country_event = {
+	id = texasevent.4
+	title = texasevent.4.title
+	desc = texasevent.4.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = texasevent.4.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: We Request A Non-Aggression with Alabama
+country_event = {
+	id = texasevent.5
+	title = texasevent.5.title
+	desc = texasevent.5.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = texasevent.5.a
+		ai_chance = { factor = 1}
+		ABM = { country_event = { id = texasevent.6 } }
+	}
+}
+##Event: Texas Requests Non Aggression
+country_event = {
+	id = texasevent.6
+	title = texasevent.6.title
+	desc = texasevent.6.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = texasevent.6.a
+		ai_chance = { factor = 1}
+		diplomatic_relation= { 
+country = TEX
+relation = non_aggression_pact 
+}
+
+TEX = { country_event = { id = texasevent.7 } }
+	}
+	option = {
+		name = texasevent.6.b
+		ai_chance = { factor = 1}
+		TEX = { country_event = { id = texasevent.8 } }
+	}
+}
+##Event: They Accept!
+country_event = {
+	id = texasevent.7
+	title = texasevent.7.title
+	desc = texasevent.7.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = texasevent.7.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: WTF THEY SAID NO
+country_event = {
+	id = texasevent.8
+	title = texasevent.8.title
+	desc = texasevent.8.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = texasevent.8.a
+		ai_chance = { factor = 1}
+	}
+	option = {
+		name = texasevent.8.b
+		ai_chance = { factor = 1}
+		create_wargoal= { 
+type = annex_everything 
+target = ABM
+}
+	}
+}

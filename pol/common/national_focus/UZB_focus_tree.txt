@@ -1,0 +1,483 @@
+focus_tree = {
+	id = focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = UZB
+		}
+	}
+	#Focus for Begin the Great Industrialization
+	focus = {
+		id = UZB_begin_the_great_industrialization
+		icon = GFX_goal_generic_construction2
+		x = 10
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			405 = {
+set_building_level = {
+    type = infrastructure
+    level = 6
+    instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Construct the Cornerstones of Industry
+	focus = {
+		id = UZB_construct_the_cornerstones_of_industry
+		icon = GFX_goal_generic_construction2
+		x = 10
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UZB_begin_the_great_industrialization }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			586 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+        type = industrial_complex
+        level = 1
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Industrialize the Tajiks
+	focus = {
+		id = UZB_industrialize_the_tajiks
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 8
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UZB_construct_the_cornerstones_of_industry }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			742 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+        type = industrial_complex
+        level = 1
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Kirghiz Military Industrialization
+	focus = {
+		id = UZB_kirghiz_military_industrialization
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 12
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UZB_construct_the_cornerstones_of_industry }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			732 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+        type = arms_factory
+        level = 1
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Industrial Technological Breakthroughs
+	focus = {
+		id = UZB_industrial_technological_breakthroughs
+		icon = GFX_goal_generic_production
+		x = 10
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UZB_construct_the_cornerstones_of_industry }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = GER_four_year_plan
+bonus = 1.0
+uses = 2
+category = industry
+    }
+		}
+	}
+
+	#Focus for Tashkent Infrastructural Project
+	focus = {
+		id = UZB_tashkent_infrastructural_project
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 9
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = UZB_kirghiz_military_industrialization 
+		}
+		prerequisite = { 
+			focus = UZB_industrialize_the_tajiks 
+		}
+		prerequisite = { 
+			focus = UZB_industrial_technological_breakthroughs 
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			405 = {
+set_building_level = {
+    type = infrastructure
+    level = 7
+    instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for The Civil Industry Department
+	focus = {
+		id = UZB_the_civil_industry_department
+		icon = GFX_goal_generic_production2
+		x = 9
+		y = 5
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = UZB_tashkent_infrastructural_project }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			405 = {
+    add_extra_state_shared_building_slots = 3
+    add_building_construction = {
+        type = industrial_complex
+        level = 3
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Kyzyl Orda Desert Railway
+	focus = {
+		id = UZB_kyzyl_orda_desert_railway
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 11
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UZB_improve_infrastructure_in_almaty }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			404 = {
+set_building_level = {
+    type = infrastructure
+    level = 4
+    instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Expand the Tashkent Arms Complex
+	focus = {
+		id = UZB_expand_the_tashkent_arms_complex
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 9
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UZB_the_civil_industry_department }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			405 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+        type = industrial_complex
+        level = 2
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Improve Infrastructure in Almaty
+	focus = {
+		id = UZB_improve_infrastructure_in_almaty
+		icon = GFX_goal_generic_construction2
+		x = 11
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = UZB_kirghiz_military_industrialization 
+		}
+		prerequisite = { 
+			focus = UZB_industrial_technological_breakthroughs 
+		}
+		prerequisite = { 
+			focus = UZB_industrialize_the_tajiks 
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			586 = {
+set_building_level = {
+    type = infrastructure
+    level = 5
+    instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Invite Ruhollah Khomeini to the Islamic Republic
+	focus = {
+		id = UZB_invite_ruhollah_khomeini_to_the_islamic_republic
+		icon = GFX_goal_generic_dangerous_deal
+		x = 20
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UZB_focus_on_panislamism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Invade Afghanistan
+	focus = {
+		id = UZB_invade_afghanistan
+		icon = GFX_goal_generic_political_pressure
+		x = 15
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UZB_found_the_islamic_compact }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			is_in_faction_with= AFG
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = AFG
+}
+		}
+	}
+
+	#Focus for Found the Islamic Compact
+	focus = {
+		id = UZB_found_the_islamic_compact
+		icon = GFX_goal_generic_major_alliance
+		x = 20
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = UZB_take_the_birthplace_of_khomeini 
+		}
+		prerequisite = { 
+			focus = UZB_seize_uigherstan 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Take the Birthplace of Khomeini
+	focus = {
+		id = UZB_take_the_birthplace_of_khomeini
+		icon = GFX_goal_demand_sudetenland
+		x = 20
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UZB_islamic_extremist_propaganda }
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = PER
+}
+		}
+	}
+
+	#Focus for Seize Uigherstan
+	focus = {
+		id = UZB_seize_uigherstan
+		icon = GFX_goal_generic_major_war
+		x = 17
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UZB_the_ayatullah }
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = SIK
+}
+		}
+	}
+
+	#Focus for Focus on Pan-Islamism
+	focus = {
+		id = UZB_focus_on_panislamism
+		icon = GFX_goal_support_fascism
+		x = 20
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UZB_the_future_of_central_asia }
+		mutually_exclusive = { focus = UZB_maintain_the_central_asian_republic }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Maintain the Central Asian Republic
+	focus = {
+		id = UZB_maintain_the_central_asian_republic
+		icon = GFX_goal_support_democracy
+		x = 25
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UZB_the_future_of_central_asia }
+		mutually_exclusive = { 
+			focus = UZB_focus_on_panislamism 
+		}
+		mutually_exclusive = { 
+			focus = UZB_establish_the_socialist_federation_of_central_asia 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 300
+		}
+	}
+
+	#Focus for The Future of Central Asia
+	focus = {
+		id = UZB_the_future_of_central_asia
+		icon = GFX_goal_generic_demand_territory
+		x = 25
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for Establish the Socialist Federation of Central Asia
+	focus = {
+		id = UZB_establish_the_socialist_federation_of_central_asia
+		icon = GFX_goal_support_communism
+		x = 30
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UZB_the_future_of_central_asia }
+		mutually_exclusive = { 
+			focus = UZB_establish_the_socialist_federation_of_central_asia 
+		}
+		mutually_exclusive = { 
+			focus = UZB_maintain_the_central_asian_republic 
+		}
+		mutually_exclusive = { 
+			focus = UZB_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Ayatullah
+	focus = {
+		id = UZB_the_ayatullah
+		icon = GFX_goal_generic_forceful_treaty
+		x = 17
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UZB_invite_ruhollah_khomeini_to_the_islamic_republic }
+		search_filters = { FOCUS_FILTER_STABILITY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.15
+		}
+	}
+
+	#Focus for Islamic Extremist Propaganda
+	focus = {
+		id = UZB_islamic_extremist_propaganda
+		icon = GFX_goal_generic_propaganda
+		x = 20
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UZB_invite_ruhollah_khomeini_to_the_islamic_republic }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support= 15
+		}
+	}
+
+#End of focuses 
+ }

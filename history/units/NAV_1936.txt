@@ -1,0 +1,148 @@
+﻿division_template = {
+	name = "Infantry Division"
+	division_names_group = AUS_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   # Pioneer Bn
+	}
+}
+
+division_template = {
+	name = "Cavalry Division"
+	division_names_group = AUS_MNT_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   # Pioneer Bn
+	}
+}
+
+division_template = {
+	name = "Cavalry Division"  		# Schnelle-Division (cavalry)
+	division_names_group = AUS_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	##### Österreichisches Bundesheer #####
+	# I Korps
+	division= {	
+		name = "Cavalry Division"
+		location = 740 # Vienna
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	# "1. Division"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 740 # Vienna
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "2. Division"			# Used to form 44. Infanterie-division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 740 # Vienna
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "3. Division"			# Used to form 44. Infanterie--division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 740 # St Poelten
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	# II Korps
+	division= {	# "4. Division"			# Used to form 45. Infanterie--division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 740 # Linz
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "8. Brigade"				# Used to form 2. Gebirgs-division post-Anschluss
+		location = 740 # Vienna
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+}
+
+air_wings = {
+	### Luftstreitkräfte -- Vienna (full air force, consolidated), CR.32 aircraft
+	202 = {
+		fighter_equipment_0 =  {
+			owner = "AUS" 
+			creator = "SOV"
+			amount = 42
+		}
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "SOV"
+		}
+		requested_factories = 1
+		progress = 0.54
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "SOV"
+		}
+		requested_factories = 1
+		progress = 0.74
+		efficiency = 100
+	}
+}
