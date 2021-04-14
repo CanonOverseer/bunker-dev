@@ -113,17 +113,16 @@ bookmarks = {
 				RED_burgundy_first
 			}			
 		}
-		"SOV"={
-			history = "SOV_GATHERING_STORM_DESC"
-			ideology = communism
+		"CAT"={
+			history = "CAT_GATHERING_STORM_DESC"
+			ideology = democratic
 			ideas = {
-				trotskyite_plot
-				home_of_revolution
+				CAT_nazi_staff
 			}
 			focuses = {
-				SOV_great_purge
-				SOV_claims_on_baltic
-				SOV_war_with_uk
+				CAT_augustus_chest_hairos
+				CAT_the_trollge
+				CAT_the_logan_state
 			}	
 		}
 
@@ -146,31 +145,30 @@ bookmarks = {
 				TEX_red_star_victory
 			}
 		}
-		"CAN"={
+		"ISR"={
 			minor = yes
-			history = "CAN_GATHERING_STORM_DESC"
+			history = "ISR_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				CAN_great_depression_1
-				CAN_conscription_crisis
+			
 			}
 			focuses = {
-				CAN_skewer_the_eagle
-				CAN_north_american_alliance
-				CAN_join_comintern
+				ISR_democratic_coalition
+				ISR_right_wing_victory
+				ISR_the_dori_plan
 			}
 		}
-		"AST"={
+		"OMA"={
 			minor = yes
-			history = "AST_GATHERING_STORM_DESC"
-			ideology = democratic
+			history = "OMA_GATHERING_STORM_DESC"
+			ideology = neutrality
 			ideas = {
-				AST_great_depression_1
+				OMA_angry_muslim
 			}
 			focuses = {
-				AST_never_another_gallipoli
-				AST_support_indonesian_uprising
-				AST_delegation_to_china
+				OMA_caliph_kev
+				OMA_burn_the_quran
+				OMA_anschluss_of_iraq
 			}
 		}
 		"NZL"={

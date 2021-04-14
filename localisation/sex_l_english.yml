@@ -24,7 +24,7 @@
  sex.102.a:0 "God Bless Sex."
  sex.103.t:0 "The Trollge"
  sex.103.d:0 "An catastrophic event has occurred, the Trollge. 500 Million deaths have been reported, and more counting. It seems a dark figure called... the Troll took over momentarily and slaughtered millions. The World Governments have defeated the Troll and sent him back where he came from. Humanity has won... but there was a price, Wales. As a result, the Republic of Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch has been given to the Troll's Armies. We should keep a watchful eye over them..."
- sex.103.a:0 "We do a little trolling."
+ sex.103.a:0 "We do a little trolling"
 
  CAT_trollface:0 "Troll State"
  CAT_trollface_def:0 "the Trollface State"
@@ -32,31 +32,6 @@
  CAT_trollface_fascism:0 "Troll State"
  CAT_trollface_fascism_def:0 "the Trollface State"
  CAT_trollface_fascism_adj:0 "Troll"
-
-
- SEX_UNIFIED_fascism:0 "Greater Sexite Empire"
- SEX_UNIFIED_fascism_def:0 "the Greater Sexite Empire"
- SEX_UNIFIED_fascism_adj:0 "Greater Sexist"
- SEX_UNIFIED_democratic:0 "Grand Republic of Sex"
- SEX_UNIFIED_democratic_def:0 "the Grand Republic of Sex"
- SEX_UNIFIED_democratic_adj:0 "Grand Sexist"
- SEX_UNIFIED_communism:0 "Union of Sexist Soviets"
- SEX_UNIFIED_communism_def:0 "the Union of Sexist Soviets"
- SEX_UNIFIED_communism_adj:0 "Soviet Sexist"
- SEX_UNIFIED_neutrality:0 "Greater Sexite Empire"
- SEX_UNIFIED_neutrality_def:0 "the Greater Sexite Empire"
- SEX_UNIFIED_neutrality_adj:0 "Greater Sexist"
-
- form_sex_league:0 "Greater Sex Union"
- form_sex_league_desc:0 "Should we control all of our peninsula we shall unite it into the Greater Sexite Realm and erase the idea of a "Spain" or a "Portugal", and all shall be sex!"
- form_sex_category:0 "Greater Sex Union"
- form_sex_category_desc:0 "Should we control all of our peninsula we shall unite it into the Greater Sexite Realm and erase the idea of a "Spain" or a "Portugal", and all shall be sex!"
-
-
- form_country_portugal_required_states_tt:0 "Control all Portugese States"
- form_country_spain_required_states_tt:0 "Control all Spanish States"
- form_country_spain_coring_states_tt:0 "§GYou will gain cores on Spain and Gibraltar§!"
- form_country_portugal_coring_states_tt:0 "§GYou will gain cores on Portugal§!"
 
  trolling_missions:0 "Trolling Missions"
  anti_troll:0 "You've sided with the anti trolls"

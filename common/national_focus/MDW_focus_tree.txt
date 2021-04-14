@@ -11,7 +11,7 @@ focus_tree = {
 	focus = {
 		id = MDW_workers_of_the_midwestern_union
 		icon = GFX_goal_support_fourth_int
-		x = 27
+		x = 20
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
@@ -25,7 +25,7 @@ focus_tree = {
 	focus = {
 		id = MDW_glories_of_old
 		icon = GFX_goal_support_fascism
-		x = 20
+		x = 13
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
@@ -39,7 +39,7 @@ focus_tree = {
 	focus = {
 		id = MDW_every_man_has_a_right
 		icon = GFX_goal_support_democracy
-		x = 14
+		x = 7
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
@@ -53,7 +53,7 @@ focus_tree = {
 	focus = {
 		id = MDW_still_preparing_the_lords_army
 		icon = GFX_goal_generic_construct_mil_factory
-		x = 12
+		x = 5
 		y = 6
 		cost = 10
 		available_if_capitulated = yes
@@ -67,7 +67,7 @@ focus_tree = {
 	focus = {
 		id = MDW_for_god_and_country
 		icon = GFX_focus_up_joan_of_arc
-		x = 9
+		x = 2
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
@@ -81,7 +81,7 @@ focus_tree = {
 	focus = {
 		id = MDW_waking_of_a_great_nation
 		icon = GFX_focus_eng_the_kings_party
-		x = 17
+		x = 10
 		y = 0
 		cost = 10
 		available_if_capitulated = yes
@@ -94,7 +94,7 @@ focus_tree = {
 	focus = {
 		id = MDW_take_me_to_church
 		icon = GFX_focus_generic_strike_at_democracy1
-		x = 9
+		x = 2
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
@@ -108,7 +108,7 @@ focus_tree = {
 	focus = {
 		id = MDW_global_cleansing
 		icon = GFX_focus_eng_imperial_federation
-		x = 11
+		x = 4
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
@@ -122,7 +122,7 @@ focus_tree = {
 	focus = {
 		id = MDW_burn_the_heretics
 		icon = GFX_focus_smiling_buddha
-		x = 9
+		x = 2
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
@@ -136,7 +136,7 @@ focus_tree = {
 	focus = {
 		id = MDW_prepare_the_lords_army
 		icon = GFX_goal_generic_small_arms
-		x = 12
+		x = 5
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
@@ -150,140 +150,11 @@ focus_tree = {
 	focus = {
 		id = MDW_work_the_other_6_days
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 10
+		x = 3
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MDW_global_cleansing }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Prepared Army
-	focus = {
-		id = MDW_prepared_army
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 12
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = MDW_still_preparing_the_lords_army }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Godless Heathens
-	focus = {
-		id = MDW_godless_heathens
-		icon = GFX_goal_generic_demand_territory
-		x = 10
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = MDW_work_the_other_6_days }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Slave Labor
-	focus = {
-		id = MDW_slave_labor
-		icon = GFX_goal_generic_improve_relations
-		x = 10
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = MDW_godless_heathens }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for The Ten Commandments
-	focus = {
-		id = MDW_the_ten_commandments
-		icon = GFX_focus_generic_strike_at_democracy3
-		x = 7
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = MDW_take_me_to_church }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Encourage Research
-	focus = {
-		id = MDW_encourage_research
-		icon = GFX_focus_research2
-		x = 16
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = MDW_global_cleansing }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Jewish Scientist
-	focus = {
-		id = MDW_jewish_scientist
-		icon = GFX_focus_research2
-		x = 16
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = MDW_encourage_research }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Declare Logan715 a Prophet
-	focus = {
-		id = MDW_declare_logan715_a_prophet
-		icon = GFX_focus_BUL_restore_the_bulgarian_patriarchate
-		x = 7
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = MDW_declare_the_bible_a_national_book }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Declare the Bible a national book
-	focus = {
-		id = MDW_declare_the_bible_a_national_book
-		icon = GFX_focus_mex_restore_the_army_of_christ
-		x = 7
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = MDW_the_ten_commandments }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for God's Plan
-	focus = {
-		id = MDW_gods_plan
-		icon = GFX_goal_unknown
-		x = 11
-		y = 8
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = MDW_slave_labor 
-			focus = MDW_prepared_army 
-		}
 		ai_will_do = {
 			factor = 1
 		}

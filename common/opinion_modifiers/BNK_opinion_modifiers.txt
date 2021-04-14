@@ -22,10 +22,6 @@ opinion_modifiers = {
 		value = 100
 	}
 
-	BNK_like = {
-		value = 15
-	}
-
 	BNK_hate = {
 		value = -1000
 	}

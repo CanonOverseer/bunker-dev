@@ -1,0 +1,114 @@
+add_namespace = belevent
+
+##Event: We Ask if we can join the Comintern
+country_event = {
+	id = belevent.1
+	title = belevent.1.title
+	desc = belevent.1.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = belevent.1.a
+		ai_chance = { factor = 1}
+		SOV = { country_event = { id = belevent.2} }
+	}
+}
+##Event: Belarus Wishes to join the Comintern
+country_event = {
+	id = belevent.2
+	title = belevent.2.title
+	desc = belevent.2.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = belevent.2.a
+		ai_chance = { factor = 1}
+		BLR = { country_event = { id = belevent.3} }
+
+SOV = {add_to_faction = BLR}
+	}
+	option = {
+		name = belevent.2.b
+		ai_chance = { factor = 1}
+		BLR = { country_event = { id = belevent.4} }
+	}
+}
+##Event: The Soviets Reject
+country_event = {
+	id = belevent.3
+	title = belevent.3.title
+	desc = belevent.3.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = belevent.3.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Request Aid from No Sex
+country_event = {
+	id = belevent.4
+	title = belevent.4.title
+	desc = belevent.4.desc
+	picture = GFX_report_event_spr_republican_old_volunteers
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = belevent.4.a
+		ai_chance = { factor = 1}
+		NAV = { country_event = { id = belevent.5} }
+	}
+}
+##Event: Sex Requests Aid in the Troll War
+country_event = {
+	id = belevent.5
+	title = belevent.5.title
+	desc = belevent.5.desc
+	picture = GFX_report_event_tur_ataturk_determined
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = belevent.5.a
+		ai_chance = { factor = 1}
+		CAT = { country_event = { id = belevent.6} }
+	}
+	option = {
+		name = belevent.5.b
+		ai_chance = { factor = 1}
+		CAT = { country_event = { id = belevent.7} }
+	}
+}
+##Event: No Sex Accepts
+country_event = {
+	id = belevent.6
+	title = belevent.6.title
+	desc = belevent.6.desc
+	picture = GFX_report_event_tanks_vietnam
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = belevent.6.a
+		ai_chance = { factor = 1}
+		add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 5000
+    producer = CAT
+}
+	}
+}
+##Event: No Sex Declines
+country_event = {
+	id = belevent.7
+	title = belevent.7.title
+	desc = belevent.7.desc
+	picture = GFX_report_event_us_panay_demands
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = belevent.7.a
+		ai_chance = { factor = 1}
+	}
+}

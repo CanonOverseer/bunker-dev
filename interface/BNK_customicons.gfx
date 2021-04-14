@@ -1025,19 +1025,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: The General-Secretary's Guiding Hand
+	##Icon For: The General Secretaries Guiding Hand
 	SpriteType = { 
-		name = "GFX_BNK_the_generalsecretarys_guiding_hand-94299"
-		texturefile = "gfx/interface/goals/GFX_BNK_the_generalsecretarys_guiding_hand-94299.dds"
+		name = "GFX_BNK_the_general_secretaries_guiding_hand-53118"
+		texturefile = "gfx/interface/goals/GFX_BNK_the_general_secretaries_guiding_hand-53118.dds"
 	}
 
-	##Icon Shine For: The General-Secretary's Guiding Hand
+	##Icon Shine For: The General Secretaries Guiding Hand
 	SpriteType = { 
-		name = "GFX_BNK_the_generalsecretarys_guiding_hand-94299_shine"
-		texturefile = "gfx/interface/goals/GFX_BNK_the_generalsecretarys_guiding_hand-94299.dds"
+		name = "GFX_BNK_the_general_secretaries_guiding_hand-53118_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_the_general_secretaries_guiding_hand-53118.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_generalsecretarys_guiding_hand-94299.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_general_secretaries_guiding_hand-53118.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -1049,7 +1049,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_generalsecretarys_guiding_hand-94299.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_general_secretaries_guiding_hand-53118.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -2760,44 +2760,6 @@ spriteTypes = {
 		}
 		animation = {
 			animationmaskfile = "gfx/interface/goals/GFX_BNK_a_dark_deal-74080.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
-	}
-
-	##Icon For: A True Worker's Democracy
-	SpriteType = { 
-		name = "GFX_BNK_a_true_workers_democracy-94298"
-		texturefile = "gfx/interface/goals/GFX_BNK_a_true_workers_democracy-94298.dds"
-	}
-
-	##Icon Shine For: A True Worker's Democracy
-	SpriteType = { 
-		name = "GFX_BNK_a_true_workers_democracy-94298_shine"
-		texturefile = "gfx/interface/goals/GFX_BNK_a_true_workers_democracy-94298.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BNK_a_true_workers_democracy-94298.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BNK_a_true_workers_democracy-94298.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no

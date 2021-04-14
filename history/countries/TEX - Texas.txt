@@ -56,7 +56,7 @@ set_popularities={
 
 create_country_leader = {
 	name = "US. Senate"
-	picture = "portrait_eng_fallen_government.dds"
+	picture = "build.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = { }

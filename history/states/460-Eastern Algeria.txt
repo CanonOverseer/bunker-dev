@@ -2,9 +2,9 @@
 state={
 	id=460
 	name="STATE_460" # Constantine
-	manpower = 4343837
+	manpower = 2343837
 	
-	state_category = large_city
+	state_category = town
 
 	history={
 		owner = FRA

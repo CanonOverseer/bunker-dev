@@ -1,6 +1,6 @@
-version="1.0"
+version="0.2"
 tags={
 	"Alternative History"
 }
-name="Bunker Mod - Development"
-supported_version="1.10.4"
+name="The Bunker Civil War (1.10 Test)"
+supported_version="1.10.1"
