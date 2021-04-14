@@ -63,12 +63,7 @@ id = bunkerevent.10
 		prerequisite = { 
 			focus = BNK_church_and_state 
 		}
-		mutually_exclusive = { 
-			focus = BNK_the_first_bunker_empire 
-		}
-		mutually_exclusive = { 
-			focus = BNK_ 
-		}
+		mutually_exclusive = { focus = BNK_the_first_bunker_empire }
 		ai_will_do = {
 			factor = 1
 		}
@@ -336,7 +331,7 @@ add_ideas = BNK_republic_loyalists
 	focus = {
 		id = BNK_an_equal_bunker
 		icon = GFX_BNK_an_equal_bunker-64296
-		x = 42
+		x = 43
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
@@ -346,9 +341,6 @@ add_ideas = BNK_republic_loyalists
 		}
 		mutually_exclusive = { 
 			focus = BNK_a_pure_bunker 
-		}
-		mutually_exclusive = { 
-			focus = BNK_ 
 		}
 		ai_will_do = {
 			factor = 1
@@ -471,11 +463,10 @@ category = industry
 	focus = {
 		id = BNK_support_revolution_around_the_globe
 		icon = GFX_focus_ger_great_red_menace
-		x = 44
-		y = 5
+		x = 50
+		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_all_power_to_workers }
 		ai_will_do = {
 			factor = 1
 		}
@@ -524,9 +515,6 @@ id = bunkerevent.1
 		mutually_exclusive = { 
 			focus = BNK_top 
 		}
-		mutually_exclusive = { 
-			focus = BNK_ 
-		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -568,9 +556,6 @@ id = bunkerevent.17
 		}
 		mutually_exclusive = { 
 			focus = BNK_top 
-		}
-		mutually_exclusive = { 
-			focus = BNK_ 
 		}
 		ai_will_do = {
 			factor = 1
@@ -703,9 +688,6 @@ days = 500
 		mutually_exclusive = { 
 			focus = BNK_top 
 		}
-		mutually_exclusive = { 
-			focus = BNK_ 
-		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -748,9 +730,6 @@ id = bunkerevent.14
 		}
 		mutually_exclusive = { 
 			focus = BNK_echo 
-		}
-		mutually_exclusive = { 
-			focus = BNK_ 
 		}
 		ai_will_do = {
 			factor = 1
@@ -1231,7 +1210,7 @@ id = bunkerevent.5
 	focus = {
 		id = BNK_d
 		icon = GFX_BNK_d-68520
-		x = 42
+		x = 43
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
@@ -1269,7 +1248,7 @@ custom_effect_tooltip = warplan_unlocked_tt
 	focus = {
 		id = BNK_all_power_to_workers
 		icon = GFX_goal_generic_soviet_construction
-		x = 42
+		x = 43
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
@@ -1286,7 +1265,7 @@ custom_effect_tooltip = warplan_unlocked_tt
 	focus = {
 		id = BNK_unity_of_farmer_and_workers
 		icon = GFX_BNK_unity_of_farmer_and_workers-53113
-		x = 44
+		x = 45
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
@@ -1310,7 +1289,7 @@ custom_effect_tooltip = warplan_unlocked_tt
 	focus = {
 		id = BNK_equality_in_the_field_of_battle
 		icon = GFX_focus_YUG_pan_slavic_congress
-		x = 40
+		x = 41
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
@@ -1340,22 +1319,56 @@ custom_effect_tooltip = warplan_unlocked_tt
 		}
 	}
 
-	#Focus for The General Secretaries Guiding Hand
+	#Focus for The General-Secretary's Guiding Hand
 	focus = {
-		id = BNK_the_general_secretaries_guiding_hand
-		icon = GFX_BNK_the_general_secretaries_guiding_hand-53118
+		id = BNK_the_generalsecretarys_guiding_hand
+		icon = GFX_BNK_the_generalsecretarys_guiding_hand-94299
 		x = 42
 		y = 4
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_all_power_to_workers }
+		prerequisite = { 
+			focus = BNK_all_power_to_workers 
+		}
+		prerequisite = { 
+			focus = BNK_unity_of_farmer_and_workers 
+		}
+		prerequisite = { 
+			focus = BNK_equality_in_the_field_of_battle 
+		}
+		mutually_exclusive = { focus = BNK_a_true_workers_democracy }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_stability= 0.15 
-
-add_war_support= 0.4
+			add_stability= 0.1
+add_war_support = -0.2
+create_country_leader = {
+	name = "The Supreme Big Boi"
+	desc = "TBD"
+	picture = "gfx/leaders/BNK/d_stalinist.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		triumphant_revolutionary
+                BNK_stalinist_d
+	}
+}
+set_party_name = { 
+    ideology = communism
+    long_name = BNK_vanguardist_party_long
+    name = BNK_vanguardist_party
+}
+SOV = { 
+add_opinion_modifier = {
+    target = BNK
+    modifier = BNK_like
+}
+}
+add_opinion_modifier = {
+    target = SOV
+    modifier = BNK_like
+}
 		}
 	}
 
@@ -1363,16 +1376,17 @@ add_war_support= 0.4
 	focus = {
 		id = BNK_support_your_local_nkvd
 		icon = GFX_focus_prc_agrarian_socialism
-		x = 40
+		x = 50
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_all_power_to_workers }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 			add_ideas= BNK_nkvd
+custom_effect_tooltip = warplan_unlocked_communism_tt
+set_country_flag = warplan_unlocked
 		}
 	}
 
@@ -1575,9 +1589,6 @@ BNK_imperial_senate_loss = yes
 		mutually_exclusive = { 
 			focus = BNK_get_annexed_by_the_un 
 		}
-		mutually_exclusive = { 
-			focus = BNK_ 
-		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -1743,7 +1754,7 @@ news_event = {
 	focus = {
 		id = BNK_big_guns_big_boom
 		icon = GFX_goal_generic_army_artillery2
-		x = 47
+		x = 49
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
@@ -1766,7 +1777,7 @@ category = artillery
 	focus = {
 		id = BNK_our_troops
 		icon = GFX_goal_generic_axis_build_infantry
-		x = 49
+		x = 51
 		y = 6
 		cost = 10
 		available_if_capitulated = yes
@@ -1792,7 +1803,7 @@ category = land_doctrine
 	focus = {
 		id = BNK_the_republics_armed_forces
 		icon = GFX_goal_generic_army_tanks
-		x = 51
+		x = 53
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
@@ -1814,7 +1825,7 @@ category = armor
 	focus = {
 		id = BNK_the_first_motorized_divisions
 		icon = GFX_goal_generic_army_motorized
-		x = 49
+		x = 51
 		y = 8
 		cost = 10
 		available_if_capitulated = yes
@@ -1840,7 +1851,7 @@ technology = motorised_infantry
 	focus = {
 		id = BNK_say_hi_to_the_skies
 		icon = GFX_goal_generic_build_airforce
-		x = 47
+		x = 49
 		y = 9
 		cost = 10
 		available_if_capitulated = yes
@@ -1862,7 +1873,7 @@ instant_build = yes }
 	focus = {
 		id = BNK_fighter_planes_with_the_eagle
 		icon = GFX_goal_generic_air_fighter2
-		x = 45
+		x = 47
 		y = 10
 		cost = 10
 		available_if_capitulated = yes
@@ -1892,7 +1903,7 @@ technology = heavy_fighter3
 	focus = {
 		id = BNK_bombs_of_freedom
 		icon = GFX_goal_generic_air_bomber
-		x = 49
+		x = 51
 		y = 10
 		cost = 10
 		available_if_capitulated = yes
@@ -1917,7 +1928,7 @@ category = tactical_bomber
 	focus = {
 		id = BNK_up_and_close
 		icon = GFX_goal_generic_navy_carrier
-		x = 47
+		x = 49
 		y = 10
 		cost = 10
 		available_if_capitulated = yes
@@ -1940,7 +1951,7 @@ category = cas_bomber
 	focus = {
 		id = BNK_equipment_research
 		icon = GFX_goal_generic_military_sphere
-		x = 51
+		x = 53
 		y = 9
 		cost = 10
 		available_if_capitulated = yes
@@ -1963,7 +1974,7 @@ category = artillery
 	focus = {
 		id = BNK_the_military_research_program
 		icon = GFX_focus_research2
-		x = 51
+		x = 53
 		y = 10
 		cost = 10
 		available_if_capitulated = yes
@@ -3295,6 +3306,34 @@ days = 50
 			}
 		}
 set_cosmetic_tag = BNK_cracky_evolved
+		}
+	}
+
+	#Focus for A True Worker's Democracy
+	focus = {
+		id = BNK_a_true_workers_democracy
+		icon = GFX_BNK_a_true_workers_democracy-94298
+		x = 44
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BNK_unity_of_farmer_and_workers 
+		}
+		prerequisite = { 
+			focus = BNK_all_power_to_workers 
+		}
+		prerequisite = { 
+			focus = BNK_equality_in_the_field_of_battle 
+		}
+		mutually_exclusive = { focus = BNK_the_generalsecretarys_guiding_hand }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.2
+add_stability = -0.15
+add_ideas = BNK_dedicated_workers
 		}
 	}
 

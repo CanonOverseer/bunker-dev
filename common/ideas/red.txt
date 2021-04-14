@@ -36,6 +36,7 @@ ideas = {
 				stability_factor = 0.05
 			}
 		}
+		
 		PSA_preparing_for_war = {
 
 			allowed = {
@@ -611,6 +612,26 @@ ideas = {
 			}
 		}
 
+		BNK_dedicated_workers = {
+
+			allowed = {
+				has_government = communism
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = BNK_dedicated_workers
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1 
+				production_factory_start_efficiency_factor = 0.2
+				political_power_gain = -0.15
+			}
+		}
 
 		SAY_divided_nation = {
 			allowed = {
@@ -1005,8 +1026,24 @@ ideas = {
 			}
 		}
 
+		BNK_good_d_minister = {
 
+			picture = comrade_d
 
+			allowed = {
+			   original_tag = BNK
+			}
+			
+			available = { 
+				original_tag = BNK
+			}
+			
+			traits = { communist_revolutionary armaments_organizer }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
 
 		BNK_echo = {
 
@@ -1026,7 +1063,7 @@ ideas = {
 				}
 			}
 			
-			traits = { democratic_reformer }
+			traits = { democratic_reformer silent_workhorse }
 
 			ai_will_do = {
 				factor = 1
@@ -1048,11 +1085,11 @@ ideas = {
 			    OR = {
 					has_government = democratic
 					has_government = fascism
-					has_government = communism
+					has_government = neutrality
 				}
 			}
 			
-			traits = { staunch_monarchist armaments_organizer }
+			traits = { armaments_organizer }
 		}
 
 		BNK_lion = {
@@ -1074,7 +1111,7 @@ ideas = {
 				}
 			}
 			
-			traits = { popular_figurehead }
+			traits = { popular_figurehead captain_of_industry }
 		}
 		
 		BNK_kermit = {

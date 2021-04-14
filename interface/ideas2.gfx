@@ -48,6 +48,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_comrade_d"
+		texturefile = "gfx/interface/ideas/idea_minister_d.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_cracky"
 		texturefile = "gfx/interface/ideas/idea_cracky.dds"
 	}
@@ -135,6 +140,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_SAY_divided"
 		textureFile = "gfx/interface/ideas/SAY_divided.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_BNK_dedicated_workers"
+		textureFile = "gfx/interface/ideas/BNK_dedicated_workers.dds"
 	}
 
 	spriteType = {
