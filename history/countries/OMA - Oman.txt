@@ -78,7 +78,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = anarchism
 	traits = {
-		#
+		gay
 	}
 }
 
@@ -89,7 +89,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {
-		#
+		gay
 	}
 }
 
@@ -100,7 +100,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
-		#
+		gay
 	}
 }
 
@@ -111,6 +111,17 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
-		#
+		gay
 	}
+}
+
+create_field_marshal = {
+	name = "Kev's 'Butler'"
+	portrait_path = "gfx/leaders/OMA/gayman.dds"
+	traits = { charismatic brilliant_strategist }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 4
 }
