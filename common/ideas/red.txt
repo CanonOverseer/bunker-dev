@@ -1057,7 +1057,12 @@ ideas = {
 			}
 			
 			available = { 
-				original_tag = BNK
+				NOT = { 
+					OR = {
+						has_government = fascism 
+						has_government = neutrality
+					}
+				}
 			}
 			
 			traits = { communist_revolutionary armaments_organizer }
@@ -1167,19 +1172,10 @@ ideas = {
 			picture = pootisheavy
 			
 			allowed = {
-				OR = {
-				    original_tag = BNK
-				    original_tag = BLU
-				}
+				original_tag = BNK
 			}
 			
 			available = {
-			    OR = {
-					has_government = democratic
-					has_government = fascism
-					has_government = neutrality
-				    has_government = communism
-				}
 			}
 			
 			traits = { army_chief_offensive_2 }
@@ -1188,6 +1184,26 @@ ideas = {
 				factor = 1
 			}
 		}
+
+		BNK_canon_armychief = {
+
+			picture = canon
+			
+			allowed = {
+				original_tag = BNK
+			}
+			
+			available = {
+			}
+			
+			traits = { army_artillery_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+
 	}
 
 	air_chief = {
