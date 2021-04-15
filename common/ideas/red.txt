@@ -1400,8 +1400,4 @@ ideas = {
 		}
 
 	}
-
-	political_advisor = {
-
-	}
 }
