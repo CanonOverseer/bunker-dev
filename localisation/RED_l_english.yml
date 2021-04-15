@@ -235,6 +235,8 @@
  ISR_SOV_subject_communism_DEF:0 "the Jewish Autonomous Soviet Socialist Republic"
  ISR_SOV_subject_communism_ADJ:0 "Soviet Jewish"
 
+ BNK_air_logan:0 "Logan"
+ war_criminal_bomber:0 "War Criminal (Expert)"
  PSA_communism_party:0 "URP-DS"
  PSA_communism_party_long:0 "United Republican Party - Socialists"
  PSA_democratic_party:0 "US Senate"

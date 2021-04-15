@@ -21,6 +21,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_idea_logan"
+		texturefile = "gfx/interface/ideas/idea_logan.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_pootisheavy"
 		texturefile = "gfx/interface/ideas/RED/ideas/idea_pootisheavy.dds"
 	}
