@@ -262,6 +262,14 @@ leader_traits = {
 		sprite = 13
 
 	}
+
+	war_criminal_bomber = { # Strategic Bombing mission efficiency increased by 12%
+		sprite = 2
+		air_strategic_bomber_attack_factor = 0.03
+		air_strategic_bomber_defence_factor = 0.03
+		air_strategic_bomber_agility_factor = 0.03
+		air_strategic_bomber_bombing_factor = 0.09
+	}
 	
 	progressive_fdr = {
 		random = no
