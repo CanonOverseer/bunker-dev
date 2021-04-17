@@ -335,11 +335,11 @@ add_war_support= 0.4
 		}
 	}
 
-	#Focus for Peacekeepers
+	#Focus for UN Peacekeepers
 	focus = {
-		id = BEL_peacekeepers
-		icon = GFX_BEL_peacekeepers-58180
-		x = 5
+		id = BEL_un_peacekeepers
+		icon = GFX_BEL_un_peacekeepers-58180
+		x = 28
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
@@ -363,11 +363,11 @@ category = land_doctrine
 	focus = {
 		id = BEL_the_bigger_the_gun_the_better
 		icon = GFX_goal_generic_army_artillery2
-		x = 4
+		x = 27
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = BEL_peacekeepers }
+		prerequisite = { focus = BEL_un_peacekeepers }
 		ai_will_do = {
 			factor = 1
 		}
@@ -386,11 +386,11 @@ category = artillery
 	focus = {
 		id = BEL_armored_peacekeepers
 		icon = GFX_goal_generic_army_tanks
-		x = 6
+		x = 29
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = BEL_peacekeepers }
+		prerequisite = { focus = BEL_un_peacekeepers }
 		ai_will_do = {
 			factor = 1
 		}
@@ -408,7 +408,7 @@ category = armor
 	focus = {
 		id = BEL_motorized_warfare
 		icon = GFX_goal_generic_army_motorized
-		x = 3
+		x = 26
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
@@ -434,7 +434,7 @@ technology = motorised_infantry
 	focus = {
 		id = BEL_peacekeeper_expansion
 		icon = GFX_BEL_peacekeeper_expansion-58187
-		x = 5
+		x = 28
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
@@ -462,7 +462,7 @@ category = artillery
 	focus = {
 		id = BEL_expand_our_research
 		icon = GFX_focus_research2
-		x = 7
+		x = 30
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
@@ -535,7 +535,7 @@ category = artillery
 	focus = {
 		id = BEL_destroy_the_reds
 		icon = GFX_goal_generic_major_war
-		x = 5
+		x = 28
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
@@ -690,6 +690,46 @@ instant_build = yes }
 type = annex_everything 
 target = BNK
 }
+		}
+	}
+
+	#Focus for The Rhineland Mandate
+	focus = {
+		id = BEL_the_rhineland_mandate
+		icon = GFX_goal_unknown
+		x = 29
+		y = 8
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_the_diplomatic_corp }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for anchor
+	focus = {
+		id = BEL_anchor
+		icon = GFX_goal_unknown
+		x = 51
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The "Diplomatic" Corp
+	focus = {
+		id = BEL_the_diplomatic_corp
+		icon = GFX_goal_unknown
+		x = 29
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
 		}
 	}
 

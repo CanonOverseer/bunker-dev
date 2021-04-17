@@ -670,7 +670,7 @@ target = SYR
 		}
 		completion_reward = {
 			add_timed_idea= { 
-idea = OMA_angrier_muslims
+idea = OMA_angrier_muslim
 days = 100 
 }
 

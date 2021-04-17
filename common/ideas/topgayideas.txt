@@ -1,57 +1,51 @@
 ideas = {
 	country = {
 
-		CAT_conscript_all = {
-			picture = women_soldier
-			modifier = {
-conscription_factor = 0.3
-consumer_goods_factor = 0.05
-
-
-			}
-		}
+        CAT_conscript_all = {
+            picture = women_soldier
+            modifier = {
+                conscription_factor = 0.3
+                consumer_goods_factor = 0.05
+            }
+        }
 		
-				CAT_defense_of_the_nation = {
+		CAT_defense_of_the_nation = {
 			picture = guns_guns
 			modifier = {
-army_core_defence_factor = 0.1
-
+				army_core_defence_factor = 0.1
 
 			}
 		}
 		
-						CAT_chest_pride = {
+		CAT_chest_pride = {
 			picture = chest_pride
 			modifier = {
-	stability_factor = 0.1
-	war_support_factor = 0.1
-
+				stability_factor = 0.1
+				war_support_factor = 0.1
 
 			}
 		}
 		
-								CAT_nazi_staff = {
+		CAT_nazi_staff = {
 			picture = staff_staff
 			modifier = {
-	planning_speed = 0.1
-	army_org_factor = 0.05
-
+				planning_speed = 0.1
+				army_org_factor = 0.05
 
 			}
 		}
 		
 		
-								OMA_diary = {
+		OMA_diary = {
 			picture = diary_diary
 			modifier = {
-	stability_factor = 0.2
-	war_support_factor = 0.2
-
+				stability_factor = 0.2
+				war_support_factor = 0.2
 
 			}
 		}
 		
-	OMA_angrier_muslim = {
+		OMA_angrier_muslim = {
 			picture = muslim_majority
 			modifier = {
 				stability_factor = -0.2
@@ -62,6 +56,32 @@ army_core_defence_factor = 0.1
 		}
 		
 		
+		
 
 	}
+	
+	
+		political_advisor = {
+
+        BNK_cory = {
+
+            picture = cory_bitch
+
+            allowed = {
+               original_tag = BNK
+            }
+            
+            available = { 
+                original_tag = BNK
+            }
+            
+			traits = { war_industrialist }
+
+            ai_will_do = {
+                factor = 1
+            }
+        }
+    }
+	
+	
 }

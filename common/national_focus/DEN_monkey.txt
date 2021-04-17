@@ -10,7 +10,7 @@ focus_tree = {
 	#Focus for monke stuff
 	focus = {
 		id = DEN_monke_stuff
-		icon = GFX_DEN_monke_stuff-58593
+		icon = GFX_DEN_monke_stuff-94590
 		x = 12
 		y = 1
 		cost = 15
@@ -54,6 +54,43 @@ focus_tree = {
 		}
 		available = {
 			date >, date <> 2075.1.1
+		}
+	}
+
+	#Focus for Alliance with the human monke
+	focus = {
+		id = DEN_alliance_with_the_human_monke
+		icon = GFX_DEN_alliance_with_the_human_monke-94592
+		x = 12
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DEN_advance_into_modern_age }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Monke sweden
+	focus = {
+		id = DEN_monke_sweden
+		icon = GFX_DEN_monke_sweden-94591
+		x = 15
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DEN_monke_stuff }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			always = no
+		}
+		completion_reward = {
+			declare_war_on= { 
+target = SWE
+type = annex_everything 
+}
 		}
 	}
 

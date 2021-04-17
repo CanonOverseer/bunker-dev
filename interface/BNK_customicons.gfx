@@ -987,19 +987,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: Unity of Farmer and Workers
+	##Icon For: Seize the Means of Production
 	SpriteType = { 
-		name = "GFX_BNK_unity_of_farmer_and_workers-53113"
-		texturefile = "gfx/interface/goals/GFX_BNK_unity_of_farmer_and_workers-53113.dds"
+		name = "GFX_BNK_seize_the_means_of_production-53113"
+		texturefile = "gfx/interface/goals/GFX_BNK_seize_the_means_of_production-53113.dds"
 	}
 
-	##Icon Shine For: Unity of Farmer and Workers
+	##Icon Shine For: Seize the Means of Production
 	SpriteType = { 
-		name = "GFX_BNK_unity_of_farmer_and_workers-53113_shine"
-		texturefile = "gfx/interface/goals/GFX_BNK_unity_of_farmer_and_workers-53113.dds"
+		name = "GFX_BNK_seize_the_means_of_production-53113_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_seize_the_means_of_production-53113.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BNK_unity_of_farmer_and_workers-53113.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_seize_the_means_of_production-53113.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -1011,7 +1011,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BNK_unity_of_farmer_and_workers-53113.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_seize_the_means_of_production-53113.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -1785,6 +1785,44 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+	##Icon For: The Breton Question
+	SpriteType = { 
+		name = "GFX_BNK_the_breton_question-94609"
+		texturefile = "gfx/interface/goals/GFX_BNK_the_breton_question-94609.dds"
+	}
+
+	##Icon Shine For: The Breton Question
+	SpriteType = { 
+		name = "GFX_BNK_the_breton_question-94609_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_the_breton_question-94609.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_breton_question-94609.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_breton_question-94609.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
 	##Icon For: An Equal Brittany
 	SpriteType = { 
 		name = "GFX_BNK_an_equal_brittany-72792"
@@ -2051,120 +2089,6 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: End of British Influence
-	SpriteType = { 
-		name = "GFX_BNK_end_of_british_influence-72795"
-		texturefile = "gfx/interface/goals/GFX_BNK_end_of_british_influence-72795.dds"
-	}
-
-	##Icon Shine For: End of British Influence
-	SpriteType = { 
-		name = "GFX_BNK_end_of_british_influence-72795_shine"
-		texturefile = "gfx/interface/goals/GFX_BNK_end_of_british_influence-72795.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BNK_end_of_british_influence-72795.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BNK_end_of_british_influence-72795.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
-	}
-
-	##Icon For: The Norman Question
-	SpriteType = { 
-		name = "GFX_BNK_the_norman_question-68580"
-		texturefile = "gfx/interface/goals/GFX_BNK_the_norman_question-68580.dds"
-	}
-
-	##Icon Shine For: The Norman Question
-	SpriteType = { 
-		name = "GFX_BNK_the_norman_question-68580_shine"
-		texturefile = "gfx/interface/goals/GFX_BNK_the_norman_question-68580.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_norman_question-68580.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_norman_question-68580.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
-	}
-
-	##Icon For: Bunker Normandy
-	SpriteType = { 
-		name = "GFX_BNK_bunker_normandy-72807"
-		texturefile = "gfx/interface/goals/GFX_BNK_bunker_normandy-72807.dds"
-	}
-
-	##Icon Shine For: Bunker Normandy
-	SpriteType = { 
-		name = "GFX_BNK_bunker_normandy-72807_shine"
-		texturefile = "gfx/interface/goals/GFX_BNK_bunker_normandy-72807.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BNK_bunker_normandy-72807.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BNK_bunker_normandy-72807.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
-	}
-
 	##Icon For: A Consort for the Emperor
 	SpriteType = { 
 		name = "GFX_BNK_a_consort_for_the_emperor-68570"
@@ -2190,82 +2114,6 @@ spriteTypes = {
 		}
 		animation = {
 			animationmaskfile = "gfx/interface/goals/GFX_BNK_a_consort_for_the_emperor-68570.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
-	}
-
-	##Icon For: The Blessed King of Normandy
-	SpriteType = { 
-		name = "GFX_BNK_the_blessed_king_of_normandy-68581"
-		texturefile = "gfx/interface/goals/GFX_BNK_the_blessed_king_of_normandy-68581.dds"
-	}
-
-	##Icon Shine For: The Blessed King of Normandy
-	SpriteType = { 
-		name = "GFX_BNK_the_blessed_king_of_normandy-68581_shine"
-		texturefile = "gfx/interface/goals/GFX_BNK_the_blessed_king_of_normandy-68581.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_blessed_king_of_normandy-68581.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_blessed_king_of_normandy-68581.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
-	}
-
-	##Icon For: A Red Normandy
-	SpriteType = { 
-		name = "GFX_BNK_a_red_normandy-72797"
-		texturefile = "gfx/interface/goals/GFX_BNK_a_red_normandy-72797.dds"
-	}
-
-	##Icon Shine For: A Red Normandy
-	SpriteType = { 
-		name = "GFX_BNK_a_red_normandy-72797_shine"
-		texturefile = "gfx/interface/goals/GFX_BNK_a_red_normandy-72797.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BNK_a_red_normandy-72797.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BNK_a_red_normandy-72797.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -2773,6 +2621,272 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+	##Icon For: Spread the Revolution to Normandy
+	SpriteType = { 
+		name = "GFX_BNK_spread_the_revolution_to_normandy-94605"
+		texturefile = "gfx/interface/goals/GFX_BNK_spread_the_revolution_to_normandy-94605.dds"
+	}
+
+	##Icon Shine For: Spread the Revolution to Normandy
+	SpriteType = { 
+		name = "GFX_BNK_spread_the_revolution_to_normandy-94605_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_spread_the_revolution_to_normandy-94605.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_spread_the_revolution_to_normandy-94605.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_spread_the_revolution_to_normandy-94605.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Support from the Comintern
+	SpriteType = { 
+		name = "GFX_BNK_support_from_the_comintern-94583"
+		texturefile = "gfx/interface/goals/GFX_BNK_support_from_the_comintern-94583.dds"
+	}
+
+	##Icon Shine For: Support from the Comintern
+	SpriteType = { 
+		name = "GFX_BNK_support_from_the_comintern-94583_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_support_from_the_comintern-94583.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_support_from_the_comintern-94583.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_support_from_the_comintern-94583.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Arm the Workers
+	SpriteType = { 
+		name = "GFX_BNK_arm_the_workers-94601"
+		texturefile = "gfx/interface/goals/GFX_BNK_arm_the_workers-94601.dds"
+	}
+
+	##Icon Shine For: Arm the Workers
+	SpriteType = { 
+		name = "GFX_BNK_arm_the_workers-94601_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_arm_the_workers-94601.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_arm_the_workers-94601.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_arm_the_workers-94601.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The Conquest of Normandy
+	SpriteType = { 
+		name = "GFX_BNK_the_conquest_of_normandy-94604"
+		texturefile = "gfx/interface/goals/GFX_BNK_the_conquest_of_normandy-94604.dds"
+	}
+
+	##Icon Shine For: The Conquest of Normandy
+	SpriteType = { 
+		name = "GFX_BNK_the_conquest_of_normandy-94604_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_the_conquest_of_normandy-94604.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_conquest_of_normandy-94604.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_conquest_of_normandy-94604.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The Question of Normandy
+	SpriteType = { 
+		name = "GFX_BNK_the_question_of_normandy-94607"
+		texturefile = "gfx/interface/goals/GFX_BNK_the_question_of_normandy-94607.dds"
+	}
+
+	##Icon Shine For: The Question of Normandy
+	SpriteType = { 
+		name = "GFX_BNK_the_question_of_normandy-94607_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_the_question_of_normandy-94607.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_question_of_normandy-94607.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_question_of_normandy-94607.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Normandy is Ours
+	SpriteType = { 
+		name = "GFX_BNK_normandy_is_ours-94603"
+		texturefile = "gfx/interface/goals/GFX_BNK_normandy_is_ours-94603.dds"
+	}
+
+	##Icon Shine For: Normandy is Ours
+	SpriteType = { 
+		name = "GFX_BNK_normandy_is_ours-94603_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_normandy_is_ours-94603.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_normandy_is_ours-94603.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_normandy_is_ours-94603.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The 4 Year Plan
+	SpriteType = { 
+		name = "GFX_BNK_the_4_year_plan-94582"
+		texturefile = "gfx/interface/goals/GFX_BNK_the_4_year_plan-94582.dds"
+	}
+
+	##Icon Shine For: The 4 Year Plan
+	SpriteType = { 
+		name = "GFX_BNK_the_4_year_plan-94582_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_the_4_year_plan-94582.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_4_year_plan-94582.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_4_year_plan-94582.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
 	##Icon For: A True Worker's Democracy
 	SpriteType = { 
 		name = "GFX_BNK_a_true_workers_democracy-94298"
@@ -2798,6 +2912,44 @@ spriteTypes = {
 		}
 		animation = {
 			animationmaskfile = "gfx/interface/goals/GFX_BNK_a_true_workers_democracy-94298.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The Norman Autonomous Zone
+	SpriteType = { 
+		name = "GFX_BNK_the_norman_autonomous_zone-94606"
+		texturefile = "gfx/interface/goals/GFX_BNK_the_norman_autonomous_zone-94606.dds"
+	}
+
+	##Icon Shine For: The Norman Autonomous Zone
+	SpriteType = { 
+		name = "GFX_BNK_the_norman_autonomous_zone-94606_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_the_norman_autonomous_zone-94606.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_norman_autonomous_zone-94606.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_norman_autonomous_zone-94606.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no

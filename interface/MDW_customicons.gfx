@@ -1,17 +1,17 @@
 spriteTypes = { 
-	##Icon For: WigglyJoker wins the elections
+	##Icon For: Scientology
 	SpriteType = { 
-		name = "GFX_MDW_wigglyjoker_wins_the_elections-53696"
-		texturefile = "gfx/interface/goals/GFX_MDW_wigglyjoker_wins_the_elections-53696.dds"
+		name = "GFX_MDW_scientology-94596"
+		texturefile = "gfx/interface/goals/GFX_MDW_scientology-94596.dds"
 	}
 
-	##Icon Shine For: WigglyJoker wins the elections
+	##Icon Shine For: Scientology
 	SpriteType = { 
-		name = "GFX_MDW_wigglyjoker_wins_the_elections-53696_shine"
-		texturefile = "gfx/interface/goals/GFX_MDW_wigglyjoker_wins_the_elections-53696.dds"
+		name = "GFX_MDW_scientology-94596_shine"
+		texturefile = "gfx/interface/goals/GFX_MDW_scientology-94596.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_MDW_wigglyjoker_wins_the_elections-53696.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_scientology-94596.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -23,7 +23,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_MDW_wigglyjoker_wins_the_elections-53696.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_scientology-94596.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -37,19 +37,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: Logan715 wins the elections
+	##Icon For: Sweet Home Alabama
 	SpriteType = { 
-		name = "GFX_MDW_logan715_wins_the_elections-53697"
-		texturefile = "gfx/interface/goals/GFX_MDW_logan715_wins_the_elections-53697.dds"
+		name = "GFX_MDW_sweet_home_alabama-94600"
+		texturefile = "gfx/interface/goals/GFX_MDW_sweet_home_alabama-94600.dds"
 	}
 
-	##Icon Shine For: Logan715 wins the elections
+	##Icon Shine For: Sweet Home Alabama
 	SpriteType = { 
-		name = "GFX_MDW_logan715_wins_the_elections-53697_shine"
-		texturefile = "gfx/interface/goals/GFX_MDW_logan715_wins_the_elections-53697.dds"
+		name = "GFX_MDW_sweet_home_alabama-94600_shine"
+		texturefile = "gfx/interface/goals/GFX_MDW_sweet_home_alabama-94600.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_MDW_logan715_wins_the_elections-53697.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_sweet_home_alabama-94600.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -61,7 +61,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_MDW_logan715_wins_the_elections-53697.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_sweet_home_alabama-94600.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -75,19 +75,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: Prepare to invade Sayland
+	##Icon For: Slave Labor for the Army
 	SpriteType = { 
-		name = "GFX_MDW_prepare_to_invade_sayland-44540"
-		texturefile = "gfx/interface/goals/GFX_MDW_prepare_to_invade_sayland-44540.dds"
+		name = "GFX_MDW_slave_labor_for_the_army-94599"
+		texturefile = "gfx/interface/goals/GFX_MDW_slave_labor_for_the_army-94599.dds"
 	}
 
-	##Icon Shine For: Prepare to invade Sayland
+	##Icon Shine For: Slave Labor for the Army
 	SpriteType = { 
-		name = "GFX_MDW_prepare_to_invade_sayland-44540_shine"
-		texturefile = "gfx/interface/goals/GFX_MDW_prepare_to_invade_sayland-44540.dds"
+		name = "GFX_MDW_slave_labor_for_the_army-94599_shine"
+		texturefile = "gfx/interface/goals/GFX_MDW_slave_labor_for_the_army-94599.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_MDW_prepare_to_invade_sayland-44540.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_slave_labor_for_the_army-94599.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -99,7 +99,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_MDW_prepare_to_invade_sayland-44540.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_slave_labor_for_the_army-94599.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -113,19 +113,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: Midwestern Empire
+	##Icon For: Sike, the prisoners are slaves lol
 	SpriteType = { 
-		name = "GFX_MDW_midwestern_empire-53694"
-		texturefile = "gfx/interface/goals/GFX_MDW_midwestern_empire-53694.dds"
+		name = "GFX_MDW_sike_the_prisoners_are_slaves_lol-94598"
+		texturefile = "gfx/interface/goals/GFX_MDW_sike_the_prisoners_are_slaves_lol-94598.dds"
 	}
 
-	##Icon Shine For: Midwestern Empire
+	##Icon Shine For: Sike, the prisoners are slaves lol
 	SpriteType = { 
-		name = "GFX_MDW_midwestern_empire-53694_shine"
-		texturefile = "gfx/interface/goals/GFX_MDW_midwestern_empire-53694.dds"
+		name = "GFX_MDW_sike_the_prisoners_are_slaves_lol-94598_shine"
+		texturefile = "gfx/interface/goals/GFX_MDW_sike_the_prisoners_are_slaves_lol-94598.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_MDW_midwestern_empire-53694.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_sike_the_prisoners_are_slaves_lol-94598.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -137,7 +137,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_MDW_midwestern_empire-53694.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_sike_the_prisoners_are_slaves_lol-94598.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -151,19 +151,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: Our country tis of thee
+	##Icon For: Broke the Woke
 	SpriteType = { 
-		name = "GFX_MDW_our_country_tis_of_thee-53695"
-		texturefile = "gfx/interface/goals/GFX_MDW_our_country_tis_of_thee-53695.dds"
+		name = "GFX_MDW_broke_the_woke-94727"
+		texturefile = "gfx/interface/goals/GFX_MDW_broke_the_woke-94727.dds"
 	}
 
-	##Icon Shine For: Our country tis of thee
+	##Icon Shine For: Broke the Woke
 	SpriteType = { 
-		name = "GFX_MDW_our_country_tis_of_thee-53695_shine"
-		texturefile = "gfx/interface/goals/GFX_MDW_our_country_tis_of_thee-53695.dds"
+		name = "GFX_MDW_broke_the_woke-94727_shine"
+		texturefile = "gfx/interface/goals/GFX_MDW_broke_the_woke-94727.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_MDW_our_country_tis_of_thee-53695.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_broke_the_woke-94727.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -175,7 +175,463 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_MDW_our_country_tis_of_thee-53695.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_broke_the_woke-94727.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: For God and Country
+	SpriteType = { 
+		name = "GFX_MDW_for_god_and_country-94576"
+		texturefile = "gfx/interface/goals/GFX_MDW_for_god_and_country-94576.dds"
+	}
+
+	##Icon Shine For: For God and Country
+	SpriteType = { 
+		name = "GFX_MDW_for_god_and_country-94576_shine"
+		texturefile = "gfx/interface/goals/GFX_MDW_for_god_and_country-94576.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_for_god_and_country-94576.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_for_god_and_country-94576.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Global Cleansing
+	SpriteType = { 
+		name = "GFX_MDW_global_cleansing-94580"
+		texturefile = "gfx/interface/goals/GFX_MDW_global_cleansing-94580.dds"
+	}
+
+	##Icon Shine For: Global Cleansing
+	SpriteType = { 
+		name = "GFX_MDW_global_cleansing-94580_shine"
+		texturefile = "gfx/interface/goals/GFX_MDW_global_cleansing-94580.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_global_cleansing-94580.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_global_cleansing-94580.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Burn the Heretics
+	SpriteType = { 
+		name = "GFX_MDW_burn_the_heretics-94579"
+		texturefile = "gfx/interface/goals/GFX_MDW_burn_the_heretics-94579.dds"
+	}
+
+	##Icon Shine For: Burn the Heretics
+	SpriteType = { 
+		name = "GFX_MDW_burn_the_heretics-94579_shine"
+		texturefile = "gfx/interface/goals/GFX_MDW_burn_the_heretics-94579.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_burn_the_heretics-94579.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_burn_the_heretics-94579.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Highway to Hell
+	SpriteType = { 
+		name = "GFX_MDW_highway_to_hell-94594"
+		texturefile = "gfx/interface/goals/GFX_MDW_highway_to_hell-94594.dds"
+	}
+
+	##Icon Shine For: Highway to Hell
+	SpriteType = { 
+		name = "GFX_MDW_highway_to_hell-94594_shine"
+		texturefile = "gfx/interface/goals/GFX_MDW_highway_to_hell-94594.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_highway_to_hell-94594.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_highway_to_hell-94594.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Do-It-Yourself World Conquest
+	SpriteType = { 
+		name = "GFX_MDW_doityourself_world_conquest-94587"
+		texturefile = "gfx/interface/goals/GFX_MDW_doityourself_world_conquest-94587.dds"
+	}
+
+	##Icon Shine For: Do-It-Yourself World Conquest
+	SpriteType = { 
+		name = "GFX_MDW_doityourself_world_conquest-94587_shine"
+		texturefile = "gfx/interface/goals/GFX_MDW_doityourself_world_conquest-94587.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_doityourself_world_conquest-94587.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_doityourself_world_conquest-94587.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Godless Heathens
+	SpriteType = { 
+		name = "GFX_MDW_godless_heathens-94586"
+		texturefile = "gfx/interface/goals/GFX_MDW_godless_heathens-94586.dds"
+	}
+
+	##Icon Shine For: Godless Heathens
+	SpriteType = { 
+		name = "GFX_MDW_godless_heathens-94586_shine"
+		texturefile = "gfx/interface/goals/GFX_MDW_godless_heathens-94586.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_godless_heathens-94586.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_godless_heathens-94586.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Slave Labor
+	SpriteType = { 
+		name = "GFX_MDW_slave_labor-94593"
+		texturefile = "gfx/interface/goals/GFX_MDW_slave_labor-94593.dds"
+	}
+
+	##Icon Shine For: Slave Labor
+	SpriteType = { 
+		name = "GFX_MDW_slave_labor-94593_shine"
+		texturefile = "gfx/interface/goals/GFX_MDW_slave_labor-94593.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_slave_labor-94593.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_slave_labor-94593.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The Ten Commandments
+	SpriteType = { 
+		name = "GFX_MDW_the_ten_commandments-94589"
+		texturefile = "gfx/interface/goals/GFX_MDW_the_ten_commandments-94589.dds"
+	}
+
+	##Icon Shine For: The Ten Commandments
+	SpriteType = { 
+		name = "GFX_MDW_the_ten_commandments-94589_shine"
+		texturefile = "gfx/interface/goals/GFX_MDW_the_ten_commandments-94589.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_the_ten_commandments-94589.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_the_ten_commandments-94589.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Declare Logan715 a Prophet
+	SpriteType = { 
+		name = "GFX_MDW_declare_logan715_a_prophet-94577"
+		texturefile = "gfx/interface/goals/GFX_MDW_declare_logan715_a_prophet-94577.dds"
+	}
+
+	##Icon Shine For: Declare Logan715 a Prophet
+	SpriteType = { 
+		name = "GFX_MDW_declare_logan715_a_prophet-94577_shine"
+		texturefile = "gfx/interface/goals/GFX_MDW_declare_logan715_a_prophet-94577.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_declare_logan715_a_prophet-94577.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_declare_logan715_a_prophet-94577.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Declare the Bible a national book
+	SpriteType = { 
+		name = "GFX_MDW_declare_the_bible_a_national_book-94588"
+		texturefile = "gfx/interface/goals/GFX_MDW_declare_the_bible_a_national_book-94588.dds"
+	}
+
+	##Icon Shine For: Declare the Bible a national book
+	SpriteType = { 
+		name = "GFX_MDW_declare_the_bible_a_national_book-94588_shine"
+		texturefile = "gfx/interface/goals/GFX_MDW_declare_the_bible_a_national_book-94588.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_declare_the_bible_a_national_book-94588.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_declare_the_bible_a_national_book-94588.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: God's Plan
+	SpriteType = { 
+		name = "GFX_MDW_gods_plan-94597"
+		texturefile = "gfx/interface/goals/GFX_MDW_gods_plan-94597.dds"
+	}
+
+	##Icon Shine For: God's Plan
+	SpriteType = { 
+		name = "GFX_MDW_gods_plan-94597_shine"
+		texturefile = "gfx/interface/goals/GFX_MDW_gods_plan-94597.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_gods_plan-94597.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_gods_plan-94597.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: It is manly to join the Army
+	SpriteType = { 
+		name = "GFX_MDW_it_is_manly_to_join_the_army-94595"
+		texturefile = "gfx/interface/goals/GFX_MDW_it_is_manly_to_join_the_army-94595.dds"
+	}
+
+	##Icon Shine For: It is manly to join the Army
+	SpriteType = { 
+		name = "GFX_MDW_it_is_manly_to_join_the_army-94595_shine"
+		texturefile = "gfx/interface/goals/GFX_MDW_it_is_manly_to_join_the_army-94595.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_it_is_manly_to_join_the_army-94595.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_it_is_manly_to_join_the_army-94595.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
