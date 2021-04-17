@@ -11,7 +11,7 @@ focus_tree = {
 	focus = {
 		id = MDW_workers_of_the_midwestern_union
 		icon = GFX_goal_support_fourth_int
-		x = 27
+		x = 47
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
@@ -25,7 +25,7 @@ focus_tree = {
 	focus = {
 		id = MDW_glories_of_old
 		icon = GFX_goal_support_fascism
-		x = 20
+		x = 32
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
@@ -39,11 +39,433 @@ focus_tree = {
 	focus = {
 		id = MDW_every_man_has_a_right
 		icon = GFX_goal_support_democracy
-		x = 14
+		x = 18
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MDW_waking_of_a_great_nation }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Turn the United States Communist!
+	focus = {
+		id = MDW_turn_the_united_states_communist
+		icon = GFX_goal_unknown
+		x = 53
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_mr_mama_is_a_workers_man }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Communist Alabama Anyone?
+	focus = {
+		id = MDW_communist_alabama_anyone
+		icon = GFX_goal_unknown
+		x = 53
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_turn_the_united_states_communist }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Red Dawn
+	focus = {
+		id = MDW_red_dawn
+		icon = GFX_goal_unknown
+		x = 53
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_communist_alabama_anyone }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Science, have mercy on us and on the whole world
+	focus = {
+		id = MDW_science_have_mercy_on_us_and_on_the_whole_world
+		icon = GFX_focus_research2
+		x = 47
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_ban_sex }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ban Sex
+	focus = {
+		id = MDW_ban_sex
+		icon = GFX_goal_unknown
+		x = 47
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_more_worker_benefits }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Regulate Sleeping
+	focus = {
+		id = MDW_regulate_sleeping
+		icon = GFX_goal_unknown
+		x = 44
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_ban_sex }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Make industrial factories in your backyards
+	focus = {
+		id = MDW_make_industrial_factories_in_your_backyards
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 50
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_make_food_from_grass }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Make Toasters out of wood
+	focus = {
+		id = MDW_make_toasters_out_of_wood
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 50
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_worker_benefit }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Make Food from grass
+	focus = {
+		id = MDW_make_food_from_grass
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 50
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_make_toasters_out_of_wood }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Make Military Factories in your backyard
+	focus = {
+		id = MDW_make_military_factories_in_your_backyard
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 41
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_make_gunpowder_in_your_backyard }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Make Gunpowder in your backyard
+	focus = {
+		id = MDW_make_gunpowder_in_your_backyard
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 41
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_make_steel_in_your_backyard }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Make steel in your backyard
+	focus = {
+		id = MDW_make_steel_in_your_backyard
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 41
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_it_is_manly_to_join_the_army }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Worker Benefit
+	focus = {
+		id = MDW_worker_benefit
+		icon = GFX_goal_unknown
+		x = 47
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_scientology }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for More Worker Benefits
+	focus = {
+		id = MDW_more_worker_benefits
+		icon = GFX_goal_unknown
+		x = 47
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_worker_benefit }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Scientology
+	focus = {
+		id = MDW_scientology
+		icon = GFX_MDW_scientology-94596
+		x = 47
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_mr_mama_is_a_workers_man }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Stranglehold
+	focus = {
+		id = MDW_stranglehold
+		icon = GFX_goal_unknown
+		x = 26
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_cuba_fever_baby }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Cuba fever baby!
+	focus = {
+		id = MDW_cuba_fever_baby
+		icon = GFX_focus_AST_war_japan
+		x = 26
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_sweet_home_alabama }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Sweet Home Alabama
+	focus = {
+		id = MDW_sweet_home_alabama
+		icon = GFX_MDW_sweet_home_alabama-94600
+		x = 26
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_sike_the_prisoners_are_slaves_lol }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 24 hour shifts
+	focus = {
+		id = MDW_24_hour_shifts
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 19
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_numbers }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Bombs? Its yours my friend
+	focus = {
+		id = MDW_bombs_its_yours_my_friend
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 21
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_numbers }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Slave Labor for the Army
+	focus = {
+		id = MDW_slave_labor_for_the_army
+		icon = GFX_MDW_slave_labor_for_the_army-94599
+		x = 23
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_sike_the_prisoners_are_slaves_lol }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Sike, the prisoners are slaves lol
+	focus = {
+		id = MDW_sike_the_prisoners_are_slaves_lol
+		icon = GFX_MDW_sike_the_prisoners_are_slaves_lol-94598
+		x = 23
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_free_all_prisoners }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for NO REGULATIONS
+	focus = {
+		id = MDW_no_regulations
+		icon = GFX_focus_generic_treaty
+		x = 20
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_free_all_prisoners }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Numbers
+	focus = {
+		id = MDW_numbers
+		icon = GFX_goal_generic_secret_weapon
+		x = 20
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_no_regulations }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Broke the Woke
+	focus = {
+		id = MDW_broke_the_woke
+		icon = GFX_MDW_broke_the_woke-94727
+		x = 17
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_the_woke_nation }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Free all Prisoners
+	focus = {
+		id = MDW_free_all_prisoners
+		icon = GFX_focus_mex_support_general_cedillo
+		x = 20
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_establish_a_pure_democracy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Revolt against the Movement
+	focus = {
+		id = MDW_revolt_against_the_movement
+		icon = GFX_focus_focus_fra_revolution_utmost
+		x = 17
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_establish_a_pure_democracy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Woke Nation
+	focus = {
+		id = MDW_the_woke_nation
+		icon = GFX_focus_smiling_buddha
+		x = 17
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_revolt_against_the_movement }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Destroyer Research
+	focus = {
+		id = MDW_destroyer_research
+		icon = GFX_focus_generic_destroyer
+		x = 14
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_naval_research }
+		mutually_exclusive = { focus = MDW_submarine_warfare }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Fighter Focus
+	focus = {
+		id = MDW_fighter_focus
+		icon = GFX_goal_generic_air_fighter2
+		x = 18
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_air_force_development }
+		mutually_exclusive = { focus = MDW_ground_support_focus }
 		ai_will_do = {
 			factor = 1
 		}
@@ -66,7 +488,7 @@ focus_tree = {
 	#Focus for For God and Country
 	focus = {
 		id = MDW_for_god_and_country
-		icon = GFX_focus_up_joan_of_arc
+		icon = GFX_MDW_for_god_and_country-94576
 		x = 9
 		y = 1
 		cost = 10
@@ -81,7 +503,7 @@ focus_tree = {
 	focus = {
 		id = MDW_waking_of_a_great_nation
 		icon = GFX_focus_eng_the_kings_party
-		x = 17
+		x = 9
 		y = 0
 		cost = 10
 		available_if_capitulated = yes
@@ -107,7 +529,7 @@ focus_tree = {
 	#Focus for Global Cleansing
 	focus = {
 		id = MDW_global_cleansing
-		icon = GFX_focus_eng_imperial_federation
+		icon = GFX_MDW_global_cleansing-94580
 		x = 11
 		y = 4
 		cost = 10
@@ -121,7 +543,7 @@ focus_tree = {
 	#Focus for Burn the Heretics
 	focus = {
 		id = MDW_burn_the_heretics
-		icon = GFX_focus_smiling_buddha
+		icon = GFX_MDW_burn_the_heretics-94579
 		x = 9
 		y = 2
 		cost = 10
@@ -160,6 +582,230 @@ focus_tree = {
 		}
 	}
 
+	#Focus for Engineering Research
+	focus = {
+		id = MDW_engineering_research
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 25
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_economy_research }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Industry Research
+	focus = {
+		id = MDW_industry_research
+		icon = GFX_focus_generic_industry_3
+		x = 25
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_engineering_research }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Dooms Day
+	focus = {
+		id = MDW_dooms_day
+		icon = GFX_focus_wonderweapons
+		x = 21
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MDW_artillery_support 
+			focus = MDW_bomber_research 
+			focus = MDW_industry_research 
+			focus = MDW_battleship_focus 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Naval Research
+	focus = {
+		id = MDW_naval_research
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 15
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MDW_jewish_scientist 
+			focus = MDW_science_class_baby 
+			focus = MDW_declare_echo_as_the_only_scientist_ever 
+			focus = MDW_science_have_mercy_on_us_and_on_the_whole_world 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Air Force Development
+	focus = {
+		id = MDW_air_force_development
+		icon = GFX_goal_generic_air_doctrine
+		x = 19
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MDW_jewish_scientist 
+			focus = MDW_science_class_baby 
+			focus = MDW_declare_echo_as_the_only_scientist_ever 
+			focus = MDW_science_have_mercy_on_us_and_on_the_whole_world 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Economy Research
+	focus = {
+		id = MDW_economy_research
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 25
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MDW_jewish_scientist 
+			focus = MDW_science_class_baby 
+			focus = MDW_declare_echo_as_the_only_scientist_ever 
+			focus = MDW_science_have_mercy_on_us_and_on_the_whole_world 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Submarine Warfare
+	focus = {
+		id = MDW_submarine_warfare
+		icon = GFX_goal_generic_wolf_pack
+		x = 16
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_naval_research }
+		mutually_exclusive = { focus = MDW_destroyer_research }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Battleship Focus
+	focus = {
+		id = MDW_battleship_focus
+		icon = GFX_goal_generic_navy_battleship
+		x = 15
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MDW_submarine_warfare 
+			focus = MDW_destroyer_research 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ground Support Focus
+	focus = {
+		id = MDW_ground_support_focus
+		icon = GFX_goal_generic_air_fighter2
+		x = 20
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_air_force_development }
+		mutually_exclusive = { focus = MDW_fighter_focus }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Artillery Support
+	focus = {
+		id = MDW_artillery_support
+		icon = GFX_goal_generic_army_artillery2
+		x = 22
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_armored_support }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Bomber Research
+	focus = {
+		id = MDW_bomber_research
+		icon = GFX_goal_generic_air_bomber
+		x = 19
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MDW_fighter_focus 
+			focus = MDW_ground_support_focus 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Armored Support
+	focus = {
+		id = MDW_armored_support
+		icon = GFX_goal_generic_army_tanks
+		x = 22
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_ydaVthrL }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Highway to Hell
+	focus = {
+		id = MDW_highway_to_hell
+		icon = GFX_MDW_highway_to_hell-94594
+		x = 11
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_gods_plan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Do-It-Yourself World Conquest
+	focus = {
+		id = MDW_doityourself_world_conquest
+		icon = GFX_MDW_doityourself_world_conquest-94587
+		x = 11
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_highway_to_hell }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	#Focus for Prepared Army
 	focus = {
 		id = MDW_prepared_army
@@ -177,7 +823,7 @@ focus_tree = {
 	#Focus for Godless Heathens
 	focus = {
 		id = MDW_godless_heathens
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_MDW_godless_heathens-94586
 		x = 10
 		y = 6
 		cost = 10
@@ -191,7 +837,7 @@ focus_tree = {
 	#Focus for Slave Labor
 	focus = {
 		id = MDW_slave_labor
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_MDW_slave_labor-94593
 		x = 10
 		y = 7
 		cost = 10
@@ -205,7 +851,7 @@ focus_tree = {
 	#Focus for The Ten Commandments
 	focus = {
 		id = MDW_the_ten_commandments
-		icon = GFX_focus_generic_strike_at_democracy3
+		icon = GFX_MDW_the_ten_commandments-94589
 		x = 7
 		y = 4
 		cost = 10
@@ -220,7 +866,7 @@ focus_tree = {
 	focus = {
 		id = MDW_encourage_research
 		icon = GFX_focus_research2
-		x = 16
+		x = 15
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
@@ -234,11 +880,14 @@ focus_tree = {
 	focus = {
 		id = MDW_jewish_scientist
 		icon = GFX_focus_research2
-		x = 16
+		x = 15
 		y = 6
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = MDW_encourage_research }
+		prerequisite = { 
+			focus = MDW_encourage_research 
+			focus = MDW_science_class_baby 
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -247,7 +896,7 @@ focus_tree = {
 	#Focus for Declare Logan715 a Prophet
 	focus = {
 		id = MDW_declare_logan715_a_prophet
-		icon = GFX_focus_BUL_restore_the_bulgarian_patriarchate
+		icon = GFX_MDW_declare_logan715_a_prophet-94577
 		x = 7
 		y = 6
 		cost = 10
@@ -261,7 +910,7 @@ focus_tree = {
 	#Focus for Declare the Bible a national book
 	focus = {
 		id = MDW_declare_the_bible_a_national_book
-		icon = GFX_focus_mex_restore_the_army_of_christ
+		icon = GFX_MDW_declare_the_bible_a_national_book-94588
 		x = 7
 		y = 5
 		cost = 10
@@ -275,7 +924,7 @@ focus_tree = {
 	#Focus for God's Plan
 	focus = {
 		id = MDW_gods_plan
-		icon = GFX_goal_unknown
+		icon = GFX_MDW_gods_plan-94597
 		x = 11
 		y = 8
 		cost = 10
@@ -284,6 +933,336 @@ focus_tree = {
 			focus = MDW_slave_labor 
 			focus = MDW_prepared_army 
 		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Infantry Research
+	focus = {
+		id = MDW_infantry_research
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 22
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MDW_jewish_scientist 
+			focus = MDW_science_class_baby 
+			focus = MDW_declare_echo_as_the_only_scientist_ever 
+			focus = MDW_science_have_mercy_on_us_and_on_the_whole_world 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Establish a Pure Democracy
+	focus = {
+		id = MDW_establish_a_pure_democracy
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 18
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_every_man_has_a_right }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Science class baby!
+	focus = {
+		id = MDW_science_class_baby
+		icon = GFX_focus_research2
+		x = 24
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_numbers }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for One Nation under ME
+	focus = {
+		id = MDW_one_nation_under_me
+		icon = GFX_goal_unknown
+		x = 32
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_glories_of_old }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for With Liberty and Justice for None
+	focus = {
+		id = MDW_with_liberty_and_justice_for_none
+		icon = GFX_goal_unknown
+		x = 32
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_one_nation_under_me }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Drug use is a-ok
+	focus = {
+		id = MDW_drug_use_is_aok
+		icon = GFX_goal_unknown
+		x = 29
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_with_liberty_and_justice_for_none }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Cheese with Heroin in them
+	focus = {
+		id = MDW_cheese_with_heroin_in_them
+		icon = GFX_goal_unknown
+		x = 29
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_drug_use_is_aok }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Weed with Heroin in it
+	focus = {
+		id = MDW_weed_with_heroin_in_it
+		icon = GFX_goal_unknown
+		x = 29
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_cheese_with_heroin_in_them }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Everyone gets a rifle
+	focus = {
+		id = MDW_everyone_gets_a_rifle
+		icon = GFX_goal_unknown
+		x = 35
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_with_liberty_and_justice_for_none }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Turning your Schools into Military Factories
+	focus = {
+		id = MDW_turning_your_schools_into_military_factories
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 36
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_everyone_gets_a_rifle }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Turning your Homes into Factories
+	focus = {
+		id = MDW_turning_your_homes_into_factories
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 34
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_everyone_gets_a_rifle }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Turning your Churches into Military Weapons
+	focus = {
+		id = MDW_turning_your_churches_into_military_weapons
+		icon = GFX_goal_unknown
+		x = 36
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_turning_your_schools_into_military_factories }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Turning your loved ones into toasters
+	focus = {
+		id = MDW_turning_your_loved_ones_into_toasters
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 34
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_turning_your_homes_into_factories }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Declare Echo as the only scientist ever
+	focus = {
+		id = MDW_declare_echo_as_the_only_scientist_ever
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = 35
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MDW_turning_your_churches_into_military_weapons 
+			focus = MDW_turning_your_loved_ones_into_toasters 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Take away Women's Suffrage
+	focus = {
+		id = MDW_take_away_womens_suffrage
+		icon = GFX_goal_unknown
+		x = 32
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_with_liberty_and_justice_for_none }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for International Echo day
+	focus = {
+		id = MDW_international_echo_day
+		icon = GFX_goal_unknown
+		x = 32
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_take_away_womens_suffrage }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for International No Women's Suffrage day.
+	focus = {
+		id = MDW_international_no_womens_suffrage_day
+		icon = GFX_goal_unknown
+		x = 32
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_international_echo_day }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Sayland? Yes I said say more land
+	focus = {
+		id = MDW_sayland_yes_i_said_say_more_land
+		icon = GFX_goal_unknown
+		x = 39
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_everyone_gets_a_rifle }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for United States, more like Liquid State
+	focus = {
+		id = MDW_united_states_more_like_liquid_state
+		icon = GFX_goal_unknown
+		x = 39
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_sayland_yes_i_said_say_more_land }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Echo wants to kiss Lion
+	focus = {
+		id = MDW_echo_wants_to_kiss_lion
+		icon = GFX_goal_unknown
+		x = 39
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_united_states_more_like_liquid_state }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Mr Mama is a workers man
+	focus = {
+		id = MDW_mr_mama_is_a_workers_man
+		icon = GFX_goal_unknown
+		x = 47
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_workers_of_the_midwestern_union }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for It is manly to join the Army
+	focus = {
+		id = MDW_it_is_manly_to_join_the_army
+		icon = GFX_MDW_it_is_manly_to_join_the_army-94595
+		x = 43
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_mr_mama_is_a_workers_man }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Kids in the Army
+	focus = {
+		id = MDW_kids_in_the_army
+		icon = GFX_goal_unknown
+		x = 43
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MDW_it_is_manly_to_join_the_army }
 		ai_will_do = {
 			factor = 1
 		}

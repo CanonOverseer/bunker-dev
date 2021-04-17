@@ -463,8 +463,8 @@ category = industry
 	focus = {
 		id = BNK_support_revolution_around_the_globe
 		icon = GFX_focus_ger_great_red_menace
-		x = 50
-		y = 4
+		x = 43
+		y = 8
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -702,7 +702,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
-		
+		triumphant_revolutionary	
 	}
 }
 
@@ -748,7 +748,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
-		
+		top
 	}
 }
 hidden_effect = {
@@ -1258,13 +1258,17 @@ custom_effect_tooltip = warplan_unlocked_tt
 		}
 		completion_reward = {
 			add_ideas= BNK_all_power_to_workers
+add_timed_idea = { 
+    idea = SOV_collectivist_propaganda 
+    days = 365 
+}
 		}
 	}
 
-	#Focus for Unity of Farmer and Workers
+	#Focus for Seize the Means of Production
 	focus = {
-		id = BNK_unity_of_farmer_and_workers
-		icon = GFX_BNK_unity_of_farmer_and_workers-53113
+		id = BNK_seize_the_means_of_production
+		icon = GFX_BNK_seize_the_means_of_production-53113
 		x = 45
 		y = 3
 		cost = 10
@@ -1274,11 +1278,13 @@ custom_effect_tooltip = warplan_unlocked_tt
 			factor = 1
 		}
 		completion_reward = {
-			19 = {
+			retire_ideology_leader = democratic
+add_ideas = peoples_commissariat_focus 
+19 = {
     add_extra_state_shared_building_slots = 1
     add_building_construction = {
-        type = arms_factory
-        level = 3
+        type = industrial_complex
+        level = 2
         instant_build = yes
    }
 }
@@ -1331,7 +1337,7 @@ custom_effect_tooltip = warplan_unlocked_tt
 			focus = BNK_all_power_to_workers 
 		}
 		prerequisite = { 
-			focus = BNK_unity_of_farmer_and_workers 
+			focus = BNK_seize_the_means_of_production 
 		}
 		prerequisite = { 
 			focus = BNK_equality_in_the_field_of_battle 
@@ -1376,17 +1382,16 @@ add_opinion_modifier = {
 	focus = {
 		id = BNK_support_your_local_nkvd
 		icon = GFX_focus_prc_agrarian_socialism
-		x = 50
+		x = 39
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
+		prerequisite = { focus = BNK_the_generalsecretarys_guiding_hand }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas= BNK_nkvd
-custom_effect_tooltip = warplan_unlocked_communism_tt
-set_country_flag = warplan_unlocked
+			add_ideas = BNK_nkvd
 		}
 	}
 
@@ -1432,19 +1437,20 @@ set_country_flag = warplan_unlocked
 		}
 	}
 
-	#Focus for War Plan Bunker
+	#Focus for War Plan Red
 	focus = {
-		id = BNK_war_plan_bunker
+		id = BNK_war_plan_red
 		icon = GFX_goal_generic_forceful_treaty
-		x = 37
-		y = 10
+		x = 33
+		y = 20
 		cost = 2
 		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BNK_normandy_is_ours 
+			focus = BNK_brittany_is_ours 
+		}
 		ai_will_do = {
 			factor = 1
-		}
-		available = {
-			has_country_flag = warplan_unlocked
 		}
 	}
 
@@ -1503,11 +1509,11 @@ BNK_imperial_senate_loss = yes
 	focus = {
 		id = BNK_steel_eagle_ambitions
 		icon = GFX_BNK_steel_eagle_ambitions-64329
-		x = 33
-		y = 11
+		x = 29
+		y = 21
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_war_plan_bunker }
+		prerequisite = { focus = BNK_war_plan_red }
 		ai_will_do = {
 			factor = 1
 		}
@@ -2017,7 +2023,7 @@ category = nuclear
 	focus = {
 		id = BNK_imperial_chancellor_top
 		icon = GFX_goal_tripartite_pact
-		x = 30
+		x = 29
 		y = 9
 		cost = 10
 		available_if_capitulated = yes
@@ -2037,7 +2043,7 @@ add_ideas= BNK_chancellor_top
 	focus = {
 		id = BNK_research_the_nuclear_energy_of_australia
 		icon = GFX_BNK_research_the_nuclear_energy_of_australia-64019
-		x = 36
+		x = 37
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
@@ -2148,6 +2154,9 @@ category = land_doctrine
 		ai_will_do = {
 			factor = 1
 		}
+		bypass = {
+			has_government = fascism
+		}
 		completion_reward = {
 			custom_effect_tooltip = free_slot_warning
 BNK_imperial_senate_gain = yes
@@ -2161,11 +2170,11 @@ id = eventsmod.111
 	focus = {
 		id = BNK_crackistani_expansion
 		icon = GFX_BNK_crackistani_expansion-64331
-		x = 35
-		y = 11
+		x = 31
+		y = 21
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_war_plan_bunker }
+		prerequisite = { focus = BNK_war_plan_red }
 		ai_will_do = {
 			factor = 1
 		}
@@ -2178,11 +2187,11 @@ id = eventsmod.111
 	focus = {
 		id = BNK_republican_ambition
 		icon = GFX_BNK_republican_ambition-44476
-		x = 37
-		y = 11
+		x = 33
+		y = 21
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_war_plan_bunker }
+		prerequisite = { focus = BNK_war_plan_red }
 		ai_will_do = {
 			factor = 1
 		}
@@ -2198,11 +2207,11 @@ has_completed_focus = BNK_echo
 	focus = {
 		id = BNK_expansion_of_the_monarchy
 		icon = GFX_BNK_expansion_of_the_monarchy-64556
-		x = 40
-		y = 11
+		x = 35
+		y = 21
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_war_plan_bunker }
+		prerequisite = { focus = BNK_war_plan_red }
 		ai_will_do = {
 			factor = 1
 		}
@@ -2218,11 +2227,11 @@ has_completed_focus = BNK_canon
 	focus = {
 		id = BNK_spread_equality
 		icon = GFX_BNK_spread_equality-64487
-		x = 42
-		y = 11
+		x = 37
+		y = 21
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_war_plan_bunker }
+		prerequisite = { focus = BNK_war_plan_red }
 		ai_will_do = {
 			factor = 1
 		}
@@ -2235,8 +2244,8 @@ has_completed_focus = BNK_canon
 	focus = {
 		id = BNK_destruction_of_the_red_state
 		icon = GFX_BNK_destruction_of_the_red_state-64495
-		x = 34
-		y = 12
+		x = 30
+		y = 22
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
@@ -2258,8 +2267,8 @@ target = RED
 	focus = {
 		id = BNK_a_red_red
 		icon = GFX_BNK_a_red_red-64330
-		x = 42
-		y = 12
+		x = 37
+		y = 22
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BNK_spread_equality }
@@ -2309,8 +2318,8 @@ target = RED
 	focus = {
 		id = BNK_the_true_leader_of_red_burgundy
 		icon = GFX_BNK_the_true_leader_of_red_burgundy-68583
-		x = 40
-		y = 12
+		x = 35
+		y = 22
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BNK_expansion_of_the_monarchy }
@@ -2329,8 +2338,8 @@ target = RED
 	focus = {
 		id = BNK_the_last_remnants_of_the_civil_war
 		icon = GFX_BNK_the_last_remnants_of_the_civil_war-68582
-		x = 37
-		y = 12
+		x = 33
+		y = 22
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BNK_republican_ambition }
@@ -2345,35 +2354,17 @@ target = RED
 		}
 	}
 
-	#Focus for Integration of Red Burgundy
+	#Focus for The Breton Question
 	focus = {
-		id = BNK_integration_of_red_burgundy
-		icon = GFX_goal_generic_forceful_treaty
-		x = 37
-		y = 14
-		cost = 10
+		id = BNK_the_breton_question
+		icon = GFX_BNK_the_breton_question-94609
+		x = 27
+		y = 17
+		cost = 1
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = BNK_destruction_of_the_red_state 
-			focus = BNK_the_last_remnants_of_the_civil_war 
-			focus = BNK_the_true_leader_of_red_burgundy 
-			focus = BNK_a_red_red 
-		}
+		prerequisite = { focus = BNK_the_bunker_war_plans }
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_state_core= 16 
-
-add_state_core= 785
-
-add_state_core= 18
-
-add_state_core= 27
-
-add_state_core= 818
-
-add_state_core= 17
 		}
 	}
 
@@ -2381,11 +2372,11 @@ add_state_core= 17
 	focus = {
 		id = BNK_the_collapse_of_brittany
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		x = 33
-		y = 15
+		x = 23
+		y = 18
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_integration_of_red_burgundy }
+		prerequisite = { focus = BNK_the_breton_question }
 		ai_will_do = {
 			factor = 1
 		}
@@ -2404,11 +2395,11 @@ target = BRI
 	focus = {
 		id = BNK_securing_the_coast
 		icon = GFX_focus_generic_support_the_left_right
-		x = 35
-		y = 15
+		x = 25
+		y = 18
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_integration_of_red_burgundy }
+		prerequisite = { focus = BNK_the_breton_question }
 		ai_will_do = {
 			factor = 1
 		}
@@ -2432,11 +2423,11 @@ has_completed_focus = BNK_echo
 	focus = {
 		id = BNK_the_king_of_brittany
 		icon = GFX_focus_rom_royal_dictatorship
-		x = 37
-		y = 15
+		x = 27
+		y = 18
 		cost = 8
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_integration_of_red_burgundy }
+		prerequisite = { focus = BNK_the_breton_question }
 		mutually_exclusive = { focus = BNK_the_duke_of_brittany }
 		ai_will_do = {
 			factor = 1
@@ -2459,11 +2450,11 @@ target = BRI
 	focus = {
 		id = BNK_an_equal_brittany
 		icon = GFX_BNK_an_equal_brittany-72792
-		x = 41
-		y = 15
+		x = 31
+		y = 18
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_integration_of_red_burgundy }
+		prerequisite = { focus = BNK_the_breton_question }
 		ai_will_do = {
 			factor = 1
 		}
@@ -2482,16 +2473,16 @@ target = BRI
 	focus = {
 		id = BNK_brittany_is_ours
 		icon = GFX_BNK_brittany_is_ours-72808
-		x = 37
-		y = 16
+		x = 27
+		y = 19
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = BNK_the_collapse_of_brittany 
 			focus = BNK_securing_the_coast 
 			focus = BNK_the_king_of_brittany 
-			focus = BNK_an_equal_brittany 
 			focus = BNK_the_duke_of_brittany 
+			focus = BNK_an_equal_brittany 
+			focus = BNK_the_collapse_of_brittany 
 		}
 		ai_will_do = {
 			factor = 1
@@ -2514,16 +2505,7 @@ BRI = { is_subject_of = BNK }
     add_state_core= 30 
     add_state_core= 14
 }
-else_if = {
-    limit = {
-        BRI = { is_puppet_of = BNK }
-    }
-    BRI = { set_cosmetic_tag = BRI_bunker }
-    BRI = { load_oob = "BRI_restore" }
-}
-else = {
-    add_stability = -0.05
-}
+add_named_threat = { threat = 4 name = bnk_annexation_of_brittany }
 		}
 	}
 
@@ -2580,11 +2562,11 @@ add_equipment_to_stockpile = {
 	focus = {
 		id = BNK_the_duke_of_brittany
 		icon = GFX_BNK_the_duke_of_brittany-64582
-		x = 39
-		y = 15
+		x = 29
+		y = 18
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_integration_of_red_burgundy }
+		prerequisite = { focus = BNK_the_breton_question }
 		mutually_exclusive = { focus = BNK_the_king_of_brittany }
 		ai_will_do = {
 			factor = 1
@@ -2655,79 +2637,6 @@ add_equipment_to_stockpile = {
 		}
 	}
 
-	#Focus for End of British Influence
-	focus = {
-		id = BNK_end_of_british_influence
-		icon = GFX_BNK_end_of_british_influence-72795
-		x = 33
-		y = 17
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BNK_brittany_is_ours }
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			has_completed_focus = BNK_destruction_of_the_red_state
-		}
-		completion_reward = {
-			create_wargoal= { 
-type = annex_everything 
-target = NRM
-}
-		}
-	}
-
-	#Focus for The Norman Question
-	focus = {
-		id = BNK_the_norman_question
-		icon = GFX_BNK_the_norman_question-68580
-		x = 35
-		y = 17
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BNK_brittany_is_ours }
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			OR = {
-has_completed_focus = BNK_top
-has_completed_focus = BNK_echo
-}
-		}
-		completion_reward = {
-			create_wargoal= { 
-type = annex_everything 
-target = NRM
-}
-		}
-	}
-
-	#Focus for Bunker Normandy
-	focus = {
-		id = BNK_bunker_normandy
-		icon = GFX_BNK_bunker_normandy-72807
-		x = 37
-		y = 18
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = BNK_end_of_british_influence 
-			focus = BNK_the_norman_question 
-			focus = BNK_the_blessed_king_of_normandy 
-			focus = BNK_a_red_normandy 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_state_core= 15
-
-add_state_core= 808
-		}
-	}
-
 	#Focus for A Consort for the Emperor
 	focus = {
 		id = BNK_a_consort_for_the_emperor
@@ -2742,55 +2651,6 @@ add_state_core= 808
 		}
 		completion_reward = {
 			country_event = { id = eventsmod.112 }
-		}
-	}
-
-	#Focus for The Blessed King of Normandy
-	focus = {
-		id = BNK_the_blessed_king_of_normandy
-		icon = GFX_BNK_the_blessed_king_of_normandy-68581
-		x = 39
-		y = 17
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BNK_brittany_is_ours }
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			OR = {
-has_completed_focus = BNK_lion
-has_completed_focus = BNK_canon
-}
-		}
-		completion_reward = {
-			create_wargoal= { 
-type = annex_everything 
-target = NRM
-}
-		}
-	}
-
-	#Focus for A Red Normandy
-	focus = {
-		id = BNK_a_red_normandy
-		icon = GFX_BNK_a_red_normandy-72797
-		x = 41
-		y = 17
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BNK_brittany_is_ours }
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			has_completed_focus = BNK_d
-		}
-		completion_reward = {
-			create_wargoal= { 
-type = annex_everything 
-target = NRM
-}
 		}
 	}
 
@@ -2824,11 +2684,10 @@ add_opinion_modifier = {
 	focus = {
 		id = BNK_the_end_of_the_united_nations
 		icon = GFX_BNK_the_end_of_the_united_nations-72791
-		x = 37
-		y = 19
+		x = 35
+		y = 26
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_bunker_normandy }
 		ai_will_do = {
 			factor = 1
 		}
@@ -2844,8 +2703,8 @@ target = BEL
 	focus = {
 		id = BNK_the_end_of_the_belgium_culture
 		icon = GFX_BNK_the_end_of_the_belgium_culture-72793
-		x = 37
-		y = 20
+		x = 35
+		y = 27
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BNK_the_end_of_the_united_nations }
@@ -2884,7 +2743,7 @@ add_state_core= 35
 	focus = {
 		id = BNK_the_truth_revealed
 		icon = GFX_goal_generic_secret_weapon
-		x = 28
+		x = 27
 		y = 9
 		cost = 10
 		available_if_capitulated = yes
@@ -2917,7 +2776,7 @@ elections_allowed = no
 	focus = {
 		id = BNK_imperial_council
 		icon = GFX_goal_generic_intelligence_exchange
-		x = 30
+		x = 29
 		y = 10
 		cost = 10
 		available_if_capitulated = yes
@@ -2934,7 +2793,7 @@ elections_allowed = no
 	focus = {
 		id = BNK_judaism_not_e
 		icon = GFX_BNK_judaism_not_e-73529
-		x = 30
+		x = 29
 		y = 11
 		cost = 10
 		available_if_capitulated = yes
@@ -2953,7 +2812,7 @@ add_ideas= BNK_celebrates_hanukkah
 	focus = {
 		id = BNK_the_messianic_king
 		icon = GFX_BNK_the_messianic_king-73530
-		x = 30
+		x = 29
 		y = 12
 		cost = 10
 		available_if_capitulated = yes
@@ -2989,7 +2848,7 @@ set_cosmetic_tag= BNK_jewishepic
 	focus = {
 		id = BNK_the_bunker_loyalty_law
 		icon = GFX_goal_generic_forceful_treaty
-		x = 28
+		x = 27
 		y = 11
 		cost = 10
 		available_if_capitulated = yes
@@ -3009,7 +2868,7 @@ days = 150
 	focus = {
 		id = BNK_donitzs_raids
 		icon = GFX_BNK_donitzs_raids-73528
-		x = 28
+		x = 27
 		y = 12
 		cost = 10
 		available_if_capitulated = yes
@@ -3129,7 +2988,7 @@ target = ENG
 	focus = {
 		id = BNK_we_need_to_start_eating_people
 		icon = GFX_focus_rom_parties_end
-		x = 28
+		x = 27
 		y = 10
 		cost = 10
 		available_if_capitulated = yes
@@ -3309,6 +3168,178 @@ set_cosmetic_tag = BNK_cracky_evolved
 		}
 	}
 
+	#Focus for Spread the Revolution to Normandy
+	focus = {
+		id = BNK_spread_the_revolution_to_normandy
+		icon = GFX_BNK_spread_the_revolution_to_normandy-94605
+		x = 39
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BNK_the_question_of_normandy }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_government = communism
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = NRM
+}
+		}
+	}
+
+	#Focus for Support from the Comintern
+	focus = {
+		id = BNK_support_from_the_comintern
+		icon = GFX_BNK_support_from_the_comintern-94583
+		x = 43
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BNK_the_4_year_plan }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			OR = {
+NOT = { country_exists = SOV }
+SOV = { NOT = { has_government = communism ) }
+}
+		}
+	}
+} #This may not be in the right place. If your focus tree is having issues, check the above focus, as this closing brace was added to close the focus.
+
+	#Focus for Arm the Workers
+	focus = {
+		id = BNK_arm_the_workers
+		icon = GFX_BNK_arm_the_workers-94601
+		x = 47
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BNK_a_true_workers_democracy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Conquest of Normandy
+	focus = {
+		id = BNK_the_conquest_of_normandy
+		icon = GFX_BNK_the_conquest_of_normandy-94604
+		x = 35
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BNK_the_question_of_normandy }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = { has_government = communism }
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = NRM
+}
+		}
+	}
+
+	#Focus for Looking Outwards
+	focus = {
+		id = BNK_looking_outwards
+		icon = GFX_goal_unknown
+		x = 33
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Question of Normandy
+	focus = {
+		id = BNK_the_question_of_normandy
+		icon = GFX_BNK_the_question_of_normandy-94607
+		x = 37
+		y = 17
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = BNK_the_bunker_war_plans }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Normandy is Ours
+	focus = {
+		id = BNK_normandy_is_ours
+		icon = GFX_BNK_normandy_is_ours-94603
+		x = 37
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BNK_the_norman_autonomous_zone 
+			focus = BNK_the_conquest_of_normandy 
+			focus = BNK_spread_the_revolution_to_normandy 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			NOT = {
+
+OR = {
+BNK = {
+owns_state = 15
+owns_state = 808
+}
+BRI = {
+owns_state = 15
+owns_state = 808
+}
+}
+
+}
+		}
+		available = {
+			owns_state = 15
+owns_state = 808
+		}
+		completion_reward = {
+			add_named_threat = { threat = 4 name = bnk_annexation_of_normandy }
+add_state_core = 15
+add_state_core = 808
+		}
+	}
+
+	#Focus for The 4 Year Plan
+	focus = {
+		id = BNK_the_4_year_plan
+		icon = GFX_BNK_the_4_year_plan-94582
+		x = 43
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BNK_a_true_workers_democracy 
+			focus = BNK_the_generalsecretarys_guiding_hand 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = rural_industrialization_tt
+set_country_flag = rural_industrialization_communism
+		}
+	}
+
 	#Focus for A True Worker's Democracy
 	focus = {
 		id = BNK_a_true_workers_democracy
@@ -3318,7 +3349,7 @@ set_cosmetic_tag = BNK_cracky_evolved
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = BNK_unity_of_farmer_and_workers 
+			focus = BNK_seize_the_means_of_production 
 		}
 		prerequisite = { 
 			focus = BNK_all_power_to_workers 
@@ -3334,6 +3365,47 @@ set_cosmetic_tag = BNK_cracky_evolved
 			add_war_support = 0.2
 add_stability = -0.15
 add_ideas = BNK_dedicated_workers
+
+set_party_name = { 
+    ideology = democratic
+    long_name = BNK_council_of_workers
+    name = BNK_council_of_workers
+}
+set_party_name = { 
+    ideology = communism
+    long_name = BNK_socialist_party_long
+    name = BNK_socialist_party
+}
+		}
+	}
+
+	#Focus for The Norman Autonomous Zone
+	focus = {
+		id = BNK_the_norman_autonomous_zone
+		icon = GFX_BNK_the_norman_autonomous_zone-94606
+		x = 37
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BNK_the_question_of_normandy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Bunker War Plans.
+	focus = {
+		id = BNK_the_bunker_war_plans
+		icon = GFX_goal_generic_territory_or_war
+		x = 33
+		y = 16
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_flag = warplan_unlocked
 		}
 	}
 
