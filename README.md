@@ -8,3 +8,5 @@ Todo List:
  = Bunker Diplomacy Focus     
  = Cracky Bunker Fix
  
+ = Readd Imperial Marriage for Canon in Bunker
+ = Finish commie path
