@@ -1,28 +1,26 @@
 ideas = {
 	country = {
 
-        CAT_conscript_all = {
-            picture = women_soldier
-            modifier = {
-                conscription_factor = 0.3
-                consumer_goods_factor = 0.05
-            }
-        }
+		CAT_conscript_all = {
+			picture = women_soldier
+			modifier = {
+				conscription_factor = 0.3
+				consumer_goods_factor = 0.05
+			}
+		}
 		
 		CAT_defense_of_the_nation = {
 			picture = guns_guns
 			modifier = {
 				army_core_defence_factor = 0.1
-
 			}
 		}
 		
 		CAT_chest_pride = {
 			picture = chest_pride
 			modifier = {
-				stability_factor = 0.1
-				war_support_factor = 0.1
-
+			stability_factor = 0.1
+			war_support_factor = 0.1
 			}
 		}
 		
@@ -31,7 +29,6 @@ ideas = {
 			modifier = {
 				planning_speed = 0.1
 				army_org_factor = 0.05
-
 			}
 		}
 		
@@ -41,7 +38,6 @@ ideas = {
 			modifier = {
 				stability_factor = 0.2
 				war_support_factor = 0.2
-
 			}
 		}
 		
@@ -51,17 +47,11 @@ ideas = {
 				stability_factor = -0.2
 				war_support_factor = -0.2	
 				political_power_gain = -0.25
-
 			}
-		}
-		
-		
-		
-
+		}	
 	}
-	
-	
-		political_advisor = {
+
+	political_advisor = {
 
         BNK_cory = {
 
@@ -75,13 +65,13 @@ ideas = {
                 original_tag = BNK
             }
             
-			traits = { war_industrialist }
+            traits = { war_industrialist }
 
             ai_will_do = {
                 factor = 1
             }
         }
-    }
-	
-	
+    	
+	}
+
 }

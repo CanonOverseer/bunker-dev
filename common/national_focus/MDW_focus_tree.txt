@@ -19,6 +19,28 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_popularity= { 
+ideology = communism
+popularity = 0.4
+}
+
+set_politics= {
+ ruling_party = communism
+elections_allowed = no 
+}
+
+create_country_leader = {
+    name = "Joseph P. Mama"
+    desc = "TBD"
+    picture = "gfx/leaders/MDW/mama.dds"
+    expire = "1965.1.1"
+    ideology = anti_revisionism 
+    traits = {
+        british_bulldog
+    }
+}
+		}
 	}
 
 	#Focus for Glories of Old
@@ -33,6 +55,34 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_popularity= { 
+ideology = fascism
+popularity = 0.4
+}
+
+set_politics= {
+ ruling_party = fascism
+elections_allowed = no 
+}
+
+set_party_name= { 
+ideology = fascism
+long_name = "Fascist Party of the Midwest" 
+name = "Fascist Party"
+}
+
+create_country_leader = {
+    name = "Echoedlightning"
+    desc = "TBD"
+    picture = "gfx/leaders/BNK/echo.dds"
+    expire = "1965.1.1"
+    ideology = fascism_ideology
+    traits = {
+        american_caesar
+    }
+}
+		}
 	}
 
 	#Focus for Every Man Has a Right
@@ -46,6 +96,34 @@ focus_tree = {
 		prerequisite = { focus = MDW_waking_of_a_great_nation }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = democratic 
+popularity = 0.4
+}
+
+set_politics= {
+ ruling_party = democratic 
+elections_allowed = yes
+}
+
+set_party_name= { 
+ideology = democratic
+long_name = "Democratic Party" 
+name = "Democratic Party"
+}
+
+create_country_leader = {
+    name = "WigglyJoker"
+    desc = "TBD"
+    picture = "gfx/leaders/MDW/wig.dds"
+    expire = "1965.1.1"
+    ideology = liberalism 
+    traits = {
+        face_licker
+    }
+}
 		}
 	}
 
@@ -497,6 +575,34 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_popularity= { 
+ideology = neutrality
+popularity = 0.4
+}
+
+set_politics= {
+ ruling_party = neutrality
+elections_allowed = no 
+}
+
+set_party_name= { 
+ideology = neutrality
+long_name = "The Catholic Party" 
+name = "Catholic Catholic"
+}
+
+create_country_leader = {
+    name = "Logan715"
+    desc = "TBD"
+    picture = "gfx/leaders/MDW/log.dds"
+    expire = "1965.1.1"
+    ideology = despotism
+    traits = {
+        humble
+    }
+}
+		}
 	}
 
 	#Focus for Waking of a Great Nation
@@ -524,6 +630,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_stability= 0.2 
+
+add_war_support= 0.3
+		}
 	}
 
 	#Focus for Global Cleansing
@@ -538,6 +649,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			army_experience= 30  
+
+air_experience= 10
+		}
 	}
 
 	#Focus for Burn the Heretics
@@ -551,6 +667,14 @@ focus_tree = {
 		prerequisite = { focus = MDW_for_god_and_country }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 120
+
+add_popularity= { 
+ideology = neutrality
+popularity = 1
+}
 		}
 	}
 
@@ -772,7 +896,7 @@ focus_tree = {
 		y = 9
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = MDW_ydaVthrL }
+		prerequisite = { focus = MDW_infantry_research }
 		ai_will_do = {
 			factor = 1
 		}
@@ -968,6 +1092,14 @@ focus_tree = {
 		prerequisite = { focus = MDW_every_man_has_a_right }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.2
+
+add_popularity= { 
+ideology = democratic
+popularity = 1
+}
 		}
 	}
 
