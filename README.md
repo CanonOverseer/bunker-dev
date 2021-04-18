@@ -6,6 +6,6 @@ Todo List:
  = Make more UN members     
  = UN Focus     
  = Bunker Diplomacy Focus     
- = Cracky Bunker Fix
- = Readd Imperial Marriage for Canon in Bunker
- = Finish commie path
+ = Cracky Bunker Fix      
+ = Readd Imperial Marriage for Canon in Bunker      
+ = Finish commie path      
