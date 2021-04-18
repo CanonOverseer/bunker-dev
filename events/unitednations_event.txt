@@ -1,0 +1,83 @@
+add_namespace = unitednations
+
+country_event = { # UN Elections
+	id = unitednations.1
+    title = unitednations.1.t 
+    desc = unitednations.1.d
+	picture = GFX_report_event_worried_french 
+
+	is_triggered_only = yes 
+	
+    major = no 
+	
+	hidden = no 
+
+	fire_only_once = yes
+
+	
+	option = {
+		name = unitednations.1.a 
+		trigger = {
+
+		}
+		#effects
+		hidden_effect = {
+			random_list = {
+				33 = {
+					add_country_flag = BEL_isp_won_1
+				}
+				34 = {
+					add_country_flag = BEL_isp_won_2
+				}
+				33 = {
+					add_country_flag = BEL_isp_won_3
+				}
+			}
+		}
+
+	}
+	option = {
+		name = unitednations.1.b
+		trigger = {
+
+		}
+		#effects
+		hidden_effect = {
+			random_list = {
+				33 = {
+					add_country_flag = BEL_isp_won_1
+				}
+				34 = {
+					add_country_flag = BEL_isp_won_2
+				}
+				33 = {
+					add_country_flag = BEL_isp_won_3
+				}
+			}
+		}
+
+	}
+	option = {
+		name = unitednations.1.c
+		trigger = {
+
+		}
+		#effects
+		hidden_effect = {
+			random_list = {
+				33 = {
+					add_country_flag = BEL_isp_won_1
+				}
+				34 = {
+					add_country_flag = BEL_isp_won_2
+				}
+				33 = {
+					add_country_flag = BEL_isp_won_3
+				}
+			}
+		}
+
+
+	}
+}
+

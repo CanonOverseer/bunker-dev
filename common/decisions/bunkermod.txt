@@ -19,6 +19,29 @@ political_actions = {
         }
 	}
 
+    SAY_rename_konigsberg = {
+        visible = {
+        	TAG = SAY
+			has_country_leader = {
+				name = "Karolus Canonus I von Saylandia"
+				ruling_only = yes
+			}
+        }
+        cost = 10
+        available = {	
+			owns_state = 763
+        }
+        complete_effect = {
+			set_province_name = {
+				id = 6332
+				name = "Karolagrad"
+			}
+			763 = {
+				set_state_name = "Karolagrad"
+			}
+        }
+	}
+
 }
 
 jewish_jihad_category = {
