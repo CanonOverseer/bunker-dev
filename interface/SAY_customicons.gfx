@@ -1,17 +1,17 @@
 spriteTypes = { 
-	##Icon For: Political Expansion in Sayland
+	##Icon For: Crowning Karolus
 	SpriteType = { 
-		name = "GFX_SAY_political_expansion_in_sayland-45164"
-		texturefile = "gfx/interface/goals/GFX_SAY_political_expansion_in_sayland-45164.dds"
+		name = "GFX_SAY_crowning_karolus-95104"
+		texturefile = "gfx/interface/goals/GFX_SAY_crowning_karolus-95104.dds"
 	}
 
-	##Icon Shine For: Political Expansion in Sayland
+	##Icon Shine For: Crowning Karolus
 	SpriteType = { 
-		name = "GFX_SAY_political_expansion_in_sayland-45164_shine"
-		texturefile = "gfx/interface/goals/GFX_SAY_political_expansion_in_sayland-45164.dds"
+		name = "GFX_SAY_crowning_karolus-95104_shine"
+		texturefile = "gfx/interface/goals/GFX_SAY_crowning_karolus-95104.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_SAY_political_expansion_in_sayland-45164.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_crowning_karolus-95104.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -23,7 +23,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_SAY_political_expansion_in_sayland-45164.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_crowning_karolus-95104.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -39,17 +39,17 @@ spriteTypes = {
 
 	##Icon For: Strengthen the Saylish Poland State
 	SpriteType = { 
-		name = "GFX_SAY_strengthen_the_saylish_poland_state-44540"
-		texturefile = "gfx/interface/goals/GFX_SAY_strengthen_the_saylish_poland_state-44540.dds"
+		name = "GFX_SAY_strengthen_the_saylish_poland_state-44524"
+		texturefile = "gfx/interface/goals/GFX_SAY_strengthen_the_saylish_poland_state-44524.dds"
 	}
 
 	##Icon Shine For: Strengthen the Saylish Poland State
 	SpriteType = { 
-		name = "GFX_SAY_strengthen_the_saylish_poland_state-44540_shine"
-		texturefile = "gfx/interface/goals/GFX_SAY_strengthen_the_saylish_poland_state-44540.dds"
+		name = "GFX_SAY_strengthen_the_saylish_poland_state-44524_shine"
+		texturefile = "gfx/interface/goals/GFX_SAY_strengthen_the_saylish_poland_state-44524.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_SAY_strengthen_the_saylish_poland_state-44540.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_strengthen_the_saylish_poland_state-44524.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -61,7 +61,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_SAY_strengthen_the_saylish_poland_state-44540.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_strengthen_the_saylish_poland_state-44524.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -75,19 +75,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: The Greenland Question
+	##Icon For: The Choice
 	SpriteType = { 
-		name = "GFX_SAY_the_greenland_question-45048"
-		texturefile = "gfx/interface/goals/GFX_SAY_the_greenland_question-45048.dds"
+		name = "GFX_SAY_the_choice-45164"
+		texturefile = "gfx/interface/goals/GFX_SAY_the_choice-45164.dds"
 	}
 
-	##Icon Shine For: The Greenland Question
+	##Icon Shine For: The Choice
 	SpriteType = { 
-		name = "GFX_SAY_the_greenland_question-45048_shine"
-		texturefile = "gfx/interface/goals/GFX_SAY_the_greenland_question-45048.dds"
+		name = "GFX_SAY_the_choice-45164_shine"
+		texturefile = "gfx/interface/goals/GFX_SAY_the_choice-45164.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_SAY_the_greenland_question-45048.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_the_choice-45164.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -99,7 +99,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_SAY_the_greenland_question-45048.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_the_choice-45164.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -113,19 +113,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: Friends in Hot Places
+	##Icon For: Opening the Political Sphere
 	SpriteType = { 
-		name = "GFX_SAY_friends_in_hot_places-45053"
-		texturefile = "gfx/interface/goals/GFX_SAY_friends_in_hot_places-45053.dds"
+		name = "GFX_SAY_opening_the_political_sphere-94923"
+		texturefile = "gfx/interface/goals/GFX_SAY_opening_the_political_sphere-94923.dds"
 	}
 
-	##Icon Shine For: Friends in Hot Places
+	##Icon Shine For: Opening the Political Sphere
 	SpriteType = { 
-		name = "GFX_SAY_friends_in_hot_places-45053_shine"
-		texturefile = "gfx/interface/goals/GFX_SAY_friends_in_hot_places-45053.dds"
+		name = "GFX_SAY_opening_the_political_sphere-94923_shine"
+		texturefile = "gfx/interface/goals/GFX_SAY_opening_the_political_sphere-94923.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_SAY_friends_in_hot_places-45053.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_opening_the_political_sphere-94923.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -137,7 +137,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_SAY_friends_in_hot_places-45053.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_opening_the_political_sphere-94923.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -151,19 +151,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: Strengthen Saylish North America
+	##Icon For: Two Languages for the Army
 	SpriteType = { 
-		name = "GFX_SAY_strengthen_saylish_north_america-44541"
-		texturefile = "gfx/interface/goals/GFX_SAY_strengthen_saylish_north_america-44541.dds"
+		name = "GFX_SAY_two_languages_for_the_army-95105"
+		texturefile = "gfx/interface/goals/GFX_SAY_two_languages_for_the_army-95105.dds"
 	}
 
-	##Icon Shine For: Strengthen Saylish North America
+	##Icon Shine For: Two Languages for the Army
 	SpriteType = { 
-		name = "GFX_SAY_strengthen_saylish_north_america-44541_shine"
-		texturefile = "gfx/interface/goals/GFX_SAY_strengthen_saylish_north_america-44541.dds"
+		name = "GFX_SAY_two_languages_for_the_army-95105_shine"
+		texturefile = "gfx/interface/goals/GFX_SAY_two_languages_for_the_army-95105.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_SAY_strengthen_saylish_north_america-44541.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_two_languages_for_the_army-95105.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -175,7 +175,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_SAY_strengthen_saylish_north_america-44541.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_two_languages_for_the_army-95105.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -189,19 +189,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: Pacify Belarus
+	##Icon For: Invite the American Generals
 	SpriteType = { 
-		name = "GFX_SAY_pacify_belarus-44779"
-		texturefile = "gfx/interface/goals/GFX_SAY_pacify_belarus-44779.dds"
+		name = "GFX_SAY_invite_the_american_generals-94924"
+		texturefile = "gfx/interface/goals/GFX_SAY_invite_the_american_generals-94924.dds"
 	}
 
-	##Icon Shine For: Pacify Belarus
+	##Icon Shine For: Invite the American Generals
 	SpriteType = { 
-		name = "GFX_SAY_pacify_belarus-44779_shine"
-		texturefile = "gfx/interface/goals/GFX_SAY_pacify_belarus-44779.dds"
+		name = "GFX_SAY_invite_the_american_generals-94924_shine"
+		texturefile = "gfx/interface/goals/GFX_SAY_invite_the_american_generals-94924.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_SAY_pacify_belarus-44779.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_invite_the_american_generals-94924.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -213,7 +213,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_SAY_pacify_belarus-44779.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_invite_the_american_generals-94924.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -227,19 +227,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: War with the Midwest
+	##Icon For: Establishing the Regional Presidents
 	SpriteType = { 
-		name = "GFX_SAY_war_with_the_midwest-45168"
-		texturefile = "gfx/interface/goals/GFX_SAY_war_with_the_midwest-45168.dds"
+		name = "GFX_SAY_establishing_the_regional_presidents-95052"
+		texturefile = "gfx/interface/goals/GFX_SAY_establishing_the_regional_presidents-95052.dds"
 	}
 
-	##Icon Shine For: War with the Midwest
+	##Icon Shine For: Establishing the Regional Presidents
 	SpriteType = { 
-		name = "GFX_SAY_war_with_the_midwest-45168_shine"
-		texturefile = "gfx/interface/goals/GFX_SAY_war_with_the_midwest-45168.dds"
+		name = "GFX_SAY_establishing_the_regional_presidents-95052_shine"
+		texturefile = "gfx/interface/goals/GFX_SAY_establishing_the_regional_presidents-95052.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_SAY_war_with_the_midwest-45168.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_establishing_the_regional_presidents-95052.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -251,7 +251,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_SAY_war_with_the_midwest-45168.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_establishing_the_regional_presidents-95052.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -265,19 +265,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: A Settlement
+	##Icon For: Saylish Dominance
 	SpriteType = { 
-		name = "GFX_SAY_a_settlement-45047"
-		texturefile = "gfx/interface/goals/GFX_SAY_a_settlement-45047.dds"
+		name = "GFX_SAY_saylish_dominance-45093"
+		texturefile = "gfx/interface/goals/GFX_SAY_saylish_dominance-45093.dds"
 	}
 
-	##Icon Shine For: A Settlement
+	##Icon Shine For: Saylish Dominance
 	SpriteType = { 
-		name = "GFX_SAY_a_settlement-45047_shine"
-		texturefile = "gfx/interface/goals/GFX_SAY_a_settlement-45047.dds"
+		name = "GFX_SAY_saylish_dominance-45093_shine"
+		texturefile = "gfx/interface/goals/GFX_SAY_saylish_dominance-45093.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_SAY_a_settlement-45047.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_saylish_dominance-45093.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -289,7 +289,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_SAY_a_settlement-45047.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_saylish_dominance-45093.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -303,19 +303,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: War is the only way
+	##Icon For: Finish Belarus
 	SpriteType = { 
-		name = "GFX_SAY_war_is_the_only_way-45094"
-		texturefile = "gfx/interface/goals/GFX_SAY_war_is_the_only_way-45094.dds"
+		name = "GFX_SAY_finish_belarus-44551"
+		texturefile = "gfx/interface/goals/GFX_SAY_finish_belarus-44551.dds"
 	}
 
-	##Icon Shine For: War is the only way
+	##Icon Shine For: Finish Belarus
 	SpriteType = { 
-		name = "GFX_SAY_war_is_the_only_way-45094_shine"
-		texturefile = "gfx/interface/goals/GFX_SAY_war_is_the_only_way-45094.dds"
+		name = "GFX_SAY_finish_belarus-44551_shine"
+		texturefile = "gfx/interface/goals/GFX_SAY_finish_belarus-44551.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_SAY_war_is_the_only_way-45094.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_finish_belarus-44551.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -327,7 +327,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_SAY_war_is_the_only_way-45094.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_finish_belarus-44551.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -341,19 +341,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: Prepare to Invade Alabama
+	##Icon For: Revitalize Imperial Sayland
 	SpriteType = { 
-		name = "GFX_SAY_prepare_to_invade_alabama-45046"
-		texturefile = "gfx/interface/goals/GFX_SAY_prepare_to_invade_alabama-45046.dds"
+		name = "GFX_SAY_revitalize_imperial_sayland-95096"
+		texturefile = "gfx/interface/goals/GFX_SAY_revitalize_imperial_sayland-95096.dds"
 	}
 
-	##Icon Shine For: Prepare to Invade Alabama
+	##Icon Shine For: Revitalize Imperial Sayland
 	SpriteType = { 
-		name = "GFX_SAY_prepare_to_invade_alabama-45046_shine"
-		texturefile = "gfx/interface/goals/GFX_SAY_prepare_to_invade_alabama-45046.dds"
+		name = "GFX_SAY_revitalize_imperial_sayland-95096_shine"
+		texturefile = "gfx/interface/goals/GFX_SAY_revitalize_imperial_sayland-95096.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_SAY_prepare_to_invade_alabama-45046.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_revitalize_imperial_sayland-95096.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -365,7 +365,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_SAY_prepare_to_invade_alabama-45046.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_revitalize_imperial_sayland-95096.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -379,19 +379,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: American Dominance
+	##Icon For: The Days When the Sun Never Set
 	SpriteType = { 
-		name = "GFX_SAY_american_dominance-45093"
-		texturefile = "gfx/interface/goals/GFX_SAY_american_dominance-45093.dds"
+		name = "GFX_SAY_the_days_when_the_sun_never_set-95097"
+		texturefile = "gfx/interface/goals/GFX_SAY_the_days_when_the_sun_never_set-95097.dds"
 	}
 
-	##Icon Shine For: American Dominance
+	##Icon Shine For: The Days When the Sun Never Set
 	SpriteType = { 
-		name = "GFX_SAY_american_dominance-45093_shine"
-		texturefile = "gfx/interface/goals/GFX_SAY_american_dominance-45093.dds"
+		name = "GFX_SAY_the_days_when_the_sun_never_set-95097_shine"
+		texturefile = "gfx/interface/goals/GFX_SAY_the_days_when_the_sun_never_set-95097.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_SAY_american_dominance-45093.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_the_days_when_the_sun_never_set-95097.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -403,7 +403,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_SAY_american_dominance-45093.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_the_days_when_the_sun_never_set-95097.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -417,19 +417,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: An Offer of Union
+	##Icon For: War with Ukraine
 	SpriteType = { 
-		name = "GFX_SAY_an_offer_of_union-45071"
-		texturefile = "gfx/interface/goals/GFX_SAY_an_offer_of_union-45071.dds"
+		name = "GFX_SAY_war_with_ukraine-95082"
+		texturefile = "gfx/interface/goals/GFX_SAY_war_with_ukraine-95082.dds"
 	}
 
-	##Icon Shine For: An Offer of Union
+	##Icon Shine For: War with Ukraine
 	SpriteType = { 
-		name = "GFX_SAY_an_offer_of_union-45071_shine"
-		texturefile = "gfx/interface/goals/GFX_SAY_an_offer_of_union-45071.dds"
+		name = "GFX_SAY_war_with_ukraine-95082_shine"
+		texturefile = "gfx/interface/goals/GFX_SAY_war_with_ukraine-95082.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_SAY_an_offer_of_union-45071.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_war_with_ukraine-95082.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -441,7 +441,273 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_SAY_an_offer_of_union-45071.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_war_with_ukraine-95082.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Midwestern Punishment
+	SpriteType = { 
+		name = "GFX_SAY_midwestern_punishment-45168"
+		texturefile = "gfx/interface/goals/GFX_SAY_midwestern_punishment-45168.dds"
+	}
+
+	##Icon Shine For: Midwestern Punishment
+	SpriteType = { 
+		name = "GFX_SAY_midwestern_punishment-45168_shine"
+		texturefile = "gfx/interface/goals/GFX_SAY_midwestern_punishment-45168.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_midwestern_punishment-45168.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_midwestern_punishment-45168.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Demand Greenland
+	SpriteType = { 
+		name = "GFX_SAY_demand_greenland-45048"
+		texturefile = "gfx/interface/goals/GFX_SAY_demand_greenland-45048.dds"
+	}
+
+	##Icon Shine For: Demand Greenland
+	SpriteType = { 
+		name = "GFX_SAY_demand_greenland-45048_shine"
+		texturefile = "gfx/interface/goals/GFX_SAY_demand_greenland-45048.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_demand_greenland-45048.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_demand_greenland-45048.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Put the Squeeze on Alabama
+	SpriteType = { 
+		name = "GFX_SAY_put_the_squeeze_on_alabama-45046"
+		texturefile = "gfx/interface/goals/GFX_SAY_put_the_squeeze_on_alabama-45046.dds"
+	}
+
+	##Icon Shine For: Put the Squeeze on Alabama
+	SpriteType = { 
+		name = "GFX_SAY_put_the_squeeze_on_alabama-45046_shine"
+		texturefile = "gfx/interface/goals/GFX_SAY_put_the_squeeze_on_alabama-45046.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_put_the_squeeze_on_alabama-45046.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_put_the_squeeze_on_alabama-45046.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Offer Florida a Non-Aggression Pact
+	SpriteType = { 
+		name = "GFX_SAY_offer_florida_a_nonaggression_pact-45053"
+		texturefile = "gfx/interface/goals/GFX_SAY_offer_florida_a_nonaggression_pact-45053.dds"
+	}
+
+	##Icon Shine For: Offer Florida a Non-Aggression Pact
+	SpriteType = { 
+		name = "GFX_SAY_offer_florida_a_nonaggression_pact-45053_shine"
+		texturefile = "gfx/interface/goals/GFX_SAY_offer_florida_a_nonaggression_pact-45053.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_offer_florida_a_nonaggression_pact-45053.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_offer_florida_a_nonaggression_pact-45053.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Dawn of the North American Federation
+	SpriteType = { 
+		name = "GFX_SAY_dawn_of_the_north_american_federation-45071"
+		texturefile = "gfx/interface/goals/GFX_SAY_dawn_of_the_north_american_federation-45071.dds"
+	}
+
+	##Icon Shine For: Dawn of the North American Federation
+	SpriteType = { 
+		name = "GFX_SAY_dawn_of_the_north_american_federation-45071_shine"
+		texturefile = "gfx/interface/goals/GFX_SAY_dawn_of_the_north_american_federation-45071.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_dawn_of_the_north_american_federation-45071.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_dawn_of_the_north_american_federation-45071.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Core Canada
+	SpriteType = { 
+		name = "GFX_SAY_core_canada-95092"
+		texturefile = "gfx/interface/goals/GFX_SAY_core_canada-95092.dds"
+	}
+
+	##Icon Shine For: Core Canada
+	SpriteType = { 
+		name = "GFX_SAY_core_canada-95092_shine"
+		texturefile = "gfx/interface/goals/GFX_SAY_core_canada-95092.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_core_canada-95092.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_core_canada-95092.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: War with Alabama
+	SpriteType = { 
+		name = "GFX_SAY_war_with_alabama-45092"
+		texturefile = "gfx/interface/goals/GFX_SAY_war_with_alabama-45092.dds"
+	}
+
+	##Icon Shine For: War with Alabama
+	SpriteType = { 
+		name = "GFX_SAY_war_with_alabama-45092_shine"
+		texturefile = "gfx/interface/goals/GFX_SAY_war_with_alabama-45092.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_war_with_alabama-45092.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_war_with_alabama-45092.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no

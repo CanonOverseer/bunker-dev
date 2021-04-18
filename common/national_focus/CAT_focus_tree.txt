@@ -1571,7 +1571,7 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Augustus Chest Hairos"
-	desc = "TBD"
+	desc = chesthair_desc
 	picture = "gfx/leaders/CAT/chest_hair.dds"
 	expire = "1965.1.1"
 	ideology = despotism
