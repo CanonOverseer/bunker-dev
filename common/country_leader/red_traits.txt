@@ -263,6 +263,23 @@ leader_traits = {
 
 	}
 
+	BEL_post_civil_war_trait = {
+		random = no
+
+		targeted_modifier = {
+			tag = BNK
+			generate_wargoal_tension_against = 0.75
+		}
+		targeted_modifier = {
+			tag = RED
+			generate_wargoal_tension_against = 0.75
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	war_criminal_bomber = { # Strategic Bombing mission efficiency increased by 12%
 		sprite = 2
 		air_strategic_bomber_attack_factor = 0.03
