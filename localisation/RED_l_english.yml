@@ -178,11 +178,10 @@
  BNK_imperial_senate_supportive:0 "The Imperial Senate"
  BNK_imperial_senate_supportive_desc:0 "the Imperial Senate is the Upper House of the Republic and soon, the Empire and was formed by Canon as a replacement to the National Council\n The Imperial Senate is Currently §GSupportive§! of the Emperor"
  BNK_imperial_senate_tooltip:0 "The Imperial Senate grants you a set of bonuses which will get stronger then they are §GSupportive§! and reverse when they are §ROpposed§!."
+ SAY_rename_konigsberg:0 "Rename Konigsberg"
+ SAY_rename_konigsberg_desc:0 "We should get rid of the name Konigsberg in favor of being named after our glorious emperor!"
 
  BNK_canon_armychief:0 "Can(n)on"
- BEL_isp_won_1:0 "ISP Has won the Elections" 
- BEL_isp_won_2:0 "ISP Has won the Elections" 
- BEL_isp_won_3:0 "ISP Has won the Elections" 
  BNK_like:0 "Likes Government"
  BNK_new_calendar:0 "New Calendar"
  BNK_new_calendar_desc:0 "the New Bunker Calendar is confusing our soldiers"
