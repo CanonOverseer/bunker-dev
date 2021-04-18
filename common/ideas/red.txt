@@ -300,29 +300,6 @@ ideas = {
 			}
 		}
 
-		FRA_former_colonial_government = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			picture = FRA_former_colonial_government
-
-			modifier = {			
-				conscription_factor = 0.2
-				occupation_cost = -0.25
-				resistance_target_on_our_occupied_states = -0.1
-				political_power_factor = -0.3
-				surrender_limit = 0.75
-			}
-		}
-
 		BNK_imperial_research = {
 
 			allowed = {
@@ -780,34 +757,6 @@ ideas = {
 				stability_factor = -0.05
 			}
 		}
-
-		un_member = {
-			allowed = {
-				always = no
-			}
-		
-			allowed_civil_war = {
-				always = yes
-			}
-		
-			removal_cost = -1
-		
-			picture = un_member
-		
-			modifier = {
-				neutrality_drift = 0.02
-				fascism_drift = 0.02
-				mic_to_target_factor = 0.10
-				ai_focus_defense_factor = 0.5
-				army_morale_factor = -0.1
-				resistance_target = -0.1
-				justify_war_goal_time = 0.25
-				hidden_modifier = {
-					surrender_limit = -0.2
-				}
-			}
-		}
-
 
 		SBR_white_army_remnant = {
 			allowed = {
