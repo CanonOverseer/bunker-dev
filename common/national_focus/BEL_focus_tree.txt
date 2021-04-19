@@ -7,35 +7,159 @@ focus_tree = {
 			tag = BEL
 		}
 	}
-	#Focus for Protect the Channel
+	#Focus for Exploit the Congo
 	focus = {
-		id = BEL_protect_the_channel
-		icon = GFX_BEL_protect_the_channel-58103
-		x = 13
+		id = BEL_exploit_the_congo
+		icon = GFX_BEL_exploit_the_congo-95257
+		x = 8
+		y = 4
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_the_member_state_development_committee }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Belgian Arms Industry
+	focus = {
+		id = BEL_the_belgian_arms_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 5
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_develop_brussels }
+		mutually_exclusive = { focus = BEL_the_belgian_sweatshops }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Invest in the Reds
+	focus = {
+		id = BEL_invest_in_the_reds
+		icon = GFX_goal_unknown
+		x = 8
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_the_member_state_development_committee }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Develop Brussels
+	focus = {
+		id = BEL_develop_brussels
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 4
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_industrial_development }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Belgian Sweatshops
+	focus = {
+		id = BEL_the_belgian_sweatshops
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 3
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_develop_brussels }
+		mutually_exclusive = { focus = BEL_the_belgian_arms_industry }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The UN Peacekeeping Force
+	focus = {
+		id = BEL_the_un_peacekeeping_force
+		icon = GFX_goal_unknown
+		x = 22
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = BEL_luxembourg_expansion 
+			focus = BEL_the_first_united_nations_cabinet 
 		}
 		prerequisite = { 
-			focus = BEL_civilian_expansion_in_alsace_lorraine 
+			focus = BEL_reorganize_the_un 
 		}
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-			add_ideas= BEL_Coastal_protection
+	}
+
+	#Focus for Infiltrate the Colonial Administration
+	focus = {
+		id = BEL_infiltrate_the_colonial_administration
+		icon = GFX_BEL_infiltrate_the_colonial_administration-95101
+		x = 12
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_increase_control_of_the_netherlands }
+		ai_will_do = {
+			factor = 1
 		}
 	}
 
-	#Focus for Strengthen the UN
+	#Focus for Infiltrate the Military
 	focus = {
-		id = BEL_strengthen_the_un
-		icon = GFX_goal_generic_military_sphere
-		x = 12
-		y = 0
-		cost = 2
+		id = BEL_infiltrate_the_military
+		icon = GFX_BEL_infiltrate_the_military-95100
+		x = 10
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_increase_control_of_the_netherlands }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Increase Control of the Netherlands
+	focus = {
+		id = BEL_increase_control_of_the_netherlands
+		icon = GFX_BEL_increase_control_of_the_netherlands-95099
+		x = 11
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_reorganize_the_un }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Industrial Development
+	focus = {
+		id = BEL_industrial_development
+		icon = GFX_goal_unknown
+		x = 4
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reorganize the UN
+	focus = {
+		id = BEL_reorganize_the_un
+		icon = GFX_BEL_reorganize_the_un-95098
+		x = 15
+		y = 1
+		cost = 5
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -45,689 +169,157 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Economic Expansion
+	#Focus for Operation Tulip
 	focus = {
-		id = BEL_economic_expansion
-		icon = GFX_goal_generic_positive_trade_relations
-		x = 20
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BEL_strengthen_the_un }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_ideas= BEL_economic_expansion
-
-add_tech_bonus = {
-name = GER_four_year_plan
-bonus = 1.0
-uses = 2
-category = industry
-	}
-		}
-	}
-
-	#Focus for Holland's Days Are Numbered
-	focus = {
-		id = BEL_hollands_days_are_numbered
-		icon = GFX_BEL_hollands_days_are_numbered-58096
-		x = 11
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = BEL_luxembourg_expansion 
-		}
-		prerequisite = { 
-			focus = BEL_civilian_expansion_in_alsace_lorraine 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_state_core= 36  
-
-add_state_core= 7
-		}
-	}
-
-	#Focus for An Expansion of our Forces
-	focus = {
-		id = BEL_an_expansion_of_our_forces
-		icon = GFX_BEL_an_expansion_of_our_forces-58098
-		x = 9
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = BEL_luxembourg_expansion 
-		}
-		prerequisite = { 
-			focus = BEL_civilian_expansion_in_alsace_lorraine 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_manpower= 50000  
-
-add_ideas= BEL_armed_force_expansion
-		}
-	}
-
-	#Focus for Civilian Expansion In Alsace Lorraine
-	focus = {
-		id = BEL_civilian_expansion_in_alsace_lorraine
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 12
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BEL_restore_the_world_order }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			28 = {
-    add_extra_state_shared_building_slots = 1
-    add_building_construction = {
-        type = industrial_complex
-        level = 1
-        instant_build = yes
-   }
-}
-		}
-	}
-
-	#Focus for A Swift Conquest
-	focus = {
-		id = BEL_a_swift_conquest
-		icon = GFX_focus_hol_oranje_boven
+		id = BEL_operation_tulip
+		icon = GFX_BEL_operation_tulip-95102
 		x = 11
 		y = 4
-		cost = 10
+		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = BEL_an_expansion_of_our_forces 
+			focus = BEL_infiltrate_the_military 
 		}
 		prerequisite = { 
-			focus = BEL_protect_the_channel 
-		}
-		prerequisite = { 
-			focus = BEL_hollands_days_are_numbered 
+			focus = BEL_infiltrate_the_colonial_administration 
 		}
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-			country_event= {
-days = 1 
-id = unitednationsevent.1
-}
-		}
 	}
 
-	#Focus for Luxembourg Expansion
+	#Focus for Pacify the Dutch
 	focus = {
-		id = BEL_luxembourg_expansion
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 10
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BEL_restore_the_world_order }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			8 = {
-    add_extra_state_shared_building_slots = 1
-    add_building_construction = {
-        type = arms_factory
-        level = 1
-        instant_build = yes
-   }
-}
-		}
-	}
-
-	#Focus for Restore the World Order
-	focus = {
-		id = BEL_restore_the_world_order
-		icon = GFX_BEL_restore_the_world_order-74057
-		x = 12
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BEL_strengthen_the_un }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_ideas= BEL_radical_approach
-
-add_stability= 0.15 
-
-add_war_support= 0.4
-		}
-	}
-
-	#Focus for Effective Military Production
-	focus = {
-		id = BEL_effective_military_production
-		icon = GFX_BEL_effective_military_production-58175
-		x = 19
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BEL_economic_expansion }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_ideas= BEL_effective_military
-		}
-	}
-
-	#Focus for Infrastructure Construction Plan
-	focus = {
-		id = BEL_infrastructure_construction_plan
-		icon = GFX_goal_generic_construct_infrastructure
-		x = 21
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BEL_economic_expansion }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_ideas= BEL_infrastructure_expansion
-		}
-	}
-
-	#Focus for Naval Base Expansion
-	focus = {
-		id = BEL_naval_base_expansion
-		icon = GFX_BEL_naval_base_expansion-58177
-		x = 18
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = BEL_effective_military_production 
-		}
-		prerequisite = { 
-			focus = BEL_infrastructure_construction_plan 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			29 = {
-    add_extra_state_shared_building_slots = 3
-    add_building_construction = {
-        type = dockyard
-        level = 2
-        instant_build = yes
-   }
-}
-		}
-	}
-
-	#Focus for Military Expansion of Wallonia
-	focus = {
-		id = BEL_military_expansion_of_wallonia
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 20
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = BEL_effective_military_production 
-		}
-		prerequisite = { 
-			focus = BEL_infrastructure_construction_plan 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			34 = {
-    add_extra_state_shared_building_slots = 2
-    add_building_construction = {
-        type = arms_factory
-        level = 2
-        instant_build = yes
-   }
-}
-		}
-	}
-
-	#Focus for Civilian Expansion in Flanders
-	focus = {
-		id = BEL_civilian_expansion_in_flanders
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 22
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = BEL_effective_military_production 
-		}
-		prerequisite = { 
-			focus = BEL_infrastructure_construction_plan 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			6 = {
-    add_extra_state_shared_building_slots = 2
-    add_building_construction = {
-        type = industrial_complex
-        level = 2
-        instant_build = yes
-   }
-}
-		}
-	}
-
-	#Focus for UN Peacekeepers
-	focus = {
-		id = BEL_un_peacekeepers
-		icon = GFX_BEL_un_peacekeepers-58180
-		x = 28
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BEL_strengthen_the_un }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			army_experience = 5
-
-add_tech_bonus = {
-name = land_doc_bonus
-bonus = 1.0
-uses = 1
-category = land_doctrine
-	}
-		}
-	}
-
-	#Focus for The Bigger the Gun the Better
-	focus = {
-		id = BEL_the_bigger_the_gun_the_better
-		icon = GFX_goal_generic_army_artillery2
-		x = 27
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BEL_un_peacekeepers }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_tech_bonus = {
-name = infantry_artillery_bonus
-bonus = 1.0
-uses = 1
-category = infantry_weapons
-category = artillery
-	}
-		}
-	}
-
-	#Focus for Armored Peacekeepers
-	focus = {
-		id = BEL_armored_peacekeepers
-		icon = GFX_goal_generic_army_tanks
-		x = 29
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BEL_un_peacekeepers }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_tech_bonus = {
-name = armor_bonus
-bonus = 1.0
-uses = 2
-category = armor
-	}
-		}
-	}
-
-	#Focus for Motorized Warfare
-	focus = {
-		id = BEL_motorized_warfare
-		icon = GFX_goal_generic_army_motorized
-		x = 26
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = BEL_the_bigger_the_gun_the_better 
-		}
-		prerequisite = { 
-			focus = BEL_armored_peacekeepers 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_tech_bonus = {
-name = motorized_bonus
-bonus = 3.0
-technology = motorised_infantry
-	}
-		}
-	}
-
-	#Focus for Peacekeeper Expansion
-	focus = {
-		id = BEL_peacekeeper_expansion
-		icon = GFX_BEL_peacekeeper_expansion-58187
-		x = 28
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = BEL_armored_peacekeepers 
-		}
-		prerequisite = { 
-			focus = BEL_the_bigger_the_gun_the_better 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_tech_bonus = {
-name = infantry_artillery_bonus
-bonus = 1.0
-uses = 1
-category = infantry_weapons
-category = artillery
-	}
-		}
-	}
-
-	#Focus for Expand our Research
-	focus = {
-		id = BEL_expand_our_research
-		icon = GFX_focus_research2
-		x = 30
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = BEL_armored_peacekeepers 
-		}
-		prerequisite = { 
-			focus = BEL_the_bigger_the_gun_the_better 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_research_slot= 1
-		}
-	}
-
-	#Focus for Army Defense Plan
-	focus = {
-		id = BEL_army_defense_plan
-		icon = GFX_BEL_army_defense_plan-58190
-		x = 13
+		id = BEL_pacify_the_dutch
+		icon = GFX_BEL_pacify_the_dutch-95106
+		x = 11
 		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BEL_a_swift_conquest }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_ideas= BEL_army_defense_plan
-		}
-	}
-
-	#Focus for Militaristic Peacekeepers
-	focus = {
-		id = BEL_militaristic_peacekeepers
-		icon = GFX_goal_generic_attack_allies
-		x = 16
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BEL_army_defense_plan }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_ideas = militarism_focus
-		}
-	}
-
-	#Focus for Rule with an Iron Fist!
-	focus = {
-		id = BEL_rule_with_an_iron_fist
-		icon = GFX_BEL_rule_with_an_iron_fist-58209
-		x = 10
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BEL_army_defense_plan }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_ideas= BEL_rule_with_an_iron_fist
-		}
-	}
-
-	#Focus for Destroy the Reds
-	focus = {
-		id = BEL_destroy_the_reds
-		icon = GFX_goal_generic_major_war
-		x = 28
-		y = 4
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = BEL_expand_our_research 
+			focus = BEL_demilitarize_the_rhineland 
 		}
 		prerequisite = { 
-			focus = BEL_peacekeeper_expansion 
-		}
-		prerequisite = { 
-			focus = BEL_motorized_warfare 
+			focus = BEL_operation_tulip 
 		}
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-			create_wargoal= { 
-type = annex_everything 
-target = RED
-}
-
-RED = { leave_faction = yes }
-		}
 	}
 
-	#Focus for Brittany's Last Breath
+	#Focus for The First United Nations Cabinet
 	focus = {
-		id = BEL_brittanys_last_breath
-		icon = GFX_BEL_brittanys_last_breath-53085
-		x = 20
-		y = 4
+		id = BEL_the_first_united_nations_cabinet
+		icon = GFX_BEL_the_first_united_nations_cabinet-95107
+		x = 15
+		y = 2
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = BEL_naval_base_expansion 
-		}
-		prerequisite = { 
-			focus = BEL_military_expansion_of_wallonia 
-		}
-		prerequisite = { 
-			focus = BEL_civilian_expansion_in_flanders 
-		}
+		prerequisite = { focus = BEL_reorganize_the_un }
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-			create_wargoal= { 
-type = annex_everything 
-target = BRI
-}
-		}
 	}
 
-	#Focus for Prepare to Invade the Bunker
+	#Focus for Demilitarize the Rhineland
 	focus = {
-		id = BEL_prepare_to_invade_the_bunker
-		icon = GFX_BEL_prepare_to_invade_the_bunker-44476
+		id = BEL_demilitarize_the_rhineland
+		icon = GFX_BEL_demilitarize_the_rhineland-95108
 		x = 13
-		y = 8
-		cost = 10
+		y = 4
+		cost = 8
 		available_if_capitulated = yes
+		prerequisite = { focus = BEL_the_first_united_nations_cabinet }
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			army_experience= 10
 		}
 	}
 
-	#Focus for Destroyers Will Destroy Them
+	#Focus for The Third UN Elections
 	focus = {
-		id = BEL_destroyers_will_destroy_them
-		icon = GFX_goal_generic_navy_battleship
-		x = 12
-		y = 9
+		id = BEL_the_third_un_elections
+		icon = GFX_BEL_the_third_un_elections-95109
+		x = 17
+		y = 3
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = BEL_prepare_to_invade_the_bunker }
+		prerequisite = { focus = BEL_the_first_united_nations_cabinet }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 0.5 
-uses = 2 
-category = dd_tech
+			country_event = {
+id = unitednations.1
+days = 1
 }
 		}
 	}
 
-	#Focus for Research Before Invasion
+	#Focus for the Noble iSorrowProductions
 	focus = {
-		id = BEL_research_before_invasion
-		icon = GFX_focus_research2
-		x = 14
-		y = 9
+		id = BEL_the_noble_isorrowproductions
+		icon = GFX_BEL_the_noble_isorrowproductions-95110
+		x = 17
+		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = BEL_prepare_to_invade_the_bunker }
+		prerequisite = { focus = BEL_the_third_un_elections }
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-			add_research_slot= 1
+		available = {
+			has_country_flag = BEL_isp_won_2
 		}
 	}
 
-	#Focus for Airbase Building
+	#Focus for the Grand iSorrowproductions
 	focus = {
-		id = BEL_airbase_building
-		icon = GFX_goal_generic_build_airforce
-		x = 16
-		y = 9
+		id = BEL_the_grand_isorrowproductions
+		icon = GFX_BEL_the_grand_isorrowproductions-95111
+		x = 15
+		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = BEL_prepare_to_invade_the_bunker }
+		prerequisite = { focus = BEL_the_third_un_elections }
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-			6 = {
-add_building_construction =  {
-type = air_base
-level = 2
-instant_build = yes }
-    }
+		available = {
+			has_country_flag = BEL_isp_won_1
 		}
 	}
 
-	#Focus for End the Purples
+	#Focus for the Majestic iSorrowproductions
 	focus = {
-		id = BEL_end_the_purples
-		icon = GFX_BEL_end_the_purples-53084
-		x = 14
-		y = 10
+		id = BEL_the_majestic_isorrowproductions
+		icon = GFX_BEL_the_majestic_isorrowproductions-95112
+		x = 19
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_the_third_un_elections }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_flag = BEL_isp_won_3
+		}
+	}
+
+	#Focus for The Member State Development Committee
+	focus = {
+		id = BEL_the_member_state_development_committee
+		icon = GFX_goal_unknown
+		x = 7
+		y = 2
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = BEL_destroyers_will_destroy_them 
+			focus = BEL_reorganize_the_un 
 		}
 		prerequisite = { 
-			focus = BEL_airbase_building 
+			focus = BEL_industrial_development 
 		}
-		prerequisite = { 
-			focus = BEL_research_before_invasion 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			create_wargoal= { 
-type = annex_everything 
-target = BNK
-}
-		}
-	}
-
-	#Focus for The Rhineland Mandate
-	focus = {
-		id = BEL_the_rhineland_mandate
-		icon = GFX_goal_unknown
-		x = 29
-		y = 8
-		cost = 1
-		available_if_capitulated = yes
-		prerequisite = { focus = BEL_the_diplomatic_corp }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for anchor
-	focus = {
-		id = BEL_anchor
-		icon = GFX_goal_unknown
-		x = 51
-		y = 11
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for The "Diplomatic" Corp
-	focus = {
-		id = BEL_the_diplomatic_corp
-		icon = GFX_goal_unknown
-		x = 29
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
 		}

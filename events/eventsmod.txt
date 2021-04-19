@@ -1699,7 +1699,44 @@ news_event = { # ethiopia peace
 	}
 }
 
+country_event = { # americans revolt in sayland
+	id = eventsmod.1938
+	title = eventsmod.1938.t
+	desc = eventsmod.1938.d
+	picture = GFX_report_event_german_reichstag_gathering
+	is_triggered_only = yes
+	major = no
 
+	immediate = {
+		hidden_effect = {
+			start_civil_war = {
+				ideology = democratic
+				size = 0.3
+				only_own_territory = yes
+				capital = 282
+				states = { 
+
+				}
+				keep_unit_leaders_trigger = { always = yes }
+				keep_political_leader = yes
+			}
+			random_other_country = {
+				limit = {
+					original_tag = SAY
+					has_government = democratic
+				}
+				set_stability = 0.6
+				set_war_support = 1
+				set_cosmetic_tag = FSA_revolt
+				set_country_flag = is_FSA
+			}
+		}
+	}
+
+	option = { #
+	name = eventsmod.1938.a
+	}
+}
 
 
 

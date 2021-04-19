@@ -143,12 +143,13 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = rexism
 	traits = {
-		#
+		warmonger
+		BEL_post_civil_war_trait
 	}
 }
 
 create_country_leader = {
-	name = "ISorrowProductions"
+	name = "ISP"
 	desc = "biggay"
 	picture = "gfx/leaders/BEL/ISP.dds"
 	expire = "1965.1.1"

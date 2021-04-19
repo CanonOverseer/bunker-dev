@@ -172,13 +172,16 @@
  BNK_imperial_research:0 "The Imperial Academy for the Sciences"
  BNK_nuclear_program:0 "the Bunker Nuclear Program"
  BNK_imperial_senate:0 "The Imperial Senate"
- BNK_imperial_senate_desc:0 "the Imperial Senate is the Upper House of the Republic and soon, the Empire and was formed by Canon as a replacement to the National Council\n The Imperial Senate is Currently: §gNeutral§! to the Emperor"
+ BNK_imperial_senate_desc:0 "the Imperial Senate is the Upper House of the Republic and soon, the Empire and was formed by Canon as a replacement to the National Council\n The Imperial Senate is Currently §gNeutral§! to the Emperor"
  BNK_imperial_senate_opposed:0 "The Imperial Senate"
- BNK_imperial_senate_opposed_desc:0 "the Imperial Senate is the Upper House of the Republic and soon, the Empire and was formed by Canon as a replacement to the National Council\n The Imperial Senate is Currently: §ROpposed§! to the Emperor"
+ BNK_imperial_senate_opposed_desc:0 "the Imperial Senate is the Upper House of the Republic and soon, the Empire and was formed by Canon as a replacement to the National Council\n The Imperial Senate is Currently §ROpposed§! to the Emperor"
  BNK_imperial_senate_supportive:0 "The Imperial Senate"
- BNK_imperial_senate_supportive_desc:0 "the Imperial Senate is the Upper House of the Republic and soon, the Empire and was formed by Canon as a replacement to the National Council\n The Imperial Senate is Currently: §GSupportive§! of the Emperor"
+ BNK_imperial_senate_supportive_desc:0 "the Imperial Senate is the Upper House of the Republic and soon, the Empire and was formed by Canon as a replacement to the National Council\n The Imperial Senate is Currently §GSupportive§! of the Emperor"
  BNK_imperial_senate_tooltip:0 "The Imperial Senate grants you a set of bonuses which will get stronger then they are §GSupportive§! and reverse when they are §ROpposed§!."
-
+ SAY_rename_konigsberg:0 "Rename Konigsberg"
+ SAY_rename_konigsberg_desc:0 "We should get rid of the name Konigsberg in favor of being named after our glorious emperor!"
+ 
+ 
  BNK_canon_armychief:0 "Can(n)on"
  BNK_like:0 "Likes Government"
  BNK_new_calendar:0 "New Calendar"
@@ -237,6 +240,9 @@
  ISR_SOV_subject_communism_ADJ:0 "Soviet Jewish"
  BNK_annexation_of_normandy:0 "Annexation of Normandy"
  BNK_annexation_of_brittany:0 "Annexation of Brittany"
+ FSA_revolt_democratic:0 "Free States of America"
+ FSA_revolt_democratic_def:0 "the Free States of America"
+ FSA_revolt_democratic_adj:0 "American"
 
  BNK_air_logan:0 "Logan"
  war_criminal_bomber:0 "War Criminal (Expert)"

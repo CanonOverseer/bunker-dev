@@ -7,1384 +7,30 @@ focus_tree = {
 			tag = SAY
 		}
 	}
-	#Focus for New England Build Up
+	#Focus for Industry Expanding Efforts
 	focus = {
-		id = SAY_new_england_build_up
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 24
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = SAY_naval_buildup_of_new_warsaw 
-		}
-		prerequisite = { 
-			focus = SAY_infrastructure_in_west_virginia 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			357 = {
-    add_extra_state_shared_building_slots = 2
-    add_building_construction = {
-        type = industrial_complex
-        level = 2
-        instant_build = yes
-   }
-}
-		}
-	}
-
-	#Focus for Naval Buildup of New Warsaw
-	focus = {
-		id = SAY_naval_buildup_of_new_warsaw
-		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 23
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_strengthen_saylish_north_america }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			358 = {
-    add_extra_state_shared_building_slots = 3
-    add_building_construction = {
-        type = dockyard
-        level = 4
-        instant_build = yes
-   }
-}
-		}
-	}
-
-	#Focus for Krakow Build Up
-	focus = {
-		id = SAY_krakow_build_up
-		icon = GFX_goal_generic_production
-		x = 10
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = SAY_the_polish_corridor_fort_line 
-		}
-		prerequisite = { 
-			focus = SAY_warsaw_development_plan 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			88 = {
-    add_extra_state_shared_building_slots = 2
-    add_building_construction = {
-        type = arms_factory
-        level = 2
-        instant_build = yes
-   }
-}
-		}
-	}
-
-	#Focus for Infrastructure Advancement
-	focus = {
-		id = SAY_infrastructure_advancement
+		id = SAY_industry_expanding_efforts
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 3
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = SAY_civilian_advancement 
-		}
 		prerequisite = { 
 			focus = SAY_military_advancement 
 		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			94 = {
-set_building_level = {
-    type = infrastructure
-    level = 5
-    instant_build = yes
-   }
-}
-		}
-	}
-
-	#Focus for Civilian Advancement
-	focus = {
-		id = SAY_civilian_advancement
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 4
-		y = 0
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			261 = {
-    add_extra_state_shared_building_slots = 2
-    add_building_construction = {
-        type = industrial_complex
-        level = 2
-        instant_build = yes
-   }
-}
-		}
-	}
-
-	#Focus for Secret Advancement
-	focus = {
-		id = SAY_secret_advancement
-		icon = GFX_goal_generic_secret_weapon
-		x = 3
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
 		prerequisite = { 
-			focus = SAY_military_advancement_3 
-		}
-		prerequisite = { 
-			focus = SAY_civilian_advancement_3 
-		}
-		prerequisite = { 
-			focus = SAY_infrastructure_advancement 
+			focus = SAY_civilian_advancement 
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 			add_tech_bonus = {
-name = secret_bonus
-bonus = 1.0
-uses = 4
-category = electronics
-category = nuclear
-category = rocketry
-	}
-		}
-	}
-
-	#Focus for Political Expansion in Sayland
-	focus = {
-		id = SAY_political_expansion_in_sayland
-		icon = GFX_SAY_political_expansion_in_sayland-45164
-		x = 17
-		y = 0
-		cost = 4
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_political_power= 150
-		}
-	}
-
-	#Focus for Civilian Advancement 3
-	focus = {
-		id = SAY_civilian_advancement_3
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 5
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_civilian_advancement_2 }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			361 = {
-    add_extra_state_shared_building_slots = 2
-    add_building_construction = {
-        type = industrial_complex
-        level = 2
-        instant_build = yes
-   }
-}
-		}
-	}
-
-	#Focus for Civilian Advancement 2
-	focus = {
-		id = SAY_civilian_advancement_2
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 5
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_civilian_advancement }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			92 = {
-    add_extra_state_shared_building_slots = 2
-    add_building_construction = {
-        type = industrial_complex
-        level = 2
-        instant_build = yes
-   }
-}
-		}
-	}
-
-	#Focus for Core Greenland
-	focus = {
-		id = SAY_core_greenland
-		icon = GFX_goal_generic_dangerous_deal
-		x = 28
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_the_greenland_question }
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			owns_state= 101
-		}
-		completion_reward = {
-			add_state_core= 101
-		}
-	}
-
-	#Focus for Military Advancement 2
-	focus = {
-		id = SAY_military_advancement_2
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 1
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_military_advancement }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			89 = {
-    add_extra_state_shared_building_slots = 2
-    add_building_construction = {
-        type = arms_factory
-        level = 2
-        instant_build = yes
-   }
-}
-		}
-	}
-
-	#Focus for Core Newfoundland
-	focus = {
-		id = SAY_core_newfoundland
-		icon = GFX_goal_generic_forceful_treaty
-		x = 20
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_demand_newfoundland }
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			owns_state= 331
-		}
-		completion_reward = {
-			add_state_core= 331
-		}
-	}
-
-	#Focus for Big Guns Research
-	focus = {
-		id = SAY_big_guns_research
-		icon = GFX_goal_generic_army_artillery2
-		x = 31
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_infantry_research }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_tech_bonus = {
-name = infantry_artillery_bonus
-bonus = 1.0
-uses = 1
-category = infantry_weapons
-category = artillery
-	}
-		}
-	}
-
-	#Focus for The Polish Corridor Fort Line
-	focus = {
-		id = SAY_the_polish_corridor_fort_line
-		icon = GFX_focus_generic_polish_deal
-		x = 9
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_strengthen_the_saylish_poland_state }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_ideas= SAY_corridor_plan
-		}
-	}
-
-	#Focus for Strengthen the Saylish Poland State
-	focus = {
-		id = SAY_strengthen_the_saylish_poland_state
-		icon = GFX_SAY_strengthen_the_saylish_poland_state-44540
-		x = 10
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_political_expansion_in_sayland }
-		mutually_exclusive = { focus = SAY_strengthen_saylish_north_america }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			set_capital= 10
-		}
-	}
-
-	#Focus for An Agreement with Belarus
-	focus = {
-		id = SAY_an_agreement_with_belarus
-		icon = GFX_goal_tripartite_pact
-		x = 7
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_pacify_belarus }
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			country_exists= BLR
-		}
-		completion_reward = {
-			country_event= {
-days = 1 
-id = saylandevent.5
-}
-		}
-	}
-
-	#Focus for Infantry Research
-	focus = {
-		id = SAY_infantry_research
-		icon = GFX_goal_rhineland
-		x = 32
-		y = 0
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			army_experience = 5
-
-add_tech_bonus = {
-name = land_doc_bonus
-bonus = 1.0
-uses = 1
-category = land_doctrine
-	}
-		}
-	}
-
-	#Focus for The West Florida Crisis
-	focus = {
-		id = SAY_the_west_florida_crisis
-		icon = GFX_goal_generic_intelligence_exchange
-		x = 22
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_friends_in_hot_places }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			country_event= {
-days = 1 
-id = saylandevent.29
-}
-		}
-	}
-
-	#Focus for The Greenland Question
-	focus = {
-		id = SAY_the_greenland_question
-		icon = GFX_SAY_the_greenland_question-45048
-		x = 25
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_new_england_build_up }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			country_event= {
-days = 1 
-id = saylandevent.17
-}
-		}
-	}
-
-	#Focus for Demand Newfoundland
-	focus = {
-		id = SAY_demand_newfoundland
-		icon = GFX_goal_generic_military_deal
-		x = 23
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_new_england_build_up }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			country_event= {
-days = 1 
-id = saylandevent.21
-}
-		}
-	}
-
-	#Focus for Friends in Hot Places
-	focus = {
-		id = SAY_friends_in_hot_places
-		icon = GFX_SAY_friends_in_hot_places-45053
-		x = 22
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_demand_newfoundland }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			country_event= {
-days = 1 
-id = saylandevent.25
-}
-		}
-	}
-
-	#Focus for Canada Will be Ours
-	focus = {
-		id = SAY_canada_will_be_ours
-		icon = GFX_goal_tfv_can_forced_quebec_conscription
-		x = 24
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = SAY_demand_newfoundland 
-		}
-		prerequisite = { 
-			focus = SAY_the_greenland_question 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			create_wargoal= { 
-type = annex_everything 
-target = CAN
-}
-		}
-	}
-
-	#Focus for Warsaw Development Plan
-	focus = {
-		id = SAY_warsaw_development_plan
-		icon = GFX_goal_generic_production
-		x = 11
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_strengthen_the_saylish_poland_state }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			10 = {
-    add_extra_state_shared_building_slots = 1
-    add_building_construction = {
-        type = industrial_complex
-        level = 2
-        instant_build = yes
-   }
-}
-		}
-	}
-
-	#Focus for Strengthen Saylish North America
-	focus = {
-		id = SAY_strengthen_saylish_north_america
-		icon = GFX_SAY_strengthen_saylish_north_america-44541
-		x = 24
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_political_expansion_in_sayland }
-		mutually_exclusive = { focus = SAY_strengthen_the_saylish_poland_state }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			set_capital= 358
-		}
-	}
-
-	#Focus for Wipe Belarus Off the Map
-	focus = {
-		id = SAY_wipe_belarus_off_the_map
-		icon = GFX_goal_generic_major_war
-		x = 9
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_krakow_build_up }
-		mutually_exclusive = { focus = SAY_pacify_belarus }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			create_wargoal= { 
-type = annex_everything 
-target = BLR
-}
-		}
-	}
-
-	#Focus for Infrastructure in West Virginia
-	focus = {
-		id = SAY_infrastructure_in_west_virginia
-		icon = GFX_goal_generic_construct_infrastructure
-		x = 25
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_strengthen_saylish_north_america }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			800 = {
-set_building_level = {
-    type = infrastructure
-    level = 5
-    instant_build = yes
-   }
-}
-		}
-	}
-
-	#Focus for Pacify Belarus
-	focus = {
-		id = SAY_pacify_belarus
-		icon = GFX_SAY_pacify_belarus-44779
-		x = 7
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_krakow_build_up }
-		mutually_exclusive = { focus = SAY_wipe_belarus_off_the_map }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			country_event= {
-days = 1 
-id = saylandevent.1
-}
-		}
-	}
-
-	#Focus for Demand Western Ukraine
-	focus = {
-		id = SAY_demand_western_ukraine
-		icon = GFX_goal_generic_territory_or_war
-		x = 13
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_krakow_build_up }
-		mutually_exclusive = { focus = SAY_eat_ukraine }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			country_event= {
-days = 1 
-id = saylandevent.9
-}
-		}
-	}
-
-	#Focus for Tank Expansion
-	focus = {
-		id = SAY_tank_expansion
-		icon = GFX_goal_generic_army_tanks
-		x = 32
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = SAY_big_guns_research 
-		}
-		prerequisite = { 
-			focus = SAY_airbase_expansion_now 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_tech_bonus = {
-name = armor_bonus
+name = GER_four_year_plan
 bonus = 1.0
 uses = 2
-category = armor
+category = industry
 	}
-		}
-	}
-
-	#Focus for Biggest Bomb
-	focus = {
-		id = SAY_biggest_bomb
-		icon = GFX_focus_wonderweapons
-		x = 33
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = SAY_infantry_effort_is_needed 
-		}
-		prerequisite = { 
-			focus = SAY_naval_bomber_expansion_now 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_tech_bonus = {
-name = nuclear_bonus
-ahead_reduction = 2
-category = nuclear
-	}
-		}
-	}
-
-	#Focus for Teens in the Army
-	focus = {
-		id = SAY_teens_in_the_army
-		icon = GFX_focus_generic_support_the_left_right
-		x = 8
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = SAY_core_lithuania 
-		}
-		prerequisite = { 
-			focus = SAY_core_latvia 
-		}
-		prerequisite = { 
-			focus = SAY_core_estonia 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_ideas = military_youth_focus
-		}
-	}
-
-	#Focus for Everyone Will Serve!
-	focus = {
-		id = SAY_everyone_will_serve
-		icon = GFX_focus_prc_infiltration
-		x = 24
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_new_saylish_lands }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_ideas = military_youth_focus
-		}
-	}
-
-	#Focus for Strike at the True Enemy!
-	focus = {
-		id = SAY_strike_at_the_true_enemy
-		icon = GFX_focus_attack_germany
-		x = 8
-		y = 8
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = SAY_teens_in_the_army 
-		}
-		prerequisite = { 
-			focus = SAY_core_east_prussia 
-		}
-		prerequisite = { 
-			focus = SAY_research_increase 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			create_wargoal= { 
-type = annex_everything 
-target = GER
-}
-		}
-	}
-
-	#Focus for War with the Midwest
-	focus = {
-		id = SAY_war_with_the_midwest
-		icon = GFX_SAY_war_with_the_midwest-45168
-		x = 27
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = SAY_a_settlement 
-			focus = SAY_war_is_the_only_way 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			create_wargoal= { 
-type = annex_everything 
-target = MDW
-}
-		}
-	}
-
-	#Focus for A Settlement
-	focus = {
-		id = SAY_a_settlement
-		icon = GFX_SAY_a_settlement-45047
-		x = 26
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_prepare_to_invade_alabama }
-		mutually_exclusive = { focus = SAY_war_is_the_only_way }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			country_event= {
-days = 1 
-id = saylandevent.37
-}
-		}
-	}
-
-	#Focus for War is the only way
-	focus = {
-		id = SAY_war_is_the_only_way
-		icon = GFX_SAY_war_is_the_only_way-45094
-		x = 28
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_prepare_to_invade_alabama }
-		mutually_exclusive = { focus = SAY_a_settlement }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			create_wargoal= { 
-type = annex_everything 
-target = ABM
-}
-		}
-	}
-
-	#Focus for Prepare to Invade Alabama
-	focus = {
-		id = SAY_prepare_to_invade_alabama
-		icon = GFX_SAY_prepare_to_invade_alabama-45046
-		x = 26
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_the_greenland_question }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			360 = {
-    add_extra_state_shared_building_slots = 1
-    add_building_construction = {
-        type = arms_factory
-        level = 1
-        instant_build = yes
-   }
-}
-		}
-	}
-
-	#Focus for Core Lithuania
-	focus = {
-		id = SAY_core_lithuania
-		icon = GFX_goal_generic_demand_territory
-		x = 10
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_strike_at_the_baltics }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_state_core= 188
-
-add_state_core= 189
-  
-add_state_core= 11
-		}
-	}
-
-	#Focus for Core Latvia
-	focus = {
-		id = SAY_core_latvia
-		icon = GFX_goal_generic_demand_territory
-		x = 12
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_strike_at_the_baltics }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_state_core= 12  
-
-add_state_core= 190
-		}
-	}
-
-	#Focus for Core Estonia
-	focus = {
-		id = SAY_core_estonia
-		icon = GFX_goal_generic_demand_territory
-		x = 8
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_strike_at_the_baltics }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_state_core= 191  
-
-add_state_core= 13
-		}
-	}
-
-	#Focus for Eat Ukraine
-	focus = {
-		id = SAY_eat_ukraine
-		icon = GFX_goal_generic_major_war
-		x = 11
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_krakow_build_up }
-		mutually_exclusive = { focus = SAY_demand_western_ukraine }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			create_wargoal= { 
-type = annex_everything 
-target = UKR
-}
-		}
-	}
-
-	#Focus for New Saylish Lands
-	focus = {
-		id = SAY_new_saylish_lands
-		icon = GFX_focus_hol_the_foundations_of_defense
-		x = 24
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_canada_will_be_ours }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_state_core= 468 
- 
-add_state_core= 465  
-
-add_state_core= 464
-		}
-	}
-
-	#Focus for Airbase Expansion Now!
-	focus = {
-		id = SAY_airbase_expansion_now
-		icon = GFX_goal_generic_air_fighter2
-		x = 33
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_infantry_research }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			798 = {
-add_building_construction =  {
-type = air_base
-level = 2
-instant_build = yes }
-    }
-		}
-	}
-
-	#Focus for Military Factories in Maryland
-	focus = {
-		id = SAY_military_factories_in_maryland
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 30
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_tank_expansion }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			361 = {
-    add_extra_state_shared_building_slots = 2
-    add_building_construction = {
-        type = arms_factory
-        level = 2
-        instant_build = yes
-   }
-}
-		}
-	}
-
-	#Focus for Bomber Expansion Now
-	focus = {
-		id = SAY_bomber_expansion_now
-		icon = GFX_goal_generic_air_bomber
-		x = 32
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_tank_expansion }
-		mutually_exclusive = { focus = SAY_fighter_expansion_now }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_tech_bonus = {
-name = bomber_bonus
-bonus = 1.0
-uses = 2
-technology = strategic_bomber1
-technology = strategic_bomber2
-technology = strategic_bomber3
-category = tactical_bomber
-	}
-		}
-	}
-
-	#Focus for Close Air Support Expansion Now
-	focus = {
-		id = SAY_close_air_support_expansion_now
-		icon = GFX_goal_generic_air_naval_bomber
-		x = 33
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = SAY_fighter_expansion_now 
-			focus = SAY_bomber_expansion_now 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_tech_bonus = {
-name = CAS_bonus
-bonus = 1.0
-ahead_reduction = 2
-uses = 1
-category = cas_bomber
-	}
-		}
-	}
-
-	#Focus for Naval Bomber Expansion Now!
-	focus = {
-		id = SAY_naval_bomber_expansion_now
-		icon = GFX_goal_generic_navy_carrier
-		x = 33
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_close_air_support_expansion_now }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_tech_bonus = {
-name = nav_bomber_bonus
-bonus = 1.0
-ahead_reduction = 2
-uses = 1
-category = naval_bomber
-	}
-		}
-	}
-
-	#Focus for Infantry Effort is needed
-	focus = {
-		id = SAY_infantry_effort_is_needed
-		icon = GFX_goal_generic_axis_build_infantry
-		x = 30
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_motorized_expansion_is_needed }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_tech_bonus = {
-name = infantry_artillery_bonus
-bonus = 1.0
-uses = 1
-category = infantry_weapons
-category = artillery
-	}
-		}
-	}
-
-	#Focus for Maximum Research
-	focus = {
-		id = SAY_maximum_research
-		icon = GFX_focus_research2
-		x = 30
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = SAY_infantry_effort_is_needed 
-		}
-		prerequisite = { 
-			focus = SAY_naval_bomber_expansion_now 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_research_slot= 1
-		}
-	}
-
-	#Focus for Strike at the Baltics
-	focus = {
-		id = SAY_strike_at_the_baltics
-		icon = GFX_goal_generic_forceful_treaty
-		x = 10
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_krakow_build_up }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			create_wargoal= { 
-type = annex_everything 
-target = LIT
-}
-  create_wargoal= { 
-type = annex_everything 
-target = LAT
-}
-  create_wargoal= { 
-type = annex_everything 
-target = EST
-}
-		}
-	}
-
-	#Focus for An Agreement with Ukraine
-	focus = {
-		id = SAY_an_agreement_with_ukraine
-		icon = GFX_goal_tripartite_pact
-		x = 13
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_demand_western_ukraine }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			country_event= {
-days = 1 
-id = saylandevent.13
-}
-		}
-	}
-
-	#Focus for More Recruitment
-	focus = {
-		id = SAY_more_recruitment
-		icon = GFX_focus_generic_manpower
-		x = 17
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = SAY_strengthen_the_saylish_poland_state 
-			focus = SAY_strengthen_saylish_north_america 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_ideas = militarism_focus
-		}
-	}
-
-	#Focus for Fighter Expansion Now
-	focus = {
-		id = SAY_fighter_expansion_now
-		icon = GFX_goal_generic_air_fighter2
-		x = 34
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_tank_expansion }
-		mutually_exclusive = { focus = SAY_bomber_expansion_now }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			air_experience= 10
-
-add_tech_bonus = {
-name = fighter_bonus
-bonus = 1.0
-uses = 2
-technology = early_fighter
-technology = fighter1
-technology = fighter2
-technology = fighter3
-technology = heavy_fighter1
-technology = heavy_fighter2
-technology = heavy_fighter3
-	}
-		}
-	}
-
-	#Focus for Faster Recruitment
-	focus = {
-		id = SAY_faster_recruitment
-		icon = GFX_goal_generic_small_arms
-		x = 17
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = SAY_krakow_build_up 
-			focus = SAY_new_england_build_up 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_ideas = paramilitarism_focus
-		}
-	}
-
-	#Focus for Motorized Expansion Is Needed
-	focus = {
-		id = SAY_motorized_expansion_is_needed
-		icon = GFX_goal_generic_army_motorized
-		x = 30
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_military_factories_in_maryland }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_tech_bonus = {
-name = motorized_bonus
-bonus = 3.0
-technology = motorised_infantry
-	}
-		}
-	}
-
-	#Focus for American Dominance
-	focus = {
-		id = SAY_american_dominance
-		icon = GFX_SAY_american_dominance-45093
-		x = 24
-		y = 8
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = SAY_an_offer_of_union 
-		}
-		prerequisite = { 
-			focus = SAY_war_with_the_midwest 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_state_core= 396 
- 
-add_state_core= 393 
- 
-add_state_core= 394 
- 
-add_state_core= 395
-
-add_state_core= 391
-		}
-	}
-
-	#Focus for An Offer of Union
-	focus = {
-		id = SAY_an_offer_of_union
-		icon = GFX_SAY_an_offer_of_union-45071
-		x = 22
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SAY_the_west_florida_crisis }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			create_faction= "North American Federation" 
-
-country_event= {
-days = 1 
-id = saylandevent.33 
-}
-		}
-	}
-
-	#Focus for Core East Prussia
-	focus = {
-		id = SAY_core_east_prussia
-		icon = GFX_focus_generic_treaty
-		x = 10
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = SAY_core_lithuania 
-		}
-		prerequisite = { 
-			focus = SAY_core_latvia 
-		}
-		prerequisite = { 
-			focus = SAY_core_estonia 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_state_core= 5
-
-add_state_core= 763
-		}
-	}
-
-	#Focus for Research Increase
-	focus = {
-		id = SAY_research_increase
-		icon = GFX_focus_research2
-		x = 12
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = SAY_core_latvia 
-		}
-		prerequisite = { 
-			focus = SAY_core_lithuania 
-		}
-		prerequisite = { 
-			focus = SAY_core_estonia 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_research_slot= 1
-		}
-	}
-
-	#Focus for War with the USSR
-	focus = {
-		id = SAY_war_with_the_ussr
-		icon = GFX_focus_attack_soviet
-		x = 12
-		y = 8
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = SAY_teens_in_the_army 
-		}
-		prerequisite = { 
-			focus = SAY_research_increase 
-		}
-		prerequisite = { 
-			focus = SAY_core_east_prussia 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			create_wargoal= { 
-type = annex_everything 
-target = SOV
-}
 		}
 	}
 
@@ -1392,7 +38,7 @@ target = SOV
 	focus = {
 		id = SAY_military_advancement
 		icon = GFX_goal_generic_construct_mil_factory
-		x = 2
+		x = 1
 		y = 0
 		cost = 10
 		available_if_capitulated = yes
@@ -1411,23 +57,1518 @@ target = SOV
 		}
 	}
 
-	#Focus for Military Advancement 3
+	#Focus for Crack Down on the Americans
 	focus = {
-		id = SAY_military_advancement_3
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 1
-		y = 3
+		id = SAY_crack_down_on_the_americans
+		icon = GFX_goal_unknown
+		x = 28
+		y = 10
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = SAY_military_advancement_2 }
+		prerequisite = { focus = SAY_saylandisng_czechoslovakia }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Crowning Karolus
+	focus = {
+		id = SAY_crowning_karolus
+		icon = GFX_SAY_crowning_karolus-95104
+		x = 28
+		y = 6
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_the_military_coup }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			96 = {
+			create_country_leader = {
+	name = "Karolus Canonus I von Saylandia"
+	desc = "TBD"
+	picture = "gfx/leaders/SAY/karl.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		emperor
+	}
+}
+
+create_field_marshal = {
+	name = "Karolus Canonus I von Saylandia"
+	portrait_path = "gfx/leaders/SAY/karl.dds"
+	traits = { logistics_wizard  organisational_leader politically_connected }
+	skill = 6
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+set_cosmetic_tag= SAY_karl
+		}
+	}
+
+	#Focus for Strengthen Saylish North America
+	focus = {
+		id = SAY_strengthen_saylish_north_america
+		icon = GFX_goal_unknown
+		x = 22
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_the_choice }
+		mutually_exclusive = { focus = SAY_strengthen_the_saylish_poland_state }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_capital= 358
+		}
+	}
+
+	#Focus for The Poznan Line
+	focus = {
+		id = SAY_the_poznan_line
+		icon = GFX_goal_generic_fortify_city
+		x = 17
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_strengthen_the_saylish_poland_state }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			86 = {
+            add_building_construction = {
+                type = bunker
+                level = 3
+                province = 11232
+                instant_build = yes
+            }    
+        }
+
+86 = {
+            add_building_construction = {
+                type = bunker
+                level = 3
+                province = 388
+                instant_build = yes
+            }    
+        }
+
+86 = {
+            add_building_construction = {
+                type = bunker
+                level = 3
+                province = 3532
+                instant_build = yes
+            }    
+        }
+
+86 = {
+            add_building_construction = {
+                type = bunker
+                level = 3
+                province = 3460
+                instant_build = yes
+            }    
+        }
+
+86 = {
+            add_building_construction = {
+                type = bunker
+                level = 3
+                province = 9532
+                instant_build = yes
+            }    
+        }
+
+86 = {
+            add_building_construction = {
+                type = bunker
+                level = 3
+                province = 11558
+                instant_build = yes
+            }    
+        }
+		}
+	}
+
+	#Focus for Naval Build Up In New Warsaw
+	focus = {
+		id = SAY_naval_build_up_in_new_warsaw
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 23
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_strengthen_saylish_north_america }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			357 = {
+add_extra_state_shared_building_slots = 2  add_building_construction = {
+        type = industrial_complex
+        level = 2
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Strengthen the Saylish Poland State
+	focus = {
+		id = SAY_strengthen_the_saylish_poland_state
+		icon = GFX_SAY_strengthen_the_saylish_poland_state-44524
+		x = 16
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_the_choice }
+		mutually_exclusive = { focus = SAY_strengthen_saylish_north_america }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_capital= 10
+		}
+	}
+
+	#Focus for The Choice
+	focus = {
+		id = SAY_the_choice
+		icon = GFX_SAY_the_choice-45164
+		x = 19
+		y = 2
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SAY_establishing_the_regional_presidents 
+			focus = SAY_stay_with_president_top 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for Stay with President Top
+	focus = {
+		id = SAY_stay_with_president_top
+		icon = GFX_goal_unknown
+		x = 28
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_opening_the_political_sphere }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = democratic
+popularity = 0.2
+}
+
+add_stability= 0.1
+		}
+	}
+
+	#Focus for Opening the Political Sphere
+	focus = {
+		id = SAY_opening_the_political_sphere
+		icon = GFX_SAY_opening_the_political_sphere-94923
+		x = 19
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for The Military Coup
+	focus = {
+		id = SAY_the_military_coup
+		icon = GFX_goal_anti_comintern_pact
+		x = 28
+		y = 5
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_two_languages_for_the_army }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = neutrality
+popularity = 0.4
+}
+
+set_politics= {
+ ruling_party = neutrality
+elections_allowed = no 
+}
+
+create_country_leader = {
+	name = "Military Junta"
+	desc = "TBD"
+	picture = "gfx/leaders/SAY/saymill.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+divided_interests		
+		
+	}
+}
+		}
+	}
+
+	#Focus for President Slurp
+	focus = {
+		id = SAY_president_slurp
+		icon = GFX_goal_unknown
+		x = 8
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_choosing_a_head_of_the_council }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_flag = slurp
+		}
+		completion_reward = {
+			create_country_leader = {
+	name = "Slurp"
+	desc = "TBD"
+	picture = "gfx/leaders/SAY/slurp.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		face_licker		
+	}
+}
+		}
+	}
+
+	#Focus for President Ivan
+	focus = {
+		id = SAY_president_ivan
+		icon = GFX_goal_unknown
+		x = 12
+		y = 8
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_choosing_a_head_of_the_council }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_flag = ivan
+		}
+		completion_reward = {
+			create_country_leader = {
+	name = "Ivan"
+	desc = "TBD"
+	picture = "gfx/leaders/SAY/mario.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		humble_appeaser	
+	}
+}
+		}
+	}
+
+	#Focus for President Top
+	focus = {
+		id = SAY_president_top
+		icon = GFX_goal_unknown
+		x = 10
+		y = 8
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_choosing_a_head_of_the_council }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_flag = top
+		}
+		completion_reward = {
+			create_country_leader = {
+	name = "ZZTopman"
+	desc = "TBD"
+	picture = "gfx/leaders/SAY/ZZtopman.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		father
+	}
+}
+		}
+	}
+
+	#Focus for Choosing a Head of the Council
+	focus = {
+		id = SAY_choosing_a_head_of_the_council
+		icon = GFX_goal_generic_national_unity
+		x = 10
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SAY_dissolving_the_national_congress 
+		}
+		prerequisite = { 
+			focus = SAY_the_regional_decree 
+		}
+		prerequisite = { 
+			focus = SAY_the_days_when_the_sun_never_set 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = saylandevent.41
+}
+		}
+	}
+
+	#Focus for Two Languages for the Army
+	focus = {
+		id = SAY_two_languages_for_the_army
+		icon = GFX_SAY_two_languages_for_the_army-95105
+		x = 28
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SAY_stack_the_executive_council 
+		}
+		prerequisite = { 
+			focus = SAY_improve_the_army 
+		}
+		prerequisite = { 
+			focus = SAY_the_army_must_learn 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas= {
+remove_idea = SAY_divided_nation
+add_idea = SAY_divided_nation_2
+}
+		}
+	}
+
+	#Focus for Invite the American Generals
+	focus = {
+		id = SAY_invite_the_american_generals
+		icon = GFX_SAY_invite_the_american_generals-94924
+		x = 21
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_strengthen_saylish_north_america }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_field_marshal = {
+	name = "Dwight D. Eisenhower"
+	picture = "Portrait_USA_Dwight_D_Eisenhower.dds"
+	traits = { logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected }
+	skill = 5
+	id = 602
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 5
+}
+		}
+	}
+
+	#Focus for Establishing the Regional Presidents
+	focus = {
+		id = SAY_establishing_the_regional_presidents
+		icon = GFX_SAY_establishing_the_regional_presidents-95052
+		x = 10
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_opening_the_political_sphere }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = neutrality
+popularity = 0.4
+}
+
+set_politics= {
+ ruling_party = neutrality
+elections_allowed = no 
+}
+
+create_country_leader = {
+	name = "Regional President Council"
+	desc = "TBD"
+	picture = "gfx/leaders/SAY/saymill.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+divided_interests		
+		
+	}
+}
+		}
+	}
+
+	#Focus for The Governors Office
+	focus = {
+		id = SAY_the_governors_office
+		icon = GFX_goal_generic_alliance
+		x = 28
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_stay_with_president_top }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for Developing Warsaw
+	focus = {
+		id = SAY_developing_warsaw
+		icon = GFX_goal_generic_construct_civilian
+		x = 15
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_strengthen_the_saylish_poland_state }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			10 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+        type = industrial_complex
+        level = 2
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Saylish Dominance
+	focus = {
+		id = SAY_saylish_dominance
+		icon = GFX_SAY_saylish_dominance-45093
+		x = 16
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_war_with_hitler }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= SAY_europe_power
+		}
+	}
+
+	#Focus for The Army must Learn
+	focus = {
+		id = SAY_the_army_must_learn
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 30
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_the_governors_office }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience= 10  
+
+add_tech_bonus = {
+name = land_doc_bonus
+bonus = 1.0
+uses = 1
+category = land_doctrine
+	}
+		}
+	}
+
+	#Focus for Improve the Army
+	focus = {
+		id = SAY_improve_the_army
+		icon = GFX_goal_generic_military_sphere
+		x = 28
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_the_governors_office }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower= 45000
+		}
+	}
+
+	#Focus for Stack the Executive Council
+	focus = {
+		id = SAY_stack_the_executive_council
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 26
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_the_governors_office }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Puppet Belarus
+	focus = {
+		id = SAY_puppet_belarus
+		icon = GFX_goal_tripartite_pact
+		x = 14
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SAY_developing_warsaw 
+		}
+		prerequisite = { 
+			focus = SAY_the_poznan_line 
+		}
+		mutually_exclusive = { focus = SAY_finish_belarus }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = saylandevent.13
+}
+		}
+	}
+
+	#Focus for Provoke the Lion
+	focus = {
+		id = SAY_provoke_the_lion
+		icon = GFX_goal_generic_forceful_treaty
+		x = 24
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_naval_build_up_in_new_warsaw }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core= 362
+		}
+	}
+
+	#Focus for Finish Belarus
+	focus = {
+		id = SAY_finish_belarus
+		icon = GFX_SAY_finish_belarus-44551
+		x = 16
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SAY_developing_warsaw 
+		}
+		prerequisite = { 
+			focus = SAY_the_poznan_line 
+		}
+		mutually_exclusive = { focus = SAY_puppet_belarus }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = BLR
+}
+		}
+	}
+
+	#Focus for Building Up Our Lands to the North
+	focus = {
+		id = SAY_building_up_our_lands_to_the_north
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 22
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SAY_naval_build_up_in_new_warsaw 
+		}
+		prerequisite = { 
+			focus = SAY_invite_the_american_generals 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			357 = {
     add_extra_state_shared_building_slots = 2
     add_building_construction = {
-        type = arms_factory
+        type = industrial_complex
+        level = 2
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Ohio Wall
+	focus = {
+		id = SAY_ohio_wall
+		icon = GFX_focus_generic_coastal_fort
+		x = 20
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SAY_invite_the_american_generals 
+		}
+		prerequisite = { 
+			focus = SAY_naval_build_up_in_new_warsaw 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			261 = {
+            add_building_construction = {
+                type = bunker
+                level = 2
+                province = 3685
+                instant_build = yes
+            }    
+        }
+
+261 = {
+            add_building_construction = {
+                type = bunker
+                level = 2
+                province = 3872
+                instant_build = yes
+            }    
+        }
+
+
+261 = {
+            add_building_construction = {
+                type = bunker
+                level = 2
+                province = 11791
+                instant_build = yes
+            }    
+        }
+
+261 = {
+            add_building_construction = {
+                type = bunker
+                level = 2
+                province = 831
+                instant_build = yes
+            }    
+        }
+
+261 = {
+            add_building_construction = {
+                type = bunker
+                level = 2
+                province = 11890
+                instant_build = yes
+            }    
+        }
+		}
+	}
+
+	#Focus for Revitalize Imperial Sayland
+	focus = {
+		id = SAY_revitalize_imperial_sayland
+		icon = GFX_SAY_revitalize_imperial_sayland-95096
+		x = 10
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_establishing_the_regional_presidents }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= SAY_imperial_sayland
+		}
+	}
+
+	#Focus for Looking North
+	focus = {
+		id = SAY_looking_north
+		icon = GFX_goal_generic_dangerous_deal
+		x = 18
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SAY_developing_warsaw 
+		}
+		prerequisite = { 
+			focus = SAY_the_poznan_line 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core= 784
+
+add_state_core= 189
+
+add_state_core= 188
+
+add_state_core= 784
+		}
+	}
+
+	#Focus for The Days When the Sun Never Set
+	focus = {
+		id = SAY_the_days_when_the_sun_never_set
+		icon = GFX_SAY_the_days_when_the_sun_never_set-95097
+		x = 12
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_revitalize_imperial_sayland }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Regional Decree
+	focus = {
+		id = SAY_the_regional_decree
+		icon = GFX_focus_prc_infiltration
+		x = 10
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_revitalize_imperial_sayland }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas= {
+remove_idea = SAY_divided_nation
+add_idea = SAY_divided_nation_2
+}
+		}
+	}
+
+	#Focus for War with Ukraine
+	focus = {
+		id = SAY_war_with_ukraine
+		icon = GFX_SAY_war_with_ukraine-95082
+		x = 14
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SAY_puppet_belarus 
+			focus = SAY_finish_belarus 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = UKR
+}
+		}
+	}
+
+	#Focus for Securing West Ukraine
+	focus = {
+		id = SAY_securing_west_ukraine
+		icon = GFX_goal_generic_political_pressure
+		x = 14
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_war_with_ukraine }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core= 199
+
+add_state_core= 198
+
+add_state_core= 201
+		}
+	}
+
+	#Focus for Fate of Lithuania
+	focus = {
+		id = SAY_fate_of_lithuania
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 18
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_looking_north }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = LIT
+}
+		}
+	}
+
+	#Focus for Core the Baltics
+	focus = {
+		id = SAY_core_the_baltics
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 18
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_fate_of_lithuania }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core= 12  
+
+add_state_core= 190
+
+add_state_core= 191
+
+add_state_core= 13
+		}
+	}
+
+	#Focus for Secure the Baltics
+	focus = {
+		id = SAY_secure_the_baltics
+		icon = GFX_goal_generic_territory_or_war
+		x = 16
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_looking_north }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = EST
+}
+  create_wargoal= { 
+type = annex_everything 
+target = LAT
+}
+		}
+	}
+
+	#Focus for Eastern Ambitions
+	focus = {
+		id = SAY_eastern_ambitions
+		icon = GFX_goal_generic_major_alliance
+		x = 16
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SAY_war_with_ukraine 
+		}
+		prerequisite = { 
+			focus = SAY_fate_of_lithuania 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Midwestern Punishment
+	focus = {
+		id = SAY_midwestern_punishment
+		icon = GFX_SAY_midwestern_punishment-45168
+		x = 20
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SAY_ohio_wall 
+		}
+		prerequisite = { 
+			focus = SAY_building_up_our_lands_to_the_north 
+		}
+		prerequisite = { 
+			focus = SAY_provoke_the_lion 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = MDW
+}
+		}
+	}
+
+	#Focus for Securing the Midwest
+	focus = {
+		id = SAY_securing_the_midwest
+		icon = GFX_focus_generic_self_management
+		x = 22
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SAY_ohio_wall 
+		}
+		prerequisite = { 
+			focus = SAY_building_up_our_lands_to_the_north 
+		}
+		prerequisite = { 
+			focus = SAY_provoke_the_lion 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core= 396
+
+add_state_core= 393
+
+add_state_core= 395
+
+add_state_core= 394
+		}
+	}
+
+	#Focus for Demand Greenland
+	focus = {
+		id = SAY_demand_greenland
+		icon = GFX_SAY_demand_greenland-45048
+		x = 24
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SAY_ohio_wall 
+		}
+		prerequisite = { 
+			focus = SAY_building_up_our_lands_to_the_north 
+		}
+		prerequisite = { 
+			focus = SAY_provoke_the_lion 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = saylandevent.17
+}
+		}
+	}
+
+	#Focus for Core Greenland
+	focus = {
+		id = SAY_core_greenland
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 24
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SAY_midwestern_punishment 
+		}
+		prerequisite = { 
+			focus = SAY_securing_the_midwest 
+		}
+		prerequisite = { 
+			focus = SAY_demand_greenland 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core= 101
+		}
+	}
+
+	#Focus for Put the Squeeze on Alabama
+	focus = {
+		id = SAY_put_the_squeeze_on_alabama
+		icon = GFX_SAY_put_the_squeeze_on_alabama-45046
+		x = 22
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SAY_midwestern_punishment 
+		}
+		prerequisite = { 
+			focus = SAY_securing_the_midwest 
+		}
+		prerequisite = { 
+			focus = SAY_demand_greenland 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core= 369
+
+add_state_core= 363
+
+add_state_core= 368
+		}
+	}
+
+	#Focus for Offer Florida a Non-Aggression Pact
+	focus = {
+		id = SAY_offer_florida_a_nonaggression_pact
+		icon = GFX_SAY_offer_florida_a_nonaggression_pact-45053
+		x = 20
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SAY_midwestern_punishment 
+		}
+		prerequisite = { 
+			focus = SAY_securing_the_midwest 
+		}
+		prerequisite = { 
+			focus = SAY_demand_greenland 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = saylandevent.25
+}
+		}
+	}
+
+	#Focus for Dissolving the National Congress
+	focus = {
+		id = SAY_dissolving_the_national_congress
+		icon = GFX_focus_generic_treaty
+		x = 8
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_revitalize_imperial_sayland }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.1
+		}
+	}
+
+	#Focus for The West Florida Crisis
+	focus = {
+		id = SAY_the_west_florida_crisis
+		icon = GFX_goal_demand_sudetenland
+		x = 20
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SAY_offer_florida_a_nonaggression_pact 
+		}
+		prerequisite = { 
+			focus = SAY_put_the_squeeze_on_alabama 
+		}
+		prerequisite = { 
+			focus = SAY_core_greenland 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = saylandevent.29
+}
+		}
+	}
+
+	#Focus for Dawn of the North American Federation
+	focus = {
+		id = SAY_dawn_of_the_north_american_federation
+		icon = GFX_SAY_dawn_of_the_north_american_federation-45071
+		x = 22
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SAY_offer_florida_a_nonaggression_pact 
+		}
+		prerequisite = { 
+			focus = SAY_put_the_squeeze_on_alabama 
+		}
+		prerequisite = { 
+			focus = SAY_core_greenland 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_faction= "North American Federation" 
+
+country_event= {
+days = 1 
+id = saylandevent.33 
+}
+		}
+	}
+
+	#Focus for End of Canada
+	focus = {
+		id = SAY_end_of_canada
+		icon = GFX_focus_attack_canada
+		x = 24
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SAY_offer_florida_a_nonaggression_pact 
+		}
+		prerequisite = { 
+			focus = SAY_put_the_squeeze_on_alabama 
+		}
+		prerequisite = { 
+			focus = SAY_core_greenland 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = CAN
+}
+		}
+	}
+
+	#Focus for Core Canada
+	focus = {
+		id = SAY_core_canada
+		icon = GFX_SAY_core_canada-95092
+		x = 24
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_end_of_canada }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core= 468 
+ 
+add_state_core= 465  
+
+add_state_core= 464
+		}
+	}
+
+	#Focus for War with Alabama
+	focus = {
+		id = SAY_war_with_alabama
+		icon = GFX_SAY_war_with_alabama-45092
+		x = 20
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_the_west_florida_crisis }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = ABM
+}
+		}
+	}
+
+	#Focus for Claim Konigsberg
+	focus = {
+		id = SAY_claim_konigsberg
+		icon = GFX_goal_generic_propaganda
+		x = 18
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SAY_securing_west_ukraine 
+		}
+		prerequisite = { 
+			focus = SAY_eastern_ambitions 
+		}
+		prerequisite = { 
+			focus = SAY_core_the_baltics 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core= 816
+
+add_state_core= 5
+
+add_state_core= 763
+		}
+	}
+
+	#Focus for War with Hitler
+	focus = {
+		id = SAY_war_with_hitler
+		icon = GFX_focus_attack_germany
+		x = 16
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SAY_securing_west_ukraine 
+		}
+		prerequisite = { 
+			focus = SAY_eastern_ambitions 
+		}
+		prerequisite = { 
+			focus = SAY_core_the_baltics 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = GER
+}
+		}
+	}
+
+	#Focus for Silesia to Sayland
+	focus = {
+		id = SAY_silesia_to_sayland
+		icon = GFX_goal_generic_demand_territory
+		x = 14
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SAY_securing_west_ukraine 
+		}
+		prerequisite = { 
+			focus = SAY_eastern_ambitions 
+		}
+		prerequisite = { 
+			focus = SAY_core_the_baltics 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core= 67
+
+add_state_core= 66
+
+add_state_core= 68
+
+add_state_core= 63
+
+add_state_core= 817
+		}
+	}
+
+	#Focus for Absolute Rule
+	focus = {
+		id = SAY_absolute_rule
+		icon = GFX_focus_smiling_buddha
+		x = 30
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_crowning_karolus }
+		mutually_exclusive = { focus = SAY_moderate_dictatorship }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = fascism 
+popularity = 0.4
+}
+
+set_politics= {
+ ruling_party = fascism 
+elections_allowed = no 
+}
+
+create_country_leader = {
+	name = "Karolus Canonus I von Saylandia"
+	desc = "TBD"
+	picture = "gfx/leaders/SAY/karl.dds"
+	expire = "1965.1.1"
+	ideology = nazism 
+	traits = {
+		emperor
+	}
+}
+		}
+	}
+
+	#Focus for Moderate Dictatorship
+	focus = {
+		id = SAY_moderate_dictatorship
+		icon = GFX_focus_generic_monarchy_1
+		x = 26
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_crowning_karolus }
+		mutually_exclusive = { focus = SAY_absolute_rule }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for End of Czechoslovakia
+	focus = {
+		id = SAY_end_of_czechoslovakia
+		icon = GFX_goal_generic_major_war
+		x = 27
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SAY_moderate_dictatorship 
+			focus = SAY_absolute_rule 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = CZE
+}
+		}
+	}
+
+	#Focus for Divine Right
+	focus = {
+		id = SAY_divine_right
+		icon = GFX_goal_continuous_def_against_influence
+		x = 29
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SAY_moderate_dictatorship 
+			focus = SAY_absolute_rule 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Saylandisng Czechoslovakia
+	focus = {
+		id = SAY_saylandisng_czechoslovakia
+		icon = GFX_goal_generic_territory_or_war
+		x = 28
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SAY_end_of_czechoslovakia 
+		}
+		prerequisite = { 
+			focus = SAY_divine_right 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core= 73 
+
+add_state_core= 71
+
+add_state_core= 72
+
+add_state_core= 74
+
+add_state_core= 69
+
+add_state_core= 9
+		}
+	}
+
+	#Focus for Civilian Advancement
+	focus = {
+		id = SAY_civilian_advancement
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 5
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			261 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+        type = industrial_complex
         level = 2
         instant_build = yes
    }

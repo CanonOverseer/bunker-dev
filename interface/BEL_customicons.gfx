@@ -1,17 +1,17 @@
 spriteTypes = { 
-	##Icon For: Protect the Channel
+	##Icon For: Exploit the Congo
 	SpriteType = { 
-		name = "GFX_BEL_protect_the_channel-58103"
-		texturefile = "gfx/interface/goals/GFX_BEL_protect_the_channel-58103.dds"
+		name = "GFX_BEL_exploit_the_congo-95257"
+		texturefile = "gfx/interface/goals/GFX_BEL_exploit_the_congo-95257.dds"
 	}
 
-	##Icon Shine For: Protect the Channel
+	##Icon Shine For: Exploit the Congo
 	SpriteType = { 
-		name = "GFX_BEL_protect_the_channel-58103_shine"
-		texturefile = "gfx/interface/goals/GFX_BEL_protect_the_channel-58103.dds"
+		name = "GFX_BEL_exploit_the_congo-95257_shine"
+		texturefile = "gfx/interface/goals/GFX_BEL_exploit_the_congo-95257.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BEL_protect_the_channel-58103.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BEL_exploit_the_congo-95257.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -23,7 +23,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BEL_protect_the_channel-58103.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BEL_exploit_the_congo-95257.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -37,19 +37,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: Holland's Days Are Numbered
+	##Icon For: Infiltrate the Colonial Administration
 	SpriteType = { 
-		name = "GFX_BEL_hollands_days_are_numbered-58096"
-		texturefile = "gfx/interface/goals/GFX_BEL_hollands_days_are_numbered-58096.dds"
+		name = "GFX_BEL_infiltrate_the_colonial_administration-95101"
+		texturefile = "gfx/interface/goals/GFX_BEL_infiltrate_the_colonial_administration-95101.dds"
 	}
 
-	##Icon Shine For: Holland's Days Are Numbered
+	##Icon Shine For: Infiltrate the Colonial Administration
 	SpriteType = { 
-		name = "GFX_BEL_hollands_days_are_numbered-58096_shine"
-		texturefile = "gfx/interface/goals/GFX_BEL_hollands_days_are_numbered-58096.dds"
+		name = "GFX_BEL_infiltrate_the_colonial_administration-95101_shine"
+		texturefile = "gfx/interface/goals/GFX_BEL_infiltrate_the_colonial_administration-95101.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BEL_hollands_days_are_numbered-58096.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BEL_infiltrate_the_colonial_administration-95101.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -61,7 +61,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BEL_hollands_days_are_numbered-58096.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BEL_infiltrate_the_colonial_administration-95101.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -75,19 +75,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: An Expansion of our Forces
+	##Icon For: Infiltrate the Military
 	SpriteType = { 
-		name = "GFX_BEL_an_expansion_of_our_forces-58098"
-		texturefile = "gfx/interface/goals/GFX_BEL_an_expansion_of_our_forces-58098.dds"
+		name = "GFX_BEL_infiltrate_the_military-95100"
+		texturefile = "gfx/interface/goals/GFX_BEL_infiltrate_the_military-95100.dds"
 	}
 
-	##Icon Shine For: An Expansion of our Forces
+	##Icon Shine For: Infiltrate the Military
 	SpriteType = { 
-		name = "GFX_BEL_an_expansion_of_our_forces-58098_shine"
-		texturefile = "gfx/interface/goals/GFX_BEL_an_expansion_of_our_forces-58098.dds"
+		name = "GFX_BEL_infiltrate_the_military-95100_shine"
+		texturefile = "gfx/interface/goals/GFX_BEL_infiltrate_the_military-95100.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BEL_an_expansion_of_our_forces-58098.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BEL_infiltrate_the_military-95100.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -99,7 +99,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BEL_an_expansion_of_our_forces-58098.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BEL_infiltrate_the_military-95100.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -113,19 +113,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: Restore the World Order
+	##Icon For: Increase Control of the Netherlands
 	SpriteType = { 
-		name = "GFX_BEL_restore_the_world_order-74057"
-		texturefile = "gfx/interface/goals/GFX_BEL_restore_the_world_order-74057.dds"
+		name = "GFX_BEL_increase_control_of_the_netherlands-95099"
+		texturefile = "gfx/interface/goals/GFX_BEL_increase_control_of_the_netherlands-95099.dds"
 	}
 
-	##Icon Shine For: Restore the World Order
+	##Icon Shine For: Increase Control of the Netherlands
 	SpriteType = { 
-		name = "GFX_BEL_restore_the_world_order-74057_shine"
-		texturefile = "gfx/interface/goals/GFX_BEL_restore_the_world_order-74057.dds"
+		name = "GFX_BEL_increase_control_of_the_netherlands-95099_shine"
+		texturefile = "gfx/interface/goals/GFX_BEL_increase_control_of_the_netherlands-95099.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BEL_restore_the_world_order-74057.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BEL_increase_control_of_the_netherlands-95099.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -137,7 +137,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BEL_restore_the_world_order-74057.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BEL_increase_control_of_the_netherlands-95099.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -151,19 +151,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: Effective Military Production
+	##Icon For: Reorganize the UN
 	SpriteType = { 
-		name = "GFX_BEL_effective_military_production-58175"
-		texturefile = "gfx/interface/goals/GFX_BEL_effective_military_production-58175.dds"
+		name = "GFX_BEL_reorganize_the_un-95098"
+		texturefile = "gfx/interface/goals/GFX_BEL_reorganize_the_un-95098.dds"
 	}
 
-	##Icon Shine For: Effective Military Production
+	##Icon Shine For: Reorganize the UN
 	SpriteType = { 
-		name = "GFX_BEL_effective_military_production-58175_shine"
-		texturefile = "gfx/interface/goals/GFX_BEL_effective_military_production-58175.dds"
+		name = "GFX_BEL_reorganize_the_un-95098_shine"
+		texturefile = "gfx/interface/goals/GFX_BEL_reorganize_the_un-95098.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BEL_effective_military_production-58175.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BEL_reorganize_the_un-95098.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -175,7 +175,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BEL_effective_military_production-58175.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BEL_reorganize_the_un-95098.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -189,19 +189,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: Naval Base Expansion
+	##Icon For: Operation Tulip
 	SpriteType = { 
-		name = "GFX_BEL_naval_base_expansion-58177"
-		texturefile = "gfx/interface/goals/GFX_BEL_naval_base_expansion-58177.dds"
+		name = "GFX_BEL_operation_tulip-95102"
+		texturefile = "gfx/interface/goals/GFX_BEL_operation_tulip-95102.dds"
 	}
 
-	##Icon Shine For: Naval Base Expansion
+	##Icon Shine For: Operation Tulip
 	SpriteType = { 
-		name = "GFX_BEL_naval_base_expansion-58177_shine"
-		texturefile = "gfx/interface/goals/GFX_BEL_naval_base_expansion-58177.dds"
+		name = "GFX_BEL_operation_tulip-95102_shine"
+		texturefile = "gfx/interface/goals/GFX_BEL_operation_tulip-95102.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BEL_naval_base_expansion-58177.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BEL_operation_tulip-95102.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -213,7 +213,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BEL_naval_base_expansion-58177.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BEL_operation_tulip-95102.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -227,19 +227,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: UN Peacekeepers
+	##Icon For: Pacify the Dutch
 	SpriteType = { 
-		name = "GFX_BEL_un_peacekeepers-58180"
-		texturefile = "gfx/interface/goals/GFX_BEL_un_peacekeepers-58180.dds"
+		name = "GFX_BEL_pacify_the_dutch-95106"
+		texturefile = "gfx/interface/goals/GFX_BEL_pacify_the_dutch-95106.dds"
 	}
 
-	##Icon Shine For: UN Peacekeepers
+	##Icon Shine For: Pacify the Dutch
 	SpriteType = { 
-		name = "GFX_BEL_un_peacekeepers-58180_shine"
-		texturefile = "gfx/interface/goals/GFX_BEL_un_peacekeepers-58180.dds"
+		name = "GFX_BEL_pacify_the_dutch-95106_shine"
+		texturefile = "gfx/interface/goals/GFX_BEL_pacify_the_dutch-95106.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BEL_un_peacekeepers-58180.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BEL_pacify_the_dutch-95106.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -251,7 +251,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BEL_un_peacekeepers-58180.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BEL_pacify_the_dutch-95106.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -265,19 +265,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: Peacekeeper Expansion
+	##Icon For: The First United Nations Cabinet
 	SpriteType = { 
-		name = "GFX_BEL_peacekeeper_expansion-58187"
-		texturefile = "gfx/interface/goals/GFX_BEL_peacekeeper_expansion-58187.dds"
+		name = "GFX_BEL_the_first_united_nations_cabinet-95107"
+		texturefile = "gfx/interface/goals/GFX_BEL_the_first_united_nations_cabinet-95107.dds"
 	}
 
-	##Icon Shine For: Peacekeeper Expansion
+	##Icon Shine For: The First United Nations Cabinet
 	SpriteType = { 
-		name = "GFX_BEL_peacekeeper_expansion-58187_shine"
-		texturefile = "gfx/interface/goals/GFX_BEL_peacekeeper_expansion-58187.dds"
+		name = "GFX_BEL_the_first_united_nations_cabinet-95107_shine"
+		texturefile = "gfx/interface/goals/GFX_BEL_the_first_united_nations_cabinet-95107.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BEL_peacekeeper_expansion-58187.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BEL_the_first_united_nations_cabinet-95107.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -289,7 +289,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BEL_peacekeeper_expansion-58187.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BEL_the_first_united_nations_cabinet-95107.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -303,19 +303,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: Army Defense Plan
+	##Icon For: Demilitarize the Rhineland
 	SpriteType = { 
-		name = "GFX_BEL_army_defense_plan-58190"
-		texturefile = "gfx/interface/goals/GFX_BEL_army_defense_plan-58190.dds"
+		name = "GFX_BEL_demilitarize_the_rhineland-95108"
+		texturefile = "gfx/interface/goals/GFX_BEL_demilitarize_the_rhineland-95108.dds"
 	}
 
-	##Icon Shine For: Army Defense Plan
+	##Icon Shine For: Demilitarize the Rhineland
 	SpriteType = { 
-		name = "GFX_BEL_army_defense_plan-58190_shine"
-		texturefile = "gfx/interface/goals/GFX_BEL_army_defense_plan-58190.dds"
+		name = "GFX_BEL_demilitarize_the_rhineland-95108_shine"
+		texturefile = "gfx/interface/goals/GFX_BEL_demilitarize_the_rhineland-95108.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BEL_army_defense_plan-58190.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BEL_demilitarize_the_rhineland-95108.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -327,7 +327,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BEL_army_defense_plan-58190.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BEL_demilitarize_the_rhineland-95108.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -341,19 +341,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: Rule with an Iron Fist!
+	##Icon For: The Third UN Elections
 	SpriteType = { 
-		name = "GFX_BEL_rule_with_an_iron_fist-58209"
-		texturefile = "gfx/interface/goals/GFX_BEL_rule_with_an_iron_fist-58209.dds"
+		name = "GFX_BEL_the_third_un_elections-95109"
+		texturefile = "gfx/interface/goals/GFX_BEL_the_third_un_elections-95109.dds"
 	}
 
-	##Icon Shine For: Rule with an Iron Fist!
+	##Icon Shine For: The Third UN Elections
 	SpriteType = { 
-		name = "GFX_BEL_rule_with_an_iron_fist-58209_shine"
-		texturefile = "gfx/interface/goals/GFX_BEL_rule_with_an_iron_fist-58209.dds"
+		name = "GFX_BEL_the_third_un_elections-95109_shine"
+		texturefile = "gfx/interface/goals/GFX_BEL_the_third_un_elections-95109.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BEL_rule_with_an_iron_fist-58209.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BEL_the_third_un_elections-95109.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -365,7 +365,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BEL_rule_with_an_iron_fist-58209.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BEL_the_third_un_elections-95109.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -379,19 +379,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: Brittany's Last Breath
+	##Icon For: the Noble iSorrowProductions
 	SpriteType = { 
-		name = "GFX_BEL_brittanys_last_breath-53085"
-		texturefile = "gfx/interface/goals/GFX_BEL_brittanys_last_breath-53085.dds"
+		name = "GFX_BEL_the_noble_isorrowproductions-95110"
+		texturefile = "gfx/interface/goals/GFX_BEL_the_noble_isorrowproductions-95110.dds"
 	}
 
-	##Icon Shine For: Brittany's Last Breath
+	##Icon Shine For: the Noble iSorrowProductions
 	SpriteType = { 
-		name = "GFX_BEL_brittanys_last_breath-53085_shine"
-		texturefile = "gfx/interface/goals/GFX_BEL_brittanys_last_breath-53085.dds"
+		name = "GFX_BEL_the_noble_isorrowproductions-95110_shine"
+		texturefile = "gfx/interface/goals/GFX_BEL_the_noble_isorrowproductions-95110.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BEL_brittanys_last_breath-53085.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BEL_the_noble_isorrowproductions-95110.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -403,7 +403,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BEL_brittanys_last_breath-53085.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BEL_the_noble_isorrowproductions-95110.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -417,19 +417,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: Prepare to Invade the Bunker
+	##Icon For: the Grand iSorrowproductions
 	SpriteType = { 
-		name = "GFX_BEL_prepare_to_invade_the_bunker-44476"
-		texturefile = "gfx/interface/goals/GFX_BEL_prepare_to_invade_the_bunker-44476.dds"
+		name = "GFX_BEL_the_grand_isorrowproductions-95111"
+		texturefile = "gfx/interface/goals/GFX_BEL_the_grand_isorrowproductions-95111.dds"
 	}
 
-	##Icon Shine For: Prepare to Invade the Bunker
+	##Icon Shine For: the Grand iSorrowproductions
 	SpriteType = { 
-		name = "GFX_BEL_prepare_to_invade_the_bunker-44476_shine"
-		texturefile = "gfx/interface/goals/GFX_BEL_prepare_to_invade_the_bunker-44476.dds"
+		name = "GFX_BEL_the_grand_isorrowproductions-95111_shine"
+		texturefile = "gfx/interface/goals/GFX_BEL_the_grand_isorrowproductions-95111.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BEL_prepare_to_invade_the_bunker-44476.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BEL_the_grand_isorrowproductions-95111.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -441,7 +441,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BEL_prepare_to_invade_the_bunker-44476.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BEL_the_grand_isorrowproductions-95111.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -455,19 +455,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: End the Purples
+	##Icon For: the Majestic iSorrowproductions
 	SpriteType = { 
-		name = "GFX_BEL_end_the_purples-53084"
-		texturefile = "gfx/interface/goals/GFX_BEL_end_the_purples-53084.dds"
+		name = "GFX_BEL_the_majestic_isorrowproductions-95112"
+		texturefile = "gfx/interface/goals/GFX_BEL_the_majestic_isorrowproductions-95112.dds"
 	}
 
-	##Icon Shine For: End the Purples
+	##Icon Shine For: the Majestic iSorrowproductions
 	SpriteType = { 
-		name = "GFX_BEL_end_the_purples-53084_shine"
-		texturefile = "gfx/interface/goals/GFX_BEL_end_the_purples-53084.dds"
+		name = "GFX_BEL_the_majestic_isorrowproductions-95112_shine"
+		texturefile = "gfx/interface/goals/GFX_BEL_the_majestic_isorrowproductions-95112.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BEL_end_the_purples-53084.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BEL_the_majestic_isorrowproductions-95112.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -479,7 +479,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BEL_end_the_purples-53084.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BEL_the_majestic_isorrowproductions-95112.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
