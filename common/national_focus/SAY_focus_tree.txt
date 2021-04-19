@@ -7,6 +7,377 @@ focus_tree = {
 			tag = SAY
 		}
 	}
+	#Focus for Expanding the Research Efforts
+	focus = {
+		id = SAY_expanding_the_research_efforts
+		icon = GFX_focus_research2
+		x = 33
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SAY_small_arms_research 
+		}
+		prerequisite = { 
+			focus = SAY_naval_bombers_carrying_the_star 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot= 1
+		}
+	}
+
+	#Focus for Nuclear Potential
+	focus = {
+		id = SAY_nuclear_potential
+		icon = GFX_focus_wonderweapons
+		x = 38
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SAY_small_arms_research 
+		}
+		prerequisite = { 
+			focus = SAY_naval_bombers_carrying_the_star 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = nuclear_bonus
+ahead_reduction = 2
+category = nuclear
+	}
+		}
+	}
+
+	#Focus for Expanding the Motorized Divisions
+	focus = {
+		id = SAY_expanding_the_motorized_divisions
+		icon = GFX_goal_generic_army_motorized
+		x = 34
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_expanding_the_factories_in_maryland }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = motorized_bonus
+bonus = 3.0
+technology = motorised_infantry
+	}
+		}
+	}
+
+	#Focus for Small Arms Research
+	focus = {
+		id = SAY_small_arms_research
+		icon = GFX_goal_rhineland
+		x = 34
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_expanding_the_motorized_divisions }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = infantry_artillery_bonus
+bonus = 1.0
+uses = 1
+category = infantry_weapons
+category = artillery
+	}
+		}
+	}
+
+	#Focus for Expanding the Factories in Maryland
+	focus = {
+		id = SAY_expanding_the_factories_in_maryland
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 34
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_saylish_tanks }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			361 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+        type = arms_factory
+        level = 2
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Naval Bombers Carrying the Star
+	focus = {
+		id = SAY_naval_bombers_carrying_the_star
+		icon = GFX_goal_continuous_air_production
+		x = 37
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_saylish_cas }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = nav_bomber_bonus
+bonus = 1.0
+ahead_reduction = 2
+uses = 1
+category = naval_bomber
+	}
+		}
+	}
+
+	#Focus for Saylish CAS
+	focus = {
+		id = SAY_saylish_cas
+		icon = GFX_goal_generic_navy_carrier
+		x = 37
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SAY_bombers_must_be_expanded 
+			focus = SAY_saylish_fighters 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = CAS_bonus
+bonus = 1.0
+ahead_reduction = 2
+uses = 1
+category = cas_bomber
+	}
+		}
+	}
+
+	#Focus for Saylish Fighters
+	focus = {
+		id = SAY_saylish_fighters
+		icon = GFX_goal_generic_air_fighter2
+		x = 38
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_saylish_tanks }
+		mutually_exclusive = { focus = SAY_bombers_must_be_expanded }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience= 10
+
+add_tech_bonus = {
+name = fighter_bonus
+bonus = 1.0
+uses = 2
+technology = early_fighter
+technology = fighter1
+technology = fighter2
+technology = fighter3
+technology = heavy_fighter1
+technology = heavy_fighter2
+technology = heavy_fighter3
+	}
+		}
+	}
+
+	#Focus for Saylish Tanks
+	focus = {
+		id = SAY_saylish_tanks
+		icon = GFX_goal_generic_army_tanks
+		x = 36
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SAY_artillery_expansion 
+		}
+		prerequisite = { 
+			focus = SAY_expanding_our_airforce 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = armor_bonus
+bonus = 1.0
+uses = 2
+category = armor
+	}
+		}
+	}
+
+	#Focus for Bombers Must be Expanded
+	focus = {
+		id = SAY_bombers_must_be_expanded
+		icon = GFX_goal_generic_air_bomber
+		x = 36
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_saylish_tanks }
+		mutually_exclusive = { focus = SAY_saylish_fighters }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = bomber_bonus
+bonus = 1.0
+uses = 2
+technology = strategic_bomber1
+technology = strategic_bomber2
+technology = strategic_bomber3
+category = tactical_bomber
+	}
+		}
+	}
+
+	#Focus for Expanding our Airforce
+	focus = {
+		id = SAY_expanding_our_airforce
+		icon = GFX_goal_generic_air_fighter2
+		x = 37
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_infantry_expanding }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			798 = {
+add_building_construction =  {
+type = air_base
+level = 2
+instant_build = yes }
+    }
+		}
+	}
+
+	#Focus for Artillery Expansion
+	focus = {
+		id = SAY_artillery_expansion
+		icon = GFX_goal_generic_army_artillery2
+		x = 35
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_infantry_expanding }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = infantry_artillery_bonus
+bonus = 1.0
+uses = 1
+category = infantry_weapons
+category = artillery
+	}
+		}
+	}
+
+	#Focus for Civilian Advancement Three
+	focus = {
+		id = SAY_civilian_advancement_three
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 5
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_civilian_advancement_two }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			361 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+        type = industrial_complex
+        level = 2
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Secret Advancements
+	focus = {
+		id = SAY_secret_advancements
+		icon = GFX_goal_generic_secret_weapon
+		x = 3
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SAY_civilian_advancement_three 
+		}
+		prerequisite = { 
+			focus = SAY_military_advancement_three 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = secret_bonus
+bonus = 1.0
+uses = 4
+category = electronics
+category = nuclear
+category = rocketry
+	}
+		}
+	}
+
+	#Focus for Civilian Advancement Two
+	focus = {
+		id = SAY_civilian_advancement_two
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 5
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_civilian_advancement }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			92 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+        type = industrial_complex
+        level = 2
+        instant_build = yes
+   }
+}
+		}
+	}
+
 	#Focus for Industry Expanding Efforts
 	focus = {
 		id = SAY_industry_expanding_efforts
@@ -940,6 +1311,30 @@ add_state_core= 201
 		}
 	}
 
+	#Focus for Military Advancement Two
+	focus = {
+		id = SAY_military_advancement_two
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 1
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_military_advancement }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			89 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+        type = arms_factory
+        level = 2
+        instant_build = yes
+   }
+}
+		}
+	}
+
 	#Focus for Fate of Lithuania
 	focus = {
 		id = SAY_fate_of_lithuania
@@ -1573,6 +1968,53 @@ add_state_core= 9
         instant_build = yes
    }
 }
+		}
+	}
+
+	#Focus for Military Advancement Three
+	focus = {
+		id = SAY_military_advancement_three
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 1
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SAY_military_advancement_two }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			96 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+        type = arms_factory
+        level = 2
+        instant_build = yes
+   }
+}
+		}
+	}
+
+	#Focus for Infantry Expanding
+	focus = {
+		id = SAY_infantry_expanding
+		icon = GFX_goal_generic_axis_build_infantry
+		x = 36
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 5
+
+add_tech_bonus = {
+name = land_doc_bonus
+bonus = 1.0
+uses = 1
+category = land_doctrine
+	}
 		}
 	}
 

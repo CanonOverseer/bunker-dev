@@ -725,6 +725,11 @@ EGY_pepe = {
 	color_ui = rgb { 222 215 195 }
 }
 
+FSA_revolt = {
+	color = rgb { 103 188 201 }
+	color_ui = rgb { 103 188 201 }
+}
+
 NAV_fascism = {
 	color = rgb { 100  95  162 }
 	color_ui = rgb { 100  95  162 }

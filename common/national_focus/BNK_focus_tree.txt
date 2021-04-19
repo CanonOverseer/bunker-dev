@@ -3393,11 +3393,11 @@ set_party_name = {
 		}
 	}
 
-	#Focus for The Bunker War Plans.
+	#Focus for The Bunker War Plans
 	focus = {
 		id = BNK_the_bunker_war_plans
 		icon = GFX_goal_generic_territory_or_war
-		x = 33
+		x = 32
 		y = 16
 		cost = 1
 		available_if_capitulated = yes

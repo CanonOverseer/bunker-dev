@@ -26,6 +26,10 @@
  GER_NGF_trust:0 "Budding Alliance"
  GER_NGF_PSA_license:0 "German-American Equipment Deal"
  ENG_PSA_license:0 "British-American Equipment Deal"
+
+ PNA:0 "Saylish North America"
+ PNA_adj:0 "Saylish-American"
+ PNA_def:0 "Saylish North America"
  
  economy_1:0 "§RTerrible Economy§!"
  economy_2:0 "§RBad Economy§!"
