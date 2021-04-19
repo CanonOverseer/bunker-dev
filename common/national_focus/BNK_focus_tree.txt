@@ -1342,7 +1342,6 @@ add_ideas = peoples_commissariat_focus
 		prerequisite = { 
 			focus = BNK_equality_in_the_field_of_battle 
 		}
-		mutually_exclusive = { focus = BNK_a_true_workers_democracy }
 		ai_will_do = {
 			factor = 1
 		}
@@ -3357,7 +3356,6 @@ set_country_flag = rural_industrialization_communism
 		prerequisite = { 
 			focus = BNK_equality_in_the_field_of_battle 
 		}
-		mutually_exclusive = { focus = BNK_the_generalsecretarys_guiding_hand }
 		ai_will_do = {
 			factor = 1
 		}
@@ -3406,6 +3404,19 @@ set_party_name = {
 		}
 		available = {
 			has_country_flag = warplan_unlocked
+		}
+	}
+
+	#Focus for is this shit even updating
+	focus = {
+		id = BNK_is_this_shit_even_updating
+		icon = GFX_goal_unknown
+		x = 0
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
 		}
 	}
 
