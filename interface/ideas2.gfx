@@ -1,6 +1,11 @@
 spriteTypes = {	
 
 	spriteType = {
+		name = "GFX_idea_canon_military"
+		texturefile = "gfx/interface/ideas/RED/ideas/idea_canon_military.dds"
+	}	
+
+	spriteType = {
 		name = "GFX_idea_canon"
 		texturefile = "gfx/interface/ideas/RED/ideas/idea_canon.dds"
 	}	
