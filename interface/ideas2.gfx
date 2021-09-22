@@ -1,6 +1,11 @@
 spriteTypes = {	
 
 	spriteType = {
+		name = "GFX_idea_canon_military"
+		texturefile = "gfx/interface/ideas/RED/ideas/idea_canon_military.dds"
+	}	
+
+	spriteType = {
 		name = "GFX_idea_canon"
 		texturefile = "gfx/interface/ideas/RED/ideas/idea_canon.dds"
 	}	
@@ -203,6 +208,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_decision_cat_generic_formsex"
 		textureFile = "gfx/interface/decisions/form_greater_sex.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_cat_generic_war_icon"
+		textureFile = "gfx/interface/decisions/generic_conflict.png"
+	}
+
+	spriteType = {
+		name = "GFX_decision_cat_bunker_civil_war_image"
+		textureFile = "gfx/interface/decisions/bunker_civil_war_cat.dds"
 	}
 
 	spriteType = {

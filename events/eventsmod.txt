@@ -33,7 +33,7 @@ country_event = { # Civil War
 				size = 0.25
 				capital = 19
 				states = { 
-					19 31 806 25
+					19 31 806
 				}
 				}
 			}

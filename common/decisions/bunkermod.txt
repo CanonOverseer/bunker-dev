@@ -100,6 +100,15 @@ jewish_jihad_category = {
 
 }
 
+bunker_civil_war_category = {
+
+
+
+
+
+	
+}
+
 form_sex_category = {
 form_sex_league = {
 
