@@ -1,0 +1,69 @@
+spriteTypes = { 
+	##Icon For: UN French-Reservation
+	SpriteType = { 
+		name = "GFX_idea_Canon_un_frenchreservation-57457"
+		texturefile = "gfx/interface/ideas/bunkernewideas-ideas/Canon_un_frenchreservation-57457.dds"
+	}
+
+	##Icon For: Bastion of Democracy
+	SpriteType = { 
+		name = "GFX_idea_Canon_bastion_of_democracy-73587"
+		texturefile = "gfx/interface/ideas/bunkernewideas-ideas/Canon_bastion_of_democracy-73587.dds"
+	}
+
+	##Icon For: Socialist Militias
+	SpriteType = { 
+		name = "GFX_idea_Canon_socialist_militias-69750"
+		texturefile = "gfx/interface/ideas/bunkernewideas-ideas/Canon_socialist_militias-69750.dds"
+	}
+
+	##Icon For: Bunker in Flames
+	SpriteType = { 
+		name = "GFX_idea_Canon_bunker_in_flames-69751"
+		texturefile = "gfx/interface/ideas/bunkernewideas-ideas/Canon_bunker_in_flames-69751.dds"
+	}
+
+	##Icon For: Steel Eagles army influences
+	SpriteType = { 
+		name = "GFX_idea_Canon_steel_eagles_army_influences-69752"
+		texturefile = "gfx/interface/ideas/bunkernewideas-ideas/Canon_steel_eagles_army_influences-69752.dds"
+	}
+
+	##Icon For: Low Military Control
+	SpriteType = { 
+		name = "GFX_idea_Canon_low_military_control-1227"
+		texturefile = "gfx/interface/ideas/bunkernewideas-ideas/Canon_low_military_control-1227.dds"
+	}
+
+	##Icon For: Emergency Powers Act
+	SpriteType = { 
+		name = "GFX_idea_Canon_emergency_powers_act-1440"
+		texturefile = "gfx/interface/ideas/bunkernewideas-ideas/Canon_emergency_powers_act-1440.dds"
+	}
+
+	##Icon For: Islamic Nation
+	SpriteType = { 
+		name = "GFX_idea_Canon_islamic_nation-75326"
+		texturefile = "gfx/interface/ideas/bunkernewideas-ideas/Canon_islamic_nation-75326.dds"
+	}
+
+	##Icon For: MIlitary Confusion
+	SpriteType = { 
+		name = "GFX_idea_Canon_military_confusion-1233"
+		texturefile = "gfx/interface/ideas/bunkernewideas-ideas/Canon_military_confusion-1233.dds"
+	}
+
+	##Icon For: Bunker Civil War
+	SpriteType = { 
+		name = "GFX_idea_Canon_bunker_civil_war-77544"
+		texturefile = "gfx/interface/ideas/bunkernewideas-ideas/Canon_bunker_civil_war-77544.dds"
+	}
+
+	##Icon For: The Wehraboo
+	SpriteType = { 
+		name = "GFX_idea_Canon_the_wehraboo-74578"
+		texturefile = "gfx/interface/ideas/bunkernewideas-ideas/Canon_the_wehraboo-74578.dds"
+	}
+
+ 
+ }

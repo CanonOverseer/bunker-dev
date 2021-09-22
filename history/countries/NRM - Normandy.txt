@@ -136,21 +136,21 @@ add_ideas = un_member
 
 #Create country leader - Duke Henry I
 create_country_leader = {
-	name = "Duke Henry I"
+	name = "Henry I"
 	#Custom image for Duke Henry I
 	picture = "gfx/leaders/BNK/henry_I.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = conservatism
 	traits = { }
 }
 
 #Create country leader - Duke Henry I
 create_country_leader = {
-	name = "Duke Henry I"
+	name = "Henry I"
 	#Custom image for Duke Henry I
 	picture = "gfx/leaders/BNK/henry_I.dds"
 	expire = "1965.1.1"
-	ideology = moderatism
+	ideology = monarchism
 	traits = { }
 }
 

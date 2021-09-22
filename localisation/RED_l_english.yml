@@ -314,8 +314,8 @@
  BNK_doenitz_DEF:0 "the Purple Viking Empire"
  BNK_doenitz_ADJ:0 "Viking"
 
- BNK_military_government:0 "Provisional Government of the Bunker"
- BNK_military_government_DEF:0 "the Military Provisional Government of the Reds and Blues"
+ BNK_military_government:0 "Bunker Armed Forces"
+ BNK_military_government_DEF:0 "the Military Provisional Government of the Bunker"
  BNK_military_government_ADJ:0 "Bunker"
 
  BNK_holy_empire:0 "Holy Bunker Empire"

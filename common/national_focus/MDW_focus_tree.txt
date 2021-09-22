@@ -16,6 +16,12 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MDW_waking_of_a_great_nation }
+		mutually_exclusive = { 
+			focus = MDW_for_god_and_country 
+		}
+		mutually_exclusive = { 
+			focus = MDW_every_man_has_a_right 
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -52,6 +58,12 @@ create_country_leader = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MDW_waking_of_a_great_nation }
+		mutually_exclusive = { 
+			focus = MDW_for_god_and_country 
+		}
+		mutually_exclusive = { 
+			focus = MDW_every_man_has_a_right 
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -94,6 +106,12 @@ create_country_leader = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MDW_waking_of_a_great_nation }
+		mutually_exclusive = { 
+			focus = MDW_for_god_and_country 
+			focus = MDW_workers_of_the_midwestern_union 
+			focus = MDW_glories_of_old 
+			focus = MDW_ 
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -230,7 +248,7 @@ create_country_leader = {
 		id = MDW_make_toasters_out_of_wood
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 50
-		y = 5
+		y = 6
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MDW_worker_benefit }
@@ -337,12 +355,12 @@ create_country_leader = {
 		}
 	}
 
-	#Focus for Stranglehold
+	#Focus for The Stranglehold of North America
 	focus = {
-		id = MDW_stranglehold
+		id = MDW_the_stranglehold_of_north_america
 		icon = GFX_goal_unknown
 		x = 26
-		y = 6
+		y = 7
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MDW_cuba_fever_baby }
@@ -356,7 +374,7 @@ create_country_leader = {
 		id = MDW_cuba_fever_baby
 		icon = GFX_focus_AST_war_japan
 		x = 26
-		y = 5
+		y = 6
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MDW_sweet_home_alabama }
@@ -370,7 +388,7 @@ create_country_leader = {
 		id = MDW_sweet_home_alabama
 		icon = GFX_MDW_sweet_home_alabama-94600
 		x = 26
-		y = 4
+		y = 5
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MDW_sike_the_prisoners_are_slaves_lol }
@@ -435,9 +453,9 @@ create_country_leader = {
 		}
 	}
 
-	#Focus for NO REGULATIONS
+	#Focus for No Regulations of the market
 	focus = {
-		id = MDW_no_regulations
+		id = MDW_no_regulations_of_the_market
 		icon = GFX_focus_generic_treaty
 		x = 20
 		y = 4
@@ -457,7 +475,7 @@ create_country_leader = {
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = MDW_no_regulations }
+		prerequisite = { focus = MDW_no_regulations_of_the_market }
 		ai_will_do = {
 			factor = 1
 		}
@@ -491,9 +509,9 @@ create_country_leader = {
 		}
 	}
 
-	#Focus for Revolt against the Movement
+	#Focus for Age of Pure Democracy
 	focus = {
-		id = MDW_revolt_against_the_movement
+		id = MDW_age_of_pure_democracy
 		icon = GFX_focus_focus_fra_revolution_utmost
 		x = 17
 		y = 3
@@ -505,7 +523,7 @@ create_country_leader = {
 		}
 	}
 
-	#Focus for The Woke Nation
+	#Focus for The Woke Nation-
 	focus = {
 		id = MDW_the_woke_nation
 		icon = GFX_focus_smiling_buddha
@@ -513,7 +531,7 @@ create_country_leader = {
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = MDW_revolt_against_the_movement }
+		prerequisite = { focus = MDW_age_of_pure_democracy }
 		ai_will_do = {
 			factor = 1
 		}
@@ -572,6 +590,12 @@ create_country_leader = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MDW_waking_of_a_great_nation }
+		mutually_exclusive = { 
+			focus = MDW_workers_of_the_midwestern_union 
+			focus = MDW_glories_of_old 
+			focus = MDW_every_man_has_a_right 
+			focus = MDW_ 
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -739,7 +763,7 @@ popularity = 1
 		id = MDW_dooms_day
 		icon = GFX_focus_wonderweapons
 		x = 21
-		y = 11
+		y = 12
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
@@ -1017,10 +1041,10 @@ popularity = 1
 		}
 	}
 
-	#Focus for Declare Logan715 a Prophet
+	#Focus for Declare Logan715 the Second coming
 	focus = {
-		id = MDW_declare_logan715_a_prophet
-		icon = GFX_MDW_declare_logan715_a_prophet-94577
+		id = MDW_declare_logan715_the_second_coming
+		icon = GFX_MDW_declare_logan715_the_second_coming-94577
 		x = 7
 		y = 6
 		cost = 10

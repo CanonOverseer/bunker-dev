@@ -715,6 +715,16 @@ VIN_BUNKER = {
     color_ui = rgb { 115  5  124 }
 }
 
+BNK_commierebellion = {
+	color = rgb { 130 53 76 }
+	color_ui = rgb { 130 53 76 }
+}
+
+BNK_steelrebellion = {
+	color = rgb { 83 73 115 }
+	color_ui = rgb { 83 73 115 }
+}
+
 BNK_anarchy = {
 	color = rgb { 0 0 0 }
 	color_ui = rgb { 0 0 0 }

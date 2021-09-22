@@ -1,0 +1,246 @@
+defined_text = {
+	name = GetLeaderTitle
+	text = {
+		trigger = {
+			tag = BNK
+			has_country_leader = {
+				name = "Canon I"
+				ruling_only = yes
+			}
+			has_country_flag = canon_emperor
+		}
+		localization_key = BNK_TITLE_EMPEROR
+	}
+	text = {
+		trigger = {
+			tag = BNK
+			has_country_leader = {
+				name = "Canon"
+				ruling_only = yes
+			}
+			has_government = neutrality
+			NOT = { has_country_flag = canon_emperor }
+		}
+		localization_key = BNK_TITLE_GENERAL
+	}
+	text = {
+		trigger = {
+			tag = BNK
+			has_country_leader = {
+				name = "Al-Qanun"
+				ruling_only = yes
+			}
+		}
+		localization_key = BNK_TITLE_CALIPH
+	}
+	text = {
+		trigger = {
+			tag = BNK
+			has_country_leader = {
+				name = "The Good D"
+				ruling_only = yes
+			}
+			has_government = communism
+			has_idea = BNK_dedicated_workers
+		}
+		localization_key = BNK_TITLE_REVOLUTIONARY
+	}
+	text = {
+		trigger = {
+			tag = BNK
+			has_country_leader = {
+				name = "The Good D"
+				ruling_only = yes
+			}
+			NOT = { has_idea = BNK_dedicated_workers }
+			has_government = communism
+		}
+		localization_key = BNK_TITLE_PEOPLESLEADER
+	}
+	text = {
+		trigger = {
+			tag = BNK
+			has_country_leader = {
+				name = "The Supreme Big Boi"
+				ruling_only = yes
+			}
+			has_government = communism
+		}
+		localization_key = BNK_TITLE_PREMIER
+	}
+	text = {
+		trigger = {
+			tag = BNK
+			has_country_leader = {
+				name = "Lionfire47"
+				ruling_only = yes
+			}
+			has_country_leader_with_trait = constitutional_monarch
+		}
+		localization_key = BNK_TITLE_KING_OF_BLUES
+	}
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					tag = JAP
+					has_country_leader = {
+						name = "Hirohito"
+						ruling_only = yes
+					}
+				}
+				AND = {
+					tag = EGY
+					has_government = neutrality
+				}
+			}
+		}
+		localization_key = BNK_TITLE_EMPEROR
+	}
+	text = {
+		trigger = {
+			tag = SAY
+			has_country_leader = {
+				name = "Hirohito"
+				ruling_only = yes
+			}
+		}
+		localization_key = BNK_TITLE_FATHEROFNATION
+	}
+	text = {
+		trigger = {
+			has_country_leader = {
+				name = "The Butt Ghost"
+				ruling_only = yes
+			}
+		}
+		localization_key = BNK_TITLE_BUTTGHOST
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_leader = {
+					name = "US. Senate"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "The National Council"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "the Texan Senate"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Siberian Provisional Government"
+					ruling_only = yes
+				} 
+				has_country_leader = {
+					name = "Regonal President Council"
+					ruling_only = yes
+				} 
+			}
+		}
+		localization_key = BNK_TITLE_GOVERNMENT
+	}
+	text = {
+		trigger = {
+			OR = { 
+				tag = USA
+				tag = PSA
+				tag = IRE
+				tag = BNK
+				tag = SAY
+			}
+			NOT = { 
+				OR = {
+					has_country_leader = {
+						name = "US. Senate"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "The National Council"
+						ruling_only = yes
+					}
+				}
+			}
+			has_government = democratic
+		}
+		localization_key = BNK_TITLE_PRESIDENT
+	}
+	text = {
+		trigger = {
+			tag = VTC
+			NOT = { has_government = communism }
+		}
+		localization_key = BNK_TITLE_POPE
+	}
+	text = {
+		trigger = {
+			tag = GER
+			has_government = fascism
+		}
+		trigger = {
+			tag = NAV
+			has_government = fascism
+		}
+		localization_key = BNK_TITLE_FUHRER
+	}
+	text = {
+		trigger = {
+			OR = {
+				tag = ENG
+				tag = CAN 
+				tag = AST
+				tag = NZL
+			}
+			has_government = democratic
+		}
+		localization_key = BNK_TITLE_PRIMEMINISTER
+	}
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					tag = ABM
+					has_government = neutrality
+				}
+				AND = {
+					tag = YEM
+					has_government = neutrality
+				}
+				AND = {
+					tag = SAY
+					has_country_leader = {
+						name = "Karolus Canonus I von Saylandia"
+						ruling_only = yes
+					}
+				}
+			}
+			has_government = neutrality
+			NOT = { has_country_flag = canon_emperor }
+		}
+		localization_key = BNK_TITLE_KING
+	}
+	text = {
+		trigger = {
+			OR = {
+				tag = NRM
+			}
+			OR = {
+				has_country_leader = {
+					name = "Henry I"
+					ruling_only = yes
+				}
+			}
+			OR = { 
+				has_government = democratic
+				has_government = neutrality
+			}
+		}
+		localization_key = BNK_TITLE_DUKE
+	}
+	text = {
+		localization_key = TITLE_DEFAULT
+	}
+}

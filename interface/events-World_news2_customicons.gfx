@@ -1,0 +1,21 @@
+spriteTypes = { 
+	##Icon For: Big Chungus
+	SpriteType = { 
+		name = "World_big_chungus-57461"
+		texturefile = "gfx/interface/events/news2-event/World_big_chungus-57461.dds"
+	}
+
+	##Icon For: Jan Mayen Military Drills
+	SpriteType = { 
+		name = "World_jan_mayen_military_drills-57450"
+		texturefile = "gfx/interface/events/news2-event/World_jan_mayen_military_drills-57450.dds"
+	}
+
+	##Icon For: According to all known laws of aviation
+	SpriteType = { 
+		name = "World_according_to_all_known_laws_of_aviation-57444"
+		texturefile = "gfx/interface/events/news2-event/World_according_to_all_known_laws_of_aviation-57444.dds"
+	}
+
+ 
+ }

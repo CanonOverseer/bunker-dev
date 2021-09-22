@@ -29,55 +29,304 @@ category = armor
 		}
 	}
 
-	#Focus for Church and State
+	#Focus for The Holy Letters
 	focus = {
-		id = BNK_church_and_state
-		icon = GFX_goal_generic_propaganda
-		x = 31
-		y = 3
-		cost = 10
+		id = BNK_the_holy_letters
+		icon = GFX_BNK_the_holy_letters-114753
+		x = 45
+		y = 11
+		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_canon }
+		prerequisite = { focus = BNK_decide_on_the_imperial_religion }
+		mutually_exclusive = { 
+			focus = BNK_the_new_caliphate 
+		}
+		mutually_exclusive = { 
+			focus = BNK_teachings_of_rabbi_lion 
+		}
+		mutually_exclusive = { 
+			focus = BNK_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The New Caliphate
+	focus = {
+		id = BNK_the_new_caliphate
+		icon = GFX_BNK_the_new_caliphate-114752
+		x = 43
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BNK_decide_on_the_imperial_religion }
+		mutually_exclusive = { 
+			focus = BNK_the_holy_letters 
+		}
+		mutually_exclusive = { 
+			focus = BNK_teachings_of_rabbi_lion 
+		}
+		mutually_exclusive = { 
+			focus = BNK_ 
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			country_event= {
-days = 1 
-id = bunkerevent.10
+			set_party_name = { 
+    ideology = neutrality 
+    name = "Islamic Caliphate"
+    long_name = "Al-Qanunid Caliphate"
+}
+set_cosmetic_tag = BNK_caliphate
+set_party_name = { 
+    ideology = fascism
+    name = "Jihadist Faction"
+}
+add_ideas = Canon_islamic_nation
+create_country_leader = {
+	name = "Al-Qanun"
+	desc = "TBD"
+	picture = "gfx/leaders/BNK/Caliphnon.dds"
+	expire = "1965.1.1"
+	ideology = monarchism 
+	traits = {
+		BNK_caliph_of_islam
+	}
+}
+set_rule = {
+    can_use_kamikaze_pilots = yes
 }
 		}
 	}
 
-	#Focus for §gThe Awakening§!
+	#Focus for Teachings of Rabbi Lion
 	focus = {
-		id = BNK_gthe_awakening
-		icon = GFX_BNK_gthe_awakening-68601
-		x = 30
-		y = 5
+		id = BNK_teachings_of_rabbi_lion
+		icon = GFX_goal_unknown
+		x = 41
+		y = 11
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = BNK_i_am_the_senate 
+		prerequisite = { focus = BNK_decide_on_the_imperial_religion }
+		mutually_exclusive = { 
+			focus = BNK_the_holy_letters 
 		}
-		prerequisite = { 
-			focus = BNK_church_and_state 
+		mutually_exclusive = { 
+			focus = BNK_the_new_caliphate 
 		}
-		mutually_exclusive = { focus = BNK_the_first_bunker_empire }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Decide on the Imperial Religion
+	focus = {
+		id = BNK_decide_on_the_imperial_religion
+		icon = GFX_BNK_decide_on_the_imperial_religion-114751
+		x = 43
+		y = 10
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BNK_restrict_democracy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Overthrow Stalin
+	focus = {
+		id = BNK_overthrow_stalin
+		icon = GFX_BNK_overthrow_stalin-114749
+		x = 49
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BNK_usLHtEJn }
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			always = no
+			SOV = { 
+is_in_faction_with = BNK
+exists = yes
+is_ai = yes
+}
+		}
+	}
+
+	#Focus for Form the Communist Faction
+	focus = {
+		id = BNK_form_the_communist_faction
+		icon = GFX_goal_support_communism
+		x = 51
+		y = 18
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BNK_seek_out_allies }
+		mutually_exclusive = { focus = BNK_usLHtEJn }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_government = communism
+has_war = no
+is_in_faction = no
 		}
 		completion_reward = {
-			hidden_effect = {
-news_event = { id = eventsmod.6666 }
+			create_faction = BNK_final_international_faction
+		}
+	}
+
+	#Focus for Join the Comintern
+	focus = {
+		id = BNK_join_the_comintern
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		x = 49
+		y = 18
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BNK_seek_out_allies }
+		mutually_exclusive = { focus = BNK_form_the_communist_faction }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_government = communism
+has_war = no
+is_in_faction = no
+SOV = {
+exists = yes
+has_government = communism
+has_war = no
+is_faction_leader = yes
 }
-custom_effect_tooltip = fascist_tree_bnk
-kill_ideology_leader = communism
-kill_ideology_leader = fascism
-kill_ideology_leader = neutrality
+		}
+	}
+
+	#Focus for Constitutional Monarchy
+	focus = {
+		id = BNK_constitutional_monarchy
+		icon = GFX_focus_rom_handle_king
+		x = 36
+		y = 9
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = BNK_form_the_first_bunker_empire }
+		mutually_exclusive = { 
+			focus = BNK_restrict_democracy 
+		}
+		mutually_exclusive = { 
+			focus = BNK_reinforce_republicanism 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_party_name = { 
+    ideology = democratic
+    name = "Moderate Faction"
+    long_name = "the Moderate Faction"
+}
+set_party_name = { 
+    ideology = fascism
+    name = "Militarists Faction"
+    long_name = "the Militarist Faction"
+}
+set_party_name = { 
+    ideology = communism
+    name = "Opposition Faction"
+    long_name = "the Opposition Faction"
+}
+set_party_name = { 
+    ideology = neutrality 
+    name = "Imperial Loyalists"
+    long_name = "the Imperial Loyalists"
+}
+		}
+	}
+
+	#Focus for Restrict Democracy
+	focus = {
+		id = BNK_restrict_democracy
+		icon = GFX_BNK_restrict_democracy-114783
+		x = 38
+		y = 9
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = BNK_form_the_first_bunker_empire }
+		mutually_exclusive = { 
+			focus = BNK_constitutional_monarchy 
+		}
+		mutually_exclusive = { 
+			focus = BNK_reinforce_republicanism 
+		}
+		mutually_exclusive = { 
+			focus = BNK_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_party_name = { 
+    ideology = democratic
+    name = "Outlawed Party"
+    long_name = "Outlawed Party"
+}
+set_party_name = { 
+    ideology = fascism
+    name = "Outlawed Party"
+    long_name = "Outlawed Party"
+}
+set_party_name = { 
+    ideology = communism
+    name = "Outlawed Party"
+    long_name = "Outlawed Party"
+}
+set_party_name = { 
+    ideology = neutrality 
+    name = "House Overseer"
+    long_name = "Imperial House of Overseer"
+}
+		}
+	}
+
+	#Focus for the §gEmergency Powers Act§!
+	focus = {
+		id = BNK_the_gemergency_powers_act
+		icon = GFX_BNK_the_gemergency_powers_act-113572
+		x = 33
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BNK_bunker_in_flames }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_politics = {
+	ruling_party = neutrality
+}
+set_party_name = { 
+    ideology = neutrality 
+    name = "Military Government"
+    long_name = "Military Government"
+}
+create_country_leader = {
+	name = "Canon"
+	desc = "TBD"
+	picture = "gfx/leaders/BNK/CanonGeneral.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+	}
+}
+
+swap_ideas = {
+    remove_idea = Canon_low_military_control 
+    add_idea = Canon_emergency_powers_act 
+}
 		}
 	}
 
@@ -98,21 +347,22 @@ kill_ideology_leader = neutrality
 		}
 	}
 
-	#Focus for The Imperial Senate
+	#Focus for The National Senate
 	focus = {
-		id = BNK_the_imperial_senate
-		icon = GFX_BNK_the_imperial_senate-64288
-		x = 33
-		y = 3
-		cost = 10
+		id = BNK_the_national_senate
+		icon = GFX_BNK_the_national_senate-64288
+		x = 38
+		y = 6
+		cost = 7
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_canon }
+		prerequisite = { 
+			focus = BNK_restart_the_industry 
+		}
+		prerequisite = { 
+			focus = BNK_try_the_traitors 
+		}
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_ideas = BNK_imperial_senate
-custom_effect_tooltip = BNK_imperial_senate_tooltip
 		}
 	}
 
@@ -157,12 +407,12 @@ days = 80
 	focus = {
 		id = BNK_children_workers
 		icon = GFX_goal_generic_cavalry
-		x = 29
+		x = 28
 		y = 3
 		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = BNK_canon 
+			focus = BNK_bunker_in_flames 
 			focus = BNK_lion 
 		}
 		ai_will_do = {
@@ -272,7 +522,7 @@ id = bunkerevent.9
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_a_pure_bunker }
+		prerequisite = { focus = BNK_a_rpure_bunker }
 		mutually_exclusive = { focus = BNK_the_iron_dictator }
 		ai_will_do = {
 			factor = 1
@@ -323,7 +573,8 @@ news_event= {
 days = 1 
 id = bunkerevent.13
 }
-add_ideas = BNK_republic_loyalists
+
+add_ideas = BNK_political_instability
 		}
 	}
 
@@ -331,7 +582,7 @@ add_ideas = BNK_republic_loyalists
 	focus = {
 		id = BNK_an_equal_bunker
 		icon = GFX_BNK_an_equal_bunker-64296
-		x = 43
+		x = 45
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
@@ -340,7 +591,7 @@ add_ideas = BNK_republic_loyalists
 			focus = BNK_the_republic_lives_on 
 		}
 		mutually_exclusive = { 
-			focus = BNK_a_pure_bunker 
+			focus = BNK_a_rpure_bunker 
 		}
 		ai_will_do = {
 			factor = 1
@@ -367,7 +618,7 @@ custom_effect_tooltip = eventfocus
 		available_if_capitulated = yes
 		prerequisite = { focus = BNK_a_step_away_from_the_council }
 		mutually_exclusive = { 
-			focus = BNK_a_pure_bunker 
+			focus = BNK_a_rpure_bunker 
 		}
 		mutually_exclusive = { 
 			focus = BNK_an_equal_bunker 
@@ -379,17 +630,14 @@ custom_effect_tooltip = eventfocus
 			has_country_flag = democratic_bunker
 		}
 		completion_reward = {
-			add_popularity= { 
-ideology = democratic
-popularity = 0.4
-}
-custom_effect_tooltip = eventfocus
+			custom_effect_tooltip = eventfocus
+country_event = { id = eventsmodedge.4 }
 		}
 	}
 
-	#Focus for A Pure Bunker
+	#Focus for A §RPure§! Bunker
 	focus = {
-		id = BNK_a_pure_bunker
+		id = BNK_a_rpure_bunker
 		icon = GFX_focus_ger_reichskommisariats
 		x = 13
 		y = 1
@@ -463,10 +711,14 @@ category = industry
 	focus = {
 		id = BNK_support_revolution_around_the_globe
 		icon = GFX_focus_ger_great_red_menace
-		x = 43
-		y = 8
+		x = 45
+		y = 7
 		cost = 10
 		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BNK_no_compromises 
+			focus = BNK_support_from_the_comintern 
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -494,10 +746,12 @@ set_country_flag = warplan_unlocked
 country_event= {
 id = bunkerevent.1
 }
+
+add_ideas= BNK_fail_five
 		}
 	}
 
-	#Focus for Lion.
+	#Focus for Lion
 	focus = {
 		id = BNK_lion
 		icon = GFX_BNK_lion-64291
@@ -507,7 +761,7 @@ id = bunkerevent.1
 		available_if_capitulated = yes
 		prerequisite = { focus = BNK_the_republic_lives_on }
 		mutually_exclusive = { 
-			focus = BNK_canon 
+			focus = BNK_bunker_in_flames 
 		}
 		mutually_exclusive = { 
 			focus = BNK_echo 
@@ -518,10 +772,10 @@ id = bunkerevent.1
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
+		complete_tooltip = {
 			create_country_leader = {
 	name = "Lionfire47"
-	desc = "TBD"
+	desc = lion1_desc
 	picture = "gfx/leaders/BNK/lionfire.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
@@ -531,7 +785,7 @@ id = bunkerevent.1
                 the_gentleman_president
 	}
 }
-
+set_country_flag = bnk_is_lion
 news_event= {
 days = 1 
 id = bunkerevent.17
@@ -539,11 +793,11 @@ id = bunkerevent.17
 		}
 	}
 
-	#Focus for Canon
+	#Focus for Bunker in Flames
 	focus = {
-		id = BNK_canon
-		icon = GFX_BNK_canon-64292
-		x = 33
+		id = BNK_bunker_in_flames
+		icon = GFX_BNK_bunker_in_flames-113571
+		x = 34
 		y = 2
 		cost = 2
 		available_if_capitulated = yes
@@ -560,31 +814,6 @@ id = bunkerevent.17
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-			set_politics = {
-	ruling_party = neutrality
-}
-set_party_name = { 
-    ideology = neutrality 
-    name = "The Imperialist Party"
-}
-create_country_leader = {
-	name = "Canon"
-	desc = "TBD"
-	picture = "gfx/leaders/BNK/Canon.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		anti_democrat
-	}
-}
-set_country_flag = is_canon
-
-news_event= {
-days = 1 
-id = bunkerevent.15
-}
-		}
 	}
 
 	#Focus for The Iron Dictator
@@ -595,7 +824,7 @@ id = bunkerevent.15
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_a_pure_bunker }
+		prerequisite = { focus = BNK_a_rpure_bunker }
 		mutually_exclusive = { focus = BNK_steel_eagle_victory }
 		ai_will_do = {
 			factor = 1
@@ -629,7 +858,7 @@ days = 1
 id = bunkerevent.2
 }
 
-add_ideas = BNK_republic_loyalists
+add_ideas = BNK_political_instability
 		}
 	}
 
@@ -683,7 +912,7 @@ days = 500
 			focus = BNK_lion 
 		}
 		mutually_exclusive = { 
-			focus = BNK_canon 
+			focus = BNK_bunker_in_flames 
 		}
 		mutually_exclusive = { 
 			focus = BNK_top 
@@ -691,11 +920,8 @@ days = 500
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-			custom_effect_tooltip = warplan_unlocked_tt
-set_country_flag = warplan_unlocked
-retire_country_leader = yes
-create_country_leader = {
+		complete_tooltip = {
+			create_country_leader = {
 	name = "Echoedlightning"
 	desc = "TBD"
 	picture = "gfx/leaders/BNK/echo.dds"
@@ -726,7 +952,7 @@ id = bunkerevent.14
 			focus = BNK_lion 
 		}
 		mutually_exclusive = { 
-			focus = BNK_canon 
+			focus = BNK_bunker_in_flames 
 		}
 		mutually_exclusive = { 
 			focus = BNK_echo 
@@ -737,11 +963,8 @@ id = bunkerevent.14
 		available = {
 			NOT = { has_country_flag = straight }
 		}
-		completion_reward = {
-			custom_effect_tooltip = warplan_unlocked_tt
-set_country_flag = warplan_unlocked
-retire_country_leader = yes
-create_country_leader = {
+		complete_tooltip = {
+			create_country_leader = {
 	name = "Top"
 	desc = "TBD"
 	picture = "gfx/leaders/BNK/ZZTopman.dds"
@@ -751,20 +974,6 @@ create_country_leader = {
 		top
 	}
 }
-hidden_effect = {
-create_country_leader = {
-	name = "The Butt Ghost"
-	desc = "BUTTGHOST_LEADER"
-	picture = "gfx/leaders/BNK/buttghost.dds"
-	expire = "1965.1.1"
-	ideology = nazism
-	traits = {
-                butt_ghost
-                will_eat_butt
-	}
-}
-}
-
 news_event= {
 days = 1 
 id = bunkerevent.12
@@ -886,28 +1095,6 @@ news_event = {
 }
 custom_effect_tooltip = warplan_unlocked_neutrality_tt
 set_country_flag = warplan_unlocked
-		}
-	}
-
-	#Focus for I am the Senate
-	focus = {
-		id = BNK_i_am_the_senate
-		icon = GFX_focus_smiling_buddha
-		x = 33
-		y = 4
-		cost = 8
-		available_if_capitulated = yes
-		prerequisite = { focus = BNK_the_imperial_senate }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_timed_idea= { 
-idea = BNK_political_instability
-days = 50
-}
-add_country_leader_trait = the_senate
-BNK_imperial_senate_loss = yes
 		}
 	}
 
@@ -1048,7 +1235,7 @@ category = armor
 	focus = {
 		id = BNK_the_united_road_act
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 24
+		x = 23
 		y = 6
 		cost = 10
 		available_if_capitulated = yes
@@ -1076,7 +1263,7 @@ set_building_level = {
 	focus = {
 		id = BNK_purchase_weapons
 		icon = GFX_goal_generic_small_arms
-		x = 22
+		x = 21
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
@@ -1090,9 +1277,11 @@ set_building_level = {
 		completion_reward = {
 			add_equipment_to_stockpile = {
     type = infantry_equipment
-    amount = 1000
+    amount = 5000
     producer = BNK
 }
+
+set_country_flag = warplan_unlocked
 		}
 	}
 
@@ -1100,7 +1289,7 @@ set_building_level = {
 	focus = {
 		id = BNK_peaceful_solution
 		icon = GFX_goal_generic_intelligence_exchange
-		x = 20
+		x = 19
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
@@ -1122,6 +1311,7 @@ set_building_level = {
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = BNK_peaceful_solution }
+		mutually_exclusive = { focus = BNK_become_an_alcoholic }
 		ai_will_do = {
 			factor = 1
 		}
@@ -1137,7 +1327,7 @@ id = bunkerevent.4
 	focus = {
 		id = BNK_get_annexed_by_the_un
 		icon = GFX_BNK_get_annexed_by_the_un-53101
-		x = 22
+		x = 21
 		y = 9
 		cost = 10
 		available_if_capitulated = yes
@@ -1160,7 +1350,7 @@ id = bunkerevent.6
 	focus = {
 		id = BNK_the_bunker_commonwealth
 		icon = GFX_BNK_the_bunker_commonwealth-53096
-		x = 20
+		x = 19
 		y = 9
 		cost = 10
 		available_if_capitulated = yes
@@ -1210,7 +1400,7 @@ id = bunkerevent.5
 	focus = {
 		id = BNK_d
 		icon = GFX_BNK_d-68520
-		x = 43
+		x = 45
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
@@ -1225,7 +1415,7 @@ elections_allowed = no
 }
 create_country_leader = {
 	name = "The Good D"
-	desc = "TBD"
+	desc = trot_desc
 	picture = "gfx/leaders/BNK/d.dds"
 	expire = "1965.1.1"
 	ideology = leninism
@@ -1248,7 +1438,7 @@ custom_effect_tooltip = warplan_unlocked_tt
 	focus = {
 		id = BNK_all_power_to_workers
 		icon = GFX_goal_generic_soviet_construction
-		x = 43
+		x = 45
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
@@ -1269,7 +1459,7 @@ add_timed_idea = {
 	focus = {
 		id = BNK_seize_the_means_of_production
 		icon = GFX_BNK_seize_the_means_of_production-53113
-		x = 45
+		x = 47
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
@@ -1295,7 +1485,7 @@ add_ideas = peoples_commissariat_focus
 	focus = {
 		id = BNK_equality_in_the_field_of_battle
 		icon = GFX_focus_YUG_pan_slavic_congress
-		x = 41
+		x = 43
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
@@ -1312,13 +1502,16 @@ add_ideas = peoples_commissariat_focus
 	focus = {
 		id = BNK_add_the_faith_militant_to_the_army
 		icon = GFX_goal_continuous_def_against_influence
-		x = 31
+		x = 30
 		y = 8
 		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { focus = BNK_the_dual_army }
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			NOT = { has_country_flag = is_canon }
 		}
 		completion_reward = {
 			add_manpower= 50000
@@ -1329,7 +1522,7 @@ add_ideas = peoples_commissariat_focus
 	focus = {
 		id = BNK_the_generalsecretarys_guiding_hand
 		icon = GFX_BNK_the_generalsecretarys_guiding_hand-94299
-		x = 42
+		x = 44
 		y = 4
 		cost = 5
 		available_if_capitulated = yes
@@ -1342,6 +1535,7 @@ add_ideas = peoples_commissariat_focus
 		prerequisite = { 
 			focus = BNK_equality_in_the_field_of_battle 
 		}
+		mutually_exclusive = { focus = BNK_a_true_workers_democracy }
 		ai_will_do = {
 			factor = 1
 		}
@@ -1381,7 +1575,7 @@ add_opinion_modifier = {
 	focus = {
 		id = BNK_support_your_local_nkvd
 		icon = GFX_focus_prc_agrarian_socialism
-		x = 39
+		x = 42
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
@@ -1440,7 +1634,7 @@ add_opinion_modifier = {
 	focus = {
 		id = BNK_war_plan_red
 		icon = GFX_goal_generic_forceful_treaty
-		x = 33
+		x = 32
 		y = 20
 		cost = 2
 		available_if_capitulated = yes
@@ -1457,16 +1651,11 @@ add_opinion_modifier = {
 	focus = {
 		id = BNK_recruit_emu_soldiers
 		icon = GFX_goal_generic_secret_weapon
-		x = 38
-		y = 7
+		x = 46
+		y = 14
 		cost = 9
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = BNK_reform_the_imperial_military 
-		}
-		prerequisite = { 
-			focus = BNK_research_the_nuclear_energy_of_australia 
-		}
+		prerequisite = { focus = BNK_reform_the_imperial_military }
 		mutually_exclusive = { focus = BNK_the_modern_warfare_doctrine }
 		ai_will_do = {
 			factor = 1
@@ -1559,7 +1748,7 @@ BNK_imperial_senate_loss = yes
 	focus = {
 		id = BNK_android_slaves
 		icon = GFX_goal_generic_attack_allies
-		x = 27
+		x = 26
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
@@ -1583,11 +1772,14 @@ BNK_imperial_senate_loss = yes
 	focus = {
 		id = BNK_fall_into_the_toilet
 		icon = GFX_BNK_fall_into_the_toilet-53153
-		x = 18
+		x = 17
 		y = 9
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_a_shocking_turn_of_events }
+		prerequisite = { 
+			focus = BNK_a_shocking_turn_of_events 
+			focus = BNK_become_an_alcoholic 
+		}
 		mutually_exclusive = { 
 			focus = BNK_the_bunker_commonwealth 
 		}
@@ -1615,41 +1807,14 @@ popularity = 0.4
 		}
 	}
 
-	#Focus for The First Bunker Empire
-	focus = {
-		id = BNK_the_first_bunker_empire
-		icon = GFX_BNK_the_first_bunker_empire-53716
-		x = 33
-		y = 5
-		cost = 5
-		available_if_capitulated = yes
-		prerequisite = { focus = BNK_i_am_the_senate }
-		mutually_exclusive = { focus = BNK_gthe_awakening }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_popularity= { 
-ideology = neutrality
-popularity = 0.4
-}
-country_event = { days = 1 id = eventsmod.3 }
-news_event = {
-    id = eventsmod.39
-    days = 3
-}
-		}
-	}
-
 	#Focus for Establish SCP
 	focus = {
 		id = BNK_establish_scp
 		icon = GFX_BNK_establish_scp-73659
-		x = 30
-		y = 6
+		x = 40
+		y = 3
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_the_first_bunker_empire }
 		ai_will_do = {
 			factor = 1
 		}
@@ -2018,6 +2183,46 @@ category = nuclear
 		}
 	}
 
+	#Focus for Suppress Socialist activities
+	focus = {
+		id = BNK_suppress_socialist_activities
+		icon = GFX_focus_spr_crush_the_revolution
+		x = 34
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BNK_the_gemergency_powers_act }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_flag = BNK_allwell_canon
+		}
+	}
+
+	#Focus for Alliance with Top
+	focus = {
+		id = BNK_alliance_with_top
+		icon = GFX_goal_unknown
+		x = 31
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BNK_suppress_socialist_activities 
+		}
+		prerequisite = { 
+			focus = BNK_suppress_the_steel_eagles 
+		}
+		mutually_exclusive = { focus = BNK_alliance_with_the_crack }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_flag = BNK_allwell_canon
+		}
+	}
+
 	#Focus for Imperial Chancellor Top
 	focus = {
 		id = BNK_imperial_chancellor_top
@@ -2042,11 +2247,11 @@ add_ideas= BNK_chancellor_top
 	focus = {
 		id = BNK_research_the_nuclear_energy_of_australia
 		icon = GFX_BNK_research_the_nuclear_energy_of_australia-64019
-		x = 37
+		x = 29
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_the_imperial_academy_for_the_sciences }
+		prerequisite = { focus = BNK_the_academy_for_the_sciences }
 		ai_will_do = {
 			factor = 1
 		}
@@ -2060,22 +2265,20 @@ category = nuclear
 		}
 	}
 
-	#Focus for The Imperial Academy for the Sciences
+	#Focus for The Academy for the Sciences
 	focus = {
-		id = BNK_the_imperial_academy_for_the_sciences
-		icon = GFX_BNK_the_imperial_academy_for_the_sciences-64018
-		x = 35
+		id = BNK_the_academy_for_the_sciences
+		icon = GFX_BNK_the_academy_for_the_sciences-64018
+		x = 30
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_canon }
+		prerequisite = { 
+			focus = BNK_bunker_in_flames 
+			focus = BNK_lion 
+		}
 		ai_will_do = {
 			factor = 1
-		}
-		available = {
-			NOT = {
-has_idea = BNK_imperial_senate_opposed
-}
 		}
 		completion_reward = {
 			add_ideas = BNK_imperial_research
@@ -2086,11 +2289,10 @@ has_idea = BNK_imperial_senate_opposed
 	focus = {
 		id = BNK_reform_the_imperial_military
 		icon = GFX_BNK_reform_the_imperial_military-64021
-		x = 37
-		y = 6
+		x = 45
+		y = 13
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_the_first_bunker_empire }
 		ai_will_do = {
 			factor = 1
 		}
@@ -2104,13 +2306,19 @@ set_country_flag = warplan_unlocked
 	focus = {
 		id = BNK_the_dual_army
 		icon = GFX_BNK_the_dual_army-64022
-		x = 31
+		x = 30
 		y = 7
 		cost = 8
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_the_purple_wedding }
+		prerequisite = { 
+			focus = BNK_seduce_lion_to_our_cause 
+			focus = BNK_the_purple_wedding 
+		}
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			OR = { has_country_flag = bnk_is_lion has_country_flag = BNK_crisis_resolved }
 		}
 		completion_reward = {
 			add_ideas= BNK_dual_army
@@ -2121,8 +2329,8 @@ set_country_flag = warplan_unlocked
 	focus = {
 		id = BNK_the_modern_warfare_doctrine
 		icon = GFX_BNK_the_modern_warfare_doctrine-64289
-		x = 36
-		y = 7
+		x = 44
+		y = 14
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BNK_reform_the_imperial_military }
@@ -2145,11 +2353,14 @@ category = land_doctrine
 	focus = {
 		id = BNK_appoint_a_primeminister
 		icon = GFX_BNK_appoint_a_primeminister-64297
-		x = 33
-		y = 6
+		x = 38
+		y = 10
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_the_first_bunker_empire }
+		prerequisite = { 
+			focus = BNK_constitutional_monarchy 
+			focus = BNK_restrict_democracy 
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -2158,7 +2369,6 @@ category = land_doctrine
 		}
 		completion_reward = {
 			custom_effect_tooltip = free_slot_warning
-BNK_imperial_senate_gain = yes
 country_event= {
 id = eventsmod.111
 }
@@ -2286,8 +2496,8 @@ target = RED
 	focus = {
 		id = BNK_the_imperial_tank_factories
 		icon = GFX_BNK_the_imperial_tank_factories-64543
-		x = 37
-		y = 8
+		x = 45
+		y = 15
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
@@ -2357,11 +2567,11 @@ target = RED
 	focus = {
 		id = BNK_the_breton_question
 		icon = GFX_BNK_the_breton_question-94609
-		x = 27
+		x = 28
 		y = 17
 		cost = 1
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_the_bunker_war_plans }
+		prerequisite = { focus = BNK_bunker_on_the_world_stage }
 		ai_will_do = {
 			factor = 1
 		}
@@ -2427,7 +2637,6 @@ has_completed_focus = BNK_echo
 		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { focus = BNK_the_breton_question }
-		mutually_exclusive = { focus = BNK_the_duke_of_brittany }
 		ai_will_do = {
 			factor = 1
 		}
@@ -2472,7 +2681,7 @@ target = BRI
 	focus = {
 		id = BNK_brittany_is_ours
 		icon = GFX_BNK_brittany_is_ours-72808
-		x = 27
+		x = 29
 		y = 19
 		cost = 5
 		available_if_capitulated = yes
@@ -2512,8 +2721,8 @@ add_named_threat = { threat = 4 name = bnk_annexation_of_brittany }
 	focus = {
 		id = BNK_bomb_em_all_to_hell
 		icon = GFX_BNK_bomb_em_all_to_hell-64578
-		x = 35
-		y = 8
+		x = 43
+		y = 15
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
@@ -2529,8 +2738,8 @@ add_named_threat = { threat = 4 name = bnk_annexation_of_brittany }
 	focus = {
 		id = BNK_artillery_only
 		icon = GFX_BNK_artillery_only-64581
-		x = 39
-		y = 8
+		x = 47
+		y = 15
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
@@ -2570,6 +2779,23 @@ add_equipment_to_stockpile = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			always = no
+		}
+	}
+
+	#Focus for Sacrifices for the Revolution
+	focus = {
+		id = BNK_sacrifices_for_the_revolution
+		icon = GFX_BNK_sacrifices_for_the_revolution-107336
+		x = 42
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BNK_support_your_local_nkvd }
+		ai_will_do = {
+			factor = 1
+		}
 	}
 
 	#Focus for Eagle of the West
@@ -2583,6 +2809,15 @@ add_equipment_to_stockpile = {
 		prerequisite = { focus = BNK_the_cure_for_the_disease }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 5000
+    producer = BNK
+}
+
+set_country_flag = warplan_unlocked
 		}
 	}
 
@@ -2603,14 +2838,17 @@ add_equipment_to_stockpile = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas= BNK_holy_marriage
+		}
 	}
 
 	#Focus for The Church of E
 	focus = {
 		id = BNK_the_church_of_e
 		icon = GFX_BNK_the_church_of_e-73527
-		x = 29
-		y = 8
+		x = 28
+		y = 7
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BNK_the_purple_wedding }
@@ -2626,7 +2864,7 @@ add_equipment_to_stockpile = {
 	focus = {
 		id = BNK_the_bunker_hussars
 		icon = GFX_goal_unknown
-		x = 20
+		x = 19
 		y = 10
 		cost = 10
 		available_if_capitulated = yes
@@ -2640,11 +2878,10 @@ add_equipment_to_stockpile = {
 	focus = {
 		id = BNK_a_consort_for_the_emperor
 		icon = GFX_BNK_a_consort_for_the_emperor-68570
-		x = 33
-		y = 7
+		x = 48
+		y = 11
 		cost = 8
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_appoint_a_primeminister }
 		ai_will_do = {
 			factor = 1
 		}
@@ -2653,11 +2890,240 @@ add_equipment_to_stockpile = {
 		}
 	}
 
+	#Focus for Reinforce Republicanism
+	focus = {
+		id = BNK_reinforce_republicanism
+		icon = GFX_goal_support_democracy
+		x = 34
+		y = 9
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = BNK_restore_the_republic }
+		mutually_exclusive = { 
+			focus = BNK_constitutional_monarchy 
+		}
+		mutually_exclusive = { 
+			focus = BNK_restrict_democracy 
+		}
+		mutually_exclusive = { 
+			focus = BNK_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Draft a new Constitution
+	focus = {
+		id = BNK_draft_a_new_constitution
+		icon = GFX_BNK_draft_a_new_constitution-113902
+		x = 36
+		y = 7
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = BNK_the_national_senate }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_rule = {
+can_join_factions = yes
+can_not_declare_war = no
+}
+		}
+	}
+
+	#Focus for Restore the Republic
+	focus = {
+		id = BNK_restore_the_republic
+		icon = GFX_BNK_restore_the_republic-113903
+		x = 35
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BNK_draft_a_new_constitution }
+		mutually_exclusive = { focus = BNK_form_the_first_bunker_empire }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_politics = {
+	ruling_party = democratic
+        elections_allowed = no
+        last_election = "1935.12.17"
+        election_frequency = 48
+}
+set_cosmetic_tag = BNK_secondrepublic
+set_party_name = { 
+    ideology = democratic
+    name = "Canon Administration"
+    long_name = "Canon's Administration"
+}
+set_party_name = { 
+    ideology = fascism
+    name = "Bunker Fascist Party"
+    long_name = "Fascist Party of the Bunker"
+}
+set_party_name = { 
+    ideology = communism
+    name = "Social Democratic Party"
+    long_name = "Social Democratic Party of the Bunker"
+}
+set_party_name = { 
+    ideology = neutrality
+    name = "Republican Military"
+    long_name = "the Military of the Republic"
+}
+		}
+	}
+
+	#Focus for Form the First Bunker Empire
+	focus = {
+		id = BNK_form_the_first_bunker_empire
+		icon = GFX_BNK_form_the_first_bunker_empire-113905
+		x = 37
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BNK_draft_a_new_constitution }
+		mutually_exclusive = { focus = BNK_restore_the_republic }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_country_flag = canon_emperor
+		}
+	}
+
+	#Focus for Try the Traitors
+	focus = {
+		id = BNK_try_the_traitors
+		icon = GFX_BNK_try_the_traitors-114782
+		x = 37
+		y = 4
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = BNK_republican_victory_in_the_civil_war }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Restart the Industry
+	focus = {
+		id = BNK_restart_the_industry
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 39
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BNK_republican_victory_in_the_civil_war }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Saylish Volunteers
+	focus = {
+		id = BNK_saylish_volunteers
+		icon = GFX_goal_support_democracy
+		x = 32
+		y = 7
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = BNK_alliance_with_top }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_civil_war = yes
+		}
+	}
+
+	#Focus for Cracky's Legion
+	focus = {
+		id = BNK_crackys_legion
+		icon = GFX_BNK_crackys_legion-113661
+		x = 34
+		y = 7
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = BNK_alliance_with_the_crack }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Republican Victory in the Civil War
+	focus = {
+		id = BNK_republican_victory_in_the_civil_war
+		icon = GFX_BNK_republican_victory_in_the_civil_war-114484
+		x = 38
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = BNK_bunker_in_flames }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_flag = BNK_won_civil_war
+		}
+	}
+
+	#Focus for Seduce Lion to our Cause
+	focus = {
+		id = BNK_seduce_lion_to_our_cause
+		icon = GFX_goal_unknown
+		x = 35
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BNK_suppress_socialist_activities 
+		}
+		prerequisite = { 
+			focus = BNK_suppress_the_steel_eagles 
+		}
+		mutually_exclusive = { focus = BNK_alliance_with_the_crack }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Alliance with the Crack
+	focus = {
+		id = BNK_alliance_with_the_crack
+		icon = GFX_BNK_alliance_with_the_crack-113660
+		x = 33
+		y = 5
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BNK_suppress_socialist_activities 
+		}
+		prerequisite = { 
+			focus = BNK_suppress_the_steel_eagles 
+		}
+		mutually_exclusive = { 
+			focus = BNK_seduce_lion_to_our_cause 
+		}
+		mutually_exclusive = { 
+			focus = BNK_alliance_with_top 
+		}
+		mutually_exclusive = { 
+			focus = BNK_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	#Focus for Bisexual Diplomacy
 	focus = {
 		id = BNK_bisexual_diplomacy
 		icon = GFX_BNK_bisexual_diplomacy-74075
-		x = 27
+		x = 26
 		y = 8
 		cost = 2
 		available_if_capitulated = yes
@@ -2679,21 +3145,32 @@ add_opinion_modifier = {
 		}
 	}
 
-	#Focus for The End of the United Nations
+	#Focus for The Final Push
 	focus = {
-		id = BNK_the_end_of_the_united_nations
-		icon = GFX_BNK_the_end_of_the_united_nations-72791
-		x = 35
-		y = 26
+		id = BNK_the_final_push
+		icon = GFX_BNK_the_final_push-72791
+		x = 33
+		y = 24
 		cost = 10
 		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BNK_destruction_of_the_red_state 
+			focus = BNK_the_last_remnants_of_the_civil_war 
+			focus = BNK_the_true_leader_of_red_burgundy 
+			focus = BNK_a_red_red 
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			create_wargoal= { 
-type = annex_everything 
+			declare_war_on= { 
 target = BEL
+type = annex_everything 
+}
+
+news_event= {
+days = 1 
+id = topgay.1
 }
 		}
 	}
@@ -2702,11 +3179,11 @@ target = BEL
 	focus = {
 		id = BNK_the_end_of_the_belgium_culture
 		icon = GFX_BNK_the_end_of_the_belgium_culture-72793
-		x = 35
-		y = 27
+		x = 33
+		y = 25
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_the_end_of_the_united_nations }
+		prerequisite = { focus = BNK_the_final_push }
 		ai_will_do = {
 			factor = 1
 		}
@@ -2910,7 +3387,7 @@ set_cosmetic_tag= BNK_doenitz
 	focus = {
 		id = BNK_end_the_british
 		icon = GFX_focus_attack_britain
-		x = 24
+		x = 23
 		y = 9
 		cost = 10
 		available_if_capitulated = yes
@@ -2939,7 +3416,7 @@ target = ENG
 	focus = {
 		id = BNK_establish_the_new_calendar
 		icon = GFX_BNK_establish_the_new_calendar-73623
-		x = 23
+		x = 22
 		y = 8
 		cost = 10
 		available_if_capitulated = yes
@@ -2956,7 +3433,7 @@ target = ENG
 	focus = {
 		id = BNK_off_with_their_heads
 		icon = GFX_BNK_off_with_their_heads-73624
-		x = 25
+		x = 24
 		y = 8
 		cost = 10
 		available_if_capitulated = yes
@@ -2973,7 +3450,7 @@ target = ENG
 	focus = {
 		id = BNK_moderate_radicalism
 		icon = GFX_BNK_moderate_radicalism-73621
-		x = 24
+		x = 23
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
@@ -3019,7 +3496,7 @@ days = 150
 			factor = 1
 		}
 		completion_reward = {
-			remove_ideas = BNK_republic_loyalists
+			remove_ideas = BNK_political_instability
 		}
 	}
 
@@ -3027,7 +3504,7 @@ days = 150
 	focus = {
 		id = BNK_argentinian_heroin_suppliers
 		icon = GFX_BNK_argentinian_heroin_suppliers-74078
-		x = 14
+		x = 12
 		y = 7
 		cost = 8
 		available_if_capitulated = yes
@@ -3048,7 +3525,7 @@ days = 365
 	focus = {
 		id = BNK_drug_imports
 		icon = GFX_goal_unknown
-		x = 15
+		x = 14
 		y = 6
 		cost = 10
 		available_if_capitulated = yes
@@ -3060,13 +3537,16 @@ days = 365
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			set_country_flag = warplan_unlocked
+		}
 	}
 
 	#Focus for Control the Brazillian Cocaine Trade
 	focus = {
 		id = BNK_control_the_brazillian_cocaine_trade
 		icon = GFX_goal_unknown
-		x = 16
+		x = 15
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
@@ -3081,11 +3561,12 @@ days = 365
 	focus = {
 		id = BNK_iron_for_heroin
 		icon = GFX_focus_generic_steel
-		x = 12
+		x = 11
 		y = 8
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = BNK_argentinian_heroin_suppliers }
+		mutually_exclusive = { focus = BNK_ask_for_money }
 		ai_will_do = {
 			factor = 1
 		}
@@ -3104,11 +3585,12 @@ add_timed_idea = { idea = BNK_obtained_heroin days = 90 }
 	focus = {
 		id = BNK_ask_for_money
 		icon = GFX_BNK_ask_for_money-74079
-		x = 14
+		x = 13
 		y = 8
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = BNK_argentinian_heroin_suppliers }
+		mutually_exclusive = { focus = BNK_iron_for_heroin }
 		ai_will_do = {
 			factor = 1
 		}
@@ -3132,7 +3614,7 @@ days = 365
 	focus = {
 		id = BNK_a_dark_deal
 		icon = GFX_BNK_a_dark_deal-74080
-		x = 13
+		x = 12
 		y = 9
 		cost = 9
 		available_if_capitulated = yes
@@ -3153,17 +3635,16 @@ days = 365
 idea = BNK_obtained_heroin
 days = 50 
 }
-		create_country_leader = {
-			name = "Heroiny"
-			desc = "NA"
-			picture = "gfx/leaders/BNK/crackyv2.dds"
-			expire = "1965.1.1"
-			ideology = nazism
-			traits = {
-			soulless
-			}
-		}
-set_cosmetic_tag = BNK_cracky_evolved
+create_country_leader = {
+name = "Heroiny"
+desc = "NA"
+picture = "gfx/leaders/BNK/crackyv2.dds"
+expire = "1965.1.1"
+ideology = nazism
+traits = {
+soulless
+                }
+	}
 		}
 	}
 
@@ -3171,7 +3652,7 @@ set_cosmetic_tag = BNK_cracky_evolved
 	focus = {
 		id = BNK_spread_the_revolution_to_normandy
 		icon = GFX_BNK_spread_the_revolution_to_normandy-94605
-		x = 39
+		x = 37
 		y = 18
 		cost = 10
 		available_if_capitulated = yes
@@ -3194,18 +3675,19 @@ target = NRM
 	focus = {
 		id = BNK_support_from_the_comintern
 		icon = GFX_BNK_support_from_the_comintern-94583
-		x = 43
+		x = 44
 		y = 6
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BNK_the_4_year_plan }
+		mutually_exclusive = { focus = BNK_no_compromises }
 		ai_will_do = {
 			factor = 1
 		}
 		bypass = {
 			OR = {
 NOT = { country_exists = SOV }
-SOV = { NOT = { has_government = communism ) }
+SOV = { NOT = { has_government = communism }
 }
 		}
 	}
@@ -3215,7 +3697,7 @@ SOV = { NOT = { has_government = communism ) }
 	focus = {
 		id = BNK_arm_the_workers
 		icon = GFX_BNK_arm_the_workers-94601
-		x = 47
+		x = 48
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
@@ -3229,7 +3711,7 @@ SOV = { NOT = { has_government = communism ) }
 	focus = {
 		id = BNK_the_conquest_of_normandy
 		icon = GFX_BNK_the_conquest_of_normandy-94604
-		x = 35
+		x = 33
 		y = 18
 		cost = 10
 		available_if_capitulated = yes
@@ -3248,28 +3730,15 @@ target = NRM
 		}
 	}
 
-	#Focus for Looking Outwards
-	focus = {
-		id = BNK_looking_outwards
-		icon = GFX_goal_unknown
-		x = 33
-		y = 15
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 	#Focus for The Question of Normandy
 	focus = {
 		id = BNK_the_question_of_normandy
 		icon = GFX_BNK_the_question_of_normandy-94607
-		x = 37
+		x = 35
 		y = 17
 		cost = 1
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_the_bunker_war_plans }
+		prerequisite = { focus = BNK_bunker_on_the_world_stage }
 		ai_will_do = {
 			factor = 1
 		}
@@ -3279,7 +3748,7 @@ target = NRM
 	focus = {
 		id = BNK_normandy_is_ours
 		icon = GFX_BNK_normandy_is_ours-94603
-		x = 37
+		x = 35
 		y = 19
 		cost = 10
 		available_if_capitulated = yes
@@ -3322,7 +3791,7 @@ add_state_core = 808
 	focus = {
 		id = BNK_the_4_year_plan
 		icon = GFX_BNK_the_4_year_plan-94582
-		x = 43
+		x = 45
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
@@ -3343,7 +3812,7 @@ set_country_flag = rural_industrialization_communism
 	focus = {
 		id = BNK_a_true_workers_democracy
 		icon = GFX_BNK_a_true_workers_democracy-94298
-		x = 44
+		x = 46
 		y = 4
 		cost = 5
 		available_if_capitulated = yes
@@ -3356,6 +3825,7 @@ set_country_flag = rural_industrialization_communism
 		prerequisite = { 
 			focus = BNK_equality_in_the_field_of_battle 
 		}
+		mutually_exclusive = { focus = BNK_the_generalsecretarys_guiding_hand }
 		ai_will_do = {
 			factor = 1
 		}
@@ -3381,7 +3851,7 @@ set_party_name = {
 	focus = {
 		id = BNK_the_norman_autonomous_zone
 		icon = GFX_BNK_the_norman_autonomous_zone-94606
-		x = 37
+		x = 35
 		y = 18
 		cost = 10
 		available_if_capitulated = yes
@@ -3389,12 +3859,15 @@ set_party_name = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			always = no
+		}
 	}
 
-	#Focus for The Bunker War Plans
+	#Focus for Bunker on the World Stage
 	focus = {
-		id = BNK_the_bunker_war_plans
-		icon = GFX_goal_generic_territory_or_war
+		id = BNK_bunker_on_the_world_stage
+		icon = GFX_BNK_bunker_on_the_world_stage-114748
 		x = 32
 		y = 16
 		cost = 1
@@ -3402,19 +3875,169 @@ set_party_name = {
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
-			has_country_flag = warplan_unlocked
+	}
+
+	#Focus for No Compromises
+	focus = {
+		id = BNK_no_compromises
+		icon = GFX_BNK_no_compromises-107335
+		x = 46
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BNK_the_4_year_plan }
+		mutually_exclusive = { focus = BNK_support_from_the_comintern }
+		ai_will_do = {
+			factor = 1
 		}
 	}
 
-	#Focus for is this shit even updating
+	#Focus for the Teachings of Trotsky
 	focus = {
-		id = BNK_is_this_shit_even_updating
-		icon = GFX_goal_unknown
-		x = 0
-		y = 0
+		id = BNK_the_teachings_of_trotsky
+		icon = GFX_BNK_the_teachings_of_trotsky-107337
+		x = 48
+		y = 6
 		cost = 10
 		available_if_capitulated = yes
+		prerequisite = { focus = BNK_arm_the_workers }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Southern Expansion Doctrine
+	focus = {
+		id = BNK_southern_expansion_doctrine
+		icon = GFX_goal_unknown
+		x = 17
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BNK_bunker_on_the_world_stage }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Seek out Allies
+	focus = {
+		id = BNK_seek_out_allies
+		icon = GFX_goal_generic_major_alliance
+		x = 45
+		y = 17
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = BNK_bunker_on_the_world_stage }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Become an Alcoholic
+	focus = {
+		id = BNK_become_an_alcoholic
+		icon = GFX_BNK_become_an_alcoholic-107551
+		x = 17
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BNK_peaceful_solution }
+		mutually_exclusive = { focus = BNK_a_shocking_turn_of_events }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Suppress the Steel Eagles
+	focus = {
+		id = BNK_suppress_the_steel_eagles
+		icon = GFX_BNK_suppress_the_steel_eagles-114784
+		x = 32
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BNK_the_gemergency_powers_act }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_flag = BNK_allwell_canon
+		}
+	}
+
+	#Focus for The Bunker Civil War
+	focus = {
+		id = BNK_the_bunker_civil_war
+		icon = GFX_goal_generic_major_war
+		x = 33
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BNK_seduce_lion_to_our_cause 
+			focus = BNK_alliance_with_top 
+			focus = BNK_alliance_with_the_crack 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			always = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = eventfocus
+		}
+	}
+
+	#Focus for Subjects of the Caliph
+	focus = {
+		id = BNK_subjects_of_the_caliph
+		icon = GFX_BNK_subjects_of_the_caliph-115258
+		x = 47
+		y = 18
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BNK_seek_out_allies }
+		available = {
+			has_country_leader = {
+    name = "Al-Qanun"
+    ruling_only = yes
+}
+is_in_faction = no
+		}
+		completion_reward = {
+			create_faction = BNK_caliph_faction
+		}
+	}
+
+	#Focus for Jihad for Egypt and the Levant
+	focus = {
+		id = BNK_jihad_for_egypt_and_the_levant
+		icon = GFX_BNK_jihad_for_egypt_and_the_levant-115259
+		x = 47
+		y = 19
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = BNK_subjects_of_the_caliph }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Rapid Militarization
+	focus = {
+		id = BNK_rapid_militarization
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 36
+		y = 10
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BNK_reinforce_republicanism 
+			focus = BNK_constitutional_monarchy 
+			focus = BNK_restrict_democracy 
+		}
 		ai_will_do = {
 			factor = 1
 		}

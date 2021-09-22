@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_leader_portrait_transparent"
+		texturefile = "gfx/leader_title/leader_portrait_transparent.dds"
+	}
+
+}

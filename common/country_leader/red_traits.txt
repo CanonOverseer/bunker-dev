@@ -166,6 +166,13 @@ leader_traits = {
 		
 	}
 
+	BNK_caliph_of_islam = {
+		random = no
+		sprite = 13
+		stability_factor = 0.05
+		war_support_factor = 0.25
+	}
+
 	BNK_prince_of_terror = {
 		sprite = 13
 		resistance_damage_to_garrison = -0.30 
