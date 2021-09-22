@@ -21,6 +21,7 @@ state={
 		}
 		add_claim_by = USA
 		add_core_of = SAY
+		add_core_of = PNA
 		victory_points = {
 			3878 30.0 
 		}
@@ -30,7 +31,7 @@ state={
 	provinces={
 		859 3878 3894 6911 
 	}
-	manpower=6588061
+	manpower=5588061
 	buildings_max_level_factor=1.000
 	state_category=megalopolis
 }

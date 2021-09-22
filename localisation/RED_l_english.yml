@@ -26,6 +26,10 @@
  GER_NGF_trust:0 "Budding Alliance"
  GER_NGF_PSA_license:0 "German-American Equipment Deal"
  ENG_PSA_license:0 "British-American Equipment Deal"
+
+ PNA:0 "Saylish North America"
+ PNA_adj:0 "Saylish-American"
+ PNA_def:0 "Saylish North America"
  
  economy_1:0 "§RTerrible Economy§!"
  economy_2:0 "§RBad Economy§!"
@@ -180,7 +184,8 @@
  BNK_imperial_senate_tooltip:0 "The Imperial Senate grants you a set of bonuses which will get stronger then they are §GSupportive§! and reverse when they are §ROpposed§!."
  SAY_rename_konigsberg:0 "Rename Konigsberg"
  SAY_rename_konigsberg_desc:0 "We should get rid of the name Konigsberg in favor of being named after our glorious emperor!"
-
+ 
+ 
  BNK_canon_armychief:0 "Can(n)on"
  BNK_like:0 "Likes Government"
  BNK_new_calendar:0 "New Calendar"
@@ -239,6 +244,9 @@
  ISR_SOV_subject_communism_ADJ:0 "Soviet Jewish"
  BNK_annexation_of_normandy:0 "Annexation of Normandy"
  BNK_annexation_of_brittany:0 "Annexation of Brittany"
+ FSA_revolt_democratic:0 "Free States of America"
+ FSA_revolt_democratic_def:0 "the Free States of America"
+ FSA_revolt_democratic_adj:0 "American"
 
  BNK_air_logan:0 "Logan"
  war_criminal_bomber:0 "War Criminal (Expert)"
@@ -306,8 +314,8 @@
  BNK_doenitz_DEF:0 "the Purple Viking Empire"
  BNK_doenitz_ADJ:0 "Viking"
 
- BNK_military_government:0 "Provisional Government of the Bunker"
- BNK_military_government_DEF:0 "the Military Provisional Government of the Reds and Blues"
+ BNK_military_government:0 "Bunker Armed Forces"
+ BNK_military_government_DEF:0 "the Military Provisional Government of the Bunker"
  BNK_military_government_ADJ:0 "Bunker"
 
  BNK_holy_empire:0 "Holy Bunker Empire"
@@ -665,7 +673,3 @@
  
  no:0 "TBD"
  TBD:0 "TBD"
- BNK_infantry_equipment_0:0 "Musket from the American Revolution"
- BNK_infantry_equipment_1:0 "LR-36"
- BNK_infantry_equipment_2:0 "LR-39"
- BNK_infantry_equipment_3:0 "LR-42"

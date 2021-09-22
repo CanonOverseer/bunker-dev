@@ -7,6 +7,97 @@ focus_tree = {
 			tag = BEL
 		}
 	}
+	#Focus for Exploit the Congo
+	focus = {
+		id = BEL_exploit_the_congo
+		icon = GFX_BEL_exploit_the_congo-95257
+		x = 8
+		y = 4
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_the_member_state_development_committee }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Belgian Arms Industry
+	focus = {
+		id = BEL_the_belgian_arms_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 4
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_develop_brussels }
+		mutually_exclusive = { focus = BEL_the_belgian_sweatshops }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Invest in the Reds
+	focus = {
+		id = BEL_invest_in_the_reds
+		icon = GFX_goal_unknown
+		x = 6
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_the_member_state_development_committee }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Develop Brussels
+	focus = {
+		id = BEL_develop_brussels
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 3
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_industrial_development }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Belgian Sweatshops
+	focus = {
+		id = BEL_the_belgian_sweatshops
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 2
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_develop_brussels }
+		mutually_exclusive = { focus = BEL_the_belgian_arms_industry }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The UN Peacekeeping Force
+	focus = {
+		id = BEL_the_un_peacekeeping_force
+		icon = GFX_goal_unknown
+		x = 22
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BEL_the_first_united_nations_cabinet 
+		}
+		prerequisite = { 
+			focus = BEL_reorganize_the_un 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	#Focus for Infiltrate the Colonial Administration
 	focus = {
 		id = BEL_infiltrate_the_colonial_administration
@@ -53,11 +144,10 @@ focus_tree = {
 	focus = {
 		id = BEL_industrial_development
 		icon = GFX_goal_unknown
-		x = 4
-		y = 2
+		x = 3
+		y = 1
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = BEL_reorganize_the_un }
 		ai_will_do = {
 			factor = 1
 		}
@@ -122,7 +212,7 @@ focus_tree = {
 		id = BEL_the_first_united_nations_cabinet
 		icon = GFX_BEL_the_first_united_nations_cabinet-95107
 		x = 15
-		y = 3
+		y = 2
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BEL_reorganize_the_un }
@@ -149,8 +239,8 @@ focus_tree = {
 	focus = {
 		id = BEL_the_third_un_elections
 		icon = GFX_BEL_the_third_un_elections-95109
-		x = 16
-		y = 4
+		x = 17
+		y = 3
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BEL_the_first_united_nations_cabinet }
@@ -169,8 +259,8 @@ days = 1
 	focus = {
 		id = BEL_the_noble_isorrowproductions
 		icon = GFX_BEL_the_noble_isorrowproductions-95110
-		x = 16
-		y = 5
+		x = 17
+		y = 4
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BEL_the_third_un_elections }
@@ -186,8 +276,8 @@ days = 1
 	focus = {
 		id = BEL_the_grand_isorrowproductions
 		icon = GFX_BEL_the_grand_isorrowproductions-95111
-		x = 14
-		y = 5
+		x = 15
+		y = 4
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BEL_the_third_un_elections }
@@ -203,8 +293,8 @@ days = 1
 	focus = {
 		id = BEL_the_majestic_isorrowproductions
 		icon = GFX_BEL_the_majestic_isorrowproductions-95112
-		x = 18
-		y = 5
+		x = 19
+		y = 4
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BEL_the_third_un_elections }
@@ -213,6 +303,25 @@ days = 1
 		}
 		available = {
 			has_country_flag = BEL_isp_won_3
+		}
+	}
+
+	#Focus for The Member State Development Committee
+	focus = {
+		id = BEL_the_member_state_development_committee
+		icon = GFX_goal_unknown
+		x = 7
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BEL_reorganize_the_un 
+		}
+		prerequisite = { 
+			focus = BEL_industrial_development 
+		}
+		ai_will_do = {
+			factor = 1
 		}
 	}
 

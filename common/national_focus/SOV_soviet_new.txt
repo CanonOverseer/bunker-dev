@@ -7,15 +7,161 @@ focus_tree = {
 			tag = SOV
 		}
 	}
+	#Focus for Russia Reigns!
+	focus = {
+		id = SOV_russia_reigns
+		icon = GFX_SOV_russia_reigns-107334
+		x = 29
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_destroying_the_jewish_menace }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core= 516
+
+add_state_core= 576
+
+add_state_core= 568
+
+add_state_core= 568
+
+add_state_core= 569
+
+add_state_core= 654
+
+add_state_core= 570
+
+add_state_core= 568
+
+add_state_core= 40
+
+add_state_core= 571
+
+add_state_core= 403
+
+add_state_core= 568
+
+add_state_core= 653
+
+add_state_core= 572
+
+add_state_core= 582
+
+add_state_core= 573
+
+add_state_core= 581
+
+add_state_core= 644
+
+add_state_core= 562
+
+add_state_core= 637
+
+add_state_core= 575
+
+add_state_core= 574
+
+add_state_core= 567
+
+add_state_core= 566
+
+add_state_core= 565
+
+add_state_core= 564
+
+add_state_core= 563
+
+add_state_core= 561
+
+add_state_core= 560
+
+add_state_core= 657
+
+add_state_core= 655
+
+add_state_core= 409
+
+add_state_core= 408
+
+remove_ideas = SOV_soviet_failure
+		}
+	}
+
+	#Focus for Destroying the Jewish Menace
+	focus = {
+		id = SOV_destroying_the_jewish_menace
+		icon = GFX_SOV_destroying_the_jewish_menace-107333
+		x = 29
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_strike_at_the_south 
+			focus = SOV_destroying_the_heart_of_siberia 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = ISR
+}
+		}
+	}
+
+	#Focus for Destroying the Heart of Siberia
+	focus = {
+		id = SOV_destroying_the_heart_of_siberia
+		icon = GFX_SOV_destroying_the_heart_of_siberia-107332
+		x = 30
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_the_boundaries_of_the_split }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = SBR
+}
+		}
+	}
+
+	#Focus for Strike at the South!
+	focus = {
+		id = SOV_strike_at_the_south
+		icon = GFX_SOV_strike_at_the_south-107331
+		x = 28
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_the_boundaries_of_the_split }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = UZB
+}
+		}
+	}
+
 	#Focus for Appoint the Autarks
 	focus = {
 		id = SOV_appoint_the_autarks
 		icon = GFX_SOV_appoint_the_autarks-72829
-		x = 18
-		y = 3
+		x = 27
+		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = SOV_democraticauthoritarian_ideals }
+		prerequisite = { focus = SOV_shambled_economy }
 		ai_will_do = {
 			factor = 1
 		}
@@ -39,17 +185,30 @@ add_ideas = GER_autarky_idea
 	focus = {
 		id = SOV_infrastructural_expansion
 		icon = GFX_SOV_infrastructural_expansion-72842
-		x = 27
-		y = 3
+		x = 33
+		y = 4
 		cost = 12
 		available_if_capitulated = yes
-		prerequisite = { focus = SOV_true_democracy }
+		prerequisite = { focus = SOV_our_economy_in_ruins }
 		search_filters = { FOCUS_FILTER_INDUSTRY } 
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			three_random_infrastructure = yes
+			random_owned_controlled_state= {
+add_building_construction = {type = infrastructurelevel = 5
+instant_build = yes}
+}
+
+random_owned_controlled_state= {
+add_building_construction = {type = infrastructurelevel = 5
+instant_build = yes}
+}
+
+random_owned_controlled_state= {
+add_building_construction = {type = infrastructurelevel = 5
+instant_build = yes}
+}
 		}
 	}
 
@@ -57,11 +216,11 @@ add_ideas = GER_autarky_idea
 	focus = {
 		id = SOV_russian_industrial_expansion
 		icon = GFX_SOV_russian_industrial_expansion-72840
-		x = 17
+		x = 25
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = SOV_invite_oil_tycooners }
+		prerequisite = { focus = SOV_take_and_take }
 		ai_will_do = {
 			factor = 1
 		}
@@ -76,7 +235,7 @@ two_random_industrial_complex = yes
 	focus = {
 		id = SOV_end_army_corruption
 		icon = GFX_SOV_end_army_corruption-72838
-		x = 24
+		x = 37
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
@@ -100,11 +259,11 @@ category = land_doctrine
 	focus = {
 		id = SOV_pay_off_the_army
 		icon = GFX_SOV_pay_off_the_army-72828
-		x = 15
-		y = 3
+		x = 21
+		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = SOV_democraticauthoritarian_ideals }
+		prerequisite = { focus = SOV_the_armys_boss }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
@@ -120,12 +279,12 @@ add_ideas = militarism_focus
 	focus = {
 		id = SOV_true_democracy
 		icon = GFX_SOV_true_democracy-72822
-		x = 25
+		x = 35
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = SOV_a_new_system }
-		mutually_exclusive = { focus = SOV_democraticauthoritarian_ideals }
+		mutually_exclusive = { focus = SOV_democratic_authoritarian_ideals }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
@@ -138,11 +297,11 @@ elections_allowed = no
 		}
 	}
 
-	#Focus for Democratic-Authoritarian Ideals
+	#Focus for Democratic Authoritarian Ideals
 	focus = {
-		id = SOV_democraticauthoritarian_ideals
-		icon = GFX_SOV_democraticauthoritarian_ideals-72813
-		x = 17
+		id = SOV_democratic_authoritarian_ideals
+		icon = GFX_SOV_democratic_authoritarian_ideals-72813
+		x = 23
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
@@ -155,7 +314,7 @@ elections_allowed = no
 		completion_reward = {
 			set_politics= {
 ruling_party = neutrality 
-elections_allowed = yes 
+elections_allowed = no 
 }
 		}
 	}
@@ -164,7 +323,7 @@ elections_allowed = yes
 	focus = {
 		id = SOV_stability_in_question
 		icon = GFX_SOV_stability_in_question-72806
-		x = 21
+		x = 29
 		y = 0
 		cost = 10
 		available_if_capitulated = yes
@@ -183,16 +342,11 @@ add_political_power= 65
 	focus = {
 		id = SOV_invite_oil_tycooners
 		icon = GFX_SOV_invite_oil_tycooners-72837
-		x = 17
-		y = 4
+		x = 27
+		y = 5
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = SOV_pay_off_the_army 
-		}
-		prerequisite = { 
-			focus = SOV_appoint_the_autarks 
-		}
+		prerequisite = { focus = SOV_appoint_the_autarks }
 		ai_will_do = {
 			factor = 1
 		}
@@ -215,15 +369,31 @@ state = 234
 	focus = {
 		id = SOV_restore_the_forgotten
 		icon = GFX_SOV_restore_the_forgotten-72809
-		x = 11
+		x = 13
 		y = 1
-		cost = 12
+		cost = 6
 		available_if_capitulated = yes
 		prerequisite = { focus = SOV_stability_in_question }
-		mutually_exclusive = { focus = SOV_a_new_system }
+		mutually_exclusive = { 
+			focus = SOV_a_new_system 
+		}
+		mutually_exclusive = { 
+			focus = SOV_continue_the_workers_path 
+		}
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
-			factor = 1
+			factor = 2
+		}
+		completion_reward = {
+			set_political_party= { 
+ideology = neutrality 
+popularity = 0.7 
+}
+
+set_politics= {
+ ruling_party = neutrality 
+elections_allowed = no 
+}
 		}
 	}
 
@@ -231,9 +401,9 @@ state = 234
 	focus = {
 		id = SOV_a_new_system
 		icon = GFX_SOV_a_new_system-72810
-		x = 21
+		x = 29
 		y = 1
-		cost = 12
+		cost = 6
 		available_if_capitulated = yes
 		prerequisite = { focus = SOV_stability_in_question }
 		mutually_exclusive = { 
@@ -243,12 +413,12 @@ state = 234
 			focus = SOV_continue_the_workers_path 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 		completion_reward = {
 			add_popularity= { 
 ideology = democratic
-popularity = 0.2
+popularity = 0.4
 }
 
 add_political_power= 80
@@ -259,12 +429,20 @@ add_political_power= 80
 	focus = {
 		id = SOV_continue_the_workers_path
 		icon = GFX_SOV_continue_the_workers_path-72826
-		x = 30
+		x = 41
 		y = 1
-		cost = 10
+		cost = 6
 		available_if_capitulated = yes
 		prerequisite = { focus = SOV_stability_in_question }
-		mutually_exclusive = { focus = SOV_a_new_system }
+		mutually_exclusive = { 
+			focus = SOV_a_new_system 
+		}
+		mutually_exclusive = { 
+			focus = SOV_restore_the_forgotten 
+		}
+		mutually_exclusive = { 
+			focus = SOV_ 
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -280,11 +458,11 @@ elections_allowed = no
 	focus = {
 		id = SOV_building_up_the_western_urals
 		icon = GFX_focus_generic_industry_3
-		x = 21
+		x = 29
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = SOV_appoint_the_autarks }
+		prerequisite = { focus = SOV_denounce_communism }
 		search_filters = { FOCUS_FILTER_INDUSTRY } 
 		ai_will_do = {
 			factor = 1
@@ -300,7 +478,7 @@ one_random_arms_factory = yes
 	focus = {
 		id = SOV_denounce_communism
 		icon = GFX_goal_anti_comintern_pact
-		x = 21
+		x = 29
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
@@ -315,6 +493,1178 @@ popularity = -0.8
 }
 
 add_stability = 0.1
+
+add_timed_idea = { idea = GER_the_great_red_menace days = 1095
+		}
+	}
+} #This may not be in the right place. If your focus tree is having issues, check the above focus, as this closing brace was added to close the focus.
+
+	#Focus for Picking Up Where Our Predecessors Stopped
+	focus = {
+		id = SOV_picking_up_where_our_predecessors_stopped
+		icon = GFX_SOV_picking_up_where_our_predecessors_stopped-107383
+		x = 37
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_end_army_corruption }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience= 20
+
+add_tech_bonus = {
+name = infantry_artillery_bonus
+bonus = 1.0
+uses = 1
+category = infantry_weapons
+category = artillery
+}
+
+add_tech_bonus = {
+name = armor_bonus
+bonus = 1.0
+uses = 2
+category = armor
+}
+		}
+	}
+
+	#Focus for Fortifying our Borders
+	focus = {
+		id = SOV_fortifying_our_borders
+		icon = GFX_SOV_fortifying_our_borders-103053
+		x = 29
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_building_up_the_western_urals }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = deterrence
+		}
+	}
+
+	#Focus for Writing and Editing the Drafts
+	focus = {
+		id = SOV_writing_and_editing_the_drafts
+		icon = GFX_SOV_writing_and_editing_the_drafts-103054
+		x = 35
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_true_democracy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = indoctrination_focus
+		}
+	}
+
+	#Focus for De-Nationalizing the Industry
+	focus = {
+		id = SOV_denationalizing_the_industry
+		icon = GFX_SOV_denationalizing_the_industry-103055
+		x = 33
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_infrastructural_expansion }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			any_owned_state = {
+free_building_slots = {
+building = industrial_complex
+size > 0
+include_locked = yes
+}
+is_in_home_area = yes
+}
+		}
+	}
+
+	#Focus for The Constitution is Here!
+	focus = {
+		id = SOV_the_constitution_is_here
+		icon = GFX_SOV_the_constitution_is_here-103057
+		x = 35
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_writing_and_editing_the_drafts }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+
+add_stability = 0.35
+		}
+	}
+
+	#Focus for Take and Take
+	focus = {
+		id = SOV_take_and_take
+		icon = GFX_SOV_take_and_take-103056
+		x = 25
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_shambled_economy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_offsite_building= { type = arms_factory level = 2 }
+		}
+	}
+
+	#Focus for Preparing our Grand Ideals for War!
+	focus = {
+		id = SOV_preparing_our_grand_ideals_for_war
+		icon = GFX_goal_generic_military_sphere
+		x = 28
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_fortifying_our_borders }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower= 800000  
+
+army_experience= 35
+		}
+	}
+
+	#Focus for The Boundaries of The Split
+	focus = {
+		id = SOV_the_boundaries_of_the_split
+		icon = GFX_SOV_the_boundaries_of_the_split-103058
+		x = 29
+		y = 9
+		cost = 11
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_zombies_have_no_masters 
+			focus = SOV_the_bunghole_enthusiasteconomist 
+			focus = SOV_butthole_enthusiasteconomist 
+			focus = SOV_phoenix_of_russia 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_equipment_to_stockpile= {
+ type = infantry_equipment
+amount = 10000 
+producer = SOV 
+}
+		}
+	}
+
+	#Focus for Preparing Our Minds For What is Next
+	focus = {
+		id = SOV_preparing_our_minds_for_what_is_next
+		icon = GFX_SOV_preparing_our_minds_for_what_is_next-106983
+		x = 30
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_fortifying_our_borders }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support= 20
+		}
+	}
+
+	#Focus for For Those Who Serve
+	focus = {
+		id = SOV_for_those_who_serve
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		x = 31
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_healthcare_for_the_people }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = political_commissars_focus
+		}
+	}
+
+	#Focus for Our Economy in Ruins
+	focus = {
+		id = SOV_our_economy_in_ruins
+		icon = GFX_SOV_our_economy_in_ruins-103240
+		x = 33
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_true_democracy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.05
+		}
+	}
+
+	#Focus for Shambled Economy
+	focus = {
+		id = SOV_shambled_economy
+		icon = GFX_SOV_shambled_economy-103245
+		x = 25
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_democratic_authoritarian_ideals }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.05
+		}
+	}
+
+	#Focus for End Those Who Seek Exploitation
+	focus = {
+		id = SOV_end_those_who_seek_exploitation
+		icon = GFX_SOV_end_those_who_seek_exploitation-103248
+		x = 35
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_the_constitution_is_here }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_political_party= { 
+ideology = democracy
+popularity = 0.6
+}
+		}
+	}
+
+	#Focus for The Army's Boss
+	focus = {
+		id = SOV_the_armys_boss
+		icon = GFX_goal_generic_small_arms
+		x = 21
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_democratic_authoritarian_ideals }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support= 20  
+
+add_ideas = paramilitarism_focus
+		}
+	}
+
+	#Focus for Air and Sea, both on the menu!
+	focus = {
+		id = SOV_air_and_sea_both_on_the_menu
+		icon = GFX_SOV_air_and_sea_both_on_the_menu-107382
+		x = 37
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_picking_up_where_our_predecessors_stopped }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower= 20000
+
+add_tech_bonus = {
+name = bomber_bonus
+bonus = 1.0
+uses = 2
+technology = strategic_bomber1
+technology = strategic_bomber2
+technology = strategic_bomber3
+category = tactical_bomber
+}
+
+add_tech_bonus = {
+				name = fighter_bonus
+bonus = 1.0
+uses = 2
+technology = early_fighter
+technology = fighter1
+technology = fighter2
+technology = fighter3
+technology = heavy_fighter1
+technology = heavy_fighter2
+technology = heavy_fighter3
+}
+
+add_tech_bonus = {
+name = ss_bonus
+bonus = 1.0
+ahead_reduction = 2
+uses = 1
+category = ss_tech
+}
+
+navy_experience = 50
+
+air_experience = 50
+		}
+	}
+
+	#Focus for Healthcare for the People
+	focus = {
+		id = SOV_healthcare_for_the_people
+		icon = GFX_SOV_healthcare_for_the_people-103263
+		x = 31
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_our_economy_in_ruins }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = NZL_social_security_act
+		}
+	}
+
+	#Focus for Investigate the Left
+	focus = {
+		id = SOV_investigate_the_left
+		icon = GFX_SOV_investigate_the_left-103265
+		x = 34
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_end_those_who_seek_exploitation }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_political_party= { 
+ideology = communism 
+popularity = -0.5
+}
+		}
+	}
+
+	#Focus for Investigate the Right
+	focus = {
+		id = SOV_investigate_the_right
+		icon = GFX_focus_focus_fra_fascist_threat
+		x = 36
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_end_those_who_seek_exploitation }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_political_party= { 
+ideology = fascism 
+popularity = -0.5 
+}
+		}
+	}
+
+	#Focus for The Bunghole Enthusiast-Economist
+	focus = {
+		id = SOV_the_bunghole_enthusiasteconomist
+		icon = GFX_SOV_the_bunghole_enthusiasteconomist-106981
+		x = 32
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_for_those_who_serve 
+		}
+		prerequisite = { 
+			focus = SOV_denationalizing_the_industry 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Butthole Enthusiast-Economist
+	focus = {
+		id = SOV_butthole_enthusiasteconomist
+		icon = GFX_SOV_butthole_enthusiasteconomist-106982
+		x = 26
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_russian_industrial_expansion 
+		}
+		prerequisite = { 
+			focus = SOV_invite_oil_tycooners 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for He Who Has Returned
+	focus = {
+		id = SOV_he_who_has_returned
+		icon = GFX_SOV_he_who_has_returned-107242
+		x = 13
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_restore_the_forgotten }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Royal Airforce
+	focus = {
+		id = SOV_the_royal_airforce
+		icon = GFX_SOV_the_royal_airforce-107245
+		x = 13
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_rebuilding_the_military_might }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 25
+		}
+	}
+
+	#Focus for Tsar's Back Baby!
+	focus = {
+		id = SOV_tsars_back_baby
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 13
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_he_who_has_returned }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = .4
+
+add_war_support= .15
+		}
+	}
+
+	#Focus for Focusing on Russian Tactics
+	focus = {
+		id = SOV_focusing_on_russian_tactics
+		icon = GFX_SOV_focusing_on_russian_tactics-107250
+		x = 16
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_russian_tank_experimenting 
+		}
+		prerequisite = { 
+			focus = SOV_russian_equipment_production 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 5
+add_tech_bonus = {
+name = land_doc_bonus
+bonus = 1.0
+uses = 1
+category = land_doctrine
+}
+		}
+	}
+
+	#Focus for The Royal Army
+	focus = {
+		id = SOV_the_royal_army
+		icon = GFX_SOV_the_royal_army-107243
+		x = 16
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_rebuilding_the_military_might }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience= 25
+		}
+	}
+
+	#Focus for The Royal Navy
+	focus = {
+		id = SOV_the_royal_navy
+		icon = GFX_SOV_the_royal_navy-107244
+		x = 19
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_rebuilding_the_military_might }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			navy_experience= 25
+		}
+	}
+
+	#Focus for Rebuilding the Military Might
+	focus = {
+		id = SOV_rebuilding_the_military_might
+		icon = GFX_SOV_rebuilding_the_military_might-107246
+		x = 16
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_tsars_back_baby }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support= 10
+		}
+	}
+
+	#Focus for Russian Equipment Production
+	focus = {
+		id = SOV_russian_equipment_production
+		icon = GFX_SOV_russian_equipment_production-107248
+		x = 17
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_the_royal_army }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = infantry_artillery_bonus
+bonus = 1.0
+uses = 1
+category = infantry_weapons
+category = artillery
+}
+		}
+	}
+
+	#Focus for Russian Tank Experimenting
+	focus = {
+		id = SOV_russian_tank_experimenting
+		icon = GFX_SOV_russian_tank_experimenting-107249
+		x = 15
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_the_royal_army }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = armor_bonus
+bonus = 1.0
+uses = 2
+category = armor
+}
+		}
+	}
+
+	#Focus for Ramping up Naval Research
+	focus = {
+		id = SOV_ramping_up_naval_research
+		icon = GFX_SOV_ramping_up_naval_research-107251
+		x = 19
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_the_royal_navy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = nav_bomber_bonus
+bonus = 1.0
+ahead_reduction = 2
+uses = 1
+category = naval_bomber
+}
+		}
+	}
+
+	#Focus for Largening Aerial Experimentation
+	focus = {
+		id = SOV_largening_aerial_experimentation
+		icon = GFX_SOV_largening_aerial_experimentation-107252
+		x = 13
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_the_royal_airforce }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = air_doc_bonus
+bonus = 1.0
+uses = 1
+category = air_doctrine
+}
+		}
+	}
+
+	#Focus for A Fix to the Economy
+	focus = {
+		id = SOV_a_fix_to_the_economy
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 10
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_tsars_back_baby }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+
+add_stability = 0.05
+		}
+	}
+
+	#Focus for Russian Military Industrial Spending
+	focus = {
+		id = SOV_russian_military_industrial_spending
+		icon = GFX_SOV_russian_military_industrial_spending-107253
+		x = 9
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_a_fix_to_the_economy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = militarism_focus
+
+any_owned_state = {
+free_building_slots = {
+building = arms_factory
+size > 0
+include_locked = yes
+}
+is_in_home_area = yes
+}
+		}
+	}
+
+	#Focus for Russian Civilian Production
+	focus = {
+		id = SOV_russian_civilian_production
+		icon = GFX_SOV_russian_civilian_production-107254
+		x = 11
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_a_fix_to_the_economy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			any_owned_state = {
+free_building_slots = {
+building = industrial_complex
+size > 0
+include_locked = yes
+}
+is_in_home_area = yes
+}
+		}
+	}
+
+	#Focus for Military Revamp- Zombie Style!
+	focus = {
+		id = SOV_military_revamp_zombie_style
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 43
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_a_zombie_economy_is_a_good_economy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			any_owned_state = {
+free_building_slots = {
+building = arms_factory
+size > 0
+include_locked = yes
+}
+is_in_home_area = yes
+}
+		}
+	}
+
+	#Focus for Phoenix of Russia!
+	focus = {
+		id = SOV_phoenix_of_russia
+		icon = GFX_SOV_phoenix_of_russia-107280
+		x = 13
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_focusing_on_russian_tactics 
+		}
+		prerequisite = { 
+			focus = SOV_march_onwards 
+		}
+		prerequisite = { 
+			focus = SOV_fortress_urals 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The King's Vodka
+	focus = {
+		id = SOV_the_kings_vodka
+		icon = GFX_SOV_the_kings_vodka-107261
+		x = 10
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_russian_civilian_production 
+		}
+		prerequisite = { 
+			focus = SOV_russian_military_industrial_spending 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Fortress Urals
+	focus = {
+		id = SOV_fortress_urals
+		icon = GFX_goal_generic_fortify_city
+		x = 9
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_the_kings_vodka }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = deterrence
+		}
+	}
+
+	#Focus for March Onwards!
+	focus = {
+		id = SOV_march_onwards
+		icon = GFX_SOV_march_onwards-107279
+		x = 11
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_the_kings_vodka }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = ideological_fanaticism_focus
+		}
+	}
+
+	#Focus for Karl's Coup
+	focus = {
+		id = SOV_karls_coup
+		icon = GFX_SOV_karls_coup-107283
+		x = 41
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_continue_the_workers_path }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = communism 
+popularity = 0.5
+}
+		}
+	}
+
+	#Focus for Communist-Zombism
+	focus = {
+		id = SOV_communistzombism
+		icon = GFX_SOV_communistzombism-107285
+		x = 41
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_karls_coup }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = internationalism
+		}
+	}
+
+	#Focus for Bribe the Church
+	focus = {
+		id = SOV_bribe_the_church
+		icon = GFX_focus_GRE_an_orthodox_state
+		x = 23
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_democratic_authoritarian_ideals }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = SOV_orthodox_unrest
+		}
+	}
+
+	#Focus for Fake Promises and Closed Lips
+	focus = {
+		id = SOV_fake_promises_and_closed_lips
+		icon = GFX_SOV_fake_promises_and_closed_lips-107300
+		x = 23
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_bribe_the_church }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.35
+		}
+	}
+
+	#Focus for Purging the Humans
+	focus = {
+		id = SOV_purging_the_humans
+		icon = GFX_SOV_purging_the_humans-107317
+		x = 41
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_communistzombism }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = communism 
+popularity = 0.5
+}
+		}
+	}
+
+	#Focus for Imprison the Enemies
+	focus = {
+		id = SOV_imprison_the_enemies
+		icon = GFX_SOV_imprison_the_enemies-107303
+		x = 23
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_fake_promises_and_closed_lips }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = electronics_bonus
+bonus = 1.0
+uses = 1
+category = electronics
+}
+
+add_tech_bonus = {
+name = industrial_bonus
+bonus = 1.0
+uses = 1
+category = industry
+}
+
+add_tech_bonus = {
+name = infantry_artillery_bonus #@#
+bonus = 1.0
+uses = 1
+category = infantry_weapons
+category = artillery
+}
+		}
+	}
+
+	#Focus for Trial Through Fire
+	focus = {
+		id = SOV_trial_through_fire
+		icon = GFX_focus_secret_rearmament
+		x = 21
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_pay_off_the_army }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = special_forces
+
+add_tech_bonus = {
+name = special_forces_bonus
+bonus = 1.0
+uses = 1
+technology = paratroopers
+technology = paratroopers2
+technology = marines
+technology = marines2
+technology = tech_mountaineers
+technology = tech_mountaineers2
+}
+
+add_tech_bonus = {
+name = infantry_artillery_bonus
+bonus = 1.0
+uses = 1
+category = infantry_weapons
+category = artillery
+}
+
+add_tech_bonus = {
+name = armor_bonus
+bonus = 1.0
+uses = 2
+category = armor
+}
+		}
+	}
+
+	#Focus for Zombie Army
+	focus = {
+		id = SOV_zombie_army
+		icon = GFX_goal_generic_secret_weapon
+		x = 39
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_karls_coup }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = CAN_send_in_the_zombies
+		}
+	}
+
+	#Focus for Zombie Airmen
+	focus = {
+		id = SOV_zombie_airmen
+		icon = GFX_goal_continuous_air_production
+		x = 39
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_zombie_army }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = fighter_bonus
+bonus = 1.0
+uses = 2
+technology = early_fighter
+technology = fighter1
+technology = fighter2
+technology = fighter3
+technology = heavy_fighter1
+technology = heavy_fighter2
+technology = heavy_fighter3
+}
+
+add_tech_bonus = {
+name = CAS_bonus
+bonus = 1.0
+ahead_reduction = 2
+uses = 1
+category = cas_bomber
+}
+		}
+	}
+
+	#Focus for A Zombie Economy is a Good Economy
+	focus = {
+		id = SOV_a_zombie_economy_is_a_good_economy
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 43
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_karls_coup }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			any_owned_state = {
+free_building_slots = {
+building = industrial_complex
+size > 0
+include_locked = yes
+}
+is_in_home_area = yes
+}
+		}
+	}
+
+	#Focus for Zombies have no Masters!
+	focus = {
+		id = SOV_zombies_have_no_masters
+		icon = GFX_SOV_zombies_have_no_masters-107320
+		x = 41
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_zombie_seaman 
+		}
+		prerequisite = { 
+			focus = SOV_building_the_roads_we_wander_on 
+		}
+		prerequisite = { 
+			focus = SOV_purging_the_humans 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Zombie Seaman
+	focus = {
+		id = SOV_zombie_seaman
+		icon = GFX_goal_generic_navy_battleship
+		x = 39
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_zombie_airmen }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = ss_bonus
+bonus = 1.0
+ahead_reduction = 2
+uses = 1
+category = ss_tech
+}
+		}
+	}
+
+	#Focus for Building the Roads we Wander on
+	focus = {
+		id = SOV_building_the_roads_we_wander_on
+		icon = GFX_focus_generic_industry_3
+		x = 43
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_military_revamp_zombie_style }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state= {
+add_building_construction = {type = infrastructurelevel = 5
+instant_build = yes}
+}
+
+random_owned_controlled_state= {
+add_building_construction = {type = infrastructurelevel = 5
+instant_build = yes}
+}
+
+random_owned_controlled_state= {
+add_building_construction = {type = infrastructurelevel = 5
+instant_build = yes}
+}
+
+random_owned_controlled_state= {
+add_building_construction = {type = infrastructurelevel = 5
+instant_build = yes}
+}
+		}
+	}
+
+	#Focus for One Step Further!
+	focus = {
+		id = SOV_one_step_further
+		icon = GFX_SOV_one_step_further-107384
+		x = 28
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_russia_reigns }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Get Byelorussia Back into the Fold
+	focus = {
+		id = SOV_get_byelorussia_back_into_the_fold
+		icon = GFX_SOV_get_byelorussia_back_into_the_fold-107385
+		x = 30
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_russia_reigns }
+		ai_will_do = {
+			factor = 1
 		}
 	}
 

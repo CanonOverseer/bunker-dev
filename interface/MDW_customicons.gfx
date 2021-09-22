@@ -493,19 +493,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: Declare Logan715 a Prophet
+	##Icon For: Declare Logan715 the Second coming
 	SpriteType = { 
-		name = "GFX_MDW_declare_logan715_a_prophet-94577"
-		texturefile = "gfx/interface/goals/GFX_MDW_declare_logan715_a_prophet-94577.dds"
+		name = "GFX_MDW_declare_logan715_the_second_coming-94577"
+		texturefile = "gfx/interface/goals/GFX_MDW_declare_logan715_the_second_coming-94577.dds"
 	}
 
-	##Icon Shine For: Declare Logan715 a Prophet
+	##Icon Shine For: Declare Logan715 the Second coming
 	SpriteType = { 
-		name = "GFX_MDW_declare_logan715_a_prophet-94577_shine"
-		texturefile = "gfx/interface/goals/GFX_MDW_declare_logan715_a_prophet-94577.dds"
+		name = "GFX_MDW_declare_logan715_the_second_coming-94577_shine"
+		texturefile = "gfx/interface/goals/GFX_MDW_declare_logan715_the_second_coming-94577.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_MDW_declare_logan715_a_prophet-94577.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_declare_logan715_the_second_coming-94577.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -517,7 +517,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_MDW_declare_logan715_a_prophet-94577.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MDW_declare_logan715_the_second_coming-94577.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no

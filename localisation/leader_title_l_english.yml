@@ -1,0 +1,23 @@
+﻿l_english:
+ leader_title:0 "[GetLeaderTitle]"
+ TITLE_DEFAULT:0 "Leader"
+ 
+ BNK_TITLE_FUHRER:0 "Führer"
+ BNK_TITLE_CALIPH:0 "Caliph"
+ BNK_TITLE_EMPEROR:0 "Emperor"
+ BNK_TITLE_KING:0 "King"
+ BNK_TITLE_KING_OF_BLUES:0 "King of the §CBlues§!"
+ BNK_TITLE_DUKE:0 "Duke"
+ BNK_TITLE_PRESIDENT:0 "President"
+ BNK_TITLE_PRIMEMINISTER:0 "Primeminister"
+ BNK_TITLE_GENERAL:0 "General and Acting President"
+ BNK_TITLE_FATHEROFNATION:0 "Father of the Nation"
+ BNK_TITLE_BUTTGHOST:0 "the Butt Ghost"
+ 
+ BNK_TITLE_POPE:0 "Pope"
+ BNK_TITLE_PREMIER:0 "Premier"
+ BNK_TITLE_PEOPLESLEADER:0 "Chairman"
+ BNK_TITLE_REVOLUTIONARY:0 "Revolutionary General"
+ BNK_TITLE_GOVERNMENT:0 "Governing Body"
+
+ RULER_OF:0 "§H[THIS.GetLeader]§! \n[THIS.GetLeaderTitle] of §Y[This.GetNameWithFlag]§!"

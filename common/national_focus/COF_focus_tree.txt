@@ -36,7 +36,7 @@ focus_tree = {
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = COF_OtxgPwKU }
+		prerequisite = { focus = COF_yuIiUSha }
 		ai_will_do = {
 			factor = 1
 		}
