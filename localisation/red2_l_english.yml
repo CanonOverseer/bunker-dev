@@ -45,6 +45,7 @@
  local:0 "localr"
  bnk_ready_to_look_outwards:0 "The Bunker is Stable and ready to look outwards"
  bnk_ready_tt:0 "This will unlock the War and Alliance focus tree"
+ bunker_civil_war_category:0 "Bunker in Flames"
 
  bunkernew.1.t:0 "the Bunker Civil War"
  bunkernew.1.d:0 "The Inevitable has happened, the Socialists and Steel Eagles have risen up in open rebellion."

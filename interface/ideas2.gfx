@@ -211,6 +211,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_decision_cat_generic_war_icon"
+		textureFile = "gfx/interface/decisions/generic_conflict.png"
+	}
+
+	spriteType = {
+		name = "GFX_decision_cat_bunker_civil_war_image"
+		textureFile = "gfx/interface/decisions/bunker_civil_war_cat.dds"
+	}
+
+	spriteType = {
 		name = "GFX_decision_cat_jewish_icon"
 		textureFile = "gfx/interface/decisions/jewish_jihad_icon.dds"
 	}
