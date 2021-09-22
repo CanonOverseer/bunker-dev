@@ -177,11 +177,10 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			tag = GER
-			has_government = fascism
-		}
-		trigger = {
-			tag = NAV
+			OR = {
+				tag = GER
+				tag = NAV
+			}
 			has_government = fascism
 		}
 		localization_key = BNK_TITLE_FUHRER
@@ -210,6 +209,10 @@ defined_text = {
 					has_government = neutrality
 				}
 				AND = {
+					tag = BAY
+					has_government = neutrality
+				}
+				AND = {
 					tag = SAY
 					has_country_leader = {
 						name = "Karolus Canonus I von Saylandia"
@@ -217,7 +220,6 @@ defined_text = {
 					}
 				}
 			}
-			has_government = neutrality
 			NOT = { has_country_flag = canon_emperor }
 		}
 		localization_key = BNK_TITLE_KING
