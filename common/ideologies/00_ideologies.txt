@@ -80,6 +80,10 @@ ideologies = {
 			anarchist_communism = {
 			}
 			
+			demsocialism = {
+				can_be_randomly_selected = no
+			}
+			
 			lionism = {
 			}
 		}
@@ -209,6 +213,9 @@ ideologies = {
 			}
 			
 			centrism = {
+			}
+			
+			military_government = {
 			}
 			
 			anprim = {
