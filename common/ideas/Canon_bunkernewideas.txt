@@ -69,12 +69,12 @@ stability_weekly = 0.02
 			}
 		}
 
-		Canon_islamic_nation = {
-			picture = Canon_islamic_nation-75326
+		Canon_sharia_law = {
+			picture = Canon_sharia_law-75326
 			modifier = {
-				female_random_country_leader_chance = -1000
-offensive_war_stability_factor = 0.3
+				
 army_morale_factor = 0.1
+custom_modifier_tooltip = sharia_law_modifier_tt
 			}
 		}
 

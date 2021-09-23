@@ -41,10 +41,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/bunkernewideas-ideas/Canon_emergency_powers_act-1440.dds"
 	}
 
-	##Icon For: Islamic Nation
+	##Icon For: Sharia Law
 	SpriteType = { 
-		name = "GFX_idea_Canon_islamic_nation-75326"
-		texturefile = "gfx/interface/ideas/bunkernewideas-ideas/Canon_islamic_nation-75326.dds"
+		name = "GFX_idea_Canon_sharia_law-75326"
+		texturefile = "gfx/interface/ideas/bunkernewideas-ideas/Canon_sharia_law-75326.dds"
 	}
 
 	##Icon For: MIlitary Confusion

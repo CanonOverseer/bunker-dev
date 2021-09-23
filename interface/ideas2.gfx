@@ -2,17 +2,17 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_canon_military"
-		texturefile = "gfx/interface/ideas/RED/ideas/idea_canon_military.dds"
+		texturefile = "gfx/interface/ideas/idea_canon_military.dds"
 	}	
 
 	spriteType = {
 		name = "GFX_idea_canon"
-		texturefile = "gfx/interface/ideas/RED/ideas/idea_canon.dds"
+		texturefile = "gfx/interface/ideas/idea_canon.dds"
 	}	
 	
 	spriteType = {
 		name = "GFX_idea_lion"
-		texturefile = "gfx/interface/ideas/RED/ideas/idea_lion.dds"
+		texturefile = "gfx/interface/ideas/idea_lion.dds"
 	}
 	
 	spriteType = {
@@ -22,7 +22,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_idea_kermit"
-		texturefile = "gfx/interface/ideas/RED/ideas/idea_kermit.dds"
+		texturefile = "gfx/interface/ideas/idea_kermit.dds"
 	}
 	
 	spriteType = {
@@ -230,4 +230,30 @@ spriteTypes = {
 		textureFile = "gfx/interface/decisions/jewish_jihad_image.dds"
 	}
 
+
+	spriteType = {
+		name = "GFX_ideology_monarchism"
+		textureFile = "gfx/interface/ideologies/Monarchism.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ideology_anprim"
+		textureFile = "gfx/interface/ideologies/anprim.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ideology_islamism"
+		textureFile = "gfx/interface/ideologies/islamism.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ideology_islamic_monarchism"
+		textureFile = "gfx/interface/ideologies/islamism.dds"
+		legacy_lazy_load = no
+	}
+
+	# GFX_ideology_subideologyname
 }

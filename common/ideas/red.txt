@@ -857,6 +857,10 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_neutrality_drift_bonus
+			
+			rule = {
+				can_be_called_to_war = no
+			}
 
 			modifier = {
 				ai_call_ally_desire_factor = -69420

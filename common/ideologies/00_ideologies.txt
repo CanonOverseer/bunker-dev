@@ -142,6 +142,10 @@ ideologies = {
 			falangism = {
 			}
 			
+			islamism ={
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+			
 			rexism = {
 			}
 		}
@@ -190,6 +194,10 @@ ideologies = {
 			}
 
 			monarchism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+		
+			islamic_monarchism = {
 				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 			

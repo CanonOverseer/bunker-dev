@@ -13,7 +13,7 @@ if = {
 
 set_research_slots = 3
 set_stability = 0.5
-
+#set_cosmetic_tag = BEL_FRA_reservation
 
 # Starting tech
 set_technology = {
@@ -235,6 +235,7 @@ set_popularities = {
 add_ideas = {
 	limited_conscription
 	FRA_former_colonial_government
+	un_member
 }
 
 #give_guarantee = CZE

@@ -24,11 +24,6 @@ country_event = {
 		
 	}
 }
-set_party_name = { 
-    ideology = neutrality 
-    name = "House Overseer"
-    long_name = "Imperial House of Overseer"
-}
 		hidden_effect = {
 			set_country_flag = canon_emperor
 		}
@@ -64,6 +59,7 @@ country_event = {
 	desc = eventsmodedge.3.d
 
 	picture = first_bunker_elections-750
+	is_triggered_only = yes
 	option = {
 		name = eventsmodedge.3.a
 		trigger = {
@@ -165,27 +161,56 @@ add_ideas = Canon_low_military_control
 
 set_country_flag = is_canon
 
-news_event= {
-days = 1 
-id = bunkerevent.15
-}
 		hidden_effect = {
 			add_ideas = Canon_military_confusion 
+unlock_national_focus = BNK_bunker_in_flames
+		}
+	}
+}
+
+#[FROM.GetName] Requests an Alliance
+country_event = {
+	id = eventsmodedge.4
+	title = eventsmodedge.4.t
+	desc = eventsmodedge.4.d
+
+	picture = fromgetname_requests_an_alliance-1013
+	is_triggered_only = yes
+	option = {
+		name = eventsmodedge.4.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 70 }
+		
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = eventsmodedge.4.b
+		trigger = {
+			
+		}
+		ai_chance = { factor = 30 }
+		
+		hidden_effect = {
+			
 		}
 	}
 }
 
 #the Bunker Civil War
 news_event = {
-	id = eventsmodedge.4
-	title = eventsmodedge.4.t
-	desc = eventsmodedge.4.d
+	id = eventsmodedge.5
+	title = eventsmodedge.5.t
+	desc = eventsmodedge.5.d
 
 	picture = the_bunker_civil_war-641
 	is_triggered_only = yes
 	major = yes
 	option = {
-		name = eventsmodedge.4.a
+		name = eventsmodedge.5.a
 		trigger = {
 			original_tag = BNK
 		}
@@ -196,7 +221,7 @@ news_event = {
 		}
 	}
 	option = {
-		name = eventsmodedge.4.b
+		name = eventsmodedge.5.b
 		trigger = {
 			NOT = { original_tag = BNK }
 NOT = { tag = BEL }
@@ -208,7 +233,7 @@ NOT = { tag = BEL }
 		}
 	}
 	option = {
-		name = eventsmodedge.4.c
+		name = eventsmodedge.5.c
 		trigger = {
 			tag = BEL
 		}

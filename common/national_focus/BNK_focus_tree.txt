@@ -143,7 +143,7 @@ set_rule = {
 		y = 19
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_usLHtEJn }
+		prerequisite = { focus = BNK_zJwgUXCf }
 		ai_will_do = {
 			factor = 1
 		}
@@ -165,7 +165,7 @@ is_ai = yes
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = BNK_seek_out_allies }
-		mutually_exclusive = { focus = BNK_usLHtEJn }
+		mutually_exclusive = { focus = BNK_zJwgUXCf }
 		ai_will_do = {
 			factor = 1
 		}
@@ -326,6 +326,10 @@ create_country_leader = {
 swap_ideas = {
     remove_idea = Canon_low_military_control 
     add_idea = Canon_emergency_powers_act 
+}
+
+hidden_effect = {
+set_cosmetic_tag = BNK_democratic
 }
 		}
 	}
@@ -631,7 +635,7 @@ custom_effect_tooltip = eventfocus
 		}
 		completion_reward = {
 			custom_effect_tooltip = eventfocus
-country_event = { id = eventsmodedge.4 }
+country_event = { id = eventsmodedge.3 }
 		}
 	}
 
@@ -724,8 +728,9 @@ category = industry
 		}
 		completion_reward = {
 			set_rule = { can_send_volunteers = yes }
-custom_effect_tooltip = warplan_unlocked_communism_tt
-set_country_flag = warplan_unlocked
+
+custom_effect_tooltip = bnk_ready_tt
+set_country_flag = bnk_ready_to_look_outwards
 		}
 	}
 
@@ -1093,8 +1098,8 @@ add_ideas = RED_canon_queen
 news_event = {
     id = eventsmod.40
 }
-custom_effect_tooltip = warplan_unlocked_neutrality_tt
-set_country_flag = warplan_unlocked
+custom_effect_tooltip = bnk_ready_tt
+set_country_flag = bnk_ready_to_look_outwards
 		}
 	}
 
@@ -2974,6 +2979,9 @@ set_party_name = {
     name = "Republican Military"
     long_name = "the Military of the Republic"
 }
+
+custom_effect_tooltip = bnk_ready_tt
+set_country_flag = bnk_ready_to_look_outwards
 		}
 	}
 
@@ -2992,6 +3000,9 @@ set_party_name = {
 		}
 		completion_reward = {
 			set_country_flag = canon_emperor
+country_event = { id = eventsmodedge.1 }
+custom_effect_tooltip = bnk_ready_tt
+set_country_flag = bnk_ready_to_look_outwards
 		}
 	}
 
@@ -3875,6 +3886,9 @@ set_party_name = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			has_country_flag = bnk_ready_to_look_outwards
+		}
 	}
 
 	#Focus for No Compromises
@@ -4008,6 +4022,50 @@ is_in_faction = no
 		}
 		completion_reward = {
 			create_faction = BNK_caliph_faction
+
+TUR = {
+
+if = { limit = { exists = yes }
+country_event = {
+id = eventsmodedge.4 days = 5
+}
+}
+
+}
+
+IRQ = {
+
+if = { limit = { exists = yes }
+country_event = {
+id = eventsmodedge.4 days = 5
+}
+}
+
+}
+
+SYR = {
+
+if = { limit = { exists = yes }
+country_event = {
+id = eventsmodedge.4 days = 5
+}
+}
+
+}
+
+AFG = {
+
+if = { limit = { exists = yes }
+country_event = {
+id = eventsmodedge.4 days = 5
+}
+}
+
+}
+
+
+custom_effect_tooltip = refusalcentralization2_tt
+custom_effect_tooltip = refusalcentralization_tt
 		}
 	}
 
