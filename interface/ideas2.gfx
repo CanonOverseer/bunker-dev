@@ -255,5 +255,17 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+	spriteType = {
+		name = "GFX_ideology_demsocialism"
+		textureFile = "gfx/interface/ideologies/socdem.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ideology_military_government"
+		textureFile = "gfx/interface/ideologies/military_gov.dds"
+		legacy_lazy_load = no
+	}
+
 	# GFX_ideology_subideologyname
 }
