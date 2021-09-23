@@ -288,7 +288,7 @@
  STATE_287:0 "Taklamakan"
  STATE_288:0 "Burma"
  STATE_289:0 "Siam"
- STATE_290:0 "Spanish Africa"
+ STATE_290:1 "Northern Morocco"
  STATE_291:0 "Baghdad"
  STATE_292:0 "Nejd"
  STATE_293:0 "Yemen"
@@ -823,3 +823,4 @@
  STATE_822:1 "Western Australia"
  STATE_823:0 "West Central Australia"
  STATE_824:0 "Church of E"
+ STATE_825:0 "Greater Rhode Island"
