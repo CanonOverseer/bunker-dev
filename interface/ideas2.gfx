@@ -2,7 +2,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_canon_military"
-		texturefile = "gfx/interface/ideas/RED/ideas/idea_canon_military.dds"
+		texturefile = "gfx/interface/ideas/idea_canon_military.dds"
 	}	
 
 	spriteType = {
@@ -230,4 +230,8 @@ spriteTypes = {
 		textureFile = "gfx/interface/decisions/jewish_jihad_image.dds"
 	}
 
+
+
+
+	# GFX_ideology_subideologyname
 }

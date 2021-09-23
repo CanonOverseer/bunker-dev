@@ -168,17 +168,49 @@ unlock_national_focus = BNK_bunker_in_flames
 	}
 }
 
-#the Bunker Civil War
-news_event = {
+#[FROM.GetName] Requests an Alliance
+country_event = {
 	id = eventsmodedge.4
 	title = eventsmodedge.4.t
 	desc = eventsmodedge.4.d
+
+	picture = fromgetname_requests_an_alliance-1013
+	is_triggered_only = yes
+	option = {
+		name = eventsmodedge.4.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 70 }
+		
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = eventsmodedge.4.b
+		trigger = {
+			
+		}
+		ai_chance = { factor = 30 }
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#the Bunker Civil War
+news_event = {
+	id = eventsmodedge.5
+	title = eventsmodedge.5.t
+	desc = eventsmodedge.5.d
 
 	picture = the_bunker_civil_war-641
 	is_triggered_only = yes
 	major = yes
 	option = {
-		name = eventsmodedge.4.a
+		name = eventsmodedge.5.a
 		trigger = {
 			original_tag = BNK
 		}
@@ -189,7 +221,7 @@ news_event = {
 		}
 	}
 	option = {
-		name = eventsmodedge.4.b
+		name = eventsmodedge.5.b
 		trigger = {
 			NOT = { original_tag = BNK }
 NOT = { tag = BEL }
@@ -201,7 +233,7 @@ NOT = { tag = BEL }
 		}
 	}
 	option = {
-		name = eventsmodedge.4.c
+		name = eventsmodedge.5.c
 		trigger = {
 			tag = BEL
 		}

@@ -17,6 +17,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/events/eventsmodedge-event/first_bunker_elections-750.dds"
 	}
 
+	##Icon For: [FROM.GetName] Requests an Alliance
+	SpriteType = { 
+		name = "fromgetname_requests_an_alliance-1013"
+		texturefile = "gfx/interface/events/eventsmodedge-event/fromgetname_requests_an_alliance-1013.dds"
+	}
+
 	##Icon For: the Bunker Civil War
 	SpriteType = { 
 		name = "the_bunker_civil_war-641"
