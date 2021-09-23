@@ -37,6 +37,11 @@
  BNK_secondrepublic:0 "The Bunker"
  BNK_secondrepublic_DEF:0 "the Second Republic of the Bunker"
 
+ islamic_monarchism:0 "Sharia Monarchism"
+ islamic_monarchism_desc:0 "Sharia is a religious law forming part of the Islamic tradition. It is derived from the religious precepts of Islam, particularly the Quran and the hadith. In Arabic, the term sharia refers to God's immutable divine law and is contrasted with fiqh, which refers to its human scholarly interpretations  The manner of its application in modern times has been a subject of dispute between Muslim fundamentalists and modernists."
+ islamism:0 "Sharia State"
+ islamism_desc:0 "Sharia is a religious law forming part of the Islamic tradition. It is derived from the religious precepts of Islam, particularly the Quran and the hadith. In Arabic, the term sharia refers to God's immutable divine law and is contrasted with fiqh, which refers to its human scholarly interpretations  The manner of its application in modern times has been a subject of dispute between Muslim fundamentalists and modernists."
+
  BNK_allwell_canon:0 "Canon is in Charge"
  BNK_crisis_resolved:0 "the Bunker Crisis has been Resolved"
  bnk_is_lion:0 "Lion is the Ruler"
