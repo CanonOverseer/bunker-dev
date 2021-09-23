@@ -1,0 +1,29 @@
+state={
+	id=824
+	name="STATE_824"
+	provinces={
+		911 
+	}
+	resources={
+
+	}
+
+	history={
+		victory_points = {
+			911 7
+		}
+		buildings = {
+			infrastructure = 10
+			911 = {
+				naval_base = 3
+				coastal_bunker = 1
+			}
+
+		}
+		owner = BNK
+		add_core_of = BNK
+	}
+	manpower=50000
+	state_category=rural
+	buildings_max_level_factor=1.000
+}

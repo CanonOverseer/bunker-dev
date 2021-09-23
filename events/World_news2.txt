@@ -29,6 +29,9 @@ news_event = {
 	desc = World_news2.2.d
 
 	picture = World_jan_mayen_military_drills-57450
+	trigger = {
+		always = no
+	}
 	major = yes
 }
 

@@ -24,11 +24,6 @@ country_event = {
 		
 	}
 }
-set_party_name = { 
-    ideology = neutrality 
-    name = "House Overseer"
-    long_name = "Imperial House of Overseer"
-}
 		hidden_effect = {
 			set_country_flag = canon_emperor
 		}
@@ -64,6 +59,7 @@ country_event = {
 	desc = eventsmodedge.3.d
 
 	picture = first_bunker_elections-750
+	is_triggered_only = yes
 	option = {
 		name = eventsmodedge.3.a
 		trigger = {
@@ -165,12 +161,9 @@ add_ideas = Canon_low_military_control
 
 set_country_flag = is_canon
 
-news_event= {
-days = 1 
-id = bunkerevent.15
-}
 		hidden_effect = {
 			add_ideas = Canon_military_confusion 
+unlock_national_focus = BNK_bunker_in_flames
 		}
 	}
 }
