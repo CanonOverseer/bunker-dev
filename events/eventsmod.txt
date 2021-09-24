@@ -1,17 +1,5 @@
 ﻿add_namespace = eventsmod
 add_namespace = bunkernew
-add_namespace = BNK_super_events
-
-country_event = {
-	id = BNK_super_events.1
-	hidden = yes
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = BNK_super_events.1.a
-		set_global_flag = BNK_super_event_cracky_trigger
-	}
-}
 
 country_event = { # Civil War
 	id = bunkernew.1

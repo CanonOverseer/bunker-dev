@@ -41,6 +41,10 @@
  islamic_monarchism_desc:0 "Sharia is a religious law forming part of the Islamic tradition. It is derived from the religious precepts of Islam, particularly the Quran and the hadith. In Arabic, the term sharia refers to God's immutable divine law and is contrasted with fiqh, which refers to its human scholarly interpretations  The manner of its application in modern times has been a subject of dispute between Muslim fundamentalists and modernists."
  islamism:0 "Sharia State"
  islamism_desc:0 "Sharia is a religious law forming part of the Islamic tradition. It is derived from the religious precepts of Islam, particularly the Quran and the hadith. In Arabic, the term sharia refers to God's immutable divine law and is contrasted with fiqh, which refers to its human scholarly interpretations  The manner of its application in modern times has been a subject of dispute between Muslim fundamentalists and modernists."
+ demsocialism:0 "Socialist Democracy"
+ demsocialism_desc:0 ""
+ military_government:0 "Military Government"
+ military_government_desc:0 ""
 
  BNK_allwell_canon:0 "Canon is in Charge"
  BNK_crisis_resolved:0 "the Bunker Crisis has been Resolved"
@@ -63,4 +67,17 @@
  bunkernew.1.a:0 "We will defend at all Costs!"
  bunkernew.2.t:0 "the Steel Eagles seize Britanny"
  bunkernew.2.d:0 "In a shocking turn of events, Partisans in Britanny owing allegiance to the steel eagles have overthrown the Country and have started militarizing."
- bunkernew.2.a:0 "How have they done this?"
+ bunkernew.2.a:0 "How have they done this?" # £text_E
+
+ alliance_events.1:t:0 "Request for an Alliance from [FROM.GetName]"
+ alliance_events.1.d:0 "We've recieved a letter from [FROM.GetNameDef], requesting for us to join their alliance, the [FROM.GetFactionName], what shall we respond with [THIS.GetLeader]?"
+ alliance_events.1.a:0 "We will gladly join the [FROM.GetName]"
+ alliance_events.t.b:0 "We refuse their request"
+
+ alliance_events.2.t:0 "[FROM.GetNameDef] Accepted our Request"
+ alliance_events.2.d:0 "My [THIS.GetLeaderTitle], they have accepted our request for them to join our faction, it is a good day."
+ alliance_events.2.a:0 "Excellent"
+
+ alliance_events.3.t:0 "[FROM.GetNameDef] has Refused!"
+ alliance_events.3.d:0 "[FROM.GetName] have refused our request to join our faction, this is clearly an insult to us!"
+ alliance_events.3.a:0 "Damn them."
