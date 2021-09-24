@@ -1,0 +1,81 @@
+add_namespace = BNK_super_events
+add_namespace = alliance_events
+
+country_event = {
+	id = BNK_super_events.1
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = BNK_super_events.1.a
+		set_global_flag = BNK_super_event_cracky_trigger
+	}
+}
+
+country_event = { # Event Sender requests an alliance from Recipient
+	id = alliance_events.1
+	title = alliance_events.1.t
+	desc = alliance_events.1.d
+	picture = GFX_report_event_albanian_king_zog
+
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #accept
+		name = alliance_events.1.a
+		FROM = {
+			country_event = { 
+				id = alliance_events.2
+				days = 3 
+				random_days = 5
+			}
+		}
+
+	}
+
+	option = { #refuse
+		name = alliance_events.1.b
+		FROM = {
+			country_event = { 
+				id = alliance_events.3
+				days = 3 
+				random_days = 5
+			}
+		}
+
+	}
+}
+
+country_event = { # They Accepted
+	id = alliance_events.2
+	title = alliance_events.2.t
+	desc = alliance_events.2.d
+	picture = GFX_report_event_albanian_king_zog
+
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { # good
+		name = alliance_events.2.a
+		add_to_faction = FROM
+	}
+}
+
+country_event = { # They Refused
+	id = alliance_events.3
+	title = alliance_events.3.t
+	desc = alliance_events.3.d
+	picture = GFX_report_event_albanian_king_zog
+
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { # bad
+		name = alliance_events.3.a
+
+	}
+
+}
