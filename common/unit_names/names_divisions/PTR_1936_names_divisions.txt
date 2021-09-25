@@ -1,0 +1,24 @@
+PTR_DIV_0_0 = {	name = "Petorian Marines"
+	for_countries = { PTR }
+	can_use = { always = yes }
+	division_types = { 
+		"marine" "artillery_brigade" "heavy_armor" "light_sp_artillery_brigade" }
+	}
+	fallback_name = "%d. Petorian Marines"
+}
+PTR_DIV_1_0 = {	name = "Petorian Infantry"
+	for_countries = { PTR }
+	can_use = { always = yes }
+	division_types = { 
+		"infantry" }
+	}
+	fallback_name = "%d. Petorian Infantry"
+}
+PTR_DIV_2_0 = {	name = "Petorian Tank Corps"
+	for_countries = { PTR }
+	can_use = { always = yes }
+	division_types = { 
+		"medium_armor" "motorized" }
+	}
+	fallback_name = "%d. Petorian Tank Corps"
+}

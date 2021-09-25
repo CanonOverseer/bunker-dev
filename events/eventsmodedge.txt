@@ -200,17 +200,38 @@ country_event = {
 	}
 }
 
-#the Bunker Civil War
-news_event = {
+#[FROM.GetName] has joined the [THIS.GetFactionName]
+country_event = {
 	id = eventsmodedge.5
 	title = eventsmodedge.5.t
 	desc = eventsmodedge.5.d
+
+	picture = fromgetname_has_joined_the_thisgetfactionname-825
+	is_triggered_only = yes
+	option = {
+		name = eventsmodedge.5.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#the Bunker Civil War
+news_event = {
+	id = eventsmodedge.6
+	title = eventsmodedge.6.t
+	desc = eventsmodedge.6.d
 
 	picture = the_bunker_civil_war-641
 	is_triggered_only = yes
 	major = yes
 	option = {
-		name = eventsmodedge.5.a
+		name = eventsmodedge.6.a
 		trigger = {
 			original_tag = BNK
 		}
@@ -221,7 +242,7 @@ news_event = {
 		}
 	}
 	option = {
-		name = eventsmodedge.5.b
+		name = eventsmodedge.6.b
 		trigger = {
 			NOT = { original_tag = BNK }
 NOT = { tag = BEL }
@@ -233,7 +254,7 @@ NOT = { tag = BEL }
 		}
 	}
 	option = {
-		name = eventsmodedge.5.c
+		name = eventsmodedge.6.c
 		trigger = {
 			tag = BEL
 		}

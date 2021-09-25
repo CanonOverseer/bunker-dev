@@ -143,7 +143,7 @@ set_rule = {
 		y = 19
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_zJwgUXCf }
+		prerequisite = { focus = BNK_ChWKqIct }
 		ai_will_do = {
 			factor = 1
 		}
@@ -165,7 +165,7 @@ is_ai = yes
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = BNK_seek_out_allies }
-		mutually_exclusive = { focus = BNK_zJwgUXCf }
+		mutually_exclusive = { focus = BNK_ChWKqIct }
 		ai_will_do = {
 			factor = 1
 		}
@@ -1809,22 +1809,6 @@ ideology = fascism
 popularity = 0.4
 }
 }
-		}
-	}
-
-	#Focus for Establish SCP
-	focus = {
-		id = BNK_establish_scp
-		icon = GFX_BNK_establish_scp-73659
-		x = 40
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_ideas = BNK_SCP_foundation
 		}
 	}
 

@@ -1,0 +1,154 @@
+﻿oob = "PTR_1936"
+capital = 1
+set_research_slots = 4
+set_stability = 1
+set_war_support = 1
+set_convoys = 50
+
+
+add_ideas = {
+	limited_conscription
+	war_economy
+	quagmires_big_cannon_co
+	chris_griffin
+}
+
+
+
+#For start date 1939.1.1
+1939.1.1 = {
+	add_political_power = 1000
+	oob = "PTR_1939"
+}
+
+#Politics for 1936.1.1
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.3.1"
+	election_frequency = 60
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 100
+}
+
+#Politics for 1939.1.1
+1939.1.1 = {
+	set_popularities = {
+		democratic = 25
+		fascism = 25
+		communism = 25
+		neutrality = 25
+	}
+}
+
+#Create country leader - Peter Griffin
+create_country_leader = {
+	name = "Peter Griffin"
+	#Custom image for Peter Griffin
+	picture = "JCGqukeD-79073.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {  }
+}
+
+#Create country leader - Peter Griffin
+create_country_leader = {
+	name = "Peter Griffin"
+	#Custom image for Peter Griffin
+	picture = "YCbRFMph-79074.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {  }
+}
+
+#Create country leader - Peter Griffin
+create_country_leader = {
+	name = "Peter Griffin"
+	#Custom image for Peter Griffin
+	picture = "rxfWEYXP-79075.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {  }
+}
+
+#Create country leader - Peter Griffin
+create_country_leader = {
+	name = "Peter Griffin"
+	#Custom image for Peter Griffin
+	picture = "peter_griffin-79070.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {  }
+}
+
+#Create military leader - Peter Griffin
+create_field_marshal = {
+	name = "Peter Griffin"
+	#Custom image for Peter Griffin
+	picture = "cGldHPZI-79102.dds"
+	traits = { trait_reckless media_personality offensive_doctrine organisational_leader skilled_staffer }
+	skill = 7
+	attack_skill = 2
+	defense_skill = 5
+	planning_skill = 1
+	logistics_skill = 2
+	id = 184160160
+}
+
+#Create military leader - Stewie Griffin
+create_corps_commander = {
+	name = "Stewie Griffin"
+	#Custom image for Stewie Griffin
+	picture = "stewie_griffin-79104.dds"
+	traits = { brilliant_strategist trait_cautious urban_assault_specialist combined_arms_expert }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 5
+	logistics_skill = 7
+	id = 184160161
+}
+
+#Create military leader - Lois Griffin
+create_corps_commander = {
+	name = "Lois Griffin"
+	#Custom image for Lois Griffin
+	picture = "lois_griffin-79105.dds"
+	traits = { old_guard infantry_officer unyielding_defender inspirational_leader }
+	skill = 3
+	attack_skill = 1
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 5
+	id = 184160162
+}
+
+#Create military leader - Chris Griffin
+create_corps_commander = {
+	name = "Chris Griffin"
+	#Custom image for Chris Griffin
+	picture = "VpXZAOKe-79294.dds"
+	traits = { bearer_of_artillery fast_planner trickster winter_specialist }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+	id = 184160163
+}
+create_navy_leader = {
+	name = "Admiral Meg"
+	#Custom image for Admiral Meg
+	picture = "admiral_meg-79106.dds"
+	traits = { seawolf blockade_runner superior_tactician }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 4
+	id = 384160160
+}

@@ -1,0 +1,146 @@
+#Create units
+division_template = {
+	name = "Petorian Marines"
+	division_names_group = "PTR_DIV_0_0"
+	regiments = {
+		marine = { x = 0 y = 0}
+		marine = { x = 0 y = 1}
+		marine = { x = 0 y = 2}
+		marine = { x = 0 y = 3}
+		artillery_brigade = { x = 0 y = 4}
+		heavy_armor = { x = 1 y = 0}
+		light_sp_artillery_brigade = { x = 1 y = 1}
+		light_sp_artillery_brigade = { x = 1 y = 2}
+	}
+	support = {
+		signal_company = { x = 0 y = 0}
+		anti_air = { x = 0 y = 1}
+		recon = { x = 0 y = 2}
+		artillery = { x = 0 y = 3}
+		engineer = { x = 0 y = 4}
+	}
+
+}
+division_template = {
+	name = "Petorian Infantry"
+	division_names_group = "PTR_DIV_1_0"
+	regiments = {
+		infantry = { x = 0 y = 0}
+		infantry = { x = 0 y = 1}
+		infantry = { x = 0 y = 2}
+		infantry = { x = 0 y = 3}
+		infantry = { x = 0 y = 4}
+		infantry = { x = 1 y = 0}
+		infantry = { x = 1 y = 1}
+		infantry = { x = 1 y = 2}
+		infantry = { x = 1 y = 3}
+		infantry = { x = 1 y = 4}
+	}
+	support = {
+		engineer = { x = 0 y = 0}
+		artillery = { x = 0 y = 1}
+	}
+
+}
+division_template = {
+	name = "Petorian Tank Corps"
+	division_names_group = "PTR_DIV_2_0"
+	regiments = {
+		medium_armor = { x = 0 y = 0}
+		medium_armor = { x = 0 y = 1}
+		medium_armor = { x = 0 y = 2}
+		medium_armor = { x = 0 y = 3}
+		medium_armor = { x = 0 y = 4}
+		motorized = { x = 1 y = 0}
+		motorized = { x = 1 y = 1}
+		motorized = { x = 1 y = 2}
+		motorized = { x = 1 y = 3}
+		motorized = { x = 1 y = 4}
+	}
+	support = {
+		armored_car_recon = { x = 0 y = 0}
+		anti_air = { x = 0 y = 1}
+		artillery = { x = 0 y = 2}
+		logistics_company = { x = 0 y = 3}
+	}
+
+}
+
+#Spawn units
+units = {
+	division= {
+		name = "1st Petorian Marines"
+		location = 9832
+		division_template = "Petorian Marines"
+	}
+	division= {
+		name = "2nd Petorian Marines"
+		location = 9832
+		division_template = "Petorian Marines"
+	}
+	division= {
+		name = "3rd Petorian Infantry"
+		location = 9847
+		division_template = "Petorian Infantry"
+	}
+	division= {
+		name = "4th Petorian Infantry"
+		location = 9847
+		division_template = "Petorian Infantry"
+	}
+	division= {
+		name = "5th Petorian Infantry"
+		location = 9847
+		division_template = "Petorian Infantry"
+	}
+	division= {
+		name = "6th Petorian Infantry"
+		location = 9847
+		division_template = "Petorian Infantry"
+	}
+	division= {
+		name = "7th Petorian Infantry"
+		location = 9847
+		division_template = "Petorian Infantry"
+	}
+	division= {
+		name = "8th Petorian Infantry"
+		location = 11830
+		division_template = "Petorian Infantry"
+	}
+	division= {
+		name = "9th Petorian Infantry"
+		location = 11830
+		division_template = "Petorian Infantry"
+	}
+	division= {
+		name = "10th Petorian Infantry"
+		location = 11830
+		division_template = "Petorian Infantry"
+	}
+	division= {
+		name = "11th Petorian Infantry"
+		location = 11830
+		division_template = "Petorian Infantry"
+	}
+	division= {
+		name = "12th Petorian Infantry"
+		location = 11830
+		division_template = "Petorian Infantry"
+	}
+	division= {
+		name = "13th Petorian Infantry"
+		location = 11830
+		division_template = "Petorian Infantry"
+	}
+	division= {
+		name = "14th Petorian Tank Corps"
+		location = 3906
+		division_template = "Petorian Tank Corps"
+	}
+	division= {
+		name = "15th Petorian Tank Corps"
+		location = 3906
+		division_template = "Petorian Tank Corps"
+	}
+}

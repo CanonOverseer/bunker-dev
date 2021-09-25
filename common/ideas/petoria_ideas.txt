@@ -1,0 +1,101 @@
+ideas = {
+	mobilization_laws = {
+}
+	economy = {
+}
+	political_advisor = {
+		meg = {
+			allowed = {
+				original_tag = PTR
+			}
+			traits = { princess_of_terror communist_revolutionary}
+			picture = "yYGsDeFZ-79082"
+		}
+		meg = {
+			allowed = {
+				original_tag = PTR
+			}
+			traits = { popular_figurehead silent_workhorse}
+			picture = "ixESGWym-79087"
+		}
+		meg = {
+			allowed = {
+				original_tag = PTR
+			}
+			traits = {war_industrialist captain_of_industry }
+			picture = "alNzdOHk-79089"
+		}
+}
+	tank_manufacturer = {
+}
+	naval_manufacturer = {
+		joehio_naval_forces = {
+			allowed = {
+				original_tag = PTR
+			}
+			traits = { atlantic_fleet_naval_manufacturer naval_manufacturer naval_aircraft_manufacturer}
+			picture = "AdWYnKVf-1433"
+		}
+}
+	aircraft_manufacturer = {
+}
+	materiel_manufacturer = {
+		quagmires_big_cannon_co = {
+			allowed = {
+				original_tag = PTR
+			}
+			traits = { artillery_manufacturer}
+			picture = "GUgwdEeK-1426"
+		}
+}
+	industrial_concern = {
+}
+	theorist = {
+		quagmires_big_cannon_co = {
+			allowed = {
+				original_tag = PTR
+			}
+			traits = { nuclear_scientist rocket_scientist}
+			ledger = army
+			picture = "alNzdOHk-79083"
+		}
+}
+	army_chief = {
+		brian_griffin = {
+			allowed = {
+				original_tag = PTR
+			}
+			traits = { army_infantry_3}
+			picture = "RbGlWHMA-79092"
+		}
+		brian_griffin = {
+			allowed = {
+				original_tag = PTR
+			}
+			traits = { army_armored_2 mobile_warfare_expert}
+			picture = "alNzdOHk-79094"
+		}
+}
+	navy_chief = {
+}
+	air_chief = {
+}
+	high_command = {
+		chris_griffin = {
+			allowed = {
+				original_tag = PTR
+			}
+			traits = { economist army_chief_offensive_2}
+			ledger = army
+			picture = "cyPXQvVF-79095"
+		}
+		brian_griffin = {
+			allowed = {
+				original_tag = PTR
+			}
+			traits = { army_chief_maneuver_2}
+			ledger = army
+			picture = "RbGlWHMA-79097"
+		}
+}
+}
