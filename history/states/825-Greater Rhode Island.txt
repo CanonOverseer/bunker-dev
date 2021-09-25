@@ -8,7 +8,7 @@ state={
 		905 3906 9832 11830 
 	}
 	history={
-		owner = SAY
+		owner = PTR
 		buildings = {
 			infrastructure = 7
 			arms_factory = 2

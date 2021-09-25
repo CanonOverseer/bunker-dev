@@ -20,7 +20,8 @@ state={
 			}
 
 		}
-		owner = BNK
+		owner = EEE
+		add_core_of = EEE
 		add_core_of = BNK
 	}
 	manpower=50000

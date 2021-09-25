@@ -749,3 +749,17 @@ NRM = {
 	color = rgb { 181 72 82 }
 	color_ui = rgb { 181 72 82 }
 }
+EEE = {
+	color = rgb { 147 120 170 }
+	color_ui = rgb { 147 120 170 }
+}
+
+VTC = {
+	color = rgb { 235 215 109 }
+	color_ui = rgb { 235 215 109 }
+}	
+
+PTR = {
+	color = rgb { 203 112 76 }
+	color_ui = rgb { 203 112 76 }
+}
