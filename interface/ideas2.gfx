@@ -273,5 +273,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+	spriteType = {
+		name = "GFX_text_N"
+		texturefile = "gfx/texticons/N.dds"
+		legacy_lazy_load = no
+	}
+
 	# GFX_ideology_subideologyname
 }
