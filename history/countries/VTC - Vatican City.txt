@@ -1,16 +1,14 @@
 ﻿oob = "VTC_1936"
-capital = 1
+capital = 2
 set_research_slots = 3
 set_stability = 1
 set_war_support = 0.1
-set_convoys = 0
-
-give_military_access = ITA
+set_convoys = 40
 
 add_ideas = {
 	disarmed_nation
 	civilian_economy
-theocratic_neutrality
+	theocratic_neutrality
 }
 
 
@@ -49,7 +47,7 @@ set_popularities = {
 create_country_leader = {
 	name = "No Leader"
 	#Custom image for No Leader
-	picture = "no_leader-9404.dds"
+	picture = "pius_xi-77592.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {  }
@@ -59,20 +57,20 @@ create_country_leader = {
 create_country_leader = {
 	name = "Pius XI"
 	#Custom image for Pius XI
-	picture = "mjbQNWow-77592.dds"
+	picture = "pius_xi-77592.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = rexism
 	traits = {  }
-}
+}	
 
 #Create country leader - Pius XI
 create_country_leader = {
 	name = "Pius XI"
 	#Custom image for Pius XI
-	picture = "XZACUOHV-77610.dds"
+	picture = "pius_xi-77592.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
-	traits = {  }
+	traits = { VTC_bishop_of_rome }
 }
 
 #Create country leader - Pius XI
@@ -81,6 +79,6 @@ create_country_leader = {
 	#Custom image for Pius XI
 	picture = "pius_xi-77592.dds"
 	expire = "1965.1.1"
-	ideology = oligarchism
-	traits = {  }
+	ideology = papal_theocracy 
+	traits = { VTC_bishop_of_rome }
 }
