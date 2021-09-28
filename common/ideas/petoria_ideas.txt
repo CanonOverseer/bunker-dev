@@ -9,21 +9,21 @@ ideas = {
 				original_tag = PTR
 			}
 			traits = { princess_of_terror communist_revolutionary}
-			picture = "yYGsDeFZ-79082"
+			picture = idea_meg
 		}
-		meg = {
+		lois = {
 			allowed = {
 				original_tag = PTR
 			}
 			traits = { popular_figurehead silent_workhorse}
-			picture = "ixESGWym-79087"
+			picture = idea_lois
 		}
-		meg = {
+		stewie = {
 			allowed = {
 				original_tag = PTR
 			}
-			traits = {war_industrialist captain_of_industry }
-			picture = "alNzdOHk-79089"
+			traits = { war_industrialist captain_of_industry }
+			picture = idea_stewie
 		}
 }
 	tank_manufacturer = {
@@ -51,13 +51,13 @@ ideas = {
 	industrial_concern = {
 }
 	theorist = {
-		quagmires_big_cannon_co = {
+		stewie_2 = {
 			allowed = {
 				original_tag = PTR
 			}
 			traits = { nuclear_scientist rocket_scientist}
 			ledger = army
-			picture = "alNzdOHk-79083"
+			picture = idea_stewie
 		}
 }
 	army_chief = {
@@ -66,14 +66,7 @@ ideas = {
 				original_tag = PTR
 			}
 			traits = { army_infantry_3}
-			picture = "RbGlWHMA-79092"
-		}
-		brian_griffin = {
-			allowed = {
-				original_tag = PTR
-			}
-			traits = { army_armored_2 mobile_warfare_expert}
-			picture = "alNzdOHk-79094"
+			picture = idea_brian
 		}
 }
 	navy_chief = {
@@ -87,15 +80,15 @@ ideas = {
 			}
 			traits = { economist army_chief_offensive_2}
 			ledger = army
-			picture = "cyPXQvVF-79095"
+			picture = idea_chris
 		}
-		brian_griffin = {
+		brian_griffin_2 = {
 			allowed = {
 				original_tag = PTR
 			}
 			traits = { army_chief_maneuver_2}
 			ledger = army
-			picture = "RbGlWHMA-79097"
+			picture = idea_brian
 		}
 }
 }

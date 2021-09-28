@@ -1,5 +1,97 @@
 ﻿add_namespace = eventsmod
 add_namespace = bunkernew
+add_namespace = petoria
+
+
+
+country_event = { # Petoria Revolts
+	id = petoria.0
+        title = petoria.0.t 
+        desc = petoria.0.d
+		picture = GFX_report_event_albanian_king_zog
+
+	is_triggered_only = yes 
+	
+	hidden = no 
+
+	fire_only_once = yes
+	
+	immediate = {
+		hidden_effect = {
+			PTR = {
+				inherit_technology = SAY
+				load_oob = PTR_1936
+				country_lock_all_division_template = yes
+			}
+		}
+	}
+	
+	option = { #wtf send in the army
+		name = petoria.0.a
+
+	}
+
+	option = { #let them have it
+		name = petoria.0.b
+
+	}
+}
+
+country_event = { # Petoria Annexes Joes Pool
+	id = petoria.1
+        title = petoria.1.t 
+        desc = petoria.1.d
+		picture = GFX_report_event_albanian_king_zog
+
+	is_triggered_only = yes 
+	
+	hidden = no 
+
+	fire_only_once = yes
+	
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	
+	option = { #wtf send in the army
+		name = petoria.1.a
+
+	}
+
+	option = { #let them have it
+		name = petoria.1.b
+
+	}
+}
+
+country_event = { # Petoria Annexes the drunken clam
+	id = petoria.2
+        title = petoria.2.t 
+        desc = petoria.2.d
+		picture = GFX_report_event_albanian_king_zog
+
+	is_triggered_only = yes 
+	
+	hidden = no 
+
+	fire_only_once = yes
+	
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	
+	option = { #wtf send in the army
+		name = petoria.2.a
+
+	}
+
+	option = { #let them have it
+		name = petoria.2.b
+
+	}
+}
 
 country_event = { # Civil War
 	id = bunkernew.1
