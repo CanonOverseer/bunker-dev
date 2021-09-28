@@ -273,7 +273,11 @@ spriteTypes = {
 
 
 
-
+	spriteType = {
+		name = "GFX_ideology_papal_theocracy"
+		textureFile = "gfx/interface/ideologies/papacy.dds"
+		legacy_lazy_load = no
+	}
 
 	spriteType = {
 		name = "GFX_ideology_monarchism"

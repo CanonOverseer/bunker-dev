@@ -149,6 +149,11 @@ ideologies = {
 				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 
+			blue_fascism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+
 			gen_nazism = {
 			}
 			
@@ -218,6 +223,10 @@ ideologies = {
 			}
 		
 			islamic_monarchism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			papal_theocracy = {
 				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 			

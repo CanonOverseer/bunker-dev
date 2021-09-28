@@ -1,0 +1,202 @@
+#Create units
+division_template = {
+	name = "Crusader Division"
+	division_names_group = "EGY_DIV_0_0"
+	regiments = {
+		infantry = { x = 0 y = 0}
+		infantry = { x = 0 y = 1}
+		infantry = { x = 0 y = 2}
+		infantry = { x = 1 y = 0}
+		infantry = { x = 1 y = 1}
+		infantry = { x = 1 y = 2}
+		infantry = { x = 2 y = 0}
+		infantry = { x = 2 y = 1}
+		infantry = { x = 2 y = 2}
+	}
+	support = {
+		artillery = { x = 0 y = 0}
+		engineer = { x = 0 y = 1}
+		recon = { x = 0 y = 2}
+	}
+
+}
+division_template = {
+	name = "Hussar Knights"
+	division_names_group = "EGY_DIV_1_0"
+	regiments = {
+		cavalry = { x = 0 y = 0}
+		cavalry = { x = 0 y = 1}
+		cavalry = { x = 0 y = 2}
+		cavalry = { x = 0 y = 3}
+		cavalry = { x = 0 y = 4}
+		cavalry = { x = 1 y = 0}
+		cavalry = { x = 1 y = 1}
+		cavalry = { x = 1 y = 2}
+		cavalry = { x = 1 y = 3}
+		cavalry = { x = 1 y = 4}
+	}
+	support = {
+		anti_air = { x = 0 y = 0}
+		armored_car_recon = { x = 0 y = 1}
+		artillery = { x = 0 y = 2}
+	}
+
+}
+division_template = {
+	name = "Heavenly Inquisition"
+	division_names_group = "EGY_DIV_2_0"
+	regiments = {
+		cavalry = { x = 0 y = 0}
+		cavalry = { x = 0 y = 1}
+		cavalry = { x = 0 y = 2}
+		cavalry = { x = 0 y = 3}
+		cavalry = { x = 0 y = 4}
+	}
+	support = {
+		military_police = { x = 0 y = 0}
+	}
+
+}
+division_template = {
+	name = "Pepe Le Tankette Division"
+	division_names_group = "EGY_DIV_3_0"
+	regiments = {
+		light_armor = { x = 0 y = 0}
+		light_armor = { x = 0 y = 1}
+		light_armor = { x = 0 y = 2}
+		motorized = { x = 1 y = 0}
+		motorized = { x = 1 y = 1}
+		motorized = { x = 1 y = 2}
+		motorized = { x = 1 y = 3}
+		motorized = { x = 1 y = 4}
+	}
+	support = {
+		mot_recon = { x = 0 y = 0}
+		artillery = { x = 0 y = 1}
+		engineer = { x = 0 y = 2}
+	}
+
+}
+
+#Spawn units
+units = {
+	division= {
+		name = "1st Crusader Division"
+		location = 1201
+		division_template = "Crusader Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division= {
+		name = "2nd Crusader Division"
+		location = 1201
+		division_template = "Crusader Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division= {
+		name = "3rd Crusader Division"
+		location = 4088
+		division_template = "Crusader Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division= {
+		name = "4th Crusader Division"
+		location = 4088
+		division_template = "Crusader Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division= {
+		name = "5th Crusader Division"
+		location = 4088
+		division_template = "Crusader Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division= {
+		name = "6th Crusader Division"
+		location = 10073
+		division_template = "Crusader Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division= {
+		name = "7th Crusader Division"
+		location = 10073
+		division_template = "Crusader Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division= {
+		name = "8th Crusader Division"
+		location = 10073
+		division_template = "Crusader Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division= {
+		name = "9th Crusader Division"
+		location = 10073
+		division_template = "Crusader Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division= {
+		name = "10th Crusader Division"
+		location = 11967
+		division_template = "Crusader Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division= {
+		name = "11th Crusader Division"
+		location = 11967
+		division_template = "Crusader Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division= {
+		name = "12th Hussar Knights"
+		location = 7073
+		division_template = "Hussar Knights"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division= {
+		name = "13th Hussar Knights"
+		location = 7073
+		division_template = "Hussar Knights"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division= {
+		name = "14th Hussar Knights"
+		location = 10002
+		division_template = "Hussar Knights"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division= {
+		name = "15th Hussar Knights"
+		location = 10002
+		division_template = "Hussar Knights"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division= {
+		name = "16th Pepe Le Tankette Division"
+		location = 1015
+		division_template = "Pepe Le Tankette Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division= {
+		name = "17th Pepe Le Tankette Division"
+		location = 1086
+		division_template = "Pepe Le Tankette Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+}

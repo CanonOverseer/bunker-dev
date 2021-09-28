@@ -19,22 +19,40 @@ country_event = { # Petoria Revolts
 	immediate = {
 		hidden_effect = {
 			PTR = {
+				set_global_flag = petoria_exists
 				inherit_technology = SAY
 				load_oob = PTR_1936
 				country_lock_all_division_template = yes
+				transfer_state = 825
+				set_capital = 825
 			}
+			825 = { set_demilitarized_zone = no add_core_of = PTR }
 		}
 	}
 	
-	option = { #wtf send in the army
+	option = { #oh shit oh fuck
 		name = petoria.0.a
-
+		declare_war_on = {
+			target = PTR
+			type = annex_everything
+		}
 	}
 
-	option = { #let them have it
+	option = { #oh shit oh fuck we surrender
 		name = petoria.0.b
-
+		825 = { remove_core_of = SAY add_claim_by = SAY }
+		set_truce = {
+			target = PTR
+			days = 180
+		}
+		PTR = {
+			set_truce = {
+				target = SAY
+				days = 180
+			}
+		}
 	}
+
 }
 
 country_event = { # Petoria Annexes Joes Pool
@@ -56,11 +74,25 @@ country_event = { # Petoria Annexes Joes Pool
 	
 	option = { #wtf send in the army
 		name = petoria.1.a
-
+		custom_effect_tooltip = PTR_bad_feeling_tt
+		hidden_effect = {
+			country_event = {
+				id = petoria.2
+				days = 30
+			}	
+		}
 	}
 
 	option = { #let them have it
 		name = petoria.1.b
+		custom_effect_tooltip = PTR_who_cares_tt
+		hidden_effect = {
+			country_event = {
+				id = petoria.2
+				days = 180
+			}	
+		}
+		add_political_power = -25
 
 	}
 }
@@ -79,17 +111,22 @@ country_event = { # Petoria Annexes the drunken clam
 	
 	immediate = {
 		hidden_effect = {
+			825 = { set_demilitarized_zone = yes }
 		}
 	}
 	
 	option = { #wtf send in the army
 		name = petoria.2.a
-
+		country_event = {
+			id = petoria.2
+			days = 20
+		}	
 	}
 
 	option = { #let them have it
 		name = petoria.2.b
-
+		add_political_power = -100
+		825 = { set_demilitarized_zone = no }
 	}
 }
 

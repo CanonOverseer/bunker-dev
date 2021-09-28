@@ -19,7 +19,6 @@ ideas = {
 				picture = generic_democratic_drift_bonus
 	
 				rule = {
-					can_be_called_to_war = no
 					can_join_factions = no 	
 					can_not_declare_war = yes
 					can_puppet = no 
@@ -921,10 +920,6 @@ ideas = {
 
 			picture = generic_neutrality_drift_bonus
 			
-			rule = {
-				can_be_called_to_war = no
-			}
-
 			modifier = {
 				ai_call_ally_desire_factor = -69420
 				ai_join_ally_desire_factor = -69420

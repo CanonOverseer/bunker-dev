@@ -138,15 +138,6 @@ add_ideas = {
 #activate_mission = GER_mefo_bills_mission
 set_cosmetic_tag = GER_NGF
 
-create_country_leader = {
-	name = "the Reichstag"
-	desc = "GER_REICHSTAG_DESC"
-	picture = "gfx/leaders/GER/reichstag.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-	}
-}
 
 create_country_leader = {
 	name = "Adolf Hitler"
@@ -178,6 +169,16 @@ create_country_leader = {
 	traits = {
 		#stalins_puppet # This will now be added in on_actions if SOV releases the country as a puppet via action or war conference
 		exiled # He left in 1933 so he should still be exiled
+	}
+}
+
+create_country_leader = {
+	name = "the Reichstag"
+	desc = "GER_REICHSTAG_DESC"
+	picture = "gfx/leaders/GER/reichstag.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
 	}
 }
 

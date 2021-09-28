@@ -51,9 +51,14 @@
  peterism_desc:0 ""
  red_fascism:0 "Red Fascism"
  red_Fascism_desc:0 ""
+ blue_fascism:0 "Blue Fascism"
+ blue_Fascism_desc:0 ""
+ papal_theocracy:0 "Papal Theocracy"
+ papal_theocracy_desc:0 "Papacy, the office and jurisdiction of the bishop of Rome, the pope (Latin papa, from Greek pappas, “father”), who presides over the central government of the Roman Catholic Church, the largest of the three major branches of Christianity."
  brian_griffin_2:0 "Brian Griffin"
  stewie:0 "Stewie Griffin"
  stewie_2:0 "Stewie Griffin"
+ BEL_post_civil_war_trait:0 "Failures of the Bunker Civil War"
 
  BNK_allwell_canon:0 "Canon is in Charge"
  BNK_crisis_resolved:0 "the Bunker Crisis has been Resolved"
@@ -71,6 +76,8 @@
  refusalcentralization_tt:0 "§Rif they Refuse we will get a wargoal on them.§!"
  refusalcentralization2_tt:0 "§YWe can later enforce our authority as Caliph to make them Puppets via Decision.§!"
  PTR_petorian_supremacy:0 "Petorian Supremacy"
+ PTR_bad_feeling_tt:0 "§RYou have a feeling you should accept their demands... or else..§!"
+ PTR_who_cares_tt:0 "Who cares about some pool anyway?"
 
  bunkernew.1.t:0 "the Bunker Civil War"
  bunkernew.1.d:0 "The Inevitable has happened, the Socialists and Steel Eagles have risen up in open rebellion."
