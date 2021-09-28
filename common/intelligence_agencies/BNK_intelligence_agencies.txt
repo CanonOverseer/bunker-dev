@@ -5,8 +5,17 @@
 intelligence_agency = {
 
 	picture = GFX_intelligence_agency_logo_BNK
+	names = { "B-NKVD" }
+	
+	default = { tag = BNK }
+	available = { original_tag = BNK has_government = communism }
+}
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_BNK
 	names = { "Purple Intelligence Agency" }
 	
 	default = { tag = BNK }
-	available = { original_tag = BNK }
+	available = { original_tag = BNK NOT = { has_government = communism } }
 }

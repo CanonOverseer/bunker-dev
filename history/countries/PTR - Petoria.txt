@@ -1,5 +1,4 @@
-﻿oob = "PTR_1936"
-capital = 1
+﻿capital = 825
 set_research_slots = 4
 set_stability = 1
 set_war_support = 1
@@ -9,17 +8,11 @@ set_convoys = 50
 add_ideas = {
 	limited_conscription
 	war_economy
-	quagmires_big_cannon_co
-	chris_griffin
 }
 
 
 
 #For start date 1939.1.1
-1939.1.1 = {
-	add_political_power = 1000
-	oob = "PTR_1939"
-}
 
 #Politics for 1936.1.1
 set_politics = {
@@ -61,7 +54,7 @@ create_country_leader = {
 	#Custom image for Peter Griffin
 	picture = "YCbRFMph-79074.dds"
 	expire = "1965.1.1"
-	ideology = nazism
+	ideology = nat_peterism
 	traits = {  }
 }
 
@@ -81,7 +74,7 @@ create_country_leader = {
 	#Custom image for Peter Griffin
 	picture = "peter_griffin-79070.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = peterism
 	traits = {  }
 }
 

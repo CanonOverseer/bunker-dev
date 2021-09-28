@@ -740,6 +740,23 @@ FSA_revolt = {
 	color_ui = rgb { 103 188 201 }
 }
 
+
+RED_revolt = {
+	color = rgb { 117 117 117 }
+	color_ui = rgb { 127 127 127 }
+}
+
+BLU_revolt = {
+	color = rgb { 40  68  102 }
+	color_ui = rgb { 40  68  102 }
+}
+
+RED_blue = {
+	color = rgb { 40  68  102 }
+	color_ui = rgb { 40  68  102 }
+}
+
+
 NAV_fascism = {
 	color = rgb { 100  95  162 }
 	color_ui = rgb { 100  95  162 }
