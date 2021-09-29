@@ -2,13 +2,29 @@
  monarchist:0 "Monarchism"
  monarchist_desc:0 "A monarchy is a form of government in which a person, the monarch, is head of state for life or until abdication. The political legitimacy and authority of the monarch may vary from restricted and largely symbolic (constitutional monarchy), to fully autocratic (absolute monarchy), and can expand across the domains of the executive, legislative, and judicial. Monarchies form polities by being ruled by the monarch in unity, personal union, federation or vassalage, and as such monarchs can carry various titles such as emperor, king, queen, raja, khan, caliph, tsar, sultan, shah, chhatrapati, or pharaoh.\n\nThe succession of monarchs is in most cases hereditary, often building dynastic periods, however elective and self-proclaimed monarchies are possible. Aristocrats, though not inherent to monarchies, often serve as the pool of persons to draw the monarch from and fill the constituting institutions (e.g. diet and court), giving many monarchies oligarchic elements.\n"
 
- semi_constitutionalist_monarchism:0 "Monarchism"
+ semi_constitutionalist_monarchism:0 "Semi-Constitutional Monarchism"
  semi_constitutionalist_monarchism_desc:0 "A monarchy is a form of government in which a person, the monarch, is head of state for life or until abdication. The political legitimacy and authority of the monarch may vary from restricted and largely symbolic (constitutional monarchy), to fully autocratic (absolute monarchy), and can expand across the domains of the executive, legislative, and judicial. Monarchies form polities by being ruled by the monarch in unity, personal union, federation or vassalage, and as such monarchs can carry various titles such as emperor, king, queen, raja, khan, caliph, tsar, sultan, shah, chhatrapati, or pharaoh.\n\nThe succession of monarchs is in most cases hereditary, often building dynastic periods, however elective and self-proclaimed monarchies are possible. Aristocrats, though not inherent to monarchies, often serve as the pool of persons to draw the monarch from and fill the constituting institutions (e.g. diet and court), giving many monarchies oligarchic elements.\n"
 
- absolute_monarchism:0 "Monarchism"
+ absolute_monarchism:0 "Absolute Monarchism"
  absolute_monarchism_desc:0 "A monarchy is a form of government in which a person, the monarch, is head of state for life or until abdication. The political legitimacy and authority of the monarch may vary from restricted and largely symbolic (constitutional monarchy), to fully autocratic (absolute monarchy), and can expand across the domains of the executive, legislative, and judicial. Monarchies form polities by being ruled by the monarch in unity, personal union, federation or vassalage, and as such monarchs can carry various titles such as emperor, king, queen, raja, khan, caliph, tsar, sultan, shah, chhatrapati, or pharaoh.\n\nThe succession of monarchs is in most cases hereditary, often building dynastic periods, however elective and self-proclaimed monarchies are possible. Aristocrats, though not inherent to monarchies, often serve as the pool of persons to draw the monarch from and fill the constituting institutions (e.g. diet and court), giving many monarchies oligarchic elements.\n"
 
- constitutional_monarchy:0 "Constitutionalist Monarchy"
+ constitutional_monarchy:0 "Constitutional Monarchism"
  constitutional_monarchy_desc:0 ""
  islamic_monarchism:0 "Sharia Monarchism"
  islamic_monarchism_desc:0 "Sharia is a religious law forming part of the Islamic tradition. It is derived from the religious precepts of Islam, particularly the Quran and the hadith. In Arabic, the term sharia refers to God's immutable divine law and is contrasted with fiqh, which refers to its human scholarly interpretations  The manner of its application in modern times has been a subject of dispute between Muslim fundamentalists and modernists."
+ 
+
+ ZZZ_monarchist_party:1 "KPP"
+ ZZZ_monarchist_party_long:1 "KPP"
+
+
+ GER_monarchist_party:0 "House von Hohenzollern"
+ GER_monarchist_party:0 "House von Hohenzollern"
+ BAY_monarchist_party:0 "House von Wittelsbach"
+ BAY_monarchist_party_long:0 "House von Wittelsbach"
+
+ ENG_monarchist_party:0 "House Windsor"
+ ITA_monarchist_party:0 "House di Savoy"
+ PSA_monarchist_party:0 "Sons of Norton"
+ SAU_monarchist_party:0 "House of Saud"
+ BHU_monarchist_party:0 "Wangchuk Dynasty"
