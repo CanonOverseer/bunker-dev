@@ -140,7 +140,7 @@ create_country_leader = {
 	#Custom image for Duke Henry I
 	picture = "gfx/leaders/BNK/henry_I.dds"
 	expire = "1965.1.1"
-	ideology = constitional_monarchy
+	ideology = constitutional_monarchy
 	traits = { }
 }
 
