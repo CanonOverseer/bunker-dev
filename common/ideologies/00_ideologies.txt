@@ -27,7 +27,7 @@ ideologies = {
 			"FACTION_NAME_DEMOCRATIC_6"
 		}
 		
-		color = { 0 51 204 }
+		color = { 18 82 184 }
 		
 		rules = {
 			can_create_collaboration_government = no
@@ -100,7 +100,7 @@ ideologies = {
 			"FACTION_NAME_COMMUNIST_5"
 		}
 		
-		color = { 179 0 0 }
+		color = { 184 18 18 }
 		
 		war_impact_on_world_tension = 0.75		#Commie less threatening
 		faction_impact_on_world_tension = 0.5
@@ -183,7 +183,7 @@ ideologies = {
 			"FACTION_NAME_FASCIST_5"
 		}
 		
-		color = { 38 38 38 }
+		color = { 138 97 74 }
 		
 		war_impact_on_world_tension = 1.0			#evil!
 		faction_impact_on_world_tension = 1.0
@@ -252,7 +252,7 @@ ideologies = {
 			"FACTION_NAME_NONALIGNED_5"
 		}
 		
-		color = { 115 115 115 }
+		color = { 142 144 148 }
 		
 		
 		war_impact_on_world_tension = 0.25		#no major danger

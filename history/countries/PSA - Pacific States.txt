@@ -72,8 +72,9 @@ set_politics = {
 set_popularities = {
 	democratic = 60
 	fascism = 15
-	communism = 25
-	neutrality = 0
+	communism = 22
+	neutrality = 1
+	monarchist = 2
 }
 
 add_ideas = {

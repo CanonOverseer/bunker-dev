@@ -27,7 +27,7 @@ ideologies = {
 			"FACTION_NAME_NONALIGNED_5"
 		}
 
-		color = { 169 0 176 }
+		color = { 156 76 176 }
 		can_host_government_in_exile = yes
 		can_collaborate = yes
 		war_impact_on_world_tension = 0.5		#better than commies and fascists
