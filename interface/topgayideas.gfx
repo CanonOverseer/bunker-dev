@@ -35,5 +35,20 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/SEX/cory.dds"
 	}	
 	
+	spriteType = {
+		name = "GFX_idea_officer_man"
+		texturefile = "gfx/interface/ideas/SEX/officer.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_SAY_divided_2"
+		texturefile = "gfx/interface/ideas/SAY_divided.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_saymen"
+		texturefile = "gfx/interface/ideas/SEX/sayman.dds"
+	}	
+	
 	
 }
