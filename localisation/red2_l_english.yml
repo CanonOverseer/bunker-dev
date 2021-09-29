@@ -98,7 +98,7 @@
  BNK_allwell_canon:0 "Canon is in Charge"
  BNK_crisis_resolved:0 "the Bunker Crisis has been Resolved"
  bnk_is_lion:0 "Lion is the Ruler"
- BNK_caliph_of_islam:0 "Caliph of Islam"
+ BNK_caliph_of_islam:0 "£trait_sayyid Caliph of Islam"
  BNK_won_civil_war:0 "You have won the Bunker Civil War"
  local:0 "localr"
  bnk_ready_to_look_outwards:0 "The Bunker is Stable and ready to look outwards"
@@ -119,7 +119,7 @@
  bunkernew.1.a:0 "We will defend at all Costs!"
  bunkernew.2.t:0 "the Steel Eagles seize Britanny"
  bunkernew.2.d:0 "In a shocking turn of events, Partisans in Britanny owing allegiance to the steel eagles have overthrown the Country and have started militarizing."
- bunkernew.2.a:0 "How have they done this?" # £text_E
+ bunkernew.2.a:0 "How have they done this?" # £text_E text_N
 
  alliance_events.1:t:0 "Request for an Alliance from [FROM.GetName]"
  alliance_events.1.d:0 "We've recieved a letter from [FROM.GetNameDef], requesting for us to join their alliance, the [FROM.GetFactionName], what shall we respond with [THIS.GetLeader]?"

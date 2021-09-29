@@ -421,6 +421,12 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+	spriteType = {
+		name = "GFX_trait_sayyid"
+		texturefile = "gfx/traits/trait_sayyid.dds"
+		legacy_lazy_load = no
+	}
+
 
 	# GFX_ideology_subideologyname
 }
