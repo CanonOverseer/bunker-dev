@@ -533,7 +533,7 @@ instant_build = yes
 			focus = PSA_up_with_the_stars 
 		}
 		prerequisite = { 
-			focus = PSA_xQygmWRd 
+			focus = PSA_YNUvkTdg 
 		}
 		ai_will_do = {
 			factor = 1
