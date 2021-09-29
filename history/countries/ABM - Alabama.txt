@@ -44,26 +44,7 @@ set_technology = {
 set_convoys = 45
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 5
-		}
-
-		fascism = {
-			popularity = 0
-		}
-		
-		communism = {
-			popularity = 1
-		}
-		
-		neutrality = { 
-			popularity = 94
-		}
-	}
-	
-	ruling_party = neutrality
+	ruling_party = monarchist
 	last_election = "1934.7.1"
 	elections_allowed = no
 }
@@ -71,9 +52,10 @@ set_popularities = {
 	democratic = 11
 	neutrality = 83
 	communism = 6
+	monarchist = 65
 }
 
-set_stability = 0.75\
+set_stability = 0.75
 
 add_ideas = {
 	RED_heir_to_america
@@ -81,11 +63,33 @@ add_ideas = {
 }
 
 create_country_leader = {
-	name = "King Lion"
+	name = "Lion I"
+	desc = kinglion_desc
+	picture = "gfx/leaders/RED/lion.dds"
+	expire = "1965.1.1"
+	ideology = absolute_monarchism
+	traits = {
+		hedonist
+	}
+}
+
+create_country_leader = {
+	name = "Lion I"
 	desc = kinglion_desc
 	picture = "gfx/leaders/RED/lion.dds"
 	expire = "1965.1.1"
 	ideology = despotism
+	traits = {
+		hedonist
+	}
+}
+
+create_country_leader = {
+	name = "Lion I"
+	desc = kinglion_desc
+	picture = "gfx/leaders/RED/lion.dds"
+	expire = "1965.1.1"
+	ideology = consveratism
 	traits = {
 		hedonist
 	}

@@ -80,60 +80,84 @@ units = {
 		name = "1st Swiss Guard"
 		location = 1086
 		division_template = "Swiss Guard"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
 	}
 	division= {
 		name = "2nd Swiss Guard"
 		location = 11751
 		division_template = "Swiss Guard"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
 	}
 	division= {
 		name = "3rd Swiss Guard"
 		location = 11751
 		division_template = "Swiss Guard"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
 	}
 	division= {
 		name = "4th Swiss Guard"
 		location = 11751
 		division_template = "Swiss Guard"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
 	}
 	division= {
 		name = "5th Swiss Guard"
 		location = 11751
 		division_template = "Swiss Guard"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
 	}
 	division= {
 		name = "6th Papal Levy"
 		location = 6862
 		division_template = "Papal Levy"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
 	}
 	division= {
 		name = "7th Papal Levy"
 		location = 6862
 		division_template = "Papal Levy"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
 	}
 	division= {
 		name = "8th Papal Levy"
 		location = 6862
 		division_template = "Papal Levy"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
 	}
 	division= {
 		name = "9th Papal Levy"
 		location = 9794
 		division_template = "Papal Levy"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
 	}
 	division= {
 		name = "10th Papal Levy"
 		location = 9794
 		division_template = "Papal Levy"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
 	}
 	division= {
 		name = "11th Motorized Division"
 		location = 11846
 		division_template = "Motorized Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
 	}
 	division= {
 		name = "12th Motorized Division"
 		location = 11846
 		division_template = "Motorized Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
 	}
 }
