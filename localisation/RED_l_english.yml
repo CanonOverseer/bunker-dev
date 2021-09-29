@@ -80,8 +80,8 @@
  
  GER_NGF_fascism:0 "North German Reich"
  GER_NGF_fascism_DEF:0 "the Northern Government of the German Reich"
- GER_NGF_democratic:0 "North German Confederation"
- GER_NGF_democratic_DEF:0 "the North German Confederation"
+ GER_NGF_democratic:0 "North German Republic"
+ GER_NGF_democratic_DEF:0 "the North German Republic"
  GER_NGF_neutrality:1 "North German Federation"
  GER_NGF_neutrality_DEF:1 "the North German Federation"
  GER_NGF_communism:0 "North German Commune"
@@ -92,6 +92,10 @@
  GER_NGF_communism_ADJ:0 "North German"
  GER_NGF_DEF:0 "Germany"
  GER_NGF_ADJ:0 "German"
+
+ ITA_the_social_republic:0 "Italian Social Republic"
+ ITA_the_social_republic_DEF:0 "the Italian Social Republic"
+ ITA_the_social_republic_ADJ:0 "Italian"
  
  BAY_SGF:0 "South German Confederation"
  BAY_SGF_DEF:0 "the South German Confederation"

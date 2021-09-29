@@ -1,0 +1,15 @@
+spriteTypes = { 
+	##Icon For: Theocratic Neutrality
+	SpriteType = { 
+		name = "GFX_idea_theocratic_neutrality-1646"
+		texturefile = "gfx/interface/ideas/religious-ideas-ideas/theocratic_neutrality-1646.dds"
+	}
+
+	##Icon For: Crusader State
+	SpriteType = { 
+		name = "GFX_idea_crusader_state-1067"
+		texturefile = "gfx/interface/ideas/religious-ideas-ideas/crusader_state-1067.dds"
+	}
+
+ 
+ }

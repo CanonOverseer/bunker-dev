@@ -1,0 +1,22 @@
+ideas = {
+	country = {
+
+		theocratic_neutrality = {
+			picture = theocratic_neutrality-1646
+			modifier = {
+				drift_defence_factor = 0.5
+guarantee_tension = 1
+join_faction_tension = 1
+justify_war_goal_time = 5
+enemy_declare_war_tension = 0.5
+	
+ai_get_ally_desire_factor = -1
+ai_focus_peaceful_factor = 1
+			}
+		}
+
+		crusader_state = {
+			picture = crusader_state-1067
+		}
+	}
+}

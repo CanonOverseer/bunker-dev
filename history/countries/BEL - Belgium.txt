@@ -141,7 +141,7 @@ create_country_leader = {
 	desc = "biggay"
 	picture = "gfx/leaders/BEL/ISP.dds"
 	expire = "1965.1.1"
-	ideology = rexism
+	ideology = un_ideology 
 	traits = {
 		warmonger
 		BEL_post_civil_war_trait

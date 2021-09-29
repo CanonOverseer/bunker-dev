@@ -1,0 +1,51 @@
+﻿oob = "EEE_1936"
+capital = 824
+set_research_slots = 3
+set_stability = 0.7
+set_war_support = 0.1
+set_convoys = 20
+
+give_military_access = BNK
+
+add_ideas = {
+	disarmed_nation
+	civilian_economy
+	theocratic_neutrality
+}
+#Politics for 1936.1.1
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.8.21"
+	election_frequency = 60
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 15
+	fascism = 20
+	communism = 0
+	neutrality = 65
+}
+
+#Create country leader - Church of E
+create_country_leader = {
+	name = "Church of E"
+	#Custom image for Church of E
+	picture = "church_of_e-77569.dds"
+	expire = "1965.1.1"
+	ideology = theocracy
+	traits = {  }
+}
+
+#Create military leader - Brother Hao, Defender of E
+create_corps_commander = {
+	name = "Brother Hao, Defender of E"
+	#Custom image for Brother Hao, Defender of E
+	picture = "brotherhaodefenderofe-77570.dds"
+	traits = { media_personality trait_reckless panzer_leader }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 3
+	id = 117156670
+}

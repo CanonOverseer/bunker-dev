@@ -23,6 +23,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/events/eventsmodedge-event/fromgetname_requests_an_alliance-1013.dds"
 	}
 
+	##Icon For: [FROM.GetName] has joined the [THIS.GetFactionName]
+	SpriteType = { 
+		name = "fromgetname_has_joined_the_thisgetfactionname-825"
+		texturefile = "gfx/interface/events/eventsmodedge-event/fromgetname_has_joined_the_thisgetfactionname-825.dds"
+	}
+
 	##Icon For: the Bunker Civil War
 	SpriteType = { 
 		name = "the_bunker_civil_war-641"

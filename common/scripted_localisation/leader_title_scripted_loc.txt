@@ -2,12 +2,21 @@ defined_text = {
 	name = GetLeaderTitle
 	text = {
 		trigger = {
-			tag = BNK
-			has_country_leader = {
-				name = "Canon I"
-				ruling_only = yes
+			OR = { 
+				AND = {
+					tag = BNK
+					has_country_leader = {
+						name = "Canon I"
+						ruling_only = yes
+					}
+					has_country_flag = canon_emperor
+				}
+				AND = {
+					tag = EGY 
+					has_government = neutrality
+					has_cosmetic_tag = EGY_pepe
+				}
 			}
-			has_country_flag = canon_emperor
 		}
 		localization_key = BNK_TITLE_EMPEROR
 	}
@@ -137,6 +146,10 @@ defined_text = {
 				} 
 				has_country_leader = {
 					name = "Regonal President Council"
+					ruling_only = yes
+				} 
+				has_country_leader = {
+					name = "the Reichstag"
 					ruling_only = yes
 				} 
 			}

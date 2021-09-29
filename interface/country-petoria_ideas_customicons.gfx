@@ -1,0 +1,63 @@
+spriteTypes = { 
+	##Icon For: Meg
+	SpriteType = { 
+		name = "yYGsDeFZ-79082"
+		texturefile = "gfx/interface/ideas/yYGsDeFZ-79082.dds"
+	}
+
+	##Icon For: Lois Griffin
+	SpriteType = { 
+		name = "ixESGWym-79087"
+		texturefile = "gfx/interface/ideas/ixESGWym-79087.dds"
+	}
+
+	##Icon For: Stewie Griffin
+	SpriteType = { 
+		name = "alNzdOHk-79089"
+		texturefile = "gfx/interface/ideas/alNzdOHk-79089.dds"
+	}
+
+	##Icon For: Joehio Naval Forces
+	SpriteType = { 
+		name = "AdWYnKVf-1433"
+		texturefile = "gfx/interface/ideas/AdWYnKVf-1433.dds"
+	}
+
+	##Icon For: Quagmires Big Cannon Co.
+	SpriteType = { 
+		name = "GUgwdEeK-1426"
+		texturefile = "gfx/interface/ideas/GUgwdEeK-1426.dds"
+	}
+
+	##Icon For: Stewie Griffin
+	SpriteType = { 
+		name = "alNzdOHk-79083"
+		texturefile = "gfx/interface/ideas/alNzdOHk-79083.dds"
+	}
+
+	##Icon For: Brian Griffin
+	SpriteType = { 
+		name = "RbGlWHMA-79092"
+		texturefile = "gfx/interface/ideas/RbGlWHMA-79092.dds"
+	}
+
+	##Icon For: Stewie Griffin
+	SpriteType = { 
+		name = "alNzdOHk-79094"
+		texturefile = "gfx/interface/ideas/alNzdOHk-79094.dds"
+	}
+
+	##Icon For: Chris Griffin
+	SpriteType = { 
+		name = "cyPXQvVF-79095"
+		texturefile = "gfx/interface/ideas/cyPXQvVF-79095.dds"
+	}
+
+	##Icon For: Brian Griffin
+	SpriteType = { 
+		name = "RbGlWHMA-79097"
+		texturefile = "gfx/interface/ideas/RbGlWHMA-79097.dds"
+	}
+
+ 
+ }

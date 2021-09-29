@@ -1,0 +1,16 @@
+EEE_DIV_0_0 = {	name = "Church Guardsmen"
+	for_countries = { EEE }
+	can_use = { always = yes }
+	division_types = { 
+		"infantry" }
+	}
+	fallback_name = "%d. Church Guardsmen"
+}
+EEE_DIV_1_0 = {	name = "Elite Foreign Guardsmen"
+	for_countries = { EEE }
+	can_use = { always = yes }
+	division_types = { 
+		"marine" "medium_sp_artillery_brigade" "artillery_brigade" }
+	}
+	fallback_name = "%d. Elite Foreign Guardsmen"
+}

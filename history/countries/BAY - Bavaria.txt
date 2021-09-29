@@ -50,6 +50,8 @@ if = {
 
 add_ideas = un_member
 
+oob = "BAY_1936"
+
 
 set_research_slots = 3
 set_convoys = 50

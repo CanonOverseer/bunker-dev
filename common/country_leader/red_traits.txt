@@ -144,6 +144,16 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
+	VTC_bishop_of_rome = {
+		random = no
+		drift_defence_factor = 1
+		army_core_defence_factor = 0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	
 	technocrat_trump = {
 		random = no
