@@ -1,9 +1,39 @@
-﻿
+
 l_english:
  CAT_hair:1 "Empire of Sex"
  CAT_hair_DEF:1 "Empire of Sex"
  CAT_hair_ADJ:1 "Sex"
+ 
  chesthair_desc:1 "Born from the fire of Fatass Goring VII. After hitting the ripe age of 12 years old, he decided he could no longer be a Goring. So he declared himself Augustus Chest Hairos, G-d immediately contacted Chest Hairos and gave him mystical powers. Long Live Augustus Chest Hairos, King of Sex, King of All."
+ lion1_desc:1 "The commander of the Honor-Guard at the Bunker's founding, Lion became the richest man in the Bunker thanks to his ownership of Lion News and connection to the Church. Grabbing the thought and attention of all with his gorgeous voice, he turned to politics with his famous motto: Strength through Unity, Unity through Brotherhood."
+ kinglion_desc:1 "King of Alabama, Grand Duke of Montgomery, Last Bourbon Monarch. King Lion took his nation from the brink of collapse and stabilized it - freeing it from the wretched hands of the United States. Some may doubt the ability of a monarchy to survive in the Americas but Alabamans have no such doubt. Long live the King!"
+ trot_desc:1 "One of the original revolutionaries in the Bunker, General Secretary D leads the communist faction in the pursuit of global revolution. He will bring the people communism, whether they like it or not."
+ zztopman_desc:1 "After Poland, Sayronia (New York), and Italy formed Sayland President Eesti was chosen to represent the nation. Under President Eesti Sayland lost all of Italy, and much of Saylish North America. The Saylish people then decided Top would be a good choice. Under Top Sayland restored order and thus he is called, the Father of the Nation."
+ council_desc:1 "The National Council, elected by the people has ruled over the Bunker for many years. After the 5th National Council, the public lost support in the idea and now want a single popular figure head to rule the nation. The National Council's days are numbered."
+ 
+ roman_goals:1 "Unlocks Roman War Plans"
+ 
+ SAY_karl:1 "Empire of Sayland"
+ SAY_karl_DEF:1 "The Empire of Sayland"
+ SAY_karl_ADJ:1 "Imperial Saylish"
+ SAY_nazi:1 "National Poland"
+ SAY_nazi_DEF:1 "The National Poland"
+ SAY_nazi_ADJ:1 "Nationalist Poland"
+ SAY_rome:1 "Roman Empire"
+ SAY_rome_DEF:1 "The Roman Empire"
+ SAY_rome_ADJ:1 "Roman"
+ 
+ RED_revolt:1 "National Socialist Red State"
+ RED_revolt_DEF:1 "The National Socialist Red State"
+ RED_revolt_ADJ:1 "Nazi Red"
+ 
+ BLU_revolt:1 "Blue Republic"
+ BLU_revolt_DEF:1 "The Blue Republic"
+ BLU_revolt_ADJ:1 "Blue"
+ 
+ RED_blue:1 "Blue Republic"
+ RED_blue_DEF:1 "The Blue Republic"
+ RED_blue_ADJ:1 "Blue"
  
  SAY_karl:1 "Empire of Sayland"
  SAY_karl_DEF:1 "Empire of Sayland"

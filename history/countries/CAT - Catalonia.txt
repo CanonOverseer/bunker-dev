@@ -71,28 +71,28 @@ CAT_nazi_staff
 
 create_country_leader = {
 	name = "Hermann 'Fatass' Goring"
-	picture = "gfx/leaders/RED/Portrait_Germany_Hermann_Goring.dds"
+	picture = "gfx/leaders/CAT/faty.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 }
 
 create_country_leader = {
 	name = "Hermann 'Fatass' Meyer"
-	picture = "gfx/leaders/RED/Portrait_Germany_Hermann_Goring.dds"
+	picture = "gfx/leaders/CAT/faty.dds"
 	expire = "1965.1.1"
 	ideology = nazism
 }
 
 create_country_leader = {
 	name = "Hermann 'Fatass' Goring"
-	picture = "gfx/leaders/RED/Portrait_Germany_Hermann_Goring.dds"
+	picture = "gfx/leaders/CAT/faty.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 }
 
 create_country_leader = {
 	name = "Hermann 'Skinnyass' Goring"
-	picture = "gfx/leaders/RED/Portrait_Germany_Hermann_Goring.dds"
+	picture = "gfx/leaders/CAT/faty.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 }

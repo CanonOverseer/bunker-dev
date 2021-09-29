@@ -169,27 +169,20 @@ country_event = {
 		name = saylandevent.10.a
 		ai_chance = { factor = 1}
 		SAY = {
+set_state_owner= 814
+}
+
+SAY = {
 set_state_owner= 199
 }
 
-SAY = {
-set_state_owner= 201
-}
 
 SAY = {
-set_state_owner= 198
+set_state_controller= 814
 }
 
 SAY = {
 set_state_controller= 199
-}
-
-SAY = {
-set_state_controller= 201 
-}
-
-SAY = {
-set_state_controller= 198
 }
 
 
@@ -743,5 +736,473 @@ country_event = {
 type = annex_everything 
 target = ABM
 }
+	}
+}
+##Event: Choosing a Head of the Council
+country_event = {
+	id = saylandevent.41
+	title = saylandevent.41.title
+	desc = saylandevent.41.desc
+	picture = GFX_report_event_pla_in_beijing
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.41.a
+		ai_chance = { factor = 1}
+		set_country_flag = top
+	}
+	option = {
+		name = saylandevent.41.b
+		ai_chance = { factor = 1}
+		set_country_flag = slurp
+	}
+}
+##Event: The SN Crisis
+country_event = {
+	id = saylandevent.42
+	title = saylandevent.42.title
+	desc = saylandevent.42.desc
+	picture = GFX_report_event_tur_politician_march
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.42.a
+		ai_chance = { factor = 1}
+		set_country_flag = harsh
+	}
+	option = {
+		name = saylandevent.42.b
+		ai_chance = { factor = 1}
+		set_country_flag = moderate
+	}
+	option = {
+		name = saylandevent.42.c
+		ai_chance = { factor = 1}
+		set_country_flag = radical
+	}
+}
+##Event: Demanding Libya
+country_event = {
+	id = saylandevent.43
+	title = saylandevent.43.title
+	desc = saylandevent.43.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.43.a
+		ai_chance = { factor = 1}
+		ITA = { country_event = { id = saylandevent.44 } }
+	}
+}
+##Event: Sayland Demands Libya
+country_event = {
+	id = saylandevent.44
+	title = saylandevent.44.title
+	desc = saylandevent.44.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.44.a
+		ai_chance = { factor = 1}
+		SAY = {
+set_state_owner= 448
+}
+
+SAY = {
+set_state_owner= 273
+}
+
+SAY = {
+set_state_owner= 661
+}
+
+SAY = {
+set_state_owner= 449
+}
+
+SAY = {
+set_state_owner= 662
+}
+
+SAY = {
+set_state_owner= 450
+}
+
+SAY = {
+set_state_owner= 663
+}
+
+SAY = {
+set_state_owner= 451
+}
+
+SAY = {
+set_state_controller= 448
+}
+
+SAY = {
+set_state_controller= 273
+}
+
+SAY = {
+set_state_controller= 661
+}
+
+SAY = {
+set_state_controller= 449
+}
+
+SAY = {
+set_state_controller= 662
+}
+
+SAY = {
+set_state_controller= 450
+}
+
+SAY = {
+set_state_controller= 663
+}
+
+SAY = {
+set_state_controller= 451
+}
+
+SAY = { country_event = { id = saylandevent.45 } }
+	}
+	option = {
+		name = saylandevent.44.b
+		ai_chance = { factor = 1}
+		SAY = { country_event = { id = saylandevent.46 } }
+	}
+}
+##Event: Italy Accepts Our Demands
+country_event = {
+	id = saylandevent.45
+	title = saylandevent.45.title
+	desc = saylandevent.45.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.45.a
+		ai_chance = { factor = 1}
+		set_country_flag = accepted
+	}
+}
+##Event: Italy Rejects Our Demands
+country_event = {
+	id = saylandevent.46
+	title = saylandevent.46.title
+	desc = saylandevent.46.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.46.a
+		ai_chance = { factor = 1}
+		set_country_flag = rejected
+	}
+}
+##Event: Issue An Appeal to France
+country_event = {
+	id = saylandevent.47
+	title = saylandevent.47.title
+	desc = saylandevent.47.desc
+	picture = GFX_report_event_tur_menderes_opposition
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.47.a
+		ai_chance = { factor = 1}
+		FRA = { country_event = { id = saylandevent.48 } }
+	}
+}
+##Event: Sayland Asks for Intervention in Libya
+country_event = {
+	id = saylandevent.48
+	title = saylandevent.48.title
+	desc = saylandevent.48.desc
+	picture = GFX_report_event_tur_ataturk_death
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.48.a
+		ai_chance = { factor = 1}
+		ITA = { country_event = { id = saylandevent.49 } }
+	}
+	option = {
+		name = saylandevent.48.b
+		ai_chance = { factor = 1}
+		SAY = { country_event = { id = saylandevent.53 } }
+	}
+}
+##Event: France Demands we Cede Libya to Sayland
+country_event = {
+	id = saylandevent.49
+	title = saylandevent.49.title
+	desc = saylandevent.49.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.49.a
+		ai_chance = { factor = 1}
+		SAY = {
+set_state_owner= 448
+}
+
+SAY = {
+set_state_owner= 273
+}
+
+SAY = {
+set_state_owner= 661
+}
+
+SAY = {
+set_state_owner= 449
+}
+
+SAY = {
+set_state_owner= 662
+}
+
+SAY = {
+set_state_owner= 450
+}
+
+SAY = {
+set_state_owner= 663
+}
+
+SAY = {
+set_state_owner= 451
+}
+
+SAY = {
+set_state_controller= 448
+}
+
+SAY = {
+set_state_controller= 273
+}
+
+SAY = {
+set_state_controller= 661
+}
+
+SAY = {
+set_state_controller= 449
+}
+
+SAY = {
+set_state_controller= 662
+}
+
+SAY = {
+set_state_controller= 450
+}
+
+SAY = {
+set_state_controller= 663
+}
+
+SAY = {
+set_state_controller= 451
+}
+
+SAY = { country_event = { id = saylandevent.50 } }
+	}
+	option = {
+		name = saylandevent.49.b
+		ai_chance = { factor = 1}
+		FRA = { country_event = { id = saylandevent.51 } }
+	}
+}
+##Event: Italy Finally Accepts
+country_event = {
+	id = saylandevent.50
+	title = saylandevent.50.title
+	desc = saylandevent.50.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.50.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Italy Rejects (Again)
+country_event = {
+	id = saylandevent.51
+	title = saylandevent.51.title
+	desc = saylandevent.51.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.51.a
+		ai_chance = { factor = 1}
+		SAY = { country_event = { id = saylandevent.52 } }
+	}
+}
+##Event: Italy Rejects France
+country_event = {
+	id = saylandevent.52
+	title = saylandevent.52.title
+	desc = saylandevent.52.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.52.a
+		ai_chance = { factor = 1}
+	}
+	option = {
+		name = saylandevent.52.b
+		ai_chance = { factor = 1}
+		create_wargoal= { 
+type = annex_everything 
+target = ITA
+}
+	}
+}
+##Event: France Refuses to Help Us
+country_event = {
+	id = saylandevent.53
+	title = saylandevent.53.title
+	desc = saylandevent.53.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.53.a
+		ai_chance = { factor = 1}
+	}
+	option = {
+		name = saylandevent.53.b
+		ai_chance = { factor = 1}
+		create_wargoal= { 
+type = annex_everything 
+target = ITA
+}
+	}
+}
+##Event: Demand Albanian Annexation
+country_event = {
+	id = saylandevent.54
+	title = saylandevent.54.title
+	desc = saylandevent.54.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.54.a
+		ai_chance = { factor = 1}
+		ALB = { country_event = { id = saylandevent.55 } }
+	}
+}
+##Event: Sayland Demands Annexation
+country_event = {
+	id = saylandevent.55
+	title = saylandevent.55.title
+	desc = saylandevent.55.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.55.a
+		ai_chance = { factor = 1}
+		SAY = { country_event = { id = saylandevent.56 } }
+	}
+	option = {
+		name = saylandevent.55.b
+		ai_chance = { factor = 1}
+		SAY = { country_event = { id = saylandevent.57 } }
+	}
+}
+##Event: Zog Yields
+country_event = {
+	id = saylandevent.56
+	title = saylandevent.56.title
+	desc = saylandevent.56.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.56.a
+		ai_chance = { factor = 1}
+		annex_country = { target = ALB }
+
+news_event= {
+days = 1 
+id = saylandevent.58
+}
+	}
+}
+##Event: Albania Refuses
+country_event = {
+	id = saylandevent.57
+	title = saylandevent.57.title
+	desc = saylandevent.57.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.57.a
+		ai_chance = { factor = 1}
+		create_wargoal= { 
+type = annex_everything 
+target = ALB
+}
+	}
+}
+##Event: Sayland Annexes Albania
+news_event = {
+	id = saylandevent.58
+	title = saylandevent.58.title
+	desc = saylandevent.58.desc
+	picture = GFX_news_event_hatay_annexed
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = saylandevent.58.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: March to Rome
+country_event = {
+	id = saylandevent.59
+	title = saylandevent.59.title
+	desc = saylandevent.59.desc
+	picture = GFX_report_event_spr_italian_volunteers
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.59.a
+		ai_chance = { factor = 1}
+		declare_war_on= { 
+target = ITA
+type = annex_everything 
+}
+
+SAY = { country_event = { id = saylandevent.60 } }
+	}
+}
+##Event: Loyalists Rise in Sicily
+country_event = {
+	id = saylandevent.60
+	title = saylandevent.60.title
+	desc = saylandevent.60.desc
+	picture = GFX_report_event_korean_war_march
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = saylandevent.60.a
+		ai_chance = { factor = 1}
+		load_oob= SAY_loyal
 	}
 }

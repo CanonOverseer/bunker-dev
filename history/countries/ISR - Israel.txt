@@ -170,6 +170,11 @@ set_convoys = 20
 		}
 	}
 }
+
+add_ideas = {
+	ISR_new_zionism	
+}
+
 set_politics = {
 	ruling_party = democratic
 	last_election = "1936.1.1"
@@ -206,6 +211,39 @@ create_country_leader = {
 	picture = "gfx//leaders//ISR//avr.dds"
 	expire = "1965.1.1"
 	ideology = nazism
+}
+
+create_field_marshal = {
+	name = "Yaakov Dori"
+	portrait_path = "gfx/leaders/ISR/dori.dds"
+	traits = { offensive_doctrine }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Yigael Yadin"
+	portrait_path = "gfx/leaders/ISR/yadin.dds"
+	traits = { defensive_doctrine }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Mickey Marcus"
+	portrait_path = "gfx/leaders/ISR/marcus.dds"
+	traits = {  armor_officer }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 

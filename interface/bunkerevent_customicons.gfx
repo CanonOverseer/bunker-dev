@@ -1,3 +1,9 @@
 spriteTypes = { 
+	##Icon For: The Clash of Titans
+	SpriteType = { 
+		name = "the_clash_of_titans-107316"
+		texturefile = "gfx/interface/event_gfx/the_clash_of_titans-107316.dds"
+	}
+
  
  }

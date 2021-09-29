@@ -49,6 +49,135 @@ spriteTypes = {
 		name = "GFX_idea_saymen"
 		texturefile = "gfx/interface/ideas/SEX/sayman.dds"
 	}	
+  
+	spriteType = {
+		name = "GFX_idea_great"
+		texturefile = "gfx/interface/ideas/SEX/great_depression.dds"
+	}	
 	
+	spriteType = {
+		name = "GFX_idea_wall"
+		texturefile = "gfx/interface/ideas/SEX/bridge.dds"
+	}	
 	
+	spriteType = {
+		name = "GFX_idea_smartsay"
+		texturefile = "gfx/interface/ideas/SEX/smart.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_camps"
+		texturefile = "gfx/interface/ideas/SEX/slaves.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_future"
+		texturefile = "gfx/interface/ideas/SEX/together.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_rome"
+		texturefile = "gfx/interface/ideas/SEX/saylishrome.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_lon_member"
+		texturefile = "gfx/interface/ideas/SEX/lonmember.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_zionism"
+		texturefile = "gfx/interface/ideas/SEX/zion.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_happy"
+		texturefile = "gfx/interface/ideas/SEX/happypole.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_happy2"
+		texturefile = "gfx/interface/ideas/SEX/happyamerica.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_mad"
+		texturefile = "gfx/interface/ideas/SEX/burnpl.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_mad2"
+		texturefile = "gfx/interface/ideas/SEX/burnny.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_sup"
+		texturefile = "gfx/interface/ideas/SEX/polishsup.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_sup2"
+		texturefile = "gfx/interface/ideas/SEX/americansup.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_happy3"
+		texturefile = "gfx/interface/ideas/SEX/happyitaly.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_mad3"
+		texturefile = "gfx/interface/ideas/SEX/maditaly.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_glory"
+		texturefile = "gfx/interface/ideas/SEX/italyglory.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_win"
+		texturefile = "gfx/interface/ideas/SEX/victors.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_destroy"
+		texturefile = "gfx/interface/ideas/SEX/fifth.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_debt"
+		texturefile = "gfx/interface/ideas/SEX/debtman.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_addic"
+		texturefile = "gfx/interface/ideas/SEX/herned.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_holy"
+		texturefile = "gfx/interface/ideas/SEX/jezus.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_slaves"
+		texturefile = "gfx/interface/ideas/SEX/blues.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_rep"
+		texturefile = "gfx/interface/ideas/SEX/mild.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_equal"
+		texturefile = "gfx/interface/ideas/SEX/government.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_blueanimal"
+		texturefile = "gfx/interface/ideas/SEX/bluesuck.png"
+	}
+
 }
