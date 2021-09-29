@@ -218,18 +218,6 @@ ideologies = {
 			oligarchism  = {
 			}
 
-			bunker_monarchism = {
-				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
-			}
-
-			monarchism = {
-				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
-			}
-		
-			islamic_monarchism = {
-				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
-			}
-
 			theocracy = {
 				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
