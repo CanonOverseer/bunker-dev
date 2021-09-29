@@ -126,8 +126,8 @@ set_popularities = {
 }
 
 add_ideas = {
-	sour_loser
-	general_staff
+	GER_treaty_of_versailles
+	GER_political_turmoil
 	free_trade
 	disarmed_nation
 	civilian_economy
@@ -179,6 +179,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
+		GER_weak_government
 	}
 }
 

@@ -194,6 +194,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_versaillies_treaty"
+		textureFile = "gfx/interface/ideas/GER_treat_of_versaillies_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GER_political_turmoil_1"
+		textureFile = "gfx/interface/ideas/GER_political_turmoil.dds"
+	}
+
+	spriteType = {
 		name = "GFX_news_event_american_unification_fdr"
 		textureFile = "gfx/event_pictures/news_american_unification_fdr.dds"
 	}

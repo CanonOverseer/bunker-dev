@@ -297,6 +297,14 @@ leader_traits = {
 		}
 	}
 
+	GER_weak_government = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	war_criminal_bomber = { # Strategic Bombing mission efficiency increased by 12%
 		sprite = 2
 		air_strategic_bomber_attack_factor = 0.03

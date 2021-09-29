@@ -81,6 +81,12 @@
  stewie:0 "Stewie Griffin"
  stewie_2:0 "Stewie Griffin"
  BEL_post_civil_war_trait:0 "Failures of the Bunker Civil War"
+ GER_treaty_of_versailles:0 "Treaty of Versailles"
+ GER_treaty_of_versailles_desc:0 "Test Description"
+ GER_political_turmoil:0 "Political Turmoil"
+ GER_political_turmoil_desc:0 "for the Past many years, Germany has been in political troubles, ever since President von Hindenburg died the Reichstag has barely ruled, unable to choose a true successor and reach a clear consensus in the Election, Germany is battered and the Saylish or the UN are looking hungry, who knows if we will survive..."
+ GER_weak_government:0 "Weak Government"
+ GER_weak_government_desc:0 "test lul"
 
  VTC_bishop_of_rome:0 "Bishop of Rome"
  BNK_allwell_canon:0 "Canon is in Charge"
