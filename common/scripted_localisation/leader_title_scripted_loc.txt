@@ -213,7 +213,7 @@ defined_text = {
 				AND = {
 					tag = BUL
 					has_country_leader = {
-						name = "Boris III
+						name = "Boris III"
 						ruling_only = yes
 					}
 				}

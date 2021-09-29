@@ -12,7 +12,7 @@ state={
 		buildings = {
 			infrastructure = 6
 			arms_factory = 1
-			industrial_complex = 6
+			industrial_complex = 3
 			air_base = 4
 
 		}
@@ -36,5 +36,5 @@ state={
 	}
 	manpower=4842323
 	buildings_max_level_factor=1.000
-	state_category=metropolis
+	state_category=large_city
 }

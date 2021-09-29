@@ -300,8 +300,20 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_ideology_RED_neutrality_group"
+		textureFile = "gfx/interface/ideologies/red_fascism.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
 		name = "GFX_ideology_monarchism"
 		textureFile = "gfx/interface/ideologies/Monarchism.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ideology_constitutional_monarchy"
+		textureFile = "gfx/interface/ideologies/constitutional_monarchy.dds"
 		legacy_lazy_load = no
 	}
 

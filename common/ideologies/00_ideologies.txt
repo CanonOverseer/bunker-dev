@@ -4,6 +4,10 @@ ideologies = {
 	
 		types = {
 			
+			constitional_monarchy = {
+				can_be_randomly_selected = no
+			}
+
 			conservatism = {
 			}
 		
