@@ -715,6 +715,16 @@ VIN_BUNKER = {
     color_ui = rgb { 115  5  124 }
 }
 
+BNK_commierebellion = {
+	color = rgb { 130 53 76 }
+	color_ui = rgb { 130 53 76 }
+}
+
+BNK_steelrebellion = {
+	color = rgb { 83 73 115 }
+	color_ui = rgb { 83 73 115 }
+}
+
 BNK_anarchy = {
 	color = rgb { 0 0 0 }
 	color_ui = rgb { 0 0 0 }
@@ -724,6 +734,28 @@ EGY_pepe = {
 	color = rgb { 222 215 195 }
 	color_ui = rgb { 222 215 195 }
 }
+
+FSA_revolt = {
+	color = rgb { 103 188 201 }
+	color_ui = rgb { 103 188 201 }
+}
+
+
+RED_revolt = {
+	color = rgb { 117 117 117 }
+	color_ui = rgb { 127 127 127 }
+}
+
+BLU_revolt = {
+	color = rgb { 40  68  102 }
+	color_ui = rgb { 40  68  102 }
+}
+
+RED_blue = {
+	color = rgb { 40  68  102 }
+	color_ui = rgb { 40  68  102 }
+}
+
 
 NAV_fascism = {
 	color = rgb { 100  95  162 }

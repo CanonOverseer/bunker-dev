@@ -80,6 +80,10 @@ ideologies = {
 			anarchist_communism = {
 			}
 			
+			demsocialism = {
+				can_be_randomly_selected = no
+			}
+			
 			lionism = {
 			}
 		}
@@ -133,6 +137,18 @@ ideologies = {
 				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 
+			nat_peterism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			purple_fascism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			red_fascism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
 			gen_nazism = {
 			}
 			
@@ -140,6 +156,10 @@ ideologies = {
 			}
 			
 			falangism = {
+			}
+			
+			islamism ={
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 			
 			rexism = {
@@ -189,18 +209,33 @@ ideologies = {
 			oligarchism  = {
 			}
 
+			bunker_monarchism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
 			monarchism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+		
+			islamic_monarchism = {
 				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 			
 			anarchism = {
 				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
+
+			peterism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}	
 			
 			moderatism = {
 			}
 			
 			centrism = {
+			}
+			
+			military_government = {
 			}
 			
 			anprim = {

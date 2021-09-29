@@ -42,10 +42,28 @@
  
  OMA_angrier_muslim:0 "Muslim Majority - Rebellious"
  OMA_diary:0 "Kev's Diary"
+ ISR_new_zionism:0 "New Zionism"
+ 
+ 
+ BNK_victors_of_the_war:0 "Victors of the Bunker Civil War"
+ BNK_victors_of_the_war_desc:0 "While the Red State exists, the Bunker has secured independence and secured the rigths of the Blues and Reds. So in the eyes of the people, they have won."
+ BNK_fail_five:0 "Failures of the Fifth Council"
+ BNK_fail_five_desc:0 "The Fifth National Council was ineffective in governing the nation. The people of the Bunker worry that will happen again."
+ BNK_cracky_debt:0 "Country In Massive Debt"
+ BNK_obtained_heroin:0 "Obtained Heroin"
+ BNK_holy_marriage:0 "Holy Marriage'
+ 
+ lon_member:0 "League of Nations Member"
+ lon_member_desc:0 "This Nation is a Member of the Leauge of Nations."
+ 
+ 
  gay:0 "Closeted Homosexual" 
  top:0 "Respected General"
  father:0 "Father of the Nation"
  emperor:0 "Emperor of all Sayland"
+ soulless:0 "Soulless"
+ red:0 "Red"
+ blue:0 "Blue"
  
 
  BNK_cory:0 "Cory"
@@ -57,3 +75,27 @@
  SAY_imperial_sayland:0 "Revitalizing Imperial Sayland"
  SAY_divided_nation_2:0 "Divided Nation"
  SAY_europe_power:0 "Europe's Powerhouse"
+ SAY_sunset:0 "Restoring Saylish Glory"
+ SAY_selective_censorship:0 "Selective Censorship"
+ SAY_bridges:0 "Bridges Not Walls"
+ SAY_test:0 "Smart Researchers"
+ SAY_education:0 "Labour Camps"
+ SAY_together:0 "A Saylish Future"
+ SAY_roman:0 "The Roman Empire"
+ SAY_polish_happy:0 "Polish Population - Satisfied"
+ SAY_polish_happy_desc:0 "Depending on how you treat the Polish population, this will change."
+ SAY_american_happy:0 "American Population - Satisfied"
+ SAY_american_happy_desc:0 "Depending on how you treat the American population, this will change."
+ SAY_polish_mad:0 "Polish Population - Angry"
+ SAY_american_mad:0 "American Population - Angry"
+ SAY_polish_sup:0 "Polish Population - Suppressed"
+ SAY_american_sup:0 "American Population - Suppressed"
+ SAY_italy_happy:0 "Italian Population - Satisfied"
+ SAY_italy_mad:0 "Italian Population - Angry"
+ SAY_italy_glory:0 "Italian Pride"
+ RED_slave_labour:0 "Slave Labor"
+ RED_slave_labour_desc:0 "The Blue population is enslaved."
+ RED_minor_rep:0 "Minor Representative"
+ RED_equal_rights:0 "Blue Rights"
+ RED_blue_sup:0 "Blues Dehumanized"
+ 

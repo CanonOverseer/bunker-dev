@@ -288,3 +288,16 @@ news_event = {
 		ai_chance = { factor = 1}
 	}
 }
+##Event: The Clash of Titans
+news_event = {
+	id = bunkerevent.20
+	title = bunkerevent.20.title
+	desc = bunkerevent.20.desc
+	picture = GFX_the_clash_of_titans-107316
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = bunkerevent.20.a
+		ai_chance = { factor = 1}
+	}
+}

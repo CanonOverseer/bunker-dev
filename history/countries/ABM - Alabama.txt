@@ -82,7 +82,7 @@ add_ideas = {
 
 create_country_leader = {
 	name = "King Lion"
-	desc = "TBD"
+	desc = kinglion_desc
 	picture = "gfx/leaders/RED/lion.dds"
 	expire = "1965.1.1"
 	ideology = despotism

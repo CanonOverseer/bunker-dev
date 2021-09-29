@@ -1,17 +1,17 @@
 spriteTypes = { 
-	##Icon For: §gThe Awakening§!
+	##Icon For: The Holy Letters
 	SpriteType = { 
-		name = "GFX_BNK_gthe_awakening-68601"
-		texturefile = "gfx/interface/goals/GFX_BNK_gthe_awakening-68601.dds"
+		name = "GFX_BNK_the_holy_letters-114753"
+		texturefile = "gfx/interface/goals/GFX_BNK_the_holy_letters-114753.dds"
 	}
 
-	##Icon Shine For: §gThe Awakening§!
+	##Icon Shine For: The Holy Letters
 	SpriteType = { 
-		name = "GFX_BNK_gthe_awakening-68601_shine"
-		texturefile = "gfx/interface/goals/GFX_BNK_gthe_awakening-68601.dds"
+		name = "GFX_BNK_the_holy_letters-114753_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_the_holy_letters-114753.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BNK_gthe_awakening-68601.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_holy_letters-114753.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -23,7 +23,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BNK_gthe_awakening-68601.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_holy_letters-114753.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -37,19 +37,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: The Imperial Senate
+	##Icon For: The New Caliphate
 	SpriteType = { 
-		name = "GFX_BNK_the_imperial_senate-64288"
-		texturefile = "gfx/interface/goals/GFX_BNK_the_imperial_senate-64288.dds"
+		name = "GFX_BNK_the_new_caliphate-114752"
+		texturefile = "gfx/interface/goals/GFX_BNK_the_new_caliphate-114752.dds"
 	}
 
-	##Icon Shine For: The Imperial Senate
+	##Icon Shine For: The New Caliphate
 	SpriteType = { 
-		name = "GFX_BNK_the_imperial_senate-64288_shine"
-		texturefile = "gfx/interface/goals/GFX_BNK_the_imperial_senate-64288.dds"
+		name = "GFX_BNK_the_new_caliphate-114752_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_the_new_caliphate-114752.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_imperial_senate-64288.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_new_caliphate-114752.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -61,7 +61,197 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_imperial_senate-64288.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_new_caliphate-114752.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Decide on the Imperial Religion
+	SpriteType = { 
+		name = "GFX_BNK_decide_on_the_imperial_religion-114751"
+		texturefile = "gfx/interface/goals/GFX_BNK_decide_on_the_imperial_religion-114751.dds"
+	}
+
+	##Icon Shine For: Decide on the Imperial Religion
+	SpriteType = { 
+		name = "GFX_BNK_decide_on_the_imperial_religion-114751_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_decide_on_the_imperial_religion-114751.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_decide_on_the_imperial_religion-114751.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_decide_on_the_imperial_religion-114751.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Overthrow Stalin
+	SpriteType = { 
+		name = "GFX_BNK_overthrow_stalin-114749"
+		texturefile = "gfx/interface/goals/GFX_BNK_overthrow_stalin-114749.dds"
+	}
+
+	##Icon Shine For: Overthrow Stalin
+	SpriteType = { 
+		name = "GFX_BNK_overthrow_stalin-114749_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_overthrow_stalin-114749.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_overthrow_stalin-114749.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_overthrow_stalin-114749.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Restrict Democracy
+	SpriteType = { 
+		name = "GFX_BNK_restrict_democracy-114783"
+		texturefile = "gfx/interface/goals/GFX_BNK_restrict_democracy-114783.dds"
+	}
+
+	##Icon Shine For: Restrict Democracy
+	SpriteType = { 
+		name = "GFX_BNK_restrict_democracy-114783_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_restrict_democracy-114783.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_restrict_democracy-114783.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_restrict_democracy-114783.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: the §gEmergency Powers Act§!
+	SpriteType = { 
+		name = "GFX_BNK_the_gemergency_powers_act-113572"
+		texturefile = "gfx/interface/goals/GFX_BNK_the_gemergency_powers_act-113572.dds"
+	}
+
+	##Icon Shine For: the §gEmergency Powers Act§!
+	SpriteType = { 
+		name = "GFX_BNK_the_gemergency_powers_act-113572_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_the_gemergency_powers_act-113572.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_gemergency_powers_act-113572.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_gemergency_powers_act-113572.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The National Senate
+	SpriteType = { 
+		name = "GFX_BNK_the_national_senate-64288"
+		texturefile = "gfx/interface/goals/GFX_BNK_the_national_senate-64288.dds"
+	}
+
+	##Icon Shine For: The National Senate
+	SpriteType = { 
+		name = "GFX_BNK_the_national_senate-64288_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_the_national_senate-64288.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_national_senate-64288.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_national_senate-64288.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -303,13 +493,13 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: Lion.
+	##Icon For: Lion
 	SpriteType = { 
 		name = "GFX_BNK_lion-64291"
 		texturefile = "gfx/interface/goals/GFX_BNK_lion-64291.dds"
 	}
 
-	##Icon Shine For: Lion.
+	##Icon Shine For: Lion
 	SpriteType = { 
 		name = "GFX_BNK_lion-64291_shine"
 		texturefile = "gfx/interface/goals/GFX_BNK_lion-64291.dds"
@@ -341,19 +531,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: Canon
+	##Icon For: Bunker in Flames
 	SpriteType = { 
-		name = "GFX_BNK_canon-64292"
-		texturefile = "gfx/interface/goals/GFX_BNK_canon-64292.dds"
+		name = "GFX_BNK_bunker_in_flames-113571"
+		texturefile = "gfx/interface/goals/GFX_BNK_bunker_in_flames-113571.dds"
 	}
 
-	##Icon Shine For: Canon
+	##Icon Shine For: Bunker in Flames
 	SpriteType = { 
-		name = "GFX_BNK_canon-64292_shine"
-		texturefile = "gfx/interface/goals/GFX_BNK_canon-64292.dds"
+		name = "GFX_BNK_bunker_in_flames-113571_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_bunker_in_flames-113571.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BNK_canon-64292.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_bunker_in_flames-113571.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -365,7 +555,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BNK_canon-64292.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_bunker_in_flames-113571.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -1139,82 +1329,6 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: The First Bunker Empire
-	SpriteType = { 
-		name = "GFX_BNK_the_first_bunker_empire-53716"
-		texturefile = "gfx/interface/goals/GFX_BNK_the_first_bunker_empire-53716.dds"
-	}
-
-	##Icon Shine For: The First Bunker Empire
-	SpriteType = { 
-		name = "GFX_BNK_the_first_bunker_empire-53716_shine"
-		texturefile = "gfx/interface/goals/GFX_BNK_the_first_bunker_empire-53716.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_first_bunker_empire-53716.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_first_bunker_empire-53716.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
-	}
-
-	##Icon For: Establish SCP
-	SpriteType = { 
-		name = "GFX_BNK_establish_scp-73659"
-		texturefile = "gfx/interface/goals/GFX_BNK_establish_scp-73659.dds"
-	}
-
-	##Icon Shine For: Establish SCP
-	SpriteType = { 
-		name = "GFX_BNK_establish_scp-73659_shine"
-		texturefile = "gfx/interface/goals/GFX_BNK_establish_scp-73659.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BNK_establish_scp-73659.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BNK_establish_scp-73659.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
-	}
-
 	##Icon For: Research the Nuclear Energy of Australia
 	SpriteType = { 
 		name = "GFX_BNK_research_the_nuclear_energy_of_australia-64019"
@@ -1253,19 +1367,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: The Imperial Academy for the Sciences
+	##Icon For: The Academy for the Sciences
 	SpriteType = { 
-		name = "GFX_BNK_the_imperial_academy_for_the_sciences-64018"
-		texturefile = "gfx/interface/goals/GFX_BNK_the_imperial_academy_for_the_sciences-64018.dds"
+		name = "GFX_BNK_the_academy_for_the_sciences-64018"
+		texturefile = "gfx/interface/goals/GFX_BNK_the_academy_for_the_sciences-64018.dds"
 	}
 
-	##Icon Shine For: The Imperial Academy for the Sciences
+	##Icon Shine For: The Academy for the Sciences
 	SpriteType = { 
-		name = "GFX_BNK_the_imperial_academy_for_the_sciences-64018_shine"
-		texturefile = "gfx/interface/goals/GFX_BNK_the_imperial_academy_for_the_sciences-64018.dds"
+		name = "GFX_BNK_the_academy_for_the_sciences-64018_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_the_academy_for_the_sciences-64018.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_imperial_academy_for_the_sciences-64018.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_academy_for_the_sciences-64018.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -1277,7 +1391,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_imperial_academy_for_the_sciences-64018.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_academy_for_the_sciences-64018.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -2013,6 +2127,44 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+	##Icon For: Sacrifices for the Revolution
+	SpriteType = { 
+		name = "GFX_BNK_sacrifices_for_the_revolution-107336"
+		texturefile = "gfx/interface/goals/GFX_BNK_sacrifices_for_the_revolution-107336.dds"
+	}
+
+	##Icon Shine For: Sacrifices for the Revolution
+	SpriteType = { 
+		name = "GFX_BNK_sacrifices_for_the_revolution-107336_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_sacrifices_for_the_revolution-107336.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_sacrifices_for_the_revolution-107336.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_sacrifices_for_the_revolution-107336.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
 	##Icon For: Eagle of the West
 	SpriteType = { 
 		name = "GFX_BNK_eagle_of_the_west-73862"
@@ -2127,6 +2279,272 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+	##Icon For: Draft a new Constitution
+	SpriteType = { 
+		name = "GFX_BNK_draft_a_new_constitution-113902"
+		texturefile = "gfx/interface/goals/GFX_BNK_draft_a_new_constitution-113902.dds"
+	}
+
+	##Icon Shine For: Draft a new Constitution
+	SpriteType = { 
+		name = "GFX_BNK_draft_a_new_constitution-113902_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_draft_a_new_constitution-113902.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_draft_a_new_constitution-113902.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_draft_a_new_constitution-113902.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Restore the Republic
+	SpriteType = { 
+		name = "GFX_BNK_restore_the_republic-113903"
+		texturefile = "gfx/interface/goals/GFX_BNK_restore_the_republic-113903.dds"
+	}
+
+	##Icon Shine For: Restore the Republic
+	SpriteType = { 
+		name = "GFX_BNK_restore_the_republic-113903_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_restore_the_republic-113903.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_restore_the_republic-113903.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_restore_the_republic-113903.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Form the First Bunker Empire
+	SpriteType = { 
+		name = "GFX_BNK_form_the_first_bunker_empire-113905"
+		texturefile = "gfx/interface/goals/GFX_BNK_form_the_first_bunker_empire-113905.dds"
+	}
+
+	##Icon Shine For: Form the First Bunker Empire
+	SpriteType = { 
+		name = "GFX_BNK_form_the_first_bunker_empire-113905_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_form_the_first_bunker_empire-113905.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_form_the_first_bunker_empire-113905.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_form_the_first_bunker_empire-113905.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Try the Traitors
+	SpriteType = { 
+		name = "GFX_BNK_try_the_traitors-114782"
+		texturefile = "gfx/interface/goals/GFX_BNK_try_the_traitors-114782.dds"
+	}
+
+	##Icon Shine For: Try the Traitors
+	SpriteType = { 
+		name = "GFX_BNK_try_the_traitors-114782_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_try_the_traitors-114782.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_try_the_traitors-114782.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_try_the_traitors-114782.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Cracky's Legion
+	SpriteType = { 
+		name = "GFX_BNK_crackys_legion-113661"
+		texturefile = "gfx/interface/goals/GFX_BNK_crackys_legion-113661.dds"
+	}
+
+	##Icon Shine For: Cracky's Legion
+	SpriteType = { 
+		name = "GFX_BNK_crackys_legion-113661_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_crackys_legion-113661.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_crackys_legion-113661.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_crackys_legion-113661.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Republican Victory in the Civil War
+	SpriteType = { 
+		name = "GFX_BNK_republican_victory_in_the_civil_war-114484"
+		texturefile = "gfx/interface/goals/GFX_BNK_republican_victory_in_the_civil_war-114484.dds"
+	}
+
+	##Icon Shine For: Republican Victory in the Civil War
+	SpriteType = { 
+		name = "GFX_BNK_republican_victory_in_the_civil_war-114484_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_republican_victory_in_the_civil_war-114484.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_republican_victory_in_the_civil_war-114484.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_republican_victory_in_the_civil_war-114484.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Alliance with the Crack
+	SpriteType = { 
+		name = "GFX_BNK_alliance_with_the_crack-113660"
+		texturefile = "gfx/interface/goals/GFX_BNK_alliance_with_the_crack-113660.dds"
+	}
+
+	##Icon Shine For: Alliance with the Crack
+	SpriteType = { 
+		name = "GFX_BNK_alliance_with_the_crack-113660_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_alliance_with_the_crack-113660.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_alliance_with_the_crack-113660.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_alliance_with_the_crack-113660.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
 	##Icon For: Bisexual Diplomacy
 	SpriteType = { 
 		name = "GFX_BNK_bisexual_diplomacy-74075"
@@ -2165,19 +2583,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	##Icon For: The End of the United Nations
+	##Icon For: The Final Push
 	SpriteType = { 
-		name = "GFX_BNK_the_end_of_the_united_nations-72791"
-		texturefile = "gfx/interface/goals/GFX_BNK_the_end_of_the_united_nations-72791.dds"
+		name = "GFX_BNK_the_final_push-72791"
+		texturefile = "gfx/interface/goals/GFX_BNK_the_final_push-72791.dds"
 	}
 
-	##Icon Shine For: The End of the United Nations
+	##Icon Shine For: The Final Push
 	SpriteType = { 
-		name = "GFX_BNK_the_end_of_the_united_nations-72791_shine"
-		texturefile = "gfx/interface/goals/GFX_BNK_the_end_of_the_united_nations-72791.dds"
+		name = "GFX_BNK_the_final_push-72791_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_the_final_push-72791.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_end_of_the_united_nations-72791.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_final_push-72791.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -2189,7 +2607,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_end_of_the_united_nations-72791.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_final_push-72791.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -2950,6 +3368,272 @@ spriteTypes = {
 		}
 		animation = {
 			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_norman_autonomous_zone-94606.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Bunker on the World Stage
+	SpriteType = { 
+		name = "GFX_BNK_bunker_on_the_world_stage-114748"
+		texturefile = "gfx/interface/goals/GFX_BNK_bunker_on_the_world_stage-114748.dds"
+	}
+
+	##Icon Shine For: Bunker on the World Stage
+	SpriteType = { 
+		name = "GFX_BNK_bunker_on_the_world_stage-114748_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_bunker_on_the_world_stage-114748.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_bunker_on_the_world_stage-114748.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_bunker_on_the_world_stage-114748.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: No Compromises
+	SpriteType = { 
+		name = "GFX_BNK_no_compromises-107335"
+		texturefile = "gfx/interface/goals/GFX_BNK_no_compromises-107335.dds"
+	}
+
+	##Icon Shine For: No Compromises
+	SpriteType = { 
+		name = "GFX_BNK_no_compromises-107335_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_no_compromises-107335.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_no_compromises-107335.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_no_compromises-107335.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: the Teachings of Trotsky
+	SpriteType = { 
+		name = "GFX_BNK_the_teachings_of_trotsky-107337"
+		texturefile = "gfx/interface/goals/GFX_BNK_the_teachings_of_trotsky-107337.dds"
+	}
+
+	##Icon Shine For: the Teachings of Trotsky
+	SpriteType = { 
+		name = "GFX_BNK_the_teachings_of_trotsky-107337_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_the_teachings_of_trotsky-107337.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_teachings_of_trotsky-107337.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_the_teachings_of_trotsky-107337.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Become an Alcoholic
+	SpriteType = { 
+		name = "GFX_BNK_become_an_alcoholic-107551"
+		texturefile = "gfx/interface/goals/GFX_BNK_become_an_alcoholic-107551.dds"
+	}
+
+	##Icon Shine For: Become an Alcoholic
+	SpriteType = { 
+		name = "GFX_BNK_become_an_alcoholic-107551_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_become_an_alcoholic-107551.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_become_an_alcoholic-107551.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_become_an_alcoholic-107551.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Suppress the Steel Eagles
+	SpriteType = { 
+		name = "GFX_BNK_suppress_the_steel_eagles-114784"
+		texturefile = "gfx/interface/goals/GFX_BNK_suppress_the_steel_eagles-114784.dds"
+	}
+
+	##Icon Shine For: Suppress the Steel Eagles
+	SpriteType = { 
+		name = "GFX_BNK_suppress_the_steel_eagles-114784_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_suppress_the_steel_eagles-114784.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_suppress_the_steel_eagles-114784.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_suppress_the_steel_eagles-114784.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Subjects of the Caliph
+	SpriteType = { 
+		name = "GFX_BNK_subjects_of_the_caliph-115258"
+		texturefile = "gfx/interface/goals/GFX_BNK_subjects_of_the_caliph-115258.dds"
+	}
+
+	##Icon Shine For: Subjects of the Caliph
+	SpriteType = { 
+		name = "GFX_BNK_subjects_of_the_caliph-115258_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_subjects_of_the_caliph-115258.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_subjects_of_the_caliph-115258.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_subjects_of_the_caliph-115258.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Jihad for Egypt and the Levant
+	SpriteType = { 
+		name = "GFX_BNK_jihad_for_egypt_and_the_levant-115259"
+		texturefile = "gfx/interface/goals/GFX_BNK_jihad_for_egypt_and_the_levant-115259.dds"
+	}
+
+	##Icon Shine For: Jihad for Egypt and the Levant
+	SpriteType = { 
+		name = "GFX_BNK_jihad_for_egypt_and_the_levant-115259_shine"
+		texturefile = "gfx/interface/goals/GFX_BNK_jihad_for_egypt_and_the_levant-115259.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_jihad_for_egypt_and_the_levant-115259.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_BNK_jihad_for_egypt_and_the_levant-115259.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no

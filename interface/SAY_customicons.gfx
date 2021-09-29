@@ -37,6 +37,82 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+	##Icon For: Saylish Pride
+	SpriteType = { 
+		name = "GFX_SAY_saylish_pride-107155"
+		texturefile = "gfx/interface/goals/GFX_SAY_saylish_pride-107155.dds"
+	}
+
+	##Icon Shine For: Saylish Pride
+	SpriteType = { 
+		name = "GFX_SAY_saylish_pride-107155_shine"
+		texturefile = "gfx/interface/goals/GFX_SAY_saylish_pride-107155.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_saylish_pride-107155.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_saylish_pride-107155.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Strengthen Saylish North America
+	SpriteType = { 
+		name = "GFX_SAY_strengthen_saylish_north_america-107311"
+		texturefile = "gfx/interface/goals/GFX_SAY_strengthen_saylish_north_america-107311.dds"
+	}
+
+	##Icon Shine For: Strengthen Saylish North America
+	SpriteType = { 
+		name = "GFX_SAY_strengthen_saylish_north_america-107311_shine"
+		texturefile = "gfx/interface/goals/GFX_SAY_strengthen_saylish_north_america-107311.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_strengthen_saylish_north_america-107311.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_strengthen_saylish_north_america-107311.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
 	##Icon For: Strengthen the Saylish Poland State
 	SpriteType = { 
 		name = "GFX_SAY_strengthen_the_saylish_poland_state-44524"
@@ -708,6 +784,462 @@ spriteTypes = {
 		}
 		animation = {
 			animationmaskfile = "gfx/interface/goals/GFX_SAY_war_with_alabama-45092.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Suppressing the Polish
+	SpriteType = { 
+		name = "GFX_SAY_suppressing_the_polish-107203"
+		texturefile = "gfx/interface/goals/GFX_SAY_suppressing_the_polish-107203.dds"
+	}
+
+	##Icon Shine For: Suppressing the Polish
+	SpriteType = { 
+		name = "GFX_SAY_suppressing_the_polish-107203_shine"
+		texturefile = "gfx/interface/goals/GFX_SAY_suppressing_the_polish-107203.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_suppressing_the_polish-107203.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_suppressing_the_polish-107203.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Crack Down the Poles
+	SpriteType = { 
+		name = "GFX_SAY_crack_down_the_poles-107156"
+		texturefile = "gfx/interface/goals/GFX_SAY_crack_down_the_poles-107156.dds"
+	}
+
+	##Icon Shine For: Crack Down the Poles
+	SpriteType = { 
+		name = "GFX_SAY_crack_down_the_poles-107156_shine"
+		texturefile = "gfx/interface/goals/GFX_SAY_crack_down_the_poles-107156.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_crack_down_the_poles-107156.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_crack_down_the_poles-107156.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Anti Slavery Diplomacy
+	SpriteType = { 
+		name = "GFX_SAY_anti_slavery_diplomacy-107157"
+		texturefile = "gfx/interface/goals/GFX_SAY_anti_slavery_diplomacy-107157.dds"
+	}
+
+	##Icon Shine For: Anti Slavery Diplomacy
+	SpriteType = { 
+		name = "GFX_SAY_anti_slavery_diplomacy-107157_shine"
+		texturefile = "gfx/interface/goals/GFX_SAY_anti_slavery_diplomacy-107157.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_anti_slavery_diplomacy-107157.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_anti_slavery_diplomacy-107157.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Polish Supremacy
+	SpriteType = { 
+		name = "GFX_SAY_polish_supremacy-107158"
+		texturefile = "gfx/interface/goals/GFX_SAY_polish_supremacy-107158.dds"
+	}
+
+	##Icon Shine For: Polish Supremacy
+	SpriteType = { 
+		name = "GFX_SAY_polish_supremacy-107158_shine"
+		texturefile = "gfx/interface/goals/GFX_SAY_polish_supremacy-107158.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_polish_supremacy-107158.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_polish_supremacy-107158.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: A Future Together
+	SpriteType = { 
+		name = "GFX_SAY_a_future_together-107315"
+		texturefile = "gfx/interface/goals/GFX_SAY_a_future_together-107315.dds"
+	}
+
+	##Icon Shine For: A Future Together
+	SpriteType = { 
+		name = "GFX_SAY_a_future_together-107315_shine"
+		texturefile = "gfx/interface/goals/GFX_SAY_a_future_together-107315.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_a_future_together-107315.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_a_future_together-107315.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Conquer Zog
+	SpriteType = { 
+		name = "GFX_SAY_conquer_zog-107160"
+		texturefile = "gfx/interface/goals/GFX_SAY_conquer_zog-107160.dds"
+	}
+
+	##Icon Shine For: Conquer Zog
+	SpriteType = { 
+		name = "GFX_SAY_conquer_zog-107160_shine"
+		texturefile = "gfx/interface/goals/GFX_SAY_conquer_zog-107160.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_conquer_zog-107160.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_conquer_zog-107160.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Sardinian Rebels
+	SpriteType = { 
+		name = "GFX_SAY_sardinian_rebels-107194"
+		texturefile = "gfx/interface/goals/GFX_SAY_sardinian_rebels-107194.dds"
+	}
+
+	##Icon Shine For: Sardinian Rebels
+	SpriteType = { 
+		name = "GFX_SAY_sardinian_rebels-107194_shine"
+		texturefile = "gfx/interface/goals/GFX_SAY_sardinian_rebels-107194.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_sardinian_rebels-107194.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_sardinian_rebels-107194.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Seize the Libyan Military Supplies
+	SpriteType = { 
+		name = "GFX_SAY_seize_the_libyan_military_supplies-107195"
+		texturefile = "gfx/interface/goals/GFX_SAY_seize_the_libyan_military_supplies-107195.dds"
+	}
+
+	##Icon Shine For: Seize the Libyan Military Supplies
+	SpriteType = { 
+		name = "GFX_SAY_seize_the_libyan_military_supplies-107195_shine"
+		texturefile = "gfx/interface/goals/GFX_SAY_seize_the_libyan_military_supplies-107195.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_seize_the_libyan_military_supplies-107195.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_seize_the_libyan_military_supplies-107195.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Move the Capital to Rome
+	SpriteType = { 
+		name = "GFX_SAY_move_the_capital_to_rome-107199"
+		texturefile = "gfx/interface/goals/GFX_SAY_move_the_capital_to_rome-107199.dds"
+	}
+
+	##Icon Shine For: Move the Capital to Rome
+	SpriteType = { 
+		name = "GFX_SAY_move_the_capital_to_rome-107199_shine"
+		texturefile = "gfx/interface/goals/GFX_SAY_move_the_capital_to_rome-107199.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_move_the_capital_to_rome-107199.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_move_the_capital_to_rome-107199.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: War with Yugoslavia
+	SpriteType = { 
+		name = "GFX_SAY_war_with_yugoslavia-107207"
+		texturefile = "gfx/interface/goals/GFX_SAY_war_with_yugoslavia-107207.dds"
+	}
+
+	##Icon Shine For: War with Yugoslavia
+	SpriteType = { 
+		name = "GFX_SAY_war_with_yugoslavia-107207_shine"
+		texturefile = "gfx/interface/goals/GFX_SAY_war_with_yugoslavia-107207.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_war_with_yugoslavia-107207.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_war_with_yugoslavia-107207.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Proclaim the Roman Empire
+	SpriteType = { 
+		name = "GFX_SAY_proclaim_the_roman_empire-107267"
+		texturefile = "gfx/interface/goals/GFX_SAY_proclaim_the_roman_empire-107267.dds"
+	}
+
+	##Icon Shine For: Proclaim the Roman Empire
+	SpriteType = { 
+		name = "GFX_SAY_proclaim_the_roman_empire-107267_shine"
+		texturefile = "gfx/interface/goals/GFX_SAY_proclaim_the_roman_empire-107267.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_proclaim_the_roman_empire-107267.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_proclaim_the_roman_empire-107267.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Saylinization of Austria-Hungary
+	SpriteType = { 
+		name = "GFX_SAY_saylinization_of_austriahungary-107255"
+		texturefile = "gfx/interface/goals/GFX_SAY_saylinization_of_austriahungary-107255.dds"
+	}
+
+	##Icon Shine For: Saylinization of Austria-Hungary
+	SpriteType = { 
+		name = "GFX_SAY_saylinization_of_austriahungary-107255_shine"
+		texturefile = "gfx/interface/goals/GFX_SAY_saylinization_of_austriahungary-107255.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_saylinization_of_austriahungary-107255.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_SAY_saylinization_of_austriahungary-107255.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no

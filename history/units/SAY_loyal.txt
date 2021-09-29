@@ -1,0 +1,72 @@
+﻿division_template = {
+	name = "Infantry Volunteers"			# Binary Infantry Volunteer Corps
+
+	regiments = {
+		Infantry = { x = 0 y = 0 }
+		Infantry = { x = 0 y = 1 }
+		Infantry = { x = 0 y = 2 }
+		Infantry = { x = 1 y = 0 }
+		Infantry = { x = 1 y = 1 }
+		Infantry = { x = 1 y = 2 }
+		Infantry = { x = 2 y = 0 }
+		Infantry = { x = 2 y = 1 }
+		Infantry = { x = 2 y = 2 }
+	}
+}
+
+units = {
+
+	division = {
+		name = "Italian Loyalist 1"
+		location = 4014
+		division_template = "Infantry Volunteers"
+	}
+	division = {
+		name = "Italian Loyalist 2"
+		location = 4014
+		division_template = "Infantry Volunteers"
+	}
+	division = {
+		name = "Italian Loyalist 3"
+		location = 4014
+		division_template = "Infantry Volunteers"
+	}
+	division = {
+		name = "Italian Loyalist 4"
+		location = 4014
+		division_template = "Infantry Volunteers"
+	}
+	division = {
+		name = "Italian Loyalist 5"
+		location = 4014
+		division_template = "Infantry Volunteers"
+	}
+	division = {
+		name = "Italian Loyalist 6"
+		location = 7059
+		division_template = "Infantry Volunteers"
+	}
+	division = {
+		name = "Italian Loyalist 7"
+		location = 7059
+		division_template = "Infantry Volunteers"
+	}
+	
+	division = {
+		name = "Italian Loyalist 8"
+		location = 7059
+		division_template = "Infantry Volunteers"
+	}
+	
+	division = {
+		name = "Italian Loyalist 9"
+		location = 7059
+		division_template = "Infantry Volunteers"
+	}
+	
+	division = {
+		name = "Italian Loyalist 10"
+		location = 7059
+		division_template = "Infantry Volunteers"
+	}
+}

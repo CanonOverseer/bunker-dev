@@ -77,6 +77,8 @@ set_popularities = {
 add_ideas = {
 	civilian_economy
 	volunteer_only
+	BNK_victors_of_the_war
+	BNK_fail_five
 }
 
 add_opinion_modifier = {
@@ -91,7 +93,7 @@ add_opinion_modifier = {
 
 create_country_leader = {
 	name = "The National Council"
-	desc = "no"
+	desc = council_desc
 	picture = "gfx/leaders/BNK/nationalcouncil.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
