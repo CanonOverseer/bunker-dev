@@ -128,9 +128,9 @@ set_popularities = {
 add_ideas = {
 	sour_loser
 	general_staff
-	limited_exports
-	limited_conscription
-	partial_economic_mobilisation
+	free_trade
+	disarmed_nation
+	civilian_economy
 	un_member
 }
 #add_ideas = GER_mefo_bills_1
