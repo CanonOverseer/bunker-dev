@@ -108,16 +108,6 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			tag = SAY
-			has_country_leader = {
-				name = "Hirohito"
-				ruling_only = yes
-			}
-		}
-		localization_key = BNK_TITLE_FATHEROFNATION
-	}
-	text = {
-		trigger = {
 			has_country_leader = {
 				name = "The Butt Ghost"
 				ruling_only = yes
@@ -152,9 +142,23 @@ defined_text = {
 					name = "the Reichstag"
 					ruling_only = yes
 				} 
+				has_country_leader = {
+					name = "RED Military Council"
+					ruling_only = yes
+				} 
 			}
 		}
 		localization_key = BNK_TITLE_GOVERNMENT
+	}
+	text = {
+		trigger = {
+			tag = SAY
+			has_country_leader = {
+				name = "ZZTopman"
+				ruling_only = yes
+			}
+		}
+		localization_key = BNK_TITLE_FATHEROFNATION
 	}
 	text = {
 		trigger = {
@@ -167,6 +171,10 @@ defined_text = {
 			}
 			NOT = { 
 				OR = {
+					has_country_leader = {
+						name = "ZZTopman"
+						ruling_only = yes
+					}
 					has_country_leader = {
 						name = "US. Senate"
 						ruling_only = yes
@@ -181,6 +189,7 @@ defined_text = {
 		}
 		localization_key = BNK_TITLE_PRESIDENT
 	}
+
 	text = {
 		trigger = {
 			tag = VTC
@@ -201,10 +210,26 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = {
+				AND = {
+					tag = BUL
+					has_country_leader = {
+						name = "Boris III
+						ruling_only = yes
+					}
+				}
+			
+			}
+		}
+		localization_key = BNK_TITLE_TSAR
+	}
+	text = {
+		trigger = {
+			OR = {
 				tag = ENG
 				tag = CAN 
 				tag = AST
 				tag = NZL
+				tag = HOL
 			}
 			has_government = democratic
 		}
