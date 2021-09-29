@@ -415,5 +415,12 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+	spriteType = {
+		name = "GFX_trait_royalty"
+		texturefile = "gfx/traits/trait_royal.dds"
+		legacy_lazy_load = no
+	}
+
+
 	# GFX_ideology_subideologyname
 }

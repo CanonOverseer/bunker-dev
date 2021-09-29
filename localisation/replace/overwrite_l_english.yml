@@ -71,6 +71,11 @@
  CAT_DEF:0 "the Republic of Sex"
  CAT_ADJ:0 "Sex"
 
+ GER_monarchist_party:0 "House von Hohenzollern"
+ GER_monarchist_party:0 "House von Hohenzollern"
+ BAY_monarchist_party:0 "House von Wittelsbach"
+ BAY_monarchist_party_long:0 "House von Wittelsbach"
+
  AST_fascism:1 "Oceania"
  AST_fascism_DEF:1 "The Kingdom of Oceania"
  AST_democratic:1 "Australasia"
@@ -83,3 +88,22 @@
  AST_democratic_ADJ:1 "Australasian"
  AST_neutrality_ADJ:1 "Australasian"
  AST_communism_ADJ:1 "Australasian"
+
+ HRE_UNIFIED_monarchist:0 "Holy Roman Empire"
+ HRE_UNIFIED_fascism:0 "Holy Roman Empire"
+ HRE_UNIFIED_democratic:0 "Holy Roman Federation"
+ HRE_UNIFIED_communism:0 "Socialist Roman Republic"
+ HRE_UNIFIED_monarchist_DEF:0 "the Holy Roman Empire"
+ HRE_UNIFIED_fascism_DEF:0 "the Holy Roman Empire"
+ HRE_UNIFIED_democratic_DEF:0 "the Holy Roman Federation"
+ HRE_UNIFIED_communism_DEF:0 "the Socialist Roman Republic"
+
+ HUN_EMPIRE_monarchist:0 "Austro-Hungarian Empire"
+ HUN_GREATER_monarchist:0 "Kingdom of Hungary"
+ HUN_EMPIRE_monarchist_DEF:0 "the Austro-Hungarian Empire"
+ HUN_GREATER_monarchist_DEF:0 "The Kingdom of Hungary"
+ HUN_MONARCHY_monarchist:0 "Kingdom of Hungary"
+
+ AST_monarchist:0 "Kingdom of Australia"
+ AST_monarchist_DEF:0 "the Kingdom of Australia"
+ AST_monarchist_ADJ:0 "Australian"
