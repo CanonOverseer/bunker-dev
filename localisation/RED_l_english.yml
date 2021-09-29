@@ -26,6 +26,10 @@
  GER_NGF_trust:0 "Budding Alliance"
  GER_NGF_PSA_license:0 "German-American Equipment Deal"
  ENG_PSA_license:0 "British-American Equipment Deal"
+
+ PNA:0 "Saylish North America"
+ PNA_adj:0 "Saylish-American"
+ PNA_def:0 "Saylish North America"
  
  economy_1:0 "§RTerrible Economy§!"
  economy_2:0 "§RBad Economy§!"
@@ -76,8 +80,8 @@
  
  GER_NGF_fascism:0 "North German Reich"
  GER_NGF_fascism_DEF:0 "the Northern Government of the German Reich"
- GER_NGF_democratic:0 "North German Confederation"
- GER_NGF_democratic_DEF:0 "the North German Confederation"
+ GER_NGF_democratic:0 "North German Republic"
+ GER_NGF_democratic_DEF:0 "the North German Republic"
  GER_NGF_neutrality:1 "North German Federation"
  GER_NGF_neutrality_DEF:1 "the North German Federation"
  GER_NGF_communism:0 "North German Commune"
@@ -88,6 +92,10 @@
  GER_NGF_communism_ADJ:0 "North German"
  GER_NGF_DEF:0 "Germany"
  GER_NGF_ADJ:0 "German"
+
+ ITA_the_social_republic:0 "Italian Social Republic"
+ ITA_the_social_republic_DEF:0 "the Italian Social Republic"
+ ITA_the_social_republic_ADJ:0 "Italian"
  
  BAY_SGF:0 "South German Confederation"
  BAY_SGF_DEF:0 "the South German Confederation"
@@ -310,8 +318,8 @@
  BNK_doenitz_DEF:0 "the Purple Viking Empire"
  BNK_doenitz_ADJ:0 "Viking"
 
- BNK_military_government:0 "Provisional Government of the Bunker"
- BNK_military_government_DEF:0 "the Military Provisional Government of the Reds and Blues"
+ BNK_military_government:0 "Bunker Armed Forces"
+ BNK_military_government_DEF:0 "the Military Provisional Government of the Bunker"
  BNK_military_government_ADJ:0 "Bunker"
 
  BNK_holy_empire:0 "Holy Bunker Empire"
@@ -669,7 +677,3 @@
  
  no:0 "TBD"
  TBD:0 "TBD"
- BNK_infantry_equipment_0:0 "Musket from the American Revolution"
- BNK_infantry_equipment_1:0 "LR-36"
- BNK_infantry_equipment_2:0 "LR-39"
- BNK_infantry_equipment_3:0 "LR-42"

@@ -1,4 +1,4 @@
-﻿
+
 l_english:
  CAT_hair:1 "Empire of Sex"
  CAT_hair_DEF:1 "Empire of Sex"
@@ -34,3 +34,7 @@ l_english:
  RED_blue:1 "Blue Republic"
  RED_blue_DEF:1 "The Blue Republic"
  RED_blue_ADJ:1 "Blue"
+ 
+ SAY_karl:1 "Empire of Sayland"
+ SAY_karl_DEF:1 "Empire of Sayland"
+ SAY_karl_ADJ:1 "Empire of Sayland"

@@ -9,6 +9,19 @@ form_sex_category = {
 	}
 }
 
+bunker_civil_war_category = {
+
+	priority = 9
+
+	icon = GFX_decision_cat_generic_war_icon
+
+	picture = GFX_decision_cat_bunker_civil_war_image
+
+	allowed = {
+		has_country_flag = bunker_civil_war_dec_enabled
+	}
+}
+
 jewish_jihad_category = {
 
 	icon = GFX_decision_cat_jewish_icon

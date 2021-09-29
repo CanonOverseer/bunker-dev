@@ -1,148 +1,154 @@
-﻿division_template = {
-	name = "Infantry Division"
-	division_names_group = AUS_INF_01
-
+#Create units
+division_template = {
+	name = "Panzer Division"
+	division_names_group = "BAY_DIV_0_0"
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
+		light_armor = { x = 0 y = 0}
+		light_armor = { x = 0 y = 1}
+		light_armor = { x = 0 y = 2}
+		motorized = { x = 1 y = 0}
+		motorized = { x = 1 y = 1}
+		motorized = { x = 1 y = 2}
+		motorized = { x = 1 y = 3}
+		motorized = { x = 1 y = 4}
 	}
 	support = {
-		engineer = { x = 0 y = 0 }   # Pioneer Bn
+		artillery = { x = 0 y = 0}
+		engineer = { x = 0 y = 1}
 	}
+
 }
-
 division_template = {
-	name = "Cavalry Division"
-	division_names_group = AUS_MNT_01
-
+	name = "Infanterie Division"
+	division_names_group = "BAY_DIV_1_0"
 	regiments = {
-		mountaineers = { x = 0 y = 0 }
-		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
-		mountaineers = { x = 1 y = 0 }
-		mountaineers = { x = 1 y = 1 }
-		mountaineers = { x = 1 y = 2 }
+		infantry = { x = 0 y = 0}
+		infantry = { x = 0 y = 1}
+		infantry = { x = 0 y = 2}
+		infantry = { x = 1 y = 0}
+		infantry = { x = 1 y = 1}
+		infantry = { x = 1 y = 2}
+		infantry = { x = 2 y = 0}
+		infantry = { x = 2 y = 1}
+		infantry = { x = 2 y = 2}
 	}
 	support = {
-		engineer = { x = 0 y = 0 }   # Pioneer Bn
+		engineer = { x = 0 y = 0}
+		artillery = { x = 0 y = 1}
 	}
-}
 
+}
 division_template = {
-	name = "Cavalry Division"  		# Schnelle-Division (cavalry)
-	division_names_group = AUS_CAV_01
-
+	name = "Kavalerie Division"
+	division_names_group = "BAY_DIV_2_0"
 	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 0 y = 0}
+		cavalry = { x = 0 y = 1}
+		cavalry = { x = 0 y = 2}
+		cavalry = { x = 0 y = 3}
+		cavalry = { x = 0 y = 4}
 	}
+	support = {
+		engineer = { x = 0 y = 0}
+	}
+
 }
 
+#Spawn units
 units = {
-	##### Österreichisches Bundesheer #####
-	# I Korps
-	division= {	
-		name = "Cavalry Division"
-		location = 692 # Vienna
-		division_template = "Cavalry Division"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-
+	division= {
+		name = "1st Panzer Division"
+		location = 708
+		division_template = "Panzer Division"
 	}
-	division= {	# "1. Division"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 1
-		}
-		location = 692 # Vienna
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-
+	division= {
+		name = "2nd Panzer Division"
+		location = 708
+		division_template = "Panzer Division"
 	}
-	division= {	# "2. Division"			# Used to form 44. Infanterie-division post-Anschluss
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 692 # Vienna
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-
+	division= {
+		name = "3rd Panzer Division"
+		location = 9572
+		division_template = "Panzer Division"
 	}
-	division= {	# "3. Division"			# Used to form 44. Infanterie--division post-Anschluss
-		division_name = {
-				is_name_ordered = yes
-				name_order = 3
-		}
-		location = 692 # St Poelten
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
+	division= {
+		name = "4th Panzer Division"
+		location = 9572
+		division_template = "Panzer Division"
 	}
-
-	# II Korps
-	division= {	# "4. Division"			# Used to form 45. Infanterie--division post-Anschluss
-		division_name = {
-				is_name_ordered = yes
-				name_order = 4
-		}
-		location = 692 # Linz
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
+	division= {
+		name = "5th Infanterie Division"
+		location = 561
+		division_template = "Infanterie Division"
 	}
-	division= {	
-		name = "8. Brigade"				# Used to form 2. Gebirgs-division post-Anschluss
-		location = 692 # Vienna
-		division_template = "Cavalry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
+	division= {
+		name = "6th Infanterie Division"
+		location = 561
+		division_template = "Infanterie Division"
 	}
-}
-
-air_wings = {
-	### Luftstreitkräfte -- Vienna (full air force, consolidated), CR.32 aircraft
-	202 = {
-		fighter_equipment_0 =  {
-			owner = "AUS" 
-			creator = "SOV"
-			amount = 42
-		}
+	division= {
+		name = "7th Infanterie Division"
+		location = 561
+		division_template = "Infanterie Division"
 	}
-}
-
-### Starting Production ###
-instant_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_1
-			creator = "SOV"
-		}
-		requested_factories = 1
-		progress = 0.54
-		efficiency = 100
+	division= {
+		name = "8th Infanterie Division"
+		location = 561
+		division_template = "Infanterie Division"
 	}
-	add_equipment_production = {
-		equipment = {
-			type = support_equipment_1
-			creator = "SOV"
-		}
-		requested_factories = 1
-		progress = 0.74
-		efficiency = 100
+	division= {
+		name = "9th Infanterie Division"
+		location = 3692
+		division_template = "Infanterie Division"
+	}
+	division= {
+		name = "10th Infanterie Division"
+		location = 6555
+		division_template = "Infanterie Division"
+	}
+	division= {
+		name = "11th Infanterie Division"
+		location = 6555
+		division_template = "Infanterie Division"
+	}
+	division= {
+		name = "12th Infanterie Division"
+		location = 11486
+		division_template = "Infanterie Division"
+	}
+	division= {
+		name = "13th Infanterie Division"
+		location = 11486
+		division_template = "Infanterie Division"
+	}
+	division= {
+		name = "14th Infanterie Division"
+		location = 11640
+		division_template = "Infanterie Division"
+	}
+	division= {
+		name = "15th Infanterie Division"
+		location = 11640
+		division_template = "Infanterie Division"
+	}
+	division= {
+		name = "16th Kavalerie Division"
+		location = 6542
+		division_template = "Kavalerie Division"
+	}
+	division= {
+		name = "17th Kavalerie Division"
+		location = 6542
+		division_template = "Kavalerie Division"
+	}
+	division= {
+		name = "18th Kavalerie Division"
+		location = 6712
+		division_template = "Kavalerie Division"
+	}
+	division= {
+		name = "19th Kavalerie Division"
+		location = 6712
+		division_template = "Kavalerie Division"
 	}
 }

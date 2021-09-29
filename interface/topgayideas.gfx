@@ -49,7 +49,7 @@ spriteTypes = {
 		name = "GFX_idea_saymen"
 		texturefile = "gfx/interface/ideas/SEX/sayman.dds"
 	}	
-	
+  
 	spriteType = {
 		name = "GFX_idea_great"
 		texturefile = "gfx/interface/ideas/SEX/great_depression.dds"
@@ -179,6 +179,5 @@ spriteTypes = {
 		name = "GFX_idea_blueanimal"
 		texturefile = "gfx/interface/ideas/SEX/bluesuck.png"
 	}
-	
-	
+
 }

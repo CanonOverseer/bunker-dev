@@ -1,2 +1,10 @@
 ﻿l_english:
  VICTORY_POINTS_362:1 "Gdansk"
+ un_ideology:1 "National Socialist Globalism"
+ GER_fascism_party:0 "NSDAP"
+ GER_fascism_party_long:0 "Nationalsozialistische Deutsche Arbeiterpartei"
+ GER_communism_party:0 "KPD"
+ GER_democratic_party:1 "the Reichstag"
+ GER_neutrality_party_civil_war:0 "Militärregierung"
+ GER_neutrality_party:0 "DNVP"
+ GER_neutrality_party_long:0 "Deutschnationale Volkspartei"

@@ -1,0 +1,64 @@
+add_namespace = World_news2
+
+#Big Chungus
+country_event = {
+	id = World_news2.1
+	title = World_news2.1.t
+	desc = World_news2.1.d
+
+	picture = World_big_chungus-57461
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = World_news2.1.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#Jan Mayen Military Drills
+news_event = {
+	id = World_news2.2
+	title = World_news2.2.t
+	desc = World_news2.2.d
+
+	picture = World_jan_mayen_military_drills-57450
+	trigger = {
+		always = no
+	}
+	major = yes
+}
+
+#According to all known laws of aviation
+news_event = {
+	id = World_news2.3
+	title = World_news2.3.t
+	desc = World_news2.3.d
+
+	picture = World_according_to_all_known_laws_of_aviation-57444
+	fire_only_once = yes
+	trigger = {
+		date > 1936.12.12
+
+	}
+	mean_time_to_happen = { days = 30 }
+	major = yes
+	option = {
+		name = World_news2.3.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		add_stability = -0.05
+
+		hidden_effect = {
+			
+		}
+	}
+}

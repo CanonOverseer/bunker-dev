@@ -50,6 +50,8 @@ if = {
 
 add_ideas = un_member
 
+oob = "BAY_1936"
+
 
 set_research_slots = 3
 set_convoys = 50
@@ -139,7 +141,7 @@ create_country_leader = {
 	desc = "no"
 	picture = "gfx/leaders/GER/rupprecht.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = monarchism
 	traits = {
 		stout_defender 
 	}

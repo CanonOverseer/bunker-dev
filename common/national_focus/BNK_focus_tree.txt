@@ -143,7 +143,7 @@ set_rule = {
 		y = 19
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_mGSiYuXd }
+		prerequisite = { focus = BNK_ChWKqIct }
 		ai_will_do = {
 			factor = 1
 		}

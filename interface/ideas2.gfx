@@ -1,13 +1,18 @@
 spriteTypes = {	
 
 	spriteType = {
+		name = "GFX_idea_canon_military"
+		texturefile = "gfx/interface/ideas/idea_canon_military.dds"
+	}	
+
+	spriteType = {
 		name = "GFX_idea_canon"
-		texturefile = "gfx/interface/ideas/RED/ideas/idea_canon.dds"
+		texturefile = "gfx/interface/ideas/idea_canon.dds"
 	}	
 	
 	spriteType = {
 		name = "GFX_idea_lion"
-		texturefile = "gfx/interface/ideas/RED/ideas/idea_lion.dds"
+		texturefile = "gfx/interface/ideas/idea_lion.dds"
 	}
 	
 	spriteType = {
@@ -17,7 +22,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_idea_kermit"
-		texturefile = "gfx/interface/ideas/RED/ideas/idea_kermit.dds"
+		texturefile = "gfx/interface/ideas/idea_kermit.dds"
 	}
 	
 	spriteType = {
@@ -38,6 +43,31 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_trabeth"
 		texturefile = "gfx/interface/ideas/RED/ideas/idea_trabeth.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_chris"
+		texturefile = "gfx/interface/ideas/idea_chris.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_lois"
+		texturefile = "gfx/interface/ideas/idea_lois.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_meg"
+		texturefile = "gfx/interface/ideas/idea_meg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_stewie"
+		texturefile = "gfx/interface/ideas/idea_stewie.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_brian"
+		texturefile = "gfx/interface/ideas/idea_brian.dds"
 	}
 	
 
@@ -142,6 +172,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/FRA_former_colonial.dds"
 	}
 
+	spriteType = {
+		name = "GFX_intelligence_agency_logo_BNK"
+		texturefile = "gfx/interface/operatives/agencies/agency_logo_BNK.dds"
+		noOfFrames = 2
+	}
 
 	spriteType = {
 		name = "GFX_idea_un_member"
@@ -206,6 +241,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_decision_cat_generic_war_icon"
+		textureFile = "gfx/interface/decisions/generic_conflict.png"
+	}
+
+	spriteType = {
+		name = "GFX_decision_cat_bunker_civil_war_image"
+		textureFile = "gfx/interface/decisions/bunker_civil_war_cat.dds"
+	}
+
+	spriteType = {
 		name = "GFX_decision_cat_jewish_icon"
 		textureFile = "gfx/interface/decisions/jewish_jihad_icon.dds"
 	}
@@ -215,4 +260,138 @@ spriteTypes = {
 		textureFile = "gfx/interface/decisions/jewish_jihad_image.dds"
 	}
 
+
+
+
+
+
+
+
+
+
+
+
+	spriteType = {
+		name = "GFX_ideology_theocracy"
+		textureFile = "gfx/interface/ideologies/Monarchism.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ideology_VTC_theocracy"
+		textureFile = "gfx/interface/ideologies/papacy.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ideology_EEE_theocracy"
+		textureFile = "gfx/interface/ideologies/theocracy_E.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ideology_monarchism"
+		textureFile = "gfx/interface/ideologies/Monarchism.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ideology_anprim"
+		textureFile = "gfx/interface/ideologies/anprim.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ideology_islamism"
+		textureFile = "gfx/interface/ideologies/islamism.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ideology_islamic_monarchism"
+		textureFile = "gfx/interface/ideologies/islamism.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ideology_demsocialism"
+		textureFile = "gfx/interface/ideologies/socdem.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ideology_military_government"
+		textureFile = "gfx/interface/ideologies/military_gov.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ideology_red_fascism"
+		textureFile = "gfx/interface/ideologies/red_fascism.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ideology_blue_fascism"
+		textureFile = "gfx/interface/ideologies/blue_fascism.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ideology_purple_fascism"
+		textureFile = "gfx/interface/ideologies/purple_fascism.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ideology_bunker_monarchism"
+		textureFile = "gfx/interface/ideologies/bunker_monarchist.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ideology_nazism"
+		textureFile = "gfx/interface/ideologies/nazism.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ideology_peterism"
+		textureFile = "gfx/interface/ideologies/peterism.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ideology_un_ideology"
+		textureFile = "gfx/interface/ideologies/un_fascism.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ideology_nat_peterism"
+		textureFile = "gfx/interface/ideologies/nat_peterism.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ideology_ss_nazism"
+		textureFile = "gfx/interface/ideologies/schutzstaffel.dds"
+		legacy_lazy_load = no
+	}
+
+
+
+	spriteType = {
+		name = "GFX_text_E"
+		texturefile = "gfx/texticons/E.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_text_N"
+		texturefile = "gfx/texticons/N.dds"
+		legacy_lazy_load = no
+	}
+
+	# GFX_ideology_subideologyname
 }

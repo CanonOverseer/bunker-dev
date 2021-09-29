@@ -50,6 +50,16 @@ TRG = {
 	has_country_flag = we_do_a_little_trolling
 }
 
+BKS = {
+	original_tag = BNK
+	has_country_flag = steel_eagle_rebels
+}
+
+BKC = {
+	original_tag = BNK
+	has_country_flag = d_partisans
+}
+
 SPA = {
 	original_tag = SPR
 	has_country_flag = SPR_nationalist_spain_flag
@@ -83,6 +93,10 @@ BUZ = {
 BUF = {
 	original_tag = BUL
 	has_country_flag = BUL_fatherland_front_flag
+}
+
+PSR = {
+	has_country_flag = PSR_SAYLAND_REVOLT
 }
 
 # operative operation target

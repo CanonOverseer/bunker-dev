@@ -1,5 +1,280 @@
 ﻿add_namespace = eventsmod
+add_namespace = bunkernew
+add_namespace = petoria
 
+
+
+country_event = { # Petoria Revolts
+	id = petoria.0
+        title = petoria.0.t 
+        desc = petoria.0.d
+		picture = GFX_report_event_albanian_king_zog
+
+	is_triggered_only = yes 
+	
+	hidden = no 
+
+	fire_only_once = yes
+	
+	immediate = {
+		hidden_effect = {
+			PTR = {
+				set_global_flag = petoria_exists
+				inherit_technology = SAY
+				load_oob = PTR_1936
+				country_lock_all_division_template = yes
+				transfer_state = 825
+				set_capital = 825
+			}
+			825 = { set_demilitarized_zone = no add_core_of = PTR }
+		}
+	}
+	
+	option = { #oh shit oh fuck
+		name = petoria.0.a
+		declare_war_on = {
+			target = PTR
+			type = annex_everything
+		}
+	}
+
+	option = { #oh shit oh fuck we surrender
+		name = petoria.0.b
+		825 = { remove_core_of = SAY add_claim_by = SAY }
+		set_truce = {
+			target = PTR
+			days = 180
+		}
+		PTR = {
+			set_truce = {
+				target = SAY
+				days = 180
+			}
+		}
+	}
+
+}
+
+country_event = { # Petoria Annexes Joes Pool
+	id = petoria.1
+        title = petoria.1.t 
+        desc = petoria.1.d
+		picture = GFX_report_event_albanian_king_zog
+
+	is_triggered_only = yes 
+	
+	hidden = no 
+
+	fire_only_once = yes
+	
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	
+	option = { #wtf send in the army
+		name = petoria.1.a
+		custom_effect_tooltip = PTR_bad_feeling_tt
+		hidden_effect = {
+			country_event = {
+				id = petoria.2
+				days = 30
+			}	
+		}
+	}
+
+	option = { #let them have it
+		name = petoria.1.b
+		custom_effect_tooltip = PTR_who_cares_tt
+		hidden_effect = {
+			country_event = {
+				id = petoria.2
+				days = 180
+			}	
+		}
+		add_political_power = -25
+
+	}
+}
+
+country_event = { # Petoria Annexes the drunken clam
+	id = petoria.2
+        title = petoria.2.t 
+        desc = petoria.2.d
+		picture = GFX_report_event_albanian_king_zog
+
+	is_triggered_only = yes 
+	
+	hidden = no 
+
+	fire_only_once = yes
+	
+	immediate = {
+		hidden_effect = {
+			825 = { set_demilitarized_zone = yes }
+		}
+	}
+	
+	option = { #wtf send in the army
+		name = petoria.2.a
+		country_event = {
+			id = petoria.2
+			days = 20
+		}	
+	}
+
+	option = { #let them have it
+		name = petoria.2.b
+		add_political_power = -100
+		825 = { set_demilitarized_zone = no }
+	}
+}
+
+country_event = { # Civil War
+	id = bunkernew.1
+        title = bunkernew.1.t 
+        desc = bunkernew.1.d
+		picture = GFX_report_event_albanian_king_zog
+
+	is_triggered_only = yes 
+	
+	hidden = no 
+
+	fire_only_once = yes
+	
+	immediate = {
+		hidden_effect = {
+			BNK = { 
+			start_civil_war = {
+				ideology = fascism
+				size = 0.25
+				capital = 19
+				states = { 
+					19 31 806
+				}
+				}
+			}
+			random_other_country = {
+				limit = {
+					original_tag = BNK
+					has_government = fascism
+				}
+				set_stability = 0.9
+				set_war_support = 1
+				set_cosmetic_tag = BNK_steelrebellion
+				set_country_flag = steel_eagle_rebels
+				set_rule = {
+					can_create_factions = no
+					can_join_factions = no
+					can_not_declare_war = yes
+				}
+				set_cosmetic_tag = BNK_steelrebellion
+				set_party_name= { 
+					ideology = fascism 
+					long_name = "Steel Eagles" 
+					name = "Steel Eagles"
+				}			
+				create_country_leader = {
+					name = "Slurprising"
+					desc = "TBD"
+					picture = "gfx/leaders/BNK/slurprising.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						nationalist_symbol
+					}
+				}
+						
+			}
+
+			
+
+
+
+
+			start_civil_war = {
+				ideology = communism
+				size = 0.25
+				capital = 21
+				states = { 
+					21 32 735 20 24
+				}
+				
+			}
+			random_other_country = {
+				limit = {
+					original_tag = BNK
+					has_government = communism
+				}
+				set_stability = 0.9
+				set_war_support = 1
+				set_cosmetic_tag = BNK_commierebellion
+				set_country_flag = d_partisans
+				set_rule = {
+					can_create_factions = no
+					can_join_factions = no
+					can_not_declare_war = yes
+				}
+			}
+		}
+	}
+	
+	option = { 
+		name = bunkernew.1.a
+		set_rule = {
+			can_create_factions = no
+			can_join_factions = no
+			can_not_declare_war = yes
+		}
+		set_cosmetic_tag = BNK_military_government
+	}
+}
+
+country_event = { # steel eagles seize britanny
+	id = bunkernew.2
+        title = bunkernew.2.t
+        desc = bunkernew.2.d
+	    picture = GFX_report_event_albanian_king_zog
+
+	is_triggered_only = yes 
+	
+    major = no 
+	
+	immediate = {
+	hidden_effect = {
+		BRI = {
+			set_cosmetic_tag = BNK_steelrebellion
+			set_politics = {
+				ruling_party = fascism
+			}
+			set_party_name= { 
+				ideology = fascism 
+				long_name = "Steel Eagles" 
+				name = "Steel Eagles"
+			}			
+			create_country_leader = {
+				name = "Slurprising"
+				desc = "TBD"
+				picture = "gfx/leaders/BNK/slurprising.dds"
+				expire = "1965.1.1"
+				ideology = nazism
+				traits = {
+					
+				}
+			}
+		}
+	}	
+	}
+
+	hidden = no 
+
+	fire_only_once = yes
+
+	
+	option = {
+		name = bunkernew.2.a
+	}
+}
 
 news_event = { # operationunity
 	id = eventsmod.0 

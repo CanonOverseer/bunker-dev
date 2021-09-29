@@ -1,0 +1,121 @@
+ideas = {
+	country = {
+
+		Canon_un_frenchreservation = {
+			picture = Canon_un_frenchreservation-57457
+			modifier = {
+				neutrality_drift = 0.02
+fascism_drift = 0.02
+mic_to_target_factor = 0.10
+resistance_target = -0.3
+ai_focus_defense_factor = 0.5
+			}
+		}
+
+		Canon_bastion_of_democracy = {
+			picture = Canon_bastion_of_democracy-73587
+			modifier = {
+				democracy_drift = 0.05
+political_power_gain = 0.2
+stability_factor = 0.15
+fascism_acceptance = -50
+			}
+		}
+
+		Canon_socialist_militias = {
+			picture = Canon_socialist_militias-69750
+			modifier = {
+				production_factory_max_efficiency_factor = -0.35 
+recruitable_population = -0.03
+communism_drift = 0.05
+stability_factor = -0.25
+			}
+		}
+
+		Canon_bunker_in_flames = {
+			picture = Canon_bunker_in_flames-69751
+			modifier = {
+				political_power_gain = -0.5
+disabled_ideas = 1
+drift_defence_factor = -0.3
+			}
+		}
+
+		Canon_steel_eagles_army_influences = {
+			picture = Canon_steel_eagles_army_influences-69752
+			modifier = {
+				industrial_capacity_factory -0.3
+weekly_manpower = -1000
+			}
+		}
+
+		Canon_low_military_control = {
+			picture = Canon_low_military_control-1227
+			modifier = {
+				army_attack_factor = -0.25
+army_defence_factor = -0.25
+army_morale = -10
+			}
+		}
+
+		Canon_emergency_powers_act = {
+			picture = Canon_emergency_powers_act-1440
+			allowed_civil_war = {
+				Always = no
+			}
+			modifier = {
+				political_power_gain = 0.2
+stability_weekly = 0.02
+			}
+		}
+
+		Canon_sharia_law = {
+			picture = Canon_sharia_law-75326
+			modifier = {
+				
+army_morale_factor = 0.1
+custom_modifier_tooltip = sharia_law_modifier_tt
+			}
+		}
+
+		Canon_military_confusion = {
+			picture = Canon_military_confusion-1233
+			modifier = {
+				army_defence_factor = -0.1
+army_attack_factor = -0.1
+			}
+		}
+
+		Canon_bunker_civil_war = {
+			picture = Canon_bunker_civil_war-77544
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				pocket_penalty = -0.2
+army_core_defence_factor = 0.1
+no_compliance_gain = 1
+ai_get_ally_desire_factor = -1
+ai_join_ally_desire_factor = -1
+ai_focus_war_production_factor = 0.1
+surrender_limit = 0.5
+			}
+		}
+
+	}
+	theorist = {
+
+		Canon_the_wehraboo = {
+			picture = Canon_the_wehraboo-74578
+			traits = {
+				 fascist_sympathies blitzkrieg_theorist
+			}
+			allowed = {
+				NOT = { has_government = communism }
+			}
+			available = {
+				tag = BNK
+			}
+		}
+	}
+}
