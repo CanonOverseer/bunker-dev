@@ -1,5 +1,5 @@
 ﻿oob = "EEE_1936"
-capital = 1
+capital = 824
 set_research_slots = 3
 set_stability = 0.7
 set_war_support = 0.1
@@ -10,16 +10,8 @@ give_military_access = BNK
 add_ideas = {
 	disarmed_nation
 	civilian_economy
+	theocratic_neutrality
 }
-
-
-
-#For start date 1939.1.1
-1939.1.1 = {
-	add_political_power = 1000
-	oob = "EEE_1939"
-}
-
 #Politics for 1936.1.1
 set_politics = {
 	ruling_party = neutrality
@@ -34,23 +26,13 @@ set_popularities = {
 	neutrality = 65
 }
 
-#Politics for 1939.1.1
-1939.1.1 = {
-	set_popularities = {
-		democratic = 25
-		fascism = 25
-		communism = 25
-		neutrality = 25
-	}
-}
-
 #Create country leader - Church of E
 create_country_leader = {
 	name = "Church of E"
 	#Custom image for Church of E
 	picture = "church_of_e-77569.dds"
 	expire = "1965.1.1"
-	ideology = oligarchism
+	ideology = theocracy
 	traits = {  }
 }
 

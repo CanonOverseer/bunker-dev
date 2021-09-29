@@ -226,7 +226,7 @@ ideologies = {
 				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 
-			papal_theocracy = {
+			theocracy = {
 				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 			

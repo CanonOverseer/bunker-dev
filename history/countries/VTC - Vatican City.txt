@@ -79,6 +79,6 @@ create_country_leader = {
 	#Custom image for Pius XI
 	picture = "pius_xi-77592.dds"
 	expire = "1965.1.1"
-	ideology = papal_theocracy 
+	ideology = theocracy  
 	traits = { VTC_bishop_of_rome }
 }

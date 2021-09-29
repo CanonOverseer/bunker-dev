@@ -271,11 +271,21 @@ spriteTypes = {
 
 
 
-
+	spriteType = {
+		name = "GFX_ideology_theocracy"
+		textureFile = "gfx/interface/ideologies/Monarchism.dds"
+		legacy_lazy_load = no
+	}
 
 	spriteType = {
-		name = "GFX_ideology_papal_theocracy"
+		name = "GFX_ideology_VTC_theocracy"
 		textureFile = "gfx/interface/ideologies/papacy.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ideology_EEE_theocracy"
+		textureFile = "gfx/interface/ideologies/theocracy_E.dds"
 		legacy_lazy_load = no
 	}
 
