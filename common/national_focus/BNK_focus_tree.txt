@@ -165,7 +165,7 @@ is_ai = yes
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = BNK_seek_out_allies }
-		mutually_exclusive = { focus = BNK_ChWKqIct }
+		mutually_exclusive = { focus = BNK_mGSiYuXd }
 		ai_will_do = {
 			factor = 1
 		}

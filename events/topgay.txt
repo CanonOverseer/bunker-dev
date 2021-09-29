@@ -1,0 +1,146 @@
+#ex EVENTS
+
+add_namespace = topgay
+
+	##Event: The Clash of Titans
+	news_event = {
+		id = topgay.1
+		title = topgay.1.title
+		desc = topgay.1.desc
+		picture = GFX_report_event_bunkerunwar
+		is_triggered_only = yes
+		major = yes
+		option = {
+			name = topgay.1.a
+			ai_chance = { factor = 1}
+		}
+	}
+
+	##Event: Red Rebellion
+	country_event = {
+		id = topgay.2
+		title = topgay.2.title
+		desc = topgay.2.desc
+		picture = GFX_report_event_redcivil
+		is_triggered_only = yes
+		fire_only_once = yes
+		option = {
+			name = topgay.2.a
+			ai_chance = { factor = 1}
+			RED = { 
+				start_civil_war = {
+					ideology = fascism
+					size = 0
+					capital = 17
+					states = { 
+						17 27 
+					}
+				}
+			}
+			random_other_country = {
+				limit = {
+					original_tag = RED
+					NOT = { tag = RED }
+					has_government = fascism
+				}
+				set_stability = 0.6
+				set_war_support = 0.5
+				set_cosmetic_tag = RED_revolt
+				load_oob = "RED_revolt"
+				set_country_flag = rebels_RED
+				
+				create_country_leader = {
+					name = "NSRS Council"
+					desc = TBD
+					picture = "gfx/leaders/RED/redcouncil.dds"
+					expire = "1965.1.1"
+					ideology = red_fascism
+					traits = {
+						red
+						divided_interests
+					}
+				}
+				
+				news_event = {
+					days = 1 
+					id = topgay.4
+				}
+			}
+		}
+	}
+	
+	##Event: Blue Rebellion
+	country_event = {
+		id = topgay.3
+		title = topgay.3.title
+		desc = topgay.3.desc
+		picture = GFX_report_event_redcivil
+		is_triggered_only = yes
+		fire_only_once = yes
+		option = {
+			name = topgay.3.a
+			ai_chance = { factor = 1}
+			RED = { 
+				start_civil_war = {
+					ideology = democratic
+					size = 0
+					capital = 17
+					states = { 
+						17 27 
+					}
+				}
+			}
+			random_other_country = {
+				limit = {
+					original_tag = RED
+					NOT = { tag = RED }
+					has_government = democratic
+				}
+				set_stability = 0.6
+				set_war_support = 0.5
+				set_cosmetic_tag = BLU_revolt
+				load_oob = "RED_revolt"
+				set_country_flag = rebels_BLU
+				
+				create_country_leader = {
+					name = "Blue Council"
+					desc = TBD
+					picture = "gfx/leaders/RED/bluebuilding.dds"
+					expire = "1965.1.1"
+					ideology = liberalism 
+					traits = {
+						blue
+						divided_interests
+					}
+					
+				}
+					
+				news_event = {
+					days = 1 
+					id = topgay.4
+				}
+			}
+		}
+	}
+
+	##Event: The Burgundian Civil War
+	news_event = {
+		id = topgay.4
+		title = topgay.4.title
+		desc = topgay.4.desc
+		picture = GFX_news_event_redcivil
+		is_triggered_only = yes
+		major = yes
+		option = {
+			name = topgay.4.a
+			ai_chance = { factor = 1}
+			trigger = { NOT = { TAG = RED } }
+		}
+		
+		option = {
+			name = topgay.4.b
+			ai_chance = { factor = 1}
+			trigger = { TAG = RED }
+		}	
+	}
+

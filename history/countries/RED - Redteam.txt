@@ -84,6 +84,7 @@ add_ideas = {
 	extensive_conscription
 	RED_stubborn_reds
 	un_member
+	RED_slave_labour
 }
 
 #give_guarantee = CZE

@@ -1,0 +1,18 @@
+spriteTypes = { 
+ 
+	spriteType = {
+		name = "GFX_report_event_bunkerunwar"
+		texturefile = "gfx/event_pictures/news_event_bunker_war.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_redcivil"
+		texturefile = "gfx/event_pictures/report_red_civil.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_redcivil"
+		texturefile = "gfx/event_pictures/redcivilwar.png"
+	}
+ 
+ }

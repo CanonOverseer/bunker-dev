@@ -12,6 +12,8 @@ bookmarks = {
 			ideology = democratic
 			available = { NOT = { has_dlc = "La Resistance" } }
 			ideas = {
+				BNK_victors_of_the_war
+				BNK_fail_five
 			}
 			focuses = {
 				BNK_the_republic_lives_on
@@ -24,6 +26,8 @@ bookmarks = {
 			ideology = democratic
 			available = { has_dlc = "La Resistance" } 
 			ideas = {
+				BNK_victors_of_the_war
+				BNK_fail_five
 			}
 			focuses = {
 				BNK_the_republic_lives_on
@@ -48,11 +52,14 @@ bookmarks = {
 			ideology = democratic
 			available = { has_dlc = "Man the Guns" }
 			ideas = {
+			SAY_divided_nation
+			SAY_polish_happy
+			SAY_american_happy
 			}
 			focuses = {
-				SAY_political_expansion_in_sayland
-				SAY_the_greenland_question
-				SAY_american_dominance
+				SAY_proclaim_the_roman_empire
+				SAY_crowning_karolus
+				SAY_the_choice
 			}
 		}
 		"SAY"={
@@ -60,11 +67,14 @@ bookmarks = {
 			ideology = democratic
 			available = { NOT = { has_dlc = "Man the Guns" } }
 			ideas = {
+			SAY_divided_nation
+			SAY_polish_happy
+			SAY_american_happy
 			}
 			focuses = {
-				SAY_political_expansion_in_sayland
-				SAY_the_greenland_question
-				SAY_american_dominance
+				SAY_proclaim_the_roman_empire
+				SAY_crowning_karolus
+				SAY_the_choice
 			}
 		}
 		"PSA"={
@@ -91,21 +101,22 @@ bookmarks = {
 				PSA_the_presidential_election_of_1936
 			}
 		}
-		"MDW"={
-			history = "MDW_GATHERING_STORM_DESC"
+		"BEL"={
+			history = "BEL_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
 			}	
 			focuses = {
-				MDW_wigglyjoker_wins_the_elections
-				MDW_logan715_wins_the_elections
-				MDW_midwestern_empire
 			}		
 		}
 		"RED"={
 			history = "RED_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
+			RED_slave_labour
+			un_member
+			RED_stubborn_reds
+			
 			}	
 			focuses = {
 				RED_the_red_reich
@@ -150,7 +161,7 @@ bookmarks = {
 			history = "ISR_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-			
+			ISR_new_zionism
 			}
 			focuses = {
 				ISR_democratic_coalition

@@ -1,0 +1,46 @@
+﻿division_template = {
+	name = "Infantry Volunteers"			# Binary Infantry Volunteer Corps
+
+	regiments = {
+		Infantry = { x = 0 y = 0 }
+		Infantry = { x = 0 y = 1 }
+		Infantry = { x = 0 y = 2 }
+		Infantry = { x = 1 y = 0 }
+		Infantry = { x = 1 y = 1 }
+		Infantry = { x = 1 y = 2 }
+		Infantry = { x = 2 y = 0 }
+		Infantry = { x = 2 y = 1 }
+		Infantry = { x = 2 y = 2 }
+	}
+}
+
+units = {
+
+	division = {
+		name = "Sardinian Loyalist 1"
+		location = 11773
+		division_template = "Infantry Volunteers"
+	}
+	division = {
+		name = "Sardinian Loyalist 2"
+		location = 11773
+		division_template = "Infantry Volunteers"
+	}
+	division = {
+		name = "Sardinian Loyalist 3"
+		location = 11773
+		division_template = "Infantry Volunteers"
+	}
+	division = {
+		name = "Sardinian Loyalist 4"
+		location = 11773
+		division_template = "Infantry Volunteers"
+	}
+	
+	division = {
+		name = "Sardinian Loyalist 5"
+		location = 11773
+		division_template = "Infantry Volunteers"
+	}
+	
+}
