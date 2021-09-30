@@ -7,7 +7,7 @@ ideologies = {
 			}
 
 			absolute_monarchism = {
-				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+				can_be_randomly_selected = yes # won't be assigned to randomly generated country leaders
 			}
 
 			semi_constitutionalist_monarchism = {
