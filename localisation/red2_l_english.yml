@@ -93,6 +93,7 @@
  GER_political_turmoil_desc:0 "for the Past many years, Germany has been in political troubles, ever since President von Hindenburg died the Reichstag has barely ruled, unable to choose a true successor and reach a clear consensus in the Election, Germany is battered and the Saylish or the UN are looking hungry, who knows if we will survive..."
  GER_weak_government:0 "Weak Government"
  GER_weak_government_desc:0 "test lul"
+ BNK_ineffective_council:0 "Ineffective Administration"
 
  VTC_bishop_of_rome:0 "Bishop of Rome"
  BNK_allwell_canon:0 "Canon is in Charge"
@@ -113,6 +114,11 @@
  PTR_petorian_supremacy:0 "Petorian Supremacy"
  PTR_bad_feeling_tt:0 "§RYou have a feeling you should accept their demands... or else..§!"
  PTR_who_cares_tt:0 "Who cares about some pool anyway?"
+
+ the american civil war:0 "The American Civil War"
+ offerpeacetosayland:0 "Offer Peace to Sayland"
+ offerpeacetosayland_desc:0 "we have occupied their mainland holdings we can force them to peace out!"
+
 
  bunkernew.1.t:0 "the Bunker Civil War"
  bunkernew.1.d:0 "The Inevitable has happened, the Socialists and Steel Eagles have risen up in open rebellion."

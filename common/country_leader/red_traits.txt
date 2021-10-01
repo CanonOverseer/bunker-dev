@@ -299,10 +299,20 @@ leader_traits = {
 
 	GER_weak_government = {
 		random = no
+		stability_factor = -0.05
+		political_power_gain = -0.2
 
 		ai_will_do = {
 			factor = 1
 		}
+	}
+
+	BNK_ineffective_council = {
+		random = no
+		sprite = 13
+		stability_factor = -0.05
+		political_power_gain = -0.2
+		
 	}
 
 	war_criminal_bomber = { # Strategic Bombing mission efficiency increased by 12%

@@ -152,6 +152,17 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			tag = BEL
+			has_country_leader = {
+				name = "iSorrowProductions"
+				ruling_only = yes
+			}
+			OR = { has_government = fascism has_government = neutrality }
+		}
+		localization_key = BNK_TITLE_GENSEC
+	}
+	text = {
+		trigger = {
 			tag = SAY
 			has_country_leader = {
 				name = "ZZTopman"
