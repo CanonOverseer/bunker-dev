@@ -6,24 +6,24 @@ scripted_gui = {
 	}
 }
 
-scripted_gui = {
-	leader_title_diplo_view = {
-		context_type = selected_country_context
-		parent_window_token = selected_country_view_diplomacy
-		window_name = "leader_title_diplomacy_view_container"
-		
-		visible = {
-			THIS = {
-				exists = yes
-			}
-		}
-		
-		effects = {
-		}
-		
-		triggers = {
-		}
-	}
-}
+#scripted_gui = {
+#	leader_title_diplo_view = {
+#		context_type = selected_country_context
+#		parent_window_token = selected_country_view_diplomacy
+#		window_name = "leader_title_diplomacy_view_container"
+#		
+#		visible = {
+#			THIS = {
+#				exists = yes
+#			}
+#		}
+#		
+#		effects = {
+#		}
+#		
+#		triggers = {
+#		}
+#	}
+#}
 
 
