@@ -315,6 +315,34 @@ leader_traits = {
 		
 	}
 
+	dislikes_the_un = {
+		random = no
+		ai_strategy = {
+			type = antagonize
+			id = "BEL"			
+			value = 200
+		}
+			
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	NAV_virgin_with_rage = {
+		random = no
+		monthly_population = -0.5
+		custom_modifier_tooltip = sharia_law_modifier_tt
+		ai_strategy = {
+			type = antagonize
+			id = "CAT"			
+			value = 200
+		}
+			
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	war_criminal_bomber = { # Strategic Bombing mission efficiency increased by 12%
 		sprite = 2
 		air_strategic_bomber_attack_factor = 0.03

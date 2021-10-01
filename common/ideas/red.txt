@@ -18,21 +18,12 @@ ideas = {
 	
 				picture = generic_democratic_drift_bonus
 	
-				rule = {
-					can_join_factions = no 	
-					can_not_declare_war = yes
-					can_puppet = no 
-					can_create_factions = no
-				}
 	
 				modifier = {
 
 				}
 			}
 		}
-
-
-
 
 		PTR_petorian_supremacy = {
 
