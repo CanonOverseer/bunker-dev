@@ -67,6 +67,8 @@
  BNK_monarchist_party:0 "Purple Monarchists"
  BNK_monarchist_party_long:0 "the Movement for the Establishment of a Purple Monarchy"
 
+
+
  islamism:0 "Sharia State"
  islamism_desc:0 "Sharia is a religious law forming part of the Islamic tradition. It is derived from the religious precepts of Islam, particularly the Quran and the hadith. In Arabic, the term sharia refers to God's immutable divine law and is contrasted with fiqh, which refers to its human scholarly interpretations  The manner of its application in modern times has been a subject of dispute between Muslim fundamentalists and modernists."
  demsocialism:0 "Socialist Democracy"
@@ -86,6 +88,7 @@
  brian_griffin_2:0 "Brian Griffin"
  stewie:0 "Stewie Griffin"
  stewie_2:0 "Stewie Griffin"
+ rhine_stolen:0 "the UN have seized the Rhine"
  BEL_post_civil_war_trait:0 "Failures of the Bunker Civil War"
  GER_treaty_of_versailles:0 "Treaty of Versailles"
  GER_treaty_of_versailles_desc:0 "the Treaty of Versailles has placed various damaging restrictions on the Country, such as our Military being limited to 100,000 men among other things."
@@ -99,7 +102,7 @@
  BNK_allwell_canon:0 "Canon is in Charge"
  BNK_crisis_resolved:0 "the Bunker Crisis has been Resolved"
  bnk_is_lion:0 "Lion is the Ruler"
- BNK_caliph_of_islam:0 "£trait_sayyid Caliph of Islam"
+ BNK_caliph_of_islam:0 "Caliph of Islam"
  BNK_won_civil_war:0 "You have won the Bunker Civil War"
  NAV_virgin_with_rage:0 "Virgin with Rage"
  local:0 "localr"
@@ -117,21 +120,35 @@
  PTR_who_cares_tt:0 "Who cares about some pool anyway?"
  BNK_civil_war_hero:0 "Civil War Hero"
 
- the american civil war:0 "The American Civil War"
+ the_american_civil_war:0 "The American Civil War"
  offerpeacetosayland:0 "Offer Peace to Sayland"
  offerpeacetosayland_desc:0 "we have occupied their mainland holdings we can force them to peace out!"
  likes_the_bunker:0 "Likes the Bunker"
  dislikes_the_un:0 "Dislikes the UN"
-
 
  bunkernew.1.t:0 "the Second Bunker Civil War"
  bunkernew.1.d:0 "The Inevitable has happened, the Socialists and Steel Eagles have risen up in open rebellion."
  bunkernew.1.a:0 "We will defend at all Costs!"
  bunkernew.2.t:0 "the Steel Eagles seize Britanny"
  bunkernew.2.d:0 "In a shocking turn of events, Partisans in Britanny owing allegiance to the steel eagles have overthrown the Country and have started militarizing."
- bunkernew.2.a:0 "How have they done this?" # £text_E text_N
+ bunkernew.2.a:0 "How have they done this?"
 
- alliance_events.1:t:0 "Request for an Alliance from [FROM.GetName]"
+ united_nations.1.t:0 "Demilitarize the Rhineland"
+ united_nations.1.d:0 "As our Supreme Leader has ordered, our forces moved into the Rhine Area and occupied it without much local resistance, the Germans are Quite mad about this but who cares what they think?"
+ united_nations.1.a:0 "Glory to the UN"
+ united_nationa.1.threat:0 "Occupation of the Rhineland"
+
+ united_nations.2.t:0 "the UN annexes the Rhineland"
+ united_nations.2.d:0 "The United Nations have openly moved to annex the Rhineland supposedly to protect it from us and are demanding we officialy hand it to them for perpetuity"
+ united_nations.2.a:0 "We have no choice but to Surrender..."
+ united_nations.2.b:0 "Never!, we'd rather die!"
+ united_nations.2.tt:0 "§Rand you Probably Will.§!"
+ united_nationa.2.threat:0 "Annexation of the Rhineland"
+ united_nations.3.t:0 "the Germans Submit"
+ united_nations.3.d:0 "they have agreed to our demands, we are now officially in control of the Area"
+ united_nations.3.a:0 "Excellent"
+
+ alliance_events.1.t:0 "Request for an Alliance from [FROM.GetName]"
  alliance_events.1.d:0 "We've recieved a letter from [FROM.GetNameDef], requesting for us to join their alliance, the [FROM.GetFactionName], what shall we respond with [THIS.GetLeader]?"
  alliance_events.1.a:0 "We will gladly join the [FROM.GetName]"
  alliance_events.1.b:0 "We refuse their request"
@@ -143,8 +160,3 @@
  alliance_events.3.t:0 "[FROM.GetNameDef] has Refused!"
  alliance_events.3.d:0 "[FROM.GetName] have refused our request to join our faction, this is clearly an insult to us!"
  alliance_events.3.a:0 "Damn them."
-
- united_nations.1.t:0 "Demilitarize the Rhineland"
- united_nations.1.d:0 "As our Supreme Leader has ordered, our forces moved into the Rhine Area and occupied it without much local resistance, the Germans are Quite mad about this but who cares what they think?"
- united_nations.1.a:0 "Glory to the UN"
- united_nationa.1.threat:0 "Occupation of the Rhineland"

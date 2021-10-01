@@ -7,7 +7,7 @@ country_event = { # Event Sender requests an alliance from Recipient
 	id = alliance_events.1
 	title = alliance_events.1.t
 	desc = alliance_events.1.d
-	picture = GFX_report_event_albanian_king_zog
+	picture = GFX_report_event_hitler_handshake
 
 	hidden = yes
 	fire_only_once = yes
@@ -42,7 +42,7 @@ country_event = { # They Accepted
 	id = alliance_events.2
 	title = alliance_events.2.t
 	desc = alliance_events.2.d
-	picture = GFX_report_event_albanian_king_zog
+	picture = GFX_report_event_hitler_handshake
 
 	hidden = yes
 	fire_only_once = yes
@@ -83,7 +83,7 @@ country_event = { # Demilitarize the Rhineland (Germany needs an event but ill d
 	id = united_nations.1
 	title = united_nations.1.t
 	desc = united_nations.1.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_report_event_aid_pact
 
 	hidden = yes
 	fire_only_once = yes
@@ -104,11 +104,84 @@ country_event = { # Demilitarize the Rhineland (Germany needs an event but ill d
 			give_resource_rights = { receiver = BEL state = 815 }
 			give_resource_rights = { receiver = BEL state = 51 }
 			give_resource_rights = { receiver = BEL state = 42 }
+			set_country_flag = rhine_stolen
 		}
 		BAY = {
 			give_resource_rights = { receiver = BEL state = 50 }
 		}
 
+	}
+
+}
+
+country_event = { # to Germany, they demand the rhine from us
+	id = united_nations.2
+	title = united_nations.2.t
+	desc = united_nations.2.d
+	picture = GFX_report_event_soldiers_marching
+
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			815 = { set_demilitarized_zone = no }
+			51 = { set_demilitarized_zone = no }
+			42 = { set_demilitarized_zone = no }
+			BEL = {
+				add_named_threat = { 
+					threat = 4
+					name = united_nations.2.threat
+				}
+				remove_resource_rights = 815
+				remove_resource_rights = 51
+				remove_resource_rights = 42
+			}
+		}
+	}
+
+	option = { # Okay
+		name = united_nations.2.a
+
+		FROM = {
+			transfer_state = 815
+			transfer_state = 51
+			transfer_state = 42
+		}
+	}
+
+	option = { # wtf no fuck off
+		name = united_nations.2.b
+		custom_effect_tooltip = united_nations.2.tt
+		FROM = {
+			create_wargoal = {
+				type = take_state_focus
+				target = GER
+				generator = { 815 51 42 }
+			}
+		}
+
+	}
+
+}
+
+country_event = { # they accepted
+	id = united_nations.3
+	title = united_nations.3.t
+	desc = united_nations.3.d
+	picture = GFX_report_event_royal_parade
+
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+ 
+	}
+
+	option = { # Okay
+	name = united_nations.3.b
 	}
 
 }

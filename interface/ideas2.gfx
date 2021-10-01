@@ -229,6 +229,11 @@ spriteTypes = {
 		textureFile = "gfx/event_pictures/report_event_pm.dds"
 	}
 
+	spriteType = {
+		name = "GFX_report_event_un_apcs"
+		textureFile = "gfx/event_pictures/UNmarches.dds"
+	}
+
 
 	spriteType = {
 		name = "GFX_country_event_trollge"
@@ -414,19 +419,6 @@ spriteTypes = {
 		texturefile = "gfx/texticons/N.dds"
 		legacy_lazy_load = no
 	}
-
-	spriteType = {
-		name = "GFX_trait_royalty"
-		texturefile = "gfx/traits/trait_royal.dds"
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
-		name = "GFX_trait_sayyid"
-		texturefile = "gfx/traits/trait_sayyid.dds"
-		legacy_lazy_load = no
-	}
-
 
 	# GFX_ideology_subideologyname
 }
