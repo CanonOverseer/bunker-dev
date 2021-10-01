@@ -315,14 +315,34 @@ leader_traits = {
 		
 	}
 
+	BNK_civil_war_hero = {
+		war_support_factor = 0.1
+		stability_factor = 0.05
+		army_core_attack_factor = 0.05
+		army_core_defence_factor = 0.1
+	}
+
 	dislikes_the_un = {
 		random = no
 		ai_strategy = {
 			type = antagonize
 			id = "BEL"			
-			value = 200
+			value = 100
 		}
 			
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	likes_the_bunker = {
+		random = no
+		ai_strategy = {
+			type = befriend
+			id = "BNK"			
+			value = 50
+		}
+		
 		ai_will_do = {
 			factor = 1
 		}

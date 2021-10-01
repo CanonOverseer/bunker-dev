@@ -102,6 +102,7 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/SAY/ZZTopman.dds"
 	skill = 3
 	traits = { skilled_staffer }
+	id = 50556
 	attack_skill = 3
 	defense_skill = 3
 	planning_skill = 3
@@ -113,6 +114,7 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/BNK/cracky.dds" 
 	skill = 3
 	traits = { panzer_leader fortress_buster }
+	id = 50557
 	attack_skill = 5
 	defense_skill = 3
 	planning_skill = 2
@@ -120,7 +122,6 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-
 	name = "The Good D"
 	portrait_path = "gfx/leaders/BNK/d.dds"
 	skill = 4
@@ -141,20 +142,32 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Vladimir Putin"
-	portrait_path = "gfx/leaders/RED/Putin.dds"
-	traits = { offensive_doctrine old_guard }
-	skill = 3
-	attack_skill = 4
-	defense_skill = 1
+	name = "Mysticturtler"
+	portrait_path = "gfx/leaders/CEY/mystic.dds"
+	traits = { defensive_doctrine }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 5
 	planning_skill = 4
 	logistics_skill = 4
 }
 
 create_field_marshal = {
+	name = "General Canon"
+	portrait_path = "gfx/leaders/BNK/CanonGeneral2.dds"
+	traits = { war_hero offensive_doctrine fast_planner }
+	id = 50555
+	skill = 5
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_field_marshal = {
 	name = "Echoedlightning"
 	portrait_path = "gfx/leaders/RED/APYR.dds"
-	traits = { trickster inspirational_leader organizer }
+	traits = { trickster inspirational_leader defensive_doctrine }
 	skill = 6
 	attack_skill = 2
 	defense_skill = 5
@@ -162,16 +175,6 @@ create_field_marshal = {
 	logistics_skill = 4
 }
 
-create_field_marshal = {
-	name = "Mysticturtler"
-	portrait_path = "gfx/leaders/CEY/mystic.dds"
-	traits = { defensive_doctrine }
-	skill = 5
-	attack_skill = 3
-	defense_skill = 5
-	planning_skill = 4
-	logistics_skill = 4
-}
 
 create_navy_leader = {
 	name = "Admiral Cory"

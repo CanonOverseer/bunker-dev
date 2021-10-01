@@ -89,6 +89,15 @@
  AST_neutrality_ADJ:1 "Australasian"
  AST_communism_ADJ:1 "Australasian"
 
+ EGY_monarchist_party:0 "House le Baguette"
+ EGY_communism_party:0 "Destroy Pepe Party"
+ EGY_fascism_party:0 "Pepe Pitlers Dictatorship"
+ EGY_democratic_party:0 "Peasant Commoners"
+ EGY_neutrality_party:0 "Baguette Crusaders"
+
+ OMA_monarchist_party:0 "Kevs Regime"
+ OMA_neutrality_party:0 "Kevistan Nationalists"
+
  HRE_UNIFIED_monarchist:0 "Holy Roman Empire"
  HRE_UNIFIED_fascism:0 "Holy Roman Empire"
  HRE_UNIFIED_democratic:0 "Holy Roman Federation"

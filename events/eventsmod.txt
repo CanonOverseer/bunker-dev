@@ -142,7 +142,7 @@ country_event = { # Civil War
 	id = bunkernew.1
         title = bunkernew.1.t 
         desc = bunkernew.1.d
-		picture = GFX_report_event_albanian_king_zog
+		picture = GFX_report_event_spr_spanish_civil_war2
 
 	is_triggered_only = yes 
 	
@@ -242,7 +242,7 @@ country_event = { # steel eagles seize britanny
 	id = bunkernew.2
         title = bunkernew.2.t
         desc = bunkernew.2.d
-	    picture = GFX_report_event_albanian_king_zog
+	    picture = GFX_report_event_degaulle_inspect_troops
 
 	is_triggered_only = yes 
 	
@@ -307,7 +307,7 @@ country_event = {
 			expire = "1965.1.1"
 			ideology = monarchism
 			traits = {
-				
+				autocratic_imperialist
 			}
 		}
 		hidden_effect = {
@@ -2002,6 +2002,22 @@ news_event = { # ethiopia peace
 
 	immediate = {
 	hidden_effect = {
+
+		ETH = {
+			add_ai_strategy = {
+				type = alliance
+				id = VTC
+				value = 75
+			}
+		}
+
+		VTC = {
+			add_ai_strategy = {
+				type = alliance
+				id = ETH
+				value = 75
+			}
+		}
 	}
 	}
 

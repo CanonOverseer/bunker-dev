@@ -1,16 +1,7 @@
-add_namespace = BNK_super_events
+
 add_namespace = alliance_events
 
-country_event = {
-	id = BNK_super_events.1
-	hidden = yes
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = BNK_super_events.1.a
-		set_global_flag = BNK_super_event_cracky_trigger
-	}
-}
+add_namespace = united_nations
 
 country_event = { # Event Sender requests an alliance from Recipient
 	id = alliance_events.1
@@ -75,6 +66,48 @@ country_event = { # They Refused
 
 	option = { # bad
 		name = alliance_events.3.a
+
+	}
+
+}
+
+
+
+
+
+##################
+#### UN STUFF ####
+##################
+
+country_event = { # Demilitarize the Rhineland (Germany needs an event but ill do that when they get content)
+	id = united_nations.1
+	title = united_nations.1.t
+	desc = united_nations.1.d
+	picture = GFX_report_event_generic_read_write
+
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { # they have Accepted
+		name = united_nations.1.a
+		add_named_threat = { 
+			threat = 4
+			name = united_nations.1.threat
+		}
+
+		815 = { set_demilitarized_zone = yes }
+		51 = { set_demilitarized_zone = yes }
+		42 = { set_demilitarized_zone = yes }
+
+		GER = {
+			give_resource_rights = { receiver = BEL state = 815 }
+			give_resource_rights = { receiver = BEL state = 51 }
+			give_resource_rights = { receiver = BEL state = 42 }
+		}
+		BAY = {
+			give_resource_rights = { receiver = BEL state = 50 }
+		}
 
 	}
 

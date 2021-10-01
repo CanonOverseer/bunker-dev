@@ -115,13 +115,16 @@
  PTR_petorian_supremacy:0 "Petorian Supremacy"
  PTR_bad_feeling_tt:0 "§RYou have a feeling you should accept their demands... or else..§!"
  PTR_who_cares_tt:0 "Who cares about some pool anyway?"
+ BNK_civil_war_hero:0 "Civil War Hero"
 
  the american civil war:0 "The American Civil War"
  offerpeacetosayland:0 "Offer Peace to Sayland"
  offerpeacetosayland_desc:0 "we have occupied their mainland holdings we can force them to peace out!"
+ likes_the_bunker:0 "Likes the Bunker"
+ dislikes_the_un:0 "Dislikes the UN"
 
 
- bunkernew.1.t:0 "the Bunker Civil War"
+ bunkernew.1.t:0 "the Second Bunker Civil War"
  bunkernew.1.d:0 "The Inevitable has happened, the Socialists and Steel Eagles have risen up in open rebellion."
  bunkernew.1.a:0 "We will defend at all Costs!"
  bunkernew.2.t:0 "the Steel Eagles seize Britanny"
@@ -140,3 +143,8 @@
  alliance_events.3.t:0 "[FROM.GetNameDef] has Refused!"
  alliance_events.3.d:0 "[FROM.GetName] have refused our request to join our faction, this is clearly an insult to us!"
  alliance_events.3.a:0 "Damn them."
+
+ united_nations.1.t:0 "Demilitarize the Rhineland"
+ united_nations.1.d:0 "As our Supreme Leader has ordered, our forces moved into the Rhine Area and occupied it without much local resistance, the Germans are Quite mad about this but who cares what they think?"
+ united_nations.1.a:0 "Glory to the UN"
+ united_nationa.1.threat:0 "Occupation of the Rhineland"
