@@ -148,6 +148,16 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Erich Koch-Weser"
+	desc = "TBD"
+	picture = "gfx/leaders/GER/Erich_Koch_Weser.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
+
+create_country_leader = {
 	name = "Wilhelm Pieck"
 	desc = "POLITICS_WILHELM_PIECK_DESC"
 	picture = "Portrait_Germany_Wilhelm_Pieck.dds"
@@ -167,6 +177,16 @@ create_country_leader = {
 	ideology = conservatism
 	traits = {
 		GER_weak_government
+	}
+}
+
+create_country_leader = {
+	name = "Vacant Throne"
+	desc = "TBD"
+	picture = "gfx/leaders/GER/Empty_Throne.dds"
+	expire = "1965.1.1"
+	ideology = absolute_monarchism
+	traits = {
 	}
 }
 
@@ -198,6 +218,18 @@ create_country_leader = {
 add_namespace = {
 	name = "ger_unit_leader"
 	type = unit_leader
+}
+
+create_field_marshal = {
+	name = "August von Mackenson"
+	picture = "gfx/leaders/GER/portrait_ger_august_von_mackensen.dds"
+	traits = { defensive_doctrine urban_assault_specialist old_guard }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	id = 1918
 }
 
 create_field_marshal = {

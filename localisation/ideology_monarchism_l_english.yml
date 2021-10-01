@@ -25,8 +25,6 @@
 
  regent:0 "Appointed Regent"
  regent_desc:0 "A Regent is appointed to administer a state because the Monarch is a minor, is absent or is incapacitated."
- GER_monarchist_party:0 "DNVP"
- GER_monarchist_party_long:0 "Deutschnationale Volksparte"
  MNT_monarchist_party:0 "House of Petrović-Njegoš"
  POL_monarchist_party:0 "House of Wettin"
  ENG_monarchist_party:0 "The Crown"

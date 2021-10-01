@@ -6,8 +6,10 @@
  GER_communism_party:0 "KPD"
  GER_democratic_party:1 "the Reichstag"
  GER_neutrality_party_civil_war:0 "Militärregierung"
- GER_neutrality_party:0 "DNVP"
- GER_neutrality_party_long:0 "Deutschnationale Volkspartei"
+ GER_neutrality_party:0 "DNVP-N"
+ GER_neutrality_party_long:0 "Deutschnationale Volkspartei - Nationalists"
+ GER_monarchist_party:0 "DNVP-M"
+ GER_monarchist_party_long:0 "Deutschnationale Volksparte - Monarchists"
  NAV_democratic_party:0 "Anti-Sex Coalition"
  NAV_democratic_party_long:0 "the Anti-Sex Coalition"
 
@@ -71,8 +73,6 @@
  CAT_DEF:0 "the Republic of Sex"
  CAT_ADJ:0 "Sex"
 
- GER_monarchist_party:0 "House von Hohenzollern"
- GER_monarchist_party:0 "House von Hohenzollern"
  BAY_monarchist_party:0 "House von Wittelsbach"
  BAY_monarchist_party_long:0 "House von Wittelsbach"
 
