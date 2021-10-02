@@ -143,17 +143,24 @@ country_event = { # to Germany, they demand the rhine from us
 
 	option = { # Okay
 		name = united_nations.2.a
+		ai_chance = {
+			base = 100
+		}
 
 		FROM = {
 			transfer_state = 815
 			transfer_state = 51
 			transfer_state = 42
 		}
+		country_event = { id = united_nations.3 days = 1}
 	}
 
 	option = { # wtf no fuck off
 		name = united_nations.2.b
 		custom_effect_tooltip = united_nations.2.tt
+		ai_chance = {
+			base = 0 #ai will never do
+		}
 		FROM = {
 			create_wargoal = {
 				type = take_state_focus

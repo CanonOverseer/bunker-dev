@@ -36,7 +36,7 @@ leader_traits = {
 
 	ethiopian_war_trauma = {
 		random = no
-		ai_focus_aggressive_factor = -0.1
+		ai_focus_aggressive_factor = -0.5
 		
 		ai_will_do = {
 			factor = 1
@@ -351,7 +351,7 @@ leader_traits = {
 	NAV_virgin_with_rage = {
 		random = no
 		monthly_population = -0.5
-		custom_modifier_tooltip = sharia_law_modifier_tt
+		custom_modifier_tooltip = NAV_virgin_tt
 		ai_strategy = {
 			type = antagonize
 			id = "CAT"			

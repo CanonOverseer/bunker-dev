@@ -324,6 +324,7 @@ country_event = {
 
 	picture = the_bunker_in_flames-77546
 	fire_only_once = yes
+	is_triggered_only = yes
 	option = {
 		name = eventsmodedge.2.a
 

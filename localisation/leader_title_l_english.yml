@@ -22,4 +22,4 @@
  BNK_TITLE_GOVERNMENT:0 "Governing Body"
  BNK_TITLE_TSAR:0 "Tsar"
 
- RULER_OF:0 "§H[THIS.GetLeader]§! \n[THIS.GetLeaderTitle] of §Y[This.GetNameWithFlag]§!"
+ #RULER_OF:0 "§H[THIS.GetLeader]§! \n[THIS.GetLeaderTitle] of §Y[This.GetNameWithFlag]§!"
