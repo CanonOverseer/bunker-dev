@@ -18,7 +18,6 @@ ideas = {
 			picture = generic_democratic_drift_bonus
 
 			rule = {
-				can_be_called_to_war = no
 				can_join_factions = no 	
 				can_create_factions = no
 			}
