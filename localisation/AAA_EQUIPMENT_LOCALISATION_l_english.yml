@@ -1,0 +1,198 @@
+﻿l_english:
+ 
+ # Light Tank
+ BNK_gw_tank_equipment:0 "Civil War Tank Prototype"
+ BNK_gw_tank_equipment_short:0 "Tank Prototype"
+ BNK_light_tank_equipment_1:0 "Hotchkiss H35"
+ BNK_light_tank_equipment_1_short:0 "H35"
+ BNK_light_tank_equipment_2:0 "FCM 36"
+ BNK_light_tank_equipment_2_short:0 "FCM 36"
+ BNK_light_tank_equipment_3:0 "AMX 12t"
+ BNK_light_tank_equipment_3_short:0 "AMX 12t"
+ 
+ # Medium Tank
+ BNK_medium_tank_equipment_1:1 "Renault AMC 35"
+ BNK_medium_tank_equipment_1_short:1 "AMC 35"
+ BNK_medium_tank_equipment_2:1 "SOMUA S35"
+ BNK_medium_tank_equipment_2_short:1 "S35"
+ BNK_medium_tank_equipment_3:1 "SARL 42"
+ BNK_medium_tank_equipment_3_short:1 "SARL 42"
+ 
+ # Heavy Tank
+ BNK_heavy_tank_equipment_1:0 "Renault B1"
+ BNK_heavy_tank_equipment_1_short:0 "B1"
+ BNK_heavy_tank_equipment_2:0 "ARL 44"
+ BNK_heavy_tank_equipment_2_short:0 "ARL 44"
+ BNK_heavy_tank_equipment_3:0 "AMX-M4"
+ BNK_heavy_tank_equipment_3_short:0 "AMX-M4"
+ BNK_super_heavy_tank_equipment_1:0 "FCM-F1"
+ BNK_super_heavy_tank_equipment_1_short:0 "FCM-F1"
+ 
+ # Modern & Motorized
+ BNK_modern_tank_equipment_1:0 "AMX 50t"
+ BNK_modern_tank_equipment_1_short:0 "AMX 50t"
+
+ BNK_motorized_equipment_1:0 "Citroen U23"
+ 
+ #mechanized
+ BNK_mechanized_equipment_1:0 "Citroen P107"
+ BNK_mechanized_equipment_1_short:0 "Citroen P107"
+ BNK_mechanized_equipment_2:0 "SOMUA MCG"
+ BNK_mechanized_equipment_2_short:0 "SOMUA MCG"
+ BNK_mechanized_equipment_3:0 "AMX-VCI"
+ BNK_mechanized_equipment_3_short:0 "AMX-VCI"
+ 
+ #antitank
+ BNK_anti_tank_equipment_1:0 "Canon de 25 mm"
+ BNK_anti_tank_equipment_1_short:0 "Canon de 25 mm"
+ BNK_anti_tank_equipment_2:0 "47mm SA 37"
+ BNK_anti_tank_equipment_3:0 "Canon de 76 mm modèle 1943"
+ BNK_anti_tank_equipment_3_short:0 "Canon de 76 mm mle 1943"
+ 
+ #antiair
+ BNK_anti_air_equipment_1:0 "Hotchkiss 25mm"
+ BNK_anti_air_equipment_1_short:0 "Hotchkiss 25 mm"
+ BNK_anti_air_equipment_2:0 "Schneider 37 mm"
+ BNK_anti_air_equipment_3:0 "Canon de 75 CA modèle 1940"
+ 
+ #artillery
+ BNK_artillery_equipment_1:0 "Canon de 75 modèle 1897"
+ BNK_artillery_equipment_1_short:0 "Canon de 75 mle 1897"
+ BNK_artillery_equipment_2:0 "Canon de 105 L mle 1936"
+ BNK_artillery_equipment_3:0 "Canon de 155mm GPF"
+ 
+ # armored car
+ BNK_gw_armored_car_equipment:0 "Laffly S15"
+ BNK_gw_armored_car_equipment_short:0 "S15"
+ BNK_armored_car_equipment_1:0 "Panhard 165"
+ BNK_armored_car_equipment_1_short:0 "Panhard 165"
+ BNK_armored_car_equipment_2:0 "Panhard 178"
+ BNK_armored_car_equipment_2_short:0 "Panhard 178"
+ BNK_armored_car_at_equipment:0 "Voiture spéciale 207"
+ BNK_armored_car_at_equipment_short:0 "V.S. 207"
+ 
+ # Infantry & Support
+ BNK_infantry_equipment_0:0 "Revolutionary-Era Rifle"
+ BNK_infantry_equipment_0_short:0 "Revolutionary-Era Rifle"
+ BNK_infantry_equipment_0_desc:0 "a Hastily Designed Rifle used during the Bunker Civil War, famous for breaking often but packed quite a large punch for the time."
+ BNK_infantry_equipment_1:0 "Fusil Bunker Standard Edition"
+ BNK_infantry_equipment_1_short:0 "FBSE (1936)"
+ BNK_infantry_equipment_2:0 "MAS-38"
+ BNK_infantry_equipment_2_short:0 "MAS-38"
+ BNK_infantry_equipment_3:0 "MAS-40"
+ BNK_infantry_equipment_3_short:0 "MAS-40"
+ BNK_support_weapons:0 "FM Chauchat & Stokes mortar"
+ BNK_support_weapons2:0 "Hotchkiss M1914 & Brandt Mle 1935"
+ BNK_support_weapons3:0 "FM 24/29 & Brandt Mle 27/31"
+ BNK_support_weapons4:0 "Hotchkiss M1922 & Brandt Mle 1942"
+
+ 
+ #misc
+ BNK_heavy_tank_artillery_equipment_1:0 "Canon de 194 mle GPF"
+ BNK_heavy_tank_artillery_equipment_1_short:0 "Canon de 194"
+ BNK_light_tank_destroyer_equipment_2:0 "AMR 35 ZT-3"
+ BNK_light_tank_destroyer_equipment_2_short:0 "AMR 35 ZT-3"
+ BNK_light_tank_destroyer_equipment_3:0 "Renault UE 57"
+ BNK_light_tank_destroyer_equipment_3_short:0 "UE-57"
+ BNK_light_tank_artillery_equipment_3:0 "Canon de 155 mm Mle F3 Automoteur"
+ BNK_light_tank_artillery_equipment_3_short:0 "F3 155 mm"
+ BNK_medium_tank_destroyer_equipment_1:0 "Laffly W15 TCC"
+ BNK_medium_tank_destroyer_equipment_1_short:0 "W15 TCC"
+ BNK_medium_tank_destroyer_equipment_2:0 "Somua SAu 40"
+ BNK_medium_tank_destroyer_equipment_2_short:0 "SAu 40"
+ BNK_medium_tank_artillery_equipment_1:0 "ARL V39"
+ BNK_medium_tank_artillery_equipment_1_short:0 "ARL V39"
+ BNK_medium_tank_artillery_equipment_2:0 "AMX 13 105 AM"
+ BNK_medium_tank_artillery_equipment_2_short:0 "105 AM"
+ 
+ 
+ # Model number for equipment designer (eg panzer IV mk .1)
+ BNK_EQUIPMENT_VERSION_1:0 "MK-I"
+ BNK_EQUIPMENT_VERSION_2:0 "MK-II"
+ BNK_EQUIPMENT_VERSION_3:0 "MK-III"
+ BNK_EQUIPMENT_VERSION_4:0 "MK-IV"
+ BNK_EQUIPMENT_VERSION_5:0 "MK-V"
+ BNK_EQUIPMENT_VERSION_6:0 "MK-VI"
+ BNK_EQUIPMENT_VERSION_7:0 "MK-VII"
+ BNK_EQUIPMENT_VERSION_8:0 "MK-VIII"
+ BNK_EQUIPMENT_VERSION_9:0 "MK-VIX"
+ BNK_EQUIPMENT_VERSION_10:0 "MK-X"
+ BNK_EQUIPMENT_VERSION_11:0 "MK-XI"
+ BNK_EQUIPMENT_VERSION_12:0 "MK-XII"
+ BNK_EQUIPMENT_VERSION_13:0 "MK-XIII"
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ SBR_gw_tank_equipment:0 "T-18"
+ SBR_gw_tank_equipment_short:0 "T-18"
+ SBR_light_tank_equipment_1:0 "T-26"
+ SBR_light_tank_equipment_1_short:0 "T-26"
+ SBR_light_tank_equipment_2:0 "BT-7"
+ SBR_light_tank_equipment_2_short:0 "BT-7"
+ SBR_light_tank_artillery_equipment_1:0 "SU-1"
+ SBR_light_tank_artillery_equipment_1_short:0 "SU-1"
+ SBR_light_tank_artillery_equipment_2:0 "SU-26"
+ SBR_light_tank_artillery_equipment_2_short:0 "SU-26"
+ SBR_light_tank_artillery_equipment_3:0 "SU-76"
+ SBR_light_tank_artillery_equipment_3_short:0 "SU-76"
+ SBR_light_tank_equipment_3:0 "T-60 scout"
+ SBR_light_tank_equipment_3_short:0 "T-60"
+ SBR_light_tank_destroyer_equipment_1:1 "AT-1"
+ SBR_light_tank_destroyer_equipment_1_short:1 "AT-1"
+ SBR_light_tank_destroyer_equipment_2:1 "SU-5"
+ SBR_light_tank_destroyer_equipment_2_short:1 "SU-5"
+ SBR_light_tank_destroyer_equipment_3:0 "ZiS-30"
+ SBR_light_tank_destroyer_equipment_3_short:0 "ZiS-30"
+ SBR_light_tank_aa_equipment_1:0 "ZSU-12.7"
+ SBR_light_tank_aa_equipment_1_short:0 "ZSU-12.7"
+ SBR_medium_tank_equipment_1:1 "T-32"
+ SBR_medium_tank_equipment_2:0 "T-34"
+ SBR_medium_tank_equipment_3:0 "T-44"
+ SBR_medium_tank_equipment_3_short:0 "T-44"
+ SBR_medium_tank_artillery_equipment_1:0 "SU-76-32"
+ SBR_medium_tank_artillery_equipment_1_short:0 "SU-76-32"
+ SBR_medium_tank_artillery_equipment_2:0 "SU-122"
+ SBR_medium_tank_artillery_equipment_2_short:0 "SU-122"
+ #SBR_medium_tank_artillery_equipment_2_desc:0 ""
+ SBR_medium_tank_artillery_equipment_3:0 "SU-152-44"
+ SBR_medium_tank_artillery_equipment_3_short:0 "SU-152-44"
+ SBR_medium_tank_aa_equipment_1:0 "ZSU-37-32"
+ SBR_medium_tank_aa_equipment_1_short:0 "ZSU-37-32"
+ #SBR_medium_tank_aa_equipment_1_desc:0 ""
+ SBR_medium_tank_aa_equipment_2:0 "ZSU-37-34"
+ SBR_medium_tank_aa_equipment_2_short:0 "ZSU-37-34"
+ #SBR_medium_tank_aa_equipment_2_desc:0 ""
+ SBR_medium_tank_aa_equipment_3:0 "ZSU-57-44"
+ SBR_medium_tank_aa_equipment_3_short:0 "ZSU-57-44"
+ SBR_heavy_tank_equipment_1:0 "T-35"
+ SBR_heavy_tank_equipment_1_short:0 "T-35"
+ SBR_heavy_tank_equipment_2:0 "KV-1"
+ SBR_heavy_tank_equipment_2_short:0 "KV-1"
+ SBR_heavy_tank_equipment_3:0 "TN-1"
+ SBR_heavy_tank_equipment_3_short:0 "TN-1"
+ SBR_heavy_tank_artillery_equipment_1:0 "SU-14"
+ SBR_heavy_tank_artillery_equipment_1_short:0 "SU-14"
+ #SBR_heavy_tank_artillery_equipment_1_desc:0 ""
+ SBR_heavy_tank_artillery_equipment_2:1 "KV-2"
+ SBR_heavy_tank_artillery_equipment_2_short:1 "KV-2"
+ #SBR_heavy_tank_artillery_equipment_2_desc:0 ""
+ SBR_heavy_tank_artillery_equipment_3:0 "TNU-152"
+ SBR_heavy_tank_artillery_equipment_3_short:0 "TNU-152"
+ SBR_super_heavy_tank_equipment_1:0 "TN-7"
+ SBR_super_heavy_tank_equipment_1_short:0 "TN-7"

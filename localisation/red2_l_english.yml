@@ -125,6 +125,8 @@
  offerpeacetosayland_desc:0 "we have occupied their mainland holdings we can force them to peace out!"
  likes_the_bunker:0 "Likes the Bunker"
  dislikes_the_un:0 "Dislikes the UN"
+ bunker_church_of_E_category:0 "the Church of £text_E"
+ bunker_church_of_E_category_desc:0 "Content Needed" 
 
  bunkernew.1.t:0 "the Second Bunker Civil War"
  bunkernew.1.d:0 "The Inevitable has happened, the Socialists and Steel Eagles have risen up in open rebellion."

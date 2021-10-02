@@ -182,6 +182,10 @@ focus_tree = {
 		completion_reward = {
 			add_stability = -0.15
 		}
+
+		allow_branch = {
+			has_country_flag = allowbranchtest
+		}
 	}
 
 	#Imperial Co-Rule
