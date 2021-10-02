@@ -1,0 +1,201 @@
+focus_tree = {
+	id = north-germany
+	continuous_focus_position = { x = 0 y = 1000 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	#Germany in Chaos
+	focus = {
+		id = GER_germany_in_chaos
+		icon = GFX_GER_germany_in_chaos-81700
+		x = 16
+		y = 1
+		cost = 15
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Reichstag Emergency Session
+	focus = {
+		id = GER_reichstag_emergency_session
+		icon = GFX_GER_reichstag_emergency_session-81728
+		x = 16
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_rebuild_the_economy  }
+		available = {
+			has_country_flag = rhine_stolen
+		}
+	}
+
+	#Rebuild the Economy
+	focus = {
+		id = GER_rebuild_the_economy
+		icon = GFX_GER_rebuild_the_economy-81729
+		x = 16
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GER_germany_in_chaos  }
+	}
+
+	#Lord Hitlers Government
+	focus = {
+		id = GER_lord_hitlers_government
+		icon = GFX_GER_lord_hitlers_government-81733
+		x = 16
+		y = 4
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_reichstag_emergency_session  }
+		mutually_exclusive = { focus = GER_erichs_coalition  } mutually_exclusive = { focus = GER_the_berlin_putsch  }
+	}
+
+	#Erichs Coalition
+	focus = {
+		id = GER_erichs_coalition
+		icon = GFX_GER_erichs_coalition-81734
+		x = 11
+		y = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_reichstag_emergency_session  }
+	}
+
+	#the Berlin Putsch
+	focus = {
+		id = GER_the_berlin_putsch
+		icon = GFX_GER_the_berlin_putsch-81869
+		x = 22
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_reichstag_emergency_session  }
+	}
+
+	#Crush the Communists
+	focus = {
+		id = GER_crush_the_communists
+		icon = GFX_GER_crush_the_communists-298
+		x = 22
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = GER_the_berlin_putsch  }
+	}
+
+	#Restore the Monarchy
+	focus = {
+		id = GER_restore_the_monarchy
+		icon = GFX_GER_restore_the_monarchy-81878
+		x = 19
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_lord_hitlers_government  focus = GER_drum_up_monarchist_support  }
+	}
+
+	#Drum Up Monarchist Support
+	focus = {
+		id = GER_drum_up_monarchist_support
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 20
+		y = 5
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_the_berlin_putsch  }
+	}
+
+	#Reject the Treaty of Versailles
+	focus = {
+		id = GER_reject_the_treaty_of_versailles
+		icon = GFX_GER_reject_the_treaty_of_versailles-270
+		x = 23
+		y = 6
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = GER_crush_the_communists  }
+	}
+
+	#Request Support
+	focus = {
+		id = GER_request_support
+		icon = GFX_GER_request_support-81873
+		x = 21
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = GER_crush_the_communists  }
+	}
+
+	#Reorganize Germany
+	focus = {
+		id = GER_reorganize_germany
+		icon = GFX_focus_generic_self_management
+		x = 22
+		y = 7
+		cost = 9
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_crush_the_communists  } prerequisite = { focus = GER_reject_the_treaty_of_versailles  }
+	}
+
+	#The Hindenburg Incident
+	focus = {
+		id = GER_the_hindenburg_incident
+		icon = GFX_focus_rom_abdicate
+		x = 18
+		y = 1
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+			has_country_flag = GER_hindenburg_crash
+		}
+		completion_reward = {
+			add_stability = -0.15
+		}
+	}
+
+	#Imperial Co-Rule
+	focus = {
+		id = GER_imperial_corule
+		icon = GFX_GER_imperial_corule-81893
+		x = 18
+		y = 2
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_the_hindenburg_incident  }
+		ai_will_do = { factor = 231 }
+	}
+
+}

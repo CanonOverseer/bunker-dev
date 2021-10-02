@@ -1,0 +1,11 @@
+focus_tree = {
+	id = deletethis1
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = DELETETHIS
+		}
+	}
+#End of focuses 
+ }

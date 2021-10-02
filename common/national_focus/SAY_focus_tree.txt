@@ -2936,7 +2936,7 @@ add_state_core= 211
 	#Focus for Proclaim the Roman Empire
 	focus = {
 		id = SAY_proclaim_the_roman_empire
-		icon = GFX_SAY_proclaim_the_roman_empire-107267
+		icon = GFX_SAY_proclaim_the_roman_empire-116611
 		x = 7
 		y = 28
 		cost = 10

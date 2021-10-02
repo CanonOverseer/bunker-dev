@@ -1,0 +1,376 @@
+focus_tree = {
+	id = new-un-focus-real
+	continuous_focus_position = { x = 0 y = 1000 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BEL
+		}
+	}
+	#Exploit the Congo
+	focus = {
+		id = BEL_exploitthecongo
+		icon = GFX_BEL_exploitthecongo-445
+		x = 6
+		y = 4
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_thememberstatedevelopmentcommittee  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#The Belgian Arms Industry
+	focus = {
+		id = BEL_the_belgian_arms_industry
+		icon = GFX_BEL_the_belgian_arms_industry-80883
+		x = 5
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = BEL_developbrussels  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Invest in the Reds
+	focus = {
+		id = BEL_investinthereds
+		icon = GFX_BEL_investinthereds-445
+		x = 8
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_thememberstatedevelopmentcommittee  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Develop Brussels
+	focus = {
+		id = BEL_developbrussels
+		icon = GFX_BEL_developbrussels-53679
+		x = 4
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_industrialdevelopment  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#The Belgian Sweatshops
+	focus = {
+		id = BEL_the_belgian_sweatshops
+		icon = GFX_BEL_the_belgian_sweatshops-80884
+		x = 3
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = BEL_developbrussels  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#The UN Peacekeeping Force
+	focus = {
+		id = BEL_the_un_peacekeeping_force
+		icon = GFX_BEL_the_un_peacekeeping_force-57469
+		x = 15
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = BEL_reform_the_un  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Infiltrate the Colonial Administration
+	focus = {
+		id = BEL_infiltrate_the_colonial_administration
+		icon = GFX_BEL_infiltrate_the_colonial_administration-58103
+		x = 12
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = BEL_increase_control_of_the_netherlands  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Infiltrate the Military
+	focus = {
+		id = BEL_infiltrate_the_military
+		icon = GFX_BEL_infiltrate_the_military-58104
+		x = 10
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = BEL_increase_control_of_the_netherlands  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Increase Control of the Netherlands
+	focus = {
+		id = BEL_increase_control_of_the_netherlands
+		icon = GFX_BEL_increase_control_of_the_netherlands-58102
+		x = 11
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = BEL_reorganize_the_un  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Industrial Development
+	focus = {
+		id = BEL_industrialdevelopment
+		icon = GFX_BEL_industrialdevelopment-445
+		x = 6
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = { factor = 1 }
+	}
+
+	#Reorganize the UN
+	focus = {
+		id = BEL_reorganize_the_un
+		icon = GFX_BEL_reorganize_the_un-57469
+		x = 14
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			
+						add_political_power= 150
+					
+		}
+	}
+
+	#Operation Tulip
+	focus = {
+		id = BEL_operation_tulip
+		icon = GFX_BEL_operation_tulip-58105
+		x = 11
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { } prerequisite = { focus = BEL_infiltrate_the_military  } prerequisite = { } prerequisite = { focus = BEL_infiltrate_the_colonial_administration  } prerequisite = { }
+		ai_will_do = { factor = 1 }
+		will_lead_to_war_with = HOL
+	}
+
+	#Pacify the Dutch
+	focus = {
+		id = BEL_pacify_the_dutch
+		icon = GFX_BEL_pacify_the_dutch-58106
+		x = 11
+		y = 5
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_FRA_OCCUPATION_COST
+		}
+		prerequisite = { focus = BEL_operation_tulip  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#The First United Nations Cabinet
+	focus = {
+		id = BEL_the_first_united_nations_cabinet
+		icon = GFX_BEL_the_first_united_nations_cabinet-58096
+		x = 18
+		y = 2
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = BEL_reorganize_the_un  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#"Demilitarize" the Rhineland
+	focus = {
+		id = BEL_demilitarizetherhineland
+		icon = GFX_BEL_demilitarizetherhineland-80881
+		x = 14
+		y = 2
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = BEL_reorganize_the_un  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			country_event = {
+			days = 1 
+			id = united_nations.1
+			}
+			
+		}
+		will_lead_to_war_with = GER
+	}
+
+	#The Third UN Elections
+	focus = {
+		id = BEL_the_third_un_elections
+		icon = GFX_BEL_the_third_un_elections-58098
+		x = 21
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = BEL_the_first_united_nations_cabinet  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			
+			country_event = {
+			id = unitednations.1
+			days = 1
+			}	
+		}
+	}
+
+	#iSorrow's Fourth Term
+	focus = {
+		id = BEL_isorrowsfourthterm
+		icon = GFX_BEL_isorrowsfourthterm-58093
+		x = 21
+		y = 4
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = BEL_the_third_un_elections  }
+		ai_will_do = { factor = 1 }
+		available = {
+			
+						has_country_flag = BEL_isp_won_2
+					
+		}
+	}
+
+	#ISPs Coup
+	focus = {
+		id = BEL_isps_coup
+		icon = GFX_goal_tfv_burn_the_royal_portraits
+		x = 26
+		y = 4
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = BEL_the_third_un_elections  }
+		ai_will_do = { factor = 1 }
+		available = {
+			
+						has_country_flag = BEL_isp_won_3
+					
+		}
+	}
+
+	#The Member State Development Committee
+	focus = {
+		id = BEL_thememberstatedevelopmentcommittee
+		icon = GFX_BEL_thememberstatedevelopmentcommittee-445
+		x = 7
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { } prerequisite = { focus = BEL_reorganize_the_un  } prerequisite = { } prerequisite = { focus = BEL_industrialdevelopment  } prerequisite = { }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Reform the UN
+	focus = {
+		id = BEL_reform_the_un
+		icon = GFX_BEL_reform_the_un-80886
+		x = 15
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = BEL_annex_the_rhineland  } prerequisite = { focus = BEL_operation_tulip  } prerequisite = { focus = BEL_the_first_united_nations_cabinet  }
+	}
+
+	#Annex the Rhineland
+	focus = {
+		id = BEL_annex_the_rhineland
+		icon = GFX_BEL_annex_the_rhineland-80893
+		x = 14
+		y = 3
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = BEL_demilitarizetherhineland  }
+		will_lead_to_war_with = GER
+	}
+
+	#The World's Firepower
+	focus = {
+		id = BEL_theworldsfirepower
+		icon = GFX_BEL_theworldsfirepower-445
+		x = 13
+		y = 7
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = BEL_the_un_peacekeeping_force  }
+		mutually_exclusive = { focus = BEL_the_un_general_staff  } mutually_exclusive = { focus = BEL_steel_commander_doctrine  }
+	}
+
+	#The UN General Staff
+	focus = {
+		id = BEL_the_un_general_staff
+		icon = GFX_BEL_the_un_general_staff-445
+		x = 15
+		y = 7
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = BEL_the_un_peacekeeping_force  }
+		mutually_exclusive = { focus = BEL_steel_commander_doctrine  } mutually_exclusive = { focus = BEL_theworldsfirepower  }
+	}
+
+	#Steel Commander Doctrine
+	focus = {
+		id = BEL_steel_commander_doctrine
+		icon = GFX_BEL_steel_commander_doctrine-445
+		x = 17
+		y = 7
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = BEL_the_un_peacekeeping_force  }
+		mutually_exclusive = { focus = BEL_theworldsfirepower  } mutually_exclusive = { focus = BEL_the_un_general_staff  }
+	}
+
+	#Expand our Colonial Power
+	focus = {
+		id = BEL_expand_our_colonial_power
+		icon = GFX_BEL_expand_our_colonial_power-445
+		x = 19
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = BEL_reform_the_un  }
+	}
+
+}

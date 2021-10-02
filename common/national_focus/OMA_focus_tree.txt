@@ -68,13 +68,13 @@ id = kevevents.1
 		}
 		completion_reward = {
 			set_party_name= { 
-ideology = neutrality
+ideology = monarchist
 long_name = "MGK"
 name = "MGK"
 }
 
 add_popularity= { 
-ideology = neutrality 
+ideology = monarchist
 popularity = 0.4
 }
 		}
@@ -576,6 +576,8 @@ add_state_core= 676
 			remove_ideas= OMA_angry_muslim
 
 add_ideas= OMA_happy_muslim
+
+set_country_leader_ideology = islamic_monarchism
 		}
 	}
 
