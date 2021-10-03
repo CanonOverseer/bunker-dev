@@ -1,0 +1,75 @@
+﻿##################
+# SUPER EVENTS 
+##################
+
+add_namespace = bunker_super
+
+country_event = {	# canon sees the words of allah and converts inshallah
+	id = bunker_super.1
+	title = bunker_super.1
+	desc = bunker_super.1
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+
+
+	option = {
+		name = bunker_super.1.a
+		
+        set_global_flag = Super_Allah
+		set_global_flag = Super_Event_Visible
+		sound_effect = "superev_allah"
+		
+	}
+}
+
+country_event = {	# petoria test
+	id = bunker_super.2
+	title = bunker_super.1
+	desc = bunker_super.1
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+
+
+	option = {
+		name = bunker_super.2.a
+		
+        set_global_flag = Super_Petoria
+		set_global_flag = Super_Event_Visible
+		sound_effect = "superev_petoria"
+		set_global_flag = Super_Petoria_surrender
+		
+	}
+}
+
+country_event = {	# buttghost
+	id = bunker_super.3
+	title = bunker_super.1
+	desc = bunker_super.1
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+
+
+	option = {
+		name = bunker_super.3.a
+		
+        set_global_flag = Super_Buttghost
+		set_global_flag = Super_Event_Visible
+		sound_effect = "superev_buttghost"
+		
+	}
+}
