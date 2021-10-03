@@ -12,6 +12,18 @@ non_generic_head_of_governments = {
 	}
 }
 
+is_american_civil_war_tag ={
+	OR = {
+		TAG = USA
+		TAG = PSA
+		TAG = TEX
+		TAG = ABM
+		TAG = LOU
+		TAG = MDW
+		TAG = FLR
+	}
+}
+
 can_be_personal_union = {
 	has_dlc = "Together for Victory"
 	OR = {

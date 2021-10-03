@@ -1,0 +1,38 @@
+#on_new_term_election = { random_events = { 100 = usa.6 } }
+on_actions = {
+
+	on_startup = {
+
+		# Secular Religious Law
+		effect = { 
+			every_country = {
+				limit = { 
+					OR = { 
+						is_american_civil_war_tag = yes
+						tag = CAN
+						tag = FRA
+						tag = AST
+						tag = NZL
+					}
+				}
+				add_ideas = rel_law_secular
+				add_country_flag = secular_constitution
+			}
+		}
+
+		# Democratic Parliament
+		effect = { 
+			every_country = {
+				limit = { 
+					OR = {
+						has_government = democratic
+						tag = ABM
+					}
+				}
+				add_ideas = HOG_parliament
+			}
+		}
+	}
+
+}
+

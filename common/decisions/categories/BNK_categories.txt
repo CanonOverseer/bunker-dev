@@ -22,6 +22,19 @@ bunker_civil_war_category = {
 	}
 }
 
+bunker_influence_nations = {
+
+	priority = 2
+
+	icon = GFX_decision_cat_generic_war_icon
+
+	picture = GFX_decision_cat_bunker_civil_war_image
+
+	allowed = {
+		is_debug = yes
+	}
+}
+
 bunker_church_of_E_category = {
 
 	priority = 5
