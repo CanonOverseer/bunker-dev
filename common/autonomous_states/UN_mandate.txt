@@ -38,7 +38,7 @@ autonomy_state = {
 	}
 
 	ai_overlord_wants_garrison = {
-		has_country_tag = DEN_Mandate
+		has_country_flag = DEN_Mandate
 	}
 
 	allowed = {

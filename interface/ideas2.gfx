@@ -279,10 +279,22 @@ spriteTypes = {
 
 
 
+	# bunker mod stuff
 
+	spriteType = {
+		name = "GFX_idea_slot_head_of_government"
+		textureFile = "gfx/interface/idea_slot_headofgov.dds"
+	}
 
+	spriteType = {
+		name = "GFX_idea_slot_religious_law"
+		textureFile = "gfx/interface/idea_slot_religious_law.dds"
+	}
 
-
+	spriteType = {
+		name = "GFX_idea_slot_international_laws"
+		textureFile = "gfx/interface/idea_slot_international.dds"
+	}
 
 
 

@@ -283,74 +283,24 @@ country_event = { # steel eagles seize britanny
 	}
 }
 
-# the Restoration of Democracy in the Bunker
-country_event = {
-	id = bunkernew.7
-	title = bunkernew.7.t
-	desc = bunkernew.7.d
-
-	picture = GFX_report_event_hitler_handshake
-	is_triggered_only = yes
-	option = {
-		name = bunkernew.7.a
-		trigger = {
-			
-		}
-		ai_chance = { factor = 1 }
-
-		set_politics = {
-			ruling_party = democratic
-			elections_allowed = yes
-			election_frequency = 48
-		}
-
-		set_party_name ={
-			ideology = democratic
-			name = "Canon Administration"
-			long_name = "Canons Administration"
-		}
-		set_party_name ={
-			ideology = communism
-			name = "Democratic Socialist Party"
-			long_name = "Democratic Socialist Party of the Bunker"
-		}
-		set_party_name ={
-			ideology = fascism
-			name = "Militarist Party"
-			long_name = "Militarist Party of the Bunker"
-		}
-		hidden_effect = {
-
-		}
-	}
-}
-
-
-
 #the Coronation of Emperor Canon
 country_event = {
-	id = eventsmodedge.1
-	title = eventsmodedge.1.t
-	desc = eventsmodedge.1.d
+	id = bunkernew.6
+	title = bunkernew.6.t
+	desc = bunkernew.6.d
 
 	picture = the_coronation_of_emperor_canon-75307
 	is_triggered_only = yes
 	option = {
-		name = eventsmodedge.1.a
+		name = bunkernew.6.a
 		trigger = {
 			
 		}
 		ai_chance = { factor = 1 }
-		create_country_leader = {
-			name = "Canon I"
-			desc = "NA"
-			picture = "gfx/leaders/BNK/Emperor_Canon.dds"
-			expire = "1965.1.1"
-			ideology = absolute_monarchism
-			traits = {
-				autocratic_imperialist
-			}
-		}
+
+		set_country_leader_ideology = absolute_monarchism
+		swap_ruler_traits = { remove = BNK_civil_war_hero add = BNK_caesar }
+		add_country_leader_trait = autocratic_imperialist
 		set_party_name ={
 			ideology = monarchist
 			name = "House Overseer"
@@ -376,6 +326,55 @@ country_event = {
 		}
 	}
 }
+
+
+# the Restoration of Democracy in the Bunker
+country_event = {
+	id = bunkernew.7
+	title = bunkernew.7.t
+	desc = bunkernew.7.d
+
+	picture = GFX_report_event_hitler_handshake
+	is_triggered_only = yes
+	option = {
+		name = bunkernew.7.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+			election_frequency = 48
+		}
+		set_cosmetic_tag = BNK_secondrepublic
+
+		set_country_leader_ideology = conservatism
+		swap_ruler_traits = { remove = BNK_civil_war_hero add = BNK_cincinnatus }
+
+		set_party_name ={
+			ideology = democratic
+			name = "Canon Administration"
+			long_name = "Canons Administration"
+		}
+		set_party_name ={
+			ideology = communism
+			name = "Democratic Socialist Party"
+			long_name = "Democratic Socialist Party of the Bunker"
+		}
+		set_party_name ={
+			ideology = fascism
+			name = "Militarist Party"
+			long_name = "Militarist Party of the Bunker"
+		}
+		hidden_effect = {
+
+		}
+	}
+}
+
+
 
 #the Bunker in Flames
 country_event = {
