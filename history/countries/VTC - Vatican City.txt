@@ -9,6 +9,7 @@ add_ideas = {
 	disarmed_nation
 	civilian_economy
 	theocratic_neutrality
+	rel_law_catholic_theocracy
 }
 
 set_country_flag = is_catholic_theocracy
