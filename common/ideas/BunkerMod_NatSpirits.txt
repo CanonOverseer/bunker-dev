@@ -14,7 +14,7 @@ ideas = {
 			removal_cost = -1
 
 			available ={
-
+				UN_Member_Trigger = yes
 			}
 			
 			visible = {
@@ -22,11 +22,15 @@ ideas = {
 			}
 
 			allowed = {
-				UN_Member_Trigger = yes
+
 			}
 
 			modifier = {
 
+			}
+
+			allowed_to_remove = {
+				UN_Member_Trigger = no
 			}
 			
 			cancel_if_invalid = no
@@ -51,7 +55,8 @@ ideas = {
 		}
 
 		rel_law_catholic_theocracy = {
-
+			cost = -1
+			removal_cost = -1
 
 			modifier = {
 
@@ -71,8 +76,17 @@ ideas = {
 				}
 			}
 
+			allowed_to_remove = {
+				OR = {
+					has_government = democratic
+					has_government = monarchist
+					has_government = communism
+				}
+				NOT = { original_tag = VTC }
+			}
+
 			allowed = {
-				
+
 			}
 
 			cancel_if_invalid = yes
