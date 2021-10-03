@@ -72,8 +72,9 @@ set_politics = {
 set_popularities = {
 	democratic = 60
 	fascism = 15
-	communism = 25
-	neutrality = 0
+	communism = 22
+	neutrality = 1
+	monarchist = 2
 }
 
 add_ideas = {
@@ -100,10 +101,10 @@ add_ideas = {
 #Create country leader - US. Senate
 create_country_leader = {
 	name = "US. Senate"
-	picture = "portrait_eng_fallen_government.dds"
+	picture = "gfx/leaders/PSA/cali_capitol_building.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
-	traits = { }
+	traits = { BNK_ineffective_council }
 }
 
 

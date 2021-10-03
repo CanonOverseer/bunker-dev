@@ -1,11 +1,9 @@
 # Bunker Civil War Development (Sex Update 3)
 
 Todo List:     
- = Give Syria Units     
- = Remove UN idea from France     
+ = Fix RED, BNK, and UN Units 
  = Make more UN members     
- = UN Focus     
- = Bunker Diplomacy Focus     
- = Cracky Bunker Fix      
- = Readd Imperial Marriage for Canon in Bunker      
+ = UN Focus        
+ = Finish Bunker Monarchists
  = Finish commie path      
+ = Bunker World Path

@@ -1,0 +1,24 @@
+BAY_DIV_0_0 = {	name = "Panzer Division"
+	for_countries = { BAY }
+	can_use = { always = yes }
+	division_types = { 
+		"light_armor" "motorized" }
+	}
+	fallback_name = "%d. Panzer Division"
+}
+BAY_DIV_1_0 = {	name = "Infanterie Division"
+	for_countries = { BAY }
+	can_use = { always = yes }
+	division_types = { 
+		"infantry" }
+	}
+	fallback_name = "%d. Infanterie Division"
+}
+BAY_DIV_2_0 = {	name = "Kavalerie Division"
+	for_countries = { BAY }
+	can_use = { always = yes }
+	division_types = { 
+		"cavalry" }
+	}
+	fallback_name = "%d. Kavalerie Division"
+}

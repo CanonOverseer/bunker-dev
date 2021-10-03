@@ -1,25 +1,54 @@
-add_namespace = BNK_super_events
-add_namespace = alliance_events
 
-country_event = {
-	id = BNK_super_events.1
-	hidden = yes
-	fire_only_once = yes
+add_namespace = alliance_events
+add_namespace = testing_events
+add_namespace = united_nations
+
+
+country_event = { # testing event
+	id = testing_events.1
+	title = testing_events.1.t
+	desc = testing_events.1.d
+	picture = GFX_report_event_aid_pact
+
+	hidden = no
+	fire_only_once = no
 	is_triggered_only = yes
-	option = {
-		name = BNK_super_events.1.a
-		set_global_flag = BNK_super_event_cracky_trigger
+
+	option = { # 
+		name = testing_events.1.a
+		set_autonomy = {
+			target = SAY
+			autonomy_state = autonomy_personal_union
+		}
+	}
+
+	option = { # 
+		name = testing_events.1.a
+		set_autonomy = {
+			target = DEN
+			autonomy_state = autonomy_un_mandate
+		}
+		DEN = {
+			set_cosmetic_tag = DEN_mandate
+		}
+	}
+
+	option = { # 
+		name = testing_events.1.a
+		hold_election = ROOT
 	}
 }
+
+
 
 country_event = { # Event Sender requests an alliance from Recipient
 	id = alliance_events.1
 	title = alliance_events.1.t
 	desc = alliance_events.1.d
-	picture = GFX_report_event_albanian_king_zog
+	picture = GFX_report_event_hitler_handshake
 
-	hidden = yes
-	fire_only_once = yes
+	hidden = no
+	fire_only_once = no
 	is_triggered_only = yes
 
 	option = { #accept
@@ -51,10 +80,10 @@ country_event = { # They Accepted
 	id = alliance_events.2
 	title = alliance_events.2.t
 	desc = alliance_events.2.d
-	picture = GFX_report_event_albanian_king_zog
+	picture = GFX_report_event_hitler_handshake
 
-	hidden = yes
-	fire_only_once = yes
+	hidden = no
+	fire_only_once = no
 	is_triggered_only = yes
 
 	option = { # good
@@ -69,13 +98,135 @@ country_event = { # They Refused
 	desc = alliance_events.3.d
 	picture = GFX_report_event_albanian_king_zog
 
-	hidden = yes
-	fire_only_once = yes
+	hidden = no
+	fire_only_once = no
 	is_triggered_only = yes
 
 	option = { # bad
 		name = alliance_events.3.a
 
+	}
+
+}
+
+
+
+
+
+##################
+#### UN STUFF ####
+##################
+
+country_event = { # Demilitarize the Rhineland (Germany needs an event but ill do that when they get content)
+	id = united_nations.1
+	title = united_nations.1.t
+	desc = united_nations.1.d
+	picture = GFX_report_event_aid_pact
+
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { # they have Accepted
+		name = united_nations.1.a
+		add_named_threat = { 
+			threat = 4
+			name = united_nations.1.threat
+		}
+
+		815 = { set_demilitarized_zone = yes }
+		51 = { set_demilitarized_zone = yes }
+		42 = { set_demilitarized_zone = yes }
+
+		GER = {
+			give_resource_rights = { receiver = BEL state = 815 }
+			give_resource_rights = { receiver = BEL state = 51 }
+			give_resource_rights = { receiver = BEL state = 42 }
+			set_country_flag = rhine_stolen
+		}
+		BAY = {
+			give_resource_rights = { receiver = BEL state = 50 }
+		}
+
+	}
+
+}
+
+country_event = { # to Germany, they demand the rhine from us
+	id = united_nations.2
+	title = united_nations.2.t
+	desc = united_nations.2.d
+	picture = GFX_report_event_soldiers_marching
+
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			815 = { set_demilitarized_zone = no }
+			51 = { set_demilitarized_zone = no }
+			42 = { set_demilitarized_zone = no }
+			BEL = {
+				add_named_threat = { 
+					threat = 4
+					name = united_nations.2.threat
+				}
+				remove_resource_rights = 815
+				remove_resource_rights = 51
+				remove_resource_rights = 42
+			}
+		}
+	}
+
+	option = { # Okay
+		name = united_nations.2.a
+		ai_chance = {
+			base = 100
+		}
+
+		FROM = {
+			transfer_state = 815
+			transfer_state = 51
+			transfer_state = 42
+		}
+		country_event = { id = united_nations.3 days = 1}
+	}
+
+	option = { # wtf no fuck off
+		name = united_nations.2.b
+		custom_effect_tooltip = united_nations.2.tt
+		ai_chance = {
+			base = 0 #ai will never do
+		}
+		FROM = {
+			create_wargoal = {
+				type = take_state_focus
+				target = GER
+				generator = { 815 51 42 }
+			}
+		}
+
+	}
+
+}
+
+country_event = { # they accepted
+	id = united_nations.3
+	title = united_nations.3.t
+	desc = united_nations.3.d
+	picture = GFX_report_event_royal_parade
+
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+ 
+	}
+
+	option = { # Okay
+	name = united_nations.3.b
 	}
 
 }

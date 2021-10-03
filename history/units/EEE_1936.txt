@@ -39,22 +39,37 @@ division_template = {
 units = {
 	division= {
 		name = "1st Church Guardsmen"
-		location = 3959
+		location = 911
 		division_template = "Church Guardsmen"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
 	}
 	division= {
 		name = "2nd Church Guardsmen"
-		location = 3959
+		location = 911
 		division_template = "Church Guardsmen"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
 	}
 	division= {
 		name = "3rd Church Guardsmen"
-		location = 3959
+		location = 911
 		division_template = "Church Guardsmen"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
 	}
 	division= {
 		name = "4th Elite Foreign Guardsmen"
-		location = 3959
+		location = 911
 		division_template = "Elite Foreign Guardsmen"
+		start_experience_factor = 1
+		start_equipment_factor = 0.9
+	}
+	division= {
+		name = "5th Elite Foreign Guardsmen"
+		location = 911
+		division_template = "Elite Foreign Guardsmen"
+		start_experience_factor = 1
+		start_equipment_factor = 0.9
 	}
 }

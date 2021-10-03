@@ -1,0 +1,24 @@
+soundeffect =
+{
+	name = "superev_allah"
+	sounds = {
+		sound = "super_allah"
+	}
+	volume = 1.2
+}
+soundeffect =
+{
+	name = "superev_petoria"
+	sounds = {
+		sound = "super_petoria"
+	}
+	volume = 1.0
+}
+soundeffect =
+{
+	name = "superev_buttghost"
+	sounds = {
+		sound = "super_buttghost"
+	}
+	volume = 1.0
+}

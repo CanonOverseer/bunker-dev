@@ -143,7 +143,7 @@ set_rule = {
 		y = 19
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_dDYsLupH }
+		prerequisite = { focus = BNK_acDezAsF }
 		ai_will_do = {
 			factor = 1
 		}
@@ -165,7 +165,7 @@ is_ai = yes
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = BNK_seek_out_allies }
-		mutually_exclusive = { focus = BNK_dDYsLupH }
+		mutually_exclusive = { focus = BNK_acDezAsF }
 		ai_will_do = {
 			factor = 1
 		}
@@ -224,7 +224,8 @@ is_faction_leader = yes
 			factor = 1
 		}
 		completion_reward = {
-			set_party_name = { 
+			swap_ruler_traits = { remove = autocratic_imperialist add = constitutional_monarch }
+set_party_name = { 
     ideology = democratic
     name = "Moderate Faction"
     long_name = "the Moderate Faction"
@@ -318,8 +319,9 @@ create_country_leader = {
 	desc = "TBD"
 	picture = "gfx/leaders/BNK/CanonGeneral.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = military_government
 	traits = {
+		BNK_civil_war_hero
 	}
 }
 
@@ -673,8 +675,8 @@ custom_effect_tooltip = eventfocus
 	focus = {
 		id = BNK_wiggly_civilian_plan
 		icon = GFX_goal_generic_consumer_goods
-		x = 52
-		y = 1
+		x = 57
+		y = 2
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BNK_the_bunker_industry }
@@ -691,8 +693,8 @@ custom_effect_tooltip = eventfocus
 	focus = {
 		id = BNK_the_bunker_industry
 		icon = GFX_goal_generic_production
-		x = 53
-		y = 0
+		x = 58
+		y = 1
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1597,8 +1599,8 @@ add_opinion_modifier = {
 	focus = {
 		id = BNK_cory_military_plan
 		icon = GFX_focus_generic_self_management
-		x = 54
-		y = 1
+		x = 59
+		y = 2
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BNK_the_bunker_industry }
@@ -1608,30 +1610,6 @@ add_opinion_modifier = {
 		}
 		completion_reward = {
 			add_ideas= BNK_cory_military_plan
-		}
-	}
-
-	#Focus for A Civilian Expansion
-	focus = {
-		id = BNK_a_civilian_expansion
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 52
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BNK_savoy_military_build_up }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			22 = {
-    add_extra_state_shared_building_slots = 2
-    add_building_construction = {
-        type = industrial_complex
-        level = 2
-        instant_build = yes
-   }
-}
 		}
 	}
 
@@ -1674,30 +1652,6 @@ BNK_imperial_senate_loss = yes
 		}
 	}
 
-	#Focus for Militarize the Farmlands!
-	focus = {
-		id = BNK_militarize_the_farmlands
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 54
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BNK_savoy_military_build_up }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			33 = {
-    add_extra_state_shared_building_slots = 2
-    add_building_construction = {
-        type = arms_factory
-        level = 2
-        instant_build = yes
-   }
-}
-		}
-	}
-
 	#Focus for Steel Eagle Ambitions
 	focus = {
 		id = BNK_steel_eagle_ambitions
@@ -1715,37 +1669,16 @@ BNK_imperial_senate_loss = yes
 		}
 	}
 
-	#Focus for Defensive Plans
+	#Focus for Fate of the Church of E
 	focus = {
-		id = BNK_defensive_plans
-		icon = GFX_goal_generic_construct_military
-		x = 56
-		y = 2
-		cost = 10
+		id = BNK_fate_of_the_church_of_e
+		icon = GFX_BNK_fate_of_the_church_of_e-116533
+		x = 38
+		y = 13
+		cost = 2
 		available_if_capitulated = yes
-		prerequisite = { focus = BNK_cory_military_plan }
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_ideas= BNK_fort_plan
-		}
-	}
-
-	#Focus for Infrastructure Plans
-	focus = {
-		id = BNK_infrastructure_plans
-		icon = GFX_goal_generic_construct_infrastructure
-		x = 50
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BNK_wiggly_civilian_plan }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_ideas= BNK_infrastructure_plan
 		}
 	}
 
@@ -1812,100 +1745,17 @@ popularity = 0.4
 		}
 	}
 
-	#Focus for Bunker Research Expansion
+	#Focus for Ban the Church of E
 	focus = {
-		id = BNK_bunker_research_expansion
-		icon = GFX_focus_research2
-		x = 53
-		y = 5
-		cost = 10
+		id = BNK_ban_the_church_of_e
+		icon = GFX_goal_unknown
+		x = 36
+		y = 14
+		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = BNK_midlands_civilian_program 
-		}
-		prerequisite = { 
-			focus = BNK_the_bunker_military_factory_program 
-		}
+		prerequisite = { focus = BNK_fate_of_the_church_of_e }
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_research_slot= 1
-		}
-	}
-
-	#Focus for Savoy Military Build Up
-	focus = {
-		id = BNK_savoy_military_build_up
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 53
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = BNK_wiggly_civilian_plan 
-			focus = BNK_cory_military_plan 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			735 = {
-    add_extra_state_shared_building_slots = 1
-    add_building_construction = {
-        type = arms_factory
-        level = 1
-        instant_build = yes
-   }
-}
-		}
-	}
-
-	#Focus for Midlands Civilian Program
-	focus = {
-		id = BNK_midlands_civilian_program
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 52
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BNK_a_civilian_expansion }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			24 = {
-    add_extra_state_shared_building_slots = 2
-    add_building_construction = {
-        type = industrial_complex
-        level = 2
-        instant_build = yes
-   }
-}
-		}
-	}
-
-	#Focus for The Bunker Military Factory Program
-	focus = {
-		id = BNK_the_bunker_military_factory_program
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 54
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BNK_militarize_the_farmlands }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			801 = {
-    add_extra_state_shared_building_slots = 2
-    add_building_construction = {
-        type = arms_factory
-        level = 2
-        instant_build = yes
-   }
-}
 		}
 	}
 
@@ -1913,8 +1763,8 @@ popularity = 0.4
 	focus = {
 		id = BNK_big_guns_big_boom
 		icon = GFX_goal_generic_army_artillery2
-		x = 49
-		y = 7
+		x = 53
+		y = 9
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BNK_our_troops }
@@ -1936,8 +1786,8 @@ category = artillery
 	focus = {
 		id = BNK_our_troops
 		icon = GFX_goal_generic_axis_build_infantry
-		x = 51
-		y = 6
+		x = 54
+		y = 8
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1962,8 +1812,8 @@ category = land_doctrine
 	focus = {
 		id = BNK_the_republics_armed_forces
 		icon = GFX_goal_generic_army_tanks
-		x = 53
-		y = 7
+		x = 55
+		y = 9
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BNK_our_troops }
@@ -1984,8 +1834,8 @@ category = armor
 	focus = {
 		id = BNK_the_first_motorized_divisions
 		icon = GFX_goal_generic_army_motorized
-		x = 51
-		y = 8
+		x = 54
+		y = 10
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
@@ -2010,8 +1860,8 @@ technology = motorised_infantry
 	focus = {
 		id = BNK_say_hi_to_the_skies
 		icon = GFX_goal_generic_build_airforce
-		x = 50
-		y = 9
+		x = 52
+		y = 11
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BNK_the_first_motorized_divisions }
@@ -2032,8 +1882,8 @@ instant_build = yes }
 	focus = {
 		id = BNK_fighter_planes_with_the_eagle
 		icon = GFX_goal_generic_air_fighter2
-		x = 48
-		y = 10
+		x = 50
+		y = 12
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BNK_say_hi_to_the_skies }
@@ -2062,8 +1912,8 @@ technology = heavy_fighter3
 	focus = {
 		id = BNK_bombs_of_freedom
 		icon = GFX_goal_generic_air_bomber
-		x = 52
-		y = 10
+		x = 54
+		y = 12
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BNK_say_hi_to_the_skies }
@@ -2087,8 +1937,8 @@ category = tactical_bomber
 	focus = {
 		id = BNK_up_and_close
 		icon = GFX_goal_generic_navy_carrier
-		x = 50
-		y = 10
+		x = 52
+		y = 12
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BNK_say_hi_to_the_skies }
@@ -2110,8 +1960,8 @@ category = cas_bomber
 	focus = {
 		id = BNK_equipment_research
 		icon = GFX_goal_generic_military_sphere
-		x = 54
-		y = 9
+		x = 57
+		y = 11
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BNK_the_first_motorized_divisions }
@@ -2133,8 +1983,8 @@ category = artillery
 	focus = {
 		id = BNK_the_military_research_program
 		icon = GFX_focus_research2
-		x = 54
-		y = 10
+		x = 57
+		y = 12
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = BNK_equipment_research }
@@ -2150,8 +2000,8 @@ category = artillery
 	focus = {
 		id = BNK_i_am_become_death_the_destroyer_of_worlds
 		icon = GFX_focus_wonderweapons
-		x = 52
-		y = 11
+		x = 57
+		y = 13
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
@@ -4049,6 +3899,32 @@ custom_effect_tooltip = refusalcentralization_tt
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = BNK_normandy_is_ours }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for expand gui
+	focus = {
+		id = BNK_expand_gui
+		icon = GFX_goal_unknown
+		x = 68
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Nationalize the Church of E
+	focus = {
+		id = BNK_nationalize_the_church_of_e
+		icon = GFX_goal_unknown
+		x = 38
+		y = 14
+		cost = 5
+		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
 		}

@@ -1,8 +1,32 @@
-VTC_DIV_0_0 = {	name = "Example Division"
+VTC_DIV_0_0 = {	name = "Swiss Guard"
 	for_countries = { VTC }
 	can_use = { always = yes }
 	division_types = { 
-		"infantry" }
+		"marine" "heavy_armor" "artillery_brigade" "infantry" }
 	}
-	fallback_name = "%d. Example Division"
+	fallback_name = "%d. Swiss Guard"
+}
+VTC_DIV_1_0 = {	name = "Papal Levy"
+	for_countries = { VTC }
+	can_use = { always = yes }
+	division_types = { 
+		"infantry" "heavy_tank_destroyer_brigade" }
+	}
+	fallback_name = "%d. Papal Levy"
+}
+VTC_DIV_2_0 = {	name = "Motorized Division"
+	for_countries = { VTC }
+	can_use = { always = yes }
+	division_types = { 
+		"motorized" }
+	}
+	fallback_name = "%d. Motorized Division"
+}
+VTC_DIV_3_0 = {	name = "Cavalry Guard"
+	for_countries = { VTC }
+	can_use = { always = yes }
+	division_types = { 
+		"cavalry" "camelry" }
+	}
+	fallback_name = "%d. Cavalry Guard"
 }

@@ -10,14 +10,16 @@
  BNK_TITLE_DUKE:0 "Duke"
  BNK_TITLE_PRESIDENT:0 "President"
  BNK_TITLE_PRIMEMINISTER:0 "Primeminister"
- BNK_TITLE_GENERAL:0 "General and Acting President"
+ BNK_TITLE_GENERAL:0 "Acting Leader"
  BNK_TITLE_FATHEROFNATION:0 "Father of the Nation"
  BNK_TITLE_BUTTGHOST:0 "the Butt Ghost"
+ BNK_TITLE_GENSEC:0 "General Secretary"
  
  BNK_TITLE_POPE:0 "Pope"
  BNK_TITLE_PREMIER:0 "Premier"
  BNK_TITLE_PEOPLESLEADER:0 "Chairman"
  BNK_TITLE_REVOLUTIONARY:0 "Revolutionary General"
  BNK_TITLE_GOVERNMENT:0 "Governing Body"
+ BNK_TITLE_TSAR:0 "Tsar"
 
- RULER_OF:0 "§H[THIS.GetLeader]§! \n[THIS.GetLeaderTitle] of §Y[This.GetNameWithFlag]§!"
+ #RULER_OF:0 "§H[THIS.GetLeader]§! \n[THIS.GetLeaderTitle] of §Y[This.GetNameWithFlag]§!"

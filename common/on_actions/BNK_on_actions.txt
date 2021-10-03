@@ -1,0 +1,33 @@
+#on_new_term_election = { random_events = { 100 = usa.6 } }
+on_actions = {
+
+	on_startup = {
+
+		effect = {
+			if = { #UN RESOURCE concessions
+				limit = {
+					always = yes
+				}
+				FRA = {
+				give_resource_rights = { receiver = BEL state = 671 }
+				give_resource_rights = { receiver = BEL state = 286 }
+				}
+				BNK = {
+				give_resource_rights = { receiver = EEE state = 32 }
+				}
+			}
+		}
+
+		effect = { # MANPOWAHH
+			if = { 
+				limit = {
+					always = yes
+				}
+				VTC = { add_manpower = 200000 }
+				EEE = { add_manpower = 80000 }
+			}
+		}
+
+	}
+
+}

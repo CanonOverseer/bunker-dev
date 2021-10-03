@@ -131,8 +131,7 @@ form_sex_league = {
 
 	allowed = {
 		tag = CAT
-	}
-
+	} 
 	available = {
 		is_subject = no
 		# spain

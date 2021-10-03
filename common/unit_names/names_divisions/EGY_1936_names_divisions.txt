@@ -1,0 +1,32 @@
+EGY_DIV_0_0 = {	name = "Crusader Division"
+	for_countries = { EGY }
+	can_use = { always = yes }
+	division_types = { 
+		"infantry" }
+	}
+	fallback_name = "%d. Crusader Division"
+}
+EGY_DIV_1_0 = {	name = "Hussar Knights"
+	for_countries = { EGY }
+	can_use = { always = yes }
+	division_types = { 
+		"cavalry" }
+	}
+	fallback_name = "%d. Hussar Knights"
+}
+EGY_DIV_2_0 = {	name = "Heavenly Inquisition"
+	for_countries = { EGY }
+	can_use = { always = yes }
+	division_types = { 
+		"cavalry" }
+	}
+	fallback_name = "%d. Heavenly Inquisition"
+}
+EGY_DIV_3_0 = {	name = "Pepe Le Tankette Division"
+	for_countries = { EGY }
+	can_use = { always = yes }
+	division_types = { 
+		"light_armor" "motorized" }
+	}
+	fallback_name = "%d. Pepe Le Tankette Division"
+}

@@ -1,0 +1,16 @@
+ALG_DIV_0_0 = {	name = "Infantry Division"
+	for_countries = { ALG }
+	can_use = { always = yes }
+	division_types = { 
+		"infantry" }
+	}
+	fallback_name = "%d. Infantry Division"
+}
+ALG_DIV_1_0 = {	name = "Cavalry Division"
+	for_countries = { ALG }
+	can_use = { always = yes }
+	division_types = { 
+		"cavalry" }
+	}
+	fallback_name = "%d. Cavalry Division"
+}

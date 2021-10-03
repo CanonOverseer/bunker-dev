@@ -1,0 +1,1012 @@
+ideas = {
+	# MILITARY
+
+	hidden_ideas = {
+		
+	}
+
+	international_laws = {
+		law = yes
+		use_list_view = yes
+
+		int_law_UN = {
+			cost = 150
+			removal_cost = -1
+
+			available ={
+
+			}
+			
+			visible = {
+				always = yes
+			}
+
+			allowed = {
+				UN_Member_Trigger = yes
+			}
+
+			modifier = {
+
+			}
+			
+			cancel_if_invalid = no
+		}
+	}
+
+	religious_law = {
+		law = yes
+		use_list_view = yes
+
+		rel_law_secular = {
+			cost = 150
+			removal_cost = -1
+			
+			modifier = {
+
+			}
+			
+			default = no
+			
+			cancel_if_invalid = no
+		}
+
+		rel_law_catholic_theocracy = {
+
+
+			modifier = {
+
+			}
+
+			available ={
+
+			}	
+
+			visible = {
+				OR = {
+					has_country_flag = is_catholic_theocracy
+					has_global_flag = testing_flag
+				}
+			}
+
+			allowed = {
+				has_country_flag = is_catholic_theocracy
+			}
+
+			cancel_if_invalid = yes
+		}
+
+	}
+
+	country = {
+
+		PTR_petorian_supremacy = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			rule = {
+				can_join_factions = no 	
+				can_create_factions = no
+			}
+
+			modifier = {
+				ai_badass_factor = 0.5
+				conscription_factor = -0.2
+				fuel_gain_factor = 25
+				resistance_damage_to_garrison_on_our_occupied_states = -0.3
+				resistance_target_on_our_occupied_states = -0.15
+				own_operative_capture_chance_factor = -0.3
+			}
+		}
+
+		BNK_supportdemocracy = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				neutrality_drift = -0.1
+				democratic_drift = 0.2
+			}
+		}
+		RED_canon_queen = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = RED_canon_queen
+
+			modifier = {
+				neutrality_drift = 0.1
+				stability_factor = 0.05
+			}
+		}
+		
+		PSA_preparing_for_war = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = RED_canon_queen
+
+			modifier = {
+				training_time_factor = -0.1
+				planning_speed = 0.10
+				consumer_goods_factor = -0.05
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+		BNK_monarchistconstitution = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_neutrality_drift_bonus
+
+			modifier = {
+				neutrality_drift = 0.2
+				democratic_drift = -0.2
+			}
+		}
+		PSA_nationalized_banks = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_neutrality_drift_bonus
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				min_export = -0.05
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		
+		PSA_economic_slump_1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_neutrality_drift_bonus
+
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_industrial_complex_factor = -0.2
+				production_speed_arms_factory_factor = -0.2
+				production_speed_infrastructure_factor = -0.2
+				stability_factor = -0.10
+				war_support_factor -0.25
+			}
+		}
+		
+		PSA_economic_slump_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_neutrality_drift_bonus
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_arms_factory_factor = -0.2
+				production_speed_infrastructure_factor = -0.2
+				stability_factor = -0.10
+				war_support_factor -0.20
+			}
+		}
+		
+		PSA_economic_slump_3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_neutrality_drift_bonus
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_arms_factory_factor = -0.1
+				production_speed_infrastructure_factor = -0.1
+				stability_factor = -0.05
+				war_support_factor -0.20
+			}
+		}
+		
+		PSA_economic_slump_4 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_neutrality_drift_bonus
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_arms_factory_factor = -0.05
+				production_speed_infrastructure_factor = -0.05
+				stability_factor = -0.01
+			}
+		}
+		
+		PSA_economic_recovery = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_foreign_capital
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.01
+				production_speed_infrastructure_factor = 0.1
+				stability_factor = 0.10
+			}
+		}
+		
+		PSA_investment_technocrat_1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_foreign_capital
+
+			modifier = {
+				civilian_factory_use = 4
+				research_speed_factor = -0.05
+				decryption_factor = -0.2
+				trade_opinion_factor = -0.25
+				license_purchase_cost = 0.5
+			}
+		}
+
+		PSA_socialist_militias = {
+			allowed = {
+				always = no
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+		
+			picture = PSA_Socialist_Militias
+		
+			modifier = {
+				communism_drift = 0.001
+				communism_acceptance = 25
+				conscription = 0.02
+				army_attack_factor = 0.05
+				minimum_training_level = -0.05
+				army_org_factor = -0.05
+			}
+		}
+
+		PSA_labor_warhelp = {
+			allowed = {
+				always = no
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+		
+			picture = PSA_laborhelp
+		
+			modifier = {
+				communism_drift = 0.001
+				consumer_goods_factor = -0.05
+				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		
+		PSA_research_institute = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = jap_duplicate_research
+
+			modifier = {
+				research_speed_factor = 0.05
+				decryption_factor = 0.2
+				trade_opinion_factor = 0.25
+				license_purchase_cost = -0.5
+			}
+		}
+
+		BNK_imperial_research = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = jap_duplicate_research
+
+			modifier = {
+				research_speed_factor = 0.05
+				decryption_factor = 0.2
+				license_purchase_cost = -0.5
+				production_speed_synthetic_refinery_factor = 0.1
+				civilian_factory_use = 2
+			}
+		}
+
+		BNK_silent_state = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = jap_duplicate_research
+
+			modifier = {
+				decryption_factor = 0.5
+				encryption_factor = 100
+				MONTHLY_POPULATION = -1
+			}
+		}
+
+		BNK_off_with_their_heads = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				stability_weekly_factor = -0.01
+				war_support_factor = -0.1
+			}
+		}
+
+		BNK_new_calendar = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = chi_incompetent_officers
+
+			modifier = {
+				encryption_factor = 0.5
+				max_planning = -20
+				planning_speed = -0.2
+			}
+		}
+
+		BNK_nuclear_program = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = jap_duplicate_research
+
+			modifier = {
+				air_strategic_bomber_bombing_factor = 0.03
+				production_speed_nuclear_reactor_factor = 0.25
+				civilian_factory_use = 2
+			}
+		}
+
+		BNK_political_instability = {
+			allowed = {
+				always = no
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+		
+			picture = BNK_political_instability
+		
+			modifier = {
+				political_power_gain = -0.1
+				war_support_factor = -0.05
+				stability_factor = -0.1
+				drift_defence_factor = -0.25
+
+			}
+		}
+
+		BNK_imperial_senate_opposed = {
+			allowed = {
+				always = no
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+		
+			picture = BNK_imperial_senate_opposed
+		
+			modifier = {
+				war_support_factor = -0.10
+				stability_factor = -0.10
+				neutrality_drift = -0.10
+				master_ideology_drift = -0.05
+				subjects_autonomy_gain = 0.25
+				compliance_gain = -0.1
+
+			}
+		}
+
+		BNK_imperial_senate = {
+			allowed = {
+				always = no
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+		
+			picture = BNK_imperial_senate
+		
+			modifier = {
+				neutrality_drift = 0.05
+				master_ideology_drift = 0.05
+				subjects_autonomy_gain = -0.25
+				compliance_gain = 0.1
+
+			}
+		}
+
+		BNK_imperial_senate_supportive = {
+			allowed = {
+				always = no
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+		
+			picture = BNK_imperial_senate_supportive
+		
+			modifier = {
+				war_support_factor = 0.10
+				stability_factor = 0.10
+				neutrality_drift = 0.10
+				master_ideology_drift = 0.05
+				subjects_autonomy_gain = -0.25
+				compliance_gain = 0.1
+
+			}
+		}
+
+		BNK_church_e = {
+			allowed = {
+				always = no
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+		
+			picture = generic_neutrality_drift_bonus
+		
+			modifier = {
+				war_support_factor = 0.10
+				stability_factor = 0.10
+				neutrality_drift = 0.10
+
+			}
+		}
+
+		BNK_celebrates_hanukkah = {
+			allowed = {
+				always = no
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+		
+			picture = generic_neutrality_drift_bonus
+		
+			modifier = {
+				war_support_factor = 0.10
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+
+			}
+		}
+
+
+		BNK_imperial_council = {
+			allowed = {
+				always = no
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+		
+			picture = BNK_imperial_senate
+		
+			modifier = {
+				neutrality_drift = 0.1
+
+			}
+		}
+
+		BNK_dual_army = {
+			allowed = {
+				always = no
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+		
+			picture = generic_neutrality_drift_bonus
+		
+			modifier = {
+				war_support_factor = 0.10
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.1
+
+			}
+		}
+
+		BNK_loyalty_law = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+
+			removal_cost = -1
+
+			picture = BNK_loyalty_law
+
+			modifier = {
+				stability_factor = -0.20
+				war_support_factor = -0.50	
+			}
+		}
+
+		BNK_eating_people = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+
+			removal_cost = -1
+
+			picture = BNK_eating_people
+
+			modifier = {
+				stability_factor = -0.50
+				monthly_population = -0.75
+				consumer_goods_factor = 0.75
+
+			}
+		}
+
+		BNK_dedicated_workers = {
+
+			allowed = {
+				has_government = communism
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = BNK_dedicated_workers
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1 
+				production_factory_start_efficiency_factor = 0.2
+				political_power_gain = -0.15
+			}
+		}
+
+		SAY_divided_nation = {
+			allowed = {
+				always = no
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+		
+			picture = SAY_divided
+		
+			modifier = {	
+				conscription_factor = -0.25
+				army_defence_factor = -0.15
+				consumer_goods_factor = 0.2
+				drift_defence_factor = -0.3
+			}
+		}
+
+		SOV_soviet_failure = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+
+			removal_cost = -1
+
+			picture = SOV_soviet_failure
+
+			modifier = {
+				stability_factor = -0.20
+				war_support_factor = -0.10
+				surrender_limit = -0.2
+				drift_defence_factor = -0.25
+				communism_drift = -0.05
+			}
+		}
+
+		OMA_sexy_king = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+
+			removal_cost = -1
+
+			picture = generic_neutrality_drift_bonus
+
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.10
+			}
+		}
+		OMA_angry_muslim = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+
+			removal_cost = -1
+
+			picture = OMA_muslim_majority
+
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.10	
+				political_power_gain = -0.25
+			}
+		}
+
+		OMA_happy_muslim = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+
+			removal_cost = -1
+
+			picture = OMA_muslim_majority
+
+			modifier = {
+				war_support_factor = 0.10	
+				political_power_gain = 0.1
+				army_core_defence_factor = 0.5
+			}
+		}
+
+		SOV_orthodox_revolt = {
+			allowed = {
+				always = no
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+		
+			picture = sov_orthodox_revolt
+		
+			modifier = {
+				neutrality_drift = 0.02
+				democratic_drift = 0.02
+				stability_factor = -0.05
+			}
+		}
+
+		SBR_white_army_remnant = {
+			allowed = {
+				always = no
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+		
+			picture = sbr_white_army
+		
+			modifier = {
+				neutrality_drift = 0.03
+				democratic_drift = 0.01
+				war_support_factor = 0.1
+				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.1
+				attrition = -0.2
+			}
+		}
+
+		FSA_freedom_fighters = {
+			allowed = {
+				always = no
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+		
+			picture = PSA_Socialist_Militias
+		
+			modifier = {
+				war_support_factor = 0.5
+				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.1
+				attrition = -0.2
+			}
+		}
+
+		PSA_public_works = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_neutrality_drift_bonus
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+				local_resources_factor = 0.10
+				trade_opinion_factor = 0.25
+				industry_repair_factor = 0.4
+			}
+		}
+		
+		unrecognized_rebels = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_neutrality_drift_bonus
+
+			modifier = {
+				ai_call_ally_desire_factor = -10000
+				ai_join_ally_desire_factor = -10000
+			}
+		}
+
+		RED_stubborn_reds = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_neutrality_drift_bonus
+			
+			modifier = {
+				ai_call_ally_desire_factor = -69420
+				ai_join_ally_desire_factor = -69420
+				surrender_limit = 0.1
+			}
+		}
+		
+		BNK_militarybuildup = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.2
+			}
+		}
+		BNK_fortmania = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				production_speed_bunker_factor = 0.5
+			}
+		}
+	
+	}
+}
