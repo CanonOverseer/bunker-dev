@@ -43,15 +43,23 @@ ideas = {
 
 		rel_law_secular = {
 			cost = 150
-			removal_cost = -1
+			removal_cost = 250
 			
+			available = {
+				always = yes
+			}
+
 			modifier = {
 
+			}
+
+			allowed_to_remove = {
+				NOT = { has_country_flag = secular_constitution }
 			}
 			
 			default = no
 			
-			cancel_if_invalid = no
+			cancel_if_invalid = yes
 		}
 
 		rel_law_catholic_theocracy = {

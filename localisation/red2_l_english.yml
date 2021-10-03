@@ -149,11 +149,23 @@
  idea_slot_international_laws:0 "A International Affairs"
 
  rel_law_secular:0 "Freedom of Religion"
+ secular_constitution:0 "Freedom of Religion is enshrined in the Constitution"
  int_law_UN:0 "United Nations Member"
  UN_Member_Trigger:0 "You are in the UN"
  is_catholic_theocracy:0 "You are a Catholic Theocracy"
  rel_law_catholic_theocracy:0 "Catholic Theocracy"
  bunker_influence_nations:0 "Subject Influence"
+
+ HOG_Parlia_Name:0 "[THIS.GetParliamentName]"
+ HOG_un_assembly:0 "UN General Assembly"
+ HOG_national_congress:0 "National Congress"
+ HOG_senate:0 "[THIS.GetAdjective] Senate"
+ HOG_imperial_senate:0 "Imperial Senate"
+ HOG_national_senate:0 "National Senate"
+ HOG_national_council:0 "National Council"
+ HOG_Reichstag:0 "the Reichstag"
+ HOG_workerscouncils:0 "Workers Councils"
+ HOG_Parliament:0 "Parliament"
 
  autonomy_personal_union:0 "Personal Union"
  can_be_personal_union:0 "Can become a Personal Union"

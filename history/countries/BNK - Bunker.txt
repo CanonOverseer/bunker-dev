@@ -104,6 +104,7 @@ add_ideas = {
 	volunteer_only
 	BNK_victors_of_the_war
 	BNK_fail_five
+	secular_constitution
 }
 
 add_opinion_modifier = {
