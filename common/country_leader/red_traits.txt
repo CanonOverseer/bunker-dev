@@ -322,6 +322,22 @@ leader_traits = {
 		army_core_defence_factor = 0.1
 	}
 
+	BNK_caesar = {
+		war_support_factor = 0.05
+		stability_factor = 0.1
+		army_core_attack_factor = 0.05
+		army_core_defence_factor = 0.1
+		monarchist_drift = 0.05
+	}
+
+	BNK_cincinnatus = {
+		war_support_factor = 0.1
+		stability_factor = 0.05
+		army_core_attack_factor = 0.05
+		army_core_defence_factor = 0.1
+		democratic_drift = 0.05
+	}
+
 	dislikes_the_un = {
 		random = no
 		ai_strategy = {

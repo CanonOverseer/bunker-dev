@@ -311,7 +311,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_ideology_monarchism"
+		name = "GFX_ideology_monarchist_group"
 		textureFile = "gfx/interface/ideologies/Monarchism.dds"
 		legacy_lazy_load = no
 	}

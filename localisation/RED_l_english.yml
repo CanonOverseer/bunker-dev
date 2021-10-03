@@ -117,12 +117,6 @@
  TRUMP_win:0 "Trump is the President-elect"
  FDR_win:0 "FDR is the President-elect"
  
- autonomy_union:0 "Vassal Union"
- autonomy_un_mandate:0 "Mandate"
- autonomy_un_associate:0 "Associate"
- autonomy_un_member:0 "Member"
- autonomy_directcolony:0 "Integrated Colony"
- 
  eventfocus:0 "§RThis focus is only unlockable by an event§!"
  buttghosty:0 "§RI AM THE BUTT GHOST AND I WILL EAT YOUR BUTT§!"
  UNintervene:0 "§RThis may cause an intervention by the UN§!"
