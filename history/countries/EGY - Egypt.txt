@@ -27,6 +27,8 @@ set_technology = {
 	fuel_refining = 1
 }
 
+set_research_slots = 3
+
 set_convoys = 20
 oob = "EGY_1936"
 set_cosmetic_tag = EGY_pepe

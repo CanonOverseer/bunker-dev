@@ -58,7 +58,10 @@ ideas = {
 			}
 
 			available ={
-
+				OR = {
+					has_country_flag = is_catholic_theocracy
+					has_global_flag = testing_flag
+				}
 			}	
 
 			visible = {
@@ -69,7 +72,7 @@ ideas = {
 			}
 
 			allowed = {
-				has_country_flag = is_catholic_theocracy
+				
 			}
 
 			cancel_if_invalid = yes
