@@ -122,26 +122,36 @@ set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 
 }
 set_popularities = {
-	democratic = 30
-	fascism = 10
-	communism = 60
-}
-
-add_ideas = {
+	democratic = 10
+	fascism = 27
+	communism = 28
+	neutrality = 25
+	monarchist = 10
 }
 
 set_cosmetic_tag = BAY_SGF
 
 create_country_leader = {
-	name = "Rupprecht von Bayern"
+	name = "Rupprecht I"
 	desc = "no"
 	picture = "gfx/leaders/GER/rupprecht.dds"
 	expire = "1965.1.1"
-	ideology = monarchism
+	ideology = semi_constitutionalist_monarchism
+	traits = {
+		stout_defender 
+	}
+}
+
+create_country_leader = {
+	name = "Rupprecht I"
+	desc = "no"
+	picture = "gfx/leaders/GER/rupprecht.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
 	traits = {
 		stout_defender 
 	}

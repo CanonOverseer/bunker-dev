@@ -1,0 +1,44 @@
+
+UN_Member_Trigger = {
+	OR = { 
+		tag = BEL
+		has_idea = un_member
+	}
+}
+
+non_generic_head_of_governments = {
+	NOT = {
+		
+	}
+}
+
+is_american_civil_war_tag ={
+	OR = {
+		TAG = USA
+		TAG = PSA
+		TAG = TEX
+		TAG = ABM
+		TAG = LOU
+		TAG = MDW
+		TAG = FLR
+	}
+}
+
+can_be_personal_union = {
+	has_dlc = "Together for Victory"
+	OR = {
+		AND = {
+			OVERLORD = {
+				has_country_leader = {
+					name = "Canon I"
+					ruling_only = yes
+				}
+			}
+			tag = SAY
+			has_country_leader = {
+				name = "Karolus Canonus I von Saylandia"
+				ruling_only = yes
+			}
+		}
+	}
+}

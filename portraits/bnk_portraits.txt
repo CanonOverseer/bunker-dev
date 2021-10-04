@@ -1,0 +1,95 @@
+
+continent = {
+	name = europe
+	political = {
+		monarchist = {
+				male = { 
+					"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+			}
+		}
+	}
+
+}
+
+continent = {
+	name = north_america
+
+	political = {
+		monarchist = {
+				male = { 
+					"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+			}
+		}
+	}
+
+}
+
+continent = {
+	name = south_america
+
+	political = {
+		monarchist = {
+				male = { 
+					"gfx/leaders/South America/Portrait_South_America_Generic_3.dds" 
+			}
+		}
+	}
+
+}
+
+continent = {
+	name = australia
+	
+	political = {
+		monarchist = {
+				male = { 
+					"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+			}
+		}
+	}
+
+}
+
+continent = {
+	name = africa
+
+	political = {
+		monarchist = {
+				male = { 
+					"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+			}
+		}
+	}
+
+
+}
+
+continent = {
+	name = asia
+
+	political = {
+
+		monarchist = {
+				male = { 
+					"gfx/leaders/Asia/Portrait_Asia_Generic_3.dds" 
+			}
+		}
+	}	
+
+}
+
+continent = {
+	name = middle_east
+
+	political = {
+		monarchist = {
+				male = { 
+					"gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds" 
+			}
+		}
+	}
+
+}
+ 

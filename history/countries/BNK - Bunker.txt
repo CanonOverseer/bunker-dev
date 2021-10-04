@@ -4,7 +4,7 @@
 
 oob = "BNK_1936"
 
-set_research_slots = 3
+set_research_slots = 4
 set_stability = 0.2
 set_war_support = 0.9
 
@@ -13,48 +13,72 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_support = 1
+	tech_engineers = 1
 	tech_recon = 1
-	tech_mountaineers = 1
+	gw_tank = 1
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	gwtank = 1
 	basic_light_tank = 1
-	improved_light_tank = 1
+	
 	early_fighter = 1
-	naval_bomber1 = 1
 	cv_early_fighter = 1
 	cv_naval_bomber1 = 1
 	early_bomber = 1
-	tactical_bomber1 = 1
-	CAS1 = 1
-	early_submarine = 1
-	basic_submarine = 1
-	early_destroyer = 1
-	basic_destroyer = 1
-	early_light_cruiser = 1
-	basic_light_cruiser = 1
-	early_heavy_cruiser = 1
-	basic_heavy_cruiser = 1
-	early_battleship = 1
-	early_battlecruiser = 1
-	basic_battlecruiser = 1
-	early_carrier = 1
-	transport = 1
-	trench_warfare = 1
-	fleet_in_being = 1
 }
-set_variable = { var = senators_support value = 22 }
-set_variable = { var = senators_total value = 64 }
-set_variable = { var = representatives_support value = 62 }
-set_variable = { var = representatives_total value = 183 }
-set_variable = { var = quorum_low value = 23 }
-set_variable = { var = quorum_medium value = 33 }
-set_variable = { var = quorum_high value = 43 }
-AUS_recalc_congress_icon_frames = yes
-BNK = {
-	country_event = { id = aus_congress.14 days = 2 }
-	country_event = { id = aus_congress.15 days = 2 }
+
+if = {
+	limit = {
+		has_dlc = "Battle for the Bosporus"
+	}
+	set_technology = { camelry = 1 }
+}
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		early_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		smoke_generator = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_secondary_battery = 1
+		basic_fire_control_system = 1
+	}
 }
 
 set_convoys = 30
@@ -69,9 +93,10 @@ set_politics = {
 
 set_popularities = {
 	democratic = 41
-	neutrality = 43
+	neutrality = 41
 	fascism = 10
 	communism = 6
+	monarchist = 2
 }
 
 add_ideas = {
@@ -79,6 +104,7 @@ add_ideas = {
 	volunteer_only
 	BNK_victors_of_the_war
 	BNK_fail_five
+	secular_constitution
 }
 
 add_opinion_modifier = {
@@ -87,7 +113,7 @@ add_opinion_modifier = {
 }
 
 
-#give_guarantee = CZE
+give_guarantee = EEE
 
 #Order matters here Daladier will start as leaders because added last
 
@@ -97,6 +123,7 @@ create_country_leader = {
 	picture = "gfx/leaders/BNK/nationalcouncil.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
+	traits = { BNK_ineffective_council }
 }
 
 create_country_leader = {
@@ -112,6 +139,7 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/SAY/ZZTopman.dds"
 	skill = 3
 	traits = { skilled_staffer }
+	id = 50556
 	attack_skill = 3
 	defense_skill = 3
 	planning_skill = 3
@@ -123,6 +151,7 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/BNK/cracky.dds" 
 	skill = 3
 	traits = { panzer_leader fortress_buster }
+	id = 50557
 	attack_skill = 5
 	defense_skill = 3
 	planning_skill = 2
@@ -130,7 +159,6 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-
 	name = "The Good D"
 	portrait_path = "gfx/leaders/BNK/d.dds"
 	skill = 4
@@ -151,20 +179,32 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Vladimir Putin"
-	portrait_path = "gfx/leaders/RED/Putin.dds"
-	traits = { offensive_doctrine old_guard }
-	skill = 3
-	attack_skill = 4
-	defense_skill = 1
+	name = "Mysticturtler"
+	portrait_path = "gfx/leaders/CEY/mystic.dds"
+	traits = { defensive_doctrine }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 5
 	planning_skill = 4
 	logistics_skill = 4
 }
 
 create_field_marshal = {
+	name = "General Canon"
+	portrait_path = "gfx/leaders/BNK/CanonGeneral2.dds"
+	traits = { war_hero offensive_doctrine fast_planner }
+	id = 50555
+	skill = 5
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_field_marshal = {
 	name = "Echoedlightning"
 	portrait_path = "gfx/leaders/RED/APYR.dds"
-	traits = { trickster inspirational_leader organizer }
+	traits = { trickster inspirational_leader defensive_doctrine }
 	skill = 6
 	attack_skill = 2
 	defense_skill = 5
@@ -172,16 +212,6 @@ create_field_marshal = {
 	logistics_skill = 4
 }
 
-create_field_marshal = {
-	name = "Mysticturtler"
-	portrait_path = "gfx/leaders/CEY/mystic.dds"
-	traits = { defensive_doctrine }
-	skill = 5
-	attack_skill = 3
-	defense_skill = 5
-	planning_skill = 4
-	logistics_skill = 4
-}
 
 create_navy_leader = {
 	name = "Admiral Cory"

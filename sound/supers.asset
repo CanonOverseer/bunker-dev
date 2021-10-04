@@ -1,0 +1,18 @@
+sound = {
+	name = "super_allah"
+	file = "menu/canonallah.wav"
+	volume = 1.5
+	always_load = yes
+}
+sound = {
+	name = "super_petoria"
+	file = "menu/petoria.wav"
+	volume = 1
+	always_load = yes
+}
+sound = {
+	name = "super_buttghost"
+	file = "menu/buttghost.wav"
+	volume = 1
+	always_load = yes
+}

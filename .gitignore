@@ -2,3 +2,5 @@
 descriptor.mod
 Hearts of Iron IV - Shortcut.lnk
 *.rar
+*.py
+/flag_converter/tga

@@ -1,0 +1,17 @@
+BEL_antagonize_bunker = {
+	allowed = {
+		original_tag = BEL
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		NOT = { country_exists = BNK }
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "BNK"			
+		value = 100
+	}
+}

@@ -45,7 +45,58 @@ ideas = {
 				justify_war_goal_time = 0.25
 			}
 		}
-	
+
+		GER_treaty_of_versailles  = {
+			allowed = {
+				always = no
+			}
+		
+			allowed_civil_war = {
+				always = no
+			}
+		
+			removal_cost = -1
+
+			rule = {
+				can_join_factions = no
+			}
+		
+			picture = versaillies_treaty
+		
+			modifier = {
+				conscription_factor = -0.5
+				ai_desired_divisions_factor = -0.5
+				ai_focus_defense_factor = 0.5
+			}
+		}
+
+		GER_political_turmoil  = {
+			allowed = {
+				always = no
+			}
+		
+			allowed_civil_war = {
+				always = no
+			}
+		
+			removal_cost = -1
+
+			rule = {
+				can_join_factions = no
+			}
+		
+			picture = GER_political_turmoil_1
+		
+			modifier = {
+				stability_factor = -0.25
+				stability_weekly = -0.0020
+				drift_defence_factor = -0.5
+				war_support_factor = -0.5
+				political_advisor_cost_factor = 0.5
+			}
+		}
+
+
 	}
 	
 	political_advisor = {

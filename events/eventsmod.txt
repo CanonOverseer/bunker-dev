@@ -1,4 +1,5 @@
 ﻿add_namespace = eventsmod
+add_namespace = eventsmodedge
 add_namespace = bunkernew
 add_namespace = petoria
 
@@ -36,6 +37,9 @@ country_event = { # Petoria Revolts
 			target = PTR
 			type = annex_everything
 		}
+		set_global_flag = Super_Petoria
+		set_global_flag = Super_Event_Visible
+		sound_effect = "superev_petoria"
 	}
 
 	option = { #oh shit oh fuck we surrender
@@ -51,6 +55,10 @@ country_event = { # Petoria Revolts
 				days = 180
 			}
 		}
+		set_global_flag = Super_Petoria
+		set_global_flag = Super_Petoria_surrender
+		set_global_flag = Super_Event_Visible
+		sound_effect = "superev_petoria"
 	}
 
 }
@@ -134,7 +142,7 @@ country_event = { # Civil War
 	id = bunkernew.1
         title = bunkernew.1.t 
         desc = bunkernew.1.d
-		picture = GFX_report_event_albanian_king_zog
+		picture = GFX_report_event_spr_spanish_civil_war2
 
 	is_triggered_only = yes 
 	
@@ -234,7 +242,7 @@ country_event = { # steel eagles seize britanny
 	id = bunkernew.2
         title = bunkernew.2.t
         desc = bunkernew.2.d
-	    picture = GFX_report_event_albanian_king_zog
+	    picture = GFX_report_event_degaulle_inspect_troops
 
 	is_triggered_only = yes 
 	
@@ -270,209 +278,299 @@ country_event = { # steel eagles seize britanny
 
 	fire_only_once = yes
 
-	
 	option = {
 		name = bunkernew.2.a
 	}
 }
 
-news_event = { # operationunity
-	id = eventsmod.0 
-        title = eventsmod.0.t 
-        desc = eventsmod.0.d
-	    picture = GFX_news_event_ast_parliament_house
+#the Coronation of Emperor Canon
+country_event = {
+	id = bunkernew.6
+	title = bunkernew.6.t
+	desc = bunkernew.6.d
 
-	is_triggered_only = yes 
-	
-    major = yes 
-	
-	hidden = no 
-
-	fire_only_once = yes
-
-	
+	picture = the_coronation_of_emperor_canon-75307
+	is_triggered_only = yes
 	option = {
-		name = eventsmod.0.a 
+		name = bunkernew.6.a
 		trigger = {
-		    OR = {
-			    tag = BLU
-				tag = RED
-			}
+			
 		}
-	    RED = { add_popularity = { ideology = democratic popularity = 0.2 } }
-	    BLU = {	add_popularity = { ideology = democratic popularity = 0.2 } }
-	}
-	option = {
-		name = eventsmod.0.b
-		trigger = {
-		    tag = BEL
-		}
-	}
-	option = {
-		name = eventsmod.0.c
-		trigger = {
-		    NOT = {
-			    tag = BLU
-				tag = RED 
-				tag = BEL
-			}
-		}
-	}
-}
+		ai_chance = { factor = 1 }
 
-news_event = { # silentprot
-	id = eventsmod.1
-        title = eventsmod.1.t 
-        desc = eventsmod.1.d
-	    picture = GFX_news_event_ast_parliament_house 
-
-	is_triggered_only = yes 
-	
-    major = yes 
-	
-	hidden = no 
-
-	fire_only_once = yes
-
-	
-	option = {
-		name = eventsmod.1.a 
-		trigger = {
-		    OR = {
-			    tag = BLU
-				tag = RED
-			}
+		set_country_leader_ideology = absolute_monarchism
+		swap_ruler_traits = { remove = BNK_civil_war_hero add = BNK_caesar }
+		add_country_leader_trait = autocratic_imperialist
+		set_party_name ={
+			ideology = monarchist
+			name = "House Overseer"
+			long_name = "House of Overseer"
 		}
-	    RED = { add_popularity = { ideology = democratic popularity = 0.1 } }
-	    BLU = {	add_popularity = { ideology = democratic popularity = 0.1 } }
-	}
-	option = {
-		name = eventsmod.1.b
-		trigger = {
-		    tag = BEL
+		set_party_name ={
+			ideology = neutrality
+			name = "Senate Imperialists"
+			long_name = "Imperial Senate - Imperialist Faction"
 		}
-	}
-	option = {
-		name = eventsmod.1.c
-		trigger = {
-		    NOT = {
-			    tag = BLU
-				tag = RED 
-				tag = BEL
-			}
+		set_party_name ={
+			ideology = democratic
+			name = "Senate Moderates"
+			long_name = "Imperial Senate - Moderate Faction"
+		}
+		set_party_name ={
+			ideology = fascism
+			name = "Senate Fascists"
+			long_name = "Imperial Senate - Cracky's Fascists"
+		}
+		hidden_effect = {
+			set_country_flag = canon_emperor
 		}
 	}
 }
 
 
-country_event = { # First Elections
-	id = eventsmod.2
-        title = eventsmod.2.t 
-        desc = eventsmod.2.d
+# the Restoration of Democracy in the Bunker
+country_event = {
+	id = bunkernew.7
+	title = bunkernew.7.t
+	desc = bunkernew.7.d
 
-	is_triggered_only = yes 
-	
-	hidden = no 
+	picture = GFX_report_event_hitler_handshake
+	is_triggered_only = yes
+	option = {
+		name = bunkernew.7.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
 
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+			election_frequency = 48
+		}
+		set_cosmetic_tag = BNK_secondrepublic
+
+		set_country_leader_ideology = conservatism
+		swap_ruler_traits = { remove = BNK_civil_war_hero add = BNK_cincinnatus }
+
+		set_party_name ={
+			ideology = democratic
+			name = "Canon Administration"
+			long_name = "Canons Administration"
+		}
+		set_party_name ={
+			ideology = communism
+			name = "Democratic Socialist Party"
+			long_name = "Democratic Socialist Party of the Bunker"
+		}
+		set_party_name ={
+			ideology = fascism
+			name = "Militarist Party"
+			long_name = "Militarist Party of the Bunker"
+		}
+		hidden_effect = {
+
+		}
+	}
+}
+
+
+
+#the Bunker in Flames
+country_event = {
+	id = eventsmodedge.2
+	title = eventsmodedge.2.t
+	desc = eventsmodedge.2.d
+
+	picture = the_bunker_in_flames-77546
 	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = eventsmodedge.2.a
 
-	
-	option = { # Lion
-		name = eventsmod.2.a 
-		hidden_effect = { 
-		    complete_national_focus = RED_lion
+		trigger = {
+			
+		}
+
+		ai_chance = { factor = 1 }
+		add_stability = -0.1
+		807 = { set_demilitarized_zone = yes }
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#First Bunker Elections
+country_event = {
+	id = eventsmodedge.3
+	title = eventsmodedge.3.t
+	desc = eventsmodedge.3.d
+
+	picture = first_bunker_elections-750
+	is_triggered_only = yes
+	option = {
+		name = eventsmodedge.3.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 7 }
+		create_country_leader = {
+			name = "Top"
+			desc = "TBD"
+			picture = "gfx/leaders/BNK/ZZTopman.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				top
+			}
+		}
+
+		news_event= {
+			days = 1 
+			id = bunkerevent.12
+		}
+		hidden_effect = {
+			unlock_national_focus = BNK_top
 			create_country_leader = {
-				name = "Honor Guard Lion"
-				desc = "NA"
-				picture = "gfx/leaders/RED/lion.dds"
+				name = "The Butt Ghost"
+				desc = "BUTTGHOST_LEADER"
+				picture = "gfx/leaders/BNK/buttghost.dds"
 				expire = "1965.1.1"
-				ideology = conservatism
+				ideology = nazism
 				traits = {
+					butt_ghost
+					will_eat_butt
 				}
 			}
 		}
-		
 	}
-	option = { # Echo
-		name = eventsmod.2.b
-		complete_national_focus = RED_echo
-		create_country_leader = {
-			name = "Revolutionary Echo"
-			desc = "NA"
-			picture = "gfx/leaders/RED/APYR.dds"
-			expire = "1965.1.1"
-			ideology = liberalism
-			traits = {
-				triumphant_revolutionary
-			}
+	option = {
+		name = eventsmodedge.3.b
+		trigger = {
+			
 		}
-	}
-	option = { # Forehead
-		name = eventsmod.2.c
-		complete_national_focus = RED_sirforehead
+		ai_chance = { factor = 7 }
 		create_country_leader = {
-			name = "SirFahrrad"
-			desc = "NA"
-			picture = "gfx/leaders/IRE/sirfar.dds"
+			name = "Echoedlightning"
+			desc = "TBD"
+			picture = "gfx/leaders/BNK/echo.dds"
 			expire = "1965.1.1"
 			ideology = conservatism
 			traits = {
-				popular_figurehead2
+				triumphant_revolutionary	
 			}
 		}
+
+		news_event= { days = 1 id = bunkerevent.14 }
+		hidden_effect = {
+			unlock_national_focus = BNK_echo
+		}
 	}
-	option = { # canon
-		name = eventsmod.2.e
-		complete_national_focus = RED_canon
+
+	option = {
+		name = eventsmodedge.3.c
+
+		trigger = {
+		}
+
+		ai_chance = { factor = 3 }
+
 		create_country_leader = {
-			name = "CanonOverseer"
-			desc = "NA"
-			picture = "gfx/leaders/RED/canon.dds"
+			name = "Lionfire47"
+			desc = lion1_desc
+			picture = "gfx/leaders/BNK/lionfire.dds"
 			expire = "1965.1.1"
 			ideology = conservatism
 			traits = {
-				fascist_sympathies
-			}
-		}
-	}
-}
-
-country_event = { # Imperator Canon
-	id = eventsmod.3
-        title = eventsmod.3.t 
-        desc = eventsmod.3.d
-		picture = GFX_report_event_albanian_king_zog
-
-	is_triggered_only = yes 
-	
-	hidden = no 
-
-	fire_only_once = yes
-
-	
-	option = { # Shit
-		name = eventsmod.3.a 
-		set_politics = {
-		    ruling_party = neutrality
-		}
-		set_party_name = {
-		    ideology = neutrality
-			long_name = neutrality_canon_long
-			name = neutrality_canon
-		}
-		create_country_leader = {
-			name = "Canon I"
-			desc = "NA"
-			picture = "gfx/leaders/BNK/Canon_FRA.dds"
-			expire = "1965.1.1"
-			ideology = despotism
-			traits = {
-				australian_imperialist
+				hedonist
 				great_war_hero
+				the_gentleman_president
 			}
+		}
+
+		set_country_flag = bnk_is_lion
+		news_event= { days = 1 id = bunkerevent.17 }
+
+		hidden_effect = {
+			unlock_national_focus = BNK_lion
+		}
+	}
+
+	option = {
+		name = eventsmodedge.3.e
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		add_ideas = Canon_bunker_in_flames 
+		add_ideas = Canon_steel_eagles_army_influences 
+		add_ideas = Canon_socialist_militias 
+		add_ideas = Canon_low_military_control 
+
+		set_country_flag = is_canon
+
+		hidden_effect = {
+			add_ideas = Canon_military_confusion 
+			unlock_national_focus = BNK_bunker_in_flames
 		}
 	}
 }
+#the Bunker Civil War News Event
+news_event = {
+	id = eventsmodedge.6
+	title = eventsmodedge.6.t
+	desc = eventsmodedge.6.d
+
+	picture = the_bunker_civil_war-641
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = eventsmodedge.6.a
+		trigger = {
+			original_tag = BNK
+		}
+		ai_chance = { factor = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = eventsmodedge.6.b
+		trigger = {
+			NOT = { original_tag = BNK }
+			NOT = { tag = BEL }
+		}
+		ai_chance = { factor = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = eventsmodedge.6.c
+		trigger = {
+			tag = BEL
+		}
+		ai_chance = { factor = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
 
 news_event = {
 	id = eventsmod.39
@@ -1966,6 +2064,22 @@ news_event = { # ethiopia peace
 
 	immediate = {
 	hidden_effect = {
+
+		ETH = {
+			add_ai_strategy = {
+				type = alliance
+				id = VTC
+				value = 75
+			}
+		}
+
+		VTC = {
+			add_ai_strategy = {
+				type = alliance
+				id = ETH
+				value = 75
+			}
+		}
 	}
 	}
 

@@ -27,13 +27,15 @@ set_technology = {
 	fuel_refining = 1
 }
 
+set_research_slots = 3
+
 set_convoys = 20
 oob = "EGY_1936"
 set_cosmetic_tag = EGY_pepe
 
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = monarchist
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -42,7 +44,8 @@ set_popularities = {
 	democratic = 5
 	fascism = 10
 	communism = 10
-	neutrality = 75
+	neutrality = 15
+	monarchist = 60
 }
 
 create_country_leader = {
@@ -50,7 +53,18 @@ create_country_leader = {
 	desc = "TBD"
 	picture = "gfx/leaders/BNK/pepe.dds"
 	expire = "1953.3.1"
-	ideology = monarchism
+	ideology = absolute_monarchism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Pepe le Baguette"
+	desc = "TBD"
+	picture = "gfx/leaders/BNK/pepe.dds"
+	expire = "1953.3.1"
+	ideology = despotism
 	traits = {
 		
 	}
@@ -79,7 +93,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Anti-Pepe Council
+	name = "Anti-Pepe Council"
 	desc = "TBD"
 	picture = "gfx/leaders/BNK/nopepe.dds"
 	expire = "1953.3.1"

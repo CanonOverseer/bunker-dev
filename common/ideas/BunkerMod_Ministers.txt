@@ -1,0 +1,371 @@
+ideas = {
+
+	head_of_government = {
+
+		HOG_parliament = {
+			name = HOG_Parlia_Name
+
+			picture = cracky2
+
+			allowed = {
+				has_government = democratic
+			}
+			
+			available = { 
+				
+			}
+			
+			allowed_to_remove = {
+				always = no
+			}
+
+			traits = {  }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		
+	}
+
+	political_advisor = {
+
+		BNK_pm_cracky = {
+
+			picture = cracky2
+
+			allowed = {
+				has_country_flag = pm_cracky
+				TAG = BNK
+			}
+			
+			available = { 
+				has_country_flag = pm_cracky
+			}
+			
+			removal_cost = -1
+
+			traits = { BNK_prime_minister BNK_prince_of_terror BNK_crackhead }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BNK_pm_echo = {
+
+			picture = echo2
+
+			allowed = {
+				has_country_flag = pm_echo
+				TAG = BNK
+			}
+			
+			available = { 
+				has_country_flag = pm_echo
+			}
+			
+			removal_cost = -1
+
+			traits = { BNK_prime_minister BNK_republic_loyalist nationalist_symbol }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BNK_pm_top = {
+
+			picture = top
+
+			allowed = {
+				has_country_flag = pm_top
+				TAG = BNK
+			}
+			
+			available = { 
+				has_country_flag = pm_top
+			}
+			
+			removal_cost = -1
+
+			traits = { BNK_prime_minister BNK_top_trait BNK_untrustworthy BNK_sexy }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BNK_chancellor_top = {
+
+			picture = top
+
+			allowed = {
+				has_country_flag = imperial_chancellor_top
+				TAG = BNK
+			}
+			
+			available = { 
+				has_country_flag = imperial_chancellor_top
+			}
+			
+			removal_cost = -1
+
+			traits = { BNK_imperial_chancellor BNK_jewish }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BNK_pm_lion = {
+
+			picture = lion2
+
+			allowed = {
+				has_country_flag = pm_lion
+				TAG = BNK
+			}
+			
+			available = { 
+				has_country_flag = pm_lion
+			}
+			
+			removal_cost = -1
+
+			traits = { BNK_prime_minister BNK_newsman }
+
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BNK_good_d_minister = {
+
+			picture = comrade_d
+
+			allowed = {
+			   original_tag = BNK
+			}
+			
+			available = { 
+				NOT = { 
+					OR = {
+						has_government = fascism 
+						has_government = neutrality
+					}
+				}
+			}
+			
+			traits = { communist_revolutionary armaments_organizer }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BNK_echo = {
+
+			picture = echo
+
+			allowed = {
+				OR = {
+				    original_tag = BNK
+				    original_tag = BLU
+				}
+			}
+			
+			available = { 
+			    OR = {
+				    original_tag = BNK 
+					original_tag = BLU
+				}
+			}
+			
+			traits = { democratic_reformer silent_workhorse }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BNK_canon = {
+
+			picture = canon
+				
+			allowed = {
+				OR = {
+				    original_tag = BNK
+				    original_tag = BLU
+				}
+			}
+			
+			available = {
+			    OR = {
+					has_government = democratic
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+			
+			traits = { armaments_organizer }
+		}
+
+		BNK_lion = {
+
+			picture = lion
+			
+			allowed = {
+				OR = {
+				    original_tag = BNK
+				    original_tag = BLU
+				}
+			}
+			
+			available = {
+			    OR = {
+					has_government = democratic
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+			
+			traits = { popular_figurehead captain_of_industry }
+		}
+		
+		BNK_kermit = {
+
+			picture = kermit
+			
+			allowed = {
+				OR = {
+				    original_tag = BNK
+				    original_tag = BLU
+				}
+			}
+			
+			available = {
+			    OR = {
+					has_government = democratic
+					has_government = fascism
+					has_government = neutrality
+				    has_government = communism
+				}
+			}
+			
+			traits = { prince_of_terror }
+		}
+	}
+
+	army_chief = {
+
+		BNK_pootisheavy = {
+
+			picture = pootisheavy
+			
+			allowed = {
+				original_tag = BNK
+			}
+			
+			available = {
+			}
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BNK_canon_armychief = {
+
+			picture = canon_military
+			
+			allowed = {
+				original_tag = BNK
+			}
+			
+			available = {
+			}
+			
+			traits = { army_chief_old_guard army_chief_organizational_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+
+	}
+
+	air_chief = {
+
+		BNK_air_logan = {
+			
+			picture = logan
+			
+			allowed = {
+				OR = {
+				    original_tag = BNK
+				    original_tag = CAT
+				}
+			}
+			
+			traits = { war_criminal_bomber }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+	}
+
+	high_command = {
+
+		BNK_kermit2 = {
+			
+			picture = kermit
+			
+			allowed = {
+				OR = {
+				    original_tag = BNK
+				    original_tag = BLU
+				}
+			}
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		BNK_fahmi_said = {
+
+			picture = generic_air_arab_3
+			
+			allowed = {
+				OR = {
+				    original_tag = BNK
+				    original_tag = BLU
+				}
+			}
+			
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+
+	}
+}

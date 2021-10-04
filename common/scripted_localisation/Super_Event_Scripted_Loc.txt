@@ -1,0 +1,105 @@
+defined_text = {
+    name = get_super_event_title
+	
+    text = {
+        trigger = {
+            has_global_flag = Super_Allah
+        }
+        localization_key = "sp_event_Canon_Allah"
+    }
+	
+    text = {
+        trigger = {
+            has_global_flag = Super_Petoria
+			NOT = { has_global_flag = Super_Petoria_surrender }
+        }
+        localization_key = "sp_event_Canon_Petoria"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Super_Petoria
+			has_global_flag = Super_Petoria_surrender
+        }
+        localization_key = "sp_event_Canon_Petoria_S"
+    }
+	
+    text = {
+        trigger = {
+            has_global_flag = Super_Buttghost
+        }
+        localization_key = "sp_event_Canon_Buttghost"
+    }
+}
+
+
+#Remarks
+defined_text = {
+    name = get_super_event_remark
+    
+    text = { 
+        trigger = {
+            has_global_flag = Super_Allah
+        }
+        localization_key = "sp_event_Canon_Allah_REMARK"
+    }
+	
+    text = {
+        trigger = {
+            has_global_flag = Super_Petoria
+			has_global_flag = Super_Petoria_surrender
+        }
+        localization_key = "sp_event_Canon_Petoria_S_REMARK"
+    }
+	
+    text = { 
+        trigger = {
+            has_global_flag = Super_Petoria
+			NOT = { has_global_flag = Super_Petoria_surrender }
+        }
+        localization_key = "sp_event_Canon_Petoria_REMARK"
+    }
+	
+    text = { 
+        trigger = {
+            has_global_flag = Super_Buttghost
+        }
+        localization_key = "sp_event_Canon_Buttghost_REMARK"
+    }
+	
+}
+
+#Quotes
+defined_text = {
+    name = get_super_event_quote
+    
+    text = {
+        trigger = {
+            has_global_flag = Super_Allah
+        }
+        localization_key = "sp_event_Canon_Allah_QUOTE"
+    }
+	
+    text = {
+        trigger = {
+            has_global_flag = Super_Petoria
+			has_global_flag = Super_Petoria_surrender
+        }
+        localization_key = "sp_event_Canon_Petoria_S_QUOTE"
+    }
+	
+    text = {
+        trigger = {
+            has_global_flag = Super_Petoria
+			NOT = { has_global_flag = Super_Petoria_surrender }
+        }
+        localization_key = "sp_event_Canon_Petoria_QUOTE"
+    }
+	
+    text = {
+        trigger = {
+            has_global_flag = Super_Buttghost
+        }
+        localization_key = "sp_event_Canon_Buttghost_QUOTE"
+    }
+}

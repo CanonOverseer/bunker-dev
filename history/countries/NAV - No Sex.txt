@@ -18,6 +18,7 @@ set_technology = {
 }
 
 set_convoys = 20
+set_research_slots = 3 
 
 1939.1.1 = {
 	#generic focuses
@@ -57,12 +58,18 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	democratic = 50
 	fascism = 3
-	communism = 47
+	communism = 30
+	monarchist = 19
+}
+add_ideas = {
+	partial_economic_mobilisation
+	extensive_conscription
+	limited_exports
 }
 
 create_country_leader = {
@@ -70,6 +77,7 @@ create_country_leader = {
 	picture = "gfx//leaders//NAV//fred.dds"
 	expire = "1965.1.1"
 	traits = {
+		NAV_virgin_with_rage 
 	}
 	ideology = conservatism
 }
@@ -79,9 +87,19 @@ create_country_leader = {
 	picture = "gfx//leaders//NAV//fredss.dds"
 	expire = "1965.1.1"
 	traits = {
-		dictator
+		NAV_virgin_with_rage 
 	}
 	ideology = nazism
+}
+
+create_country_leader = {
+	name = "King Fred I"
+	picture = "gfx//leaders//NAV//fred.dds"
+	expire = "1965.1.1"
+	traits = {
+		NAV_virgin_with_rage 
+	}
+	ideology = absolute_monarchism
 }
 
 create_field_marshal = {

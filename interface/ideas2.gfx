@@ -194,6 +194,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_versaillies_treaty"
+		textureFile = "gfx/interface/ideas/GER_treat_of_versaillies_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GER_political_turmoil_1"
+		textureFile = "gfx/interface/ideas/GER_political_turmoil.dds"
+	}
+
+	spriteType = {
 		name = "GFX_news_event_american_unification_fdr"
 		textureFile = "gfx/event_pictures/news_american_unification_fdr.dds"
 	}
@@ -217,6 +227,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_pm"
 		textureFile = "gfx/event_pictures/report_event_pm.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_un_apcs"
+		textureFile = "gfx/event_pictures/UNmarches.dds"
 	}
 
 
@@ -264,10 +279,22 @@ spriteTypes = {
 
 
 
+	# bunker mod stuff
 
+	spriteType = {
+		name = "GFX_idea_slot_head_of_government"
+		textureFile = "gfx/interface/idea_slot_headofgov.dds"
+	}
 
+	spriteType = {
+		name = "GFX_idea_slot_religious_law"
+		textureFile = "gfx/interface/idea_slot_religious_law.dds"
+	}
 
-
+	spriteType = {
+		name = "GFX_idea_slot_international_laws"
+		textureFile = "gfx/interface/idea_slot_international.dds"
+	}
 
 
 
@@ -290,8 +317,20 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_ideology_monarchism"
+		name = "GFX_ideology_RED_neutrality_group"
+		textureFile = "gfx/interface/ideologies/red_fascism.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ideology_monarchist_group"
 		textureFile = "gfx/interface/ideologies/Monarchism.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ideology_constitutional_monarchy"
+		textureFile = "gfx/interface/ideologies/constitutional_monarchy.dds"
 		legacy_lazy_load = no
 	}
 

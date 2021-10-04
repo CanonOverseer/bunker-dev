@@ -33,7 +33,7 @@ create_country_leader = {
 	picture = "church_of_e-77569.dds"
 	expire = "1965.1.1"
 	ideology = theocracy
-	traits = {  }
+	traits = { likes_the_bunker }
 }
 
 #Create military leader - Brother Hao, Defender of E

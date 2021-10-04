@@ -36,7 +36,7 @@ leader_traits = {
 
 	ethiopian_war_trauma = {
 		random = no
-		ai_focus_aggressive_factor = -0.1
+		ai_focus_aggressive_factor = -0.5
 		
 		ai_will_do = {
 			factor = 1
@@ -292,6 +292,88 @@ leader_traits = {
 			generate_wargoal_tension_against = 0.75
 		}
 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	GER_weak_government = {
+		random = no
+		stability_factor = -0.05
+		political_power_gain = -0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	BNK_ineffective_council = {
+		random = no
+		sprite = 13
+		stability_factor = -0.05
+		political_power_gain = -0.2
+		
+	}
+
+	BNK_civil_war_hero = {
+		war_support_factor = 0.1
+		stability_factor = 0.05
+		army_core_attack_factor = 0.05
+		army_core_defence_factor = 0.1
+	}
+
+	BNK_caesar = {
+		war_support_factor = 0.05
+		stability_factor = 0.1
+		army_core_attack_factor = 0.05
+		army_core_defence_factor = 0.1
+		monarchist_drift = 0.05
+	}
+
+	BNK_cincinnatus = {
+		war_support_factor = 0.1
+		stability_factor = 0.05
+		army_core_attack_factor = 0.05
+		army_core_defence_factor = 0.1
+		democratic_drift = 0.05
+	}
+
+	dislikes_the_un = {
+		random = no
+		ai_strategy = {
+			type = antagonize
+			id = "BEL"			
+			value = 100
+		}
+			
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	likes_the_bunker = {
+		random = no
+		ai_strategy = {
+			type = befriend
+			id = "BNK"			
+			value = 50
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	NAV_virgin_with_rage = {
+		random = no
+		monthly_population = -0.5
+		custom_modifier_tooltip = NAV_virgin_tt
+		ai_strategy = {
+			type = antagonize
+			id = "CAT"			
+			value = 200
+		}
+			
 		ai_will_do = {
 			factor = 1
 		}
