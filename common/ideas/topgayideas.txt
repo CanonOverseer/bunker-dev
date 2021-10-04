@@ -326,6 +326,22 @@ ideas = {
 			}
 		}
 		
+		RED_blue_cont = {
+			picture = cont
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.05
+			}
+		}
+		
+		RED_pay_back = {
+			picture = back
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
 		
 		
 	}

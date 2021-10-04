@@ -143,4 +143,42 @@ add_namespace = topgay
 			trigger = { TAG = RED }
 		}	
 	}
+	
+	##Event: Blue Coup
+	country_event = {
+		id = topgay.5
+		title = topgay.5.title
+		desc = topgay.5.desc
+		picture = GFX_report_event_bluecoup
+		is_triggered_only = yes
+		fire_only_once = yes
+		option = {
+			name = topgay.5.a
+			ai_chance = { factor = 1}
+				create_country_leader = {
+					name = "Nicolas Sault"
+					desc = nic_desc
+					picture = "gfx/leaders/RED/nic.dds"
+					expire = "1965.1.1"
+					ideology = liberalism 
+					traits = {
+						blue
+						popular_figurehead	
+					}
+					
+				}
+				
+				add_popularity = { 
+				ideology = democratic
+				popularity = 0.4
+						}	
+						
+				set_politics = {
+				ruling_party = democratic
+				elections_allowed = no 
+						}
+
+			set_cosmetic_tag = RED_blue
+
+	}
 

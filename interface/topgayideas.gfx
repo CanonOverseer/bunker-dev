@@ -179,5 +179,15 @@ spriteTypes = {
 		name = "GFX_idea_blueanimal"
 		texturefile = "gfx/interface/ideas/SEX/bluesuck.png"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_cont"
+		texturefile = "gfx/interface/ideas/SEX/together.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_back"
+		texturefile = "gfx/interface/ideas/SEX/act.png"
+	}
 
 }

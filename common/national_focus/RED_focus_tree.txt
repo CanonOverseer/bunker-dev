@@ -20,8 +20,7 @@ focus_tree = {
 		}
 		mutually_exclusive = { focus = RED_a_separate_path  }
 		completion_reward = {
-			add_political_power = 150
-
+			add_political_power = 150
 			
 		}
 	}
@@ -38,8 +37,7 @@ focus_tree = {
 		}
 		mutually_exclusive = { focus = RED_built_by_the_strong  }
 		completion_reward = {
-			add_political_power = 150
-
+			add_political_power = 150
 			
 		}
 	}
@@ -56,14 +54,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = RED_a_separate_path  }
 		completion_reward = {
-			add_popularity = { 
-
-			ideology = democratic
-
-			popularity = 0.3
-
-			}
-
+			add_popularity = { 
+			ideology = democratic
+			popularity = 0.3
+			}
 			
 		}
 	}
@@ -96,12 +90,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = RED_expanding_the_political_freedoms  }
 		completion_reward = {
-			remove_ideas = RED_slave_labour
-
-			
-
-			add_stability = 0.1
-
+			remove_ideas = RED_slave_labour
+			
+			add_stability = 0.1
 			
 		}
 	}
@@ -118,8 +109,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = RED_expanding_the_political_freedoms  }
 		completion_reward = {
-			add_ideas = RED_minor_rep
-
+			add_ideas = RED_minor_rep
 			
 		}
 	}
@@ -136,18 +126,12 @@ focus_tree = {
 		}
 		prerequisite = { focus = RED_abolishing_slavery  } prerequisite = { focus = RED_minor_representation  }
 		completion_reward = {
-			
-
-			
-
-			swap_ideas = {
-
-			 remove_idea = RED_minor_rep 
-
-			add_idea = RED_equal_rights 
-
-			}
-
+			
+			
+			swap_ideas = {
+			 remove_idea = RED_minor_rep 
+			add_idea = RED_equal_rights 
+			}
 			
 		}
 	}
@@ -164,10 +148,8 @@ focus_tree = {
 		}
 		prerequisite = { focus = RED_equal_rights_to_the_blues  }
 		completion_reward = {
-			add_political_power = 150
-
-			add_stability = 0.05
-
+			add_political_power = 150
+			add_stability = 0.05
 			
 		}
 	}
@@ -185,8 +167,7 @@ focus_tree = {
 		prerequisite = { focus = RED_expanding_the_red_council  }
 		mutually_exclusive = { focus = RED_remove_the_wealthy_class_of_blues  }
 		completion_reward = {
-			add_stability = 0.1
-
+			add_stability = 0.1
 			
 		}
 	}
@@ -204,8 +185,7 @@ focus_tree = {
 		prerequisite = { focus = RED_expanding_the_red_council  }
 		mutually_exclusive = { focus = RED_autonomy_for_the_blues  }
 		completion_reward = {
-			add_political_power = -100
-
+			add_political_power = -100
 			add_stability = -0.05
 		}
 	}
@@ -222,20 +202,13 @@ focus_tree = {
 		}
 		prerequisite = { focus = RED_remove_the_wealthy_class_of_blues  }
 		completion_reward = {
-			18 = {
-
-			    add_extra_state_shared_building_slots = 1
-
-			    add_building_construction = {
-
-			        type = industrial_complex
-
-			        level = 1
-
-			        instant_build = yes
-
-			   }
-
+			18 = {
+			    add_extra_state_shared_building_slots = 1
+			    add_building_construction = {
+			        type = industrial_complex
+			        level = 1
+			        instant_build = yes
+			   }
 			}
 		}
 	}
@@ -268,14 +241,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = RED_seize_blue_assets  }
 		completion_reward = {
-			add_timed_idea = { 
-
-			idea = RED_blue_sup
-
-			days = 70
-
-			}
-
+			add_timed_idea = { 
+			idea = RED_blue_sup
+			days = 70
+			}
 			
 		}
 	}
@@ -292,8 +261,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = RED_emancipate_the_blues  }
 		completion_reward = {
-			add_ideas = RED_equal_rights
-
+			add_ideas = RED_equal_rights
 			
 		}
 	}
@@ -310,14 +278,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = RED_dehumanize_the_blues  focus = RED_citizenship_for_the_blues  }
 		completion_reward = {
-			
-
-			remove_ideas = RED_stubborn_reds
-
-			
-
-			leave_faction = RED
-
+			
+			remove_ideas = RED_stubborn_reds
+			
+			leave_faction = RED
 			
 		}
 	}
@@ -334,14 +298,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = RED_citizenship_for_the_blues  } prerequisite = { focus = RED_leave_the_un  }
 		completion_reward = {
-			country_event = {
-
-			days = 1 
-
-			id = topgay.2
-
-			}
-
+			country_event = {
+			days = 1 
+			id = topgay.2
+			}
 			
 		}
 	}
@@ -358,12 +318,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = RED_dehumanize_the_blues  } prerequisite = { focus = RED_leave_the_un  }
 		completion_reward = {
-			country_event = {
-
-			days = 1 
-
-			id = topgay.3
-
+			country_event = {
+			days = 1 
+			id = topgay.3
 			}
 		}
 	}
@@ -380,25 +337,17 @@ focus_tree = {
 		}
 		prerequisite = { focus = RED_the_reds_rise_up  focus = RED_the_blues_rise_up  }
 		available = {
-			has_war = no
-
+			has_war = no
 			
 		}
 		completion_reward = {
-			17 = {
-
-			    add_extra_state_shared_building_slots = 2
-
-			    add_building_construction = {
-
-			        type = industrial_complex
-
-			        level = 2
-
-			        instant_build = yes
-
-			   }
-
+			17 = {
+			    add_extra_state_shared_building_slots = 2
+			    add_building_construction = {
+			        type = industrial_complex
+			        level = 2
+			        instant_build = yes
+			   }
 			}
 		}
 	}
@@ -406,7 +355,7 @@ focus_tree = {
 	#The Old Marshal’s Takeover
 	focus = {
 		id = RED_theoldmarshalstakeover
-		icon = GFX_RED_theoldmarshalstakeover-445
+		icon = GFX_RED_theoldmarshalstakeover-81014
 		x = 12
 		y = 8
 		cost = 2
@@ -415,44 +364,25 @@ focus_tree = {
 		}
 		prerequisite = { focus = RED_the_blues_rise_up  } prerequisite = { focus = RED_end_political_turmoil  }
 		completion_reward = {
-			create_country_leader = {
-
-				name = "Philippe Pétain"
-
-				desc = "TBD"
-
-				picture = "gfx/leaders/RED/pet.dds"
-
-				expire = "1965.1.1"
-
-				ideology = red_fascism
-
-				traits = {
-
-					great_war_hero	
-
-				}
-
-			}
-
-			add_popularity = { 
-
-			ideology = fascism 
-
-			popularity = 0.4
-
-			}
-
-			 
-
-			set_politics = {
-
-			 ruling_party = fascism 
-
-			elections_allowed = no 
-
-			}
-
+			create_country_leader = {
+				name = "Philippe Pétain"
+				desc = "TBD"
+				picture = "gfx/leaders/RED/pet.dds"
+				expire = "1965.1.1"
+				ideology = red_fascism
+				traits = {
+					great_war_hero	
+				}
+			}
+			add_popularity = { 
+			ideology = fascism 
+			popularity = 0.4
+			}
+			 
+			set_politics = {
+			 ruling_party = fascism 
+			elections_allowed = no 
+			}
 			
 		}
 	}
@@ -460,7 +390,7 @@ focus_tree = {
 	#The Blue Coup
 	focus = {
 		id = RED_the_blue_coup
-		icon = GFX_RED_the_blue_coup-445
+		icon = GFX_RED_the_blue_coup-81015
 		x = 8
 		y = 8
 		cost = 2
@@ -469,49 +399,26 @@ focus_tree = {
 		}
 		prerequisite = { focus = RED_the_reds_rise_up  } prerequisite = { focus = RED_end_political_turmoil  }
 		completion_reward = {
-						create_country_leader = {
-
-							name = "Blue Council"
-
-							desc = TBD
-
-							picture = "gfx/leaders/RED/bluebuilding.dds"
-
-							expire = "1965.1.1"
-
-							ideology = liberalism 
-
-							traits = {
-
-								blue
-
-								divided_interests
-
-									}
-
-							}
-
-			add_popularity = { 
-
-			ideology = democratic
-
-			popularity = 0.4
-
+			country_event = {
+			days = 1 
+			id = topgay.5
 			}
+		}
+	}
 
-			set_politics = {
-
-			 ruling_party = democratic
-
-			elections_allowed = no 
-
-			}
-
-			
-
-			set_cosmetic_tag = RED_blue
-
-			
+	#Drafting The Blue Constitution
+	focus = {
+		id = RED_drafting_the_blue_constitution
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 8
+		y = 10
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RED_the_blue_coup  }
+		completion_reward = {
+			custom_effect_tooltip = red_cont_tt
 		}
 	}
 
