@@ -28,9 +28,11 @@ idea_categories = {
 		slot = trade_laws
 		slot = economy
 		
-		slot = head_of_government
-		slot = religious_law
-		slot = international_laws
+		slot = political_advisor
+		slot = political_advisor
+		slot = political_advisor
+		#slot = religious_law
+		#slot = international_laws
 		
 		ledger = civilian
 		
@@ -66,16 +68,14 @@ idea_categories = {
 		removal_cost = 0
 	}
 
-	government_ministers = {
-		slot = political_advisor
-		slot = political_advisor
-		slot = political_advisor
-		
-		ledger = civilian
-		
-		cost = 150
-		removal_cost = 0
-	}
+	#government_ministers = {
+	#	slot = head_of_government
+	#	
+	#	ledger = civilian
+	#	
+	#	cost = 150
+	#	removal_cost = 0
+	#}
 }
 
 

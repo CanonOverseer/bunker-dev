@@ -5,293 +5,37 @@ ideas = {
 		
 	}
 
-	international_laws = {
-		law = yes
-		use_list_view = yes
-
-		int_law_UN = {
-			cost = 150
-			removal_cost = -1
-
-			available ={
-				UN_Member_Trigger = yes
-			}
-			
-			visible = {
-				always = yes
-			}
-
-			allowed = {
-
-			}
-
-			modifier = {
-
-			}
-
-			allowed_to_remove = {
-				UN_Member_Trigger = no
-			}
-			
-			cancel_if_invalid = no
-		}
-	}
-
-	religious_law = {
-		law = yes
-		use_list_view = yes
-
-		rel_law_secular = {
-			cost = 50
-			removal_cost = 200
-
-			picture = GFX_idea_freedom
-			
-			available = {
-				always = yes
-			}
-
-			modifier = {
-
-			}
-
-			allowed_to_remove = {
-				NOT = { has_country_flag = secular_constitution }
-			}
-			
-			default = no
-			
-			cancel_if_invalid = yes
-		}
-
-		rel_law_state_atheism = {
-			cost = 50
-			removal_cost = 300
-
-			picture = GFX_idea_atheism
-
-			modifier = {
-
-			}
-
-			available ={
-				OR = {
-					has_government = communism
-					AND = {
-						has_government = fascism
-						NOT = {
-							original_tag = ITA
-							original_tag = SPR
-							original_tag = JAP
-							original_tag = FRA
-							original_tag = ENG
-						}
-					}
-					tag = BEL
-					is_puppet_of = BEL
-				}
-				
-			}	
-
-			visible = {
-
-			}
-
-			allowed_to_remove = {
-
-			}
-
-			allowed = {
-
-			}
-
-			cancel_if_invalid = no
-		}
-
-		rel_law_catholic_theocracy = {
-			cost = -1
-			removal_cost = -1
-
-			picture = GFX_idea_catholictheocracy
-
-			modifier = {
-
-			}
-
-			available ={
-				OR = {
-					has_country_flag = is_catholic_theocracy
-					has_global_flag = testing_flag
-				}
-			}	
-
-			visible = {
-				OR = {
-					has_country_flag = is_catholic_theocracy
-					has_global_flag = testing_flag
-				}
-			}
-
-			allowed_to_remove = {
-				OR = {
-					has_government = democratic
-					has_government = monarchist
-					has_government = communism
-				}
-				NOT = { original_tag = VTC }
-			}
-
-			allowed = {
-
-			}
-
-			cancel_if_invalid = yes
-		}
-
-		rel_law_islam = {
-			cost = 50
-			removal_cost = 300
-
-			picture = GFX_idea_islam
-
-			modifier = {
-
-			}
-
-			available ={
-				OR = {
-					has_country_flag = islamic_nation
-					NOT = {
-						AND = {
-							has_government = democratic
-							has_idea = rel_law_secular
-						}
-					}
-				}
-			}	
-
-			visible = {
-
-			}
-
-			allowed_to_remove = {
-				OR = {
-					has_government = democratic
-					has_government = communism
-				}
-			}
-
-			allowed = {
-
-			}
-
-			cancel_if_invalid = no
-		}
-
-		rel_law_shintoism = {
-			cost = 50
-			removal_cost = 300
-
-			picture = GFX_idea_shinto
-
-			modifier = {
-
-			}
-
-			available ={
-				OR = {
-					is_puppet_of = JAP
-					original_tag = JAP
-				}
-				OR = {
-					has_government = democratic
-					has_government = neutrality
-					has_government = fascism
-				}
-			}	
-
-			visible = {
-
-			}
-
-			allowed_to_remove = {
-				OR = {
-					has_government = democratic
-					has_government = communism
-				}
-			}
-
-			allowed = {
-
-			}
-
-			cancel_if_invalid = no
-		}
-
-		rel_law_orthodoxy = {
-			cost = 50
-			removal_cost = 300
-
-			picture = GFX_idea_orthodxy
-
-			modifier = {
-
-			}
-
-			available ={
-				is_orthodox_nation = yes
-				NOT = { has_government = communism }
-			}	
-
-			visible = {
-
-			}
-
-			allowed_to_remove = {
-				has_government = communism
-			}
-
-			allowed = {
-
-			}
-
-			cancel_if_invalid = yes
-		}
-
-		rel_law_catholic = {
-			cost = 50
-			removal_cost = 300
-
-			picture = GFX_idea_catholicism
-
-			modifier = {
-
-			}
-
-			available ={
-				is_catholic_nation = yes
-				NOT = { has_government = communism }
-			}	
-
-			visible = {
-
-			}
-
-			allowed_to_remove = {
-				OR = {
-					has_government = democratic
-					has_government = communism
-				}
-			}
-
-			allowed = {
-
-			}
-
-			cancel_if_invalid = yes
-		}
-
-	}
+	#international_laws = {
+	#	law = yes
+	#	use_list_view = yes
+#
+#		int_law_UN = {
+#			cost = 150
+#			removal_cost = -1
+#
+#			available ={
+#				UN_Member_Trigger = yes
+#			}
+#			
+#			visible = {
+#				always = yes
+#			}
+#
+#			allowed = {
+#
+#			}
+#
+#			modifier = {
+#
+#			}
+#
+#			allowed_to_remove = {
+#				UN_Member_Trigger = no
+#			}
+#			
+#			cancel_if_invalid = no
+#		}
+#	}
 
 	country = {
 		

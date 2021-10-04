@@ -3,41 +3,46 @@ spriteTypes = {
 	# Religions
 
 	spriteType = {
-		name = "GFX_idea_catholicism"
+		name = "GFX_idea_rel_law_catholic"
 		textureFile = "gfx/interface/ideas/Religion_Catholicism.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_orthodoxy"
+		name = "GFX_idea_rel_law_orthodoxy"
 		textureFile = "gfx/interface/ideas/Religion_Orthodoxy.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_catholictheocracy"
+		name = "GFX_idea_rel_law_catholic_theocracy"
 		textureFile = "gfx/interface/ideas/Religion_Catholic_Theocracy.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_shinto"
+		name = "GFX_idea_rel_law_shintoism"
 		textureFile = "gfx/interface/ideas/Religion_Shintoist.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_islam"
+		name = "GFX_idea_rel_law_islam"
 		textureFile = "gfx/interface/ideas/Religion_Islam.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_freedom"
+		name = "GFX_idea_rel_law_judaism"
+		textureFile = "gfx/interface/ideas/Religion_Judaism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_rel_law_secular"
 		textureFile = "gfx/interface/ideas/Religion_Freedom.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_atheism"
+		name = "GFX_idea_rel_law_state_atheism"
 		textureFile = "gfx/interface/ideas/Religion_Atheism.dds"
 	}
 
-
+	
 	# Other Stuff
 	spriteType = {
 		name = "GFX_idea_canon_military"

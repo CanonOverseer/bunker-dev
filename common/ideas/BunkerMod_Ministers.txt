@@ -1,33 +1,33 @@
 ideas = {
 
-	head_of_government = {
-
-		HOG_parliament = {
-			name = HOG_Parlia_Name
-
-			picture = cracky2
-
-			allowed = {
-				has_government = democratic
-			}
-			
-			available = { 
-				
-			}
-			
-			allowed_to_remove = {
-				always = no
-			}
-
-			traits = {  }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	#head_of_government = {
+		#
+		#HOG_parliament = {
+	#		name = HOG_Parlia_Name
+#
+#			picture = cracky2
+#
+#			allowed = {
+#				has_government = democratic
+#			}
+#			
+#			available = { 
+#				
+#			}
+#			
+#			allowed_to_remove = {
+#				always = no
+#			}
+#
+#			traits = {  }
+#
+#			ai_will_do = {
+#				factor = 1
+#			}
+#		}
 
 		
-	}
+	#}
 
 	political_advisor = {
 

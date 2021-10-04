@@ -8,7 +8,7 @@ state={
 		905 3906 9832 11830 
 	}
 	history={
-		owner = PTR
+		owner = SAY
 		buildings = {
 			infrastructure = 7
 			arms_factory = 2
@@ -24,6 +24,7 @@ state={
 		add_core_of = USA
 		add_core_of = SAY
 		add_core_of = PNA
+		add_claim_by = PTR
 		victory_points = {
 			9832 1 
 		}

@@ -12,6 +12,59 @@ non_generic_head_of_governments = {
 	}
 }
 
+is_christian_nation = {
+	OR = {
+		is_orthodox_nation = yes
+		is_catholic_nation = yes
+	}
+}
+
+is_orthodox_nation = {
+	OR = {
+		original_tag = SOV
+		original_tag = BLR
+		original_tag = UKR
+		original_tag = ROM
+		original_tag = SER
+		original_tag = MAC
+		original_tag = GRE
+		original_tag = GEO
+		original_tag = ARM
+		original_tag = SBR
+		
+	}
+}
+
+is_catholic_nation = {
+	OR = {
+		original_tag = BAY
+		original_tag = AUS
+		original_tag = ITA
+		original_tag = VTC
+		original_tag = FRA
+		original_tag = NRM
+		original_tag = POL
+		original_tag = PNA
+		original_tag = SAY
+		original_tag = SPR
+		original_tag = POR
+		original_tag = IRE
+
+		capital_scope = { is_on_continent = south_america }
+
+		AND = {
+			capital_scope = { is_on_continent = north_america }
+			NOT = { is_american_civil_war_tag = yes }
+			NOT = { tag = CAN }
+		}
+		
+		AND = {
+			original_tag = EGY
+			has_cosmetic_tag = EGY_pepe
+		}
+	}
+}
+
 is_american_civil_war_tag ={
 	OR = {
 		TAG = USA

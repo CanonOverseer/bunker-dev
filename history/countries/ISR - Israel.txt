@@ -173,6 +173,7 @@ set_convoys = 20
 
 add_ideas = {
 	ISR_new_zionism	
+	rel_law_judaism
 }
 
 set_politics = {

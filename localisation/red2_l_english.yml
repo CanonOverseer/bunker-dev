@@ -161,6 +161,7 @@
  rel_law_shintoism:0 "Shintoist Nation"
  rel_law_catholic:0 "Roman Catholicism"
  rel_law_orthodoxy:0 "Eastern Orthodoxy"
+ rel_law_judaism:0 "State Judaism"
  bunker_influence_nations:0 "Subject Influence"
 
  HOG_Parlia_Name:0 "[THIS.GetParliamentName]"

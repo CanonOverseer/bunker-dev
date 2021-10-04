@@ -161,7 +161,8 @@ bookmarks = {
 			history = "ISR_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-			ISR_new_zionism
+				ISR_new_zionism
+				rel_law_judaism
 			}
 			focuses = {
 				ISR_democratic_coalition
