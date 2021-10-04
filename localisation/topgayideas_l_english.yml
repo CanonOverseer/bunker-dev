@@ -65,6 +65,7 @@
  red:0 "Red"
  blue:0 "Blue"
  
+ red_cont_tt:0 "We will begin working on a constitution."
 
  BNK_cory:0 "Cory"
  
@@ -98,4 +99,6 @@
  RED_minor_rep:0 "Minor Representative"
  RED_equal_rights:0 "Blue Rights"
  RED_blue_sup:0 "Blues Dehumanized"
+ RED_blue_cont:0 "The Blue Constitution"
+ RED_pay_back:0 "The Pay Back Act"
  

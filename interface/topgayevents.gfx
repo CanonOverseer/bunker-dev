@@ -14,5 +14,10 @@ spriteTypes = {
 		name = "GFX_news_event_redcivil"
 		texturefile = "gfx/event_pictures/redcivilwar.png"
 	}
+	
+	spriteType = {
+		name = "GFX_report_event_bluecoup"
+		texturefile = "gfx/event_pictures/bluecoup.png"
+	}
  
  }

@@ -570,17 +570,17 @@ spriteTypes = {	##Icon For:
 
 	##Icon For: 
 	SpriteType = { 
-		name = "GFX_RED_theoldmarshalstakeover-445"
-		texturefile = "gfx/interface/goals/GFX_RED_theoldmarshalstakeover-445.dds"
+		name = "GFX_RED_theoldmarshalstakeover-81014"
+		texturefile = "gfx/interface/goals/GFX_RED_theoldmarshalstakeover-81014.dds"
 	}
 
 	##Icon Shine For: 
 	SpriteType = { 
-		name = "GFX_RED_theoldmarshalstakeover-445_shine"
-		texturefile = "gfx/interface/goals/GFX_RED_theoldmarshalstakeover-445.dds"
+		name = "GFX_RED_theoldmarshalstakeover-81014_shine"
+		texturefile = "gfx/interface/goals/GFX_RED_theoldmarshalstakeover-81014.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_RED_theoldmarshalstakeover-445.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_RED_theoldmarshalstakeover-81014.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -592,7 +592,7 @@ spriteTypes = {	##Icon For:
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_RED_theoldmarshalstakeover-445.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_RED_theoldmarshalstakeover-81014.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -608,17 +608,17 @@ spriteTypes = {	##Icon For:
 
 	##Icon For: 
 	SpriteType = { 
-		name = "GFX_RED_the_blue_coup-445"
-		texturefile = "gfx/interface/goals/GFX_RED_the_blue_coup-445.dds"
+		name = "GFX_RED_the_blue_coup-81015"
+		texturefile = "gfx/interface/goals/GFX_RED_the_blue_coup-81015.dds"
 	}
 
 	##Icon Shine For: 
 	SpriteType = { 
-		name = "GFX_RED_the_blue_coup-445_shine"
-		texturefile = "gfx/interface/goals/GFX_RED_the_blue_coup-445.dds"
+		name = "GFX_RED_the_blue_coup-81015_shine"
+		texturefile = "gfx/interface/goals/GFX_RED_the_blue_coup-81015.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_RED_the_blue_coup-445.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_RED_the_blue_coup-81015.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -630,7 +630,7 @@ spriteTypes = {	##Icon For:
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_RED_the_blue_coup-445.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_RED_the_blue_coup-81015.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
