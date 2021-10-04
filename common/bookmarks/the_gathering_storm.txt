@@ -182,17 +182,15 @@ bookmarks = {
 				OMA_anschluss_of_iraq
 			}
 		}
-		"NZL"={
+		"EGY"={
 			minor = yes
-			history = "NZL_GATHERING_STORM_DESC"
-			ideology = democratic
+			history = "EGY_GATHERING_STORM_DESC"
+			ideology = monarchist
 			ideas = {
-				
+				EGY_imperial_decline
 			}
 			focuses = {
-				NZL_bob_semple_tank
-				NZL_independent_new_zealand
-				NZL_maori_volunteers
+
 			}
 		}
 		"SAF"={

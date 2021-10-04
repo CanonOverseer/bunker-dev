@@ -20,6 +20,53 @@ on_actions = {
 			}
 		}
 
+		# Secular Religious Law (Non Constitution)
+		effect = { 
+			every_country = {
+				limit = { 
+					OR = { 
+						tag = OMA
+						tag = TUR
+					}
+				}
+				add_ideas = rel_law_secular
+			}
+		}
+
+		# Athiest Religious Law
+		effect = { 
+			every_country = {
+				limit = { 
+					has_government = communism
+				}
+				add_ideas = rel_law_state_atheism
+			}
+		}
+
+		# Islamic Religious Law
+		effect = { 
+			every_country = {
+				limit = { 
+					OR = {
+						tag = SAU
+						tag = IRQ
+						tag = SYR
+						tag = PER
+						tag = PAK
+						tag = ALB
+						tag = BOS
+						tag = ALG
+						tag = AFG
+						tag = MOR
+						tag = SUD
+						tag = TUN
+						tag = LBY
+					}
+				}
+				add_ideas = rel_law_islam
+			}
+		}
+
 		# Democratic Parliament
 		effect = { 
 			every_country = {

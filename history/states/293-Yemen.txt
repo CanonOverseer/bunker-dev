@@ -4,7 +4,7 @@ state={
 	name="STATE_293"
 	manpower = 2489500
 	
-	state_category = rural
+	state_category = large_town
 	
 	resources={
 		oil=1 # was: 1
@@ -13,9 +13,9 @@ state={
 		owner = OMA
 		add_core_Of = OMA
 		buildings = {
-			infrastructure = 3
+			infrastructure = 5
 			arms_factory = 1
-			industrial_complex = 1
+			industrial_complex = 3
 			10840 = {
 				naval_base = 1
 			}

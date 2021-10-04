@@ -33,6 +33,11 @@ set_convoys = 20
 oob = "EGY_1936"
 set_cosmetic_tag = EGY_pepe
 
+add_ideas = {
+	EGY_imperial_decline
+	rel_law_catholic
+}
+
 
 set_politics = {
 	ruling_party = monarchist
@@ -101,4 +106,28 @@ create_country_leader = {
 	traits = {
 		
 	}
+}
+
+
+
+
+551 = {
+	start_resistance = yes
+	set_compliance = 20
+	set_resistance = 75
+	set_garrison_strength = 0.5
+}
+
+549 = {
+	start_resistance = yes
+	set_compliance = 20
+	set_resistance = 75
+	set_garrison_strength = 0.5
+}
+
+455 = {
+	start_resistance = yes
+	set_compliance = 50
+	set_resistance = 20
+	set_garrison_strength = 1.0
 }

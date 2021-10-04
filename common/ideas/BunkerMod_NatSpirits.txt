@@ -42,8 +42,10 @@ ideas = {
 		use_list_view = yes
 
 		rel_law_secular = {
-			cost = 150
-			removal_cost = 250
+			cost = 50
+			removal_cost = 200
+
+			picture = GFX_idea_freedom
 			
 			available = {
 				always = yes
@@ -62,9 +64,55 @@ ideas = {
 			cancel_if_invalid = yes
 		}
 
+		rel_law_state_atheism = {
+			cost = 50
+			removal_cost = 300
+
+			picture = GFX_idea_atheism
+
+			modifier = {
+
+			}
+
+			available ={
+				OR = {
+					has_government = communism
+					AND = {
+						has_government = fascism
+						NOT = {
+							original_tag = ITA
+							original_tag = SPR
+							original_tag = JAP
+							original_tag = FRA
+							original_tag = ENG
+						}
+					}
+					tag = BEL
+					is_puppet_of = BEL
+				}
+				
+			}	
+
+			visible = {
+
+			}
+
+			allowed_to_remove = {
+
+			}
+
+			allowed = {
+
+			}
+
+			cancel_if_invalid = no
+		}
+
 		rel_law_catholic_theocracy = {
 			cost = -1
 			removal_cost = -1
+
+			picture = GFX_idea_catholictheocracy
 
 			modifier = {
 
@@ -100,9 +148,182 @@ ideas = {
 			cancel_if_invalid = yes
 		}
 
+		rel_law_islam = {
+			cost = 50
+			removal_cost = 300
+
+			picture = GFX_idea_islam
+
+			modifier = {
+
+			}
+
+			available ={
+				OR = {
+					has_country_flag = islamic_nation
+					NOT = {
+						AND = {
+							has_government = democratic
+							has_idea = rel_law_secular
+						}
+					}
+				}
+			}	
+
+			visible = {
+
+			}
+
+			allowed_to_remove = {
+				OR = {
+					has_government = democratic
+					has_government = communism
+				}
+			}
+
+			allowed = {
+
+			}
+
+			cancel_if_invalid = no
+		}
+
+		rel_law_shintoism = {
+			cost = 50
+			removal_cost = 300
+
+			picture = GFX_idea_shinto
+
+			modifier = {
+
+			}
+
+			available ={
+				OR = {
+					is_puppet_of = JAP
+					original_tag = JAP
+				}
+				OR = {
+					has_government = democratic
+					has_government = neutrality
+					has_government = fascism
+				}
+			}	
+
+			visible = {
+
+			}
+
+			allowed_to_remove = {
+				OR = {
+					has_government = democratic
+					has_government = communism
+				}
+			}
+
+			allowed = {
+
+			}
+
+			cancel_if_invalid = no
+		}
+
+		rel_law_orthodoxy = {
+			cost = 50
+			removal_cost = 300
+
+			picture = GFX_idea_orthodxy
+
+			modifier = {
+
+			}
+
+			available ={
+				is_orthodox_nation = yes
+				NOT = { has_government = communism }
+			}	
+
+			visible = {
+
+			}
+
+			allowed_to_remove = {
+				has_government = communism
+			}
+
+			allowed = {
+
+			}
+
+			cancel_if_invalid = yes
+		}
+
+		rel_law_catholic = {
+			cost = 50
+			removal_cost = 300
+
+			picture = GFX_idea_catholicism
+
+			modifier = {
+
+			}
+
+			available ={
+				is_catholic_nation = yes
+				NOT = { has_government = communism }
+			}	
+
+			visible = {
+
+			}
+
+			allowed_to_remove = {
+				OR = {
+					has_government = democratic
+					has_government = communism
+				}
+			}
+
+			allowed = {
+
+			}
+
+			cancel_if_invalid = yes
+		}
+
 	}
 
 	country = {
+		
+		EGY_imperial_decline = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = EGY_imperial_decline
+
+			rule = {
+
+			}
+
+			modifier = {
+				war_support_factor = 0.1
+				stability_factor = -0.1
+				drift_defence_factor = -0.3
+				research_speed_factor = -0.1
+
+				surrender_limit = -0.2
+				fascism_drift = 0.001
+				communism_drift = 0.001
+			}
+		}
 
 		PTR_petorian_supremacy = {
 

@@ -1,5 +1,44 @@
 spriteTypes = {	
 
+	# Religions
+
+	spriteType = {
+		name = "GFX_idea_catholicism"
+		textureFile = "gfx/interface/ideas/Religion_Catholicism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_orthodoxy"
+		textureFile = "gfx/interface/ideas/Religion_Orthodoxy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_catholictheocracy"
+		textureFile = "gfx/interface/ideas/Religion_Catholic_Theocracy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_shinto"
+		textureFile = "gfx/interface/ideas/Religion_Shintoist.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_islam"
+		textureFile = "gfx/interface/ideas/Religion_Islam.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_freedom"
+		textureFile = "gfx/interface/ideas/Religion_Freedom.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_atheism"
+		textureFile = "gfx/interface/ideas/Religion_Atheism.dds"
+	}
+
+
+	# Other Stuff
 	spriteType = {
 		name = "GFX_idea_canon_military"
 		texturefile = "gfx/interface/ideas/idea_canon_military.dds"
@@ -201,6 +240,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_GER_political_turmoil_1"
 		textureFile = "gfx/interface/ideas/GER_political_turmoil.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_EGY_imperial_decline"
+		texturefile = "gfx/interface/ideas/EGY_broken_country.dds"
 	}
 
 	spriteType = {

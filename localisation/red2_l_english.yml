@@ -128,6 +128,8 @@
  PTR_petorian_supremacy:0 "Petorian Supremacy"
  PTR_bad_feeling_tt:0 "§RYou have a feeling you should accept their demands... or else..§!"
  PTR_who_cares_tt:0 "Who cares about some pool anyway?"
+ EGY_imperial_decline:0 "Empire in Decline"
+ EGY_imperial_decline_desc:0 "Ever since the Napoleonic Era the Empire has been in decline, called the Sick Man of the Middle East and we have lost many Territories that we once held at our Height, we even lost the First World war and were forced to give Arabia to an Upstart Nation"
  BNK_civil_war_hero:0 "Civil War Hero"
 
  the_american_civil_war:0 "The American Civil War"
@@ -154,6 +156,11 @@
  UN_Member_Trigger:0 "You are in the UN"
  is_catholic_theocracy:0 "You are a Catholic Theocracy"
  rel_law_catholic_theocracy:0 "Catholic Theocracy"
+ rel_law_islam:0 "Islamic Nation"
+ rel_law_state_atheism:0 "State Atheism"
+ rel_law_shintoism:0 "Shintoist Nation"
+ rel_law_catholic:0 "Roman Catholicism"
+ rel_law_orthodoxy:0 "Eastern Orthodoxy"
  bunker_influence_nations:0 "Subject Influence"
 
  HOG_Parlia_Name:0 "[THIS.GetParliamentName]"
