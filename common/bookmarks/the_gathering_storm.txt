@@ -148,7 +148,7 @@ bookmarks = {
 			history = "TEX_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
-				
+				TEX_remember_the_alamo
 			}
 			focuses = {
 				TEX_a_shining_future
@@ -162,7 +162,6 @@ bookmarks = {
 			ideology = democratic
 			ideas = {
 				ISR_new_zionism
-				rel_law_judaism
 			}
 			focuses = {
 				ISR_democratic_coalition

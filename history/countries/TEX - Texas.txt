@@ -32,6 +32,7 @@ set_technology = {
 add_ideas = {
 	limited_conscription
 	free_trade
+	TEX_remember_the_alamo
 }
 
 #Trade
@@ -51,7 +52,11 @@ set_politics = {
 }
 
 set_popularities={
-	democratic = 100
+	democratic = 50
+	fascism = 30
+	communism = 10
+	monarchist = 5
+	neutrality 5
 }
 
 create_country_leader = {

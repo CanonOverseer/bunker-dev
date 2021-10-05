@@ -248,6 +248,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_TEX_remember_alamo"
+		textureFile = "gfx/interface/ideas/texas_morale.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_EGY_imperial_decline"
 		texturefile = "gfx/interface/ideas/EGY_broken_country.dds"
 	}
@@ -358,6 +363,17 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideologies/papacy.dds"
 		legacy_lazy_load = no
 	}
+
+	spriteType = {
+		name = "GFX_ideology_TEX_democratic_group"
+		textureFile = "gfx/interface/ideologies/TEX_democratic_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_TEX_monarchist_group"
+		textureFile = "gfx/interface/ideologies/TEX_monarchist_group.dds"
+	}
+
 
 	spriteType = {
 		name = "GFX_ideology_EEE_theocracy"

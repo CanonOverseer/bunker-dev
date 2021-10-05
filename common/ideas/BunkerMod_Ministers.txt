@@ -36,12 +36,37 @@ ideas = {
 			picture = cracky2
 
 			allowed = {
-				has_country_flag = pm_cracky
 				TAG = BNK
 			}
 			
 			available = { 
-				has_country_flag = pm_cracky
+				has_country_flag = imperial_pm_enabled
+				TAG = BNK
+			}
+
+			visible = {
+				TAG = BNK
+				has_country_flag = imperial_pm_enabled
+			}
+
+			allowed_to_remove = {
+				if = {
+					limit = { has_completed_focus = BNK_constitutional_monarchy }
+					custom_trigger_tooltip = {
+						tooltip = only_remove_by_event_tt
+					}
+				}
+				else = {
+					NOT = { has_country_flag = PM_Cooldown }
+				}
+
+			}
+
+			on_add = {
+				set_country_flag = {
+					flag = PM_Cooldown
+					days = 180
+				}
 			}
 			
 			removal_cost = -1

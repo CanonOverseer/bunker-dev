@@ -163,6 +163,7 @@
  rel_law_orthodoxy:0 "Eastern Orthodoxy"
  rel_law_judaism:0 "State Judaism"
  bunker_influence_nations:0 "Subject Influence"
+ only_remove_by_event_tt:0 "Can only be removed by Event"
 
  HOG_Parlia_Name:0 "[THIS.GetParliamentName]"
  HOG_un_assembly:0 "UN General Assembly"

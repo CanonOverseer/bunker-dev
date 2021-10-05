@@ -19,7 +19,29 @@ state={
 		add_claim_by = PSA
 		add_core_of = TEX
 		victory_points = {
-			4975 1 
+			4975 3
+		}
+
+		12791 = {
+			bunker = 3
+		}
+		3883 = {
+			bunker = 3
+		}
+		4975 = {
+			bunker = 3
+		}
+		10642 = {
+			bunker = 3
+		}
+		12627 = {
+			bunker = 3
+		}
+		12624 = {
+			bunker = 2
+		}
+		1738= {
+			bunker = 3
 		}
 
 	}

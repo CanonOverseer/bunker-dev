@@ -2,9 +2,9 @@
 state={
 	id=379
 	name="STATE_379"
-	manpower = 91057
+	manpower = 910057
 	
-	state_category = rural
+	state_category = town
 	
 	resources={
 		steel=70 # was: 136
@@ -19,6 +19,10 @@ state={
 		}
 		add_claim_by = USA
 		add_core_of = PSA
+
+		victory_points = {
+			4799 5
+		}
 	}
 
 	provinces={
